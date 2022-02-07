@@ -69,3 +69,19 @@ add_filter('lc_load_cpt_lc_block', function (array $blocks) {
     }
     return $blocks;
 }, PHP_INT_MAX);
+
+
+//NEW ADDED ESGALLA
+$understrap_includes = array(
+    '/enqueues.php',
+    '/autocompiler-custom.php'
+);
+
+
+// Include files.
+foreach ( $understrap_includes as $file ) {
+require_once get_theme_file_path() . '/inc' . $file;
+}
+
+// Remove Guttenberg
+add_filter( 'use_block_editor_for_post', '__return_false' );

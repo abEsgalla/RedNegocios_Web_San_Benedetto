@@ -44,3 +44,52 @@ $utilities: (
   ),
    
 );
+
+//CUSTOM SPACING UP TO 8
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: ($spacer * 4.5),  //added
+  7: ($spacer * 6), //added
+  8: ($spacer * 7.5), //added
+  10: ($spacer * 0.625), //10px
+  12:  ($spacer * 0.75), // 12px
+  16:  ($spacer * 1), // 16px
+  18:  ($spacer * 1.125), // 18px
+  20:  ($spacer * 1.25), // 20px
+  24:  ($spacer * 1.5), // 24px
+  28:  ($spacer * 1.75), // 28px
+  30:  ($spacer * 1.875), // 30px
+  32:  ($spacer * 2), // 32px
+  36:  ($spacer * 2.25), // 36px
+  40:  ($spacer * 2.5), // 36px
+  48:  ($spacer * 3), // 48px
+  56:  ($spacer * 3.5), // 48px
+  64:  ($spacer * 4), // 64px
+  70:  ($spacer * 4.375), // 70px
+  80:  ($spacer * 5), // 80px
+  96:  ($spacer * 6), // 96px
+  112:  ($spacer * 7), // 112px
+  138: ($spacer * 8.625), // 138px
+  150: ($spacer * 9.375), // 150px
+  160: ($spacer * 10), // 160px
+  176: ($spacer * 11), // 176px
+  192: ($spacer * 12), // 192px
+  256: ($spacer * 16), // 256px
+) !default;
+
+
+$enable-rfs: false;
+ 
+$primary    : #a9a2ff !default;
+$secondary  : #d0ffae !default;
+
+$theme-colors: (
+  "primary"   : $primary,
+  "secondary" : $secondary
+);
