@@ -29,6 +29,9 @@ $spacers: (
 //ENABLE NEGATIVE MARGIN UTILITY CLASSES
 $enable-negative-margins: true;
 
+// Font family
+$font-family-base: 'Gotham';
+
 //CUSTOMIZE UTILITIES VIA UTILITIES API
 $utilities: (
   "min-viewport-height": ( //ADD min-vh CLASSES
@@ -86,10 +89,34 @@ $spacers: (
 
 $enable-rfs: false;
  
-$primary    : #a9a2ff !default;
-$secondary  : #d0ffae !default;
+$primary            : #69B3E7 !default;
+$primary-darker     : #2A485C !default;
+$primary-dark       : #3F6B8B !default;
+$primary-light      : #548FB9 !default;
+$primary-lighter    : #A5D1F1 !default;
+$primary-bright     : #C3E1F5 !default;
+$primary-brighter   : #E1F0FA !default;
+$secondary          : #002D72 !default;
+$secondary-darker   : #001B44 !default;
+$secondary-dark     : #002050 !default;
+$secondary-light    : #002867 !default;
+$secondary-lighter  : #6681AA !default;
+$secondary-bright   : #99ABC7 !default;
+$secondary-brighter : #CCD5E3 !default;
 
 $theme-colors: (
-  "primary"   : $primary,
-  "secondary" : $secondary
+  "primary"         : $primary,
+  "primary-darker"  : $primary-darker,
+  "primary-dark"    : $primary-dark,
+  "primary-light"   : $primary-light,
+  "primary-lighter" : $primary-lighter,
+  "primary-bright"  : $primary-bright,
+  "primary-brighter" : $primary-brighter,
+  "secondary"         : $secondary,
+  "secondary-darker"  : $secondary-darker,
+  "secondary-dark"    : $secondary-dark,
+  "secondary-light"   : $secondary-light,
+  "secondary-lighter" : $secondary-lighter,
+  "secondary-bright"  : $secondary-bright,
+  "secondary-brighter" : $secondary-brighter
 );
