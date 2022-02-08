@@ -11,6 +11,9 @@ function esgalla_scripts() {
 	wp_enqueue_script( 'swiper-slider-js', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js', array(), false, true );
 	wp_enqueue_script( 'swiper-slider-custom-js', get_stylesheet_directory_uri() . '/js/swiper-slider-custom.js', array('swiper-slider-js'), false, true );
 
+	// Custom JS
+	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array(), false, true );
+
 	//AÑADIR BUNDLE SASS CUSTOM AUTOCOMPILADO
 	wp_enqueue_style( 'esgalla_custom_bundle', get_stylesheet_directory_uri() . '/' . picostrap_get_css_optional_subfolder_name() . 'esgalla_custom_bundle.css', array(), time());
 }

@@ -117,6 +117,8 @@ $secondary-lighter  : #6681AA !default;
 $secondary-bright   : #99ABC7 !default;
 $secondary-brighter : #CCD5E3 !default;
 
+$white : #fff;
+
 $theme-colors: (
   "primary"         : $primary,
   "primary-darker"  : $primary-darker,
@@ -131,5 +133,6 @@ $theme-colors: (
   "secondary-light"   : $secondary-light,
   "secondary-lighter" : $secondary-lighter,
   "secondary-bright"  : $secondary-bright,
-  "secondary-brighter" : $secondary-brighter
+  "secondary-brighter" : $secondary-brighter,
+  "white" : $white
 );
