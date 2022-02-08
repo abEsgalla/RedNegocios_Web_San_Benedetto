@@ -80,7 +80,7 @@ $h5-font-size: $font-size-base * 1.125 !default; // 18px
 $h6-font-size: $font-size-base !default; // 16px
 
 // Font sizes
-$display-font-sizes: (
+$font-sizes: (
  1:  $h1-font-size,
  2:  $h2-font-size,
  3:  $h3-font-size,
@@ -88,6 +88,7 @@ $display-font-sizes: (
  5:  $h5-font-size,
  6:  $h6-font-size,
  12: $font-size-base * 0.75,
+ 13: $font-size-base * 0.813,
  14: $font-size-base * 0.875,
  16: $h6-font-size,
  18: $font-size-base * 1.125,
