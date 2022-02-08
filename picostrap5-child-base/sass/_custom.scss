@@ -63,3 +63,11 @@ HOW TO REFERENCE ASSETS AND IMAGES
 .transform-translate-y{
     transform: translateY(-50%);
 }
+
+.fix-banner{
+    height: 100%;
+    position: relative;
+    margin-left: 50vw;
+    left: -50vw;
+    object-fit: cover;
+}
