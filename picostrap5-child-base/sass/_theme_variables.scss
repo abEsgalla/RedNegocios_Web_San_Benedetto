@@ -8,24 +8,6 @@
 //$body-bg: darkgrey;
 
 
-
-//SOME CUSTOMIZATION FOR PICOSTRAP & LC
-
-//CUSTOM SPACING UP TO 8
-$spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: ($spacer * 4.5),  //added
-  7: ($spacer * 6), //added
-  8: ($spacer * 7.5), //added
-
-) !default;
-
 //ENABLE NEGATIVE MARGIN UTILITY CLASSES
 $enable-negative-margins: true;
 
@@ -86,6 +68,36 @@ $spacers: (
   256: ($spacer * 16), // 256px
 ) !default;
 
+// Font size base
+$font-size-base: 1rem !default;
+
+// Encabezados
+$h1-font-size: 45px !default; // 40px
+$h2-font-size: $font-size-base * 2.5 !default; // 36px
+$h3-font-size: $font-size-base * 1.625 !default; // 26px
+$h4-font-size: $font-size-base * 1.375 !default; // 22px
+$h5-font-size: $font-size-base * 1.125 !default; // 18px
+$h6-font-size: $font-size-base !default; // 16px
+
+// Font sizes
+$display-font-sizes: (
+ 1:  $h1-font-size,
+ 2:  $h2-font-size,
+ 3:  $h3-font-size,
+ 4:  $h4-font-size,
+ 5:  $h5-font-size,
+ 6:  $h6-font-size,
+ 12: $font-size-base * 0.75,
+ 14: $font-size-base * 0.875,
+ 16: $h6-font-size,
+ 18: $font-size-base * 1.125,
+ 20: $font-size-base * 1.25,
+ 22: $font-size-base * 1.375,
+ 24: $font-size-base * 1.5,
+ 26: $font-size-base * 1.625,
+ 36: $font-size-base * 2.25,
+ 45: $font-size-base * 2.813,
+) !default;
 
 $enable-rfs: false;
  

@@ -40,6 +40,18 @@ HOW TO REFERENCE ASSETS AND IMAGES
 //body.scroll-position-not-at-top {background:red}
 
  
-html{
-    background: inherit;
+.zi-99{
+    z-index: 99;
+}
+
+.bt-40{
+    bottom: 40px !important;
+}
+
+.c-pointer{
+    cursor: pointer;
+}
+
+.transform-translate-y{
+    transform: translateY(-50%);
 }
