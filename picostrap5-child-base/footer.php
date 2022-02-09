@@ -18,17 +18,15 @@
 		<div class="wrapper bg-secondary" id="wrapper-footer-colophon">
 			<div class="container">
 				<div class="row">
-					<div class="col">
-		
+					<div class="col-12">
 						<footer class="site-footer py-48 text-white" id="colophon">
-		
               <div class="row">
                 <div class="col-12">
                   <?=wp_get_attachment_image(40, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
                 </div>
                 <div class="col-12 mt-40 text-uppercase">
                   <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13">
                         <div class="col-12 fw-bold h5">nosotros</div>
                         <div class="col-12 mt-24">historia</div>
@@ -38,23 +36,23 @@
                         <div class="col-12 mt-16">noticias</div>
                       </div>
                     </div>
-                    <div class="col-3">
-                      <div class="row fs-13 d-flex align-items-end flex-column h-100">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                      <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
                         <div class="col-12 fw-bold h5">marcas</div>
                         <div class="col-12 mt-24">Agua mineral</div>
                         <div class="col-12 mt-16">Refrescos</div>
                         <div class="col-12 mt-16 fw-bold h5 mt-auto">área profesional</div>
                       </div>
                     </div>
-                    <div class="col-3">
-                      <div class="row fs-13 d-flex align-items-end flex-column h-100">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                      <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
                         <div class="col-12 fw-bold h5">ecolosofía</div>
                         <div class="col-12 mt-24">Producto</div>
                         <div class="col-12 mt-16">procesos</div>
                         <div class="col-12 mt-16">entorno</div>
-                        <div class="col-12 mt-16 fw-bold h5 mt-auto d-flex align-items-center">
+                        <div class="col-12 mt-16 fw-bold h5 mt-auto d-flex flex-wrap align-items-center">
                           <span>Síguenos</span>
-                          <span class="d-flex align-items-center mx-12">
+                          <span class="d-flex flex-wrap align-items-center mx-12">
                             <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="8" height="17" viewBox="0 0 8 17" fill="none">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M4.91252 4.84123V3.55192C4.91252 2.91991 5.32501 2.78086 5.62501 2.78086C5.91251 2.78086 7.42502 2.78086 7.42502 2.78086V0.0126449L4.95002 0C2.20002 0 1.58751 2.07301 1.58751 3.3876V4.85386H0V6.81311V8.08977H1.60001C1.60001 11.7554 1.60001 16.1795 1.60001 16.1795H4.80001C4.80001 16.1795 4.80001 11.7049 4.80001 8.08977H7.17502L7.28752 6.81311L7.46252 4.84123H4.91252Z" fill="white"/>
                             </svg>
@@ -75,7 +73,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13">
                         <div class="col-12 fw-bold h5">Contacto</div>
                         <div class="col-12 mt-24">trabaja con nosotros</div>
@@ -96,7 +94,6 @@
                   </div>
                 </div>
               </div>
-				
 						</footer><!-- #colophon -->
 					</div><!--col end -->
 				</div><!-- row end -->
