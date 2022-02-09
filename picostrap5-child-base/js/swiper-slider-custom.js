@@ -15,13 +15,8 @@ const swiper_home = new Swiper('.swiper-home', {
 
 const swiper_home_dedicado = new Swiper('.swiper-home-dedicado', {
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   spaceBetween: 55,
-  pagination: {
-    el: '.swiper-pagination-home-dedicado',
-    clickable: true,
-    bulletActiveClass: 'bg-white opacity-100',
-  },
   breakpoints: {
     992: {
       slidesPerView: 4

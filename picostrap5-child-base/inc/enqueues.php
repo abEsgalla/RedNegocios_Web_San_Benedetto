@@ -11,6 +11,9 @@ function esgalla_scripts() {
 	wp_enqueue_script( 'swiper-slider-js', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js', array(), false, true );
 	wp_enqueue_script( 'swiper-slider-custom-js', get_stylesheet_directory_uri() . '/js/swiper-slider-custom.js', array('swiper-slider-js'), false, true );
 
+	// Filtro Tabs JS
+	wp_enqueue_script( 'filtros-search-js', get_stylesheet_directory_uri() . '/js/filtros-search.js', array(), false, true );
+
 	// Custom JS
 	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array(), false, true );
 
