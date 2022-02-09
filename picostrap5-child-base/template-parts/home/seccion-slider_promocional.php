@@ -4,21 +4,39 @@ $fields = wp_parse_args( $args );
 $slider_html="";
 $categories_slider_html=array();
 
-//var_dump($fields);
+foreach ($fields['slides'] as $slide):
+    $category_name=get_the_title($slide['producto']);
+    if (!in_array($category_name, $categories_slider_html)):
+        array_push($categories_slider_html,$category_name);
+    endif;
+    $slider_html.="
+    <div class='swiper-slide text-secondary'>
+        <div class='position-relative'>"
+            .wp_get_attachment_image($slide['fondo'], 'full', '', array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider')).
+        "</div>
+        <div class='container-fluid zi-99 top-0 position-absolute mt-256'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-6'>
+                        <div class='row'>
+                        <div class='col-12 text-uppercase h5'>".get_the_title($slide['producto'])."</div>
+                        <div class='col-12 h2 fw-bold'>".$slide['texto_principal']."</div>
+                        <div class='col-12 mt-16'>
+                            ".$slide['descripcion']."
+                        </div>
+                        <div class='col-12 mt-36'>
+                            <a href='".get_permalink($slide['producto'])."' class='btn btn-outline-secondary text-uppercase'>
+                            ".$slide['texto_cta']."
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>";
+endforeach;
 
-/*foreach ($fields['productos'] as $id_producto):
-  $category_name=get_the_terms( $id_producto, 'categorias_producto' )[0]->name;
-  if (!in_array($category_name, $categories_slider_html)):
-    array_push($categories_slider_html,$category_name);
-  endif;
-  $slider_html.="<div data-swiper='swiper_home_dedicado' class='swiper-slide text-center type-container 
-  type-".str_replace(' ', '-', strtolower($category_name))."'>"
-  .wp_get_attachment_image(get_field('imagen_producto',$id_producto), "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )
-  ."<div class='text-start mt-20 text-secondary text-uppercase'>"
-  .get_the_title($id_producto)
-  ."</div>
-  </div>";
-endforeach;*/
 ?>
 
 
@@ -26,89 +44,32 @@ endforeach;*/
     <!-- Slider main container -->
     <div class="swiper swiper-home-promocional">
         <!-- Additional required wrapper -->
+        <div class='container-fluid zi-99 top-0 position-absolute mt-80'>
+            <div class='container'>
+                <div class='row'>
+                    <div class="col-12">
+                        <div class='row'>
+                            <div class="col-8">
+                                <div class='row text-start text-uppercase text-secondary'>
+                                    <?php
+                                    foreach($categories_slider_html as $key => $categories_slider_html):
+                                    ?>
+                                    <div onclick=swiper_home_promocional.slideTo(<?=$key+1?>) class="col c-pointer">
+                                        <?=$categories_slider_html?>
+                                    </div>
+                                    <?
+                                    endforeach;
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide text-secondary">
-                <div class="position-relative">
-                    <?=wp_get_attachment_image(31, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-                </div>
-                <div class="container-fluid zi-99 top-0 position-absolute mt-138">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                <div class="col-12 text-uppercase h5">fuente primavera</div>
-                                <div class="col-12 h2 fw-bold">¡Un agua mineral para salir a beberse el mundo!</div>
-                                <div class="col-12 mt-16">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sodales euismod suspendisse porttitor pulvinar vivamus, 
-                                    lobortis mi vulputate metus fermentum cubilia ac praesent congue fusce curabitur nostra. 
-                                    Sollicitudin morbi hendrerit elementum maecenas nostra mattis dictu
-                                </div>
-                                <div class="col-12 mt-36">
-                                    <div class="btn btn-outline-secondary text-uppercase">
-                                    saber más
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide text-secondary">
-                <div class="position-relative">
-                    <?=wp_get_attachment_image(31, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-                </div>
-                <div class="container-fluid zi-99 top-0 position-absolute mt-138">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                <div class="col-12 text-uppercase h5">fuente primavera</div>
-                                <div class="col-12 h2 fw-bold">¡Un agua mineral para salir a beberse el mundo!</div>
-                                <div class="col-12 mt-16">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sodales euismod suspendisse porttitor pulvinar vivamus, 
-                                    lobortis mi vulputate metus fermentum cubilia ac praesent congue fusce curabitur nostra. 
-                                    Sollicitudin morbi hendrerit elementum maecenas nostra mattis dictu
-                                </div>
-                                <div class="col-12 mt-36">
-                                    <div class="btn btn-outline-secondary text-uppercase">
-                                    saber más
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide text-secondary">
-                <div class="position-relative">
-                    <?=wp_get_attachment_image(31, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-                </div>
-                <div class="container-fluid zi-99 top-0 position-absolute mt-138">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                <div class="col-12 text-uppercase h5">fuente primavera</div>
-                                <div class="col-12 h2 fw-bold">¡Un agua mineral para salir a beberse el mundo!</div>
-                                <div class="col-12 mt-16">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sodales euismod suspendisse porttitor pulvinar vivamus, 
-                                    lobortis mi vulputate metus fermentum cubilia ac praesent congue fusce curabitur nostra. 
-                                    Sollicitudin morbi hendrerit elementum maecenas nostra mattis dictu
-                                </div>
-                                <div class="col-12 mt-36">
-                                    <div class="btn btn-outline-secondary text-uppercase">
-                                    saber más
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?=$slider_html?>
         </div>
 
         <div class="container">
