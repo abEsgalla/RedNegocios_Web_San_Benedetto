@@ -72,3 +72,14 @@ HOW TO REFERENCE ASSETS AND IMAGES
     left: -50vw;
     object-fit: cover;
 }
+
+.filtros_buscador{
+    >div{
+        &:not(.active){
+            opacity: 0.5;
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

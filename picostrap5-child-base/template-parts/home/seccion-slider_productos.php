@@ -1,7 +1,22 @@
 <?php
 $fields = wp_parse_args( $args );
 
-//var_dump($fields['productos']);
+$slider_html="";
+$categories_slider_html=array();
+
+foreach ($fields['productos'] as $id_producto):
+  $category_name=get_the_terms( $id_producto, 'categorias_producto' )[0]->name;
+  if (!in_array($category_name, $categories_slider_html)):
+    array_push($categories_slider_html,$category_name);
+  endif;
+  $slider_html.="<div data-swiper='swiper_home_dedicado' class='swiper-slide text-center type-container 
+  type-".str_replace(' ', '-', strtolower($category_name))."'>"
+  .wp_get_attachment_image(get_field('imagen_producto',$id_producto), "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )
+  ."<div class='text-start mt-20 text-secondary text-uppercase'>"
+  .get_the_title($id_producto)
+  ."</div>
+  </div>";
+endforeach;
 
 ?>
 
@@ -20,18 +35,21 @@ $fields = wp_parse_args( $args );
   endif;
   ?>
 </div>
-<div class="col-12">
-  <ul class="filtros_buscador">
-    <li class="filtro_buscador active text-primary" data-filter="*">
+<div class="offset-8 col-4">
+  <div class="filtros_buscador row text-secondary text-center text-uppercase">
+    <div class="col filtro_buscador active c-pointer" data-filter="*">
       Todos
-    </li>
-    <li class="filtro_buscador text-primary" data-filter="agua-mineral">
-      Agua Mineral                
-    </li>
-    <li class="filtro_buscador text-primary" data-filter="refrescos">
-      Refrescos                
-    </li>
-  </ul>
+    </div>
+    <?php
+      foreach ($categories_slider_html as $category_slider_html):
+      ?>
+      <div class="col filtro_buscador c-pointer" data-filter="<?=str_replace(' ', '-', strtolower($category_slider_html))?>">
+        <?=$category_slider_html?>           
+      </div>
+      <?
+      endforeach;
+    ?>
+  </div>
 </div>
 <div class="col-12 mt-70">
   <!-- Slider main container -->
@@ -39,18 +57,7 @@ $fields = wp_parse_args( $args );
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <?
-        foreach ($fields['productos'] as $id_producto):
-        ?>
-        <div data-swiper="swiper_home_dedicado"
-        class="swiper-slide text-center type-container 
-        type-<?=str_replace(' ', '-', strtolower(get_the_terms( $id_producto, 'categorias_producto' )[0]->name))?> ">
-          <?=wp_get_attachment_image(get_field('imagen_producto',$id_producto), "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-          <div class="text-start mt-20 text-secondary text-uppercase"><?=get_the_title($id_producto);?></div>
-        </div>
-        <?
-        endforeach;
-      ?>
+      <?=$slider_html?>
     </div>
 
     <div class="col-12 mt-12 d-flex justify-content-end align-items-center">
