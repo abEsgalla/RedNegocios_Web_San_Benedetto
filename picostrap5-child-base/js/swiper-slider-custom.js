@@ -50,7 +50,7 @@ const swiper_home_noticias = new Swiper('.swiper-home-noticias', {
   }
 });
 
-const swiper_prefooter_marcas = new Swiper('.swiper-prefooter-marcas', {
+const swiper_prefooter_logos = new Swiper('.swiper-prefooter-logos', {
   direction: 'horizontal',
   loop: true,
   breakpoints: {
