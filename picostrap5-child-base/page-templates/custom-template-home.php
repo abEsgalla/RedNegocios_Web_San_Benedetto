@@ -55,49 +55,9 @@ get_header();
 <section class="bg-secondary-brighter">
   <div class="container position-relative py-96">
     <div class="row">
-      <div class="col-12 text-center text-secondary">
-        <div class="h5 text-uppercase">SAN BENEDETTO</div>
-        <div class="h2 fw-bold">Noticias</div>
-      </div>
-      <div class="col-12 mt-64">
-          <div class="swiper swiper-home-noticias">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center text-secondary">
-                <?=wp_get_attachment_image(27, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-                <div class="text-start mt-16 text-uppercase">Agua Mineral San Benedetto en Atiende de Telfy TV</div>
-                <div class="text-start mt-2">
-                  Hace unos días, la televisión local de Requena Telfy TV entrevistó a nuestro Director de...
-                </div>
-              </div>
-              <div class="swiper-slide text-center text-secondary">
-                <?=wp_get_attachment_image(27, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-                <div class="text-start mt-16 text-uppercase">Agua Mineral San Benedetto celebra el Día del Árbol...</div>
-                <div class="text-start mt-2">
-                  Agua Mineral San Benedetto (AMSB) organizó por cuarto año consecutivo una plantación...
-                </div>
-              </div>
-              <div class="swiper-slide text-center text-secondary">
-                <?=wp_get_attachment_image(27, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-                <div class="text-start mt-16 text-uppercase">Agua Mineral San Benedetto colabora con Aldeas...</div>
-                <div class="text-start mt-2">
-                  Agua Mineral San Benedetto (AMSB) y Aldeas Infantiles SOS han firmado un convenio de...
-                </div>
-              </div>
-              <div class="swiper-slide text-center text-secondary">
-                <?=wp_get_attachment_image(27, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-                <div class="text-start mt-16 text-uppercase">Agua Mineral San Benedetto apuesta por su gama...</div>
-                <div class="text-start mt-2">
-                  La nueva imagen de ‘Essenzia’ pone el acento en el origen y la naturalidad de sus productos...
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="col-12 text-center">
-        <div class="btn btn-outline-secondary text-uppercase mt-64">
-          ver todas
-        </div>
-      </div>
+      <?php
+        get_template_part( 'template-parts/home/seccion', 'slider_noticias', $acf_fields);
+      ?>
     </div>
   </div>
 </section>
