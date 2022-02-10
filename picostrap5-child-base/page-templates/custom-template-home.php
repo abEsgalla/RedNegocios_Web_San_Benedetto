@@ -45,50 +45,9 @@ get_header();
 <section>
   <div class="container position-relative py-96">
       <div class="row">
-        <div class="col-12 text-center text-secondary">
-          <div class="h5 text-uppercase">SAN BENEDETTO</div>
-          <div class="h2 fw-bold">Nuestro compromiso</div>
-        </div>
-        <div class="col-12 mt-64">
-          <div class="row">
-            <div class="col-6 bg-primary d-flex align-items-center">
-              <div class="row text-white">
-                <div class="col-12 text-uppercase h5">ecolosofía</div>
-                <div class="col-12 fw-bold h2">¡Una manera ecológica de pensar las cosas! </div>
-                <div class="col-12">
-                  <div class="btn btn-outline-primary-brighter text-uppercase mt-36">
-                    saber más
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 g-0">
-              <div class="">
-                <?=wp_get_attachment_image(33, "full", "", array( 'class' => 'ratio ratio-16x9' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-              </div>
-            </div>
-            <div class="col-6 g-0">
-              <div class="">
-                <?=wp_get_attachment_image(32, "full", "", array( 'class' => 'ratio ratio-16x9' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-              </div>
-            </div>
-            <div class="col-6 bg-secondary d-flex align-items-center">
-              <div class="row text-white">
-                <div class="col-12 text-uppercase h5">SAN BENEDETTO </div>
-                <div class="col-12 fw-bold h2">RSC</div>
-                <div class="col-12 mt-20">
-                  Tenemos un acuerdo con Aldeas Infantiles SOS según el cual suministramos 
-                  botellas de agua diarias a los 45 niños y niñas de su Centro de Día en Valencia.
-                </div>
-                <div class="col-12">
-                  <div class="btn btn-outline-primary-brighter text-uppercase mt-36">
-                    saber más
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php
+          get_template_part( 'template-parts/home/seccion', 'grid_compromiso', $acf_fields['grid_compromiso']);
+        ?>
       </div>
   </div>
 </section>
