@@ -4,24 +4,15 @@
 
 <div class="swiper swiper-prefooter-logos">
   <div class="swiper-wrapper text-center">
-    <div class="swiper-slide">
-      <?=wp_get_attachment_image(34, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-    </div>
-    <div class="swiper-slide">
-      <?=wp_get_attachment_image(35, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-    </div>
-    <div class="swiper-slide">
-      <?=wp_get_attachment_image(36, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-    </div>
-    <div class="swiper-slide">
-      <?=wp_get_attachment_image(37, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-    </div>
-    <div class="swiper-slide">
-      <?=wp_get_attachment_image(38, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-    </div>
-    <div class="swiper-slide">
-      <?=wp_get_attachment_image(39, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-    </div>
+    <?php
+    foreach ($fields as $id_producto) {
+    ?>
+      <div class="swiper-slide">
+        <?=wp_get_attachment_image(get_field('imagen_logo_marca',$id_producto), "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+      </div>
+    <?
+    }
+    ?>
   </div>
 </div>
 <div class="row">
