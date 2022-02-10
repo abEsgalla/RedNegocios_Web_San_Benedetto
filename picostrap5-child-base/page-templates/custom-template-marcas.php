@@ -33,26 +33,9 @@ get_header();
 </section>
 
 <section class="d-flex py-96 position-relative text-white">
-    <div class="top-0 position-absolute h-100 w-100 overflow-hidden bg-black">
-        <?=wp_get_attachment_image(53, "full", "", array( 'class' => 'fix-banner' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-    </div>
-    <div class="container zi-99">
-        <div class="row">
-            <div class="col-12 text-center text-uppercase">
-                <div class="row">
-                    <div class="col-6 offset-3">
-                        <div class="h5">ecolosofía</div>
-                        <div class="h2 fw-bold">¡Una manera cológica de pensar las cosas!</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 text-center">
-                <div class="btn btn-outline-white text-uppercase mt-48">
-                    saber más
-                </div>
-            </div>
-        </div>
-    <div>
+    <?php
+        get_template_part( 'template-parts/marcas/seccion', 'banner', $acf_fields['banner']);
+    ?>
 </section>
 
 <section>
