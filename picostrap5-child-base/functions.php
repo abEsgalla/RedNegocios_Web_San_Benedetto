@@ -74,6 +74,7 @@ add_filter('lc_load_cpt_lc_block', function (array $blocks) {
 //NEW ADDED ESGALLA
 $understrap_includes = array(
     '/cpt_producto.php',
+    '/cpt_landing.php',
     '/enqueues.php',
     '/autocompiler-custom.php'
 );

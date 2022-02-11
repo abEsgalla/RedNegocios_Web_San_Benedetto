@@ -106,6 +106,20 @@ defined( 'ABSPATH' ) || exit;
                     
           <!--TEST OFFCANVAS-->
           <?php
+          /*if(get_post_type()=="landing"):
+          ?>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-uppercase">
+                <?=var_dump($posts)?>
+              </div>
+            </div>
+          </div>
+          <?php
+          endif;*/
+          ?>
+          
+          <?php
             get_template_part( 'template-parts/general/seccion', 'header_menu');
           ?>
           <!--/****/-->
