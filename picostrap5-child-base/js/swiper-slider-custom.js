@@ -1,5 +1,6 @@
 const swiper_home = new Swiper('.swiper-home', {
   direction: 'horizontal',
+  autoHeight : true,
   loop: true,
   pagination: {
     el: '.swiper-pagination-home',
@@ -15,6 +16,7 @@ const swiper_home = new Swiper('.swiper-home', {
 
 const swiper_home_dedicado = new Swiper('.swiper-home-dedicado', {
   direction: 'horizontal',
+  autoHeight : true,
   loop: false,
   spaceBetween: 55,
   breakpoints: {
@@ -26,6 +28,7 @@ const swiper_home_dedicado = new Swiper('.swiper-home-dedicado', {
 
 const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
   direction: 'horizontal',
+  autoHeight : true,
   loop: true,
   pagination: {
     el: '.swiper-pagination-home-promocional',
@@ -41,6 +44,7 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
 
 const swiper_home_noticias = new Swiper('.swiper-home-noticias', {
   direction: 'horizontal',
+  autoHeight : true,
   loop: true,
   spaceBetween: 33,
   breakpoints: {
@@ -52,6 +56,7 @@ const swiper_home_noticias = new Swiper('.swiper-home-noticias', {
 
 const swiper_prefooter_logos = new Swiper('.swiper-prefooter-logos', {
   direction: 'horizontal',
+  autoHeight : true,
   loop: true,
   breakpoints: {
     992: {

@@ -52,12 +52,24 @@ HOW TO REFERENCE ASSETS AND IMAGES
     height: 0px;
 }
 
+.ratio-9x16{
+    --bs-aspect-ratio: calc(16 / 9 * 100%);
+}
+
+.h-90{
+    height: 90%;
+}
+
 .bt-40{
     bottom: 40px !important;
 }
 
 .c-pointer{
     cursor: pointer;
+}
+
+.fix-translate-absolute{
+    transform: translate(-50%,-50%);
 }
 
 .transform-translate-y{

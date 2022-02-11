@@ -42,10 +42,16 @@
           <div class='col-12'>
               <div class='row'>";
     foreach ($id_posts as $id_producto):
+    
     $cuerpo_tabs_html.="
-                <div class='col-4 mt-64'>
-                    ".wp_get_attachment_image(get_field('imagen_producto',$id_producto), 'full', '', array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )."
-                    <div class='text-start mt-20'>".mb_strtoupper(get_the_title($id_producto))."</div>
+                <div class='col-4 mt-64'>";
+    if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"]):
+      $cuerpo_tabs_html.= 
+                  "<div class='ratio ratio-1x1' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>"
+                  .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], 'full', '', array( 'class' => 'fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )
+                  ."</div>";
+    endif;
+    $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary'>".mb_strtoupper(get_the_title($id_producto))."</div>
                 </div>
     ";
     endforeach;

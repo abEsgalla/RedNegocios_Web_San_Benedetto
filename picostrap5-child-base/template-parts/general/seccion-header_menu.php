@@ -7,6 +7,8 @@ $wp_args = array(
 'post_type'  => 'producto',
 'post_status' => 'publish',
 'posts_per_page' => -1,
+'orderby'  => 'term',
+'order'    => 'ASC'
 );
 $the_query = new WP_Query( $wp_args );
 if ( $the_query->have_posts() ):
@@ -37,9 +39,9 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
     $header_menu.="    
                     <div class='col-2'>
                         <div class='row'>
-                            <a class='text-decoration-none text-reset' href='".get_field('relacion_page_landing',$id_producto)."'>
-                                <div class='col-12'>
-                                ".wp_get_attachment_image(get_field('imagen_marca',$id_producto), 'full', '', array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )."
+                            <a class='text-decoration-none text-reset position-relative' href='".get_field('caracteristicas_producto',$id_producto)['relacion_page_landing']."'>
+                                <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."' class='col-12 ratio ratio-9x16'>
+                                    ".wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], 'full', '', array( 'class' => 'fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )."
                                 </div>
                                 <div class='col-12 mt-10'>
                                 ".get_the_title($id_producto)."

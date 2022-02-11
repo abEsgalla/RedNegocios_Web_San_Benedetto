@@ -9,10 +9,15 @@ foreach ($fields['productos'] as $id_producto):
   if (!in_array($category_name, $categories_slider_html)):
     array_push($categories_slider_html,$category_name);
   endif;
-  $slider_html.="<div data-swiper='swiper_home_dedicado' class='swiper-slide text-center type-container 
-  type-".str_replace(' ', '-', strtolower($category_name))."'>"
-  .wp_get_attachment_image(get_field('imagen_producto',$id_producto), "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )
-  ."<div class='text-start mt-20 text-secondary text-uppercase'>"
+  $slider_html.="<div data-swiper='swiper_home_dedicado' class='d-flex flex-wrap justify-content-center align-items-center h-100 swiper-slide text-center type-container 
+  type-".str_replace(' ', '-', strtolower($category_name))."'>";
+  if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"]):
+    $slider_html.=
+    "<div class='h-90' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>"
+    .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ).
+    "</div>";
+  endif;
+  $slider_html.="<div class='w-100 text-start mt-20 text-secondary text-uppercase'>"
   .get_the_title($id_producto)
   ."</div>
   </div>";
