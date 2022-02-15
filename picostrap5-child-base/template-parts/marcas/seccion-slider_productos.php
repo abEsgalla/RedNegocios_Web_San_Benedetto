@@ -44,7 +44,8 @@
     foreach ($id_posts as $id_producto):
     
     $cuerpo_tabs_html.="
-                <div class='col-4 mt-64'>";
+                <div class='col-4 mt-64'>
+                <a class='text-decoration-none' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>";
     if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"]):
       $cuerpo_tabs_html.= 
                   "<div class='ratio ratio-1x1' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>"
@@ -52,6 +53,7 @@
                   ."</div>";
     endif;
     $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary'>".mb_strtoupper(get_the_title($id_producto))."</div>
+                </a>
                 </div>
     ";
     endforeach;
