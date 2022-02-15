@@ -76,6 +76,14 @@ HOW TO REFERENCE ASSETS AND IMAGES
     transform: translateY(-50%);
 }
 
+.top-25{
+    top: 25%;
+}
+
+.top-75{
+    top: 75%;
+}
+
 .fix-banner{
     opacity: 0.7;
     height: 100%;
@@ -95,3 +103,19 @@ HOW TO REFERENCE ASSETS AND IMAGES
         }
     }
 }
+
+/*.svg-elemento-quimico{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='219' height='207' viewBox='0 0 219 207'%3E%3Cpath d='M50.9124 20.8406C98.1311 -12.7607 162.836 -2.78743 195.434 43.1165C228.033 89.0204 230.606 143.207 168.962 187.073C121.743 220.675 57.0386 210.702 24.4401 164.798C-8.15833 118.894 -15.069 67.7937 50.9124 20.8406Z' /%3E%3C/svg%3E");
+    }
+}*/

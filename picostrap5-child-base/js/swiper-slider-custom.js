@@ -64,3 +64,15 @@ const swiper_prefooter_logos = new Swiper('.swiper-prefooter-logos', {
     }
   }
 });
+
+const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
+  direction: 'horizontal',
+  autoHeight : true,
+  loop: true,
+  spaceBetween: 12,
+  breakpoints: {
+    992: {
+      slidesPerView: 7,
+    }
+  }
+});
