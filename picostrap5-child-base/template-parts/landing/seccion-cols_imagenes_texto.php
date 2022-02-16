@@ -7,14 +7,16 @@
   <div class="container position-relative">
     <div class="row">
       <? foreach ($seccion['col'] as $col): ?>
-        <div class="col-12 <?=$col['tamano']?>">
-          <div class="row d-flex flex-column h-100 justify-content-between">
+        <div class="py-4 col-12 <?=$col['tamano']?>">
+          <div class="row d-flex flex-column h-100 justify-content-between text-center">
             <div class="col-12 order-2">
-              <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+              <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
             </div>
-            <? if($col['texto']): ?>
+            <? if($col['posicion_texto']): ?>
             <div class="text-secondary my-48 offset-1 col-10 <?=$col['posicion_texto']?>">
-              <?=$col['texto']?>
+              <? if($col['posicion_texto']): ?>
+                <?=$col['texto']?>
+              <? endif; ?>
             </div>
             <? endif; ?>
           </div>
