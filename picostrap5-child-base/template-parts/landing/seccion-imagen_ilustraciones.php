@@ -1,0 +1,53 @@
+<?php
+  $fields = wp_parse_args( $args );
+  $seccion = $fields;
+?>
+
+<section class="my-64">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-7 pe-0">
+                        <?=wp_get_attachment_image($seccion['imagen'], "full", "", array( 'class' => 'w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )?>
+                    </div>
+                    <div class="col-5"
+                    style="background-color:<?=get_field('caracteristicas_producto',$seccion['id_producto'])['color_corporativo']?>99">
+                        <div class="row h-100 d-flex flex-column justify-content-evenly text-uppercase text-secondary">
+                            <div class="col-12">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-6 text-end">
+                                        <?=wp_get_attachment_image($seccion['1_ilustracion'], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )?>
+                                    </div>
+                                    <div class="col-6 text-start">
+                                        <?=$seccion['1_ilustracion_texto']?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-6 text-end">
+                                        <?=wp_get_attachment_image($seccion['2_ilustracion'], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )?>
+                                    </div>
+                                    <div class="col-6 text-start">
+                                        <?=$seccion['2_ilustracion_texto']?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-6 text-end">
+                                        <?=wp_get_attachment_image($seccion['3_ilustracion'], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )?>
+                                    </div>
+                                    <div class="col-6 text-start">
+                                        <?=$seccion['3_ilustracion_texto']?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
