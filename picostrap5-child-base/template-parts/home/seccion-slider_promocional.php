@@ -25,7 +25,7 @@ foreach ($fields['slides'] as $slide):
                             ".$slide['descripcion']."
                         </div>
                         <div class='col-12 mt-36'>
-                            <a href='".get_permalink($slide['producto'])."' class='btn btn-outline-secondary text-uppercase'>
+                            <a href='".get_permalink(get_field('caracteristicas_producto',$slide['producto'])['relacion_page_landing'])."' class='btn btn-outline-secondary text-uppercase'>
                             ".$slide['texto_cta']."
                             </a>
                         </div>
