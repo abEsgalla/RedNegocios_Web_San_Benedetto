@@ -248,4 +248,16 @@ get_header();
   </div>
 </section>
 
+<section class="my-96">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 position-relative">
+        <?php
+            get_template_part( 'template-parts/general/seccion', 'slider_logos', get_field('slider_logos', 'options'));
+        ?>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php get_footer();

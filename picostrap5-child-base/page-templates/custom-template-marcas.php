@@ -43,7 +43,7 @@ get_header();
     <div class="row">
       <div class="col-12 position-relative">
         <?php
-            get_template_part( 'template-parts/general/seccion', 'slider_logos', $acf_fields['slider_logos']);
+            get_template_part( 'template-parts/general/seccion', 'slider_logos', get_field('slider_logos', 'options'));
         ?>
       </div>
     </div>

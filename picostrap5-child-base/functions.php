@@ -87,3 +87,14 @@ require_once get_theme_file_path() . '/inc' . $file;
 
 // Remove Guttenberg
 add_filter( 'use_block_editor_for_post', '__return_false' );
+
+
+if( function_exists('acf_add_options_page') ){
+  acf_add_options_page(array(
+    'page_title' 	=> 'Opciones del tema',
+    'menu_title'	=> 'Opciones del tema',
+    'menu_slug' 	=> 'opciones-tema',
+    'capability'	=> 'edit_posts',
+    'redirect'		=> false
+  ));
+}
