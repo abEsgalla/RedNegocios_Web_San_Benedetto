@@ -98,3 +98,9 @@ if( function_exists('acf_add_options_page') ){
     'redirect'		=> false
   ));
 }
+
+function register_custom_navwalker(){
+	require_once get_theme_file_path() . '/inc/bootstrap-navwalker-ext.php';
+}
+add_action( 'after_setup_theme', 'register_custom_navwalker' );
+
