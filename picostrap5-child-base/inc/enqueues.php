@@ -14,6 +14,9 @@ function esgalla_scripts() {
 	// Filtro Tabs JS
 	wp_enqueue_script( 'filtros-search-js', get_stylesheet_directory_uri() . '/js/filtros-search.js', array(), false, true );
 
+	// Cursor custom JS
+	wp_enqueue_script( 'cursor-custom-js', get_stylesheet_directory_uri() . '/js/cursor-custom.js', array(), false, true );
+
 	// Custom JS
 	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array(), false, true );
 
