@@ -96,9 +96,11 @@ $font-sizes: (
  22: $font-size-base * 1.375,
  24: $font-size-base * 1.5,
  26: $font-size-base * 1.625,
+ 32: $font-size-base * 2,
  36: $font-size-base * 2.25,
  45: $font-size-base * 2.813,
  64: $font-size-base * 4,
+ 96: $font-size-base * 6,
 ) !default;
 
 $headings-font-weight: 800 !default;
@@ -123,6 +125,7 @@ $secondary-brighter : #CCD5E3 !default;
 
 $white : #ffffff;
 $black : #000000;
+$green : #6DD400;
 
 $theme-colors: (
   "primary"         : $primary,
@@ -141,7 +144,8 @@ $theme-colors: (
   "secondary-bright"  : $secondary-bright,
   "secondary-brighter" : $secondary-brighter,
   "white" : $white,
-  "black" : $black
+  "black" : $black,
+  "green" : $green
 );
 
 //BTN PADDING CUSTOM
@@ -153,3 +157,6 @@ $nav-link-hover-color:              $secondary !default;
 $nav-pills-link-active-color:       $secondary !default;
 $nav-link-color: $secondary-light-disable !default;
 $nav-pills-link-active-bg:          inherit !default;
+
+//FONT WEIGHT CUSTOM
+$font-weight-bold:            800 !default;
