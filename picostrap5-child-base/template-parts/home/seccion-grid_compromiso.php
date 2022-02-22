@@ -6,12 +6,12 @@
   <?php
   if($fields["texto_superior"]):
   ?>
-    <div class="h5 text-uppercase"><?=$fields["texto_superior"]?></div>
+    <div class="text-uppercase fw-18"><?=$fields["texto_superior"]?></div>
   <?
   endif;
   if($fields["texto_principal"]):
   ?>
-    <div class="h2 fw-bold"><?=$fields["texto_principal"]?></div>
+    <div class="h4"><?=$fields["texto_principal"]?></div>
   <?
   endif;
   ?>
@@ -39,34 +39,38 @@ if($fields["elemento_grid"]):
           else:
           ?>
             <div class="row text-white">
-              <?
-              if($single_grid['texto_superior']):
-              ?>
-                <div class="col-12 text-uppercase h5"><?=$single_grid['texto_superior']?></div>
-              <?
-              endif;
-              if($single_grid['texto_principal']):
-              ?>
-                <div class="col-12 fw-bold h2"><?=$single_grid['texto_principal']?></div>
-              <?
-              endif;
-              if($single_grid['descripcion']):
-              ?>
-                <div class="col-12 mt-20">
-                  <?=$single_grid['descripcion']?>
+              <div class="offset-2 col-8">
+                <div class="row">
+                  <?
+                  if($single_grid['texto_superior']):
+                  ?>
+                    <div class="col-12 text-uppercase fs-18"><?=$single_grid['texto_superior']?></div>
+                  <?
+                  endif;
+                  if($single_grid['texto_principal']):
+                  ?>
+                    <div class="col-12 h4 mt-8"><?=$single_grid['texto_principal']?></div>
+                  <?
+                  endif;
+                  if($single_grid['descripcion']):
+                  ?>
+                    <div class="col-12 mt-20">
+                      <?=$single_grid['descripcion']?>
+                    </div>
+                  <?
+                  endif;
+                  if($single_grid['texto_cta']):
+                  ?>
+                    <div class="col-12">
+                      <a href="<?=$single_grid['link_cta']?>" class="btn btn-outline-primary-brighter text-uppercase mt-40 fs-14 rounded-0">
+                        <?=$single_grid['texto_cta']?>
+                      </a>
+                    </div>
+                  <?
+                  endif;
+                  ?>
                 </div>
-              <?
-              endif;
-              if($single_grid['texto_cta']):
-              ?>
-                <div class="col-12">
-                  <a href="<?=$single_grid['link_cta']?>" class="btn btn-outline-primary-brighter text-uppercase mt-36">
-                    <?=$single_grid['texto_cta']?>
-                  </a>
-                </div>
-              <?
-              endif;
-              ?>
+              </div>
             </div>
           <?
           endif;

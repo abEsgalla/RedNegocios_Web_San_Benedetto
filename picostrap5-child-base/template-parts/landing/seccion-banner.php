@@ -15,21 +15,21 @@
             <?
             if($seccion['texto_superior']):
             ?>
-            <div class="col-12 text-uppercase h5 pt-20">
+            <div class="col-12 text-uppercase fs-18 pt-20">
               <?=$seccion['texto_superior']?>
             </div>
             <?
             endif;
             if($seccion['texto_principal']):
             ?>
-            <div class="col-12 h2 fw-bold mt-10">
+            <div class="col-12 h4 mt-10">
               <?=$seccion['texto_principal']?>
             </div>
             <?
             endif;
             if($seccion['descripcion']):
             ?>
-            <div class="col-12 mt-32">
+            <div class="col-12 mt-32 fs-17">
               <?=$seccion['descripcion']?>
             </div>
             <?

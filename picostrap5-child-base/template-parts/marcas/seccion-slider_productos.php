@@ -36,7 +36,7 @@
     <div class='col-12 tab-pane fade ".$show." ".$active."' id='".$term_name_sanitice."' 
     role='tabpanel' aria-labelledby='".$term_name_sanitice."-tab'>
       <div class='row text-center'>
-          <div class='col-12 mt-80'>
+          <div class='col-12 mt-80 text-secondary'>
               ".get_term_field( 'description', $id_term )."
           </div>
           <div class='col-12'>
@@ -52,7 +52,7 @@
                   .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], 'full', '', array( 'class' => 'fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )
                   ."</div>";
     endif;
-    $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary'>".mb_strtoupper(get_the_title($id_producto))."</div>
+    $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary fs-13'>".mb_strtoupper(get_the_title($id_producto))."</div>
                 </a>
                 </div>
     ";
@@ -70,7 +70,7 @@
 ?>
 
 <div class="col-12">
-  <ul class="justify-content-center nav nav-pills mb-3 h2" id="pills-tab" role="tablist">
+  <ul class="justify-content-center nav nav-pills mb-3 h5" id="pills-tab" role="tablist">
       <?=$cabecera_tabs_html?>
   </ul>
   <div class="row tab-content" id="pills-tabContent">

@@ -9,10 +9,10 @@
       <div class="offset-3 col-6">
         <div class="row text-center text-secondary">
           <?php if($seccion['texto_superior']): ?>
-            <div class="col-12 text-uppercase h5 mb-10"><?=$seccion['texto_superior']?></div>
+            <div class="col-12 text-uppercase fs-18 mb-10"><?=$seccion['texto_superior']?></div>
           <? endif; ?>
           <?php if($seccion['texto_principal']): ?>
-            <div class="col-12 h2 mb-40 fw-bold"><?=$seccion['texto_principal']?></div>
+            <div class="col-12 h3 mb-40"><?=$seccion['texto_principal']?></div>
           <? endif; ?>
           <?php if($seccion['descripcion']): ?>
             <div class="col-12"><?=$seccion['descripcion']?></div>

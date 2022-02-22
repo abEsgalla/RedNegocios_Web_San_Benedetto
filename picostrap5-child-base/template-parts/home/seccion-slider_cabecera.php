@@ -35,18 +35,18 @@ $fields = wp_parse_args( $args );
                     endif;
                     if($slide['texto_superior']):
                       ?>
-                        <div class="col-12 text-uppercase h5 mt-36"><?=$slide['texto_superior']?></div>
+                        <div class="col-12 fs-18 text-uppercase mt-36"><?=$slide['texto_superior']?></div>
                       <?
                     endif;
                     if($slide['texto_principal']):
                       ?>
-                        <div class="col-12 h2 fw-bold"><?=$slide['texto_principal']?></div>
+                        <div class="col-12 h1"><?=$slide['texto_principal']?></div>
                       <?
                     endif;
                     if($slide['texto_cta']):
                       ?>
                         <div class="col-12 mt-36">
-                          <div class="btn btn-primary text-uppercase text-white rounded-0">
+                          <div class="btn btn-primary text-uppercase text-white rounded-0 fs-13">
                             <?=$slide['texto_cta']?>
                           </div>
                         </div>

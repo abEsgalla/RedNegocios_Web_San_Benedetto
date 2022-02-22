@@ -10,13 +10,13 @@ get_header();
 ?>
 
 <section class="d-flex py-176 position-relative text-white">
-    <div class="top-0 position-absolute h-100 w-100 overflow-hidden bg-black">
-        <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'fix-banner' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <div class="top-0 position-absolute h-100 w-100 overflow-hidden bg-secondary">
+        <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'fix-banner opacity-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
     </div>
     <div class="container zi-99">
         <div class="row">
             <div class="col-12 text-center">
-                <div class="h1 fw-bold">NUESTRAS MARCAS</div>
+                <div class="h2">NUESTRAS MARCAS</div>
             </div>
         </div>
     <div>

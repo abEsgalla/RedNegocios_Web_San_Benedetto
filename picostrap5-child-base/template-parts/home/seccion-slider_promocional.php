@@ -14,18 +14,18 @@ foreach ($fields['slides'] as $slide):
         <div class='position-relative'>"
             .wp_get_attachment_image($slide['fondo'], 'full', '', array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider')).
         "</div>
-        <div class='container-fluid zi-99 top-0 position-absolute mt-256'>
+        <div class='container-fluid zi-99 top-0 position-absolute mt-192'>
             <div class='container'>
                 <div class='row'>
                     <div class='col-6'>
                         <div class='row'>
-                        <div class='col-12 text-uppercase h5'>".get_the_title($slide['producto'])."</div>
-                        <div class='col-12 h2 fw-bold'>".$slide['texto_principal']."</div>
+                        <div class='col-12 text-uppercase fs-18'>".get_the_title($slide['producto'])."</div>
+                        <div class='col-12 h4 mt-8'>".$slide['texto_principal']."</div>
                         <div class='col-12 mt-16'>
                             ".$slide['descripcion']."
                         </div>
                         <div class='col-12 mt-36'>
-                            <a href='".get_permalink(get_field('caracteristicas_producto',$slide['producto'])['relacion_page_landing'])."' class='btn btn-outline-secondary text-uppercase'>
+                            <a href='".get_permalink(get_field('caracteristicas_producto',$slide['producto'])['relacion_page_landing'])."' class='btn btn-outline-secondary text-uppercase rounded-0'>
                             ".$slide['texto_cta']."
                             </a>
                         </div>
@@ -54,7 +54,7 @@ endforeach;
                                     <?php
                                     foreach($categories_slider_html as $key => $categories_slider_html):
                                     ?>
-                                    <div onclick=swiper_home_promocional.slideTo(<?=$key+1?>) class="col c-pointer">
+                                    <div onclick=swiper_home_promocional.slideTo(<?=$key+1?>) class="col c-pointer fs-13">
                                         <?=$categories_slider_html?>
                                     </div>
                                     <?

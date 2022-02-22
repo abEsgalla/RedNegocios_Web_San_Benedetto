@@ -28,7 +28,7 @@
                   <div class="row">
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13">
-                        <div class="col-12 fw-bold h5">nosotros</div>
+                        <div class="col-12 h6">nosotros</div>
                         <div class="col-12 mt-24">historia</div>
                         <div class="col-12 mt-16">misión, visión y valores</div>
                         <div class="col-12 mt-16">San benedetto en españa</div>
@@ -38,19 +38,19 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
-                        <div class="col-12 fw-bold h5">marcas</div>
+                        <div class="col-12 h6">marcas</div>
                         <div class="col-12 mt-24">Agua mineral</div>
                         <div class="col-12 mt-16">Refrescos</div>
-                        <div class="col-12 mt-16 fw-bold h5 mt-auto">área profesional</div>
+                        <div class="col-12 mt-16 h6 mt-auto">área profesional</div>
                       </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
-                        <div class="col-12 fw-bold h5">ecolosofía</div>
+                        <div class="col-12 h6">ecolosofía</div>
                         <div class="col-12 mt-24">Producto</div>
                         <div class="col-12 mt-16">procesos</div>
                         <div class="col-12 mt-16">entorno</div>
-                        <div class="col-12 mt-16 fw-bold h5 mt-auto d-flex flex-wrap align-items-center">
+                        <div class="col-12 mt-16 h6 mt-auto d-flex flex-wrap align-items-center">
                           <span>Síguenos</span>
                           <span class="d-flex flex-wrap align-items-center mx-12">
                             <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="8" height="17" viewBox="0 0 8 17" fill="none">
@@ -75,7 +75,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13">
-                        <div class="col-12 fw-bold h5">Contacto</div>
+                        <div class="col-12 h6">Contacto</div>
                         <div class="col-12 mt-24">trabaja con nosotros</div>
                         <div class="col-12 mt-16">localización y contacto</div>
                         <div class="col-12 mt-16">preguntas frecuentes</div>

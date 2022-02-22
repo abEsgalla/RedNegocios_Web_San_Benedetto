@@ -18,7 +18,7 @@ foreach ($fields['productos'] as $id_producto):
     .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ).
     "</div>";
   endif;
-  $slider_html.="<div class='w-100 text-start mt-20 text-secondary text-uppercase'>"
+  $slider_html.="<div class='w-100 text-start mt-20 text-secondary text-uppercase fs-13'>"
   .get_the_title($id_producto)
   ."</div>
     </a>
@@ -32,18 +32,18 @@ endforeach;
   <?
   if($fields['texto_superior']):
   ?>
-    <div class="h5"><?=$fields['texto_superior']?></div>
+    <div class="fs-18"><?=$fields['texto_superior']?></div>
   <?
   endif;
   if($fields['texto_principal']):
   ?>
-    <div class="h2 fw-bold"><?=$fields['texto_principal']?></div>
+    <div class="h4"><?=$fields['texto_principal']?></div>
   <?
   endif;
   ?>
 </div>
 <div class="offset-8 col-4">
-  <div class="filtros_buscador row text-secondary text-center text-uppercase">
+  <div class="filtros_buscador row text-secondary text-center text-uppercase fs-13">
     <div class="col filtro_buscador active c-pointer" data-filter="*">
       Todos
     </div>
