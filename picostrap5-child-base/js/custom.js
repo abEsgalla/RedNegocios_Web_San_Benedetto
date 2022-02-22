@@ -8,7 +8,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  var myOffcanvas = document.getElementById('menu-marcas');
+  var myOffcanvas = document.getElementById('offcanvas-marcas');
   myOffcanvas.addEventListener('show.bs.offcanvas', function () {
     myOffcanvas.parentElement.classList.remove("h-0");
   })

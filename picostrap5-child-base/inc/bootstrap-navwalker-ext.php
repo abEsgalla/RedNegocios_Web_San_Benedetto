@@ -74,7 +74,21 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     $attributes .= ( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';
 
     $item_output = $args->before;
-    $item_output .= '<a' . $attributes . '>';
+
+    //PAGE MARCAS
+    if($item->object_id==49):
+      $search  = array('Á', 'É', 'Í', 'Ó', 'Ú', 'á', 'é', 'í', 'ó', 'ú', 'ñ', ' ');
+      $replace = array('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u', 'n', '-');
+      $custom_sanitize=str_replace($search, $replace, $item->title);
+      $custom_sanitize=strtolower($custom_sanitize);
+      $item_output .= '<a 
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvas-'.$custom_sanitize.'" 
+      href="#offcanvas-'.$custom_sanitize.'" role="button" aria-controls="offcanvas-'.$custom_sanitize.'" 
+      ' . $attributes . '>';
+    else:
+      $item_output .= '<a' . $attributes . '>';
+    endif;
+
     $item_output .= $args->link_before . apply_filters('the_title', $item->title, $item->ID) . $args->link_after;
     $item_output .= '</a>';
     $item_output .= $args->after;
