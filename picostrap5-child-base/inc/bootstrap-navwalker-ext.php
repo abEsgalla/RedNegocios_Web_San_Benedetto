@@ -23,6 +23,41 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     'dropdown-menu-xxl-end'
   ];
 
+  private $custom_classes;
+
+  public function __construct() {
+    $this->custom_classes = ' text-uppercase fs-13 ';
+    if ( is_main_query() ) {
+      if ( is_front_page() ) {
+        //var_dump('PAGINA INICIO');
+        $this->custom_classes .= ' text-white ';
+      }
+      if ( is_page() && !is_front_page()) {
+        //var_dump('PAGINA NORMAL');
+        $this->custom_classes .= ' text-white ';
+      }
+      if ( is_archive()  && !is_front_page()) {
+        //var_dump('PAGINA ARCHIVE');
+        $this->custom_classes .= ' text-secondary ';
+      }
+      if ( is_search()  && !is_front_page()) {
+        //var_dump('BUSCADOR');
+        $this->custom_classes .= 'text-white ';
+      }
+      if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()!='landing') {
+        //var_dump('POST SIMPLE');
+        $this->custom_classes .= ' text-secondary ';
+      }
+      if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()=='landing') {
+        $this->custom_classes .= ' text-secondary ';
+      }
+      if ( is_home() && !is_front_page()) {
+        //var_dump('PAGINA POSTS');
+        $this->custom_classes .= ' text-white ';
+      }
+    }
+  }
+
   function start_lvl(&$output, $depth = 0, $args = null)
   {
     $dropdown_menu_class[] = '';
@@ -68,12 +103,9 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     $attributes .= !empty($item->xfn) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
     $attributes .= !empty($item->url) ? ' href="' . esc_attr($item->url) . '"' : '';
 
-    $custom_classes = ' text-uppercase fs-13 ';
-    $custom_classes .= (is_home())? ' text-secondary ' : '';
-
     $active_class = ($item->current || $item->current_item_ancestor || in_array("current_page_parent", $item->classes, true) || in_array("current-post-ancestor", $item->classes, true)) ? 'active' : '';
     $nav_link_class = ( $depth > 0 ) ? 'dropdown-item ' : 'nav-link '; //patch #2 is the row below
-    $nav_link_class .= $custom_classes;
+    $nav_link_class .= $this->custom_classes;
     //$attributes.=( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';
     $attributes .= ( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';
 

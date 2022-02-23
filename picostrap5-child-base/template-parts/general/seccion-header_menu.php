@@ -112,7 +112,7 @@ endif;
 ?>
 
 <div class="position-relative h-0">
-    <div class="h-auto offcanvas offcanvas-top position-sticky bg-white" 
+    <div class="h-auto offcanvas offcanvas-top position-sticky bg-white shadow" 
     data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas-marcas" aria-labelledby="offcanvas-marcas">
         <div class="container">
             <div class="row py-56">

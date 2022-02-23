@@ -37,13 +37,49 @@ defined( 'ABSPATH' ) || exit;
         <!-- ******************* The Navbar Area ******************* -->
         <?php
         $custom_classes = '';
-        $custom_classes .= (is_home()) ? 'bg-white shadow ' : '' ;
+        if ( is_main_query() ) {
+            if ( is_front_page() ) {
+              //var_dump('PAGINA INICIO');
+              $custom_classes .= ' ';
+              $logo = 20;
+            }
+            if ( is_page() && !is_front_page()) {
+              //var_dump('PAGINA NORMAL');
+              $custom_classes .= ' ';
+              $logo = 20;
+            }
+            if ( is_archive()  && !is_front_page()) {
+              //var_dump('PAGINA ARCHIVE');
+              $custom_classes .= ' bg-white ';
+              $logo = 637;
+            }
+            if ( is_search()  && !is_front_page()) {
+              //var_dump('BUSCADOR');
+              $custom_classes .= ' ';
+              $logo = 20;
+            }
+            if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()!='landing') {
+              //var_dump('POST SIMPLE');
+              $custom_classes .= ' bg-white ';
+              $logo = 637;
+            }
+            if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()=='landing') {
+              //var_dump('LANDING');
+              $custom_classes .= ' bg-white ';
+              $logo = 637;
+            }
+            if ( is_home() && !is_front_page()) {
+              //var_dump('PAGINA POSTS');
+              $custom_classes .= ' bg-primary ';
+              $logo = 20;
+            }
+        }
         ?>
-        <div class="fixed-top <?=$custom_classes?>" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+        <div class="fixed-top" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
           <a class="skip-link visually-hidden-focusable" href="#theme-main"><?php esc_html_e( 'Skip to content', 'picostrap' ); ?></a>
 
-          <nav class="<?=(get_post_type()=="landing")?'bg-primary':'';?> zi-1050 navbar <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','navbar-dark').' '. get_theme_mod('picostrap_header_navbar_color_choice','bg-dark'); ?>" aria-label="Main Navigation" >
+          <nav class="zi-1050 shadow navbar <?=$custom_classes?> <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','navbar-dark').' '. get_theme_mod('picostrap_header_navbar_color_choice','bg-dark'); ?>" aria-label="Main Navigation" >
             <div class="container">
               <div id="logo-tagline-wrap">
                   <!-- Your site title as branding in the menu -->
@@ -61,19 +97,11 @@ defined( 'ABSPATH' ) || exit;
 
 
                   <?php } else {
-                    if(is_home()):
                       ?>
                       <a href="<?=get_home_url()?>" class="custom-logo-link" rel="home" aria-current="page">
-                        <?=wp_get_attachment_image(637, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                        <?=wp_get_attachment_image($logo, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
                       </a>
                       <?
-                    else:
-                      ?>
-                      <a href="<?=get_home_url()?>" class="custom-logo-link" rel="home" aria-current="page">
-                        <?=wp_get_attachment_image(20, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-                      </a>
-                      <?
-                    endif;
                   } ?><!-- end custom logo -->
 
                 
