@@ -21,11 +21,11 @@ get_header();
             <div class="col-12 text-uppercase">
               ecolosofía
             </div>
-            <h1 class="col-12 mt-16 fs-64 fw-bold text-primary">
+            <h1 class="col-12 mt-16 h1 text-green">
               Procesos
             </h1>
             <div class="col-12 mt-40">
-              <?=wp_get_attachment_image(614, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+              <?=wp_get_attachment_image(635, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
             </div>
           </div>
         </div>
@@ -37,9 +37,9 @@ get_header();
 <section class="my-96">
   <div class="container text-secondary">
     <div class="row">
-      <div class="g-0 col-12 h1">
+      <div class="g-0 col-12">
         <div class="row">
-          <div class="offset-2 col-8 text-center">
+          <div class="offset-2 col-8 text-center h2">
           Medición de indicadores estratégicos
           </div>
         </div>
@@ -50,21 +50,17 @@ get_header();
             <div class="row">
               <div class="offset-2 col-8">
                 <div class="row">
-                  <div class="col-12 h2">
+                  <div class="col-12 h3">
                     Huella de Carbono 
                   </div>
                   <div class="col-12 mt-30">
-                    En Agua Mineral San Benedetto somos especialistas en ecodiseño. 
-                    Ecodiseñar es considerar la variable ambiental en el proceso de diseño y desarrollo de un producto.  
-                    Llevamos una reducción media de más del 20% del gramaje de PET en nuestros envases desde 2008, 
-                    lo que nos ha llevado a ser el fabricante de envases más ligeros del mercado de agua mineral. 
-                    Además, empleamos PET y polietileno incoloros en la inmensa mayoría de nuestros envases para facilitar 
-                    su posterior reciclaje, ya que las botellas de otros colores se descartan en las plantas de reciclaje 
-                    y se destinan a otros usos. En la medida de lo posible, también utilizamos etiquetas de papel. 
-                    Por todo ello, ¡todos nuestros envases son 100% reciclables! 
-                    También diseñamos nuestros envases pensando en su optimización logística. 
-                    Por esa razón, la forma de algunas de nuestras botellas más representativas es cuadrada: de esta manera, 
-                    ¡evitamos huecos de aire innecesarios y podemos transportar más botellas por palé
+                  En Agua Mineral San Benedetto creemos que, para poder reducir nuestra huella ambiental, 
+                  primero hemos de ser capaces de cuantificarla. Y es que todo lo que se puede medir, 
+                  se puede mejorar. ¿Cómo lo hacemos? <br></br>
+                  Nosotros usamos un sistema de cálculo ofrecido por el software SIMAPRO, 
+                  certificado con estándares internacionales reconocidos como el GHG Protocol o la Norma ISO 14064. 
+                  Sólo de esta manera podemos responder en consecuencia con soluciones que reduzcan de forma efectiva, 
+                  cuantificable y medible nuestro impacto medioambiental. 
                   </div>
                 </div>
               </div>
@@ -84,18 +80,18 @@ get_header();
             <div class="row">
               <div class="offset-2 col-8">
                 <div class="row">
-                  <div class="col-12 h2">
+                  <div class="col-12 h3">
                     Smart Water 4.0 
                   </div>
                   <div class="col-12 mt-30">
                     En 2019 incorporamos a nuestro proceso productivo un sistema de gestión inteligente 
                     de los recursos hídricos que nos permite obtener y disponer datos en tiempo real. 
-                    Este proyecto innovador fue seleccionado por El Observatorio de Innovación en Gran Consumo en el mismo año.  
+                    Este proyecto innovador fue seleccionado por El Observatorio de Innovación en Gran Consumo en el mismo año.<br></br>  
                     Se trata de una aplicación que, mediante la tecnología 4.0 y el IoT (“Internet de las Cosas”), 
                     conecta los pozos de agua y monitoriza las lecturas de los manantiales en remoto. 
                     El control de las métricas ―caudal, características bioquímicas del agua, lecturas microbiológicas― 
                     es inmediato y preciso, por lo que se facilita la gestión de los 
-                    datos tratados a lo largo de todo el proceso productivo.   
+                    datos tratados a lo largo de todo el proceso productivo.<br></br>
                     Gracias a ello, evitamos los desplazamientos físicos hasta los manantiales para la toma de datos, 
                     disminuyendo el impacto ambiental de los vehículos utilizados y el desperdicio de los recursos hídricos.
                   </div>
@@ -122,7 +118,7 @@ get_header();
               <div class="col-12 ratio-1x1">
                 <?=wp_get_attachment_image(628, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
               </div>
-              <div class="col-12 mt-48 h2">
+              <div class="col-12 mt-48 h4">
                 Vertido Cero 
               </div>
               <div class="col-12 mt-24">
@@ -139,7 +135,7 @@ get_header();
               <div class="col-12 ratio-1x1">
                 <?=wp_get_attachment_image(629, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
               </div>
-              <div class="col-12 mt-48 h2">
+              <div class="col-12 mt-48 h4">
                 Producción con energías 100% renovables 
               </div>
               <div class="col-12 mt-24">
@@ -153,7 +149,7 @@ get_header();
               <div class="col-12 ratio-1x1">
                 <?=wp_get_attachment_image(627, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
               </div>
-              <div class="col-12 mt-48 h2">
+              <div class="col-12 mt-48 h4">
                 Residuos industriales 
               </div>
               <div class="col-12 mt-24">

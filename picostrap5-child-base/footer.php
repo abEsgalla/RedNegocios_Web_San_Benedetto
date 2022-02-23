@@ -22,34 +22,80 @@
 						<footer class="site-footer py-48 text-white" id="colophon">
               <div class="row">
                 <div class="col-12">
-                  <?=wp_get_attachment_image(40, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                  <a class="text-reset text-decoration-none" href="<?=get_home_url()?>">
+                    <?=wp_get_attachment_image(40, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                  </a>
                 </div>
                 <div class="col-12 mt-40 text-uppercase">
                   <div class="row">
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13">
                         <div class="col-12 h6">nosotros</div>
-                        <div class="col-12 mt-24">historia</div>
-                        <div class="col-12 mt-16">misión, visión y valores</div>
-                        <div class="col-12 mt-16">San benedetto en españa</div>
-                        <div class="col-12 mt-16">San benedetto en el mundo</div>
-                        <div class="col-12 mt-16">noticias</div>
+                        <div class="col-12 mt-24">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(579)?>">
+                            historia
+                          </a>
+                        </div>
+                        <div class="col-12 mt-16">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(581)?>">
+                            misión, visión y valores
+                          </a>
+                        </div>
+                        <div class="col-12 mt-16">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(579)?>">
+                            San benedetto en españa
+                          </a>
+                        </div>
+                        <div class="col-12 mt-16">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(579)?>">
+                            San benedetto en el mundo
+                          </a>
+                        </div>
+                        <div class="col-12 mt-16">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink( get_option( 'page_for_posts' ) ); ?>">
+                           noticias
+                          </a>
+                        </div>
                       </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
                         <div class="col-12 h6">marcas</div>
-                        <div class="col-12 mt-24">Agua mineral</div>
-                        <div class="col-12 mt-16">Refrescos</div>
+                        <div class="col-12 mt-24">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(49)?>">
+                            Agua mineral
+                          </a>
+                        </div>
+                        <div class="col-12 mt-16">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(49)?>">
+                            Refrescos
+                          </a>
+                        </div>
                         <div class="col-12 mt-16 h6 mt-auto">área profesional</div>
                       </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
-                        <div class="col-12 h6">ecolosofía</div>
-                        <div class="col-12 mt-24">Producto</div>
-                        <div class="col-12 mt-16">procesos</div>
-                        <div class="col-12 mt-16">entorno</div>
+                        <div class="col-12 h6">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(583)?>">
+                            ecolosofía
+                          </a>
+                        </div>
+                        <div class="col-12 mt-24">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(585)?>">
+                            Producto
+                          </a>
+                        </div>
+                        <div class="col-12 mt-16">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(587)?>">
+                            procesos
+                          </a>
+                        </div>
+                        <div class="col-12 mt-16">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(589)?>">
+                            entorno
+                          </a>
+                        </div>
                         <div class="col-12 mt-16 h6 mt-auto d-flex flex-wrap align-items-center">
                           <span>Síguenos</span>
                           <span class="d-flex flex-wrap align-items-center mx-12">

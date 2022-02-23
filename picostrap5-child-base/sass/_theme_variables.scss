@@ -65,6 +65,7 @@ $spacers: (
   160: ($spacer * 10), // 160px
   176: ($spacer * 11), // 176px
   192: ($spacer * 12), // 192px
+  218: ($spacer * 13.625), // 218px
   256: ($spacer * 16), // 256px
 ) !default;
 
@@ -126,6 +127,7 @@ $secondary-brighter : #CCD5E3 !default;
 $white : #ffffff;
 $black : #000000;
 $green : #6DD400;
+$grey : #C4C4C4;
 
 $theme-colors: (
   "primary"         : $primary,
@@ -145,7 +147,8 @@ $theme-colors: (
   "secondary-brighter" : $secondary-brighter,
   "white" : $white,
   "black" : $black,
-  "green" : $green
+  "green" : $green,
+  "grey" : $grey
 );
 
 //BTN PADDING CUSTOM

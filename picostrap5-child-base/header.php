@@ -35,11 +35,14 @@ defined( 'ABSPATH' ) || exit;
         
 
         <!-- ******************* The Navbar Area ******************* -->
-        <div class="fixed-top" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+        <?php
+        $custom_classes = '';
+        $custom_classes .= (is_home()) ? 'bg-white shadow ' : '' ;
+        ?>
+        <div class="fixed-top <?=$custom_classes?>" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
           <a class="skip-link visually-hidden-focusable" href="#theme-main"><?php esc_html_e( 'Skip to content', 'picostrap' ); ?></a>
 
-          
           <nav class="<?=(get_post_type()=="landing")?'bg-primary':'';?> zi-1050 navbar <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','navbar-dark').' '. get_theme_mod('picostrap_header_navbar_color_choice','bg-dark'); ?>" aria-label="Main Navigation" >
             <div class="container">
               <div id="logo-tagline-wrap">
@@ -58,7 +61,19 @@ defined( 'ABSPATH' ) || exit;
 
 
                   <?php } else {
-                    the_custom_logo();
+                    if(is_home()):
+                      ?>
+                      <a href="<?=get_home_url()?>" class="custom-logo-link" rel="home" aria-current="page">
+                        <?=wp_get_attachment_image(637, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                      </a>
+                      <?
+                    else:
+                      ?>
+                      <a href="<?=get_home_url()?>" class="custom-logo-link" rel="home" aria-current="page">
+                        <?=wp_get_attachment_image(20, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                      </a>
+                      <?
+                    endif;
                   } ?><!-- end custom logo -->
 
                 

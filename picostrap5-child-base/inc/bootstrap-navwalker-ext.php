@@ -56,7 +56,7 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     }
 
     $class_names =  join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
-    $class_names = ' class="' . esc_attr($class_names) . '"';
+    $class_names = ' class="'. esc_attr($class_names) . '"';
 
     $id = apply_filters('nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args);
     $id = strlen($id) ? ' id="' . esc_attr($id) . '"' : '';
@@ -68,9 +68,13 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     $attributes .= !empty($item->xfn) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
     $attributes .= !empty($item->url) ? ' href="' . esc_attr($item->url) . '"' : '';
 
+    $custom_classes = ' text-uppercase fs-13 ';
+    $custom_classes .= (is_home())? ' text-secondary ' : '';
+
     $active_class = ($item->current || $item->current_item_ancestor || in_array("current_page_parent", $item->classes, true) || in_array("current-post-ancestor", $item->classes, true)) ? 'active' : '';
     $nav_link_class = ( $depth > 0 ) ? 'dropdown-item ' : 'nav-link '; //patch #2 is the row below
-	//$attributes.=( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';
+    $nav_link_class .= $custom_classes;
+    //$attributes.=( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';
     $attributes .= ( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';
 
     $item_output = $args->before;
@@ -81,7 +85,7 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
       $replace = array('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u', 'n', '-');
       $custom_sanitize=str_replace($search, $replace, $item->title);
       $custom_sanitize=strtolower($custom_sanitize);
-      $item_output .= '<a 
+      $item_output .= '<a
       data-bs-toggle="offcanvas" data-bs-target="#offcanvas-'.$custom_sanitize.'" 
       href="#offcanvas-'.$custom_sanitize.'" role="button" aria-controls="offcanvas-'.$custom_sanitize.'" 
       ' . $attributes . '>';

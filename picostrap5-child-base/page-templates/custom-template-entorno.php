@@ -11,7 +11,7 @@ get_header();
 
 <section>
   <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(623, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(630, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
   </div>
   <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
     <div class="container">
@@ -21,11 +21,11 @@ get_header();
             <div class="col-12 text-uppercase">
               ecolosofía
             </div>
-            <h1 class="col-12 mt-16 fs-64 fw-bold text-primary">
+            <h1 class="col-12 mt-16 h1 text-green">
               Entorno
             </h1>
             <div class="col-12 mt-40">
-              <?=wp_get_attachment_image(614, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+              <?=wp_get_attachment_image(636, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ get_header();
     <div class="row">
       <div class="col-12">
         <div class="row">
-          <div class="offset-2 col-8 text-center h1">
+          <div class="offset-2 col-8 text-center h2">
             Medición de indicadores estratégicos
           </div>
           <div class="offset-2 col-8 text-center mt-80">
@@ -47,7 +47,7 @@ get_header();
             puede ser neutralizada con la reducción o eliminación de la misma cantidad de CO2 en otro punto del planeta.
             Gracias a que medimos nuestra huella de carbono, 
             ¡podemos afirmar que compensamos el 100% de las emisiones de algunos de nuestros productos! 
-            ¿Cómo? Invirtiendo en proyectos forestales sostenibles. 
+            ¿Cómo? Invirtiendo en proyectos forestales sostenibles. <br></br>
             Descubre más sobre ellos aquí:  
           </div>
           <div class="col-12 mt-56">
@@ -55,9 +55,9 @@ get_header();
               <div class="col-4">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
-                    <span class="rounded-circle border border-1 border-black p-80"></span>
+                    <span class="rounded-circle border border-1 p-80 border-grey bg-grey"></span>
                   </div>
-                  <div class="col-12 mt-24">
+                  <div class="col-12 mt-24 fs-20 fw-bold">
                     Nyagatare (Ruanda) 
                   </div>
                 </div>
@@ -65,9 +65,9 @@ get_header();
               <div class="col-4">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
-                    <span class="rounded-circle border border-1 border-black p-80"></span>
+                    <span class="rounded-circle border border-1 p-80 border-grey bg-grey"></span>
                   </div>
-                  <div class="col-12 mt-24">
+                  <div class="col-12 mt-24 fs-20 fw-bold">
                     Castañeros REDD+ (Perú) 
                   </div>
                 </div>
@@ -75,9 +75,9 @@ get_header();
               <div class="col-4">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
-                    <span class="rounded-circle border border-1 border-black p-80"></span>
+                    <span class="rounded-circle border border-1 p-80 border-grey bg-grey"></span>
                   </div>
-                  <div class="col-12 mt-24">
+                  <div class="col-12 mt-24 fs-20 fw-bold">
                     Ecomapuá REDD+ (Brasil)  
                   </div>
                 </div>
@@ -93,13 +93,13 @@ get_header();
 <section class="my-96">
   <div class="container text-secondary">
     <div class="row">
-      <div class="col-12 mt-64">
+      <div class="col-12">
         <div class="row">
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
               <div class="offset-2 col-8">
                 <div class="row">
-                  <div class="col-12 h2">
+                  <div class="col-12 h3">
                     Logística 
                   </div>
                   <div class="col-12 mt-30">
@@ -111,27 +111,43 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="g-0 col-12 col-sm-6 d-block">
-            <?=wp_get_attachment_image(631, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+          <div class="g-0 col-12 col-sm-6 d-block position-relative">
+            <?=wp_get_attachment_image(631, "full", "", array( 'class' => 'position-absolute' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
           </div>
         </div>
       </div>
-      <div class="col-12 mt-64">
+    </div>
+  </div>
+</section>
+
+<section class="py-218 bg-primary-brighter">
+  <div class="container text-secondary">
+    <div class="row">
+      <div class="col-12">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="my-96">
+  <div class="container text-secondary">
+    <div class="row">
+      <div class="col-12">
         <div class="row">
-          <div class="g-0 col-12 col-sm-6 d-block">
-            <?=wp_get_attachment_image(632, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+          <div class="g-0 col-12 col-sm-6 d-block position-relative">
+            <?=wp_get_attachment_image(632, "full", "", array( 'class' => 'position-absolute bottom-0' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
           </div>
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
               <div class="offset-2 col-8">
                 <div class="row">
-                  <div class="col-12 h2">
+                  <div class="col-12 h3">
                     Limpieza y reforestación del entorno  
                   </div>
                   <div class="col-12 mt-30">
                     Llevamos varios años organizando plantaciones de árboles en los alrededores de nuestras instalaciones, 
                     eligiendo árboles y vegetación autóctona del Parque Natural de las Hoces del Cabriel. 
-                    En total, calculamos que hemos repoblado más de 1.000 plantas en los últimos cinco años. 
+                    En total, calculamos que hemos repoblado más de 1.000 plantas en los últimos cinco años. <br></br>
                     También realizamos tareas de limpieza en nuestro entorno para fomentar la lucha contra el littering 
                     ―abandono de residuos― y la limpieza de espacios protegidos. 
                   </div>
