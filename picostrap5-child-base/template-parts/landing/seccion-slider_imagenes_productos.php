@@ -7,7 +7,7 @@
   <div class="container position-relative">
     <div class="row">
       <div class="col-12">
-        <div class="row text-center text-secondary text-uppercase">
+        <div class="row text-center text-secondary text-uppercase fw-bolder">
           <div class="col-12 fs-18">
             <?=$seccion['slider']['texto_superior']?>
           </div>
