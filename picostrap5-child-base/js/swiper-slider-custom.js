@@ -11,7 +11,17 @@ const swiper_home = new Swiper('.swiper-home', {
     992: {
       slidesPerView: 1
     }
-  }
+  },
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
 });
 
 const swiper_home_dedicado = new Swiper('.swiper-home-dedicado', {
