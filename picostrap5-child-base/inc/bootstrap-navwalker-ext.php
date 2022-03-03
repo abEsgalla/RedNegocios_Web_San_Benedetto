@@ -112,7 +112,7 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     $item_output = $args->before;
 
     //PAGE MARCAS
-    if($item->object_id==49):
+    if($item->object_id==49 || $item->object_id==684):
       $search  = array('Á', 'É', 'Í', 'Ó', 'Ú', 'á', 'é', 'í', 'ó', 'ú', 'ñ', ' ');
       $replace = array('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u', 'n', '-');
       $custom_sanitize=str_replace($search, $replace, $item->title);
