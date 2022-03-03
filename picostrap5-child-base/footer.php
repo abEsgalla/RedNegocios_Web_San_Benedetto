@@ -42,12 +42,12 @@
                           </a>
                         </div>
                         <div class="col-12 mt-16">
-                          <a class="text-reset text-decoration-none" href="<?=get_permalink(579)?>">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(655)?>">
                             San benedetto en españa
                           </a>
                         </div>
                         <div class="col-12 mt-16">
-                          <a class="text-reset text-decoration-none" href="<?=get_permalink(579)?>">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(667)?>">
                             San benedetto en el mundo
                           </a>
                         </div>
@@ -71,7 +71,11 @@
                             Refrescos
                           </a>
                         </div>
-                        <div class="col-12 mt-16 h6 mt-auto">área profesional</div>
+                        <div class="col-12 mt-16 h6 mt-auto">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(647)?>">
+                            área profesional
+                          </a>
+                        </div>
                       </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
@@ -121,9 +125,21 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13">
-                        <div class="col-12 h6">Contacto</div>
-                        <div class="col-12 mt-24">trabaja con nosotros</div>
-                        <div class="col-12 mt-16">localización y contacto</div>
+                        <div class="col-12 h6">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
+                            Contacto
+                          </a>
+                        </div>
+                        <div class="col-12 mt-24">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(672)?>">
+                            trabaja con nosotros
+                          </a>
+                        </div>
+                        <div class="col-12 mt-16">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
+                            localización y contacto
+                          </a>
+                        </div>
                         <div class="col-12 mt-16">preguntas frecuentes</div>
                       </div>
                     </div>
