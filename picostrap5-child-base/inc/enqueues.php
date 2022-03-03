@@ -11,6 +11,11 @@ function esgalla_scripts() {
 	wp_enqueue_script( 'swiper-slider-js', get_stylesheet_directory_uri() . '/js/swiper-bundle.min.js', array(), false, true );
 	wp_enqueue_script( 'swiper-slider-custom-js', get_stylesheet_directory_uri() . '/js/swiper-slider-custom.js', array('swiper-slider-js'), false, true );
 
+	// Animate Scroll
+	wp_enqueue_style( 'animate-scroll-css', get_stylesheet_directory_uri() . '/css-output/animate-scroll.min.css', array('picostrap-styles'), time());
+	wp_enqueue_script( 'animate-scroll-js', get_stylesheet_directory_uri() . '/js/animate-scroll.min.js', array(), false, true );
+	wp_enqueue_script( 'animate-scroll-custom-js', get_stylesheet_directory_uri() . '/js/animate-scroll-custom.js', array('animate-scroll-js'), false, true );
+
 	// Filtro Tabs JS
 	wp_enqueue_script( 'filtros-search-js', get_stylesheet_directory_uri() . '/js/filtros-search.js', array(), false, true );
 
