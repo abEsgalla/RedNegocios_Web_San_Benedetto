@@ -79,10 +79,11 @@ const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
   direction: 'horizontal',
   autoHeight : true,
   loop: true,
-  spaceBetween: 12,
-  breakpoints: {
+  slidesPerView: 'auto',
+  //spaceBetween: 12,
+  /*breakpoints: {
     992: {
       slidesPerView: 7,
     }
-  }
+  }*/
 });

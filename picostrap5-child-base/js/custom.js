@@ -8,12 +8,19 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  var myOffcanvas = document.getElementById('offcanvas-marcas');
-  myOffcanvas.addEventListener('show.bs.offcanvas', function () {
-    myOffcanvas.parentElement.classList.remove("h-0");
+  var menuOffcanvas = document.getElementById('offcanvas-marcas');
+  menuOffcanvas.addEventListener('show.bs.offcanvas', function () {
+    menuOffcanvas.parentElement.classList.remove("h-0");
   })
-  myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
-    myOffcanvas.parentElement.classList.add("h-0");
+  menuOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
+    menuOffcanvas.parentElement.classList.add("h-0");
+  })
+
+  var sliderProductosOffcanvas = document.getElementById('offcanvasInfoSliderProductos');
+  sliderProductosOffcanvas.addEventListener('show.bs.offcanvas', function (custom_event) {
+    sliderProductosOffcanvas.querySelector(".image").innerHTML = "<img src='"+custom_event.relatedTarget.dataset.image+"'>";
+    sliderProductosOffcanvas.querySelector(".name").innerHTML = custom_event.relatedTarget.dataset.name;
+    sliderProductosOffcanvas.querySelector(".description").innerHTML = custom_event.relatedTarget.dataset.description;
   })
 
 });
