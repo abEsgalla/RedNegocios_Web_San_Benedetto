@@ -58,6 +58,28 @@ get_header();
   </div>
 </section>
 
+
+<section>
+  <div class="container-fluid">
+    <div class="row offset-2 position-relative">
+      <?=wp_get_attachment_image(689, "full", "", array( 'class' => 'p-0 m-0 w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+      <div class="position-absolute w-auto icon-map-1">
+        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+      </div>
+      <div class="position-absolute w-auto icon-map-2">
+        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+      </div>
+      <div class="position-absolute w-auto icon-map-3">
+        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+      </div>
+      <div class="position-absolute w-auto icon-map-4">
+        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="my-96">
   <div class="container">
     <div class="row">
