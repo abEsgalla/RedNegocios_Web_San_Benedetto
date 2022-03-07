@@ -33,7 +33,7 @@ if($fields["elemento_grid"]):
           if($single_grid['fondo']):
           ?>
             <div class="position-relative">
-              <?=wp_get_attachment_image($single_grid['fondo'], "full", "", array( 'class' => 'ratio ratio-16x9' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+              <?=wp_get_attachment_image($single_grid['fondo'], "full", "", array( 'class' => 'ratio ratio-16x9' , 'alt' => '' , 'title' => '') ); ?>
             </div>
           <?
           else:

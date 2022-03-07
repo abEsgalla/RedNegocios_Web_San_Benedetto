@@ -11,7 +11,7 @@ get_header();
 
 <section>
   <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(630, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(630, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
     <div class="container">
@@ -25,7 +25,7 @@ get_header();
               Entorno
             </h1>
             <div class="col-12 mt-40">
-              <?=wp_get_attachment_image(636, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+              <?=wp_get_attachment_image(636, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@ get_header();
             </div>
           </div>
           <div class="g-0 col-12 col-sm-6 d-block position-relative">
-            <?=wp_get_attachment_image(631, "full", "", array( 'class' => 'position-absolute' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(631, "full", "", array( 'class' => 'position-absolute' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ get_header();
       <div class="col-12">
         <div class="row">
           <div class="g-0 col-12 col-sm-6 d-block position-relative">
-            <?=wp_get_attachment_image(632, "full", "", array( 'class' => 'position-absolute bottom-0' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(632, "full", "", array( 'class' => 'position-absolute bottom-0' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">

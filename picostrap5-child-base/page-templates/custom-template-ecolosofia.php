@@ -12,7 +12,7 @@ get_header();
 
 <section class="position-absolute top-0">
   <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(613, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(613, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
     <div class="container">
@@ -26,7 +26,7 @@ get_header();
               Ecolosofía
             </h1>
             <div class="col-12 mt-40">
-              <?=wp_get_attachment_image(614, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+              <?=wp_get_attachment_image(614, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
             </div>
           </div>
         </div>
@@ -139,7 +139,7 @@ get_header();
                           RSC 
                         </div>
                         <div class="col-12 text-end">
-                          <?=wp_get_attachment_image(617, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                          <?=wp_get_attachment_image(617, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                         </div>
                       </div>
                     </div>
@@ -151,14 +151,14 @@ get_header();
           <div style="" class="g-0 col-12 col-sm-6 d-block bg-black">
             <div class="row position-relative h-100">
               <div class="position-relative">
-                <?=wp_get_attachment_image(615, "full", "", array( 'class' => 'w-100 opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(615, "full", "", array( 'class' => 'w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>
           <div style="" class="g-0 col-12 col-sm-6 d-block bg-black">
             <div class="row position-relative h-100">
               <div class="position-relative">
-                <?=wp_get_attachment_image(616, "full", "", array( 'class' => 'w-100 opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(616, "full", "", array( 'class' => 'w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>

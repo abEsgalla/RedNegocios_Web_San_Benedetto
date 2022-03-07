@@ -11,7 +11,7 @@ get_header();
 
 <section class="">
   <div class="position-relative">
-    <?=wp_get_attachment_image(653, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(653, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
   </div>
 </section>
 
@@ -45,10 +45,10 @@ get_header();
             </div>
           </div>
           <div class="col-6 g-0">
-            <?=wp_get_attachment_image(663, "full", "", array( 'class' => 'w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(663, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 g-0">
-            <?=wp_get_attachment_image(664, "full", "", array( 'class' => 'w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(664, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 d-flex align-items-center">
             <div class="row">
@@ -78,7 +78,7 @@ get_header();
 
 <section class="my-96 d-flex position-relative">
   <div class="bg-secondary">
-    <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'opacity-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 top-50 position-absolute translate-middle-y">
     <div class="container">

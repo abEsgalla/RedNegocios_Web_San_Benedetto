@@ -99,7 +99,7 @@ defined( 'ABSPATH' ) || exit;
                   <?php } else {
                       ?>
                       <a href="<?=get_home_url()?>" class="custom-logo-link" rel="home" aria-current="page">
-                        <?=wp_get_attachment_image($logo, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                        <?=wp_get_attachment_image($logo, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                       </a>
                       <?
                   } ?><!-- end custom logo -->

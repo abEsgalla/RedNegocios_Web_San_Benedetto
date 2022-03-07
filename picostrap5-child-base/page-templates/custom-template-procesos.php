@@ -11,7 +11,7 @@ get_header();
 
 <section>
   <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(623, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(623, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
     <div class="container">
@@ -25,7 +25,7 @@ get_header();
               Procesos
             </h1>
             <div class="col-12 mt-40">
-              <?=wp_get_attachment_image(635, "full", "", array( 'class' => 'opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+              <?=wp_get_attachment_image(635, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
             </div>
           </div>
         </div>
@@ -67,14 +67,14 @@ get_header();
             </div>
           </div>
           <div class="g-0 col-12 col-sm-6 d-block">
-            <?=wp_get_attachment_image(624, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(624, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div>
       </div>
       <div class="col-12 mt-64">
         <div class="row">
           <div class="g-0 col-12 col-sm-6 d-block">
-            <?=wp_get_attachment_image(625, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(625, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
@@ -116,7 +116,7 @@ get_header();
           <div class="col-4">
             <div class="row">
               <div class="col-12 ratio-1x1">
-                <?=wp_get_attachment_image(628, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(628, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12 mt-48 h4">
                 Vertido Cero 
@@ -133,7 +133,7 @@ get_header();
           <div class="col-4">
             <div class="row">
               <div class="col-12 ratio-1x1">
-                <?=wp_get_attachment_image(629, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(629, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12 mt-48 h4">
                 Producción con energías 100% renovables 
@@ -147,7 +147,7 @@ get_header();
           <div class="col-4">
             <div class="row">
               <div class="col-12 ratio-1x1">
-                <?=wp_get_attachment_image(627, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(627, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12 mt-48 h4">
                 Residuos industriales 

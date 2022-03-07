@@ -23,7 +23,7 @@
               <div class="row">
                 <div class="col-12">
                   <a class="text-reset text-decoration-none" href="<?=get_home_url()?>">
-                    <?=wp_get_attachment_image(40, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                    <?=wp_get_attachment_image(40, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </a>
                 </div>
                 <div class="col-12 mt-40 text-uppercase">

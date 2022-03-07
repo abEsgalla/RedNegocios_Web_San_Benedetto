@@ -11,7 +11,7 @@ get_header();
 
 <section class="position-absolute top-0">
   <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(657, "full", "", array( 'class' => 'opacity-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(657, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 top-25 position-absolute">
     <div class="container">
@@ -59,7 +59,7 @@ get_header();
       <div class="col-12"> 
         <div class="row">
           <div class="col-6 g-0 position-relative">
-            <?=wp_get_attachment_image(658, "full", "", array( 'class' => 'w-100 position-absolute' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(658, "full", "", array( 'class' => 'w-100 position-absolute' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 py-56">
             <div class="row">
@@ -99,7 +99,7 @@ get_header();
             </div>
           </div>
           <div class="col-6 g-0 position-relative">
-            <?=wp_get_attachment_image(659, "full", "", array( 'class' => 'w-100 position-absolute bottom-0' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(659, "full", "", array( 'class' => 'w-100 position-absolute bottom-0' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div> 
       </div>
@@ -178,7 +178,7 @@ get_header();
   <div class="container text-center">
     <div class="row">
       <div class="col-12">
-        <?=wp_get_attachment_image(660, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+        <?=wp_get_attachment_image(660, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>
   </div>
@@ -213,7 +213,7 @@ get_header();
           <div class="offset-1 col-10">
             <div class="row">
               <div class="col-6">
-                <?=wp_get_attachment_image(661, "full", "", array( 'class' => 'w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(661, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-6">
                 <div class="row h-100 flex-column  justify-content-between">
@@ -223,7 +223,7 @@ get_header();
                     lleno de magia y belleza salvajes. 
                   </div>
                   <div class="col-12">
-                    <?=wp_get_attachment_image(662, "full", "", array( 'class' => 'w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                    <?=wp_get_attachment_image(662, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>

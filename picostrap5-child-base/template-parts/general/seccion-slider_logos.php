@@ -9,7 +9,7 @@
     ?>
       <div class="swiper-slide d-flex justify-content-center align-items-center h-100">
         <div class="">
-          <?=wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+          <?=wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
         </div>
       </div>
     <?

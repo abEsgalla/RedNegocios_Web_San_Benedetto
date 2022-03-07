@@ -72,7 +72,7 @@ if ( have_posts() ) :
 
 <section class="d-flex position-relative">
   <div class="bg-secondary">
-    <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'opacity-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 position-absolute top-50 translate-middle-y">
     <div class="container">

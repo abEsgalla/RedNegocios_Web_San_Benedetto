@@ -121,8 +121,8 @@ get_header();
           <div class="offset-2 col-6">
             <div class="row">
               <div class="col-12">
-                <?=wp_get_attachment_image(665, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
-                <?=wp_get_attachment_image(666, "full", "", array( 'class' => 'mt-112' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(665, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                <?=wp_get_attachment_image(666, "full", "", array( 'class' => 'mt-112' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>

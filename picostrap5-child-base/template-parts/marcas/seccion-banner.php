@@ -6,7 +6,7 @@ $fields = wp_parse_args( $args );
 if($fields["fondo"]):
 ?>
   <div class="top-0 position-absolute h-100 w-100 overflow-hidden bg-secondary">
-    <?=wp_get_attachment_image($fields["fondo"], "full", "", array( 'class' => 'fix-banner opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image($fields["fondo"], "full", "", array( 'class' => 'fix-banner opacity-75' , 'alt' => '' , 'title' => '') ); ?>
   </div>
 <?
 endif;

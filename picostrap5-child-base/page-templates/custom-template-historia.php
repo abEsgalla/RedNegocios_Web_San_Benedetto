@@ -24,7 +24,7 @@ get_header();
 
 <section class="my-96 d-flex position-relative">
   <div class="bg-secondary">
-    <?=wp_get_attachment_image(591, "full", "", array( 'class' => 'opacity-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(591, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 top-50 position-absolute translate-middle-y">
     <div class="container">
@@ -70,16 +70,16 @@ get_header();
                 Un hito que supuso el primer peldaño hacia nuestra visión de convertirnos en una Total Beverage Company.
               </div>
               <div class="col-12 mt-64">
-                <?=wp_get_attachment_image(592, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(592, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12">
-                <?=wp_get_attachment_image(593, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(593, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12">
-                <?=wp_get_attachment_image(595, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(595, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12">
-                <?=wp_get_attachment_image(594, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(594, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ get_header();
                 en España que obtiene la triple certificación de AENOR. 
               </div>
               <div class="col-12 mt-64">
-                <?=wp_get_attachment_image(596, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(596, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ get_header();
                 convirtiéndose así en el primer envasador de agua mineral en España por volumen.
               </div>
               <div class="col-12 mt-64">
-                <?=wp_get_attachment_image(597, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(597, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ get_header();
                 y rozó los dos millones en el siguiente ejercicio. ¡Y seguimos creciendo!
               </div>
               <div class="col-12 mt-64">
-                <?=wp_get_attachment_image(598, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(598, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ get_header();
           <div class="col-12">
             <div class="row">
               <div class="col-12">
-                <?=wp_get_attachment_image(599, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(599, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12 h2 mt-48">
                 2006
@@ -182,7 +182,7 @@ get_header();
           <div class="col-12 mt-96">
             <div class="row">
               <div class="col-12">
-                <?=wp_get_attachment_image(600, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(600, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12 h2 mt-48">
                 2009
@@ -199,7 +199,7 @@ get_header();
           <div class="col-12 mt-96">
             <div class="row">
               <div class="col-12">
-                <?=wp_get_attachment_image(601, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(601, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12 h2 mt-48">
                 2016
@@ -217,7 +217,7 @@ get_header();
           <div class="col-12 mt-96">
             <div class="row">
               <div class="col-12">
-                <?=wp_get_attachment_image(602, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(602, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
               <div class="col-12 h2 mt-48">
                 2020
@@ -236,7 +236,7 @@ get_header();
           <div class="col-12 mt-96">
             <div class="row">
               <div class="col-12">
-                <?=wp_get_attachment_image(603, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                <?=wp_get_attachment_image(603, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>

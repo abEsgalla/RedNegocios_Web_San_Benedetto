@@ -12,7 +12,7 @@ foreach ($fields['slides'] as $slide):
     $slider_html.="
     <div class='swiper-slide text-secondary'>
         <div class='position-relative'>"
-            .wp_get_attachment_image($slide['fondo'], 'full', '', array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider')).
+            .wp_get_attachment_image($slide['fondo'], 'full', '', array( 'class' => '' , 'alt' => '' , 'title' => '')).
         "</div>
         <div class='container-fluid zi-99 top-0 position-absolute mt-192'>
             <div class='container'>

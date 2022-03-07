@@ -14,7 +14,7 @@ $fields = wp_parse_args( $args );
           ?>
           <div class="swiper-slide">
             <div class="position-relative">
-              <?=wp_get_attachment_image($slide['fondo'], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+              <?=wp_get_attachment_image($slide['fondo'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
             </div>
             <?
             endif;
@@ -29,7 +29,7 @@ $fields = wp_parse_args( $args );
                     if($slide['logo']):
                       ?>
                         <div class="col-12">
-                          <?=wp_get_attachment_image($slide['logo'], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                          <?=wp_get_attachment_image($slide['logo'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                         </div>
                       <?
                     endif;

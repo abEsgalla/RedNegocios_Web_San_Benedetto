@@ -11,7 +11,7 @@ get_header();
 
 <section>
   <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(669, "full", "", array( 'class' => 'opacity-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(669, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
     <div class="container">
@@ -39,7 +39,7 @@ get_header();
 <section class="my-96">
   <div class="container position-relative">
     <?/*
-    <?=wp_get_attachment_image(671, "full", "", array( 'class' => 'w-100 position-absolute top-0 start-0' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(671, "full", "", array( 'class' => 'w-100 position-absolute top-0 start-0' , 'alt' => '' , 'title' => '') ); ?>
     */?>
     <div class="row">
       <div class="col-4 text-secondary">
@@ -62,18 +62,18 @@ get_header();
 <section>
   <div class="container-fluid">
     <div class="row offset-2 position-relative">
-      <?=wp_get_attachment_image(689, "full", "", array( 'class' => 'p-0 m-0 w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+      <?=wp_get_attachment_image(689, "full", "", array( 'class' => 'p-0 m-0 w-100' , 'alt' => '' , 'title' => '') ); ?>
       <div class="position-absolute w-auto icon-map-1">
-        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
       <div class="position-absolute w-auto icon-map-2">
-        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
       <div class="position-absolute w-auto icon-map-3">
-        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
       <div class="position-absolute w-auto icon-map-4">
-        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+        <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>
   </div>

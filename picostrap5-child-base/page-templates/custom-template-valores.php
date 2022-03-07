@@ -11,7 +11,7 @@ get_header();
 
 <section>
   <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(606, "full", "", array( 'class' => 'opacity-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image(606, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
     <div class="container">
@@ -63,7 +63,7 @@ get_header();
       <div style="" class="g-0 col-12 col-sm-6 d-block">
         <div class="row position-relative">
           <div class="position-relative transform-translate-ny">
-            <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
             <div class="container">
@@ -88,7 +88,7 @@ get_header();
       <div style="" class="g-0 col-12 col-sm-6 d-block">
         <div class="row position-relative">
           <div class="position-relative">
-            <?=wp_get_attachment_image(610, "full", "", array( 'class' => 'w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(610, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@ get_header();
       <div style="" class="g-0 col-12 col-sm-6 d-block">
         <div class="row position-relative">
           <div class="position-relative">
-            <?=wp_get_attachment_image(609, "full", "", array( 'class' => 'w-100' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+            <?=wp_get_attachment_image(609, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div>
       </div>
@@ -286,7 +286,7 @@ get_header();
               </div>
             </div>
           </div>
-          <?=wp_get_attachment_image(611, "full", "", array( 'class' => 'w-100 opacity-75' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+          <?=wp_get_attachment_image(611, "full", "", array( 'class' => 'w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
         </div>
       </div>
       <div class="col-6 text-secondary bg-primary-brighter d-flex align-items-center">

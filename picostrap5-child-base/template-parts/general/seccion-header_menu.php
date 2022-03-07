@@ -45,7 +45,7 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
                         <div class='row'>
                             <a class='text-decoration-none text-reset position-relative' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
                                 <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."99"."' class='col-12 ratio ratio-9x16'>
-                                    ".wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], 'full', '', array( 'class' => 'fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') )."
+                                    ".wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], 'full', '', array( 'class' => 'fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => '' , 'title' => '') )."
                                 </div>
                                 <div class='col-12 mt-10 text-secondary'>
                                 ".get_the_title($id_producto)."
@@ -125,7 +125,7 @@ endif;
         <div class="container">
             <div class="row py-56 text-secondary">
                 <div class="col-6">
-                    <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+                    <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                 </div>
                 <div class="col-6">
                     <div class="row">

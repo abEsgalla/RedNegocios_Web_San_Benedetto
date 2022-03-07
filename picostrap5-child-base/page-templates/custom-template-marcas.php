@@ -11,7 +11,7 @@ get_header();
 
 <section class="d-flex py-176 position-relative text-white">
     <div class="top-0 position-absolute h-100 w-100 overflow-hidden bg-secondary">
-        <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'fix-banner opacity-50' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+        <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'fix-banner opacity-50' , 'alt' => '' , 'title' => '') ); ?>
     </div>
     <div class="container zi-99">
         <div class="row">

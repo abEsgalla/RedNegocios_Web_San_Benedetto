@@ -5,7 +5,7 @@
 
 <section class="d-flex position-relative">
   <div class="bg-black">
-    <?=wp_get_attachment_image($seccion['fondo'], "full", "", array( 'class' => $seccion['fondo_opacidad'] , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ); ?>
+    <?=wp_get_attachment_image($seccion['fondo'], "full", "", array( 'class' => $seccion['fondo_opacidad'] , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 <?=$seccion['texto_vertical']?> position-absolute translate-middle-y">
     <div class="container">

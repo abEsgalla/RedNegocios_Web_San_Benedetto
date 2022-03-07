@@ -15,7 +15,7 @@ foreach ($fields['productos'] as $id_producto):
     $slider_html.=
     "<a class='h-100 text-decoration-none' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
     <div class='h-90 contenedor-cursor-custom' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>"
-    .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"], "full", "", array( 'class' => '' , 'alt' => 'Banner Home Slider' , 'title' => 'Banner Home Slider') ).
+    .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ).
     "</div>";
   endif;
   $slider_html.="<div class='w-100 text-start mt-20 text-secondary text-uppercase fs-13'>"
