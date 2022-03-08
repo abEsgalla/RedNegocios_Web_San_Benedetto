@@ -238,3 +238,7 @@ HOW TO REFERENCE ASSETS AND IMAGES
     left: 550px;
     bottom: 550px;
 }
+
+.force-transition{
+    transition: background 0.2s ease-in-out;
+}

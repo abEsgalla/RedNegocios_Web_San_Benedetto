@@ -22,6 +22,9 @@ function esgalla_scripts() {
 	// Cursor custom JS
 	wp_enqueue_script( 'cursor-custom-js', get_stylesheet_directory_uri() . '/js/cursor-custom.js', array(), false, true );
 
+	// Cabecera
+	wp_enqueue_script( 'efectos-cabecera-js', get_stylesheet_directory_uri() . '/js/efectos-cabecera.js', array('bootstrap5'), false, true );
+
 	// Custom JS
 	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array(), false, true );
 
