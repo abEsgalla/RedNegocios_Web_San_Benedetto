@@ -26,7 +26,7 @@
     $selected=($counter==0)?'true':'false';
     $cabecera_tabs_html.="
       <li class='nav-item mx-32' role='presentation'>
-          <button class='nav-link ".$active."' id='".$term_name_sanitice."-tab' 
+          <button class='fw-bolder nav-link ".$active."' id='".$term_name_sanitice."-tab' 
           data-bs-toggle='pill' data-bs-target='#".$term_name_sanitice."' 
           type='button' role='tab' aria-controls='".$term_name_sanitice."' aria-selected='".$selected."'>
           ".mb_strtoupper($term_name)."
@@ -52,7 +52,7 @@
                   .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], 'full', '', array( 'class' => 'fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => '' , 'title' => '') )
                   ."</div>";
     endif;
-    $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary fs-13'>".mb_strtoupper(get_the_title($id_producto))."</div>
+    $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary fs-13 fw-500'>".mb_strtoupper(get_the_title($id_producto))."</div>
                 </a>
                 </div>
     ";

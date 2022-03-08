@@ -35,12 +35,12 @@ wp_reset_query();
 				<?php if(isset($acf_fields['cabecera']['fondo'])): ?>
         <div class="position-relative">
           <?=wp_get_attachment_image($acf_fields['cabecera']['fondo'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-        </div>
-				<?php endif; ?>
-				<?php if(isset($acf_fields['cabecera']['producto_central'])): ?>
-        <div class="d-flex align-items-center justify-content-center container-fluid zi-99 top-0 position-absolute">
-          <?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-        </div>
+					<?php if(isset($acf_fields['cabecera']['producto_central'])): ?>
+					<div class="d-flex align-items-center justify-content-center container-fluid zi-99 top-0 position-absolute h-100">
+						<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'd-block w-auto h-100' , 'alt' => '' , 'title' => '') ); ?>
+					</div>
+					<?php endif; ?>
+				</div>
 				<?php endif; ?>
       </div>
     </div>

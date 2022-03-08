@@ -43,6 +43,11 @@ $fields = wp_parse_args( $args );
                         <div class="col-12 h1"><?=$slide['texto_principal']?></div>
                       <?
                     endif;
+                    if($slide['descripcion']):
+                      ?>
+                        <div class="offset-2 col-8 mt-32"><?=$slide['descripcion']?></div>
+                      <?
+                    endif;
                     if($slide['texto_cta']):
                       ?>
                         <div class="col-12 mt-36">

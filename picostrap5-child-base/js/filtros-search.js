@@ -30,5 +30,6 @@ function filtrar(event) {
   });
   if(name_swiper!=""){
     eval(name_swiper).update();
+    eval(name_swiper).slideTo(0);
   }
 }

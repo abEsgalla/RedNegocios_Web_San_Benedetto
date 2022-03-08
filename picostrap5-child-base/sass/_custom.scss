@@ -118,7 +118,15 @@ HOW TO REFERENCE ASSETS AND IMAGES
 .contenedor-cursor-custom{
     position: relative;
     &:hover{
+        img{
+            transform: scale(0.95);
+            transition: transform linear 0.2s;
+        }
         cursor:none;
+    }
+    img{
+        transform: scale(1);
+        transition: transform linear 0.2s;
     }
     .cursor-custom {
         position: absolute;
@@ -242,3 +250,4 @@ HOW TO REFERENCE ASSETS AND IMAGES
 .force-transition{
     transition: background 0.2s ease-in-out;
 }
+

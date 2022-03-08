@@ -16,8 +16,10 @@ if ( $the_query->have_posts() ) {
         $the_query->the_post();
         $html_slide_post.="<div class='swiper-slide text-center text-secondary'>
           <a class='text-decoration-none text-reset fs-13' href='".get_the_permalink()."'>
-            ".wp_get_attachment_image(get_post_thumbnail_id(), 'full', '', array( 'class' => '' , 'alt' => '' , 'title' => '') )
-            ."<div class='text-start mt-16 text-uppercase'>".get_the_title()."</div>
+            <div class='contenedor-cursor-custom'>
+            ".wp_get_attachment_image(get_post_thumbnail_id(), 'full', '', array( 'class' => '' , 'alt' => '' , 'title' => '') ).
+            "</div>
+            <div class='text-start mt-16 text-uppercase'>".get_the_title()."</div>
             <div class='text-start mt-2 text-truncate'>
               ".get_the_content()."
             </div>

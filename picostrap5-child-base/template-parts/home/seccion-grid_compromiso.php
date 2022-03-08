@@ -32,8 +32,8 @@ if($fields["elemento_grid"]):
           <?
           if($single_grid['fondo']):
           ?>
-            <div class="position-relative">
-              <?=wp_get_attachment_image($single_grid['fondo'], "full", "", array( 'class' => 'ratio ratio-16x9' , 'alt' => '' , 'title' => '') ); ?>
+            <div class="position-relative bg-black">
+              <?=wp_get_attachment_image($single_grid['fondo'], "full", "", array( 'class' => 'ratio ratio-16x9 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
             </div>
           <?
           else:
