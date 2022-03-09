@@ -26,11 +26,16 @@ const swiper_home = new Swiper('.swiper-home', {
 
 const swiper_home_dedicado = new Swiper('.swiper-home-dedicado', {
   direction: 'horizontal',
-  autoHeight : true,
+  //autoHeight : true,
   loop: false,
   spaceBetween: 55,
   breakpoints: {
+    768: {
+      spaceBetween: 16,
+      slidesPerView: 2
+    },
     992: {
+      spaceBetween: 55,
       slidesPerView: 4
     }
   }

@@ -7,7 +7,6 @@
 //$primary:teal;
 //$body-bg: darkgrey;
 
-
 //ENABLE NEGATIVE MARGIN UTILITY CLASSES
 $enable-negative-margins: true;
 
@@ -58,8 +57,10 @@ $spacers: (
   64:  ($spacer * 4), // 64px
   70:  ($spacer * 4.375), // 70px
   80:  ($spacer * 5), // 80px
+  90:  ($spacer * 5.625), // 90px
   96:  ($spacer * 6), // 96px
   112:  ($spacer * 7), // 112px
+  120:  ($spacer * 7.5), // 120px
   138: ($spacer * 8.625), // 138px
   150: ($spacer * 9.375), // 150px
   160: ($spacer * 10), // 160px
