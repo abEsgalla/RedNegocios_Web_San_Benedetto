@@ -61,13 +61,18 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
   direction: 'horizontal',
   autoHeight : true,
   loop: false,
+  slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination-home-promocional',
     clickable: true,
     bulletActiveClass: 'bg-white opacity-100',
   },
   breakpoints: {
+    768: {
+      direction: 'vertical',
+    },
     992: {
+      direction: 'horizontal',
       slidesPerView: 1,
     }
   }
