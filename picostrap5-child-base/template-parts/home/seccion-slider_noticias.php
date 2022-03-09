@@ -19,7 +19,7 @@ if ( $the_query->have_posts() ) {
             <div class='contenedor-cursor-custom'>
             ".wp_get_attachment_image(get_post_thumbnail_id(), 'full', '', array( 'class' => '' , 'alt' => '' , 'title' => '') ).
             "</div>
-            <div class='text-start mt-16 text-uppercase'>".get_the_title()."</div>
+            <div class='text-start mt-16 text-uppercase fw-500'>".get_the_title()."</div>
             <div class='text-start mt-2 text-truncate'>
               ".get_the_content()."
             </div>
@@ -46,7 +46,7 @@ wp_reset_postdata();
     </div>
 </div>
 <div class="col-12 text-center">
-  <a href="<?=esc_url(get_post_type_archive_link('post'));?>" class="btn btn-outline-secondary text-uppercase mt-64 rounded-0">
+  <a href="<?=esc_url(get_post_type_archive_link('post'));?>" class="fw-500 btn btn-outline-secondary text-uppercase mt-64 rounded-0">
     ver todas
   </a>
 </div>

@@ -22,17 +22,17 @@ if($fields["elemento_grid"]):
   <div class="col-12 mt-64">
     <div class="row">
       <?
-      foreach ($fields["elemento_grid"] as $single_grid):
+      foreach ($fields["elemento_grid"] as $key => $single_grid):
         ?>
         <div <?=($single_grid['fondo_color'])?'style="background-color:'.$single_grid['fondo_color'].'"':'';?> 
-        class="col-12 
+        class="col-12 h-75-vw <?=(($key+1)%2==0)?'order-0':'order-1'?>
         <?=($single_grid['tamano'])? $single_grid['tamano'] : '' ;?> 
         <?=($single_grid['fondo'])? 'g-0' : 'd-flex align-items-center' ;?>
         ">
           <?
           if($single_grid['fondo']):
           ?>
-            <div class="position-relative bg-black">
+            <div class="position-relative bg-black overflow-hidden h-100">
               <?=wp_get_attachment_image($single_grid['fondo'], "full", "", array( 'class' => 'ratio ratio-16x9 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
             </div>
           <?

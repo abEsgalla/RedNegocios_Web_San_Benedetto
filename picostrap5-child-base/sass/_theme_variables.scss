@@ -124,6 +124,7 @@ $secondary-light-disable : #00286720 !default;
 $secondary-lighter  : #6681AA !default;
 $secondary-bright   : #99ABC7 !default;
 $secondary-brighter : #CCD5E3 !default;
+$section-noticias: #F8F8F8 !default;
 
 $white : #ffffff;
 $black : #000000;
@@ -149,7 +150,8 @@ $theme-colors: (
   "white" : $white,
   "black" : $black,
   "green" : $green,
-  "grey" : $grey
+  "grey" : $grey,
+  "section-noticias" : $section-noticias
 );
 
 //BTN PADDING CUSTOM

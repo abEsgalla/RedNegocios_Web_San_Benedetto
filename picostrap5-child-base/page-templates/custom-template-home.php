@@ -52,7 +52,7 @@ get_header();
   </div>
 </section>
 
-<section class="bg-secondary-brighter">
+<section class="bg-section-noticias">
   <div class="container position-relative py-96">
     <div class="row">
       <?php

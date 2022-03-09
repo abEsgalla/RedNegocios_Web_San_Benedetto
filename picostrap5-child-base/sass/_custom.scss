@@ -256,3 +256,9 @@ HOW TO REFERENCE ASSETS AND IMAGES
         top: 50%;
     }
 }
+
+@media (max-width: 991.98px) {
+    .h-75-vw{
+        height: Calc(100vw/1.5);
+    }
+}

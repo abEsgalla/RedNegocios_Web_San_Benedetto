@@ -101,6 +101,9 @@ const swiper_home_noticias = new Swiper('.swiper-home-noticias', {
   loop: true,
   spaceBetween: 33,
   breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
     992: {
       slidesPerView: 4,
     }
@@ -112,6 +115,9 @@ const swiper_prefooter_logos = new Swiper('.swiper-prefooter-logos', {
   autoHeight : true,
   loop: true,
   breakpoints: {
+    768: {
+      slidesPerView: 4,
+    },
     992: {
       slidesPerView: 6,
     }
