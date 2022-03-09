@@ -14,8 +14,8 @@ $fields = wp_parse_args( $args );
           ?>
           <div class="swiper-slide">
             <div class="position-relative">
-              <?=wp_get_attachment_image($slide['fondo_mobile'], "full", "", array( 'class' => 'd-inline d-xxl-none' , 'alt' => '' , 'title' => '') ); ?>
-              <?=wp_get_attachment_image($slide['fondo'], "full", "", array( 'class' => 'd-none d-xxl-inline' , 'alt' => '' , 'title' => '') ); ?>
+              <?=wp_get_attachment_image($slide['fondo_mobile'], "full", "", array( 'class' => 'd-inline d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
+              <?=wp_get_attachment_image($slide['fondo'], "full", "", array( 'class' => 'd-none d-lg-inline' , 'alt' => '' , 'title' => '') ); ?>
             </div>
             <?
             endif;
@@ -36,7 +36,7 @@ $fields = wp_parse_args( $args );
                     endif;
                     if($slide['texto_superior']):
                       ?>
-                        <div class="col-12 fs-18 text-uppercase mt-40 mt-xxl-36"><?=$slide['texto_superior']?></div>
+                        <div class="col-12 fs-18 text-uppercase mt-40 mt-lg-20 mt-xxl-36"><?=$slide['texto_superior']?></div>
                       <?
                     endif;
                     if($slide['texto_principal']):
@@ -46,12 +46,12 @@ $fields = wp_parse_args( $args );
                     endif;
                     if($slide['descripcion']):
                       ?>
-                        <div class="offset-2 col-8 mt-32"><?=$slide['descripcion']?></div>
+                        <div class="offset-2 col-8 mt-20 mt-xxl-32"><?=$slide['descripcion']?></div>
                       <?
                     endif;
                     if($slide['texto_cta']):
                       ?>
-                        <div class="col-12 mt-36">
+                        <div class="col-12 mt-20 mt-xxl-36">
                           <div class="btn btn-primary text-uppercase text-white rounded-0 fs-13">
                             <?=$slide['texto_cta']?>
                           </div>

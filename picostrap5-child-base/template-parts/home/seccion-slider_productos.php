@@ -42,15 +42,15 @@ endforeach;
   endif;
   ?>
 </div>
-<div class="col-12 mt-90 mt-xxl-0 offset-xxl-8 col-xxl-4">
-  <div class="filtros_buscador row text-secondary text-start text-xxl-center text-uppercase fs-13 fw-500">
-    <div class="col-2 col-xxl filtro_buscador active c-pointer" data-filter="*">
+<div class="col-12 mt-90 mt-lg-0 offset-lg-7 col-lg-5 offset-xxl-8 col-xxl-4">
+  <div class="filtros_buscador row text-secondary text-start text-lg-center text-uppercase fs-13 fw-500">
+    <div class="col-2 col-lg filtro_buscador active c-pointer" data-filter="*">
       Todos
     </div>
     <?php
       foreach ($categories_slider_html as $category_slider_html):
       ?>
-      <div class="col-3 col-xxl filtro_buscador c-pointer" data-filter="<?=str_replace(' ', '-', strtolower($category_slider_html))?>">
+      <div class="col-3 col-lg filtro_buscador c-pointer" data-filter="<?=str_replace(' ', '-', strtolower($category_slider_html))?>">
         <?=$category_slider_html?>           
       </div>
       <?

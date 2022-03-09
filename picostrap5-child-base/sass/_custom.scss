@@ -251,8 +251,8 @@ HOW TO REFERENCE ASSETS AND IMAGES
     transition: background 0.2s ease-in-out;
 }
 
-@media (min-width: 1400px) {
-    .top-xxl-50{
+@media (min-width: 992px) {
+    .top-lg-50{
         top: 50%;
     }
 }
