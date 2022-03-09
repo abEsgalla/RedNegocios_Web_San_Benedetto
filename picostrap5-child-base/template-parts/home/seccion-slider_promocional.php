@@ -14,7 +14,7 @@ foreach ($fields['slides'] as $slide):
         <div class='position-relative'>"
             .wp_get_attachment_image($slide['fondo'], 'full', '', array( 'class' => '' , 'alt' => '' , 'title' => '')).
         "</div>
-        <div class='container-fluid zi-99 top-0 position-absolute mt-192'>
+        <div class='container-fluid zi-99 top-50 position-absolute translate-middle-y'>
             <div class='container'>
                 <div class='row'>
                     <div class='col-6'>
