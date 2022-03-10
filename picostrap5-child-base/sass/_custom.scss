@@ -262,3 +262,12 @@ HOW TO REFERENCE ASSETS AND IMAGES
         height: Calc(100vw/1.5);
     }
 }
+
+@media (max-width: 575.98px) {
+   .h1{
+    font-size: $font-size-base * 3;
+   } 
+   .h4{
+    font-size: $font-size-base * 1.5;
+   }
+}

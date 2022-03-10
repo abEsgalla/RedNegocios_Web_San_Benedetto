@@ -2,7 +2,7 @@
   $fields = wp_parse_args( $args );
 ?>
 
-<div class="col-12 text-center text-secondary">
+<div class="col-12 text-start text-sm-center text-secondary">
   <?php
   if($fields["texto_superior"]):
   ?>

@@ -22,14 +22,15 @@ $fields = wp_parse_args( $args );
             if($slide['logo'] || $slide['texto_superior'] || $slide['texto_principal'] 
             || $slide['texto_cta'] || $slide['link_cta']):
             ?>
-            <div class="d-flex align-items-center justify-content-center container-fluid zi-99 top-50 position-absolute transform-translate-y">
-              <div class="row">
+            <div class="d-flex align-items-center justify-content-center container-fluid 
+            zi-99 top-50 position-absolute transform-translate-y">
+              <div class="row w-100">
                 <div class="col-12 offset-xxl-3 col-xxl-6">
-                  <div class="row text-center text-white">
+                  <div class="row text-start text-sm-center text-white">
                     <?
                     if($slide['logo']):
                       ?>
-                        <div class="col-12">
+                        <div class="d-none d-md-block col-12">
                           <?=wp_get_attachment_image($slide['logo'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                         </div>
                       <?
@@ -41,7 +42,7 @@ $fields = wp_parse_args( $args );
                     endif;
                     if($slide['texto_principal']):
                       ?>
-                        <div class="col-12 h1 mt-16"><?=$slide['texto_principal']?></div>
+                        <div class="col-12 h1 mt-16 hyphens"><?=$slide['texto_principal']?></div>
                       <?
                     endif;
                     if($slide['descripcion']):
@@ -71,7 +72,9 @@ $fields = wp_parse_args( $args );
     ?>
   </div>
   <!-- If we need pagination -->
-  <div class="d-flex justify-content-center align-items-center swiper-pagination swiper-pagination-home position-absolute bt-40"></div>
+  <div class="row">
+    <div class="col-12 col-md-12 offset-md-0 d-flex justify-content-start justify-content-md-center align-items-center swiper-pagination swiper-pagination-home position-absolute bt-40"></div>
+  </div>
 
   <div class="zi-99 offset-8 col-4 d-none d-xxl-flex justify-content-center align-items-center position-absolute bt-40">
     <div class="mx-12 c-pointer" onclick=swiper_home.slidePrev()>

@@ -23,7 +23,7 @@ get_header();
 </section>
 
 <section>
-  <div class="container position-relative py-120 py-xxl-96">
+  <div class="container position-relative py-56 py-md-120 py-xxl-96">
       <div class="row">
         <?php
           get_template_part( 'template-parts/home/seccion', 'slider_productos', $acf_fields['slider_productos']);
@@ -43,7 +43,7 @@ get_header();
 </section>
 
 <section>
-  <div class="container position-relative py-96">
+  <div class="container position-relative py-56 py-sm-96">
       <div class="row">
         <?php
           get_template_part( 'template-parts/home/seccion', 'grid_compromiso', $acf_fields['grid_compromiso']);
