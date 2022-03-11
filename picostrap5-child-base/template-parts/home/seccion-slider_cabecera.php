@@ -37,7 +37,7 @@ $fields = wp_parse_args( $args );
                     endif;
                     if($slide['texto_superior']):
                       ?>
-                        <div class="col-12 fs-18 text-uppercase mt-40 mt-lg-20 mt-xxl-36"><?=$slide['texto_superior']?></div>
+                        <div class="col-7 col-sm-12 fs-18 text-uppercase mt-40 mt-lg-20 mt-xxl-36"><?=$slide['texto_superior']?></div>
                       <?
                     endif;
                     if($slide['texto_principal']):
@@ -47,7 +47,7 @@ $fields = wp_parse_args( $args );
                     endif;
                     if($slide['descripcion']):
                       ?>
-                        <div class="offset-2 col-8 mt-20 mt-xxl-32"><?=$slide['descripcion']?></div>
+                        <div class="d-none d-sm-block offset-2 col-8 mt-20 mt-xxl-32"><?=$slide['descripcion']?></div>
                       <?
                     endif;
                     if($slide['texto_cta']):

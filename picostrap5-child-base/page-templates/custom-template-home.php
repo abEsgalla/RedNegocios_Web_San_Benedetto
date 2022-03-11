@@ -53,7 +53,7 @@ get_header();
 </section>
 
 <section class="bg-section-noticias">
-  <div class="container position-relative py-96">
+  <div class="container position-relative py-80 py-sm-96">
     <div class="row">
       <?php
         get_template_part( 'template-parts/home/seccion', 'slider_noticias', $acf_fields);

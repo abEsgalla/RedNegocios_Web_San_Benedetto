@@ -264,10 +264,31 @@ HOW TO REFERENCE ASSETS AND IMAGES
 }
 
 @media (max-width: 575.98px) {
-   .h1{
-    font-size: $font-size-base * 3;
-   } 
-   .h4{
-    font-size: $font-size-base * 1.5;
-   }
+    .h1{
+        font-size: $font-size-base * 3.063; // 49px
+    }
+    .h4{
+        font-size: $font-size-base * 2; // 32px
+    }
+    .h-75-vw {
+        height: Calc(100vw);
+    }
+    .top-under-xs-40{
+        top: 40% !important;
+    }
+}
+
+.center-image{
+    object-fit: cover;
+}
+
+.hyphens{
+    /*Utilizamos hyphens para obtener la mejor partición posible*/
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    /*Y seguidamente word-wrap como graceful degradation para los navegadores que no lo soporten*/
+    word-wrap: break-word;
+    word-break: break-word;
 }

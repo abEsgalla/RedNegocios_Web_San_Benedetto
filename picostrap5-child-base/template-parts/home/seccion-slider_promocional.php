@@ -15,12 +15,12 @@ foreach ($fields['slides'] as $slide):
             .wp_get_attachment_image($slide['fondo'], 'full', '', array( 'class' => 'd-none d-lg-inline' , 'alt' => '' , 'title' => ''))
             .wp_get_attachment_image($slide['fondo_mobile'], 'full', '', array( 'class' => 'd-inline d-lg-none' , 'alt' => '' , 'title' => '')).
         "</div>
-        <div class='container-fluid zi-99 top-lg-50 top-25 position-absolute translate-middle-y'>
+        <div class='container-fluid zi-99 top-lg-50 top-under-xs-40 top-25 position-absolute translate-middle-y'>
             <div class='container'>
                 <div class='row'>
                     <div class='col-12 col-lg-6'>
                         <div class='row text-center text-lg-start'>
-                        <div class='col-12 text-uppercase fs-18'>".get_the_title($slide['producto'])."</div>
+                        <div class='col-12 text-uppercase fs-18 d-none d-sm-block'>".get_the_title($slide['producto'])."</div>
                         <div class='col-12 h4 mt-8'>".$slide['texto_principal']."</div>
                         <div class='col-12 mt-16 d-xxl-block d-none'>
                             ".$slide['descripcion']."
@@ -45,7 +45,7 @@ endforeach;
     <!-- Slider main container -->
     <div class="swiper swiper-home-promocional">
         <!-- Additional required wrapper -->
-        <div class='container-fluid zi-99 top-0 position-absolute mt-80 mt-lg-40 mt-xl-80'>
+        <div class='container-fluid zi-99 top-0 position-absolute mt-40 mt-sm-80 mt-lg-40 mt-xl-80'>
             <div class='container'>
                 <div class='row'>
                     <div class="col-12">

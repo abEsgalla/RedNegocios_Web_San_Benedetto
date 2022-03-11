@@ -28,7 +28,8 @@ const swiper_home_dedicado = new Swiper('.swiper-home-dedicado', {
   direction: 'horizontal',
   //autoHeight : true,
   loop: false,
-  spaceBetween: 55,
+  spaceBetween: 16,
+  slidesPerView: 2,
   breakpoints: {
     768: {
       spaceBetween: 16,
@@ -58,7 +59,7 @@ swiper_home_dedicado.on('slideChange', function () {
 
 
 const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
-  direction: 'horizontal',
+  direction: 'vertical',
   autoHeight : true,
   loop: false,
   slidesPerView: 1,
@@ -99,12 +100,16 @@ const swiper_home_noticias = new Swiper('.swiper-home-noticias', {
   direction: 'horizontal',
   autoHeight : true,
   loop: true,
-  spaceBetween: 33,
+  slidesPerView: 1,
   breakpoints: {
     768: {
+      spaceBetween: 33,
+      direction: 'horizontal',
       slidesPerView: 3,
     },
     992: {
+      spaceBetween: 33,
+      direction: 'horizontal',
       slidesPerView: 4,
     }
   }
@@ -114,6 +119,7 @@ const swiper_prefooter_logos = new Swiper('.swiper-prefooter-logos', {
   direction: 'horizontal',
   autoHeight : true,
   loop: true,
+  slidesPerView: 2,
   breakpoints: {
     768: {
       slidesPerView: 4,

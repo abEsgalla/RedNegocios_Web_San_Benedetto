@@ -30,7 +30,7 @@
                   <div class="row">
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13">
-                        <div class="col-12 h6">nosotros</div>
+                        <div class="col-12 h6 mt-40 mt-lg-0">nosotros</div>
                         <div class="col-12 mt-24">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(579)?>">
                             historia
@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
-                        <div class="col-12 h6">marcas</div>
+                        <div class="col-12 h6 mt-40 mt-lg-0">marcas</div>
                         <div class="col-12 mt-24">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(49)?>">
                             Agua mineral
@@ -71,7 +71,7 @@
                             Refrescos
                           </a>
                         </div>
-                        <div class="col-12 mt-16 h6 mt-auto">
+                        <div class="col-12 mt-16 h6 mt-sm-auto mt-40">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(647)?>">
                             área profesional
                           </a>
@@ -80,7 +80,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
-                        <div class="col-12 h6">
+                        <div class="col-12 h6 mt-40 mt-lg-0">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(583)?>">
                             ecolosofía
                           </a>
@@ -100,7 +100,7 @@
                             entorno
                           </a>
                         </div>
-                        <div class="col-12 mt-16 h6 mt-auto d-flex flex-wrap align-items-center">
+                        <div class="col-12 mt-16 h6 mt-40 mt-lg-auto d-flex flex-wrap align-items-center">
                           <span>Síguenos</span>
                           <span class="d-flex flex-wrap align-items-center mx-12">
                             <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="8" height="17" viewBox="0 0 8 17" fill="none">
@@ -125,7 +125,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13">
-                        <div class="col-12 h6">
+                        <div class="col-12 h6 mt-40 mt-lg-0">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
                             Contacto
                           </a>
@@ -145,12 +145,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 mt-80">
+                <div class="col-12 mt-40 mt-xl-80">
                   <div class="row fs-13">
-                    <div class="col-3">
+                    <div class="col-12 col-sm-3 my-20">
                       <div class="">® Agua mineral San Benedetto, S.A.U.</div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-12 col-sm-9 my-20">
                       <div>Info empresa   |   Política de seguridad de la información   |   Política de privacidad web   |   Condiciones generales   |   Cookies   |   Créditos   |   Mapa web</div>
                     </div>
                   </div>
