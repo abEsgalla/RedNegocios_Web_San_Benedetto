@@ -7,5 +7,4 @@
 //add here your own js code. Vanilla JS welcome.
 
 document.addEventListener('DOMContentLoaded', function () {
-
 });

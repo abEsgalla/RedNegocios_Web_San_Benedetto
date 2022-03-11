@@ -12,7 +12,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 contenedor.appendChild(cursor_custom);
             }
             var cursorVideo = contenedor.querySelector('.cursor-custom');
-            cursorVideo.setAttribute("style", "top: " + (e.clientY - rect.top - 50) + "px; left: " + (e.clientX - rect.left - 50) + "px; display: block;")
+            
+            setTimeout(function () {
+                cursorVideo.style.top = e.clientY - rect.top - 50 + "px";
+                cursorVideo.style.left = e.clientX - rect.left - 50 + "px";
+                cursorVideo.style.display = "block";
+            }, 075);
+
+            //cursorVideo.setAttribute("style", "top: " + (e.clientY - rect.top - 50) + "px; left: " + (e.clientX - rect.left - 50) + "px; display: block;")
         });
         contenedor.addEventListener('mouseleave', e=>{
             var cursorVideo = contenedor.querySelector('.cursor-custom');
