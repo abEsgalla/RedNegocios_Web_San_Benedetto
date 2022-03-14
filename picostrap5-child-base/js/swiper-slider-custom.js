@@ -1,7 +1,7 @@
 const swiper_home = new Swiper('.swiper-home', {
   direction: 'horizontal',
   autoHeight : true,
-  loop: true,
+  loop: false,
   pagination: {
     el: '.swiper-pagination-home',
     clickable: true,
@@ -24,6 +24,21 @@ const swiper_home = new Swiper('.swiper-home', {
   },
 });
 
+swiper_home.on('slideChange', function () {
+  var arrow_next = document.querySelector(".swiper-home .arrow-next");
+  var arrow_prev = document.querySelector(".swiper-home .arrow-prev");
+  if(swiper_home.isBeginning){
+    arrow_prev.classList.add('opacity-50');
+    arrow_next.classList.remove('opacity-50');
+  }else if (swiper_home.isEnd){
+    arrow_prev.classList.remove('opacity-50');
+    arrow_next.classList.add('opacity-50');
+  }else{
+    arrow_prev.classList.remove('opacity-50');
+    arrow_next.classList.remove('opacity-50');
+  }
+});
+
 const swiper_home_dedicado = new Swiper('.swiper-home-dedicado', {
   direction: 'horizontal',
   //autoHeight : true,
@@ -38,6 +53,10 @@ const swiper_home_dedicado = new Swiper('.swiper-home-dedicado', {
     992: {
       spaceBetween: 55,
       slidesPerView: 4
+    },
+    1440: {
+      spaceBetween: 32,
+      slidesPerView: 4
     }
   }
 });
@@ -48,12 +67,12 @@ swiper_home_dedicado.on('slideChange', function () {
   if(swiper_home_dedicado.isBeginning){
     arrow_prev.classList.add('opacity-50');
     arrow_next.classList.remove('opacity-50');
-  }else{
-    arrow_prev.classList.remove('opacity-50');
-  }
-  if(swiper_home_dedicado.isEnd){
+  }else if (swiper_home_dedicado.isEnd){
     arrow_prev.classList.remove('opacity-50');
     arrow_next.classList.add('opacity-50');
+  }else{
+    arrow_prev.classList.remove('opacity-50');
+    arrow_next.classList.remove('opacity-50');
   }
 });
 
@@ -87,12 +106,12 @@ swiper_home_promocional.on('slideChange', function () {
   if(swiper_home_promocional.isBeginning){
     arrow_prev.classList.add('opacity-50');
     arrow_next.classList.remove('opacity-50');
-  }else{
-    arrow_prev.classList.remove('opacity-50');
-  }
-  if(swiper_home_promocional.isEnd){
+  }else if (swiper_home_promocional.isEnd){
     arrow_prev.classList.remove('opacity-50');
     arrow_next.classList.add('opacity-50');
+  }else{
+    arrow_prev.classList.remove('opacity-50');
+    arrow_next.classList.remove('opacity-50');
   }
 });
 

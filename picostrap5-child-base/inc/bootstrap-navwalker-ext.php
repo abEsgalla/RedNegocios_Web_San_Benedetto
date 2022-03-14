@@ -26,7 +26,7 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
   private $custom_classes;
 
   public function __construct() {
-    $this->custom_classes = ' text-uppercase fs-13 ';
+    $this->custom_classes = ' text-uppercase fs-13 letter-spacing-1x3 ';
     if ( is_main_query() ) {
       if ( is_front_page() ) {
         //var_dump('PAGINA INICIO');
@@ -103,7 +103,7 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     $attributes .= !empty($item->xfn) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
     $attributes .= !empty($item->url) ? ' href="' . esc_attr($item->url) . '"' : '';
 
-    $active_class = ($item->current || $item->current_item_ancestor || in_array("current_page_parent", $item->classes, true) || in_array("current-post-ancestor", $item->classes, true)) ? 'active' : '';
+    $active_class = ($item->current || $item->current_item_ancestor || in_array("current_page_parent", $item->classes, true) || in_array("current-post-ancestor", $item->classes, true)) ? 'active fw-bold' : '';
     $nav_link_class = ( $depth > 0 ) ? 'dropdown-item ' : 'nav-link '; //patch #2 is the row below
     $nav_link_class .= $this->custom_classes;
     //$attributes.=( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';

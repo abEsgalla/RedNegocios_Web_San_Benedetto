@@ -67,6 +67,10 @@ HOW TO REFERENCE ASSETS AND IMAGES
     bottom: 40px !important;
 }
 
+.bt-30{
+    bottom: 30px !important;
+}
+
 .c-pointer{
     cursor: pointer;
 }
@@ -252,6 +256,10 @@ HOW TO REFERENCE ASSETS AND IMAGES
 }
 
 @media (min-width: 992px) {
+    .col-custom-lg{
+        width: max-content;
+        flex: auto;
+    }
     .top-lg-50{
         top: 50%;
     }
@@ -291,4 +299,49 @@ HOW TO REFERENCE ASSETS AND IMAGES
     /*Y seguidamente word-wrap como graceful degradation para los navegadores que no lo soporten*/
     word-wrap: break-word;
     word-break: break-word;
+}
+
+#menu-home{
+    &>li{
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        &>a{
+            padding-right: 0.5rem;
+            padding-left: 0rem;
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                width: 0%;
+                left: 0px;
+                bottom: 0px;
+                height: 2px;
+                background-color: #ffffff;
+                transition: width linear 0.2s;
+            }
+            &.active:after{
+                width: 75%;
+            }
+            &:not(.active):hover:after{
+                width: 75%;
+                transition: width linear 0.2s;
+            }
+        }
+    }
+}
+
+.letter-spacing-1x3{
+    letter-spacing: 1.3px;
+}
+
+.ratio-30x43{
+    --bs-aspect-ratio: calc(43 / 30 * 100%);
+}
+
+span{
+    &.swiper-pagination-bullet{
+        height: 12px;
+        width: 12px;
+        background-color: $white;
+    }
 }

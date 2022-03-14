@@ -25,7 +25,7 @@ if($fields["elemento_grid"]):
       foreach ($fields["elemento_grid"] as $key => $single_grid):
         ?>
         <div 
-        class="col-12 h-75-vw gx-4 gx-sm-0 <?=(($key+1)%2==0)?'order-0':'order-1'?>
+        class="order-lg-0 col-12 h-75-vw gx-4 gx-sm-0 <?=(($key+1)%2==0)?'order-0':'order-1'?>
         <?=($single_grid['tamano'])? $single_grid['tamano'] : '' ;?> 
         <?=($single_grid['fondo'])? '' : 'd-flex align-items-center' ;?>
         ">
@@ -64,7 +64,7 @@ if($fields["elemento_grid"]):
                       if($single_grid['texto_cta']):
                       ?>
                         <div class="col-12">
-                          <a href="<?=$single_grid['link_cta']?>" class="btn btn-outline-primary-brighter text-uppercase mt-40 fs-14 rounded-0">
+                          <a href="<?=$single_grid['link_cta']?>" class="btn border-2 fw-500 btn-outline-primary-brighter text-uppercase mt-40 fs-14 rounded-0">
                             <?=$single_grid['texto_cta']?>
                           </a>
                         </div>
