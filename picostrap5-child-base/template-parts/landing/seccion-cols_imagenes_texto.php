@@ -13,7 +13,7 @@
               <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
             </div>
             <? if($col['posicion_texto'] && $col['texto']): ?>
-            <div class="text-secondary my-48 offset-1 col-10 <?=$col['posicion_texto']?>">
+            <div class="text-start text-secondary m-auto offset-1 col-10 <?=$col['posicion_texto']?>">
               <? if($col['posicion_texto']): ?>
                 <?=$col['texto']?>
               <? endif; ?>

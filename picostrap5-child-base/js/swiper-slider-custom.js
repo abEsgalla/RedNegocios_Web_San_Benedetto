@@ -152,7 +152,7 @@ const swiper_prefooter_logos = new Swiper('.swiper-prefooter-logos', {
 const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
   direction: 'horizontal',
   autoHeight : true,
-  loop: true,
+  loop: false,
   slidesPerView: 'auto',
   //spaceBetween: 12,
   /*breakpoints: {
@@ -160,4 +160,19 @@ const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
       slidesPerView: 7,
     }
   }*/
+});
+
+swiper_landing_productos.on('slideChange', function () {
+  var arrow_prev = document.querySelector(".swiper-landing-productos .arrow-prev");
+  var arrow_next = document.querySelector(".swiper-landing-productos .arrow-next");
+  if(swiper_landing_productos.isBeginning){
+    arrow_prev.classList.add('opacity-50');
+    arrow_next.classList.remove('opacity-50');
+  }else if (swiper_landing_productos.isEnd){
+    arrow_prev.classList.remove('opacity-50');
+    arrow_next.classList.add('opacity-50');
+  }else{
+    arrow_prev.classList.remove('opacity-50');
+    arrow_next.classList.remove('opacity-50');
+  }
 });

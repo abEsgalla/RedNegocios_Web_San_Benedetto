@@ -3,7 +3,7 @@
   $seccion = $fields;
 ?>
 
-<section class="my-64">
+<section class="my-64 mt-xl-150 mb-xl-56">
     <div class="container position-relative">
         <div class="row">
             <div class="col-12">
@@ -19,7 +19,7 @@
                                     <div class="col-6 text-end">
                                         <?=wp_get_attachment_image($seccion['1_ilustracion'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
                                     </div>
-                                    <div class="col-6 text-start">
+                                    <div class="col-6 text-start fw-bold">
                                         <?=$seccion['1_ilustracion_texto']?>
                                     </div>
                                 </div>
@@ -29,7 +29,7 @@
                                     <div class="col-6 text-end">
                                         <?=wp_get_attachment_image($seccion['2_ilustracion'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
                                     </div>
-                                    <div class="col-6 text-start">
+                                    <div class="col-6 text-start fw-bold">
                                         <?=$seccion['2_ilustracion_texto']?>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                                     <div class="col-6 text-end">
                                         <?=wp_get_attachment_image($seccion['3_ilustracion'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
                                     </div>
-                                    <div class="col-6 text-start">
+                                    <div class="col-6 text-start fw-bold">
                                         <?=$seccion['3_ilustracion_texto']?>
                                     </div>
                                 </div>
