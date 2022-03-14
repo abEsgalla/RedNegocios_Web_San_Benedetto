@@ -36,7 +36,7 @@
     <div class='col-12 tab-pane fade ".$show." ".$active."' id='".$term_name_sanitice."' 
     role='tabpanel' aria-labelledby='".$term_name_sanitice."-tab'>
       <div class='row text-center'>
-          <div class='col-12 mt-80 text-secondary'>
+          <div class='col-12 offset-lg-2 col-lg-8 mt-80 text-secondary'>
               ".get_term_field( 'description', $id_term )."
           </div>
           <div class='col-12'>
@@ -70,7 +70,7 @@
 ?>
 
 <div class="col-12">
-  <ul class="justify-content-center nav nav-pills mb-3 h5" id="pills-tab" role="tablist">
+  <ul class="justify-content-center nav nav-pills h5" id="pills-tab" role="tablist">
       <?=$cabecera_tabs_html?>
   </ul>
   <div class="row tab-content" id="pills-tabContent">

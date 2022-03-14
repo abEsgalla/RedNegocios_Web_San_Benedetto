@@ -9,20 +9,22 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section class="d-flex py-176 position-relative text-white">
-    <div class="top-0 position-absolute h-100 w-100 overflow-hidden bg-secondary">
-        <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'fix-banner opacity-50' , 'alt' => '' , 'title' => '') ); ?>
+<section class="d-flex position-relative text-white">
+    <div class="bg-secondary">
+        <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
     </div>
-    <div class="container zi-99">
-        <div class="row">
-            <div class="col-12 text-center">
-                <div class="h2">NUESTRAS MARCAS</div>
+    <div class="container-fluid zi-99 top-50 position-absolute translate-middle-y">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="h2">NUESTRAS <br> MARCAS</div>
+                </div>
             </div>
         </div>
     <div>
 </section>
 
-<section class="py-96">
+<section class="mt-96 mb-120">
     <div class="container">
         <div class="row">
             <?php
@@ -32,7 +34,7 @@ get_header();
     </div>
 </section>
 
-<section class="d-flex py-96 position-relative text-white">
+<section class="d-flex position-relative text-white">
     <?php
         get_template_part( 'template-parts/marcas/seccion', 'banner', $acf_fields['banner']);
     ?>

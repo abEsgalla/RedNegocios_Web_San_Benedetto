@@ -314,9 +314,9 @@ HOW TO REFERENCE ASSETS AND IMAGES
                 position: absolute;
                 width: 0%;
                 left: 0px;
-                bottom: 0px;
+                bottom: 0%;
                 height: 2px;
-                background-color: #ffffff;
+                background-color: $white;
                 transition: width linear 0.2s;
             }
             &.active:after{
@@ -343,5 +343,29 @@ span{
         height: 12px;
         width: 12px;
         background-color: $white;
+    }
+}
+
+#pills-tab{
+    .nav-link{
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 0%;
+            bottom: 0%;
+            transform: translateX(-50%);
+            left: 50%;
+            height: 2px;
+            background-color: $secondary;
+            transition: width linear 0.15s;
+        }
+        &.active:after{
+            width: 50%;
+        }
+        &:not(.active):hover:after{
+            width: 50%;
+            transition: width linear 0.15s;
+        }
     }
 }
