@@ -3,7 +3,7 @@
   $seccion = $fields;
 ?>
 
-<section class="my-64">
+<section class="mt-36 mb-64">
   <div class="container position-relative">
     <div class="row">
       <div class="col-12">
@@ -31,8 +31,8 @@
                 data-name="<?=ucfirst($slide['nombre_producto'])?>" 
                 data-description="<?=$slide['descripcion_producto']?>">
                   <div style="background-color:<?=get_field('caracteristicas_producto',$seccion['id_producto'])['color_corporativo']?>"
-                  class='h-90 w-100 d-flex justify-content-center align-items-center'>
-                    <?=wp_get_attachment_image($slide['imagen_producto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+                  class='w-100 h-90 d-flex justify-content-center align-items-center'>
+                    <?=wp_get_attachment_image($slide['imagen_producto'], "full", "", array( 'class' => 'h-auto mh-100 ratio ratio-5x7' , 'alt' => '' , 'title' => '') )?>
                   </div>
                   <div class="w-100 text-start text-uppercase mt-12 text-secondary">
                     <?=$slide['nombre_producto']?>
@@ -44,8 +44,8 @@
             endif;
             ?>
           </div>
-          <div class="container mt-56 <?=(count($seccion['slider']['slide'])<=5)?'d-xl-none':'';?>">
-            <div class="row position-relative">
+          <div class="container mt-56">
+            <div class="row position-relative <?=(count($seccion['slider']['slide'])<=5)?'d-xl-none':'';?>">
               <div class="zi-99 col-12 d-none d-xxl-flex justify-content-between align-items-center g-0">
                 <div class="c-pointer arrow-prev opacity-50" onclick=swiper_landing_productos.slidePrev()>
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="32" viewBox="0 0 17 32" fill="none">

@@ -40,15 +40,15 @@ get_header();
     <div class="row text-center">
       <div class="offset-2 col-8 mt-176 fs-32 fw-bolder text-secondary">
         Del gr. οἰκο- oiko-.: Significa 'ecológico'<br>
-        Del gr. φιλοσοφία philosophía.:  <span class="text-green d-block"> Manera de pensar o de ver las cosas. </span>
+        Del gr. φιλοσοφία philosophía.:  <span class="text-green d-block lh-1"> Manera de pensar o de ver las cosas. </span>
       </div>
-      <div class="offset-2 col-8 mt-96 text-center text-secondary">
+      <div class="offset-2 col-8 mt-102 text-center text-secondary">
         Nuestro principal activo, el core y razón de ser de nuestra compañía, 
         es el agua mineral que brota del interior de la tierra. 
         Debemos a la Naturaleza la existencia de nuestra actividad y, por eso, 
-        entendemos la sostenibilidad como una filosofía inherente a nuestra misión como empresa. 
-        De ahí nace nuestra Ecolosofía: es la forma en la que Agua Mineral San Benedetto utiliza el conocimiento 
-        y la tecnología en beneficio del medioambiente y las personas. ¿Cómo? 
+        entendemos la sostenibilidad como una <strong>filosofía inherente a nuestra misión como empresa.</strong> 
+        De ahí nace nuestra Ecolosofía: es la forma en la que Agua Mineral San Benedetto utiliza el <strong>conocimiento 
+        y la tecnología en beneficio del medioambiente y las personas. ¿Cómo? </strong>
       </div>
       <div class="col-12 mt-96">
         <div class="row text-white text-uppercase">
@@ -120,7 +120,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-96 mt-xl-256 mb-xl-160">
   <div class="container bg-white">
     <div class="row">
       <div class="col-12">
@@ -149,17 +149,13 @@ get_header();
             </div>
           </div>
           <div style="" class="g-0 col-12 col-sm-6 d-block bg-black">
-            <div class="row position-relative h-100">
-              <div class="position-relative">
-                <?=wp_get_attachment_image(615, "full", "", array( 'class' => 'w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-              </div>
+            <div class="position-relative d-flex w-100 h-100">
+              <?=wp_get_attachment_image(615, "full", "", array( 'class' => 'center-image w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
             </div>
           </div>
           <div style="" class="g-0 col-12 col-sm-6 d-block bg-black">
-            <div class="row position-relative h-100">
-              <div class="position-relative">
-                <?=wp_get_attachment_image(616, "full", "", array( 'class' => 'w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-              </div>
+            <div class="position-relative d-flex w-100 h-100">
+              <?=wp_get_attachment_image(616, "full", "", array( 'class' => 'center-image w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
             </div>
           </div>
           <div style="" class="g-0 col-12 col-sm-6 d-block">
@@ -170,10 +166,10 @@ get_header();
                     <div class="col-12">
                       <div class="row text-secondary">
                         <div class="offset-1 col-10">
-                          Tenemos un acuerdo con Aldeas Infantiles SOS según el cual suministramos botellas de agua diarias 
+                          Tenemos un acuerdo con <strong>Aldeas Infantiles SOS</strong> según el cual suministramos botellas de agua diarias 
                           a los 45 niños y niñas de su Centro de Día en Valencia. 
-                          También realizamos donaciones asiduas a organizaciones como Cruz Roja, 
-                          Fundación Ayuda Una Familia y Hambre Cero, 
+                          También realizamos donaciones asiduas a organizaciones como <strong>Cruz Roja, 
+                          Fundación Ayuda Una Familia</strong> y <strong>Hambre Cero</strong>, 
                           además de apoyar activamente todas las iniciativas culturales y de ocio de nuestro entorno local.  
                         </div>
                       </div>

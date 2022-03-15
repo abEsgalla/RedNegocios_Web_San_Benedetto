@@ -3,7 +3,7 @@
   $seccion = $fields;
 ?>
 
-<section class="my-64">
+<section class="mt-64 mb-80">
   <div class="container position-relative">
     <div class="row">
       <div class="offset-3 col-6">
