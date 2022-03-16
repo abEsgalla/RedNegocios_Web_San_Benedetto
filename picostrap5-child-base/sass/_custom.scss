@@ -221,16 +221,20 @@ HOW TO REFERENCE ASSETS AND IMAGES
     width: 20%;
 }
 
+.w-custom-1-7{
+    width: Calc(1/7*100%);
+}
+
 // Large devices (desktops, less than 1200px || xl)
 @media (max-width: 1199.98px) {
-    .w-custom-20{
+    .w-custom-20,.w-custom-1-7{
         width: 50%;
     }
 }
 
 // Medium devices (tablets, less than 992px || md)
 @media (max-width: 991.98px) {
-    .w-custom-20{
+    .w-custom-20,.w-custom-1-7{
         width: 100%;
     }
 }

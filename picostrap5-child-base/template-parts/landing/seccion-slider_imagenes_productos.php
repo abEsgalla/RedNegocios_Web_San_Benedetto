@@ -23,7 +23,7 @@
             if ($seccion['slider']):
               foreach ($seccion['slider']['slide'] as $slide ):
               ?>
-              <div class="px-12 w-custom-20 swiper-slide d-inline-flex flex-column justify-content-center align-items-center h-100">
+              <div class="px-8 w-custom-1-7 swiper-slide d-inline-flex flex-column justify-content-center align-items-center h-100">
                 <a class="text-reset text-decoration-none d-flex flex-column w-100 h-100"
                 data-bs-toggle="offcanvas" href="#offcanvasInfoSliderProductos" role="button" 
                 aria-controls="offcanvasInfoSliderProductos" 
@@ -31,8 +31,8 @@
                 data-name="<?=ucfirst($slide['nombre_producto'])?>" 
                 data-description="<?=$slide['descripcion_producto']?>">
                   <div style="background-color:<?=get_field('caracteristicas_producto',$seccion['id_producto'])['color_corporativo']?>"
-                  class='w-100 h-90 d-flex justify-content-center align-items-center'>
-                    <?=wp_get_attachment_image($slide['imagen_producto'], "full", "", array( 'class' => 'h-auto mh-100 ratio ratio-5x7' , 'alt' => '' , 'title' => '') )?>
+                  class='w-100 ratio ratio-5x7 d-flex justify-content-center align-items-center'>
+                    <?=wp_get_attachment_image($slide['imagen_producto'], "full", "", array( 'class' => 'h-auto mh-100' , 'alt' => '' , 'title' => '') )?>
                   </div>
                   <div class="w-100 text-start text-uppercase mt-12 text-secondary">
                     <?=$slide['nombre_producto']?>
@@ -45,7 +45,7 @@
             ?>
           </div>
           <div class="container mt-56">
-            <div class="row position-relative <?=(count($seccion['slider']['slide'])<=5)?'d-xl-none':'';?>">
+            <div class="row position-relative <?=(count($seccion['slider']['slide'])<=7)?'d-xl-none':'';?>">
               <div class="zi-99 col-12 d-none d-xxl-flex justify-content-between align-items-center g-0">
                 <div class="c-pointer arrow-prev opacity-50" onclick=swiper_landing_productos.slidePrev()>
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="32" viewBox="0 0 17 32" fill="none">
