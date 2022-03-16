@@ -134,7 +134,7 @@
                         </div>
                         <div class="col-12 mt-24">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(672)?>">
-                            trabaja con nosotros
+                            buscamos talento
                           </a>
                         </div>
                         <div class="col-12 mt-16">
