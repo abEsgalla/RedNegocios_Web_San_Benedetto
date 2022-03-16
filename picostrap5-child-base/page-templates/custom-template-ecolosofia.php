@@ -53,7 +53,7 @@ get_header();
       <div class="col-12 mt-96">
         <div class="row text-white text-uppercase">
           <div class="col-4">
-            <a class="text-reset text-decoration-none" href="<?=get_permalink(585)?>">
+            <a class="text-reset text-decoration-none hover-ecolosofia-efect" href="<?=get_permalink(585)?>">
               <div class="ratio ratio-1x1 bg-primary">
                 <div class="d-flex flex-column align-items-center justify-content-center">
                   <div>
@@ -74,7 +74,7 @@ get_header();
             </a>
           </div>
           <div class="col-4">
-            <a class="text-reset text-decoration-none" href="<?=get_permalink(587)?>">
+            <a class="text-reset text-decoration-none hover-ecolosofia-efect" href="<?=get_permalink(587)?>">
               <div class="ratio ratio-1x1 bg-secondary">
                 <div class="d-flex flex-column align-items-center justify-content-center">
                   <div>
@@ -100,7 +100,7 @@ get_header();
             </a>
           </div>
           <div class="col-4">
-            <a class="text-reset text-decoration-none" href="<?=get_permalink(589)?>">
+            <a class="text-reset text-decoration-none hover-ecolosofia-efect" href="<?=get_permalink(589)?>">
               <div class="ratio ratio-1x1 bg-primary">
                 <div class="d-flex flex-column align-items-center justify-content-center">
                   <div>
