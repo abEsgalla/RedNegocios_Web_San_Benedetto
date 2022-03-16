@@ -497,3 +497,17 @@ span{
 .border-dashed-custom{
     border-left: 1px dashed $primary-bright;
 }
+
+#preguntas-frecuentes{
+    .accordion-button{
+        &:focus{
+            border-bottom : 1px solid $secondary-lighter !important;
+            box-shadow: none !important;
+        }
+        &:not(.collapsed){
+            color: $primary !important;
+            background: $white !important;
+            font-weight: 800 !important;
+        }
+    }
+}
