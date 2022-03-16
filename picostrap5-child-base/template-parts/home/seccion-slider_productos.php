@@ -13,10 +13,12 @@ foreach ($fields['productos'] as $id_producto):
   type-".str_replace(' ', '-', strtolower($category_name))."'>";
   if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"]):
     $slider_html.=
-    "<a class='d-inline-block w-100 h-100 text-decoration-none' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
-    <div class='contenedor-cursor-custom ratio ratio-30x43' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>"
+    "<a class='d-inline-block w-100 h-100 text-decoration-none contenedor-cursor-custom' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
+    <div class='container-scale'>
+    <div class='ratio ratio-30x43' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>"
     .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"], "full", "", array( 'class' => 'h-auto top-50 translate-middle-y' , 'alt' => '' , 'title' => '') ).
-    "</div>";
+    "</div>
+    </div>";
   endif;
   $slider_html.="<div class='w-100 text-start mt-20 text-secondary text-uppercase fs-13 fw-500'>"
   .get_the_title($id_producto)

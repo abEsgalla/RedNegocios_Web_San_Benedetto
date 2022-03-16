@@ -26,7 +26,7 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
   private $custom_classes;
 
   public function __construct() {
-    $this->custom_classes = ' text-uppercase fs-13 letter-spacing-1x3 ';
+    $this->custom_classes = ' animation-undertext fw-500 text-uppercase fs-13 letter-spacing-1x3 ';
     if ( is_main_query() ) {
       if ( is_front_page() ) {
         //var_dump('PAGINA INICIO');

@@ -121,17 +121,20 @@ HOW TO REFERENCE ASSETS AND IMAGES
 
 .contenedor-cursor-custom{
     position: relative;
-    &:hover{
-        /*img{
-            transform: scale(0.95);
-            transition: transform linear 0.2s;
-        }*/
-        cursor:none;
-    }
-    /*img{
+    &.container-scale,.container-scale{
         transform: scale(1);
         transition: transform linear 0.2s;
-    }*/
+    }
+    &:hover{
+        &.container-scale,.container-scale{
+            transform: scale(0.95);
+            transition: transform linear 0.2s;
+        }
+        cursor:none;
+    }
+    *{
+        pointer-events: none;
+    }
     .cursor-custom {
         position: absolute;
         width: 100px;
@@ -313,25 +316,72 @@ HOW TO REFERENCE ASSETS AND IMAGES
         &>a{
             padding-right: 0.5rem;
             padding-left: 0rem;
-            position: relative;
-            &:after{
-                content: "";
-                position: absolute;
-                width: 0%;
-                left: 0px;
-                bottom: 0%;
-                height: 2px;
-                background-color: $white;
-                transition: width linear 0.2s;
-            }
-            &.active:after{
-                width: 75%;
-            }
-            &:not(.active):hover:after{
-                width: 75%;
-                transition: width linear 0.2s;
-            }
         }
+    }
+}
+
+#logo-tagline-wrap {
+    .custom-logo-link{
+        .svg-container-custom{
+            width: 131px;
+            height: 47px;
+        }
+    }
+}
+
+.animation-undertext{
+    position : relative;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0%;
+        left: 0px;
+        bottom: 0%;
+        height: 2px;
+        transition: width linear 0.2s;
+    }
+    &.text-white:after{
+        background-color: $white;
+    }
+    &.text-secondary:after{
+        background-color: $secondary;
+    }
+    &.active:after{
+        width: 75%;
+    }
+    &:not(.active):hover:after{
+        width: 75%;
+        transition: width linear 0.2s;
+    }
+}
+
+.animation-starttext{
+    position : relative;
+    padding-left: 0px;
+    transition: padding-left linear 0.2s;
+    &:hover{
+        padding-left: 32px;
+        font-weight: 800;
+    }
+    &:after{
+        transform: translateY(-50%);
+        content: "";
+        position: absolute;
+        width: 0%;
+        left: 0%;
+        top: 50%;
+        height: 2px;
+        transition: width linear 0.2s;
+    }
+    &.text-white:after{
+        background-color: $white;
+    }
+    &.text-secondary:after{
+        background-color: $secondary;
+    }
+    &:hover:after{
+        width: 24px;
+        transition: width linear 0.2s;
     }
 }
 

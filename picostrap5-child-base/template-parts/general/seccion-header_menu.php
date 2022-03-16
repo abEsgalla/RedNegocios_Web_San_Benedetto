@@ -113,16 +113,18 @@ endif;
 ?>
 
 <div class="position-relative h-0">
-    <div class="h-0 offcanvas offcanvas-top position-sticky bg-white shadow" 
-    data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas-marcas" aria-labelledby="offcanvas-marcas">
+    <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
+    data-bs-scroll="true" data-bs-backdrop="false"
+    tabindex="-1" id="offcanvas-marcas" aria-labelledby="offcanvas-marcas">
         <div class="container">
             <div class="row py-56">
                 <?=$header_menu?>
             </div>
         </div>
     </div>
-    <div class="h-0 offcanvas offcanvas-top position-sticky bg-white shadow" 
-    data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas-nosotros" aria-labelledby="offcanvas-nosotros">
+    <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
+    data-bs-scroll="true" data-bs-backdrop="false"
+     tabindex="-1" id="offcanvas-nosotros" aria-labelledby="offcanvas-nosotros">
         <div class="container">
             <div class="row py-56 text-secondary">
                 <div class="col-6">
@@ -132,27 +134,27 @@ endif;
                     <div class="row">
                         <div class="col-12 text-uppercase">
                             <div class="my-12">
-                                <a class="text-decoration-none text-reset" href="<?=get_permalink(579)?>">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(579)?>">
                                     Historia
                                 </a>
                             </div>
                             <div class="my-12">
-                                <a class="text-decoration-none text-reset" href="<?=get_permalink(581)?>">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(581)?>">
                                     Misión, Visión y valores
                                 </a>
                             </div>
                             <div class="my-12">
-                                <a class="text-decoration-none text-reset" href="<?=get_permalink(655)?>">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(655)?>">
                                     San benedetto en españa
                                 </a>
                             </div>
                             <div class="my-12">
-                                <a class="text-decoration-none text-reset" href="<?=get_permalink(667)?>">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(667)?>">
                                     San benedetto en el mundo
                                 </a>
                             </div>
                             <div class="my-12">
-                                <a class="text-decoration-none text-reset" href="<?=esc_url(get_post_type_archive_link('post'));?>">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=esc_url(get_post_type_archive_link('post'));?>">
                                     noticias
                                 </a>
                             </div>
