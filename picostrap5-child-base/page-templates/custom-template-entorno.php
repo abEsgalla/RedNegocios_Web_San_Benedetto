@@ -11,7 +11,8 @@ get_header();
 
 <section>
   <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(630, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+    <?=wp_get_attachment_image(779, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99' , 'alt' => '' , 'title' => '') ); ?>
+    <?=wp_get_attachment_image(780, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
     <div class="container">
@@ -34,20 +35,20 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-96 mt-xl-185">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12">
         <div class="row">
-          <div class="offset-2 col-8 text-center h2">
-            Medición de indicadores estratégicos
+          <div class="offset-1 col-10 text-center h2">
+            Reducción y compensación de emisiones
           </div>
           <div class="offset-2 col-8 text-center mt-80">
-            Creemos que una cantidad de CO2 emitida en un lugar de la Tierra 
-            puede ser neutralizada con la reducción o eliminación de la misma cantidad de CO2 en otro punto del planeta.
+            Creemos que <strong>una cantidad de CO2 emitida en un lugar de la Tierra 
+            puede ser neutralizada con la reducción o eliminación de la misma cantidad de CO2 en otro punto del planeta.</strong>
             Gracias a que medimos nuestra huella de carbono, 
             ¡podemos afirmar que compensamos el 100% de las emisiones de algunos de nuestros productos! 
-            ¿Cómo? Invirtiendo en proyectos forestales sostenibles. <br></br>
+            ¿Cómo? Invirtiendo en <strong>proyectos forestales sostenibles.</strong> <br></br>
             Descubre más sobre ellos aquí:  
           </div>
           <div class="col-12 mt-56">
@@ -55,7 +56,9 @@ get_header();
               <div class="col-4">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
-                    <span class="rounded-circle border border-1 p-80 border-grey bg-grey"></span>
+                    <span class="rounded-circle border border-1">
+                      <?=wp_get_attachment_image(781, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    </span>
                   </div>
                   <div class="col-12 mt-24 fs-20 fw-bold">
                     Nyagatare (Ruanda) 
@@ -65,7 +68,9 @@ get_header();
               <div class="col-4">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
-                    <span class="rounded-circle border border-1 p-80 border-grey bg-grey"></span>
+                    <span class="rounded-circle border border-1">
+                      <?=wp_get_attachment_image(782, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    </span>
                   </div>
                   <div class="col-12 mt-24 fs-20 fw-bold">
                     Castañeros REDD+ (Perú) 
@@ -75,7 +80,9 @@ get_header();
               <div class="col-4">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
-                    <span class="rounded-circle border border-1 p-80 border-grey bg-grey"></span>
+                    <span class="rounded-circle border border-1">
+                      <?=wp_get_attachment_image(783, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    </span>
                   </div>
                   <div class="col-12 mt-24 fs-20 fw-bold">
                     Ecomapuá REDD+ (Brasil)  
@@ -90,7 +97,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-96 mt-xl-245">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12">
@@ -102,7 +109,7 @@ get_header();
                   <div class="col-12 h3">
                     Logística 
                   </div>
-                  <div class="col-12 mt-30">
+                  <div class="col-12 mt-30 fs-17">
                     En la medida de lo posible, tratamos de utilizar formas de transporte sostenible, 
                     como el uso de vehículos propulsados por GNL y camiones dúo-tráiler, 
                     contribuyendo así a reducir nuestras emisiones de CO2. 
@@ -112,7 +119,7 @@ get_header();
             </div>
           </div>
           <div class="g-0 col-12 col-sm-6 d-block position-relative">
-            <?=wp_get_attachment_image(631, "full", "", array( 'class' => 'position-absolute' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(784, "full", "", array( 'class' => 'position-absolute' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div>
       </div>
@@ -129,7 +136,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-96 mb-xl-245">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12">
@@ -144,10 +151,11 @@ get_header();
                   <div class="col-12 h3">
                     Limpieza y reforestación del entorno  
                   </div>
-                  <div class="col-12 mt-30">
+                  <div class="col-12 mt-30 fs-17">
                     Llevamos varios años organizando plantaciones de árboles en los alrededores de nuestras instalaciones, 
                     eligiendo árboles y vegetación autóctona del Parque Natural de las Hoces del Cabriel. 
-                    En total, calculamos que hemos repoblado más de 1.000 plantas en los últimos cinco años. <br></br>
+                    En total, calculamos que hemos repoblado 
+                    <strong>más de 1.000 plantas en los últimos cinco años.</strong> <br></br>
                     También realizamos tareas de limpieza en nuestro entorno para fomentar la lucha contra el littering 
                     ―abandono de residuos― y la limpieza de espacios protegidos. 
                   </div>
