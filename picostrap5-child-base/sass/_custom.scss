@@ -142,6 +142,7 @@ HOW TO REFERENCE ASSETS AND IMAGES
         display: none;
         pointer-events: none;
         z-index: 1;
+        font-weight: 800;
         >div{
             position: relative;
             width: 100%; 
@@ -491,4 +492,8 @@ span{
             transition: transform linear 0.15s;
         }
     }
+}
+
+.border-dashed-custom{
+    border-left: 1px dashed $primary-bright;
 }

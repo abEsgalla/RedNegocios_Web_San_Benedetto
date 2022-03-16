@@ -179,7 +179,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-6 mt-80">
+              <div class="col-6 mt-80 mt-xl-120">
                 <div class="row">
                   <div class="offset-1 col-10">
                     <div class="row">
@@ -212,7 +212,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-6 mt-80">
+              <div class="col-6 mt-80 mt-xl-120">
                 <div class="row">
                   <div class="offset-1 col-10">
                     <div class="row">
@@ -257,7 +257,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-96 mt-xl-112">
   <div class="container-fluid">
     <div class="row position-relative">
       <div class="col-6 g-0 bg-black position-relative">
@@ -289,7 +289,7 @@ get_header();
                       Producción sostenible.
                     </div>
                     <div class="col-12 mt-36">
-                      <a href="#" class="btn btn-outline-white text-uppercase rounded-0">
+                      <a href="<?=get_permalink(583)?>" class="btn btn-outline-white text-uppercase rounded-0">
                         ir a ecolosofía
                       </a>
                     </div>

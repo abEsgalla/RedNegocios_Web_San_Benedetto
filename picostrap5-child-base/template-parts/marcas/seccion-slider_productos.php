@@ -36,7 +36,7 @@
     <div class='col-12 tab-pane fade ".$show." ".$active."' id='".$term_name_sanitice."' 
     role='tabpanel' aria-labelledby='".$term_name_sanitice."-tab'>
       <div class='row text-center'>
-          <div class='col-12 offset-lg-2 col-lg-8 mt-80 text-secondary'>
+          <div class='col-12 offset-lg-2 col-lg-8 mt-80 text-secondary fs-17'>
               ".get_term_field( 'description', $id_term )."
           </div>
           <div class='col-12'>
@@ -45,12 +45,14 @@
     
     $cuerpo_tabs_html.="
                 <div class='col-4 mt-64'>
-                <a class='text-decoration-none' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>";
+                <a class='text-decoration-none d-inline-block w-100 h-100 contenedor-cursor-custom' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>";
     if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"]):
       $cuerpo_tabs_html.= 
-                  "<div class='ratio ratio-1x1' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."99"."'>"
+                  "<div class='container-scale'>
+                  <div class='ratio ratio-1x1' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."99"."'>"
                   .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], 'full', '', array( 'class' => 'fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => '' , 'title' => '') )
-                  ."</div>";
+                  ."</div>
+                  </div>";
     endif;
     $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary fs-13 fw-500'>".mb_strtoupper(get_the_title($id_producto))."</div>
                 </a>

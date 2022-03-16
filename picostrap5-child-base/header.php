@@ -52,10 +52,12 @@ defined( 'ABSPATH' ) || exit;
               //$txt_color = ' text-white ';
             }
             if ( is_page() && !is_front_page()) {
-              //var_dump('PAGINA NORMAL');
-              $custom_classes .= ' bg-secondary ';
-              //$logo = 772;
-              //$txt_color = ' text-white ';
+              if(get_the_ID()!=49):
+                //var_dump('PAGINA NORMAL NOT MARCAS');
+                  $custom_classes .= ' bg-secondary ';
+                //$logo = 772;
+                //$txt_color = ' text-white ';
+              endif;
             }
             if ( is_archive()  && !is_front_page()) {
               //var_dump('PAGINA ARCHIVE');
