@@ -44,6 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var menuNosotrosOffcanvas = document.getElementById('offcanvas-nosotros');
   showMenuElement(menuNosotrosOffcanvas);
 
+  var menuNosotrosOffcanvas = document.getElementById('offcanvas-ecolosofia');
+  showMenuElement(menuNosotrosOffcanvas);
+
+  var menuNosotrosOffcanvas = document.getElementById('offcanvas-contacto');
+  showMenuElement(menuNosotrosOffcanvas);
+
   function showMenuElement(element){
     element.addEventListener('show.bs.offcanvas', function (event) {
       event.relatedTarget.classList.add("active","active-offcanvas");

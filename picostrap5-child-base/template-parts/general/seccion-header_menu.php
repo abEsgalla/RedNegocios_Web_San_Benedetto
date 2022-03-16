@@ -113,18 +113,20 @@ endif;
 ?>
 
 <div class="position-relative h-0">
+
     <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
-    data-bs-scroll="true" data-bs-backdrop="false"
-    tabindex="-1" id="offcanvas-marcas" aria-labelledby="offcanvas-marcas">
+        data-bs-scroll="true" data-bs-backdrop="false"
+        tabindex="-1" id="offcanvas-marcas" aria-labelledby="offcanvas-marcas">
         <div class="container">
             <div class="row py-56">
                 <?=$header_menu?>
             </div>
         </div>
     </div>
+
     <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
-    data-bs-scroll="true" data-bs-backdrop="false"
-     tabindex="-1" id="offcanvas-nosotros" aria-labelledby="offcanvas-nosotros">
+        data-bs-scroll="true" data-bs-backdrop="false"
+        tabindex="-1" id="offcanvas-nosotros" aria-labelledby="offcanvas-nosotros">
         <div class="container">
             <div class="row py-56 text-secondary">
                 <div class="col-6">
@@ -164,4 +166,71 @@ endif;
             </div>
         </div>
     </div>
+
+    <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
+        data-bs-scroll="true" data-bs-backdrop="false"
+        tabindex="-1" id="offcanvas-ecolosofia" aria-labelledby="offcanvas-ecolosofia">
+        <div class="container">
+            <div class="row py-56 text-secondary">
+                <div class="col-6">
+                    <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12 text-uppercase">
+                            <div class="my-12">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(585)?>">
+                                    Productos
+                                </a>
+                            </div>
+                            <div class="my-12">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(587)?>">
+                                    Procesos
+                                </a>
+                            </div>
+                            <div class="my-12">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(589)?>">
+                                    Entorno
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
+        data-bs-scroll="true" data-bs-backdrop="false"
+        tabindex="-1" id="offcanvas-contacto" aria-labelledby="offcanvas-contacto">
+        <div class="container">
+            <div class="row py-56 text-secondary">
+                <div class="col-6">
+                    <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12 text-uppercase">
+                            <div class="my-12">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(672)?>">
+                                    Buscamos Talento
+                                </a>
+                            </div>
+                            <div class="my-12">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(650)?>">
+                                    Localizacion y contacto
+                                </a>
+                            </div>
+                            <div class="my-12">
+                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(785)?>">
+                                    Preguntas Frecuentes
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
