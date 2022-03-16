@@ -41,41 +41,54 @@ defined( 'ABSPATH' ) || exit;
         <!-- ******************* The Navbar Area ******************* -->
         <?php
         $custom_classes = '';
+        $icon_color = '#ffffff';
+        $logo = 772;
+        $txt_color = ' text-white ';
         if ( is_main_query() ) {
             if ( is_front_page() ) {
               //var_dump('PAGINA INICIO');
               $custom_classes .= ' ';
-              $logo = 772;
+              //$logo = 772;
+              //$txt_color = ' text-white ';
             }
             if ( is_page() && !is_front_page()) {
               //var_dump('PAGINA NORMAL');
               $custom_classes .= ' bg-secondary ';
-              $logo = 772;
+              //$logo = 772;
+              //$txt_color = ' text-white ';
             }
             if ( is_archive()  && !is_front_page()) {
               //var_dump('PAGINA ARCHIVE');
               $custom_classes .= ' bg-white ';
               $logo = 771;
+              $txt_color = ' text-secondary ';
+              $icon_color = '#002D72';
             }
             if ( is_search()  && !is_front_page()) {
               //var_dump('BUSCADOR');
               $custom_classes .= ' ';
-              $logo = 772;
+              //$logo = 772;
+              //$txt_color = ' text-white ';
             }
             if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()!='landing') {
               //var_dump('POST SIMPLE');
               $custom_classes .= ' bg-white ';
               $logo = 771;
+              $txt_color = ' text-secondary ';
+              $icon_color = '#002D72';
             }
             if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()=='landing') {
               //var_dump('LANDING');
               $custom_classes .= ' bg-white ';
               $logo = 771;
+              $txt_color = ' text-secondary ';
+              $icon_color = '#002D72';
             }
             if ( is_home() && !is_front_page()) {
               //var_dump('PAGINA POSTS');
               $custom_classes .= ' bg-primary ';
-              $logo = 772;
+              //$logo = 772;
+              //$txt_color = ' text-white ';
             }
         }
         ?>
@@ -131,12 +144,31 @@ defined( 'ABSPATH' ) || exit;
 
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <?php 
+                  $lang_item = 
+                  '<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
+                    <span class="nav-link  fw-500 text-uppercase fs-13 letter-spacing-1x3  '.$txt_color.' ">
+                      |
+                    </span>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
+                    <a href="#" class="nav-link  fw-500 text-uppercase fs-13 letter-spacing-1x3  '.$txt_color.' ">
+                      Es 
+                      <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <mask id="mask0_1234_27603" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="8" width="12" height="8">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41 8.48633L12 12.8831L16.59 8.48633L18 9.83993L12 15.5999L6 9.83993L7.41 8.48633Z" fill="'.$icon_color.'"/>
+                        </mask>
+                        <g mask="url(#mask0_1234_27603)">
+                        <rect width="24" height="23.04" fill="'.$icon_color.'"/>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>';
                   wp_nav_menu(array(
                     'theme_location' => 'primary',
                     'container' => false,
                     'menu_class' => '',
                     'fallback_cb' => '__return_false',
-                    'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+                    'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s'.$lang_item.'</ul>',
                     'walker' => new bootstrap_5_wp_nav_menu_walker_ext()
                 ));
                 ?>

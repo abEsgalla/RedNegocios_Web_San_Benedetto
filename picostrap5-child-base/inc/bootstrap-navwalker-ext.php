@@ -129,6 +129,8 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     $item_output .= '</a>';
     $item_output .= $args->after;
 
+    //var_dump($item_output);
+
     $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
   }
 }
