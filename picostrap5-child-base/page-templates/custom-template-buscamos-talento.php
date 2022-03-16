@@ -31,20 +31,20 @@ get_header();
   </div>
 </section>
 
-<section class="mb-96 bg-secondary text-white">
+<section class="mb-56 bg-secondary text-white">
   <div class="container">
     <div class="row py-96">
       <div class="col-6">
         
       </div>
       <div class="col-6">
-        <?=wp_get_attachment_image(675, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+        <?=wp_get_attachment_image(791, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-56">
   <div class="container">
     <div class="row">
       <div class="col-12 position-relative">
