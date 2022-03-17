@@ -52,6 +52,7 @@ defined( 'ABSPATH' ) || exit;
               //$txt_color = ' text-white ';
             }
             if ( is_page() && !is_front_page()) {
+              $colorMenu = get_field('tipo_menu');
               if(get_the_ID()!=49):
                 //var_dump('PAGINA NORMAL NOT MARCAS');
                   $custom_classes .= ' bg-secondary ';
@@ -79,14 +80,19 @@ defined( 'ABSPATH' ) || exit;
               $txt_color = ' text-secondary ';
               $icon_color = '#002D72';
             }
+            if(is_single() && get_post_type()=='post'){
+              $colorMenu = 'menu-dark';
+            }
             if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()=='landing') {
               //var_dump('LANDING');
+              $colorMenu = 'menu-dark';
               $custom_classes .= ' bg-white ';
               $logo = 771;
               $txt_color = ' text-secondary ';
               $icon_color = '#002D72';
             }
             if ( is_home() && !is_front_page()) {
+              $colorMenu = ' menu-dark';
               //var_dump('PAGINA POSTS');
               $custom_classes .= ' bg-primary ';
               //$logo = 772;
@@ -95,8 +101,7 @@ defined( 'ABSPATH' ) || exit;
         }
         ?>
         <div class="fixed-top" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
-
-          <nav class="force-transition zi-1050 shadow navbar <?=$custom_classes?> <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','navbar-dark').' '. get_theme_mod('picostrap_header_navbar_color_choice','bg-dark'); ?>" aria-label="Main Navigation" >
+          <nav class="force-transition zi-1050 navbar <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','').' '. get_theme_mod('picostrap_header_navbar_color_choice', $colorMenu); ?>" aria-label="Main Navigation" >
             <div class="container">
               <div id="logo-tagline-wrap">
                   <!-- Your site title as branding in the menu -->
@@ -116,7 +121,7 @@ defined( 'ABSPATH' ) || exit;
                   <?php } else {
                       ?>
                       <a href="<?=get_home_url()?>" class="custom-logo-link" rel="home" aria-current="page">
-                        <?=wp_get_attachment_image($logo, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                        <?=get_custom_logo();?>
                         <div class="svg-container-custom d-flex align-items-center justify-content-center d-none">
                           <svg class="" xmlns="http://www.w3.org/2000/svg" width="42" height="30" viewBox="0 0 42 30" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7158 1.92095C11.1444 1.81248 11.4659 2.24635 11.841 2.13788C13.3412 1.64978 14.1448 2.46329 15.5379 3.38527C16.0737 3.76491 16.8774 3.2768 17.306 3.05987C21.1101 1.2159 24.8071 0.293919 28.9862 0.0227478C33.3797 -0.139955 37.7732 0.56509 41.7916 2.30059C42.1666 2.35482 41.9523 2.51752 41.7916 2.51752C37.8267 2.68023 34.237 3.05987 30.4864 4.09032C27.5932 4.8496 24.8606 5.66311 22.1817 7.18167C21.378 7.61555 21.0565 8.646 21.378 9.51375C21.6459 10.3815 21.9138 11.3035 22.396 12.1712C23.039 13.3644 23.6819 14.4491 24.432 15.588C25.1821 16.6727 26.093 17.5947 27.0574 18.5166C30.3257 21.3911 31.6116 21.608 32.4153 22.313C32.7367 22.53 32.3617 22.53 32.1474 22.4757C31.6116 22.3673 30.9686 22.1503 30.4328 21.9334C28.0754 21.1199 26.1465 19.6556 24.1105 18.3539C25.1821 21.2826 26.3073 23.9943 26.3073 27.1941C26.3073 27.5738 26.093 27.5738 26.0394 27.3568C25.5036 25.4586 25.075 23.7231 24.1105 21.8792C23.3068 20.3606 22.5032 19.0047 21.4316 17.7574C19.6635 15.588 18.324 13.744 15.4307 12.4424C14.7878 12.1712 14.0377 12.1712 13.4483 12.6051C10.2872 14.9372 7.76895 17.8116 5.25074 21.0656C3.054 23.9401 1.2859 27.2484 0.107158 29.8516C0.107158 30.1228 0.053579 29.9601 0 29.8516C0.214316 24.8078 1.60737 19.5471 4.17916 15.2626C6.00084 12.2797 8.19758 9.78492 10.7158 7.50708C11.6802 6.5851 11.6266 5.175 11.198 4.03608C11.0373 3.60221 11.1444 3.16834 11.1444 2.73446C11.1444 2.40906 10.7158 2.30059 10.7158 1.92095Z" fill="#002867"/>
@@ -145,22 +150,10 @@ defined( 'ABSPATH' ) || exit;
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <?php 
                   $lang_item = 
-                  '<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
-                    <span class="nav-link  fw-500 text-uppercase fs-13 letter-spacing-1x3  '.$txt_color.' ">
-                      |
-                    </span>
-                  </li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
-                    <a href="#" class="nav-link  fw-500 text-uppercase fs-13 letter-spacing-1x3  '.$txt_color.' ">
+                  '<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-language">
+                    <a href="#" class="nav-link  fw-500 text-uppercase fs-13 letter-spacing-1x3">
                       Es 
-                      <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <mask id="mask0_1234_27603" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="8" width="12" height="8">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41 8.48633L12 12.8831L16.59 8.48633L18 9.83993L12 15.5999L6 9.83993L7.41 8.48633Z" fill="'.$icon_color.'"/>
-                        </mask>
-                        <g mask="url(#mask0_1234_27603)">
-                        <rect width="24" height="23.04" fill="'.$icon_color.'"/>
-                        </g>
-                      </svg>
+                      <i class="fa-solid fa-chevron-down"></i>
                     </a>
                   </li>';
                   wp_nav_menu(array(

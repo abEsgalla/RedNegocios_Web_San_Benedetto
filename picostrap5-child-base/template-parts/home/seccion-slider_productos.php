@@ -9,18 +9,18 @@ foreach ($fields['productos'] as $id_producto):
   if (!in_array($category_name, $categories_slider_html)):
     array_push($categories_slider_html,$category_name);
   endif;
-  $slider_html.="<div data-swiper='swiper_home_dedicado' class='d-flex flex-wrap justify-content-center align-items-center h-100 swiper-slide text-center type-container 
+  $slider_html.="<div data-swiper='swiper_home_dedicado' class='d-flex flex-wrap justify-content-center align-items-center h-100 contenedor-cursor-custom swiper-slide text-center type-container 
   type-".str_replace(' ', '-', strtolower($category_name))."'>";
   if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"]):
     $slider_html.=
-    "<a class='d-inline-block w-100 h-100 text-decoration-none contenedor-cursor-custom' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
+    "<a class='d-inline-block w-100 h-100 text-decoration-none' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
     <div class='container-scale'>
     <div class='ratio ratio-30x43' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>"
     .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"], "full", "", array( 'class' => 'h-auto top-50 translate-middle-y' , 'alt' => '' , 'title' => '') ).
     "</div>
     </div>";
   endif;
-  $slider_html.="<div class='w-100 text-start mt-20 text-secondary text-uppercase fs-13 fw-500'>"
+  $slider_html.="<div class='w-100 text-start mt-20 text-secondary text-uppercase fs-13 fw-500 name-slider-product'>"
   .get_the_title($id_producto)
   ."</div>
     </a>
@@ -29,35 +29,38 @@ endforeach;
 
 ?>
 
-
-<div class="col-12 text-start text-sm-center text-secondary">
-  <?
-  if($fields['texto_superior']):
-  ?>
-    <div class="fs-18 text-uppercase"><?=$fields['texto_superior']?></div>
-  <?
-  endif;
-  if($fields['texto_principal']):
-  ?>
-    <div class="h4"><?=$fields['texto_principal']?></div>
-  <?
-  endif;
-  ?>
-</div>
-<div class="col-12 mt-48 mt-sm-90 mt-lg-0 offset-lg-7 col-lg-5 offset-xxl-8 col-xxl-4">
-  <div class="filtros_buscador row text-secondary text-start text-lg-end text-uppercase fs-13 fw-500">
-    <div class="col col-sm-2 col-custom-lg filtro_buscador active c-pointer letter-spacing-1x3" data-filter="*">
-      Todos
-    </div>
-    <?php
-      foreach ($categories_slider_html as $category_slider_html):
-      ?>
-      <div class="col col-sm-3 col-custom-lg filtro_buscador c-pointer letter-spacing-1x3" data-filter="<?=str_replace(' ', '-', strtolower($category_slider_html))?>">
-        <?=$category_slider_html?>           
-      </div>
+<div class="col-12 position-relative">
+  <div class="row">
+    <div class="col-12 text-start text-sm-center text-secondary">
       <?
-      endforeach;
-    ?>
+      if($fields['texto_superior']):
+      ?>
+        <div class="fs-18 text-uppercase"><?=$fields['texto_superior']?></div>
+      <?
+      endif;
+      if($fields['texto_principal']):
+      ?>
+        <div class="h4 lh-n mb-0"><?=$fields['texto_principal']?></div>
+      <?
+      endif;
+      ?>
+    </div>
+    <div class="col-12 mt-48 mt-sm-90 mt-lg-0 offset-lg-7 col-lg-5 offset-xxl-8 col-xxl-4 position-absolute end-0 bottom-0">
+      <div class="filtros_buscador row text-secondary text-start text-lg-end text-uppercase fs-13 fw-500">
+        <div class="col col-sm-2 col-custom-lg filtro_buscador active c-pointer letter-spacing-1x3" data-filter="*">
+          Todos
+        </div>
+        <?php
+          foreach ($categories_slider_html as $category_slider_html):
+          ?>
+          <div class="col col-sm-3 col-custom-lg filtro_buscador c-pointer letter-spacing-1x3" data-filter="<?=str_replace(' ', '-', strtolower($category_slider_html))?>">
+            <?=$category_slider_html?>           
+          </div>
+          <?
+          endforeach;
+        ?>
+      </div>
+    </div>
   </div>
 </div>
 <div class="col-12 mt-16 mt-sm-70">

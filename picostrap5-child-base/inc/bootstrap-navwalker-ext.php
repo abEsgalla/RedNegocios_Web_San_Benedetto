@@ -27,35 +27,35 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
 
   public function __construct() {
     $this->custom_classes = ' animation-undertext fw-500 text-uppercase fs-13 letter-spacing-1x3 ';
-    if ( is_main_query() ) {
-      if ( is_front_page() ) {
-        //var_dump('PAGINA INICIO');
-        $this->custom_classes .= ' text-white ';
-      }
-      if ( is_page() && !is_front_page()) {
-        //var_dump('PAGINA NORMAL');
-        $this->custom_classes .= ' text-white ';
-      }
-      if ( is_archive()  && !is_front_page()) {
-        //var_dump('PAGINA ARCHIVE');
-        $this->custom_classes .= ' text-secondary ';
-      }
-      if ( is_search()  && !is_front_page()) {
-        //var_dump('BUSCADOR');
-        $this->custom_classes .= 'text-white ';
-      }
-      if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()!='landing') {
-        //var_dump('POST SIMPLE');
-        $this->custom_classes .= ' text-secondary ';
-      }
-      if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()=='landing') {
-        $this->custom_classes .= ' text-secondary ';
-      }
-      if ( is_home() && !is_front_page()) {
-        //var_dump('PAGINA POSTS');
-        $this->custom_classes .= ' text-white ';
-      }
-    }
+    // if ( is_main_query() ) {
+    //   if ( is_front_page() ) {
+    //     //var_dump('PAGINA INICIO');
+    //     $this->custom_classes .= ' text-white ';
+    //   }
+    //   if ( is_page() && !is_front_page()) {
+    //     //var_dump('PAGINA NORMAL');
+    //     $this->custom_classes .= ' text-white ';
+    //   }
+    //   if ( is_archive()  && !is_front_page()) {
+    //     //var_dump('PAGINA ARCHIVE');
+    //     $this->custom_classes .= ' text-secondary ';
+    //   }
+    //   if ( is_search()  && !is_front_page()) {
+    //     //var_dump('BUSCADOR');
+    //     $this->custom_classes .= 'text-white ';
+    //   }
+    //   if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()!='landing') {
+    //     //var_dump('POST SIMPLE');
+    //     $this->custom_classes .= ' text-secondary ';
+    //   }
+    //   if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()=='landing') {
+    //     $this->custom_classes .= ' text-secondary ';
+    //   }
+    //   if ( is_home() && !is_front_page()) {
+    //     //var_dump('PAGINA POSTS');
+    //     $this->custom_classes .= ' text-white ';
+    //   }
+    // }
   }
 
   function start_lvl(&$output, $depth = 0, $args = null)

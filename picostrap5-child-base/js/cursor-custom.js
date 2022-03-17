@@ -1,6 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-
     const contenedor_cursor_custom = document.querySelectorAll('.contenedor-cursor-custom');
     contenedor_cursor_custom.forEach(contenedor => {
         contenedor.addEventListener('mousemove', e=>{
@@ -28,5 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-    
 });

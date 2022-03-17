@@ -13,6 +13,17 @@ $enable-negative-margins: true;
 // Font family
 $font-family-base: 'Gotham';
 
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1500px
+) !default;
+
 //CUSTOMIZE UTILITIES VIA UTILITIES API
 $utilities: (
   "min-viewport-height": ( //ADD min-vh CLASSES

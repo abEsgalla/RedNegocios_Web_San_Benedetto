@@ -19,8 +19,8 @@
 <?php
 if($fields["elemento_grid"]):
   ?>
-  <div class="col-12 mt-64">
-    <div class="row">
+  <div class="col-12 mt-64 position-relative">
+    <div class="row mx-sm-0">
       <?
       foreach ($fields["elemento_grid"] as $key => $single_grid):
         ?>
@@ -84,6 +84,7 @@ if($fields["elemento_grid"]):
       endforeach;
       ?>
     </div>
+    <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" class="d-none d-xxxl-block background-nuestro-compromiso position-absolute bottom-0 start-0">
   </div>
   <?
 endif;

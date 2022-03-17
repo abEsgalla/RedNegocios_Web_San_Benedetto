@@ -1,0 +1,85 @@
+.admin-bar{
+  #wrapper-navbar{
+    top: 32px;
+  }
+}
+
+body:not(.home){
+  .navbar{
+    &.menu-dark{
+      background: $white;
+    }
+  }
+}
+
+.navbar{
+  // Logo
+  .custom-logo{
+    transition: filter .25s ease;
+  }
+  &.menu-light:not(.menu-scrolled):not(.menu-open-offcanvas){
+    .custom-logo{
+      filter: brightness(0) invert(1);
+    }
+  }
+  // Menú scrolled
+  .nav-link{
+    color: $white;
+    &.animation-undertext{
+      position : relative;
+      &:after{
+          content: "";
+          position: absolute;
+          width: 0px;
+          left: 0px;
+          bottom: 0%;
+          height: 2px;
+          transition: all linear 0.25s;
+      }
+      &.active:after{
+        width: 75%;
+        background-color: $white;
+      }
+      &:not(.active):hover:after{
+          width: 75%;
+          background-color: $white;
+      }
+    }
+  }
+  &.menu-scrolled,
+  &.menu-open-offcanvas{
+    background-color: $white;
+  }
+  &.menu-scrolled,
+  &.menu-dark,
+  &.menu-open-offcanvas{
+    .nav-link{
+      color: $secondary;
+      &.active:after{
+        background-color: $secondary;
+      }
+      &:not(.active):hover:after{
+        background-color: $secondary;
+      }
+    }
+    .nav-item-language{
+      &:after{
+        color: $secondary;
+      }
+    }
+  }
+  .nav-item-language{
+    position: relative;
+    margin-left: 0 !important;
+    padding-left: 1rem;
+    &:after{
+      content: '|';
+      color: $white;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: color .25s ease;
+    }
+  }
+}
