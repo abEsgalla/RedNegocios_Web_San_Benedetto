@@ -31,7 +31,7 @@ get_header();
       <div class="row">
         <div class="offset-3 col-6 text-center text-white">
           <div class="row">
-            <div class="col-12 text-uppercase h2">
+            <div class="col-12 h2">
               1997
             </div>
             <div class="col-12 h4 mt-24 mt-28">
@@ -53,14 +53,14 @@ get_header();
 <section class="my-96">
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-6 position-relative">
         <div class="row">
           <div class="offset-2 col-8">
             <div class="row text-end text-secondary">
-              <div class="col-12">
+              <div class="col-12 opacity-25 ano-2002">
                 <div class="row">
                   <div class="col-12 h2">
-                    2002
+                    <span class="ano-timeline-left ano-timeline-2002">2002</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Lanzamiento Enjoy, Thè y UpGrade
@@ -85,10 +85,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96">
+              <div class="col-12 mt-96 opacity-25 ano-2008">
                 <div class="row">
                   <div class="col-12 h2">
-                    2008
+                    <span class="ano-timeline-left ano-timeline-2008">2008</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Triple certificación de AENOR
@@ -102,10 +102,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96">
+              <div class="col-12 mt-96 opacity-25 ano-2013">
                 <div class="row">
                   <div class="col-12 h2">
-                    2013
+                    <span class="ano-timeline-left ano-timeline-2013">2013</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Primer envasador de agua mineral de España por volumen
@@ -121,10 +121,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96">
+              <div class="col-12 mt-96 opacity-25 ano-2019">
                 <div class="row">
                   <div class="col-12 h2">
-                    2019
+                    <span class="ano-timeline-left ano-timeline-2019">2019</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Nueva gama San Benedetto Zero
@@ -141,10 +141,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96">
+              <div class="col-12 mt-96 opacity-25 ano-2022">
                 <div class="row">
                   <div class="col-12 h2">
-                    2022
+                    <span class="ano-timeline-left ano-timeline-2022">2022</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Relanzamiento de nueva identidad Fuente Primavera
@@ -162,17 +162,18 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="col-6 border-dashed-custom">
+      <div class="col-6 border-dashed-custom position-relative">
+        <div class="border-fill"></div>
         <div class="row">
           <div class="offset-2 col-8">
             <div class="row text-start text-secondary">
-              <div class="col-12">
+              <div class="col-12 opacity-25 ano-2006">
                 <div class="row">
                   <div class="col-12">
                     <?=wp_get_attachment_image(599, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12 h2 mt-48">
-                    2006
+                    <span class="ano-timeline-right ano-timeline-2006">2006</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Apertura planta nueva planta de envasado
@@ -185,13 +186,13 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96">
+              <div class="col-12 mt-96 opacity-25 ano-2009">
                 <div class="row">
                   <div class="col-12">
                     <?=wp_get_attachment_image(600, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12 h2 mt-48">
-                    2009
+                    <span class="ano-timeline-right ano-timeline-2009">2009</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Producción de refrescos con gas Enjoy
@@ -202,13 +203,13 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96">
+              <div class="col-12 mt-96 opacity-25 ano-2016">
                 <div class="row">
                   <div class="col-12">
                     <?=wp_get_attachment_image(601, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12 h2 mt-48">
-                    2016
+                    <span class="ano-timeline-right ano-timeline-2016">2016</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Lanzamiento de botella Easy Ecogreen 1L
@@ -220,13 +221,13 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96">
+              <div class="col-12 mt-96 opacity-25 ano-2020">
                 <div class="row">
                   <div class="col-12">
                     <?=wp_get_attachment_image(602, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12 h2 mt-48">
-                    2020
+                    <span class="ano-timeline-right ano-timeline-2020">2020</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Primera Botella de Carbono Neutral en España
