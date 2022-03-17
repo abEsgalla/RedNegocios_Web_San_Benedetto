@@ -1,0 +1,21 @@
+.w-cabecera-animada{
+  &.w-cabecera-esjoy{
+    .limon-3{
+      bottom: 0;
+      left: 0;
+    }
+    .platano{
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    .naranja{
+      top: 10;
+      left: 10%;
+    }
+    .limon-1{
+      top: 20%;
+      left: 25%;
+    }
+  }
+}

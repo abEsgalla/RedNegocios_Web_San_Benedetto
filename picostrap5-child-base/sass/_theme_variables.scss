@@ -111,6 +111,17 @@ $font-sizes: (
  96: $font-size-base * 6,
 ) !default;
 
+// Tamaños de altos de línea personalizados
+$lheight: ();
+$lheight: map-merge(
+  (
+    n:   normal,
+    24: $font-size-base * 1.5,
+    64: $font-size-base * 4,
+  ),
+  $lheight
+);
+
 $headings-font-weight: 800 !default;
 
 $enable-rfs: false;

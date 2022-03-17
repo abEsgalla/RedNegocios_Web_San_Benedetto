@@ -22,32 +22,31 @@ $fields = wp_parse_args( $args );
             if($slide['logo'] || $slide['texto_superior'] || $slide['texto_principal'] 
             || $slide['texto_cta'] || $slide['link_cta']):
             ?>
-            <div class="d-flex align-items-center justify-content-center container-fluid 
-            zi-99 top-50 position-absolute transform-translate-y">
+            <div class="d-flex align-items-center justify-content-center container container-slider zi-99 top-50 position-absolute transform-translate-y">
               <div class="row w-100">
-                <div class="col-12 offset-xxl-3 col-xxl-6">
-                  <div class="row text-start text-sm-center text-white">
+                <div class="col-12">
+                  <div class="row text-start text-sm-center <?=$slide['color']?>">
                     <?
                     if($slide['logo']):
                       ?>
-                        <div class="d-none d-md-block col-12">
+                        <div class="d-none d-md-block col-12 mb-48">
                           <?=wp_get_attachment_image($slide['logo'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                         </div>
                       <?
                     endif;
                     if($slide['texto_superior']):
                       ?>
-                        <div class="col-7 col-sm-12 fs-18 text-uppercase mt-40 mt-lg-20 mt-xxl-36"><?=$slide['texto_superior']?></div>
+                        <div class="col-7 col-sm-12 fs-18 lh-24 text-uppercase mb-16"><?=$slide['texto_superior']?></div>
                       <?
                     endif;
                     if($slide['texto_principal']):
                       ?>
-                        <div class="col-12 h1 mt-16 hyphens"><?=$slide['texto_principal']?></div>
+                        <div class="col-12 fs-64 lh-64 fw-bold"><?=$slide['texto_principal']?></div>
                       <?
                     endif;
                     if($slide['descripcion']):
                       ?>
-                        <div class="d-none d-sm-block offset-2 col-8 mt-20 mt-xxl-32"><?=$slide['descripcion']?></div>
+                        <div class="d-none d-sm-block offset-1 col-10 mt-20 mt-xxl-32"><?=$slide['descripcion']?></div>
                       <?
                     endif;
                     if($slide['texto_cta']):
