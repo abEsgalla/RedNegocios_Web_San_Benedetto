@@ -1,0 +1,56 @@
+.border-fill {
+  width: 1px;
+  background-color: $secondary;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+
+.ano-timeline {
+  &-left {
+      &::before {
+          content: '';
+          position: absolute;
+          width: 23px;
+          height: 23px;
+          background: $primary-bright;
+          border-radius: 60px;
+          right: -11.5px;
+          transform: translateY(calc(35px - 11.5px));
+          z-index: 2;
+          transition: all 0.25s ease-out;
+      }
+      &.ano-activo {
+        &::before {
+          width: 122px;
+          height: 35px;
+          transform: translateY(calc(35px - 17.5px));
+          background: $secondary;
+          transition: all 0.25s ease-out
+        }
+      }
+  }
+  &-right {
+      &::before {
+          content: '';
+          position: absolute;
+          width: 23px;
+          height: 23px;
+          background: $primary-bright;
+          border-radius: 60px;
+          left: -11.5px;
+          transform: translateY(calc(35px - 11.5px));
+          z-index: 2;
+          transition: all 0.25s ease-out;
+      }
+      &.ano-activo {
+        &::before {
+          width: 122px;
+          height: 35px;
+          transform: translateY(calc(35px - 17.5px));
+          background: $secondary;
+          transition: all 0.25s ease-out
+        }
+      }
+  }
+}
