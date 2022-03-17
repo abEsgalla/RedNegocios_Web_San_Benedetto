@@ -16,6 +16,11 @@ function esgalla_scripts() {
 	wp_enqueue_script( 'animate-scroll-js', get_stylesheet_directory_uri() . '/js/animate-scroll.min.js', array(), false, true );
 	wp_enqueue_script( 'animate-scroll-custom-js', get_stylesheet_directory_uri() . '/js/animate-scroll-custom.js', array('animate-scroll-js'), false, true );
 
+	//GSAP & ScrollTrigger
+	wp_enqueue_script( 'gsap-js', get_stylesheet_directory_uri() . '/js/gsap.min.js', array(), false, true );
+	wp_enqueue_script( 'scrolltrigger-js', get_stylesheet_directory_uri() . '/js/scrolltrigger.min.js', array('gsap-js'), false, true );
+	wp_enqueue_script( 'scrolltrigger-custom-js', get_stylesheet_directory_uri() . '/js/scrolltrigger-custom.js', array('scrolltrigger-js'), false, true );
+
 	// Filtro Tabs JS
 	wp_enqueue_script( 'filtros-search-js', get_stylesheet_directory_uri() . '/js/filtros-search.js', array(), false, true );
 
