@@ -37,6 +37,18 @@ swiper_home.on('slideChange', function () {
     arrow_prev.classList.remove('opacity-50');
     arrow_next.classList.remove('opacity-50');
   }
+
+});
+swiper_home.on('slideChangeTransitionEnd', function () {
+  let active_slide = document.querySelector(".swiper-home .swiper-slide-active");
+  let navbar = document.querySelector("nav.navbar");
+  if( active_slide.classList.contains("slide-light") ) {
+    navbar.classList.remove('menu-light');
+    navbar.classList.add('menu-dark');
+  } else {
+    navbar.classList.remove('menu-dark');
+    navbar.classList.add('menu-light');
+  }
 });
 
 const swiper_home_dedicado = new Swiper('.swiper-home-dedicado', {

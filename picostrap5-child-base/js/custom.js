@@ -7,4 +7,14 @@
 //add here your own js code. Vanilla JS welcome.
 
 document.addEventListener('DOMContentLoaded', function () {
+  let swiper_home = document.querySelector('.swiper-home');
+  if( swiper_home ) {
+    let active_slide = document.querySelector(".swiper-home .swiper-slide-active");
+    let navbar = document.querySelector("nav.navbar");
+    if( active_slide.classList.contains("slide-light") ) {
+      navbar.classList.add('menu-dark');
+    } else {
+      navbar.classList.add('menu-light');
+    }
+  }
 });
