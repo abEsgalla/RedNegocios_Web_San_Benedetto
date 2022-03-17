@@ -12,7 +12,7 @@ $fields = wp_parse_args( $args );
       foreach ($fields['slider_cabecera']['slides'] as $slide):
         if($slide['fondo']):
           ?>
-          <div class="swiper-slide">
+          <div class="swiper-slide <?=($slide['color'] == 'text-white') ? 'slide-dark' : 'slide-light'; ?>">
             <div class="position-relative">
               <?=wp_get_attachment_image($slide['fondo_mobile'], "full", "", array( 'class' => 'd-inline d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
               <?=wp_get_attachment_image($slide['fondo'], "full", "", array( 'class' => 'd-none d-lg-inline' , 'alt' => '' , 'title' => '') ); ?>

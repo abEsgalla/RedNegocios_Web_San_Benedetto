@@ -5,7 +5,7 @@ $fields = wp_parse_args( $args );
 <?php
 if($fields["fondo"]):
 ?>
-  <div class="bg-secondary">
+  <div class="bg-black">
     <?=wp_get_attachment_image($fields["fondo"], "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
   </div>
 <?

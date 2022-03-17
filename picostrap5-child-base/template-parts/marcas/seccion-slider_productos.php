@@ -49,9 +49,20 @@
     if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"]):
       $cuerpo_tabs_html.= 
                   "<div class='container-scale'>
-                  <div class='ratio ratio-1x1' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."99"."'>"
-                  .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], 'full', '', array( 'class' => 'fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => '' , 'title' => '') )
-                  ."</div>
+                  <div class='ratio ratio-1x1' style='background-color:";
+                  if(get_field('caracteristicas_producto',$id_producto)['imagen_grid_page_marcas']):
+                    $imagen_grid_id=get_field('caracteristicas_producto',$id_producto)['imagen_grid_page_marcas'];
+                  else:
+                    $imagen_grid_id=get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"];
+                  endif;
+                  if(get_field('caracteristicas_producto',$id_producto)['color_grid_page_marcas']):
+                    $bg_color_grid=get_field('caracteristicas_producto',$id_producto)['color_grid_page_marcas'];
+                  else:
+                    $bg_color_grid=get_field('caracteristicas_producto',$id_producto)["color_corporativo"];
+                  endif;
+      $cuerpo_tabs_html.= $bg_color_grid."'>";
+      $cuerpo_tabs_html.= wp_get_attachment_image($imagen_grid_id, 'full', '', array( 'class' => 'fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => '' , 'title' => '') );
+      $cuerpo_tabs_html.="</div>
                   </div>";
     endif;
     $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary fs-13 fw-500'>".mb_strtoupper(get_the_title($id_producto))."</div>

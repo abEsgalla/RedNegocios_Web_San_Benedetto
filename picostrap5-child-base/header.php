@@ -96,9 +96,7 @@ defined( 'ABSPATH' ) || exit;
         ?>
         <div class="fixed-top" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-          <a class="skip-link visually-hidden-focusable" href="#theme-main"><?php esc_html_e( 'Skip to content', 'picostrap' ); ?></a>
-
-          <nav class="force-transition zi-1050 navbar <?=$custom_classes?> <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','navbar-dark').' '. get_theme_mod('picostrap_header_navbar_color_choice','bg-dark'); ?>" aria-label="Main Navigation" >
+          <nav class="force-transition zi-1050 shadow navbar <?=$custom_classes?> <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','navbar-dark').' '. get_theme_mod('picostrap_header_navbar_color_choice','bg-dark'); ?>" aria-label="Main Navigation" >
             <div class="container">
               <div id="logo-tagline-wrap">
                   <!-- Your site title as branding in the menu -->
