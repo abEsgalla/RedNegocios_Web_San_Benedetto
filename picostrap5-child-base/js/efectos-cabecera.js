@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 1000);
       });
     }
-    waitUntil(typeof bootstrap != 'undefined');
+    waitUntil("typeof bootstrap != 'undefined'");
 
     function canvasMenu(){
       generate_menuCanvas('nosotros');
@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       });
       eval("menuCanvas"+id_element+"Offcanvas").addEventListener('show.bs.offcanvas', function () {
+        menuContainerColor.classList.add("menu-open-offcanvas");
         //eval("menuCanvas"+id_element+"Offcanvas").classList.remove("d-none");
       });
       eval("menuCanvas"+id_element+"Offcanvas").addEventListener('hidden.bs.offcanvas', function () {
@@ -88,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         eval("menuCanvas"+id_element+"Offcanvas").classList.remove("h-auto");
         eval("menuCanvas"+id_element+"Offcanvas").classList.add("h-0");
-        menuContainerColor.classList.remove("menu-open-offcanvas");
+        //menuContainerColor.classList.remove("menu-open-offcanvas");
       });
     }
 
@@ -115,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelector('.fixed-top').addEventListener('mouseleave', function (event) {
       checkAllMenuOffcanvasClose(false);
+      menuContainerColor.classList.remove("menu-open-offcanvas");
     });
 
     const navs_link_not_offcanvas = document.querySelectorAll('.fixed-top .nav-link:not([role="button"])');
@@ -123,6 +125,28 @@ document.addEventListener('DOMContentLoaded', function () {
         checkAllMenuOffcanvasClose(false);
       });
     });
+
+    //TEMP
+    var swap_images_submenu_canvas = document.querySelectorAll('#offcanvas-ecolosofia a[data-image]');
+    swap_images_submenu_canvas.forEach(function(swap_image_submenu_canvas) {
+      swap_image_submenu_canvas.addEventListener('mouseover', function (event) {
+        document.querySelector('#offcanvas-ecolosofia .image').innerHTML = "<img src='"+this.getAttribute('data-image')+"'>";
+      });
+    });
+    var swap_images_submenu_canvas = document.querySelectorAll('#offcanvas-nosotros a[data-image]');
+    swap_images_submenu_canvas.forEach(function(swap_image_submenu_canvas) {
+      swap_image_submenu_canvas.addEventListener('mouseover', function (event) {
+        document.querySelector('#offcanvas-nosotros .image').innerHTML = "<img src='"+this.getAttribute('data-image')+"'>";
+      });
+    });
+    var swap_images_submenu_canvas = document.querySelectorAll('#offcanvas-contacto a[data-image]');
+    swap_images_submenu_canvas.forEach(function(swap_image_submenu_canvas) {
+      swap_image_submenu_canvas.addEventListener('mouseover', function (event) {
+        document.querySelector('#offcanvas-contacto .image').innerHTML = "<img src='"+this.getAttribute('data-image')+"'>";
+      });
+    });
+    //TEMP
+
   //OFFCANVAS MENU//
 
   //LANDING PRODUCTOS DATOS SLIDER
