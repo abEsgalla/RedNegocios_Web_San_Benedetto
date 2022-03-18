@@ -15,6 +15,23 @@ gsap.to('.limon-1', {
 */
 
 
+if( document.body.classList.contains('single-landing') ) {
+  gsap.to('.producto-central', {
+    scrollTrigger: {
+      trigger: '.producto-central',
+      toggleActions: 'play pause pause reverse',
+      start: 'center center',
+      end: 'bottom center',
+      scrub: true,
+      markers: true,
+    },
+    y: 60,
+    // rotation: 10,
+    duration:3
+  });
+}
+
+
 if( document.body.classList.contains('page-template-custom-template-historia') ) {
   //Barrita vertical que se rellena con scroll en página Historia
   let line_height = document.querySelector('.border-dashed-custom').clientHeight;
