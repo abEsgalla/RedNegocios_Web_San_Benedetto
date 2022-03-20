@@ -124,108 +124,169 @@ endif;
         </div>
     </div>
 
+    <?php
+    $data_offcanvas_nosotros = [
+        0 => [
+            "nombre" => "Historia",
+            "image" => wp_get_attachment_image_url(876, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(579)
+        ],
+        1 => [
+            "nombre" => "Misión, Visión y valores",
+            "image" => wp_get_attachment_image_url(875, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(581)
+        ],
+        2 => [
+            "nombre" => "San benedetto en españa",
+            "image" => wp_get_attachment_image_url(874, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(655)
+        ],
+        3 => [
+            "nombre" => "San benedetto en el mundo",
+            "image" => wp_get_attachment_image_url(873, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(667)
+        ],
+        4 => [
+            "nombre" => "Noticias",
+            "image" => wp_get_attachment_image_url(872, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => esc_url(get_post_type_archive_link('post'))
+        ]
+    ];
+    ?>
     <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
         data-bs-scroll="true" data-bs-backdrop="false"
         tabindex="-1" id="offcanvas-nosotros" aria-labelledby="offcanvas-nosotros">
         <div class="container">
             <div class="row py-56 text-secondary">
-                <div class="col-6">
+                <div class="col-6 image">
                     <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                 </div>
                 <div class="col-6">
                     <div class="row">
                         <div class="col-12 text-uppercase">
+                            <?php
+                            foreach ($data_offcanvas_nosotros as $key => $data_offcanvas):
+                                $data_offcanvas['nombre'];
+                                $data_offcanvas['image'];
+                                $data_offcanvas['url'];
+                            ?>
                             <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(579)?>">
-                                    Historia
+                                <a data-image="<?=$data_offcanvas['image'];?>"
+                                class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=$data_offcanvas['url']?>">
+                                    <?=$data_offcanvas['nombre']?>
                                 </a>
                             </div>
-                            <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(581)?>">
-                                    Misión, Visión y valores
-                                </a>
-                            </div>
-                            <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(655)?>">
-                                    San benedetto en españa
-                                </a>
-                            </div>
-                            <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(667)?>">
-                                    San benedetto en el mundo
-                                </a>
-                            </div>
-                            <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=esc_url(get_post_type_archive_link('post'));?>">
-                                    noticias
-                                </a>
-                            </div>
+                            <?php
+                            endforeach;
+                            ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <?php
+    $data_offcanvas_ecolosofia = [
+        0 => [
+            "nombre" => "Productos",
+            "image" => wp_get_attachment_image_url(871, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(585)
+        ],
+        1 => [
+            "nombre" => "Procesos",
+            "image" => wp_get_attachment_image_url(870, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(587)
+        ],
+        2 => [
+            "nombre" => "Entorno",
+            "image" => wp_get_attachment_image_url(869, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(589)
+        ]
+    ];
+    ?>
 
     <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
         data-bs-scroll="true" data-bs-backdrop="false"
         tabindex="-1" id="offcanvas-ecolosofia" aria-labelledby="offcanvas-ecolosofia">
         <div class="container">
             <div class="row py-56 text-secondary">
-                <div class="col-6">
+                <div class="col-6 image">
                     <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                 </div>
                 <div class="col-6">
                     <div class="row">
                         <div class="col-12 text-uppercase">
+                            <?php
+                            foreach ($data_offcanvas_ecolosofia as $key => $data_offcanvas):
+                                $data_offcanvas['nombre'];
+                                $data_offcanvas['image'];
+                                $data_offcanvas['url'];
+                            ?>
                             <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(585)?>">
-                                    Productos
+                                <a data-image="<?=$data_offcanvas['image'];?>"
+                                class="text-decoration-none text-reset text-secondary animation-starttext py-3" 
+                                href="<?=$data_offcanvas['url']?>">
+                                    <?=$data_offcanvas['nombre']?>
                                 </a>
                             </div>
-                            <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(587)?>">
-                                    Procesos
-                                </a>
-                            </div>
-                            <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(589)?>">
-                                    Entorno
-                                </a>
-                            </div>
+                            <?php
+                            endforeach;
+                            ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <?php
+    $data_offcanvas_contacto = [
+        0 => [
+            "nombre" => "Buscamos Talento",
+            "image" => wp_get_attachment_image_url(868, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(672)
+        ],
+        1 => [
+            "nombre" => "Localizacion y contacto",
+            "image" => wp_get_attachment_image_url(867, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(650)
+        ],
+        2 => [
+            "nombre" => "Preguntas Frecuentes",
+            "image" => wp_get_attachment_image_url(866, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+            "url" => get_permalink(785)
+        ]
+    ];
+    ?>
 
     <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
         data-bs-scroll="true" data-bs-backdrop="false"
         tabindex="-1" id="offcanvas-contacto" aria-labelledby="offcanvas-contacto">
         <div class="container">
             <div class="row py-56 text-secondary">
-                <div class="col-6">
+                <div class="col-6 image">
                     <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                 </div>
                 <div class="col-6">
                     <div class="row">
                         <div class="col-12 text-uppercase">
+                            <?php
+                            foreach ($data_offcanvas_contacto as $key => $data_offcanvas):
+                                $data_offcanvas['nombre'];
+                                $data_offcanvas['image'];
+                                $data_offcanvas['url'];
+                            ?>
                             <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(672)?>">
-                                    Buscamos Talento
+                                <a data-image="<?=$data_offcanvas['image'];?>"
+                                class="text-decoration-none text-reset text-secondary animation-starttext py-3" 
+                                href="<?=$data_offcanvas['url']?>">
+                                    <?=$data_offcanvas['nombre']?>
                                 </a>
                             </div>
-                            <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(650)?>">
-                                    Localizacion y contacto
-                                </a>
-                            </div>
-                            <div class="my-12">
-                                <a class="text-decoration-none text-reset text-secondary animation-starttext py-3" href="<?=get_permalink(785)?>">
-                                    Preguntas Frecuentes
-                                </a>
-                            </div>
+                            <?php
+                            endforeach;
+                            ?>
                         </div>
                     </div>
                 </div>

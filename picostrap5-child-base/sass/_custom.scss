@@ -540,6 +540,33 @@ span{
     }
 }
 
+#pills-tabContent{
+    .contenedor-cursor-custom{
+        &:hover{
+            .name-grid-product{
+                &:after{
+                    width: 2rem;
+                    background-color: $secondary;
+                }
+            }
+        }
+        .name-grid-product{
+            position: relative;
+            &:after{
+                content: '';
+                width: 0;
+                background-color: transparent;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: 0.5rem;
+                transition: all .25s ease;
+            }
+        }
+    }
+}
+
 .background-nuestro-compromiso{
     bottom: 0;
     left: 0;
