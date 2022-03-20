@@ -65,7 +65,7 @@
       $cuerpo_tabs_html.="</div>
                   </div>";
     endif;
-    $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary fs-13 fw-500'>".mb_strtoupper(get_the_title($id_producto))."</div>
+    $cuerpo_tabs_html.="<div class='text-start mt-20 text-secondary fs-13 fw-500 name-grid-product'>".mb_strtoupper(get_the_title($id_producto))."</div>
                 </a>
                 </div>
     ";
