@@ -32,7 +32,7 @@ get_header();
   </div>
 </section>
 
-<section>
+<section id="sliderPromocional">
   <div class="container-fluid g-0 position-relative">
     <div class="row g-0">
       <?php

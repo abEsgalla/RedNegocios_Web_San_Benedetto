@@ -93,6 +93,10 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
   direction: 'vertical',
   autoHeight : true,
   loop: false,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination-home-promocional',
@@ -126,6 +130,12 @@ swiper_home_promocional.on('slideChange', function () {
     arrow_next.classList.remove('opacity-50');
   }
 });
+
+// swiper_home_promocional.on('slideChangeTransitionEnd', function () {
+//   let active_slide = document.querySelector(".swiper-home-promocional .swiper-slide-active");
+//   let wrapper_slider_promocional = document.querySelector("#sliderPromocional");
+//   wrapper_slider_promocional.style.backgroundColor = "red";
+// });
 
 const swiper_home_noticias = new Swiper('.swiper-home-noticias', {
   direction: 'horizontal',
