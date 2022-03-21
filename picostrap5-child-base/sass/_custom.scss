@@ -584,6 +584,16 @@ span{
     }
 }
 
+.rm-bootstrap-form-style{
+    .form-control{
+        border-radius: 0px;
+        &:focus{
+            box-shadow: none;
+            border-color: $white !important;
+        }
+    }
+}
+
 .background-nuestro-compromiso{
     bottom: 0;
     left: 0;

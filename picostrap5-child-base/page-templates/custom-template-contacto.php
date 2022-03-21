@@ -139,11 +139,13 @@ get_header();
         <div class="row">
           <div class="col-7 offset-4">
             <div class="row">
-              <div class="col-12 text-white py-48">
+              <div class="col-12 text-white mt-120">
                 <div class="fw-bold h3">
-                  Formulario de contacto
+                  Formulario <br>de <span class="text-decoration-underline">contacto</span>
                 </div>
-                <div class="mt-64">
+              </div>
+              <div class="offset-2 col-10 text-white">
+                <div class="mt-64 pb-48 fs-17">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit hac facilisis, 
                   metus aptent rhoncus tristique curabitur semper fusce nunc integer, 
                   auctor leo dis eros vehicula suscipit dignissim sodales.
@@ -154,7 +156,60 @@ get_header();
         </div>
       </div>
       <div class="col-6 bg-secondary"> 
-        
+        <div class="row">
+          <div class="offset-1 col-6">
+            <form class="my-80 text-white rm-bootstrap-form-style needs-validation" novalidate>
+              <div class="mt-3">
+                <label for="inputNombre" class="form-label fs-12 mb-1">Nombre y apellidos *</label>
+                <input type="text" placeholder="Ej. Jesús Carrillo Laso" 
+                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
+                id="inputNombre" required>
+              </div>
+              <div class="mt-3">
+                <label for="inputNombre" class="form-label fs-12 mb-1">E-mail *</label>
+                <input type="text" placeholder="Ej. name@name.com" 
+                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
+                id="inputNombre" required>
+              </div>
+              <div class="mt-3">
+                <label for="inputNombre" class="form-label fs-12 mb-1">E-mail *</label>
+                <input type="text" placeholder="Ej. name@name.com" 
+                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
+                id="inputNombre" required>
+              </div>
+              <div class="mt-3">
+                <label for="inputNombre" class="form-label fs-12 mb-1">Comentario *</label>
+                <input type="text" placeholder="Escribe un comentario" 
+                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
+                id="inputNombre" required>
+              </div>
+              <div class="my-28 form-check">
+                <input type="checkbox" class="form-check-input rounded-0 bg-transparent" 
+                id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">
+                  Acepto los <a class="text-decoration-none text-primary" href="#">Términos y Condiciones</a>.
+                </label>
+              </div>
+              <div class="my-28 border border-1 border-primary p-12">
+                <div class="row fs-12">
+                  <div class="col-4 fw-500 text-center">
+                    Responsable
+                  </div>
+                  <div class="col-8">
+                    Agua Mineral San Benedetto S.A.U, con domicilio social en San Antonio de Requena (Valencia) 
+                    en el camino del pinarejo s/n, 46390.
+                  </div>
+                </div>
+              </div>
+              <div class="text-end">
+                <button type="submit" 
+                class="btn border-2 fw-500 btn-primary text-white text-uppercase fs-14 rounded-0 px-40">
+                  ENVIAR
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
