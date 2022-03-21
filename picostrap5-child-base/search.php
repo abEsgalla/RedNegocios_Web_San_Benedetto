@@ -5,7 +5,6 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
-  
 
 <section>
   <div class="container mt-218">
@@ -16,10 +15,13 @@ get_header();
             SAN BENEDETTO
           </div>
           <div class="col-12 h2 mt-8">
-            <?=the_archive_title()?>
-          </div>
-          <div class="col-12 h2 mt-8">
-            <?=category_description();?>
+            <?php 
+								printf(
+									/* translators: %s: query term */
+									esc_html__( 'Resultados de : %s', 'picostrap' ),
+									'<span class="text-primary">' . get_search_query() . '</span>'
+								);
+						?>
           </div>
         </div>
       </div>
@@ -27,7 +29,7 @@ get_header();
   </div>
 </section>
 
-<section class="album py-5 bg-light mt-48">
+<section class="album py-5 bg-light">
   <div class="container">
     <div class="row">
       <?php 
@@ -36,10 +38,10 @@ get_header();
     </div>
 
     <div class="row">
-      <div class="col lead text-center w-100">
+      <div class="col lead text-center w-100 <?=(picostrap_pagination())?'mt-96 mb-150':''?>">
         <div class="d-inline-block"><?php picostrap_pagination() ?></div>
       </div><!-- /col -->
-    </div> <!-- /row -->
+    </div <!-- /row -->
   </div>
 </section>
 

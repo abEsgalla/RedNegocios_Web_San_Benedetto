@@ -19,9 +19,25 @@ if ( have_posts() ) :
     
     <div class="container my-80">
       <div class="row">
+        <div class="col-12 mb-30">
+          <div class="row fs-16 text-secondary">
+            <div class="col-7">
+              <span>
+                <?=wp_get_attachment_image(890, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+              </span>
+              <span class="ms-12">
+                San Benedetto
+              </span>
+            </div>
+            <div class="col-5">
+              <span class="me-18">Compartir</span>
+              <?=wp_get_attachment_image(892, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+            </div>
+          </div>
+        </div>
         <div class="col-7">
           <div class="row">
-            <div class="offset-1 col-10">
+            <div class="col-12">
               <div class="row text-secondary">
                 <div class="col-12 h3">
                   <?php the_title(); ?>
@@ -35,10 +51,10 @@ if ( have_posts() ) :
         </div>
         <div class="col-5">
           <div class="row">
-            <div class="offset-1 col-10">
-              <div class="row border-black border-top border-1">
-                <div class="col-12 text-secondary fs-18 text-uppercase py-24 fw-500">
-                  Categorías
+            <div class="offset-3 col-9">
+              <div class="row">
+                <div class="col-12 text-secondary fs-18 text-uppercase fw-500">
+                  <div class="border-black border-top border-1 py-24">Categorías</div>
                 </div>
                 <div class="col-12 d-flex flex-wrap">
                   <?
@@ -69,6 +85,25 @@ if ( have_posts() ) :
      _e( 'Sorry, no posts matched your criteria.', 'picostrap' );
  endif;
  ?>
+
+<section class="d-flex position-relative mt-185 mb-150">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center text-secondary mb-70">
+        <div class="text-uppercase fs-18">SAN BENEDETTO</div>
+        <div class="h4">Noticias relacionadas</div>
+      </div>
+      <?php 
+        $args = array(
+          'post__not_in'=> array(get_the_ID()),
+          'posts_per_page' => 4
+        );
+        query_posts( $args );
+        get_template_part( 'template-parts/general/seccion', 'posts');
+      ?>
+    </div>
+  </div>
+</section>
 
 <section class="d-flex position-relative">
   <div class="bg-secondary">
