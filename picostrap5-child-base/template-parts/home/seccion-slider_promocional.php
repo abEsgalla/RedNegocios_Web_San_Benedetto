@@ -10,7 +10,7 @@ foreach ($fields['slides'] as $slide):
         array_push($categories_slider_html,$category_name);
     endif;
     $slider_html.="
-    <div class='swiper-slide text-secondary h-auto'>
+    <div class='swiper-slide text-secondary h-auto' data-bgcolor=".$slide['color_fondo']. ">
         <div class='container-fluid'>
             <div class='container'>
                 <div class='row align-items-center'>
