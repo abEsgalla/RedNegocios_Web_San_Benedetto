@@ -159,43 +159,43 @@
                     <div class="col-12 col-sm-9 my-20">
                       <div class="d-flex justify-content-between">
                         <div>
-                          <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(923)?>">
                           Info empresa
                           </a>
                         </div>
                         <div>|</div>
                         <div>
-                          <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(943)?>">
                           Política de seguridad de la información
                           </a>
                         </div>
                         <div>|</div>
                         <div>
-                          <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(943)?>">
                           Política de privacidad web
                           </a>
                         </div>
                         <div>|</div>
                         <div>
-                          <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(945)?>">
                           Condiciones generales
                           </a>
                         </div>
                         <div>|</div>
                         <div>
-                          <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(947)?>">
                           Cookies
                           </a>
                         </div>
                         <div>|</div>
                         <div>
-                          <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(939)?>">
                           Créditos
                           </a>
                         </div>
                         <div>|</div>
                         <div>
-                          <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
+                          <a class="text-reset text-decoration-none" href="<?=get_permalink(941)?>">
                           Mapa web
                           </a>
                         </div>
