@@ -34,15 +34,11 @@ wp_reset_query();
 				<div class="col-12">
 					<?php if(isset($acf_fields['cabecera']['fondo'])): ?>
 					<div class="position-relative w-cabecera-animada w-cabecera-esjoy">
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_1.png'; ?>" class="position-absolute fresa-1"> -->
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_2.png'; ?>" class="position-absolute fresa-2"> -->
-						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_1.png'; ?>" class="position-absolute limon-1">
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_2.png'; ?>" class="position-absolute limon-2"> -->
+						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_1.png'; ?>" class="position-absolute fresa-1">
+						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_2.png'; ?>" class="position-absolute fresa-2">
+						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_1.png'; ?>" class="position-absolute limon-1">						
 						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_3.png'; ?>" class="position-absolute limon-3">
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_4.png'; ?>" class="position-absolute limon-4"> -->
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/mango.png'; ?>" class="position-absolute mango"> -->
-						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/naranja.png'; ?>" class="position-absolute naranja">
-						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/platano.png'; ?>" class="position-absolute platano">
+						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_4.png'; ?>" class="position-absolute limon-4">
 						<?=wp_get_attachment_image($acf_fields['cabecera']['fondo'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
 						<?php if(isset($acf_fields['cabecera']['producto_central'])): ?>
 						<div class="d-flex align-items-center justify-content-center container-fluid zi-99 top-0 position-absolute h-100">
