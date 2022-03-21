@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // swap_text_menu_classes('text-white', 'text-secondary');
       }
 
-      // document.querySelector('#logo-tagline-wrap .custom-logo-link img').classList.add('d-none');
-      // document.querySelector('#logo-tagline-wrap .custom-logo-link .svg-container-custom').classList.remove('d-none');      
+       document.querySelector('#logo-tagline-wrap .custom-logo-link img').classList.add('d-none');
+       document.querySelector('#logo-tagline-wrap .custom-logo-link .svg-container-custom').classList.remove('d-none');      
 
     }else{
 
@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // swap_text_menu_classes('text-secondary', 'text-white');
       }
 
-      // document.querySelector('#logo-tagline-wrap .custom-logo-link img').classList.remove('d-none');
-      // document.querySelector('#logo-tagline-wrap .custom-logo-link .svg-container-custom').classList.add('d-none');
+       document.querySelector('#logo-tagline-wrap .custom-logo-link img').classList.remove('d-none');
+       document.querySelector('#logo-tagline-wrap .custom-logo-link .svg-container-custom').classList.add('d-none');
 
     }
   });
