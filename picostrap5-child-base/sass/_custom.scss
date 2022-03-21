@@ -39,14 +39,6 @@ HOW TO REFERENCE ASSETS AND IMAGES
 //body.scroll-position-at-top  {background:lime}
 //body.scroll-position-not-at-top {background:red}
 
-#sliderPromocional{
-    background-color: red;
-    &:hover{
-        background-color: blue;
-        // background-size: ;
-    }
-}
-
 .container-fluid{
     max-width: 1920px;
     margin: 0 auto;
@@ -66,10 +58,6 @@ HOW TO REFERENCE ASSETS AND IMAGES
 
 .h-0{
     height: 0px;
-}
-
-.h-875{
-    height: 875px;
 }
 
 .ratio-9x16{
@@ -238,20 +226,20 @@ HOW TO REFERENCE ASSETS AND IMAGES
     width: 20%;
 }
 
-.w-custom-1-7{
-    width: Calc(1/7*100%);
+.w-custom-1-9{
+    width: Calc(1/9*100%);
 }
 
 // Large devices (desktops, less than 1200px || xl)
 @media (max-width: 1199.98px) {
-    .w-custom-20,.w-custom-1-7{
+    .w-custom-20,.w-custom-1-9{
         width: 50%;
     }
 }
 
 // Medium devices (tablets, less than 992px || md)
 @media (max-width: 991.98px) {
-    .w-custom-20,.w-custom-1-7{
+    .w-custom-20,.w-custom-1-9{
         width: 100%;
     }
 }
@@ -572,4 +560,8 @@ span{
     left: 0;
     transform: translateY(calc(50% - 24px)) translateX(calc(-50% + 24px));
     z-index: -1;
+}
+
+.container-fluid-custom {
+    max-width: 1689px !important;
 }
