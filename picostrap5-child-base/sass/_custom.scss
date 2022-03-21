@@ -505,6 +505,21 @@ span{
     left: 0;
 }
 
+.swiper-landing-productos{
+    .swiper-slide:not([role="group"]){
+        position: relative;
+        &:after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            opacity: 50%;
+        }
+    }
+}
+
 .swiper-home-dedicado{
     .swiper-slide{
         &:hover{
@@ -604,9 +619,9 @@ span{
 }
 
 .bg-custom-post{
-    background-position: center center !im;
-    background-size: cover !im;
-    background-repeat: no-repeat !im;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 
