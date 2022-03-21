@@ -13,12 +13,12 @@ $the_query = new WP_Query( $args_wp );
 $html_slide_post="";
 if ( $the_query->have_posts() ) {
     while ( $the_query->have_posts() ) {
+        $the_query->the_post();
         if(has_post_thumbnail()):
           $custom_url_thumbnail=get_the_post_thumbnail_url();
         else:
           $custom_url_thumbnail=wp_get_attachment_image_url(922, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') );
         endif;
-        $the_query->the_post();
         $html_slide_post.="<div class='swiper-slide text-center text-secondary h-auto'>
           <a class='d-inline-block w-100 h-100 text-decoration-none text-reset fs-13' href='".get_the_permalink()."'>
             <div class='contenedor-cursor-custom'>
