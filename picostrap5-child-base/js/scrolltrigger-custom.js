@@ -1,20 +1,3 @@
-/*
-gsap.to('.limon-1', {
-  scrollTrigger: {
-    trigger: '.w-cabecera-animada',
-    toggleActions: 'restart pause reverse pause',
-    start: 'center center',
-    end: 'bottom center',
-    scrub: true,
-    markers: true,
-  },
-  y: 220,
-  rotation: 10,
-  duration:3
-});
-*/
-
-
 if( document.body.classList.contains('single-landing') ) {
   gsap.to('.producto-central', {
     scrollTrigger: {
@@ -23,12 +6,82 @@ if( document.body.classList.contains('single-landing') ) {
       start: 'center center',
       end: 'bottom center',
       scrub: true,
-      markers: true,
+      markers: false,
     },
     y: 60,
     // rotation: 10,
-    duration:3
   });
+
+  if( document.body.classList.contains('postid-203') ) {
+
+    gsap.to('.limon-1', {
+      scrollTrigger: {
+        trigger: '.w-cabecera-animada',
+        toggleActions: 'restart pause reverse pause',
+        start: 'center center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: 220,
+      rotation: 0,
+    });
+
+    //Limon borroso
+    gsap.to('.limon-3', {
+      scrollTrigger: {
+        trigger: '.w-cabecera-animada',
+        toggleActions: 'restart pause reverse pause',
+        start: 'center center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: -200,
+      rotation: 0,
+    });
+
+    gsap.to('.limon-4', {
+      scrollTrigger: {
+        trigger: '.w-cabecera-animada',
+        toggleActions: 'restart pause reverse pause',
+        start: 'center center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: 220,
+      rotation: 0,
+    });
+
+    gsap.to('.fresa-1', {
+      scrollTrigger: {
+        trigger: '.w-cabecera-animada',
+        toggleActions: 'restart pause reverse pause',
+        start: 'center center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: 100,
+      rotation: 0,
+    });
+
+    //Fresa borrosa
+    gsap.to('.fresa-2', {
+      scrollTrigger: {
+        trigger: '.w-cabecera-animada',
+        toggleActions: 'restart pause reverse pause',
+        start: 'center center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: -100,
+      rotation: 0,
+    });
+
+  }
 }
 
 

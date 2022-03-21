@@ -34,6 +34,7 @@ foreach ($fields['slides'] as $slide):
                 </div>
             </div>
         </div>
+        <div class='slider-cover container-fluid h-100 w-100 position-absolute top-0 start-0' style='background-color:".$slide['color_fondo']."'></div>
     </div>";
 endforeach;
 

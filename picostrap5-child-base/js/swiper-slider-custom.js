@@ -97,17 +97,6 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
   fadeEffect: {
     crossFade: true
   },
-  // effect: 'creative',
-  // creativeEffect: {
-  //   prev: {
-  //     // will set `translateZ(-400px)` on previous slides
-  //     translate: [0, 0, 0],
-  //   },
-  //   next: {
-  //     // will set `translateX(100%)` on next slides
-  //     translate: [0, 0, 0],
-  //   },
-  // },
   slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination-home-promocional',
@@ -129,6 +118,7 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
       let bg_color_slide = first_slide.dataset.bgcolor;
       let contenedor_swiper_home_promocional = document.querySelector("#sliderPromocional");
       contenedor_swiper_home_promocional.style["background-color"] = bg_color_slide;
+      first_slide.querySelector('.slider-cover').classList.add('to-the-left');
     },
   },
 });
@@ -150,12 +140,25 @@ swiper_home_promocional.on('slideChange', function () {
   }
 });
 
+swiper_home_promocional.on('slideChangeTransitionEnd', function () {
+  //Reinicio el cover de los otros slides
+  swiper_home_promocional.slides.each(function(slide) {
+    if(!slide.classList.contains('swiper-slide-active')) {
+      slide.querySelector('.slider-cover').classList.remove('to-the-left');
+    }
+  });
+});
+
+
 swiper_home_promocional.on('activeIndexChange', function (swiper) {
   let active_slide = swiper_home_promocional.slides[swiper_home_promocional.realIndex];
   // let active_slide = document.querySelector(".swiper-home-promocional .swiper-slide-active");
   let bg_color_slide = active_slide.dataset.bgcolor;
   let contenedor_swiper_home_promocional = document.querySelector("#sliderPromocional");
   contenedor_swiper_home_promocional.style["background-color"] = bg_color_slide;
+
+  //Muevo el cover del slide activo
+  active_slide.querySelector('.slider-cover').classList.add('to-the-left');
 });
 
 
