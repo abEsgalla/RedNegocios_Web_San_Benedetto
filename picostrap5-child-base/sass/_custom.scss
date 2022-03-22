@@ -100,6 +100,28 @@ HOW TO REFERENCE ASSETS AND IMAGES
     }
 }
 
+
+.single-animation-undertext{
+    position : relative;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0px;
+        left: 0px;
+        bottom: 0%;
+        height: 2px;
+        transition: all linear 0.25s;
+    }
+    &.active:after{
+    width: 75%;
+    background-color: $white;
+    }
+    &:not(.active):hover:after{
+        width: 75%;
+        background-color: $white;
+    }
+}
+
 .bg-prelogos-324{
     position: relative;
     &:before{

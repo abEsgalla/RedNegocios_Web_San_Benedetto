@@ -126,11 +126,29 @@ if(get_post_type()=="landing"):
     style="background-color:<?=get_field('caracteristicas_producto',$id_producto)['color_corporativo']?>">
         <div class="container">
         <div class="row">
-            <div class="col-12 text-uppercase py-16 m-0 h6 fs-24 
-            <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
-            ">
-            <?=get_the_title()?>
-            </div>
+            <? if($id_producto!=61 && $id_producto!=490): ?>
+                <div class="col-12 text-uppercase py-16 m-0 h6 fs-24 
+                <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
+                ">
+                <?=get_the_title()?>
+                </div>
+            <? else: ?>
+                <div class="col-12 text-uppercase py-16 m-0 h6 fs-24 d-flex justify-content-between
+                <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
+                ">
+                    <div>
+                        ENJOY
+                    </div>
+                    <div>
+                        <a href="<?=get_permalink(get_field('caracteristicas_producto',61)['relacion_page_landing'])?>" 
+                        class="py-2 text-reset text-decoration-none single-animation-undertext 
+                        <?=($id_producto==61)?'active':'opacity-50';?>">SIN GAS</a>
+                        <a href="<?=get_permalink(get_field('caracteristicas_producto',490)['relacion_page_landing'])?>" 
+                        class="py-2 text-reset text-decoration-none ms-32 single-animation-undertext 
+                        <?=($id_producto==490)?'active':'opacity-50';?>">CON GAS</a>
+                    </div>
+                </div>
+            <? endif; ?>
         </div>
         </div>
     </section>
