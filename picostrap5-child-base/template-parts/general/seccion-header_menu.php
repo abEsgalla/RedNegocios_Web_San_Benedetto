@@ -29,9 +29,13 @@ wp_reset_postdata();
 $header_menu="";
 foreach ($categories_array_by_id as $id_term => $id_posts):
     $term_name = get_term( $id_term )->name;
+    $border="";
+    if($id_term==4){
+        $border="border-start";
+    }
     $header_menu.="
     <div class='col'>
-        <div class='row'>
+        <div class='row px-xl-32 ".$border."'>
             <div class='col-12 text-uppercase fs-14 fw-bold text-secondary'>".$term_name."</div>
             <div class='col-12 mt-24'>
                 <div class='row'>";
@@ -67,7 +71,7 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
                     <div class='col-2'>
                         <div class='row'>
                             <a class='text-decoration-none text-reset position-relative' href='".get_permalink( 49 )."'>
-                                <div class='col-12 ratio ratio-2x3 border border-1 shadow more-brands'>
+                                <div class='col-12 ratio ratio-2x3 border border-1 more-brands'>
                                 ".
                                 '
                                 <div class="d-flex align-items-end pb-12 ps-12">
