@@ -87,6 +87,19 @@ HOW TO REFERENCE ASSETS AND IMAGES
     cursor: pointer;
 }
 
+.bg-prelogos-206{
+    position: relative;
+    &:before{
+        content:'';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 613px;
+        background: #EBE4E450;
+        transform: translateY(-100%);
+    }
+}
+
 .fix-translate-absolute{
     transform: translate(-50%,-50%);
 }

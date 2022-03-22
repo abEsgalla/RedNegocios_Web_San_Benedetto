@@ -100,6 +100,8 @@ wp_reset_query();
 	endif;
 ?>
 
+<section class="bg-prelogos-<?=get_the_ID()?>"></section>
+
 <section>
   <div class="container py-56">
     <div class="row">
