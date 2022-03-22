@@ -126,7 +126,9 @@ if(get_post_type()=="landing"):
     style="background-color:<?=get_field('caracteristicas_producto',$id_producto)['color_corporativo']?>">
         <div class="container">
         <div class="row">
-            <div class="col-12 text-uppercase py-16 m-0 text-white h6 fs-24">
+            <div class="col-12 text-uppercase py-16 m-0 h6 fs-24 
+            <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
+            ">
             <?=get_the_title()?>
             </div>
         </div>
