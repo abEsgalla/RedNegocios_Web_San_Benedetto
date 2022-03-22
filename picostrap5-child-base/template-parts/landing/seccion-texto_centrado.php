@@ -15,7 +15,7 @@
             <div class="col-12 h3 mb-40"><?=$seccion['texto_principal']?></div>
           <? endif; ?>
           <?php if($seccion['descripcion']): ?>
-            <div class="col-12"><?=$seccion['descripcion']?></div>
+            <div class="col-12 fs-17"><?=$seccion['descripcion']?></div>
           <? endif; ?>
         </div>
       </div>
