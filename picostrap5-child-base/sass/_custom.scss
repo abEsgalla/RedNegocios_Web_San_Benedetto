@@ -407,7 +407,7 @@ span{
             transform: translateX(-50%);
             left: 50%;
             height: 2px;
-            background-color: $secondary;
+            background-color: $secondary-light;
             transition: width linear 0.15s;
         }
         &.active:after{
@@ -659,6 +659,11 @@ span{
     background-repeat: no-repeat !important;
 }
 
+.bg-custom-image{
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
 
 .more-brands{
     overflow: hidden;
@@ -696,5 +701,36 @@ span{
             width: 200%;
             height: auto;
         }
+    }
+}
+
+.opacity-60 {
+    opacity: 0.60 !important;
+}
+
+.opacity-20 {
+    opacity: 0.20 !important;
+}
+
+.opacity-80 {
+    opacity: 0.80 !important;
+}
+
+.after-effect-banner-blue{
+    &>.container{
+        position: relative;
+        z-index: 99;
+    }
+    position: relative;
+    z-index: 9;
+    &:after{
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: $primary-brighter;
     }
 }
