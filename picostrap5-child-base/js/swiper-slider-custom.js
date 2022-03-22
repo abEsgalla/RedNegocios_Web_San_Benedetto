@@ -194,10 +194,16 @@ const swiper_prefooter_logos = new Swiper('.swiper-prefooter-logos', {
   }
 });
 
+var count_items = document.querySelectorAll('.swiper-landing-productos .swiper-slide').length;
+if(count_items>=8){
+  boolean_loop = true;
+}else{
+  boolean_loop = false;
+}
 const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
   direction: 'horizontal',
   autoHeight : true,
-  loop: true,
+  loop: boolean_loop,
   slidesPerView: 'auto',
   //spaceBetween: 12,
   /*breakpoints: {

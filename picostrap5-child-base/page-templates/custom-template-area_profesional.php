@@ -28,10 +28,10 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-96 mt-xl-138">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-secondary mt-138">
+      <div class="col-12 text-secondary">
         <div class="row">
           <div class="col-6">
             <div class="row">
@@ -52,7 +52,8 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-6 g-0">
+          <div class="col-6 position-relative g-0">
+            <?=wp_get_attachment_image(927, "full", "", array( 'class' => 'position-absolute w-100 top-0 transform-translate-ny pb-32' , 'alt' => '' , 'title' => '') ); ?>
             <?=wp_get_attachment_image(788, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 g-0">
