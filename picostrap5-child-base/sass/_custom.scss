@@ -40,7 +40,6 @@ HOW TO REFERENCE ASSETS AND IMAGES
 //body.scroll-position-not-at-top {background:red}
 
 .container-fluid{
-    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -66,6 +65,10 @@ HOW TO REFERENCE ASSETS AND IMAGES
 
 .ratio-3x4{
     --bs-aspect-ratio: calc(4 / 3 * 100%);
+}
+
+.ratio-2x3{
+    --bs-aspect-ratio: calc(3 / 2 * 100%);
 }
 
 .h-90{
@@ -231,7 +234,7 @@ HOW TO REFERENCE ASSETS AND IMAGES
 }
 
 .w-custom-1-9{
-    width: Calc(1/9*100%);
+    width: calc(1/9*100%);
 }
 
 // Large devices (desktops, less than 1200px || xl)
@@ -584,6 +587,16 @@ span{
     }
 }
 
+.rm-bootstrap-form-style{
+    .form-control{
+        border-radius: 0px;
+        &:focus{
+            box-shadow: none;
+            border-color: $white !important;
+        }
+    }
+}
+
 .background-nuestro-compromiso{
     bottom: 0;
     left: 0;
@@ -591,8 +604,30 @@ span{
     z-index: -1;
 }
 
-.container-fluid-custom {
+.container-fluid-custom{
     max-width: 1689px !important;
+    .swiper{
+        &:after{
+            content: '';
+            top: 0;
+            right: 0;
+            background: #ffffff75;
+            position: absolute;
+            width: calc(1/9*100%);
+            height: 100%;
+            z-index: 9999;
+        }
+        &:before{
+            content: '';
+            top: 0;
+            left: 0;
+            background: #ffffff75;
+            position: absolute;
+            width: calc(1/9*100%);
+            height: 100%;
+            z-index: 9999;
+        }
+    }
 }
 
 .pagination{
@@ -625,3 +660,39 @@ span{
 }
 
 
+.more-brands{
+    overflow: hidden;
+    svg{
+        z-index: 9;
+        &.light{
+            display: none;
+        }
+    }
+    &:after{
+        transition: all linear 0.25s;
+        content:'';
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-radius: 100%;
+        background-color: $primary;
+        transform: translate(-50%,50%);
+        bottom: 0;
+        left: 0;
+    }
+    &:hover{
+        svg{
+            &.dark{
+                display: none;
+            }
+            &.light{
+                display: inline;
+            }
+        }
+        &:after{
+            transition: all linear 0.25s;
+            width: 160px;
+            height: 160px;
+        }
+    }
+}

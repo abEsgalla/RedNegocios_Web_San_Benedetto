@@ -32,22 +32,30 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
     $header_menu.="
     <div class='col'>
         <div class='row'>
-            <div class='col-12 text-uppercase fs-13 fw-bold text-secondary'>".$term_name."</div>
+            <div class='col-12 text-uppercase fs-14 fw-bold text-secondary'>".$term_name."</div>
             <div class='col-12 mt-24'>
                 <div class='row'>";
     $limit=0;
     foreach ($id_posts as $id_producto):
+    if($id_term==3 && $limit==3){
+        continue;
+    }
     if($limit==4){
         continue;
-    } 
+    }
+    if(get_field('caracteristicas_producto',$id_producto)["imagen_grid_page_marcas"]):
+        $custom_image_bg_id = get_field('caracteristicas_producto',$id_producto)["imagen_grid_page_marcas"];
+    else:
+        $custom_image_bg_id = get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"];
+    endif;
     $header_menu.="    
                     <div class='col-2'>
                         <div class='row'>
                             <a class='text-decoration-none text-reset position-relative' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
-                                <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."99"."' class='col-12 ratio ratio-9x16'>
-                                    ".wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"], 'full', '', array( 'class' => 'px-2 fix-translate-absolute w-auto h-auto top-50 start-50' , 'alt' => '' , 'title' => '') )."
+                                <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."' class='col-12 ratio ratio-2x3'>
+                                    ".wp_get_attachment_image($custom_image_bg_id, 'full', '', array( 'class' => 'px-2 fix-translate-absolute w-100 h-auto top-50 start-50' , 'alt' => '' , 'title' => '') )."
                                 </div>
-                                <div class='col-12 mt-10 text-secondary fw-500'>
+                                <div class='col-12 mt-10 text-secondary fw-500 fs-13'>
                                 ".get_the_title($id_producto)."
                                 </div>
                             </a>
@@ -59,10 +67,22 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
                     <div class='col-2'>
                         <div class='row'>
                             <a class='text-decoration-none text-reset position-relative' href='".get_permalink( 49 )."'>
-                                <div class='col-12 ratio ratio-9x16 border border-1 shadow'>
-                                ".wp_get_attachment_image(708, 'full', '', array( 'class' => 'w-100 h-100' , 'alt' => '' , 'title' => '') )."
+                                <div class='col-12 ratio ratio-2x3 border border-1 shadow more-brands'>
+                                ".
+                                '
+                                <div class="d-flex align-items-end pb-12 ps-12">
+                                    <svg class="light" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#FFFFFF"/>
+                                    </svg>
+                                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#69B3E7"/>
+                                    </svg>
                                 </div>
-                                <div class='col-12 mt-10 text-secondary fw-500'>
+                                '
+                                .
+                                /*wp_get_attachment_image(708, 'full', '', array( 'class' => 'w-100 h-100' , 'alt' => '' , 'title' => '') ).*/"
+                                </div>
+                                <div class='col-12 mt-10 text-secondary fw-500 fs-13'>
                                     Otras Marcas
                                 </div>
                             </a>
