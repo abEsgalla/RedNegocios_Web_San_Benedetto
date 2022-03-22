@@ -9,11 +9,11 @@ foreach ($fields['productos'] as $id_producto):
   if (!in_array($category_name, $categories_slider_html)):
     array_push($categories_slider_html,$category_name);
   endif;
-  $slider_html.="<div data-swiper='swiper_home_dedicado' class='d-flex flex-wrap justify-content-center align-items-center h-100 contenedor-cursor-custom swiper-slide text-center type-container 
+  $slider_html.="<div data-swiper='swiper_home_dedicado' class='d-flex flex-wrap justify-content-center align-items-center h-100 swiper-slide text-center type-container 
   type-".str_replace(' ', '-', strtolower($category_name))."'>";
   if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"]):
     $slider_html.=
-    "<a class='d-inline-block w-100 h-100 text-decoration-none' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
+    "<a class='d-inline-block w-100 h-100 text-decoration-none contenedor-cursor-custom' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
     <div class='container-scale'>
     <div class='ratio ratio-30x43' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>"
     .wp_get_attachment_image(get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"], "full", "", array( 'class' => 'h-auto top-50 translate-middle-y' , 'alt' => '' , 'title' => '') ).
