@@ -32,7 +32,7 @@ get_header();
   </div>
 </section>
 
-<section id="sliderPromocional">
+<section id="sliderPromocional" class="py-xl-133">
   <div class="container-fluid g-0 position-relative">
     <div class="row g-0">
       <?php
