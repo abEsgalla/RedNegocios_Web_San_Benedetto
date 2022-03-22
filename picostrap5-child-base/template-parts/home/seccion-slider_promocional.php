@@ -84,7 +84,7 @@ endforeach;
 <div class="col-12">
     <div class="container">
         <div class="row">
-            <div class="zi-99 col-12 d-flex justify-content-lg-start justify-content-end align-items-center position-absolute bt-40">
+            <div class="zi-99 col-12 d-flex justify-content-lg-start justify-content-end align-items-center bt-40">
                 <div class="d-lg-flex">
                     <div class="arrow-prev mx-12 c-pointer opacity-50" onclick=swiper_home_promocional.slidePrev()>
                         <svg class="d-lg-inline d-none" xmlns="http://www.w3.org/2000/svg" width="17" height="32" viewBox="0 0 17 32" fill="none">
