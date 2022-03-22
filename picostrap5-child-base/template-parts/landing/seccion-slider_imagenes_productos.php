@@ -32,7 +32,7 @@
                 data-description="<?=$slide['descripcion_producto']?>">
                   <div style="background-color:<?=get_field('caracteristicas_producto',$seccion['id_producto'])['color_corporativo']?>"
                   class='w-100 ratio ratio-5x7 d-flex justify-content-center align-items-center'>
-                    <?=wp_get_attachment_image($slide['imagen_producto'], "full", "", array( 'class' => 'h-auto mh-100' , 'alt' => '' , 'title' => '') )?>
+                    <div class="bg-custom-post" style="background:url('<?=wp_get_attachment_image_url($slide['imagen_producto'], "full", "")?>')"></div>
                   </div>
                   <div class="w-100 text-start text-uppercase mt-12 text-secondary">
                     <?=$slide['nombre_producto']?>
