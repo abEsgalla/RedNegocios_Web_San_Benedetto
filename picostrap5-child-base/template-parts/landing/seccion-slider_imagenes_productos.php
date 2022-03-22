@@ -18,7 +18,7 @@
       </div>
       <div class="col-12">
         <div class="swiper swiper-landing-productos mt-96">
-          <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=5)?'justify-content-xl-center':'';?>">
+          <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?>">
             <?php
             if ($seccion['slider']):
               foreach ($seccion['slider']['slide'] as $slide ):
