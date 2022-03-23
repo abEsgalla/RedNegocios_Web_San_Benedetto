@@ -84,6 +84,7 @@ $spacers: (
   133: ($spacer * 8.313), // 133px
   138: ($spacer * 8.625), // 138px
   145: ($spacer * 9.063), // 145px
+  149: ($spacer * 9.3125), // 149px
   150: ($spacer * 9.375), // 150px
   160: ($spacer * 10), // 160px
   165: ($spacer * 10.313), // 165px
@@ -93,11 +94,18 @@ $spacers: (
   185: ($spacer * 11.563), // 185px
   192: ($spacer * 12), // 192px
   218: ($spacer * 13.625), // 218px
+  221: ($spacer * 13.8125), // 221px
+  228: ($spacer * 14.25), // 228px
+  242: ($spacer * 15.125), // 242px
   245: ($spacer * 15.313), // 245px
+  254: ($spacer * 15.875), // 254px
   256: ($spacer * 16), // 256px
+  261: ($spacer * 16.3125), // 261px
   270: ($spacer * 16.875), // 270px
   285: ($spacer * 17.813), // 285px
-  317: ($spacer * 19.8125) // 317px
+  317: ($spacer * 19.8125), // 317px
+  333: ($spacer * 20.8125), // 333px
+  492: ($spacer * 30.75) // 492px
 ) !default;
 
 // Font size base
@@ -174,7 +182,7 @@ $white : #ffffff;
 $black : #000000;
 $green : #6DD400;
 $grey : #C4C4C4;
-
+$grey-text: #666666;
 $theme-colors: (
   "primary"         : $primary,
   "primary-darker"  : $primary-darker,
@@ -195,6 +203,7 @@ $theme-colors: (
   "black" : $black,
   "green" : $green,
   "grey" : $grey,
+  "grey-text" : $grey-text,
   "section-noticias" : $section-noticias,
   "cabecera" : $cabecera
 );
