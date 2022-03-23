@@ -130,7 +130,11 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
       $replace = array('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u', 'n', '-');
       $custom_sanitize=str_replace($search, $replace, $item->title);
       $custom_sanitize=strtolower($custom_sanitize);
-      $item_output .= '<a
+      $event = '';
+      if($item->object_id!=684){
+        $event = 'href="'.esc_attr($item->url).'" onclick="location.href='."'".esc_attr($item->url)."'".'"';
+      }
+      $item_output .= '<a '.$event.'
       data-bs-toggle="offcanvas" data-bs-target="#offcanvas-'.$custom_sanitize.'" 
       href="#offcanvas-'.$custom_sanitize.'" role="button" aria-controls="offcanvas-'.$custom_sanitize.'" 
       ' . $attributes . '>';
