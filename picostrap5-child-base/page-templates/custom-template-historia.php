@@ -38,11 +38,11 @@ get_header();
                     <div class="col-12 h4 mt-24 mt-28">
                       Agua Mineral San Benedetto S.A.U
                     </div>
-                    <div class="col-12 fs-17 mt-24 mt-24">
+                    <div class="col-12 fs-17 mt-24 mt-24 fw-500">
                       Agua Mineral San Benedetto S.A.U. comienza su andadura en España, 
                       en un enclave privilegiado por su entorno y buenas comunicaciones, 
                       con fama de ser la aldea más grande de Europa: San Antonio de Requena (Valencia). 
-                      En julio de ese mismo año, el manantial Fuente Primavera es declarado Agua Mineral Natural.
+                      En julio de ese mismo año, el manantial <b>Fuente Primavera</b> es declarado Agua Mineral Natural.
                     </div>
                   </div>
                 </div>
