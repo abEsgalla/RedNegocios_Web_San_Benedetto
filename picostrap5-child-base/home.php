@@ -59,7 +59,7 @@ endif;
                             </span>
                           </div>
                           <div class="text-uppercase fw-bold fs-24 mt-30">
-                            <?php the_title() ?>
+                            <?=mb_strimwidth(wp_strip_all_tags(get_the_title()), 0, 80, '...');?>
                           </div>
                           <div class="card-text mt-16 fs-17">
                             <?=mb_strimwidth(wp_strip_all_tags(get_the_content()), 0, 150, '...');?>
@@ -94,8 +94,8 @@ endif;
       <div class="col-12 mb-64">
         <div class="row">
           <div class="col-3">
-            <form role="search" method="get" class="search-form input-group w-auto fs-16" action="<?=site_url()?>">
-                <input type="search" class="form-control px-0 py-10 border-0 border-radius border-bottom" placeholder="Buscar..." data-swplive="true" data-swpengine="default" value="" name="s">
+            <form role="search" method="get" class="search-form input-group w-auto fs-16 icono-lupa" action="<?=site_url()?>">
+                <input type="text" class="form-control px-0 py-10 border-0 border-radius border-bottom" placeholder="Buscar..." data-swplive="false" data-swpengine="default" value="" name="s">
                 <input type="hidden" id="swpengine" name="swpengine" value="default">
             </form>
           </div>
