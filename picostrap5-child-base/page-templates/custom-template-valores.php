@@ -316,8 +316,9 @@ get_header();
                 en nuestro entorno. Lo conseguimos a través de proyectos y sinergias estratégicas con agentes locales. 
                 Así, no sólo fabricamos los envases más ligeros del mercado de agua mineral: 
                 también aprovechamos al máximo nuestros recursos hídricos, evitando su desperdicio; 
-                fomentamos la circularidad de nuestros envases y residuos, 
-                realizamos tareas de limpieza y reforestación en nuestros alrededores, etc. ¡Descubre más en nuestra Ecolosofía! 
+                <a class="text-reset" href="<?=get_permalink(585)?>">fomentamos la circularidad de nuestros envases y residuos</a>, 
+                realizamos tareas de limpieza y reforestación en nuestros alrededores, etc. ¡Descubre más en nuestra 
+                <a class="text-reset" href="<?=get_permalink(583)?>"><i>Ecolosofía</i></a>! 
               </div>
 
         </div>
