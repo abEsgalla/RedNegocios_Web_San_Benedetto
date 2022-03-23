@@ -70,7 +70,7 @@ get_header();
             </div>
           </div>
           <div class="g-0 col-12 col-sm-6 d-block bg-white">
-            <?=wp_get_attachment_image(765, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(1166, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div style="" class="g-0 col-12 col-sm-6 d-block bg-secondary text-white">
             <div class="row position-relative h-100">
