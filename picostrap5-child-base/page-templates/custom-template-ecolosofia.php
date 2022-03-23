@@ -170,10 +170,21 @@ get_header();
                     <div class="col-12">
                       <div class="row text-secondary">
                         <div class="offset-1 col-10">
-                          Tenemos un acuerdo con <strong>Aldeas Infantiles SOS</strong> según el cual suministramos botellas de agua diarias 
+                          Tenemos un acuerdo con 
+                          <strong>
+                            <a class="text-reset" target="_blank" href="https://www.aldeasinfantiles.es/">Aldeas Infantiles SOS</a>
+                          </strong> según el cual suministramos botellas de agua diarias 
                           a los 45 niños y niñas de su Centro de Día en Valencia. 
-                          También realizamos donaciones asiduas a organizaciones como <strong>Cruz Roja, 
-                          Fundación Ayuda Una Familia</strong> y <strong>Hambre Cero</strong>, 
+                          También realizamos donaciones asiduas a organizaciones como 
+                          <strong>
+                              <a class="text-reset" target="_blank" href="https://www2.cruzroja.es/">Cruz Roja</a>
+                            , 
+                              <a class="text-reset" target="_blank" href="https://ayudaunafamilia.es/">Fundación Ayuda Una Familia</a>
+                            </strong> y 
+                            <strong>
+                              <a class="text-reset" target="_blank" href="https://hambrecero.es/">Hambre Cero</a>
+
+                              </strong>, 
                           además de apoyar activamente todas las iniciativas culturales y de ocio de nuestro entorno local.  
                         </div>
                       </div>
