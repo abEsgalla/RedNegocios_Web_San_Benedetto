@@ -38,11 +38,11 @@ get_header();
 <section class="mb-96 position-relative mt-custom-28">
   <div class="container bg-white">
     <div class="row text-center">
-      <div class="offset-2 col-8 mt-176 fs-32 fw-bolder text-secondary">
+      <div class="offset-2 col-8 mt-176 fs-32 fw-bolder text-secondary text-uppercase">
         Del gr. οἰκο- oiko-.: Significa 'ecológico'<br>
         Del gr. φιλοσοφία philosophía.:  <span class="text-green d-block lh-1"> Manera de pensar o de ver las cosas. </span>
       </div>
-      <div class="offset-2 col-8 mt-102 text-center text-secondary">
+      <div class="offset-2 col-8 mt-102 text-center text-secondary fs-17">
         Nuestro principal activo, el core y razón de ser de nuestra compañía, 
         es el agua mineral que brota del interior de la tierra. 
         Debemos a la Naturaleza la existencia de nuestra actividad y, por eso, 
@@ -50,7 +50,7 @@ get_header();
         De ahí nace nuestra Ecolosofía: es la forma en la que Agua Mineral San Benedetto utiliza el <strong>conocimiento 
         y la tecnología en beneficio del medioambiente y las personas. ¿Cómo? </strong>
       </div>
-      <div class="col-12 mt-96">
+      <div class="col-12 mt-123">
         <div class="row text-white text-uppercase">
           <div class="col-4">
             <a class="text-reset text-decoration-none hover-ecolosofia-efect" href="<?=get_permalink(585)?>">
@@ -121,14 +121,16 @@ get_header();
 </section>
 
 <section class="my-96 mt-xl-256 mb-xl-160">
-  <div class="container bg-white">
+  <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="row">
           <div style="" class="g-0 col-12 col-sm-6 d-block">
             <div class="row position-relative h-100">
-              <div class="container-fluid zi-99 top-0 position-absolute">
-                <div class="container">
+              <div class="container-fluid zi-99 top-0 h-100 position-absolute">
+                <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
+                  class="d-none d-xxxl-block position-absolute top-0 start-0 w-auto translate-dots-col-before">
+                <div class="container  h-100 bg-white">
                   <div class="row">
                     <div class="offset-1 col-10">
                       <div class="row text-secondary text-uppercase mt-80">
