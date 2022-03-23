@@ -9,21 +9,21 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section class="position-absolute top-0">
-  <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(657, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 top-25 position-absolute">
-    <div class="container">
-      <div class="row">
-        <div class="offset-1 col-10 text-center">
-          <div class="row text-white">
-            <div class="col-12 text-uppercase fs-18">
-            GRUPO SAN BENEDETTO
+<section class="position-absolute top-0 w-100">
+  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-492">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(657, "full")?>')"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="offset-1 col-10 text-center">
+            <div class="row text-white">
+              <div class="col-12 text-uppercase fs-18">
+              GRUPO SAN BENEDETTO
+              </div>
+              <h1 class="col-12 mt-8 h2 text-white">
+                Agua Mineral San Benedetto en España
+              </h1>
             </div>
-            <h1 class="col-12 mt-8 h2 text-white">
-              Agua Mineral San Benedetto en España
-            </h1>
           </div>
         </div>
       </div>
