@@ -9,7 +9,7 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section>
+<section class="text-vision">
   <div class="container-fluid position-relative zi-9 bg-black pt-270 pb-317">
     <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(606, "full")?>')"></div>
@@ -38,7 +38,7 @@ get_header();
   <div class="container position-relative">
     <div class="row">
     
-      <div style="" class="g-0 col-12 col-sm-6 d-block bg-primary-brighter">
+      <div style="" class="text-mision g-0 col-12 col-sm-6 d-block bg-primary-brighter">
         <div class="row position-relative h-100">
           <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
             <div class="container">
@@ -62,7 +62,9 @@ get_header();
       <div style="" class="g-0 col-12 col-sm-6 d-block">
         <div class="row position-relative">
           <div class="position-relative transform-translate-ny">
-            <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
+            <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
+            class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after opacity-20">
+            <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
             <div class="container">
@@ -86,13 +88,17 @@ get_header();
 
       <div style="" class="g-0 col-12 col-sm-6">
         <div class="position-relative d-flex w-100 h-100">
-          <?=wp_get_attachment_image(610, "full", "", array( 'class' => 'center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+          <?=wp_get_attachment_image(610, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+          <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
+            class="d-none d-xxxl-block position-absolute bottom-0 start-0 w-auto translate-dots-col-before opacity-60">
         </div>
       </div>
 
       <div style="" class="g-0 col-12 col-sm-6">
         <div class="position-relative d-flex w-100 h-100">
-          <?=wp_get_attachment_image(609, "full", "", array( 'class' => 'center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+          <?=wp_get_attachment_image(609, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+          <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
+            class="d-none d-xxxl-block position-absolute bottom-0 end-0 w-auto translate-dots-col-bottom-after opacity-60">
         </div>
       </div>
 
@@ -310,8 +316,9 @@ get_header();
                 en nuestro entorno. Lo conseguimos a través de proyectos y sinergias estratégicas con agentes locales. 
                 Así, no sólo fabricamos los envases más ligeros del mercado de agua mineral: 
                 también aprovechamos al máximo nuestros recursos hídricos, evitando su desperdicio; 
-                fomentamos la circularidad de nuestros envases y residuos, 
-                realizamos tareas de limpieza y reforestación en nuestros alrededores, etc. ¡Descubre más en nuestra Ecolosofía! 
+                <a class="text-reset" href="<?=get_permalink(585)?>">fomentamos la circularidad de nuestros envases y residuos</a>, 
+                realizamos tareas de limpieza y reforestación en nuestros alrededores, etc. ¡Descubre más en nuestra 
+                <a class="text-reset" href="<?=get_permalink(583)?>"><i>Ecolosofía</i></a>! 
               </div>
 
         </div>
