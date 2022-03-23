@@ -10,23 +10,23 @@ get_header();
 ?>
 
 
-<section class="position-absolute top-0">
-  <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(613, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-    <div class="container">
-      <div class="row">
-        <div class="offset-3 col-6 text-center">
-          <div class="row text-white">
-            <div class="col-12 text-uppercase fs-18">
-            ¡Una manera ecológica de pensar las cosas!
-            </div>
-            <h1 class="col-12 mt-16 fs-72 fw-bold text-green">
-              Ecolosofía
-            </h1>
-            <div class="col-12 mt-40">
-              <?=wp_get_attachment_image(614, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+<section class="position-absolute top-0 w-100">
+  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-228">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(613, "full")?>')"></div>
+      <div class="container position-relative zi-99">
+        <div class="row">
+          <div class="offset-3 col-6 text-center">
+            <div class="row text-white">
+              <div class="col-12 text-uppercase fs-18">
+              ¡Una manera ecológica de pensar las cosas!
+              </div>
+              <h1 class="col-12 mt-16 fs-72 fw-bold text-green">
+                Ecolosofía
+              </h1>
+              <div class="col-12 mt-40">
+                <?=wp_get_attachment_image(614, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+              </div>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ get_header();
   </div>
 </section>
 
-<section class="mb-96 position-relative mt-custom-25">
+<section class="mb-96 position-relative mt-custom-28">
   <div class="container bg-white">
     <div class="row text-center">
       <div class="offset-2 col-8 mt-176 fs-32 fw-bolder text-secondary">
