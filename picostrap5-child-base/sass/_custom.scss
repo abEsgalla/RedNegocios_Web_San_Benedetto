@@ -812,6 +812,32 @@ span{
     }
 }
 
+.w-descripcion{
+    p{
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+#sliderPrincipal{
+    .swiper-pagination-bullet{
+        transition: background-color .25s ease;
+    }
+    .c-pointer{
+        transition: all .25s ease;
+    }
+    &.slide-dark{
+        .swiper-pagination-bullet{
+            background-color: $secondary !important;
+        }
+        .c-pointer{
+            svg path{
+                fill: $secondary;
+            }
+        }
+    }
+}
 // ----------------------------------- Estilos de revision de Jose
 
 .banner-redes {

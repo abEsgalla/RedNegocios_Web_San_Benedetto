@@ -39,15 +39,20 @@ swiper_home.on('slideChange', function () {
   }
 
 });
-swiper_home.on('slideChangeTransitionEnd', function () {
+swiper_home.on('slideChangeTransitionStart', function () {
   let active_slide = document.querySelector(".swiper-home .swiper-slide-active");
   let navbar = document.querySelector("nav.navbar");
+  let slider_principal = document.querySelector("#sliderPrincipal")
   if( active_slide.classList.contains("slide-light") ) {
     navbar.classList.remove('menu-light');
     navbar.classList.add('menu-dark');
+    slider_principal.classList.remove('slide-light');
+    slider_principal.classList.add('slide-dark');
   } else {
     navbar.classList.remove('menu-dark');
     navbar.classList.add('menu-light');
+    slider_principal.classList.remove('slide-dark');
+    slider_principal.classList.add('slide-light');
   }
 });
 

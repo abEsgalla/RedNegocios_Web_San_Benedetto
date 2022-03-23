@@ -49,6 +49,7 @@ defined( 'ABSPATH' ) || exit;
         $icon_color = '#ffffff';
         $logo = 772;
         $txt_color = ' text-white ';
+        $colorMenu = 'menu-dark';
         $shadow = '';
         if(get_field('shadow') && get_field('shadow')==true){
           $shadow = 'shadow';
