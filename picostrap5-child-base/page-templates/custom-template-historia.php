@@ -267,7 +267,36 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section>
+  <div class="container-fluid position-relative zi-9 bg-secondary-darker py-105">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(51, "full")?>')"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="offset-3 col-6 text-center text-white">
+            <div class="row">
+              <div class="col-12 text-uppercase fs-18 pt-20">
+                san benedetto
+              </div>
+              <div class="col-12 h4 mt-10">
+                Conoce nuestras marcas
+              </div>
+              <div class="col-12 mt-32 fs-17">
+                <a href="<?=get_permalink(49)?>" class="col-12 text-center">
+                  <div class="btn btn-outline-white text-uppercase rounded-0">
+                    saber más              
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="my-55">
   <div class="container">
     <div class="row">
       <div class="col-12 position-relative">
