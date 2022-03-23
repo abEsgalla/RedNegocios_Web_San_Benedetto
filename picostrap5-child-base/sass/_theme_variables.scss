@@ -182,7 +182,7 @@ $white : #ffffff;
 $black : #000000;
 $green : #6DD400;
 $grey : #C4C4C4;
-
+$grey-text: #666666;
 $theme-colors: (
   "primary"         : $primary,
   "primary-darker"  : $primary-darker,
@@ -203,6 +203,7 @@ $theme-colors: (
   "black" : $black,
   "green" : $green,
   "grey" : $grey,
+  "grey-text" : $grey-text,
   "section-noticias" : $section-noticias,
   "cabecera" : $cabecera
 );
