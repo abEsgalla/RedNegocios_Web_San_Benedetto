@@ -49,6 +49,7 @@ defined( 'ABSPATH' ) || exit;
         $icon_color = '#ffffff';
         $logo = 772;
         $txt_color = ' text-white ';
+        $colorMenu = 'menu-dark';
         if ( is_main_query() ) {
             if ( is_front_page() ) {
               //var_dump('PAGINA INICIO');

@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-<section>
+<section id="sliderPrincipal">
   <div class="container-fluid g-0 position-relative">
       <div class="row g-0">
           <div class="col-12">

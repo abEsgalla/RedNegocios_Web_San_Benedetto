@@ -56,9 +56,9 @@ $fields = wp_parse_args( $args );
                     if($slide['texto_cta']):
                       ?>
                         <div class="col-12 mt-20 mt-xxl-36">
-                          <div class="btn btn-primary text-uppercase text-white rounded-0 fs-13">
+                          <a class="btn <?=$slide['estilo_boton']?> text-uppercase text-white rounded-0 fs-13" href="<?=$slide['link_cta']?>">
                             <?=$slide['texto_cta']?>
-                          </div>
+                          </a>
                         </div>
                       <?
                     endif;
