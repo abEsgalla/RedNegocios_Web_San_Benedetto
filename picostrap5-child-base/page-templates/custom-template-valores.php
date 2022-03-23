@@ -34,7 +34,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-64 mt-xl-256 mb-xl-160">
+<section class="mt-253 mb-165">
   <div class="container position-relative">
     <div class="row">
     
@@ -113,7 +113,7 @@ get_header();
         <div class="row">
           <div class="col-12">
             <div class="row">
-              <div class="col-6 mt-80">
+              <div class="col-6 mt-85">
                 <div class="row">
                   <div class="offset-1 col-10">
                     <div class="row">
@@ -128,10 +128,10 @@ get_header();
                           </svg>
                         </span>
                       </div>
-                      <div class="col-12 fs-24 fw-bold text-uppercase">
+                      <div class="col-12 fs-24 fw-bold text-uppercase text-secondary-light">
                         Liderazgo en calidad.
                       </div>
-                      <div class="col-12 mt-24">
+                      <div class="col-12 mt-24 fs-17 fw-500 text-secondary-lighter">
                         Nuestra máxima prioridad es poder garantizar una oferta de productos asequibles, 
                         capaz de satisfacer las distintas necesidades de consumo y con los mejores estándares de calidad. 
                         Somos la primera envasadora de agua mineral en España y uno de los principales fabricantes de refrescos del país: 
@@ -163,16 +163,17 @@ get_header();
                           </svg>
                         </span>
                       </div>
-                      <div class="col-12 fs-24 fw-bold text-uppercase">
+                      <div class="col-12 fs-24 fw-bold text-uppercase text-secondary-light">
                         Innovación e investigación.
                       </div>
-                      <div class="col-12 mt-24">
+                      <div class="col-12 mt-24 fs-17 fw-500 text-secondary-lighter">
                         Si algo nos ha caracterizado desde nuestros orígenes es un profundo espíritu visionario, 
                         anticipándonos siempre a las grandes tendencias del futuro que revolucionarían el mercado. 
                         Primero fue la introducción de la botella de PET en 1980, 
-                        después la patente de tapones push&pull completamente asépticos; más tarde, 
+                        después la patente de tapones <i>push&pull</i> completamente asépticos; más tarde, 
                         la medición y neutralización de emisiones de CO2. 
-                        Un espíritu que nos sigue guiando hoy en día en nuestro camino hacia una Total Beverage Company. 
+                        Un espíritu que nos sigue guiando hoy en día en nuestro 
+                        camino hacia una <i>Total Beverage Company</i>. 
                       </div>
                     </div>
                   </div>
@@ -197,10 +198,10 @@ get_header();
                           </svg>
                         </span>
                       </div>
-                      <div class="col-12 fs-24 fw-bold text-uppercase">
+                      <div class="col-12 fs-24 fw-bold text-uppercase text-secondary">
                         Responsabilidad con la comunidad.
                       </div>
-                      <div class="col-12 mt-24">
+                      <div class="col-12 mt-24 fs-17 fw-500 text-secondary-lighter">
                         Formamos parte de las empresas que ofrecen soluciones a la España vaciada. 
                         Las envasadoras de agua mineral generamos empleo de calidad en zonas rurales, 
                         contribuyendo además al crecimiento económico local. Además, 
@@ -232,10 +233,10 @@ get_header();
                           </svg>
                         </span>
                       </div>
-                      <div class="col-12 fs-24 fw-bold text-uppercase">
+                      <div class="col-12 fs-24 fw-bold text-uppercase text-secondary">
                         Bienestar laboral.
                       </div>
-                      <div class="col-12 mt-24">
+                      <div class="col-12 mt-24 fs-17 fw-500 text-secondary-lighter">
                         En Agua Mineral San Benedetto queremos atraer talento, 
                         pero más nos preocupa ser capaces de fidelizarlo. 
                         Por eso nos enorgullece poder presumir de la media de antigüedad entre nuestros empleados, 
@@ -256,7 +257,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 mt-xl-112">
+<section class="mt-111">
   <div class="container-fluid">
     <div class="row position-relative">
       <div class="col-6 g-0 bg-black position-relative">
@@ -288,7 +289,8 @@ get_header();
                       Producción sostenible.
                     </div>
                     <div class="col-12 mt-36">
-                      <a href="<?=get_permalink(583)?>" class="btn btn-outline-white text-uppercase rounded-0">
+                      <a href="<?=get_permalink(583)?>" 
+                      class="btn btn-outline-white text-uppercase rounded-0 border-2 fs-14 fw-500">
                         ir a ecolosofía
                       </a>
                     </div>
@@ -297,26 +299,28 @@ get_header();
               </div>
             </div>
           </div>
-          <?=wp_get_attachment_image(611, "full", "", array( 'class' => 'w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+          <?=wp_get_attachment_image(611, "full", "", array( 'class' => 'w-100 opacity-60' , 'alt' => '' , 'title' => '') ); ?>
         </div>
       </div>
       <div class="col-6 text-secondary bg-primary-brighter d-flex align-items-center">
         <div class="row">
-          <div class="offset-1 col-7">
-            Desde el principio nos hemos preocupado por ser capaces de desarrollar nuestra actividad con el mínimo impacto 
-            en nuestro entorno. Lo conseguimos a través de proyectos y sinergias estratégicas con agentes locales. 
-            Así, no sólo fabricamos los envases más ligeros del mercado de agua mineral: 
-            también aprovechamos al máximo nuestros recursos hídricos, evitando su desperdicio; 
-            fomentamos la circularidad de nuestros envases y residuos, 
-            realizamos tareas de limpieza y reforestación en nuestros alrededores, etc. ¡Descubre más en nuestra Ecolosofía! 
-          </div>
+
+              <div class="offset-1 col-7 fw-500 fs-17 text-secondary-lighter ps-0">
+                Desde el principio nos hemos preocupado por ser capaces de desarrollar nuestra actividad con el mínimo impacto 
+                en nuestro entorno. Lo conseguimos a través de proyectos y sinergias estratégicas con agentes locales. 
+                Así, no sólo fabricamos los envases más ligeros del mercado de agua mineral: 
+                también aprovechamos al máximo nuestros recursos hídricos, evitando su desperdicio; 
+                fomentamos la circularidad de nuestros envases y residuos, 
+                realizamos tareas de limpieza y reforestación en nuestros alrededores, etc. ¡Descubre más en nuestra Ecolosofía! 
+              </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-56">
   <div class="container">
     <div class="row">
       <div class="col-12 position-relative">
