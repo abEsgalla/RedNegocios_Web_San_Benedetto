@@ -77,6 +77,7 @@ $spacers: (
   94:  ($spacer * 5.875), // 94px
   96:  ($spacer * 6), // 96px
   102:  ($spacer * 6.375), // 102px
+  108:  ($spacer * 6.75), // 108px
   112:  ($spacer * 7), // 112px
   120:  ($spacer * 7.5), // 120px
   128:  ($spacer * 8), // 128px
@@ -147,6 +148,7 @@ $lheight: ();
 $lheight: map-merge(
   (
     n:   normal,
+    20: $font-size-base * 1.25,
     24: $font-size-base * 1.5,
     64: $font-size-base * 4,
   ),

@@ -83,6 +83,9 @@ wp_reset_query();
 				case 'elementos_quimicos':
 					get_template_part( 'template-parts/landing/seccion', 'elementos_quimicos', $seccion);
 				break;
+				case 'banner_redes':
+					get_template_part( 'template-parts/landing/seccion', 'banner_redes', $seccion );
+				break;
 				case 'texto_centrado':
           			get_template_part( 'template-parts/landing/seccion', 'texto_centrado', $seccion);
 				break;
