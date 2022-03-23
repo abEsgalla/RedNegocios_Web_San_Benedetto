@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-12">
         <div class="row text-center text-secondary">
-          <div class="col-12 fs-18 text-uppercase">
+          <div class="col-12 fs-18 text-uppercase <? if( is_single(489) ) { echo 'fw-bold'; } ?>">
             <?=$seccion['slider']['texto_superior']?>
           </div>
           <div class="col-12 h3 text-secondary-light">

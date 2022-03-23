@@ -4,8 +4,8 @@
 ?>
 
 <section class="d-flex position-relative">
-  <div class="bg-black">
-    <?=wp_get_attachment_image($seccion['fondo'], "full", "", array( 'class' => $seccion['fondo_opacidad'] , 'alt' => '' , 'title' => '') ); ?>
+  <div class="bg-black w-100">
+    <?=wp_get_attachment_image($seccion['fondo'], "full", "", array( 'class' => 'img-seccion-banner ' .$seccion['fondo_opacidad']   , 'alt' => '' , 'title' => '') ); ?>
   </div>
   <div class="container-fluid zi-99 <?=$seccion['texto_vertical']?> position-absolute translate-middle-y">
     <div class="container">
