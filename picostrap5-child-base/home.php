@@ -4,6 +4,14 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header();
+
+
+if ( !is_front_page() && is_home() && get_query_var( 'paged') == 0 ):   
+  $remove_elements = true;
+else:
+  $remove_elements = false;
+endif;
+
 ?>
   
  
@@ -13,82 +21,120 @@ get_header();
     <div class="row">
       <div class="col-12">
         <div class="row text-secondary">
-          <div class="col-12">
+          <div class="col-12 fs-18">
             SAN BENEDETTO
           </div>
           <div class="col-12 h2 mt-8">
             Noticias
           </div>
-          <div class="col-12 mt-48">
-            <div class="row">
-              <div class="col-8">
-                <div class="ratio ratio-16x9 overflow-hidden">
-                  <?php the_post_thumbnail('full', ['class' => 'w-100 top-50 translate-middle-y']);    ?>
+          <?php
+          if ($remove_elements):        
+          ?>
+            <div class="col-12 mt-48">
+              <div class="row">
+                <div class="col-9">
+                  <div class="overflow-hidden">  
+                    <?php 
+                    if(has_post_thumbnail()):
+                      the_post_thumbnail('full', ['class' => 'w-100']);    
+                    else:
+                      echo wp_get_attachment_image(891, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') );
+                    endif;
+                    ?>                
+                  </div>
                 </div>
-              </div>
-              <div class="col-4 position-absolute top-50 start-50 py-24">
-                <div class="ratio ratio-16x9">
-                  <div class="card rounded-0 border-0 mb-4 shadow-sm h-100">
-                    <div class="card-body text-secondary fs-13 px-80 d-flex flex-column justify-content-center">
-                        <div class="text-uppercase fw-bold fs-24">
-                          Fuente Primavera renueva su imagen y lanza varias novedades por su 25º aniver...
-                        </div>
-                        <div class="card-text mt-8 fs-17">
-                          La marca de agua mineral cambia su identidad visual, 
-                          presenta nuevos lanzamientos y será el Agua Oficial de Valencia Capital Mundial del Diseño.
-                        </div>
-                        <div class="mt-16 fs-16 text-uppercase">
-                          Leer
-                        </div>
+                <div class="col-4 position-absolute top-50 start-50 py-24">
+                  <div class="">
+                    <div class="card rounded-0 border-0 mb-4 shadow-sm h-100">
+                      <div class="card-body text-secondary fs-13 p-80 d-flex flex-column justify-content-center">
+                          <div class="position-relative">
+                            <span>
+                              <?=wp_get_attachment_image(890, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+                            </span>
+                            <span class="fs-13 ms-12">
+                              San Benedetto
+                            </span>
+                            <span class="position-absolute end-0 zi-99">
+                              <?=wp_get_attachment_image(892, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+                            </span>
+                          </div>
+                          <div class="text-uppercase fw-bold fs-24 mt-30">
+                            <?php the_title() ?>
+                          </div>
+                          <div class="card-text mt-16 fs-17">
+                            <?=mb_strimwidth(wp_strip_all_tags(get_the_content()), 0, 150, '...');?>
+                          </div>
+                          <div class="mt-16 fw-500 fs-16 text-uppercase">
+                            <a class="text-reset" href="<?php the_permalink() ?>">
+                              Leer
+                            </a>
+                          </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          <?php
+          endif;    
+          ?>
         </div>
       </div>
     </div> 
   </div>
 </section>
 
+
 <section class="album py-5 bg-light mt-48">
   <div class="container">
     <div class="row">
-    <?php 
-        if ( have_posts() ) : 
-            while ( have_posts() ) : the_post();
-              ?>
-              <div class="col-md-3 col-sm-6">
-                <div class="card mb-4 shadow-sm rounded-0">
-                  <a class="text-reset text-decoration-none" href="<?php the_permalink() ?>">
-                    <?php the_post_thumbnail('full', ['class' => 'w-100']);    ?>
-                    <div class="card-body text-secondary fs-13">
-                        <div class="text-uppercase">
-                            <?php the_title() ?>
-                        </div>
-                        <div class="card-text mt-8 text-truncate">
-                          <?=get_the_content()?>
-                        </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <?
-            endwhile;
-        else :
-            _e( 'Sorry, no posts matched your criteria.', 'textdomain' );
-        endif;
-        ?>
+    <?php
+    if ($remove_elements):       
+    ?>
+      <div class="col-12 mb-64">
+        <div class="row">
+          <div class="col-3">
+            <form role="search" method="get" class="search-form input-group w-auto fs-16" action="<?=site_url()?>">
+                <input type="search" class="form-control px-0 py-10 border-0 border-radius border-bottom" placeholder="Buscar..." data-swplive="true" data-swpengine="default" value="" name="s">
+                <input type="hidden" id="swpengine" name="swpengine" value="default">
+            </form>
+          </div>
+          <div class="offset-1 col-8 text-end">
+            <?
+            foreach (get_categories() as $key => $value):
+            ?>
+              <a class="text-decoration-none fs-16 fw-500 text-secondary-light mx-12 text-uppercase" href="<?=get_category_link($value->term_id)?>">
+                <?=$value->name?>
+              </a>
+            <?
+            endforeach;
+            ?>
+          </div>
+        </div>
+      </div>
+    <?php
+    endif;     
+    ?>
+      <?php 
+      if ($remove_elements):  
+        $args = array(
+          'post__not_in'=> array(get_the_ID())
+        );
+        query_posts( $args );
+      endif; 
+        get_template_part( 'template-parts/general/seccion', 'posts');
+        //wp_reset_query();
+      ?>
     </div>
 
     <div class="row">
-      <div class="col lead text-center w-100">
+      <div class="col lead text-center w-100 <?=(picostrap_pagination())?'mt-96 mb-150':''?>">
         <div class="d-inline-block"><?php picostrap_pagination() ?></div>
       </div><!-- /col -->
     </div> <!-- /row -->
   </div>
 </section>
+
 
 <section class="d-flex position-relative">
   <div class="bg-secondary">

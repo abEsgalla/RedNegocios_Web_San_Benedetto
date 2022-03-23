@@ -9,22 +9,21 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section class="d-flex position-relative text-white">
-    <div class="bg-secondary">
-        <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
-    </div>
-    <div class="container-fluid zi-99 top-50 position-absolute translate-middle-y">
-        <div class="container">
+<section class="text-white">
+    <div class="container-fluid position-relative zi-99 bg-secondary pt-172 pb-145">
+        <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+        style="background:url('<?=wp_get_attachment_image_url(51, "full")?>')"></div>
+        <div class="container position-relative">
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="h2">NUESTRAS <br> MARCAS</div>
                 </div>
             </div>
         </div>
-    <div>
+    </div>
 </section>
 
-<section class="mt-96 mb-120">
+<section class="mt-88 pb-128 after-effect-banner-blue">
     <div class="container">
         <div class="row">
             <?php

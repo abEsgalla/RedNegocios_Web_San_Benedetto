@@ -24,10 +24,10 @@ get_header();
             <h1 class="col-12 h2">
               Agua Mineral San Benedetto en el mundo
             </h1>
-            <div class="col-12 fs-24 mt-48 text-uppercase">
+            <div class="col-12 fs-24 mt-48 text-uppercase fw-bold">
               Agua Mineral San Benedetto es una 
-              empresa perteneciente al Gruppo 
-              Acqua Minerale San Benedetto S.p.A. 
+              empresa perteneciente al <span class="text-decoration-underline">Gruppo 
+              Acqua Minerale San Benedetto S.p.A. </span>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-96 mt-xl-160 mb-xl-0">
   <div class="container position-relative">
     <?/*
     <?=wp_get_attachment_image(671, "full", "", array( 'class' => 'w-100 position-absolute top-0 start-0' , 'alt' => '' , 'title' => '') ); ?>
@@ -49,10 +49,13 @@ get_header();
         <div class="h2">
           Países
         </div>
-        <div class="mt-32">
+        <div class="mt-32 fs-17">
           El Grupo tiene plantas situadas en 4 países 
           gracias a su know-how y distribuye en más de 100 países en todo el mundo.
         </div>
+      </div>
+      <div class="offset-2 col-6 position-relative">
+        <?=wp_get_attachment_image(926, "full", "", array( 'class' => 'position-absolute w-100 top-0 transform-translate-ny' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>
   </div>

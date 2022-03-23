@@ -111,14 +111,23 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
       direction: 'horizontal',
       slidesPerView: 1,
     }
-  }
+  },
+  on: {
+    init: function () {
+      let first_slide = document.querySelectorAll('.swiper-home-promocional .swiper-slide')[0];
+      let bg_color_slide = first_slide.dataset.bgcolor;
+      let contenedor_swiper_home_promocional = document.querySelector("#sliderPromocional");
+      contenedor_swiper_home_promocional.style["background-color"] = bg_color_slide;
+      first_slide.querySelector('.slider-cover').classList.add('to-the-left');
+    },
+  },
 });
 
 swiper_home_promocional.on('slideChange', function () {
-  document.querySelector(".swiper-home-promocional .opacity-100").classList.remove('opacity-100');
-  document.querySelectorAll(".swiper-home-promocional .col.c-pointer.fs-13")[eval(swiper_home_promocional.activeIndex)].classList.add('opacity-100');
-  var arrow_prev = document.querySelector(".swiper-home-promocional .arrow-prev");
-  var arrow_next = document.querySelector(".swiper-home-promocional .arrow-next");
+  document.querySelector("#sliderPromocional .opacity-100").classList.remove('opacity-100');
+  document.querySelectorAll("#sliderPromocional .col.c-pointer.fs-13")[eval(swiper_home_promocional.activeIndex)].classList.add('opacity-100');
+  var arrow_prev = document.querySelector("#sliderPromocional .arrow-prev");
+  var arrow_next = document.querySelector("#sliderPromocional .arrow-next");
   if(swiper_home_promocional.isBeginning){
     arrow_prev.classList.add('opacity-50');
     arrow_next.classList.remove('opacity-50');
@@ -131,11 +140,28 @@ swiper_home_promocional.on('slideChange', function () {
   }
 });
 
-// swiper_home_promocional.on('slideChangeTransitionEnd', function () {
-//   let active_slide = document.querySelector(".swiper-home-promocional .swiper-slide-active");
-//   let wrapper_slider_promocional = document.querySelector("#sliderPromocional");
-//   wrapper_slider_promocional.style.backgroundColor = "red";
-// });
+swiper_home_promocional.on('slideChangeTransitionEnd', function () {
+  //Reinicio el cover de los otros slides
+  swiper_home_promocional.slides.each(function(slide) {
+    if(!slide.classList.contains('swiper-slide-active')) {
+      slide.querySelector('.slider-cover').classList.remove('to-the-left');
+    }
+  });
+});
+
+
+swiper_home_promocional.on('activeIndexChange', function (swiper) {
+  let active_slide = swiper_home_promocional.slides[swiper_home_promocional.realIndex];
+  // let active_slide = document.querySelector(".swiper-home-promocional .swiper-slide-active");
+  let bg_color_slide = active_slide.dataset.bgcolor;
+  let contenedor_swiper_home_promocional = document.querySelector("#sliderPromocional");
+  contenedor_swiper_home_promocional.style["background-color"] = bg_color_slide;
+
+  //Muevo el cover del slide activo
+  active_slide.querySelector('.slider-cover').classList.add('to-the-left');
+});
+
+
 
 const swiper_home_noticias = new Swiper('.swiper-home-noticias', {
   direction: 'horizontal',
@@ -171,10 +197,16 @@ const swiper_prefooter_logos = new Swiper('.swiper-prefooter-logos', {
   }
 });
 
+var count_items = document.querySelectorAll('.swiper-landing-productos .swiper-slide').length;
+if(count_items>=8){
+  boolean_loop = true;
+}else{
+  boolean_loop = false;
+}
 const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
   direction: 'horizontal',
   autoHeight : true,
-  loop: false,
+  loop: boolean_loop,
   slidesPerView: 'auto',
   //spaceBetween: 12,
   /*breakpoints: {
@@ -184,7 +216,7 @@ const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
   }*/
 });
 
-swiper_landing_productos.on('slideChange', function () {
+/*swiper_landing_productos.on('slideChange', function () {
   var arrow_prev = document.querySelector(".swiper-landing-productos .arrow-prev");
   var arrow_next = document.querySelector(".swiper-landing-productos .arrow-next");
   if(swiper_landing_productos.isBeginning){
@@ -197,4 +229,4 @@ swiper_landing_productos.on('slideChange', function () {
     arrow_prev.classList.remove('opacity-50');
     arrow_next.classList.remove('opacity-50');
   }
-});
+});*/

@@ -2,18 +2,18 @@
 $fields = wp_parse_args( $args );
 ?>
 
-<?php
-if($fields["fondo"]):
-?>
-  <div class="bg-black">
-    <?=wp_get_attachment_image($fields["fondo"], "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-<?
-endif;
-if($fields["texto_superior"] || $fields["texto_principal"] || $fields["texto_cta"]):
-?>
-  <div class="container-fluid zi-99 top-50 position-absolute translate-middle-y">
-    <div class="container">
+<div class="container-fluid position-relative zi-99 bg-secondary py-96">
+  <?php
+  if($fields["fondo"]):
+  ?>
+    <div class="bg-custom-image opacity-80 w-100 h-100 position-absolute top-0 start-0" 
+          style="background:url('<?=wp_get_attachment_image_url($fields["fondo"], "full")?>')">
+    </div>
+  <?
+  endif;
+  if($fields["texto_superior"] || $fields["texto_principal"] || $fields["texto_cta"]):
+  ?>
+    <div class="container position-relative">
       <div class="row">
           <div class="col-12 text-center text-uppercase">
             <div class="row">
@@ -26,7 +26,7 @@ if($fields["texto_superior"] || $fields["texto_principal"] || $fields["texto_cta
                 endif;
                 if($fields["texto_principal"]):
                 ?>
-                  <div class="h4 mt-8"><?=$fields["texto_principal"]?></div>
+                  <div class="h4 mt-8 mb-0"><?=$fields["texto_principal"]?></div>
                 <?
                 endif;
                 ?>
@@ -36,7 +36,7 @@ if($fields["texto_superior"] || $fields["texto_principal"] || $fields["texto_cta
             if($fields["texto_cta"]):
             ?>
             <a href="<?=$fields["link_cta"]?>" class="col-12 text-center">
-                <div class="btn btn-outline-white text-uppercase mt-40 rounded-0">
+                <div class="btn btn-outline-white border-2 fw-500 fs-14 text-uppercase mt-40 rounded-0">
                   <?=$fields["texto_cta"]?>
                 </div>
             </a>
@@ -46,7 +46,8 @@ if($fields["texto_superior"] || $fields["texto_principal"] || $fields["texto_cta
         </div>
       </div>
     </div>
-  </div>
+</div>
+
 <?
 endif;
 ?>

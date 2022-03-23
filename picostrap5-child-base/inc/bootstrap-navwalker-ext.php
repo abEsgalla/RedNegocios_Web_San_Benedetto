@@ -104,6 +104,11 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     $attributes .= !empty($item->url) ? ' href="' . esc_attr($item->url) . '"' : '';
 
     $active_class = ($item->current || $item->current_item_ancestor || in_array("current_page_parent", $item->classes, true) || in_array("current-post-ancestor", $item->classes, true)) ? 'active fw-bold' : '';
+    
+    if ( is_singular()  && !is_front_page() && !is_page() && get_post_type()=='landing' && $item->object_id==49):
+      $active_class = 'active fw-bold';
+    endif;
+    
     $nav_link_class = ( $depth > 0 ) ? 'dropdown-item ' : 'nav-link '; //patch #2 is the row below
     $nav_link_class .= $this->custom_classes;
     //$attributes.=( $args->walker->has_children ) ? ' class="'. $nav_link_class . $active_class . ' dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="'. $nav_link_class . $active_class . '"';

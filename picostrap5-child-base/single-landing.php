@@ -34,15 +34,11 @@ wp_reset_query();
 				<div class="col-12">
 					<?php if(isset($acf_fields['cabecera']['fondo'])): ?>
 					<div class="position-relative w-cabecera-animada w-cabecera-esjoy">
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_1.png'; ?>" class="position-absolute fresa-1"> -->
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_2.png'; ?>" class="position-absolute fresa-2"> -->
-						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_1.png'; ?>" class="position-absolute limon-1">
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_2.png'; ?>" class="position-absolute limon-2"> -->
+						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_1.png'; ?>" class="position-absolute fresa-1">
+						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_2.png'; ?>" class="position-absolute fresa-2">
+						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_1.png'; ?>" class="position-absolute limon-1">						
 						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_3.png'; ?>" class="position-absolute limon-3">
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_4.png'; ?>" class="position-absolute limon-4"> -->
-						<!-- <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/mango.png'; ?>" class="position-absolute mango"> -->
-						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/naranja.png'; ?>" class="position-absolute naranja">
-						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/platano.png'; ?>" class="position-absolute platano">
+						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_4.png'; ?>" class="position-absolute limon-4">
 						<?=wp_get_attachment_image($acf_fields['cabecera']['fondo'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
 						<?php if(isset($acf_fields['cabecera']['producto_central'])): ?>
 						<div class="d-flex align-items-center justify-content-center container-fluid zi-99 top-0 position-absolute h-100">
@@ -57,24 +53,21 @@ wp_reset_query();
 	</section>
 <?php break; ?>
 <?php default: ?>
+
 	<section>
-		<div class="container-fluid g-0 position-relative">
-			<div class="row g-0">
-				<div class="col-12">
-					<?php if(isset($acf_fields['cabecera']['fondo'])): ?>
-					<div class="position-relative">
-						<?=wp_get_attachment_image($acf_fields['cabecera']['fondo'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-						<?php if(isset($acf_fields['cabecera']['producto_central'])): ?>
-						<div class="d-flex align-items-center justify-content-center container-fluid zi-99 top-0 position-absolute h-100">
-							<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'd-block w-auto h-100' , 'alt' => '' , 'title' => '') ); ?>
-						</div>
-						<?php endif; ?>
+		<div class="container-fluid position-relative zi-99">
+			<div class="bg-custom-image w-100 h-100 position-absolute top-0 start-0" 
+			style="background:url('<?=wp_get_attachment_image_url($acf_fields['cabecera']['fondo'], "full")?>')"></div>
+			<div class="container position-relative">
+				<div class="row">
+					<div class="col-12 text-center">
+							<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25' , 'alt' => '' , 'title' => '') ); ?>
 					</div>
-					<?php endif; ?>
 				</div>
 			</div>
 		</div>
 	</section>
+
 <?php break; ?>
 <?php endswitch; ?>
 
@@ -106,6 +99,8 @@ wp_reset_query();
 		endforeach;
 	endif;
 ?>
+
+<section class="bg-prelogos-<?=get_the_ID()?>"></section>
 
 <section>
   <div class="container py-56">

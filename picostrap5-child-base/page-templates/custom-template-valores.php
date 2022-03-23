@@ -10,18 +10,17 @@ get_header();
 ?>
 
 <section>
-  <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(606, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-    <div class="container">
+  <div class="container-fluid position-relative zi-9 bg-black pt-270 pb-317">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(606, "full")?>')"></div>
+      <div class="container position-relative">
       <div class="row">
         <div class="col-6">
           <div class="row text-white text-uppercase">
             <div class="col-12 fs-18">
               GRUPO SAN BENEDETTO
             </div>
-            <h1 class="col-12 h2 text-primary">
+            <h1 class="col-12 mt-8 h2 text-primary">
               Visión
             </h1>
             <div class="col-12 fs-24 mt-48 fw-bolder">
