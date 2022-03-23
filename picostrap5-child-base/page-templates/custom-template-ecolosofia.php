@@ -125,7 +125,7 @@ get_header();
       <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
       class="d-none d-xxxl-block position-absolute top-0 start-0 w-auto translate-dots-col-top-before">
       <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
-      class="d-none d-xxxl-block position-absolute bottom-0 start-0 w-auto translate-dots-col-bottom-before">
+      class="d-none d-xxxl-block position-absolute bottom-0 start-0 w-auto translate-dots-col-before">
     <div class="row position-relative">
       <div class="col-12">
         <div class="row ">

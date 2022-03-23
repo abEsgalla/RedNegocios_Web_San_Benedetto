@@ -143,6 +143,10 @@ HOW TO REFERENCE ASSETS AND IMAGES
     transform: translate(15%, -20%) !important;
 }
 
+.translate-dots-col-top-before{
+    transform: translate(-15%, -20%) !important;
+}
+
 .translate-dots-col-bottom-after{
     transform: translate(15%, 20%) !important;
 }
@@ -853,4 +857,8 @@ span{
         opacity: 0.3;
         line-height: 1;
     }
+}
+
+.bg-dark {
+    background-color: #060719;
 }
