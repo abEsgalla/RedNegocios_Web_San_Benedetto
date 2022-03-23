@@ -10,23 +10,23 @@ get_header();
 ?>
 
 <section>
-  <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(779, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99' , 'alt' => '' , 'title' => '') ); ?>
-    <?=wp_get_attachment_image(780, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-    <div class="container">
-      <div class="row">
-        <div class="offset-4 col-4 text-center">
-          <div class="row text-white">
-            <div class="col-12 text-uppercase">
-              ecolosofía
-            </div>
-            <h1 class="col-12 mt-16 h1 text-green">
-              Entorno
-            </h1>
-            <div class="col-12 mt-40">
-              <?=wp_get_attachment_image(636, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-228">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(780, "full")?>')"></div>
+      <?=wp_get_attachment_image(779, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99' , 'alt' => '' , 'title' => '') ); ?>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="offset-4 col-4 text-center">
+            <div class="row text-white">
+              <div class="col-12 text-uppercase">
+                ecolosofía
+              </div>
+              <h1 class="col-12 mt-16 h1 text-green">
+                Entorno
+              </h1>
+              <div class="col-12 mt-40">
+                <?=wp_get_attachment_image(636, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+              </div>
             </div>
           </div>
         </div>

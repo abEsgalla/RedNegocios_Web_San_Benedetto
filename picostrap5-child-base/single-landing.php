@@ -39,7 +39,7 @@ wp_reset_query();
 						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_1.png'; ?>" class="position-absolute limon-1">						
 						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_3.png'; ?>" class="position-absolute limon-3">
 						<img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_4.png'; ?>" class="position-absolute limon-4">
-						<?=wp_get_attachment_image($acf_fields['cabecera']['fondo'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+						<?=wp_get_attachment_image($acf_fields['cabecera']['fondo'], "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
 						<?php if(isset($acf_fields['cabecera']['producto_central'])): ?>
 						<div class="d-flex align-items-center justify-content-center container-fluid zi-99 top-0 position-absolute h-100">
 							<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'd-block w-auto h-100 producto-central' , 'alt' => '' , 'title' => '') ); ?>
@@ -51,7 +51,26 @@ wp_reset_query();
 			</div>
 		</div>
 	</section>
-<?php break; ?>
+<?php break; 
+	  case 489 : ?>
+		<div class="container-fluid g-0 position-relative">
+			<div class="row g-0">
+				<div class="col-12">
+					<?php if(isset($acf_fields['cabecera']['fondo'])): ?>
+					<div class="position-relative w-cabecera-animada w-cabecera-esjoy">
+						<?=wp_get_attachment_image($acf_fields['cabecera']['fondo'], "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
+						<?php if(isset($acf_fields['cabecera']['producto_central'])): ?>
+						<div class="d-flex align-items-center justify-content-center container-fluid zi-99 top-5 position-absolute h-100">
+							<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'd-block w-auto producto-central' , 'alt' => '' , 'title' => '') ); ?>
+						</div>
+						<?php endif; ?>
+					</div>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+<?    break;
+?>
 <?php default: ?>
 
 	<section>
@@ -82,6 +101,9 @@ wp_reset_query();
 				break;
 				case 'elementos_quimicos':
 					get_template_part( 'template-parts/landing/seccion', 'elementos_quimicos', $seccion);
+				break;
+				case 'banner_redes':
+					get_template_part( 'template-parts/landing/seccion', 'banner_redes', $seccion );
 				break;
 				case 'texto_centrado':
           			get_template_part( 'template-parts/landing/seccion', 'texto_centrado', $seccion);

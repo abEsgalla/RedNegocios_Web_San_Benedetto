@@ -9,6 +9,7 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
+<<<<<<< HEAD
 <section>
   <div class="position-relative bg-black">
     <?=wp_get_attachment_image(669, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
@@ -27,13 +28,32 @@ get_header();
             <div class="col-12 fs-24 mt-48 text-uppercase fw-bold">
               <div class="w-descripcion">
                 <?=get_field('subtitulo');?>
+=======
+<section class="">
+    <div class="container-fluid position-relative zi-99 bg-black pt-270 pb-254">
+        <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+        style="background:url('<?=wp_get_attachment_image_url(669, "full")?>')"></div>
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-6">
+              <div class="row text-white">
+                <div class="col-12 fs-18">
+                  GRUPO SAN BENEDETTO
+                </div>
+                <h1 class="col-12 h2">
+                  Agua Mineral San Benedetto en el mundo
+                </h1>
+                <div class="col-12 fs-24 mt-48 text-uppercase fw-bold">
+                  Agua Mineral San Benedetto es una 
+                  empresa perteneciente al <span class="text-decoration-underline">Gruppo 
+                  Acqua Minerale San Benedetto S.p.A. </span>
+                </div>
+>>>>>>> 8169b8f97534a5aa78c22615bf9073a7cf968c2d
               </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <section class="my-96 mt-xl-160 mb-xl-0">
@@ -55,7 +75,7 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="offset-2 col-6 position-relative">
+      <div class="offset-2 col-6 position-relative zi-99">
         <?=wp_get_attachment_image(926, "full", "", array( 'class' => 'position-absolute w-100 top-0 transform-translate-ny' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>

@@ -9,18 +9,18 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section class="position-relative">
-  <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(790, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="row text-white">
-            <h1 class="col-12 h2">
-              Área <br> profesional
-            </h1>
+<section>
+  <div class="container-fluid position-relative zi-9 bg-black py-333">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(790, "full")?>')"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-6">
+            <div class="row text-white">
+              <h1 class="col-12 h2">
+                Área <br> profesional
+              </h1>
+            </div>
           </div>
         </div>
       </div>
