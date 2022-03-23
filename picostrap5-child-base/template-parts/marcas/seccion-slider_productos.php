@@ -21,9 +21,18 @@
   foreach ($categories_id_slider_html as $id_term => $id_posts):
     $term_name = get_term( $id_term )->name;
     $term_name_sanitice = str_replace(' ', '-', strtolower($term_name));
-    $active=($counter==0)?'active':'';
-    $show=($counter==0)?'show':'';
-    $selected=($counter==0)?'true':'false';
+    $active="";
+    if(isset($_GET['refrescos']) && $term_name_sanitice=='refrescos'){
+      $active="active";
+    }
+    if(isset($_GET['agua-mineral']) && $term_name_sanitice=='agua-mineral'){
+      $active="active";
+    }
+    if($counter==0 && !isset($_GET['agua-mineral']) && !isset($_GET['refrescos'])){
+      $active="active";
+    }
+    $selected=($active=="active")?'true':'false';
+    $show=($active=="active")?'show':'';
     $cabecera_tabs_html.="
       <li class='nav-item mx-32' role='presentation'>
           <button class='fw-bolder nav-link ".$active."' id='".$term_name_sanitice."-tab' 

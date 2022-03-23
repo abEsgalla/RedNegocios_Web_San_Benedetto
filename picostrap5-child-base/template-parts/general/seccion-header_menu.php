@@ -67,10 +67,11 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
                     </div>";
     $limit++;
     endforeach;
+    $term_name_sanitice = str_replace(' ', '-', strtolower($term_name));
     $header_menu.="    
                     <div class='col-2'>
                         <div class='row'>
-                            <a class='text-decoration-none text-reset position-relative' href='".get_permalink( 49 )."'>
+                            <a class='text-decoration-none text-reset position-relative' href='".get_permalink( 49 )."?".$term_name_sanitice."'>
                                 <div class='col-12 ratio ratio-2x3 border border-1 more-brands'>
                                 ".
                                 '
