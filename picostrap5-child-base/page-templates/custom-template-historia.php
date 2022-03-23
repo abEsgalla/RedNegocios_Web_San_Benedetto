@@ -9,7 +9,7 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section class="my-96">
+<section class="pt-166 pb-92">
   <div class="container">
     <div class="row text-center text-secondary">
       <div class="col-12 text-uppercase fs-18">
@@ -22,32 +22,35 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 d-flex position-relative">
-  <div class="bg-secondary">
-    <?=wp_get_attachment_image(591, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 top-50 position-absolute translate-middle-y">
-    <div class="container">
-      <div class="row">
-        <div class="offset-3 col-6 text-center text-white">
+<section class="text-white">
+    <div class="container-fluid position-relative zi-99 bg-secondary py-84">
+        <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+        style="background:url('<?=wp_get_attachment_image_url(1123, "full")?>')"></div>
+        <div class="container position-relative">
           <div class="row">
-            <div class="col-12 h2">
-              1997
-            </div>
-            <div class="col-12 h4 mt-24 mt-28">
-              Agua Mineral San Benedetto S.A.U
-            </div>
-            <div class="col-12 fs-17 mt-24 mt-24">
-              Agua Mineral San Benedetto S.A.U. comienza su andadura en España, 
-              en un enclave privilegiado por su entorno y buenas comunicaciones, 
-              con fama de ser la aldea más grande de Europa: San Antonio de Requena (Valencia). 
-              En julio de ese mismo año, el manantial Fuente Primavera es declarado Agua Mineral Natural.
+            <div class="offset-3 col-6 text-center text-white">
+              <div class="row">
+                <div class="offset-1 col-10">
+                  <div class="row">
+                    <div class="col-12 h2">
+                      1997
+                    </div>
+                    <div class="col-12 h4 mt-24 mt-28">
+                      Agua Mineral San Benedetto S.A.U
+                    </div>
+                    <div class="col-12 fs-17 mt-24 mt-24">
+                      Agua Mineral San Benedetto S.A.U. comienza su andadura en España, 
+                      en un enclave privilegiado por su entorno y buenas comunicaciones, 
+                      con fama de ser la aldea más grande de Europa: San Antonio de Requena (Valencia). 
+                      En julio de ese mismo año, el manantial Fuente Primavera es declarado Agua Mineral Natural.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <section class="my-96">
@@ -55,7 +58,7 @@ get_header();
     <div class="row">
       <div class="col-6 position-relative">
         <div class="row">
-          <div class="offset-2 col-8">
+          <div class="col-10">
             <div class="row text-end text-secondary">
               <div class="col-12 opacity-25 ano-2002">
                 <div class="row">
@@ -63,29 +66,31 @@ get_header();
                     <span class="ano-timeline-left ano-timeline-2002">2002</span>
                   </div>
                   <div class="col-12 h4 mt-24">
-                    Lanzamiento Enjoy, Thè y UpGrade
+                    Lanzamiento Enjoy,<br> Thè y UpGrade
                   </div>
-                  <div class="col-12 fs-17 mt-24">
+                  <div class="col-12 fs-17 mt-23">
                     Tras varios años conquistando terreno en el mercado del agua mineral, 
-                    la compañía realiza su primera producción de aséptico en España con el lanzamiento de las marcas Enjoy, 
-                    Thè San Benedetto y UpGrade. 
-                    Un hito que supuso el primer peldaño hacia nuestra visión de convertirnos en una Total Beverage Company.
+                    la compañía realiza su primera producción de aséptico en España con 
+                    el lanzamiento de las marcas <b>Enjoy, 
+                    Thè San Benedetto y UpGrade. </b>
+                    Un hito que supuso el primer peldaño hacia nuestra visión de 
+                    convertirnos en una <i>Total Beverage Company</i>.
                   </div>
-                  <div class="col-12 mt-64">
+                  <div class="col-12 mt-65">
                     <?=wp_get_attachment_image(592, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 mt-8">
                     <?=wp_get_attachment_image(593, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 mt-21">
                     <?=wp_get_attachment_image(595, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 mt-35">
                     <?=wp_get_attachment_image(594, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96 opacity-25 ano-2008">
+              <div class="col-12 mt-200 opacity-25 ano-2008">
                 <div class="row">
                   <div class="col-12 h2">
                     <span class="ano-timeline-left ano-timeline-2008">2008</span>
@@ -95,14 +100,19 @@ get_header();
                   </div>
                   <div class="col-12 fs-17 mt-24">
                     Nos convertimos en la primera envasadora de agua mineral y bebidas 
-                    en España que obtiene la triple certificación de AENOR. 
+                    en España que obtiene la <b>triple certificación de AENOR</b>. 
                   </div>
-                  <div class="col-12 mt-64">
+                  <div class="col-12 mt-82">
                     <?=wp_get_attachment_image(596, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                  </div>
+                  <div class="col-12 mt-24">
+                    I.F.S (International Food Standard)<br>
+                    ISO/FSSC22000 <br>
+                    ISO9001
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96 opacity-25 ano-2013">
+              <div class="col-12 mt-290 opacity-25 ano-2013">
                 <div class="row">
                   <div class="col-12 h2">
                     <span class="ano-timeline-left ano-timeline-2013">2013</span>
@@ -121,7 +131,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96 opacity-25 ano-2019">
+              <div class="col-12 mt-106 opacity-25 ano-2019">
                 <div class="row">
                   <div class="col-12 h2">
                     <span class="ano-timeline-left ano-timeline-2019">2019</span>
@@ -130,18 +140,19 @@ get_header();
                     Nueva gama San Benedetto Zero
                   </div>
                   <div class="col-12 fs-17 mt-24">
-                    Agua Mineral San Benedetto introduce en España la gama San Benedetto Zero, 
+                    Agua Mineral San Benedetto introduce en España la gama 
+                    <b>San Benedetto Zero</b>, 
                     todo un hito de innovación en refrescos al estar elaborada con más de un 20% de zumo de frutas, 
                     agua mineral y sin azúcares añadidos. 
                     Una gama que en su primer año de vida alcanzó casi el millón de unidades vendidas 
                     y rozó los dos millones en el siguiente ejercicio. ¡Y seguimos creciendo!
                   </div>
-                  <div class="col-12 mt-64">
+                  <div class="col-12 mt-56">
                     <?=wp_get_attachment_image(598, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96 opacity-25 ano-2022">
+              <div class="col-12 mt-106 opacity-25 ano-2022">
                 <div class="row">
                   <div class="col-12 h2">
                     <span class="ano-timeline-left ano-timeline-2022">2022</span>
@@ -165,14 +176,14 @@ get_header();
       <div class="col-6 border-dashed-custom position-relative">
         <div class="border-fill"></div>
         <div class="row">
-          <div class="offset-2 col-8">
+          <div class="offset-2 col-10">
             <div class="row text-start text-secondary">
               <div class="col-12 opacity-25 ano-2006">
                 <div class="row">
                   <div class="col-12">
                     <?=wp_get_attachment_image(599, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12 h2 mt-48">
+                  <div class="col-12 h2 mt-53">
                     <span class="ano-timeline-right ano-timeline-2006">2006</span>
                   </div>
                   <div class="col-12 h4 mt-24">
@@ -180,18 +191,19 @@ get_header();
                   </div>
                   <div class="col-12 fs-17 mt-24">
                     Agua Mineral San Benedetto amplía su capacidad para dar servicio con la apertura de una segunda planta de envasado: 
-                    Parque La Presa S.A. en Loja (Granada). La planta envasa agua mineral procedente del manantial Font Natura, 
+                    <b>Parque La Presa S.A.</b> en Loja (Granada). 
+                    La planta envasa agua mineral procedente del manantial <b>Font Natura</b>, 
                     con origen en la Sierra de Loja. 
                     Nos situamos así junto a nuestros consumidores andaluces, reduciendo el impacto medioambiental de nuestros productos.
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96 opacity-25 ano-2009">
+              <div class="col-12 mt-87 opacity-25 ano-2009">
                 <div class="row">
                   <div class="col-12">
                     <?=wp_get_attachment_image(600, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12 h2 mt-48">
+                  <div class="col-12 h2 mt-53">
                     <span class="ano-timeline-right ano-timeline-2009">2009</span>
                   </div>
                   <div class="col-12 h4 mt-24">
@@ -199,51 +211,51 @@ get_header();
                   </div>
                   <div class="col-12 fs-17 mt-24">
                     Agua Mineral San Benedetto comienza la producción de refrescos con gas en su planta de San Antonio de Requena, 
-                    ampliando Enjoy su portfolio de referencias y sabores. 
+                    ampliando <b>Enjoy</b> su portfolio de referencias y sabores. 
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96 opacity-25 ano-2016">
+              <div class="col-12 mt-187 opacity-25 ano-2016">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(601, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image(1128, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12 h2 mt-48">
+                  <div class="col-12 h2 mt-53">
                     <span class="ano-timeline-right ano-timeline-2016">2016</span>
                   </div>
                   <div class="col-12 h4 mt-24">
-                    Lanzamiento de botella Easy Ecogreen 1L
+                    Lanzamiento de botella <i>Easy Ecogreen</i> 1L
                   </div>
                   <div class="col-12 fs-17 mt-24">
-                    La compañía lanza en España la botella Easy Ecogreen 1L, 
+                    La compañía lanza en España la botella <b><i>Easy Ecogreen</i> 1L</b>, 
                     un envase con 50% de rPET, producido con energías 100% renovables y que reduce en un 20% sus emisiones de CO2. 
-                    Ese mismo año, Easy Ecogreen 1L es galardonada con el premio Elegido Producto del Año 2016.
+                    Ese mismo año, <i>Easy Ecogreen</i> 1L es galardonada con el premio Elegido Producto del Año 2016.
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96 opacity-25 ano-2020">
+              <div class="col-12 mt-155 opacity-25 ano-2020">
                 <div class="row">
                   <div class="col-12">
                     <?=wp_get_attachment_image(602, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12 h2 mt-48">
+                  <div class="col-12 h2 mt-53">
                     <span class="ano-timeline-right ano-timeline-2020">2020</span>
                   </div>
                   <div class="col-12 h4 mt-24">
                     Primera Botella de Carbono Neutral en España
                   </div>
                   <div class="col-12 fs-17 mt-24">
-                    La compañía presenta su primera botella de Carbono Neutral en España bajo el proyecto Zero CO2. 
+                    La compañía presenta su primera botella de Carbono Neutral en España bajo el <b>proyecto Zero CO2</b>. 
                     Gracias a que en Agua Mineral San Benedetto medimos nuestra huella de carbono, 
                     podemos afirmar que compensamos el 100% de las emisiones de CO2 de la botella Font Natura 1L. 
                     ¿Cómo? ¡Descúbrelo aquí!   
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-96">
+              <div class="col-12 mt-225">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(603, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image(1129, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
