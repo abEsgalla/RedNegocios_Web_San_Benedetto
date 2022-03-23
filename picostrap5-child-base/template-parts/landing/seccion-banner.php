@@ -12,7 +12,7 @@
       <div class="row">
         <div class="offset-3 col-6 text-center text-white">
           <div class="row">
-            <?
+          <?
             if($seccion['texto_superior']):
             ?>
             <div class="col-12 text-uppercase fs-18 pt-20">
@@ -21,10 +21,18 @@
             <?
             endif;
             if($seccion['texto_principal']):
-            ?>
-            <div class="col-12 h4 mt-10">
-              <?=$seccion['texto_principal']?>
-            </div>
+              if($seccion['enlace_texto_principal']): ?>
+                <div class="col-12 h4 mt-10">
+                  <a href="<?=$seccion['enlace_texto_principal'] ?>" class="text-decoration-none text-white"><?=$seccion['texto_principal'] ?></a>
+                </div>
+              <? 
+              else: ?>
+                <div class="col-12 h4 mt-10">
+                  <?=$seccion['texto_principal']?>
+                </div>
+              <?
+              endif;
+              ?>
             <?
             endif;
             if($seccion['descripcion']):
