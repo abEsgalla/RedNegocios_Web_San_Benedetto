@@ -3,7 +3,7 @@
   $seccion = $fields;
 ?>
 
-<section class="mt-56 mb-178 zi-99 position-relative">
+<section class=" zi-99 position-relative <? if(is_single(196)) { echo 'bg-dark pt-56 pb-178'; } else { echo 'mt-56 mb-178';} ?>">
   <div class="container position-relative">
     <div class="row">
       <div class="col-12 offset-xl-1 col-xl-10">
