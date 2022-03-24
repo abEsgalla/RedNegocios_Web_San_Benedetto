@@ -28,6 +28,10 @@ function filtrar(event) {
       element.classList.remove("d-none");
     }
   });
+  var link_slider_brands = document.querySelector('.link-slider-brands');
+  if(link_slider_brands){
+    link_slider_brands.href = "marcas/?"+filterType;
+  }
   if(name_swiper!=""){
     eval(name_swiper).update();
     eval(name_swiper).slideTo(0);

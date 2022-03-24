@@ -30,6 +30,30 @@ foreach ($fields['productos'] as $id_producto):
   </div>";
 endforeach;
 
+$slider_html.="<div data-swiper='swiper_home_dedicado' 
+            class='d-flex flex-wrap justify-content-center align-items-center h-100 
+            swiper-slide text-center'>
+              <a class='d-inline-block w-100 h-100 text-decoration-none link-slider-brands' href='/marcas/'>
+                <div class=''>
+                  <div class='ratio ratio-30x43 bg-white more-brands border border-1'>
+                    <div class='d-flex align-items-end pb-12 ps-12'>
+                    ".'
+                        <svg class="light" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#FFFFFF"/>
+                        </svg>
+                        <svg class="dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#69B3E7"/>
+                        </svg>
+                    '."
+                    </div>
+                  </div>
+                </div>
+                <div class='w-100 text-start mt-20 text-secondary text-uppercase fs-13 fw-500 name-slider-product'>
+                  VER MÁS
+                </div>
+              </a>
+            </div>";
+
 ?>
 
 <div class="col-12 position-relative">
@@ -54,7 +78,7 @@ endforeach;
           Todos
         </div>
         <?php
-          foreach ($categories_slider_html as $category_slider_html):
+          foreach ($categories_slider_html as $category_slider_html):            
           ?>
           <div class="col col-sm-3 col-custom-lg filtro_buscador c-pointer letter-spacing-1x3" data-filter="<?=str_replace(' ', '-', strtolower($category_slider_html))?>">
             <?=$category_slider_html?>           
