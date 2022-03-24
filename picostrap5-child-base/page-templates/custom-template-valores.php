@@ -69,7 +69,7 @@ get_header();
           <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
             <div class="container">
               <div class="row">
-                <div class="col-12 offset-xl-1 col-xl-10">
+                <div class="col-12 offset-xl-1 col-xl-10" data-aos="fade-left">
                   <div class="row text-secondary">
                     <div class="col-12 text-uppercase fw-bold fs-24">
                       «Integrar calidad, seguridad y capacidad de innovación con un profundo respeto por el medio ambiente, 
@@ -311,7 +311,7 @@ get_header();
       <div class="col-6 text-secondary bg-primary-brighter d-flex align-items-center">
         <div class="row">
 
-              <div class="offset-1 col-7 fw-500 fs-17 text-secondary-lighter ps-0">
+              <div class="offset-1 col-7 fw-500 fs-17 text-secondary-lighter ps-0" data-aos="fade-left">
                 Desde el principio nos hemos preocupado por ser capaces de desarrollar nuestra actividad con el mínimo impacto 
                 en nuestro entorno. Lo conseguimos a través de proyectos y sinergias estratégicas con agentes locales. 
                 Así, no sólo fabricamos los envases más ligeros del mercado de agua mineral: 
