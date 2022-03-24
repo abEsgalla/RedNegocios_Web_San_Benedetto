@@ -53,7 +53,7 @@ get_header();
         <div class="row position-relative">
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
-              <div class="offset-2 col-8" data-aos="fade-right">
+              <div class="offset-2 col-8">
                 <div class="row">
                   <div class="col-12 h3">
                     Huella de Carbono 
@@ -100,7 +100,7 @@ get_header();
           </div>
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
-              <div class="offset-2 col-8" data-aos="fade-left">
+              <div class="offset-2 col-8">
                 <div class="row">
                   <div class="col-12 h3 mt-89">
                     Smart Water 4.0 

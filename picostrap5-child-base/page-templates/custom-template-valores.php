@@ -10,13 +10,13 @@ get_header();
 ?>
 
 <section class="text-vision">
-  <div class="container-fluid position-relative zi-9 bg-black pt-270 pb-317">
+  <div class="container-fluid position-relative zi-9 bg-black pt-138 pt-md-270 pb-317">
     <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(606, "full")?>')"></div>
       <div class="container position-relative">
       <div class="row">
-        <div class="col-6">
-          <div class="row text-white text-uppercase">
+        <div class="col-12 col-lg-6">
+          <div class="row text-white text-uppercase text-center text-md-start">
             <div class="col-12 fs-18">
               GRUPO SAN BENEDETTO
             </div>
@@ -33,12 +33,45 @@ get_header();
     </div>
   </div>
 </section>
+<section>
+  <div class="container-fluid container-lg mt-lg-n120">
+    <div class="row">
+      <div class="col-12 col-lg-6 d-none d-md-block g-0 text-mision order-2 order-lg-1">
+      </div>
+      <div class="col-12 col-lg-6 g-lg-0 order-1 order-lg-2 mt-n80 mt-lg-0 px-32 px-lg-0">
+        <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative d-none d-lg-block img-parallax' , 'alt' => '' , 'title' => '') ); ?>
+        <?=wp_get_attachment_image(1253, "full", "", array( 'class' => 'w-100 position-relative d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
+      </div>
+      <div class="col-12 col-lg-6 g-lg-0 d-block bg-primary-brighter order-3 py-166 px-112 text-center text-lg-start mt-70 mt-md-270 mt-lg-0">
+        <div class="text-secondary fs-16 fs-md-18">ÉSTA ES NUESTRA</div>
+        <div class="fs-32 fs-md-64 fw-bold text-secondary">Misión</div>
+      </div>
+      <div class="col-12 col-lg-6 g-lg-0 d-block order-4 py-65 py-lg-40 py-xl-112 py-xxl-145 px-56" data-aos="fade-left">
+        <div class="text-secondary text-uppercase fw-bold fs-18 fs-md-24">
+          «Integrar calidad, seguridad y capacidad de innovación con un profundo respeto por el medio ambiente, 
+          el territorio y el desarrollo de las personas.»  
+        </div>
+        <div class="text-secondary mt-12 fs-16 fs-md-18">
+          ― Enrico Zoppas, Presidente de Gruppo Acqua Minerale San Benedetto S.p.A.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 g-0 px-24 pe-sm-0 ps-sm-24 ps-lg-0">
+        <?=wp_get_attachment_image(610, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+      </div>
+      <div class="col-12 col-sm-6 g-0 px-24 ps-sm-0 pe-sm-24 pe-lg-0">
+        <?=wp_get_attachment_image(609, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="mt-253 mb-165">
+<!-- <section class="mt-253 mb-165">
   <div class="container position-relative">
     <div class="row">
     
-      <div style="" class="text-mision g-0 col-12 col-sm-6 d-block bg-primary-brighter">
+      <div style="" class="text-mision g-0 col-12 col-lg-6 d-block h-75-vw bg-primary-brighter">
         <div class="row position-relative h-100">
           <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
             <div class="container">
@@ -59,17 +92,17 @@ get_header();
         </div>
       </div>
       
-      <div style="" class="g-0 col-12 col-sm-6 d-block">
+      <div style="" class="g-0 col-12 col-lg-6 d-block h-75-vw">
         <div class="row position-relative">
           <div class="position-relative transform-translate-ny">
             <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
             class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after opacity-20">
-            <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative img-parallax' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
             <div class="container">
               <div class="row">
-                <div class="col-12 offset-xl-1 col-xl-10">
+                <div class="col-12 offset-xl-1 col-xl-10" data-aos="fade-left">
                   <div class="row text-secondary">
                     <div class="col-12 text-uppercase fw-bold fs-24">
                       «Integrar calidad, seguridad y capacidad de innovación con un profundo respeto por el medio ambiente, 
@@ -86,7 +119,7 @@ get_header();
         </div>
       </div>
 
-      <div style="" class="g-0 col-12 col-sm-6">
+      <div style="" class="g-0 col-12 col-sm-6 h-75-vw">
         <div class="position-relative d-flex w-100 h-100">
           <?=wp_get_attachment_image(610, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
           <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
@@ -104,7 +137,7 @@ get_header();
 
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="my-96">
   <div class="container">
@@ -119,7 +152,7 @@ get_header();
         <div class="row">
           <div class="col-12">
             <div class="row">
-              <div class="col-6 mt-85">
+              <div class="col-12 col-lg-6 mt-85">
                 <div class="row">
                   <div class="offset-1 col-10">
                     <div class="row">
@@ -148,7 +181,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-6 mt-80">
+              <div class="col-12 col-lg-6 mt-80">
                 <div class="row">
                   <div class="offset-1 col-10">
                     <div class="row">
@@ -185,7 +218,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-6 mt-80 mt-xl-120">
+              <div class="col-12 col-lg-6 mt-80 mt-xl-120">
                 <div class="row">
                   <div class="offset-1 col-10">
                     <div class="row">
@@ -218,7 +251,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-6 mt-80 mt-xl-120">
+              <div class="col-12 col-lg-6 mt-80 mt-xl-120">
                 <div class="row">
                   <div class="offset-1 col-10">
                     <div class="row">
@@ -266,7 +299,7 @@ get_header();
 <section class="mt-111">
   <div class="container-fluid">
     <div class="row position-relative">
-      <div class="col-6 g-0 bg-black position-relative">
+      <div class="col-12 col-lg-6 g-0 bg-black position-relative">
         <div class="position-relative">
           <div class="position-absolute top-50 translate-middle-y zi-99 text-white w-100">
             <div class="container">
@@ -308,10 +341,10 @@ get_header();
           <?=wp_get_attachment_image(611, "full", "", array( 'class' => 'w-100 opacity-60' , 'alt' => '' , 'title' => '') ); ?>
         </div>
       </div>
-      <div class="col-6 text-secondary bg-primary-brighter d-flex align-items-center">
+      <div class="col-12 col-lg-6 text-secondary bg-primary-brighter d-flex align-items-center">
         <div class="row">
 
-              <div class="offset-1 col-7 fw-500 fs-17 text-secondary-lighter ps-0">
+              <div class="offset-1 col-7 fw-500 fs-17 text-secondary-lighter ps-0" data-aos="fade-left">
                 Desde el principio nos hemos preocupado por ser capaces de desarrollar nuestra actividad con el mínimo impacto 
                 en nuestro entorno. Lo conseguimos a través de proyectos y sinergias estratégicas con agentes locales. 
                 Así, no sólo fabricamos los envases más ligeros del mercado de agua mineral: 

@@ -1,19 +1,22 @@
 <?  $acf_fields = get_fields();
     $id_producto=get_the_ID();
 ?>
-<section>
-	<div class="container-fluid position-relative zi-99">
-		<div class="bg-custom-image w-100 h-100 position-absolute top-0 start-0" 
-		style="background:url('<?=wp_get_attachment_image_url($acf_fields['cabecera']['fondo'], "full")?>')"></div>
-		<div class="container position-relative">
-			<div class="row">
-				<div class="col-12 text-center">
-						<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25' , 'alt' => '' , 'title' => '') ); ?>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<div class="container-fluid g-0 position-relative">
+    <div class="row g-0">
+        <div class="col-12">
+            <?php if(isset($acf_fields['cabecera']['fondo'])): ?>
+            <div class="position-relative w-cabecera-animada w-cabecera-esjoy">
+                <?=wp_get_attachment_image($acf_fields['cabecera']['fondo'], "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
+                <?php if(isset($acf_fields['cabecera']['producto_central'])): ?>
+                <div class="d-flex align-items-center justify-content-center container-fluid zi-99 top-5 position-absolute h-100">
+                    <?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'd-block w-auto producto-central' , 'alt' => '' , 'title' => '') ); ?>
+                </div>
+                <?php endif; ?>
+            </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
 
 <?php
     if($acf_fields['secciones']):

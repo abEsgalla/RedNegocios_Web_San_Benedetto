@@ -11,7 +11,7 @@ get_header();
 
 <section>
   <div class="container-fluid position-relative zi-9 bg-black pt-270 pb-242">
-    <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(674, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">

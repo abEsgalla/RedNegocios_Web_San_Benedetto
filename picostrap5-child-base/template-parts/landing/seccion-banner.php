@@ -10,7 +10,7 @@
   <div class="container-fluid zi-99 <?=$seccion['texto_vertical']?> position-absolute translate-middle-y">
     <div class="container">
       <div class="row">
-        <div class="offset-3 col-6 text-center text-white" data-aos="fade-up">
+        <div class="offset-3 col-6 text-center text-white">
           <div class="row">
           <?
             if($seccion['texto_superior']):
