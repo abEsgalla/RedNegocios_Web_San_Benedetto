@@ -16,7 +16,7 @@ get_header();
         <div class="container position-relative">
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="h2">NUESTRAS <br> MARCAS</div>
+                    <div class="fs-32 fs-md-64">NUESTRAS <br> MARCAS</div>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@ get_header();
 </section>
 
 <section class="mt-88 pb-128 after-effect-banner-blue">
-    <div class="container">
+    <div class="container-fluid container-lg">
         <div class="row">
             <?php
               get_template_part( 'template-parts/marcas/seccion', 'slider_productos', $acf_fields['slider_productos']);
