@@ -83,3 +83,7 @@ body:not(.home){
     }
   }
 }
+
+.offcanvas.offcanvas-top.menu-open-offcanvas.show {
+  min-height: 340px;
+}
