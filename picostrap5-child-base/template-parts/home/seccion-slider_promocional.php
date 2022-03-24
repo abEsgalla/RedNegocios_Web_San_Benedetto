@@ -15,13 +15,13 @@ foreach ($fields['slides'] as $slide):
             <div class='container'>
                 <div class='row align-items-center'>
                     <div class='col-12 col-lg-8'>
-                        <div class='row text-center text-lg-start mt-138 mt-sm-0'>
+                        <div class='row text-center text-lg-start mt-138 mt-md-200 mt-lg-0'>
                         <div class='col-12 text-uppercase fs-18 d-none d-sm-block'>".get_the_title($slide['producto'])."</div>
                         <div class='col-12 h4 mt-8 mb-0'>".$slide['texto_principal']."</div>
                         <div class='col-12 mt-16 d-xxl-block d-none'>
                             ".$slide['descripcion']."
                         </div>
-                        <div class='col-12 mt-48'>
+                        <div class='col-12 mt-20 mb-40 mb-lg-0 mt-lg-48'>
                             <a href='".get_permalink(get_field('caracteristicas_producto',$slide['producto'])['relacion_page_landing'])."' class='btn fs-14 border-2 fw-500 btn-outline-secondary text-uppercase rounded-0'>
                             ".$slide['texto_cta']."
                             </a>
@@ -53,7 +53,7 @@ endforeach;
                             <div class='row'>
                                 <div class="col-12 col-xxl-8 mb-64">
                                     <div class='row text-start text-uppercase text-secondary'>
-                                        <div class="col-12 mb-24 mt-40 mt-sm-0">
+                                        <div class="col-12 mb-24 mt-40">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="52" height="36" viewBox="0 0 52 36" fill="none">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M38.7328 2.30514C38.2021 2.17497 37.8041 2.69562 37.3398 2.56546C35.4824 1.97973 34.4873 2.95595 32.7626 4.06233C32.0992 4.51789 31.1042 3.93216 30.5735 3.67184C25.8637 1.45908 21.2865 0.3527 16.1123 0.0272942C10.6728 -0.16795 5.23323 0.678104 0.258037 2.7607C-0.206314 2.82578 0.0590284 3.02103 0.258037 3.02103C5.16689 3.21627 9.61139 3.67184 14.2549 4.90838C17.837 5.81952 21.2202 6.79573 24.537 8.61801C25.532 9.13865 25.93 10.3752 25.532 11.4165C25.2003 12.4578 24.8686 13.5642 24.2716 14.6055C23.4756 16.0373 22.6796 17.3389 21.7509 18.7056C20.8221 20.0072 19.6944 21.1136 18.5004 22.22C14.4539 25.6693 12.8618 25.9296 11.8668 26.7756C11.4688 27.036 11.9331 27.036 12.1985 26.9709C12.8618 26.8407 13.6579 26.5804 14.3212 26.3201C17.24 25.3439 19.6281 23.5867 22.1489 22.0247C20.8221 25.5391 19.4291 28.7932 19.4291 32.6329C19.4291 33.0885 19.6944 33.0885 19.7608 32.8282C20.4241 30.5503 20.9548 28.4678 22.1489 26.255C23.1439 24.4327 24.1389 22.8057 25.4657 21.3088C27.6547 18.7056 29.3131 16.4928 32.8953 14.9309C33.6913 14.6055 34.62 14.6055 35.3497 15.1261C39.2635 17.9246 42.3813 21.3739 45.4991 25.2788C48.2189 28.7281 50.4079 32.698 51.8673 35.8219C51.8673 36.1473 51.9337 35.9521 52 35.8219C51.7347 29.7694 50.0099 23.4565 46.8258 18.3151C44.5704 14.7356 41.8506 11.7419 38.7328 9.00849C37.5388 7.90211 37.6051 6.21 38.1358 4.8433C38.3348 4.32265 38.2021 3.802 38.2021 3.28135C38.2021 2.89087 38.7328 2.7607 38.7328 2.30514Z" fill="#002867"/>
                                             </svg>
@@ -62,7 +62,7 @@ endforeach;
                                         foreach($categories_slider_html as $key => $categories_slider_html):
                                         ?>
                                         <div onclick=swiper_home_promocional.slideTo(<?=$key?>) 
-                                        class="fw-500 col-custom-lg letter-spacing-1x3 col c-pointer fs-13 opacity-50 <?=($key==0)?'opacity-100':'';?>">
+                                        class="fw-500 col-md-4 col-custom-lg letter-spacing-1x3 col c-pointer fs-13 opacity-50 <?=($key==0)?'opacity-100':'';?>">
                                             <?=$categories_slider_html?>
                                         </div>
                                         <?
@@ -84,7 +84,7 @@ endforeach;
 <div class="col-12">
     <div class="container">
         <div class="row g-0">
-            <div class="zi-99 col-12 d-flex justify-content-lg-start justify-content-end align-items-center bt-40">
+            <div class="zi-99 col-12 d-flex justify-content-lg-start justify-content-end align-items-center position-relative bt-40">
                 <div class="d-lg-flex">
                     <div class="arrow-prev mx-12 c-pointer opacity-50" onclick=swiper_home_promocional.slidePrev()>
                         <svg class="d-lg-inline d-none" xmlns="http://www.w3.org/2000/svg" width="17" height="32" viewBox="0 0 17 32" fill="none">

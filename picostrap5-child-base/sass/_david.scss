@@ -42,7 +42,7 @@
 }
 
 .swiper-home-promocional{
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
         .size-full{
             max-height: 300px;
             width: auto;
