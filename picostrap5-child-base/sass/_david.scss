@@ -49,3 +49,13 @@
         }
     }
 }
+
+#offcanvasMenuMobile{
+    .active{
+        &>div:not(.submenu){
+            a{
+                font-weight: 800;
+            }
+        }
+    }
+}

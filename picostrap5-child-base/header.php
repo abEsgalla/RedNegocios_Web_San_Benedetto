@@ -110,6 +110,89 @@ defined( 'ABSPATH' ) || exit;
             }
         }
         ?>
+        <div class="offcanvas offcanvas-top h-100vh" tabindex="-1" id="offcanvasMenuMobile" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <?=wp_get_attachment_image(1245, "full")?>
+            </div>
+            <div class="fs-13 fw-500 text-uppercase text-secondary d-flex align-items-center">
+              <span class="me-12">MENU</span>
+              <svg xmlns="http://www.w3.org/2000/svg" data-bs-dismiss="offcanvas" aria-label="Close" width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.3346 2.54602L17.4546 0.666016L10.0013 8.11935L2.54797 0.666016L0.667969 2.54602L8.1213 9.99935L0.667969 17.4527L2.54797 19.3327L10.0013 11.8793L17.4546 19.3327L19.3346 17.4527L11.8813 9.99935L19.3346 2.54602Z" fill="#002D72"/>
+              </svg>
+            </div>
+          </div>
+          <div class="offcanvas-body d-flex justify-content-center align-items-center row">
+            <div class="text-uppercase text-secondary fw-500 col-12 col-sm-8">
+              <div class="border-bottom border-secondary-lighter py-16">
+                <a href="<?=get_permalink(2)?>" class="text-reset text-decoration-none">Home</a>
+              </div>
+              <div class="border-bottom border-secondary-lighter py-16">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="text-reset text-decoration-none">nosotros</a> <i class="fa-solid fa-plus-large"></i>
+                </div>
+                <div class="submenu d-none fw-400 fs-13 ps-16">
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Historia</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Misión, Visión y Valores</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">San Benedetto en España</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">San Benedetto en el mundo</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Noticias</a>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom border-secondary-lighter py-16">
+                <div class="d-flex justify-content-between">
+                  <a href="<?=get_permalink(49)?>" class="text-reset text-decoration-none">marcas</a>
+                </div>
+              </div>
+              <div class="border-bottom border-secondary-lighter py-16">
+                <div class="d-flex justify-content-between">
+                  <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">ecolosofía</a> <i class="fa-solid fa-plus-large"></i>
+                </div>
+                <div class="submenu d-none fw-400 fs-13 ps-16">
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Producto</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Procesos</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Entorno</a>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom border-secondary-lighter py-16">
+                <a href="<?=get_permalink(647)?>" class="text-reset text-decoration-none">área profesional</a>
+              </div>  
+              <div class="border-bottom border-secondary-lighter py-16">
+                <div class="d-flex justify-content-between">
+                  <a href="<?=get_permalink(650)?>" class="text-reset text-decoration-none">Contacto</a> <i class="fa-solid fa-plus-large"></i>
+                </div>
+                <div class="submenu d-none fw-400 fs-13 ps-16">
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Buscamos talento</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Localizacion y contacto</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Preguntas frecuentes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="fixed-top" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
           <nav class="force-transition zi-1050 navbar <?=$shadow?> <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','').' '. get_theme_mod('picostrap_header_navbar_color_choice', $colorMenu); ?>" aria-label="Main Navigation" >
             <div class="container">
@@ -151,9 +234,13 @@ defined( 'ABSPATH' ) || exit;
               
                   </div> <!-- /logo-tagline-wrap -->
 
-
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="btn d-lg-none btn-outline-white border-0" type="button" 
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuMobile" aria-controls="offcanvasMenuMobile">
+                <span class="fw-500 fs-13 text-white text-uppercase">Menu<span>
+                <?=wp_get_attachment_image(1217, "full")?>
+              </button>
+              
+              <button class="d-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
 

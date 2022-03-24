@@ -110,11 +110,19 @@ document.addEventListener('DOMContentLoaded', function () {
       topBar.classList.remove('bg-white');
       let menu = document.querySelector('#offcanvas-menu');
       menu.classList.remove('show');
+
+      topBar.querySelector('nav').classList.remove('menu-dark');
+      topBar.querySelector('nav').classList.add('menu-light');
+
       menu.classList.remove('menu-open-offcanvas');
     }
     function showOffCanvas() {
       let topBar = document.querySelector('#wrapper-navbar');
       topBar.classList.add('bg-white');
+
+      topBar.querySelector('nav').classList.add('menu-dark');
+      topBar.querySelector('nav').classList.remove('menu-light');
+
       let menu = document.querySelector('#offcanvas-menu');
       menu.classList.add('show');
       menu.classList.add('menu-open-offcanvas');
@@ -174,5 +182,28 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
   
+
+  var refreshIntervalId = setInterval(function() {
+    if (document.querySelectorAll('#offcanvasMenuMobile svg.fa-plus-large').length) {
+        clearInterval(refreshIntervalId);
+        menu_mobile();
+    }
+    }, 100);
+    //ICON PLUS MOBILE
+    function menu_mobile(){
+      const menu_mobile_icons_more =  document.querySelectorAll('#offcanvasMenuMobile svg');
+      menu_mobile_icons_more.forEach(function(menu_mobile_icon_more) {
+        menu_mobile_icon_more.addEventListener('click', function (event) {
+          var old_submenu = document.querySelector('#offcanvasMenuMobile .active');
+          if(old_submenu){
+            old_submenu.classList.remove('active');
+            old_submenu.querySelector('.submenu').classList.add('d-none');
+          }
+          var submenu = this.parentElement.parentElement;
+          submenu.classList.add('active');
+          submenu.querySelector('.submenu').classList.remove('d-none');
+        });
+      });
+    };
 
 });
