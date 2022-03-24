@@ -757,6 +757,9 @@ span{
 }
 
 .bg-custom-image{
+    @include media-breakpoint-down(md) {
+        background-position: center left !important;
+    }
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;

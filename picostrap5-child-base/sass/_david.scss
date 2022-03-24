@@ -9,8 +9,35 @@
     }
 }
 
-.col{
+.filtros_buscador{
+    .col{
+        @include media-breakpoint-down(sm) {
+            max-width: max-content !important;
+        }
+    }
+}
+
+.swiper-home{
     @include media-breakpoint-down(sm) {
-        max-width: max-content !important;
+        .bg-custom-image{
+            opacity: 0.7;
+        }
+        .fs-18{
+            color: white;
+        }
+        .fs-64{
+            line-height: 1 !important;
+            font-size: 49px !important;
+            color: white;
+        }
+    }
+}
+
+.swiper-home-promocional{
+    @include media-breakpoint-down(sm) {
+        .size-full{
+            max-height: 300px;
+            width: auto;
+        }
     }
 }
