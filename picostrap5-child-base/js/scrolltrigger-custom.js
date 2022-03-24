@@ -12,6 +12,7 @@ if( document.body.classList.contains('single-landing') ) {
     // rotation: 10,
   });
 
+  //Enjoy
   if( document.body.classList.contains('postid-203') ) {
 
     gsap.to('.limon-1', {
@@ -81,6 +82,34 @@ if( document.body.classList.contains('single-landing') ) {
       rotation: 0,
     });
 
+  }
+
+  //Primavera
+  if( document.body.classList.contains('postid-211') ) {
+    gsap.to('.gota', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        toggleActions: 'restart pause reverse pause',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: -180,
+      rotation: 0,
+    });
+    gsap.to('.flor', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        toggleActions: 'restart pause reverse pause',
+        start: 'center center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: 120,
+      rotation: 0,
+    });
   }
 }
 
