@@ -122,6 +122,7 @@ if(get_post_type()=="landing"):
     if( $the_query->have_posts() &&  $the_query->post_count == 1): 
         $the_query->the_post(); 
         $id_producto=get_the_ID();
+        $GLOBALS['id_producto']=get_the_ID();
         wp_reset_query();
     endif;
     ?>
