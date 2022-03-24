@@ -11,7 +11,7 @@ get_header();
 
 <section class="text-vision">
   <div class="container-fluid position-relative zi-9 bg-black pt-270 pb-317">
-    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+    <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(606, "full")?>')"></div>
       <div class="container position-relative">
       <div class="row">
@@ -64,7 +64,7 @@ get_header();
           <div class="position-relative transform-translate-ny">
             <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
             class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after opacity-20">
-            <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative img-parallax' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
             <div class="container">
