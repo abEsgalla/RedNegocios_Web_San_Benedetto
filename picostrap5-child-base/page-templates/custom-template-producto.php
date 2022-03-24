@@ -13,10 +13,10 @@ get_header();
   <div class="container-fluid position-relative zi-9 bg-black py-261">
     <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(620, "full")?>')"></div>
-      <?=wp_get_attachment_image(764, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99' , 'alt' => '' , 'title' => '') ); ?>
+      <?=wp_get_attachment_image(764, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99 mw-50vw d-none d-md-block' , 'alt' => '' , 'title' => '') ); ?>
       <div class="container position-relative">
         <div class="row">
-          <div class="offset-4 col-4 text-center">
+          <div class="col-12 offset-xl-4 col-xl-4 text-center">
             <div class="row text-white">
               <div class="col-12 text-uppercase">
                 ecolosofía
@@ -36,19 +36,19 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 mt-170">
-  <div class="container text-secondary">
+<section class="my-96 mt-xl-170">
+  <div class="container gx-sm-2 gx-4 text-secondary">
     <div class="row">
+      <div class="col-12 offset-xl-1 col-xl-10 h2 mb-64 fs-45 fs-xl-64">
+                Ecodiseño
+      </div>
       <div class="col-12 position-relative">
         <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
         class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after">
         <div class="row position-relative zi-99">
-          <div class="g-0 col-12 col-sm-6 d-block" data-aos="fade-right">
+          <div class="col-12 col-xl-6 d-block" data-aos="fade-right">
             <div class="row">
-              <div class="offset-2 col-8 h2 mb-64">
-                Ecodiseño
-              </div>
-              <div class="col-12 offset-xl-2 col-xl-8 fs-17">
+              <div class="col-12 offset-xl-2 col-xl-8 fs-17 mb-80">
                 En Agua Mineral San Benedetto somos <strong>especialistas en ecodiseño.</strong>
                 Ecodiseñar es considerar la variable ambiental en el proceso de diseño y desarrollo de un producto.<br></br>
 
@@ -66,25 +66,22 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="g-0 col-12 col-sm-6 d-block bg-white">
-            <?=wp_get_attachment_image(1166, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+          <div style="background: url(<?=wp_get_attachment_image_url(1166, "full")?>)" class="py-xl-0 py-200 col-12 col-sm-6 d-block bg-custom-image">
           </div>
-          <div style="" class="g-0 col-12 col-sm-6 d-block bg-secondary text-white">
+          <div style="" class="col-12 col-sm-6 py-xl-0 py-200 d-block bg-secondary text-white d-none d-md-inline-block">
             <div class="row position-relative h-100">
-              <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-                <div class="container">
-                  <div class="row">
-                    <div class="offset-2 col-8 h2">
-                      Circularidad de envases
-                    </div>
+              <div class="container">
+                <div class="row d-flex h-100 align-items-center">
+                  <div class="offset-xl-2 col-xl-8 col-12 h2 fs-45 fs-xl-64 text-xl-start text-center">
+                    Circularidad de envases
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="g-0 col-12 col-sm-6 d-block">
+          <div class="col-12 col-xl-6 d-block">
             <div class="row">
-              <div class="py-80 col-12 offset-xl-2 col-xl-8 fs-17" data-aos="fade-left">
+              <div class="py-80 pb-0 pb-xl-80 col-12 offset-xl-2 col-xl-8 fs-17" data-aos="fade-left">
                 En Agua Mineral San Benedetto sostenemos que <strong>el rPET no es el objetivo, 
                 sino una de las muchas variables que hacen posible la reducción de la huella de carbono.</strong> 
                 Introducir más plástico reciclado para luego aumentar el gramaje de las botellas o 
@@ -107,7 +104,7 @@ get_header();
 </section>
 
 <section class="my-96 mt-xl-133 mb-xl-176">
-  <div class="container">
+  <div class="container gx-sm-2 gx-4">
     <div class="row">
       <div class="col-12 position-relative">
         <?=wp_get_attachment_image(766, "full", "", array( 'class' => 'zi-99 position-relative' , 'alt' => '' , 'title' => '') ); ?>
@@ -121,12 +118,12 @@ get_header();
 </section>
 
 <section class="my-96 mb-xl-160">
-  <div class="container">
+  <div class="container gx-sm-2 gx-4">
     <div class="row text-center text-secondary" data-aos="fade-up">
-      <div class="col-12 h2">
+      <div class="col-12 h2 fs-45 fs-xl-64">
         Concienciación 
       </div>
-      <div class="col-12 offset-sm-2 col-sm-8 mt-40 fs-17">
+      <div class="col-12 offset-xl-2 col-xl-8 mt-40 fs-17">
         Queremos concienciar a las personas de la <strong>importancia de reciclar los envases en su contenedor correspondiente.</strong>
         Con la ayuda de <strong>Ecoembes</strong>, podemos orientar a los consumidores a través de nuestro <strong>etiquetado</strong> y 
         evitar así que nuestros envases vayan a parar a donde no deben.<br></br>
@@ -136,15 +133,15 @@ get_header();
         <strong>¡vosotros iniciáis el ciclo al tirar el envase a su correspondiente contenedor!</strong>
       </div>
       <div class="col-12 mt-40 mt-xl-133">
-        <div class="d-flex w-100 justify-content-evenly align-items-center">
+        <div class="d-flex flex-wrap flex-sm-nowrap w-100 justify-content-evenly align-items-center">
           <div>
-            <?=wp_get_attachment_image(767, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(767, "full", "", array( 'class' => 'my-12 my-sm-0' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div>
-            <?=wp_get_attachment_image(768, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(768, "full", "", array( 'class' => 'my-12 my-sm-0' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div>
-            <?=wp_get_attachment_image(769, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(769, "full", "", array( 'class' => 'my-12 my-sm-0' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div>
       </div>
@@ -153,7 +150,7 @@ get_header();
 </section>
 
 <section class="my-56">
-  <div class="container">
+  <div class="container gx-sm-2 gx-4">
     <div class="row">
       <div class="col-12 position-relative">
         <?php
