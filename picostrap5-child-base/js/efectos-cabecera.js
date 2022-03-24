@@ -130,19 +130,22 @@ document.addEventListener('DOMContentLoaded', function () {
     var swap_images_submenu_canvas = document.querySelectorAll('#offcanvas-ecolosofia a[data-image]');
     swap_images_submenu_canvas.forEach(function(swap_image_submenu_canvas) {
       swap_image_submenu_canvas.addEventListener('mouseover', function (event) {
-        document.querySelector('#offcanvas-ecolosofia .image').innerHTML = "<img src='"+this.getAttribute('data-image')+"'>";
+        document.querySelector('#offcanvas-ecolosofia .image img').src = this.getAttribute('data-image');
+        document.querySelector('#offcanvas-ecolosofia .image img').srcset = this.getAttribute('data-image');
       });
     });
     var swap_images_submenu_canvas = document.querySelectorAll('#offcanvas-nosotros a[data-image]');
     swap_images_submenu_canvas.forEach(function(swap_image_submenu_canvas) {
       swap_image_submenu_canvas.addEventListener('mouseover', function (event) {
-        document.querySelector('#offcanvas-nosotros .image').innerHTML = "<img src='"+this.getAttribute('data-image')+"'>";
+        document.querySelector('#offcanvas-nosotros .image img').src = this.getAttribute('data-image');
+        document.querySelector('#offcanvas-nosotros .image img').srcset = this.getAttribute('data-image');
       });
     });
     var swap_images_submenu_canvas = document.querySelectorAll('#offcanvas-contacto a[data-image]');
     swap_images_submenu_canvas.forEach(function(swap_image_submenu_canvas) {
       swap_image_submenu_canvas.addEventListener('mouseover', function (event) {
-        document.querySelector('#offcanvas-contacto .image').innerHTML = "<img src='"+this.getAttribute('data-image')+"'>";
+        document.querySelector('#offcanvas-contacto .image img').src = this.getAttribute('data-image');
+        document.querySelector('#offcanvas-contacto .image img').src = this.getAttribute('data-image');
       });
     });
     //TEMP
