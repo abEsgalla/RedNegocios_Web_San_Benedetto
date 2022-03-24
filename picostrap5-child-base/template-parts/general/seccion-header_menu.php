@@ -47,6 +47,7 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
     if($limit==4){
         continue;
     }
+    $image_hover=get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"];
     if(get_field('caracteristicas_producto',$id_producto)["imagen_grid_page_marcas"]):
         $custom_image_bg_id = get_field('caracteristicas_producto',$id_producto)["imagen_grid_page_marcas"];
     else:
@@ -55,9 +56,10 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
     $header_menu.="    
                     <div class='col-2'>
                         <div class='row'>
-                            <a class='text-decoration-none text-reset position-relative' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
+                            <a class='single-menu-brand text-decoration-none text-reset position-relative' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
                                 <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."' class='col-12 ratio ratio-2x3'>
-                                    ".wp_get_attachment_image($custom_image_bg_id, 'full', '', array( 'class' => 'px-2 fix-translate-absolute w-100 h-auto top-50 start-50' , 'alt' => '' , 'title' => '') )."
+                                    ".wp_get_attachment_image($custom_image_bg_id, 'full', '', array( 'class' => 'px-2 fix-translate-absolute w-100 h-auto top-50 start-50 img-menu-brand' , 'alt' => '' , 'title' => '') )
+                                    .wp_get_attachment_image($image_hover, 'full', '', array( 'class' => 'px-2 fix-translate-absolute w-100 h-auto top-50 start-50 img-menu-product' , 'alt' => '' , 'title' => '') )."
                                 </div>
                                 <div class='col-12 mt-10 text-secondary fw-500 fs-13'>
                                 ".get_the_title($id_producto)."
