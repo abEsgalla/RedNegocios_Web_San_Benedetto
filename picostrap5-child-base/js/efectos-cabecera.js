@@ -110,11 +110,17 @@ document.addEventListener('DOMContentLoaded', function () {
       topBar.classList.remove('bg-white');
       let menu = document.querySelector('#offcanvas-menu');
       menu.classList.remove('show');
+
+      // topBar.classList.remove('text-dark');
+
       menu.classList.remove('menu-open-offcanvas');
     }
     function showOffCanvas() {
       let topBar = document.querySelector('#wrapper-navbar');
       topBar.classList.add('bg-white');
+
+      // topBar.classList.add('text-dark');
+
       let menu = document.querySelector('#offcanvas-menu');
       menu.classList.add('show');
       menu.classList.add('menu-open-offcanvas');

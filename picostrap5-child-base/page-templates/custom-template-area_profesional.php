@@ -37,7 +37,7 @@ get_header();
             <div class="row">
               <div class="col-8 offset-2">
                 <div class="row">
-                  <div class="col-12">
+                  <div class="col-12" data-aos="fade-right">
                     <div class="h2">Catálogo</div>
                     <div class="mt-32 fs-17">
                       Agua Mineral San Benedetto dispone de un amplísimo catálogo de productos y 
@@ -63,7 +63,7 @@ get_header();
             <div class="row">
               <div class="col-8 offset-2">
                 <div class="row">
-                  <div class="col-12 fs-17">
+                  <div class="col-12 fs-17" data-aos="fade-left">
                     <div>
                     Disponemos también de toda una línea de productos que se adecúan perfectamente a las necesidades de la <strong>hostelería,
                      tiendas tradicionales y vending</strong>, acompañando a los consumidores en esas ocasiones especiales que demandan 
