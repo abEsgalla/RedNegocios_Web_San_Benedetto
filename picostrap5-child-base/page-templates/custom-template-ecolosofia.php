@@ -41,7 +41,7 @@ get_header();
         Del gr. οἰκο- oiko-.: Significa 'ecológico'<br>
         Del gr. φιλοσοφία philosophía.:  <span class="text-green d-block lh-1"> Manera de pensar o de ver las cosas. </span>
       </div>
-      <div class="col-12 offset-xl-2 col-xl-8 mt-102 text-center text-secondary fs-17">
+      <div class="col-12 offset-xl-2 col-xl-8 mt-94 mt-lg-102 text-center text-secondary fs-17">
         Nuestro principal activo, el core y razón de ser de nuestra compañía, 
         es el agua mineral que brota del interior de la tierra. 
         Debemos a la Naturaleza la existencia de nuestra actividad y, por eso, 
@@ -49,7 +49,7 @@ get_header();
         De ahí nace nuestra Ecolosofía: es la forma en la que Agua Mineral San Benedetto utiliza el <strong>conocimiento 
         y la tecnología en beneficio del medioambiente y las personas. ¿Cómo? </strong>
       </div>
-      <div class="col-12 mt-123">
+      <div class="col-12 mt-64 mt-lg-123">
         <div class="row text-white">
           <div class="col-4">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(585)?>">
@@ -136,14 +136,18 @@ get_header();
                 <div class="container bg-white">
                   <div class="row">
                     <div class="offset-1 col-10">
-                      <div class="row text-secondary text-uppercase mt-80 mb-70">
-                        <div class="col-12 fs-18">
-                          san benedetto
-                        </div>  
-                        <div class="col-12 h2">
-                          RSC 
+                      <div class="row text-secondary text-uppercase my-0 mt-lg-80 mb-lg-70">
+                        <div class="col-12 col-sm-6 col-lg-12">
+                          <div class="row">
+                            <div class="col-12 fs-18">
+                              san benedetto
+                            </div>  
+                            <div class="col-12 h2">
+                              RSC 
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-12 text-end">
+                        <div class="col-12 col-sm-6 col-lg-12 text-end">
                           <?=wp_get_attachment_image(617, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                         </div>
                       </div>
@@ -158,12 +162,12 @@ get_header();
           <div class="col-12 col-sm-6 d-block bg-custom-image order-1 order-xl-0 py-200 py-lg-0" 
             style="background:url('<?=wp_get_attachment_image_url(616, "full")?>')">
           </div>
-          <div class="col-12 col-lg-6 d-block h-75-vw order-0 order-xl-0">
+          <div class="col-12 col-lg-6 d-block order-0 order-xl-0">
             <div class="row position-relative h-100">
                 <div class="container">
                   <div class="row">
                     <div class="col-12">
-                      <div class="row text-secondary fs-17 py-150">
+                      <div class="row text-secondary fs-17 py-64 py-lg-150">
                         <div class="offset-1 col-10">
                           Tenemos un acuerdo con 
                           <strong>
