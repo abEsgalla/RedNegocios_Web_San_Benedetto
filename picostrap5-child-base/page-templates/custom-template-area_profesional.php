@@ -54,10 +54,10 @@ get_header();
           </div>
           <div class="col-6 position-relative g-0">
             <?=wp_get_attachment_image(927, "full", "", array( 'class' => 'position-absolute w-100 top-0 transform-translate-ny pb-32' , 'alt' => '' , 'title' => '') ); ?>
-            <?=wp_get_attachment_image(788, "full", "", array( 'class' => 'w-100 img-parallax' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(788, "full", "", array( 'class' => 'w-100 im g-parallax' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 g-0">
-            <?=wp_get_attachment_image(789, "full", "", array( 'class' => 'w-100 img-parallax' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(789, "full", "", array( 'class' => 'w-100 im g-parallax' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 d-flex align-items-center">
             <div class="row">

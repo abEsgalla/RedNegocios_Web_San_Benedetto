@@ -173,7 +173,7 @@ if(imgParallax) {
         start: 'top center',
         end: 'bottom center',
         scrub: true,
-        markers: true,
+        markers: false,
       },
       y: -200,
       ease: "sine.out",
