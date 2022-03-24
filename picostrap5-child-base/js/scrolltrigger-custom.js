@@ -50,7 +50,7 @@ if( document.body.classList.contains('single-landing') ) {
         scrub: true,
         markers: false,
       },
-      y: 420,
+      y: 320,
       rotation: 0,
     });
 
