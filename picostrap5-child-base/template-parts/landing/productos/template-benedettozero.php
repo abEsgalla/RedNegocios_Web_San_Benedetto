@@ -9,10 +9,13 @@
         <div class="container position-relative">
             <div class="row">
                 <div class="col-12 text-center">
-                        <?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25' , 'alt' => '' , 'title' => '') ); ?>
                 </div>
             </div>
         </div>
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/fruta-1.png'; ?>" class="position-absolute fruta-1">
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/fruta-2.png'; ?>" class="position-absolute fruta-2">
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/fruta-3.png'; ?>" class="position-absolute fruta-3">
     </div>
 </section>
 

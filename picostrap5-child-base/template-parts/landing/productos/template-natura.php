@@ -13,6 +13,7 @@
                 </div>
             </div>
         </div>
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-font-natura/acuarela.png'; ?>" class="position-absolute acuarela">
     </div>
 </section>
 
