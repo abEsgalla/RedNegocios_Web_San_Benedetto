@@ -384,7 +384,7 @@ HOW TO REFERENCE ASSETS AND IMAGES
 
 @media (max-width: 991.98px) {
     .h-75-vw{
-        min-height: Calc(100vw/1.5);
+        height: Calc(100vw/1.5);
     }
 }
 
@@ -396,7 +396,7 @@ HOW TO REFERENCE ASSETS AND IMAGES
         font-size: $font-size-base * 2; // 32px
     }
     .h-75-vw {
-        min-height: Calc(100vw);
+        height: Calc(100vw);
     }
     .top-under-xs-40{
         top: 40% !important;
@@ -757,9 +757,6 @@ span{
 }
 
 .bg-custom-image{
-    @include media-breakpoint-down(md) {
-        background-position: center left !important;
-    }
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;

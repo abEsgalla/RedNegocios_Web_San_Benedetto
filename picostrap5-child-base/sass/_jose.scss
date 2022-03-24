@@ -43,3 +43,26 @@
         height: 0;
     }
 }
+
+// Nosotros, valores..
+.page-id-581 {
+    #theme-main {
+        overflow-x: hidden;
+    } 
+    .transform-translate-ny {
+        @include media-breakpoint-down(lg) {
+            transform: translateY(-63%);
+        }
+    }
+}
+.text-mision:before{
+    transform: unset;
+    top: unset;
+    bottom: 0;
+    @include media-breakpoint-down(lg) {
+        top: 100px;
+        bottom: unset;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

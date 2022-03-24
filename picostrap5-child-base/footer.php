@@ -166,7 +166,7 @@
                       <div class="">® Agua mineral San Benedetto, S.A.U.</div>
                     </div>
                     <div class="col-12 col-sm-9 my-20">
-                      <div class="d-flex flex-wrap justify-content-between">
+                      <div class="d-flex justify-content-between">
                         <div>
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(923)?>">
                           Info empresa
