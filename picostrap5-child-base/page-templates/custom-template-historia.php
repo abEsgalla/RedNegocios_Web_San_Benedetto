@@ -38,7 +38,7 @@ get_header();
                     <div class="col-12 h4 mt-24 mt-28">
                       Agua Mineral San Benedetto S.A.U
                     </div>
-                    <div class="col-12 fs-17 mt-24 mt-24 fw-500">
+                    <div class="col-12 fs-17 mt-24 mt-24 fw-500 white-line-timeline-trigger">
                       Agua Mineral San Benedetto S.A.U. comienza su andadura en España, 
                       en un enclave privilegiado por su entorno y buenas comunicaciones, 
                       con fama de ser la aldea más grande de Europa: San Antonio de Requena (Valencia). 
@@ -54,7 +54,8 @@ get_header();
 </section>
 
 <section class="my-96">
-  <div class="container">
+  <div class="container position-relative">
+    <div class="white-line-timeline"></div>
     <div class="row">
       <div class="col-6 position-relative">
         <div class="row">

@@ -3,3 +3,15 @@
   background-repeat: no-repeat!important;
   background-position-x: center!important;
 }
+
+
+.white-line-timeline {
+  width:1px;
+  height: 0px;
+  background-color: white;
+  position: absolute;
+  left: calc(50% + 0.5px);
+  transform: translateX(-50%);
+  top: -150px;
+  z-index: 100;
+}

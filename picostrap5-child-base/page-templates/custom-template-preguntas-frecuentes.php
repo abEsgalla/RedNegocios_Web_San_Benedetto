@@ -13,9 +13,9 @@ get_header();
   <div class="container-fluid position-relative zi-9 bg-secondary-darker pt-221 pb-149">
     <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(787, "full")?>')"></div>
-      <div class="container position-relative">
+      <div class="container gx-sm-2 gx-4 position-relative">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 text-center text-lg-start offset-xxl-1 col-xxl-6 col-xxxl-6">
             <div class="row text-white">
               <div class="col-12 fs-18 text-uppercase">
                 GRUPO SAN BENEDETTO
@@ -45,10 +45,10 @@ if($acf_fields['faqs']):
 endif;
 ?>
 
-<section id="preguntas-frecuentes" class="position-relative my-120">
-  <div class="container">
+<section id="preguntas-frecuentes" class="position-relative my-96 my-lg-120">
+  <div class="container gx-sm-2 gx-4">
     <div class="row">
-      <div class="col-12 offset-xl-1 col-xl-10">
+      <div class="col-12 offset-xxl-1 col-xxl-10">
       <!--ACORDION-->
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <?php
@@ -78,27 +78,27 @@ endif;
   </div>
 </section>
 
-<section class="d-flex position-relative my-56">
-  <div class="bg-secondary-darker">
-    <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 position-absolute top-50 translate-middle-y">
-    <div class="container">
-      <div class="row">
-        <div class="offset-3 col-6 text-center text-white">
-          <div class="row">
-            <div class="col-12 text-uppercase fs-18 pt-20">
-              san benedetto
-            </div>
-            <div class="col-12 h4 mt-10">
-              Conoce nuestras marcas
-            </div>
-            <div class="col-12 mt-32 fs-17">
-              <a href="#" class="col-12 text-center">
-                <div class="btn btn-outline-white text-uppercase rounded-0">
-                  <span>saber más</span>
-                </div>
-              </a>
+<section class="">
+  <div class="container-fluid position-relative zi-9 bg-secondary-darker py-105">
+    <div class="bg-custom-image opacity-50 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(51, "full")?>')"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 offset-xl-3 col-xl-6 text-center text-white">
+            <div class="row">
+              <div class="col-12 text-uppercase fs-18 pt-20">
+                san benedetto
+              </div>
+              <div class="col-12 h4 mt-10">
+                Conoce nuestras marcas
+              </div>
+              <div class="col-12 mt-32 fs-17">
+                <a href="#" class="col-12 text-center">
+                  <div class="btn btn-outline-white text-uppercase rounded-0">
+                    <span>saber más</span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@ endif;
 </section>
 
 <section class="my-56">
-  <div class="container bg-white">
+  <div class="container gx-sm-2 gx-4">
     <div class="row">
       <div class="col-12 position-relative">
         <?php

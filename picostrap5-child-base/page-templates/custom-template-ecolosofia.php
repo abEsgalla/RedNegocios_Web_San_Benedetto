@@ -11,12 +11,12 @@ get_header();
 
 
 <section class="position-absolute top-0 w-100">
-  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-533">
+  <div class="container-fluid position-relative zi-9 bg-black pt-138 pb-333 pt-sm-261 pb-sm-533">
     <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(613, "full")?>')"></div>
       <div class="container position-relative zi-99">
         <div class="row">
-          <div class="offset-3 col-6 text-center">
+          <div class="col-12 offset-xl-3 col-xl-6 text-center">
             <div class="row text-white">
               <div class="col-12 text-uppercase fs-18">
               ¡Una manera ecológica de pensar las cosas!
@@ -35,13 +35,13 @@ get_header();
 <section class="mb-96 position-relative mt-custom-28">
   <?=wp_get_attachment_image(1177, "full", "", array( 'class' => 'opacity-75 translate-middle top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
   <?=wp_get_attachment_image(1178, "full", "", array( 'class' => 'sello-rotacion opacity-75 top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
-  <div class="container bg-white">
+  <div class="container bg-white gx-sm-2 gx-4">
     <div class="row text-center">
-      <div class="offset-2 col-8 mt-176 fs-32 fw-bolder text-secondary text-uppercase">
+      <div class="col-12 offset-xl-2 col-xl-8 mt-176 fs-32 fw-bolder text-secondary text-uppercase">
         Del gr. οἰκο- oiko-.: Significa 'ecológico'<br>
         Del gr. φιλοσοφία philosophía.:  <span class="text-green d-block lh-1"> Manera de pensar o de ver las cosas. </span>
       </div>
-      <div class="offset-2 col-8 mt-102 text-center text-secondary fs-17">
+      <div class="col-12 offset-xl-2 col-xl-8 mt-94 mt-lg-102 text-center text-secondary fs-17">
         Nuestro principal activo, el core y razón de ser de nuestra compañía, 
         es el agua mineral que brota del interior de la tierra. 
         Debemos a la Naturaleza la existencia de nuestra actividad y, por eso, 
@@ -49,9 +49,9 @@ get_header();
         De ahí nace nuestra Ecolosofía: es la forma en la que Agua Mineral San Benedetto utiliza el <strong>conocimiento 
         y la tecnología en beneficio del medioambiente y las personas. ¿Cómo? </strong>
       </div>
-      <div class="col-12 mt-123">
+      <div class="col-12 mt-64 mt-lg-123">
         <div class="row text-white">
-          <div class="col-4">
+          <div class="col-12 col-sm-4 mb-2 mb-sm-0">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(585)?>">
               <div text-cursor-custom="Ir a producto" 
               class="ratio ratio-1x1 contenedor-cursor-custom bg-contenedor-custom-ecolosofia">
@@ -68,12 +68,12 @@ get_header();
                       <path d="M80.0785 36.7755L74.4688 44.9883L78.1243 47.431L83.7341 39.2182L80.0785 36.7755Z" fill="white"/>
                     </svg>
                   </div>
-                  <div class="mt-24 h5 text-uppercase">PRODUCTO</div>
+                  <div class="mt-24 h5 fs-24 fs-lg-32 text-uppercase">PRODUCTO</div>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-4 mb-2 mb-sm-0">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(587)?>">
               <div text-cursor-custom="Ir a procesos" 
               class="ratio ratio-1x1 contenedor-cursor-custom bg-contenedor-custom-ecolosofia cursor-white">
@@ -95,12 +95,12 @@ get_header();
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M86.3274 39.375L97.7931 41.083C98.5171 41.1908 99.1524 41.6183 99.5201 42.2449L107.93 56.575C108.347 57.2861 108.366 58.1597 107.979 58.8873L103.219 67.8331L98.9503 65.6077L103.087 57.8313L95.9298 45.6353L85.6094 44.0979L86.3274 39.375Z" fill="#FAFAFA"/>
                     </svg>
                   </div>
-                  <div class="mt-24 h5 text-uppercase">PROCESOS</div>
+                  <div class="mt-24 h5 fs-24 fs-lg-32 text-uppercase">PROCESOS</div>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-4 mb-2 mb-sm-0">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(589)?>">
               <div text-cursor-custom="Ir a entorno" 
               class="ratio ratio-1x1 contenedor-cursor-custom bg-contenedor-custom-ecolosofia">
@@ -111,7 +111,7 @@ get_header();
                       <path d="M98.1741 53.5858C100.624 53.5791 102.915 52.3732 104.312 50.3573C105.709 48.3414 106.035 45.7686 105.185 43.4667C104.336 41.1647 102.419 39.4231 100.048 38.8024V38.5584C100.048 35.8741 98.6191 33.3936 96.2993 32.0512C93.9795 30.7095 91.1207 30.7095 88.8009 32.0512C86.4811 33.3938 85.0517 35.8743 85.0517 38.5584V38.8024C82.6818 39.423 80.7643 41.1647 79.9149 43.4667C79.0655 45.7686 79.391 48.3413 80.7886 50.3573C82.1853 52.3732 84.4767 53.5791 86.9261 53.5858H90.6753V59.221H60.6817V53.5858H64.4309C66.8805 53.5791 69.1718 52.3732 70.5685 50.3573C71.966 48.3414 72.2916 45.7686 71.4422 43.4667C70.5927 41.1647 68.6755 39.4231 66.3053 38.8024V38.5584C66.3053 35.8741 64.8759 33.3936 62.5561 32.0512C60.2364 30.7095 57.3775 30.7095 55.0578 32.0512C52.738 33.3938 51.3086 35.8743 51.3086 38.5584V38.8024C48.9386 39.423 47.0212 41.1647 46.1717 43.4667C45.3223 45.7686 45.6478 48.3413 47.0454 50.3573C48.4422 52.3732 50.7336 53.5791 53.183 53.5858H56.9322V59.221H26.9386V53.5858H30.6878C33.1374 53.5791 35.4287 52.3732 36.8253 50.3573C38.2229 48.3414 38.5485 45.7686 37.699 43.4667C36.8496 41.1647 34.9323 39.4231 32.5622 38.8024V38.5584C32.5622 35.8741 31.1328 33.3936 28.813 32.0512C26.4932 30.7095 23.6344 30.7095 21.3146 32.0512C18.9948 33.3938 17.5654 35.8743 17.5654 38.5584V38.8024C15.1955 39.423 13.278 41.1647 12.4286 43.4667C11.5792 45.7686 11.9047 48.3413 13.3023 50.3573C14.699 52.3732 16.9904 53.5791 19.4398 53.5858H23.189V59.221H13.816C12.7808 59.221 11.9414 60.0621 11.9414 61.0994C11.9347 73.2888 16.6581 85.0034 25.1129 93.7664C33.5687 102.529 45.0924 107.655 57.251 108.06H58.8067C67.0331 108.06 75.1149 105.89 82.2403 101.768C89.3646 97.6464 95.2804 91.7186 99.3936 84.5798C103.507 77.441 105.673 69.3429 105.673 61.0987C105.673 60.6006 105.475 60.1226 105.124 59.7704C104.772 59.4182 104.295 59.2203 103.798 59.2203H94.4252V53.5851L98.1741 53.5858ZM53.1837 49.829C51.8439 49.829 50.6062 49.1128 49.9367 47.9506C49.2672 46.7883 49.2672 45.356 49.9367 44.1938C50.6062 43.0315 51.8439 42.3154 53.1837 42.3154H53.4833C54.1127 42.3523 54.7185 42.0705 55.096 41.564C55.4742 41.0575 55.573 40.3934 55.3579 39.798C55.1847 39.4064 55.0834 38.9862 55.0583 38.5586C55.0583 37.216 55.773 35.9758 56.9329 35.305C58.0928 34.6341 59.5222 34.6341 60.6821 35.305C61.842 35.9758 62.5567 37.2161 62.5567 38.5586C62.5542 38.9955 62.4714 39.429 62.3132 39.8357C62.0981 40.4311 62.1969 41.0952 62.5751 41.6018C62.9526 42.1074 63.5585 42.39 64.1878 42.3531L64.4313 42.3154C65.7711 42.3154 67.0088 43.0315 67.6783 44.1938C68.3478 45.356 68.3478 46.7883 67.6783 47.9506C67.0088 49.1128 65.7711 49.829 64.4313 49.829H60.6821V46.0722C60.6821 45.0349 59.8427 44.1938 58.8075 44.1938C57.7723 44.1938 56.9329 45.0349 56.9329 46.0722V49.829L53.1837 49.829ZM19.441 49.829C18.1011 49.829 16.8634 49.1128 16.1939 47.9506C15.5244 46.7883 15.5244 45.356 16.1939 44.1938C16.8634 43.0315 18.1012 42.3154 19.441 42.3154H19.7406C20.3699 42.3523 20.9758 42.0705 21.3532 41.564C21.7315 41.0575 21.8302 40.3934 21.6152 39.798C21.4419 39.4064 21.3407 38.9862 21.3156 38.5586C21.3156 37.216 22.0302 35.9758 23.1902 35.305C24.3501 34.6341 25.7795 34.6341 26.9394 35.305C28.0992 35.9758 28.814 37.2161 28.814 38.5586C28.8114 38.9955 28.7286 39.429 28.5704 39.8357C28.3554 40.4311 28.4541 41.0952 28.8324 41.6018C29.2098 42.1074 29.8157 42.39 30.445 42.3531L30.6886 42.3154C32.0284 42.3154 33.2661 43.0315 33.9356 44.1938C34.6051 45.356 34.6051 46.7883 33.9356 47.9506C33.2661 49.1128 32.0283 49.829 30.6886 49.829H26.9394V46.0722C26.9394 45.0349 26.1 44.1938 25.0648 44.1938C24.0296 44.1938 23.1902 45.0349 23.1902 46.0722V49.829L19.441 49.829ZM15.6918 62.9778H30.7824C29.9254 64.4931 29.5388 66.2305 29.6719 67.9673C29.8058 69.7039 30.4535 71.361 31.5322 72.727C33.0955 74.5501 34.104 76.7856 34.4362 79.1664C34.7685 81.5471 34.4111 83.974 33.4069 86.1575C32.1072 88.679 31.3716 91.4548 31.2512 94.2908C26.6226 90.4469 22.8472 85.6753 20.1677 80.2825C17.488 74.8905 15.9633 68.9953 15.692 62.9778H15.6918ZM58.9575 104.303C58.0386 93.8591 62.1443 91.3979 71.9106 88.2424C78.1345 86.2139 80.5899 81.7996 82.7456 77.9112C84.9013 74.0228 86.4948 71.1112 91.1252 69.9657H91.126C94.3537 69.1086 97.7691 69.2856 100.892 70.473C98.77 80.0428 93.4625 88.6046 85.842 94.7527C78.2215 100.901 68.7405 104.268 58.957 104.303L58.9575 104.303ZM101.548 66.7346C97.9181 65.5103 94.0105 65.3669 90.3008 66.3212C84.0962 67.8616 81.6776 72.238 79.5401 76.0889C77.4036 79.9397 75.6789 83.0952 70.7488 84.6733C61.113 87.791 54.2708 91.0976 55.1897 104.133C47.9674 103.537 41.0138 101.113 34.9817 97.0892C34.7541 93.9923 35.3215 90.8879 36.6312 88.0728C39.5744 83.0574 38.7116 75.807 34.5315 70.4343C32.1506 67.3726 34.2126 64.2356 35.2629 62.9207L101.924 62.9216C101.924 64.2364 101.718 65.4951 101.549 66.7346L101.548 66.7346ZM86.9265 49.829C85.5867 49.829 84.349 49.1128 83.6795 47.9506C83.01 46.7883 83.01 45.356 83.6795 44.1938C84.349 43.0315 85.5867 42.3154 86.9265 42.3154H87.2261C87.8554 42.3523 88.4613 42.0705 88.8387 41.564C89.217 41.0575 89.3158 40.3934 89.1007 39.798C88.9275 39.4064 88.8262 38.9862 88.8011 38.5586C88.8011 37.216 89.5158 35.9758 90.6757 35.305C91.8356 34.6341 93.265 34.6341 94.4249 35.305C95.5848 35.9758 96.2995 37.2161 96.2995 38.5586C96.297 38.9955 96.2141 39.429 96.056 39.8357C95.8409 40.4311 95.9396 41.0952 96.3179 41.6018C96.6953 42.1074 97.3012 42.39 97.9305 42.3531L98.1741 42.3154C99.5139 42.3154 100.752 43.0315 101.421 44.1938C102.091 45.356 102.091 46.7883 101.421 47.9506C100.752 49.1128 99.5139 49.829 98.1741 49.829H94.4249V46.0722C94.4249 45.0349 93.5855 44.1938 92.5503 44.1938C91.5151 44.1938 90.6757 45.0349 90.6757 46.0722V49.829L86.9265 49.829Z" fill="white"/>
                     </svg>
                   </div>
-                  <div class="mt-24 h5 text-uppercase">ENTORNO</div>
+                  <div class="mt-24 h5 fs-24 fs-lg-32 text-uppercase">ENTORNO</div>
                 </div>
               </div>
             </a>
@@ -122,8 +122,8 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 mt-xl-256 mb-xl-160">
-  <div class="container position-relative">
+<section class="my-96 mt-md-160 mt-xl-256 mb-xl-160">
+  <div class="container position-relative gx-sm-2 gx-4">
       <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
       class="d-none d-xxxl-block position-absolute top-0 start-0 w-auto translate-dots-col-top-before">
       <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
@@ -131,47 +131,44 @@ get_header();
     <div class="row position-relative">
       <div class="col-12">
         <div class="row ">
-          <div style="" class="g-0 col-12 col-sm-6 d-block">
+          <div class="col-12 col-lg-6 d-block order-0 order-xl-0">
             <div class="row position-relative h-100">
-              <div class="container-fluid zi-99 top-0 h-100 position-absolute">
-                <div class="container h-100 bg-white">
+                <div class="container bg-white">
                   <div class="row">
                     <div class="offset-1 col-10">
-                      <div class="row text-secondary text-uppercase mt-80">
-                        <div class="col-12 fs-18">
-                          san benedetto
-                        </div>  
-                        <div class="col-12 h2">
-                          RSC 
+                      <div class="row text-secondary text-uppercase my-0 mt-lg-80 mb-lg-70">
+                        <div class="order-1 order-sm-0 col-12 col-sm-6 col-lg-12">
+                          <div class="row text-center text-sm-start mt-sm-0 mt-28">
+                            <div class="col-12 fs-18">
+                              san benedetto
+                            </div>  
+                            <div class="col-12 h2">
+                              RSC 
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-12 text-end">
+                        <div class="order-0 order-sm-1 col-12 col-sm-6 col-lg-12 text-center text-sm-end">
                           <?=wp_get_attachment_image(617, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
-          <div style="" class="g-0 col-12 col-sm-6 d-block bg-black">
-            <div class="position-relative d-flex w-100 h-100">
-              <?=wp_get_attachment_image(615, "full", "", array( 'class' => 'center-image w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-            </div>
+          <div class="col-12 col-sm-6 d-block bg-custom-image order-1 order-xl-0 py-200 py-lg-0 d-none d-sm-inline-flex" 
+            style="background:url('<?=wp_get_attachment_image_url(615, "full")?>')">
           </div>
-          <div style="" class="g-0 col-12 col-sm-6 d-block bg-black">
-            <div class="position-relative d-flex w-100 h-100">
-              <?=wp_get_attachment_image(616, "full", "", array( 'class' => 'center-image w-100 opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-            </div>
+          <div class="col-12 col-sm-6 d-block bg-custom-image order-1 order-xl-0 py-200 py-lg-0" 
+            style="background:url('<?=wp_get_attachment_image_url(616, "full")?>')">
           </div>
-          <div style="" class="g-0 col-12 col-sm-6 d-block">
+          <div class="col-12 col-lg-6 d-block order-0 order-xl-0">
             <div class="row position-relative h-100">
-              <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
                 <div class="container">
                   <div class="row">
                     <div class="col-12">
-                      <div class="row text-secondary">
-                        <div class="offset-1 col-10">
+                      <div class="row text-center text-sm-start text-secondary fs-17 py-64 py-lg-150">
+                        <div class="offset-sm-1 col-sm-10 col-12">
                           Tenemos un acuerdo con 
                           <strong>
                             <a class="text-reset" target="_blank" href="https://www.aldeasinfantiles.es/">Aldeas Infantiles SOS</a>
@@ -193,7 +190,6 @@ get_header();
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>

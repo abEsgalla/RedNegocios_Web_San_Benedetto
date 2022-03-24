@@ -169,18 +169,32 @@ if( document.body.classList.contains('single-landing') ) {
 
 if( document.body.classList.contains('page-template-custom-template-historia') ) {
   //Barrita vertical que se rellena con scroll en página Historia
-  let line_height = document.querySelector('.border-dashed-custom').clientHeight;
+  let line_height = document.querySelector('.border-dashed-custom').clientHeight + 236;
   gsap.to(".border-dashed-custom .border-fill", {
     scrollTrigger: {
       trigger: '.border-dashed-custom',
-      toggleActions: 'play none none none',
-      start: 'top center',
+      start: '-265px center',
       end: 'bottom center',
       scrub: true,
       markers: false,
       onUpdate: self => {
         let height = self.progress * line_height;
         document.querySelector(".border-dashed-custom .border-fill").style.height = height + 'px';
+      }
+    }
+  });
+
+  let maxWhiteLineHeight = 150;
+  gsap.to(".white-line-timeline", {
+    scrollTrigger: {
+      trigger: '.white-line-timeline-trigger',
+      start: 'top center',
+      end: 'bottom center',
+      scrub: true,
+      markers: false,
+      onUpdate: self => {
+        let height = self.progress * maxWhiteLineHeight;
+        document.querySelector(".white-line-timeline").style.height = height + 'px';
       }
     }
   });
@@ -198,31 +212,58 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
   ];
 
   anos.forEach(ano => {
-    gsap.to(".ano-timeline-" + ano, {
+    let selectorAnoLeft = `.ano-timeline-${ano}.ano-timeline-left`
+    gsap.to(selectorAnoLeft, {
       scrollTrigger: {
         trigger: '.ano-timeline-' + ano,
-        toggleActions: 'play none none none',
-        start: '20px 50%',
+        start: '-130px 50%',
         end: 'bottom',
         scrub: true,
         markers: false,
         onEnter: self => {
-          document.querySelector(".ano-timeline-" + ano).classList.add('ano-activo');
+          document.querySelector(selectorAnoLeft).classList.add('ano-activo');
           document.querySelector(".ano-" + ano).classList.remove('opacity-25');
         },
         onEnterBack: self => {
-          //document.querySelector(".ano-timeline-" + ano).classList.remove('ano-activo');
+          //document.querySelector(selectorAnoLeft).classList.remove('ano-activo');
         },
         onLeave: self => {
-          document.querySelector(".ano-timeline-" + ano).classList.add('ano-activo');
+          document.querySelector(selectorAnoLeft).classList.add('ano-activo');
           document.querySelector(".ano-" + ano).classList.remove('opacity-25');
         },
         onLeaveBack: self => {
-          document.querySelector(".ano-timeline-" + ano).classList.remove('ano-activo');
+          document.querySelector(selectorAnoLeft).classList.remove('ano-activo');
           document.querySelector(".ano-" + ano).classList.add('opacity-25');
         },
       }
     });
+
+    let selectorAnoRight = `.ano-timeline-${ano}.ano-timeline-right`
+    gsap.to(selectorAnoRight, {
+      scrollTrigger: {
+        trigger: '.ano-timeline-' + ano,
+        start: '-130px bottom',
+        end: 'bottom',
+        scrub: true,
+        markers: false,
+        onEnter: self => {
+          document.querySelector(selectorAnoRight).classList.add('ano-activo');
+          document.querySelector(".ano-" + ano).classList.remove('opacity-25');
+        },
+        onEnterBack: self => {
+          //document.querySelector(selectorAnoRight).classList.remove('ano-activo');
+        },
+        onLeave: self => {
+          document.querySelector(selectorAnoRight).classList.add('ano-activo');
+          document.querySelector(".ano-" + ano).classList.remove('opacity-25');
+        },
+        onLeaveBack: self => {
+          document.querySelector(selectorAnoRight).classList.remove('ano-activo');
+          document.querySelector(".ano-" + ano).classList.add('opacity-25');
+        },
+      }
+    });
+
   });
 }
 
