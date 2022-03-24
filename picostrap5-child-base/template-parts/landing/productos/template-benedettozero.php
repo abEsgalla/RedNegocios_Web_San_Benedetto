@@ -25,7 +25,8 @@
             $seccion['id_producto'] = $id_producto;
             switch ($seccion['acf_fc_layout']):
                 case 'slider_imagenes_productos':
-                    get_template_part( 'template-parts/landing/seccion', 'slider_imagenes_productos', $seccion);
+                    echo '<div class="background-zero-frutas pb-64">';
+                    get_template_part( 'template-parts/landing/seccion', 'slider_imagenes_productos_zero', $seccion);
                 break;
                 case 'elementos_quimicos':
                     get_template_part( 'template-parts/landing/seccion', 'elementos_quimicos', $seccion);
@@ -35,10 +36,11 @@
                 break;
                 case 'texto_centrado':
                     get_template_part( 'template-parts/landing/seccion', 'texto_centrado', $seccion);
+                    echo '</div>';
                 break;
                 case 'cols_imagenes_texto':
                     ?>
-                    <section class=" zi-99 position-relative mt-56 mb-178 seccion_cols_imagenes">
+                    <section class=" zi-99 position-relative mt-56 pb-178 seccion_cols_imagenes background-col-imagenes-zero">
                         <div class="container position-relative">
                             <div class="row">
                             <div class="col-12 offset-xl-1 col-xl-10">
