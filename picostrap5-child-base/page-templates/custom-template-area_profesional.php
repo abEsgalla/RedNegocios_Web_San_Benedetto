@@ -102,7 +102,7 @@ get_header();
               <div class="col-12 mt-32">
                 <a href="<?=get_permalink(650)?>" class="text-rest">
                   <div class="btn btn-outline-white text-uppercase rounded-0 fw-500 fs-14">
-                    Contáctanos aquí
+                    <span>Contáctanos aquí</span>
                   </div>
                 </a>
               </div>

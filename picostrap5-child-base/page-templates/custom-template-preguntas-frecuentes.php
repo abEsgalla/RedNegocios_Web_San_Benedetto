@@ -96,7 +96,7 @@ endif;
             <div class="col-12 mt-32 fs-17">
               <a href="#" class="col-12 text-center">
                 <div class="btn btn-outline-white text-uppercase rounded-0">
-                  saber más              
+                  <span>saber más</span>
                 </div>
               </a>
             </div>

@@ -161,49 +161,41 @@ endif;
 
 <div class="position-relative h-0">
 
-    <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
+    <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow-sm"
         data-bs-scroll="true" data-bs-backdrop="false"
-        tabindex="-1" id="offcanvas-marcas" aria-labelledby="offcanvas-marcas">
-        <div class="container">
-            <div class="row py-56">
-                <?=$header_menu?>
-            </div>
-        </div>
-    </div>
+        tabindex="-1" id="offcanvas-menu" aria-labelledby="offcanvas-menu">
 
-    <?php
-    $data_offcanvas_nosotros = [
-        0 => [
-            "nombre" => "Historia",
-            "image" => wp_get_attachment_image_url(876, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(579)
-        ],
-        1 => [
-            "nombre" => "Misión, Visión y valores",
-            "image" => wp_get_attachment_image_url(875, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(581)
-        ],
-        2 => [
-            "nombre" => "San benedetto en españa",
-            "image" => wp_get_attachment_image_url(874, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(655)
-        ],
-        3 => [
-            "nombre" => "San benedetto en el mundo",
-            "image" => wp_get_attachment_image_url(873, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(667)
-        ],
-        4 => [
-            "nombre" => "Noticias",
-            "image" => wp_get_attachment_image_url(872, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => esc_url(get_post_type_archive_link('post'))
-        ]
-    ];
-    ?>
-    <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
-        data-bs-scroll="true" data-bs-backdrop="false"
-        tabindex="-1" id="offcanvas-nosotros" aria-labelledby="offcanvas-nosotros">
-        <div class="container">
+        <!-- Nosotros -->
+        <?
+        $data_offcanvas_nosotros = [
+            0 => [
+                "nombre" => "Historia",
+                "image" => wp_get_attachment_image_url(876, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(579)
+            ],
+            1 => [
+                "nombre" => "Misión, Visión y valores",
+                "image" => wp_get_attachment_image_url(875, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(581)
+            ],
+            2 => [
+                "nombre" => "San benedetto en españa",
+                "image" => wp_get_attachment_image_url(874, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(655)
+            ],
+            3 => [
+                "nombre" => "San benedetto en el mundo",
+                "image" => wp_get_attachment_image_url(873, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(667)
+            ],
+            4 => [
+                "nombre" => "Noticias",
+                "image" => wp_get_attachment_image_url(872, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => esc_url(get_post_type_archive_link('post'))
+            ]
+        ];
+        ?>
+        <div class="container d-none h-0 offcanvas-nosotros">
             <div class="row py-56 text-secondary">
                 <div class="col-6 image">
                     <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -231,32 +223,38 @@ endif;
                 </div>
             </div>
         </div>
-    </div>
-    
-    <?php
-    $data_offcanvas_ecolosofia = [
-        0 => [
-            "nombre" => "Productos",
-            "image" => wp_get_attachment_image_url(871, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(585)
-        ],
-        1 => [
-            "nombre" => "Procesos",
-            "image" => wp_get_attachment_image_url(870, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(587)
-        ],
-        2 => [
-            "nombre" => "Entorno",
-            "image" => wp_get_attachment_image_url(869, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(589)
-        ]
-    ];
-    ?>
 
-    <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
-        data-bs-scroll="true" data-bs-backdrop="false"
-        tabindex="-1" id="offcanvas-ecolosofia" aria-labelledby="offcanvas-ecolosofia">
-        <div class="container">
+        <!-- Nosotros -->
+
+        <!-- Marcas -->
+        <div class="container d-none h-0 offcanvas-marcas">
+            <div class="row py-56">
+                <?=$header_menu?>
+            </div>
+        </div>
+        <!-- Marcas -->
+
+        <!-- Ecolosofía -->
+        <?
+        $data_offcanvas_ecolosofia = [
+            0 => [
+                "nombre" => "Productos",
+                "image" => wp_get_attachment_image_url(871, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(585)
+            ],
+            1 => [
+                "nombre" => "Procesos",
+                "image" => wp_get_attachment_image_url(870, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(587)
+            ],
+            2 => [
+                "nombre" => "Entorno",
+                "image" => wp_get_attachment_image_url(869, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(589)
+            ]
+        ];
+        ?>
+        <div class="container d-none h-0 offcanvas-ecolosofia">
             <div class="row py-56 text-secondary">
                 <div class="col-6 image">
                     <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -285,32 +283,29 @@ endif;
                 </div>
             </div>
         </div>
-    </div>
-    
-    <?php
-    $data_offcanvas_contacto = [
-        0 => [
-            "nombre" => "Buscamos Talento",
-            "image" => wp_get_attachment_image_url(868, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(672)
-        ],
-        1 => [
-            "nombre" => "Localizacion y contacto",
-            "image" => wp_get_attachment_image_url(867, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(650)
-        ],
-        2 => [
-            "nombre" => "Preguntas Frecuentes",
-            "image" => wp_get_attachment_image_url(866, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
-            "url" => get_permalink(785)
-        ]
-    ];
-    ?>
+        <!-- Ecolosofía -->
 
-    <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow" 
-        data-bs-scroll="true" data-bs-backdrop="false"
-        tabindex="-1" id="offcanvas-contacto" aria-labelledby="offcanvas-contacto">
-        <div class="container">
+        <!-- Contacto -->
+        <?
+        $data_offcanvas_contacto = [
+            0 => [
+                "nombre" => "Buscamos Talento",
+                "image" => wp_get_attachment_image_url(868, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(672)
+            ],
+            1 => [
+                "nombre" => "Localizacion y contacto",
+                "image" => wp_get_attachment_image_url(867, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(650)
+            ],
+            2 => [
+                "nombre" => "Preguntas Frecuentes",
+                "image" => wp_get_attachment_image_url(866, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ),
+                "url" => get_permalink(785)
+            ]
+        ];
+        ?>
+        <div class="container d-none h-0 offcanvas-contacto">
             <div class="row py-56 text-secondary">
                 <div class="col-6 image">
                     <?=wp_get_attachment_image(687, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -339,6 +334,7 @@ endif;
                 </div>
             </div>
         </div>
+        <!-- Contacto -->
     </div>
 
 </div>

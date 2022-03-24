@@ -45,7 +45,7 @@
     <div class='col-12 tab-pane fade ".$show." ".$active."' id='".$term_name_sanitice."' 
     role='tabpanel' aria-labelledby='".$term_name_sanitice."-tab'>
       <div class='row text-center'>
-          <div class='col-12 offset-lg-2 col-lg-8 mt-85 text-secondary fs-17'>
+          <div class='col-12 offset-lg-2 col-lg-8 mt-85 text-secondary fs-17 px-md-94 px-lg-0'>
               ".get_term_field( 'description', $id_term )."
           </div>
           <div class='col-12'>
@@ -53,7 +53,7 @@
     foreach ($id_posts as $id_producto):
     
     $cuerpo_tabs_html.="
-                <div class='col-4 mt-80'>
+                <div class='col-12 col-md-6 col-lg-4 mt-60 mt-lg-64'>
                 <a class='text-decoration-none d-inline-block w-100 h-100 contenedor-cursor-custom' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>";
     if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"]):
       $cuerpo_tabs_html.= 

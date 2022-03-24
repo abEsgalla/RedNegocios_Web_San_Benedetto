@@ -15,9 +15,9 @@ $fields = wp_parse_args( $args );
   ?>
     <div class="container position-relative">
       <div class="row">
-          <div class="col-12 text-center text-uppercase">
-            <div class="row">
-              <div class="col-6 offset-3">
+          <div class="col-12 text-center">
+            <div class="row flex-column flex-wrap align-items-center">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                 <?
                 if($fields["texto_superior"]):
                 ?>
@@ -26,7 +26,7 @@ $fields = wp_parse_args( $args );
                 endif;
                 if($fields["texto_principal"]):
                 ?>
-                  <div class="h4 mt-8 mb-0"><?=$fields["texto_principal"]?></div>
+                  <div class="fs-24 fs-md-32 fw-bold mt-8 mb-0"><?=$fields["texto_principal"]?></div>
                 <?
                 endif;
                 ?>
@@ -37,7 +37,7 @@ $fields = wp_parse_args( $args );
             ?>
             <a href="<?=$fields["link_cta"]?>" class="col-12 text-center">
                 <div class="btn btn-outline-white border-2 fw-500 fs-14 text-uppercase mt-40 rounded-0">
-                  <?=$fields["texto_cta"]?>
+                  <span><?=$fields["texto_cta"]?><span>
                 </div>
             </a>
             <?
