@@ -30,6 +30,30 @@ foreach ($fields['productos'] as $id_producto):
   </div>";
 endforeach;
 
+$slider_html.="<div data-swiper='swiper_home_dedicado' 
+            class='d-flex flex-wrap justify-content-center align-items-center h-100 
+            swiper-slide text-center'>
+              <a class='d-inline-block w-100 h-100 text-decoration-none link-slider-brands' href='/marcas/'>
+                <div class=''>
+                  <div class='ratio ratio-30x43 bg-white more-brands border border-1'>
+                    <div class='d-flex align-items-end pb-12 ps-12'>
+                    ".'
+                        <svg class="light" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#FFFFFF"/>
+                        </svg>
+                        <svg class="dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#69B3E7"/>
+                        </svg>
+                    '."
+                    </div>
+                  </div>
+                </div>
+                <div class='w-100 text-start mt-20 text-secondary text-uppercase fs-13 fw-500 name-slider-product'>
+                  VER MÁS
+                </div>
+              </a>
+            </div>";
+
 ?>
 
 <div class="col-12 position-relative">
@@ -48,13 +72,13 @@ endforeach;
       endif;
       ?>
     </div>
-    <div class="col-12 mt-48 mt-sm-90 mt-lg-0 offset-lg-7 col-lg-5 offset-xxl-8 col-xxl-4 position-absolute end-0 bottom-0">
+    <div class="col-12 mt-48 mt-sm-90 mt-lg-0 offset-lg-7 col-lg-5 offset-xxl-8 col-xxl-4 position-lg-absolute end-0 bottom-0">
       <div class="filtros_buscador row text-secondary text-start text-lg-end text-uppercase fs-13 fw-500">
         <div class="col col-sm-2 col-custom-lg filtro_buscador active c-pointer letter-spacing-1x3" data-filter="*">
           Todos
         </div>
         <?php
-          foreach ($categories_slider_html as $category_slider_html):
+          foreach ($categories_slider_html as $category_slider_html):            
           ?>
           <div class="col col-sm-3 col-custom-lg filtro_buscador c-pointer letter-spacing-1x3" data-filter="<?=str_replace(' ', '-', strtolower($category_slider_html))?>">
             <?=$category_slider_html?>           

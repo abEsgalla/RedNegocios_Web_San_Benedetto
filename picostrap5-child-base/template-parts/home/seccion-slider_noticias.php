@@ -52,7 +52,7 @@ wp_reset_postdata();
   <div class="text-uppercase fs-18">SAN BENEDETTO</div>
   <div class="h4">Noticias</div>
 </div>
-<div class="col-12 mt-64">
+<div class="col-12 mt-64 mt-md-48 mt-xl-64">
     <div class="swiper swiper-home-noticias">
       <div class="swiper-wrapper">
         <?=$html_slide_post?>
@@ -61,6 +61,6 @@ wp_reset_postdata();
 </div>
 <div class="col-12 text-center">
   <a href="<?=esc_url(get_post_type_archive_link('post'));?>" class="fw-500 btn btn-outline-secondary text-uppercase mt-64 rounded-0">
-    <span>ver todas</span>
+    ver todas
   </a>
 </div>

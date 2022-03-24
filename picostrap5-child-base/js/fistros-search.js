@@ -14,11 +14,7 @@ function filtrar(event) {
     }
   });
 
-  var name_swiper="";
-  type.forEach(function(element, index) {
-    if(element.dataset.swiper){
-      name_swiper=element.dataset.swiper;
-    }
+  type.forEach(function(element) {
     if (filterType == '*') {
       element.classList.remove("d-none");
     } else if (!element.classList.contains('type-' + filterType)) {
@@ -28,12 +24,4 @@ function filtrar(event) {
       element.classList.remove("d-none");
     }
   });
-  var link_slider_brands = document.querySelector('.link-slider-brands');
-  if(link_slider_brands){
-    link_slider_brands.href = "marcas/?"+filterType;
-  }
-  if(name_swiper!=""){
-    eval(name_swiper).update();
-    eval(name_swiper).slideTo(0);
-  }
 }

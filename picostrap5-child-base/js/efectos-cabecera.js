@@ -175,4 +175,29 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   
 
+  var refreshIntervalId = setInterval(function() {
+    if (document.querySelectorAll('#offcanvasMenuMobile svg.fa-plus-large').length) {
+        clearInterval(refreshIntervalId);
+        menu_mobile();
+    }
+    }, 100);
+    //ICON PLUS MOBILE
+    function menu_mobile(){
+      const menu_mobile_icons_more =  document.querySelectorAll('#offcanvasMenuMobile svg');
+      menu_mobile_icons_more.forEach(function(menu_mobile_icon_more) {
+        menu_mobile_icon_more.addEventListener('click', function (event) {
+          var old_submenu = document.querySelector('#offcanvasMenuMobile .active');
+          if(old_submenu){
+            old_submenu.classList.remove('active');
+            old_submenu.querySelector('.submenu').classList.add('d-none');
+          }
+          var submenu = this.parentElement.parentElement;
+          if(submenu){
+            submenu.classList.add('active');
+            submenu.querySelector('.submenu').classList.remove('d-none');
+          }
+        });
+      });
+    };
+
 });
