@@ -21,7 +21,7 @@ get_header();
               <div class="col-12 text-uppercase">
                 ecolosofía
               </div>
-              <h1 class="col-12 mt-16 h1 text-green mb-70"">
+              <h1 class="col-12 mt-16 h1 text-green mb-70">
                 Procesos
               </h1>
               <div class="col-12 position-relative">
