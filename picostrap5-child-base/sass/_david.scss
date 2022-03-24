@@ -4,4 +4,7 @@
 
 .h-100vh{
     height: 100vh;
+    @include media-breakpoint-up(xxl) {
+        max-height: 900px;
+    }
 }

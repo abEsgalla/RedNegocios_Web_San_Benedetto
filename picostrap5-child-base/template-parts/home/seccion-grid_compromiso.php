@@ -19,13 +19,13 @@
 <?php
 if($fields["elemento_grid"]):
   ?>
-  <div class="col-12 mt-64 position-relative">
+  <div class="col-12 mt-64 mt-md-70 mt-xl-64 position-relative">
     <div class="row mx-sm-0">
       <?
       foreach ($fields["elemento_grid"] as $key => $single_grid):
         ?>
         <div 
-        class="order-lg-0 col-12 h-75-vw gx-4 gx-sm-0 <?=(($key+1)%2==0)?'order-0':'order-1'?>
+        class="order-lg-0 col-12 h-75-vw gx-4 gx-sm-0 <?=(($key+1)==2)?'order-0':'order-1'?>
         <?=($single_grid['tamano'])? $single_grid['tamano'] : '' ;?> 
         <?=($single_grid['fondo'])? '' : 'd-flex align-items-center' ;?>
         ">
