@@ -6,7 +6,7 @@
 <section class="mt-65 mb-64">
   <div class="container-fluid container-fluid-custom position-relative">
     <div class="row">
-      <div class="col-12" data-aos="fade-down">
+      <div class="col-12">
         <div class="row text-center text-secondary">
           <div class="col-12 fs-18 text-uppercase <? if( is_single(489) ) { echo 'fw-bold'; } ?>">
             <?=$seccion['slider']['texto_superior']?>

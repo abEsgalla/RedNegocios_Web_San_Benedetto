@@ -9,13 +9,10 @@
         <div class="container position-relative">
             <div class="row">
                 <div class="col-12 text-center">
-                    <?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25 producto-central' , 'alt' => '' , 'title' => '') ); ?>
+                        <?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25' , 'alt' => '' , 'title' => '') ); ?>
                 </div>
             </div>
         </div>
-        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/fruta-1.png'; ?>" class="position-absolute fruta-1">
-        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/fruta-2.png'; ?>" class="position-absolute fruta-2">
-        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/fruta-3.png'; ?>" class="position-absolute fruta-3">
     </div>
 </section>
 
@@ -23,6 +20,7 @@
     if($acf_fields['secciones']):
         foreach ($acf_fields['secciones'] as $seccion):
             $seccion['id_producto'] = $id_producto;
+            //var_dump($seccion['acf_fc_layout']);
             switch ($seccion['acf_fc_layout']):
                 case 'slider_imagenes_productos':
                     get_template_part( 'template-parts/landing/seccion', 'slider_imagenes_productos', $seccion);
@@ -58,7 +56,7 @@
                                 foreach ($seccion['col'] as $col): ?>
                                     <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?>">
                                     <? if($col['posicion_texto'] && $col['texto']): ?>
-                                            <div class="text-start text-secondary texto px-lg-48 mb-70">
+                                            <div class="text-start text-secondary texto px-lg-48 mb-70" data-aos="fade-left">
                                             <? if($col['posicion_texto']): ?>
                                                 <?=$col['texto']?>
                                             <? endif; ?>

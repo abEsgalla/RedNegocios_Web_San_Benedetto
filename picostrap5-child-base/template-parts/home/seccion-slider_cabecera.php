@@ -13,7 +13,7 @@ $fields = wp_parse_args( $args );
         if($slide['fondo']):
           ?>
           <div class="swiper-slide <?=($slide['color'] == 'text-white') ? 'slide-dark' : 'slide-light'; ?>">
-            <div class="position-relative bg-black">
+            <div class="position-relative">
                 <div class="bg-custom-image w-100vw h-100vh" 
                   style="background:url('<?=wp_get_attachment_image_url($slide['fondo'], "full")?>')">
                 </div>
@@ -37,12 +37,12 @@ $fields = wp_parse_args( $args );
                     endif;
                     if($slide['texto_superior']):
                       ?>
-                        <div class="col-12 col-sm-12 fs-18 lh-24 text-uppercase mb-sm-16 mb-14"><?=$slide['texto_superior']?></div>
+                        <div class="col-7 col-sm-12 fs-18 lh-24 text-uppercase mb-16"><?=$slide['texto_superior']?></div>
                       <?
                     endif;
                     if($slide['texto_principal']):
                       ?>
-                        <div class="col-12 fs-64 text-primary-banner lh-64 fw-bold text-break"><?=$slide['texto_principal']?></div>
+                        <div class="col-12 fs-64 lh-64 fw-bold"><?=$slide['texto_principal']?></div>
                       <?
                     endif;
                     if($slide['descripcion']):
@@ -56,7 +56,7 @@ $fields = wp_parse_args( $args );
                     endif;
                     if($slide['texto_cta']):
                       ?>
-                        <div class="col-12 mt-27 mt-sm-20 mt-xxl-36">
+                        <div class="col-12 mt-20 mt-xxl-36">
                           <a class="btn <?=$slide['estilo_boton']?> text-uppercase text-white rounded-0 fs-13" href="<?=$slide['link_cta']?>">
                             <?=$slide['texto_cta']?>
                           </a>

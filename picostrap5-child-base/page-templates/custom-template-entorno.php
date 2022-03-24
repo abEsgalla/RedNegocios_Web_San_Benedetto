@@ -44,7 +44,7 @@ get_header();
           <div class="offset-1 col-10 text-center h2">
             Reducción y compensación de emisiones
           </div>
-          <div class="offset-2 col-8 text-center mt-80 fs-17" data-aos="fade-up">
+          <div class="offset-2 col-8 text-center mt-80 fs-17">
             Creemos que <strong>una cantidad de CO2 emitida en un lugar de la Tierra 
             puede ser neutralizada con la reducción o eliminación de la misma cantidad de CO2 en otro punto del planeta.</strong>
             Gracias a que medimos nuestra huella de carbono, 
@@ -54,7 +54,7 @@ get_header();
           </div>
           <div class="col-12 mt-60">
             <div class="row text-center">
-              <div class="col-4" data-aos="fade-right">
+              <div class="col-4">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
@@ -66,7 +66,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-4" data-aos="fade-down">
+              <div class="col-4">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
@@ -78,7 +78,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-4" data-aos="fade-left">
+              <div class="col-4">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
@@ -105,7 +105,7 @@ get_header();
         <div class="row">
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
-              <div class="offset-2 col-8" data-aos="fade-right">
+              <div class="offset-2 col-8">
                 <div class="row">
                   <div class="col-12 h3">
                     Logística 
@@ -147,7 +147,7 @@ get_header();
           </div>
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
-              <div class="offset-2 col-8" data-aos="fade-left">
+              <div class="offset-2 col-8">
                 <div class="row">
                   <div class="col-12 h3 mt-102">
                     Limpieza y reforestación del entorno  
