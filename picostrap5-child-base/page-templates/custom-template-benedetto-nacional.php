@@ -59,7 +59,7 @@ get_header();
       <div class="col-12"> 
         <div class="row">
           <div class="col-6 g-0 position-relative">
-            <?=wp_get_attachment_image(754, "full", "", array( 'class' => 'w-100 position-absolute' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(754, "full", "", array( 'class' => 'w-100 position-absolute img-parallax' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 pt-103 pb-118">
             <div class="row">
@@ -100,7 +100,7 @@ get_header();
             </div>
           </div>
           <div class="col-6 g-0 position-relative">
-            <?=wp_get_attachment_image(755, "full", "", array( 'class' => 'w-100 position-absolute bottom-0' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(755, "full", "", array( 'class' => 'w-100 position-absolute bottom-0 img-parallax' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div> 
       </div>

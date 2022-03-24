@@ -37,7 +37,7 @@ get_header();
             <div class="row">
               <div class="col-8 offset-2">
                 <div class="row">
-                  <div class="col-12">
+                  <div class="col-12" data-aos="fade-right">
                     <div class="h2">Catálogo</div>
                     <div class="mt-32 fs-17">
                       Agua Mineral San Benedetto dispone de un amplísimo catálogo de productos y 
@@ -54,16 +54,16 @@ get_header();
           </div>
           <div class="col-6 position-relative g-0">
             <?=wp_get_attachment_image(927, "full", "", array( 'class' => 'position-absolute w-100 top-0 transform-translate-ny pb-32' , 'alt' => '' , 'title' => '') ); ?>
-            <?=wp_get_attachment_image(788, "full", "", array( 'class' => 'w-100 img-parallax' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(788, "full", "", array( 'class' => 'w-100 im g-parallax' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 g-0">
-            <?=wp_get_attachment_image(789, "full", "", array( 'class' => 'w-100 img-parallax' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(789, "full", "", array( 'class' => 'w-100 im g-parallax' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 d-flex align-items-center">
             <div class="row">
               <div class="col-8 offset-2">
                 <div class="row">
-                  <div class="col-12 fs-17">
+                  <div class="col-12 fs-17" data-aos="fade-left">
                     <div>
                     Disponemos también de toda una línea de productos que se adecúan perfectamente a las necesidades de la <strong>hostelería,
                      tiendas tradicionales y vending</strong>, acompañando a los consumidores en esas ocasiones especiales que demandan 

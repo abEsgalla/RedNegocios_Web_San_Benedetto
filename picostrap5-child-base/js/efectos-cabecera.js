@@ -110,19 +110,15 @@ document.addEventListener('DOMContentLoaded', function () {
       topBar.classList.remove('bg-white');
       let menu = document.querySelector('#offcanvas-menu');
       menu.classList.remove('show');
-
-      topBar.querySelector('nav').classList.remove('menu-dark');
-      topBar.querySelector('nav').classList.add('menu-light');
-
+      //Dejo los elementos dle menú como estaban
+      topBar.querySelectorAll('a').forEach( a => {a.classList.remove('text-secondary')});
       menu.classList.remove('menu-open-offcanvas');
     }
     function showOffCanvas() {
       let topBar = document.querySelector('#wrapper-navbar');
       topBar.classList.add('bg-white');
-
-      topBar.querySelector('nav').classList.add('menu-dark');
-      topBar.querySelector('nav').classList.remove('menu-light');
-
+      //Oscurezco los elementos del menú
+      topBar.querySelectorAll('a').forEach( a => {a.classList.add('text-secondary')});
       let menu = document.querySelector('#offcanvas-menu');
       menu.classList.add('show');
       menu.classList.add('menu-open-offcanvas');
