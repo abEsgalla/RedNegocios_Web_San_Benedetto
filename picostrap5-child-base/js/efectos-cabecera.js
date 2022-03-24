@@ -57,95 +57,147 @@ document.addEventListener('DOMContentLoaded', function () {
       generate_menuCanvas('marcas');
       generate_menuCanvas('ecolosofia');
       generate_menuCanvas('contacto');
+      // generate_menuCanvas('menu');
     }
 
     var custom_bootstrap = {};
 
     function generate_menuCanvas(id_element){
+      // id_element = 'menu';
       eval( "var linkMenu"+id_element+" = document.querySelector('[data-bs-target=\"#offcanvas-"+id_element+"\"]');");
-      eval( "var menuCanvas"+id_element+"Offcanvas = document.getElementById('offcanvas-"+id_element+"');");
-      eval( "var event"+id_element+"Offcanvas = new bootstrap.Offcanvas(menuCanvas"+id_element+"Offcanvas);");
+      eval( "var menuCanvasMenuOffcanvas = document.getElementById('offcanvas-menu');");
+      eval( "var eventMenuOffcanvas = new bootstrap.Offcanvas(menuCanvasMenuOffcanvas);");
 
       eval("linkMenu"+id_element).addEventListener('mouseover', function (event) {
-        checkAllMenuOffcanvasClose(true);
+        // checkAllMenuOffcanvasClose(true);
+        ocultarTodosMenus();
 
-        eval( "custom_bootstrap."+id_element+" = event"+id_element+"Offcanvas;");
-        eval("linkMenu"+id_element).classList.add("active","active-offcanvas");
-        eval("event"+id_element+"Offcanvas").show();
-        eval("menuCanvas"+id_element+"Offcanvas").classList.add("menu-open-offcanvas");
-        eval("menuCanvas"+id_element+"Offcanvas").parentElement.classList.remove("h-0");
-        eval("menuCanvas"+id_element+"Offcanvas").classList.remove("h-0");
-        eval("menuCanvas"+id_element+"Offcanvas").classList.add("h-auto");
+
+        // document.querySelector('.offcanvas-' + id_element).classList.remove('opacity-0');
+        mostrarMenu(id_element);
+        showOffCanvas();
+
+        // eval( "custom_bootstrap."+id_element+" = eventMenuOffcanvas;");
+        // eval("linkMenu"+id_element).classList.add("active","active-offcanvas");
+        // eval("eventMenuOffcanvas").show();
+
+        // eval("menuCanvasMenuOffcanvas").classList.add("menu-open-offcanvas");
+        // eval("menuCanvasMenuOffcanvas").parentElement.classList.remove("h-0");
+        // eval("menuCanvasMenuOffcanvas").classList.remove("h-0");
+        // eval("menuCanvasMenuOffcanvas").classList.add("h-auto");
 
       });
-      eval("menuCanvas"+id_element+"Offcanvas").addEventListener('show.bs.offcanvas', function () {
+      eval("menuCanvasMenuOffcanvas").addEventListener('show.bs.offcanvas', function () {
         menuContainerColor.classList.add("menu-open-offcanvas");
         //eval("menuCanvas"+id_element+"Offcanvas").classList.remove("d-none");
       });
-      eval("menuCanvas"+id_element+"Offcanvas").addEventListener('hidden.bs.offcanvas', function () {
-        eval("menuCanvas"+id_element+"Offcanvas").classList.remove("d-none");
+      eval("menuCanvasMenuOffcanvas").addEventListener('hidden.bs.offcanvas', function () {
+        eval("menuCanvasMenuOffcanvas").classList.remove("d-none");
         if(document.querySelector(".active.active-offcanvas")){
           document.querySelector(".active.active-offcanvas").classList.remove("active");
         }
-        eval("menuCanvas"+id_element+"Offcanvas").classList.remove("h-auto");
-        eval("menuCanvas"+id_element+"Offcanvas").classList.add("h-0");
+        eval("menuCanvasMenuOffcanvas").classList.remove("h-auto");
+        eval("menuCanvasMenuOffcanvas").classList.add("h-0");
         //menuContainerColor.classList.remove("menu-open-offcanvas");
       });
     }
 
-    function checkAllMenuOffcanvasClose(d_none){
-      checkMenuOffcanvasClose('nosotros',d_none);
-      checkMenuOffcanvasClose('marcas',d_none);
-      checkMenuOffcanvasClose('ecolosofia',d_none);
-      checkMenuOffcanvasClose('contacto',d_none);
+    // function checkAllMenuOffcanvasClose(d_none){
+    //   ocultarMenu('nosotros');
+    //   ocultarMenu('marcas');
+    //   ocultarMenu('ecolosofia');
+    //   ocultarMenu('contacto');
+    // }
+
+    function ocultarTodosMenus() {
+      ocultarMenu('nosotros');
+      ocultarMenu('marcas');
+      ocultarMenu('ecolosofia');
+      ocultarMenu('contacto');
+    }
+
+    function ocultarMenu(menu) {
+      if(document.querySelector(".active.active-offcanvas")){
+        document.querySelector(".active.active-offcanvas").classList.remove("active");
+      }
+      document.querySelector('.offcanvas-' + menu).classList.add('d-none');
+      document.querySelector('.offcanvas-' + menu).classList.add('h-0');
+    }
+
+    function mostrarMenu(menu) {
+      document.querySelector('.offcanvas-' + menu).classList.remove('d-none');
+      document.querySelector('.offcanvas-' + menu).classList.remove('h-0');
+    }
+    function closeOffCanvas() {
+      let topBar = document.querySelector('#wrapper-navbar');
+      topBar.classList.remove('bg-white');
+      let menu = document.querySelector('#offcanvas-menu');
+      menu.classList.remove('show');
+      menu.classList.remove('menu-open-offcanvas');
+      // menu.classList.remove('visible');
+      
+    }
+    function showOffCanvas() {
+      let topBar = document.querySelector('#wrapper-navbar');
+      topBar.classList.add('bg-white');
+      let menu = document.querySelector('#offcanvas-menu');
+      menu.classList.add('show');
+      menu.classList.add('menu-open-offcanvas');
+      menu.classList.add('visible');
     }
 
     function checkMenuOffcanvasClose(id_element,d_none){
-      if(eval("custom_bootstrap."+id_element)){
-        if(eval("custom_bootstrap."+id_element+"._isShown")==true){
-          if(document.querySelector(".active.active-offcanvas")){
-            document.querySelector(".active.active-offcanvas").classList.remove("active");
-          }
-          if(d_none==true){
-            eval("custom_bootstrap."+id_element+"._element.classList.add('d-none');");
-          }
-          eval("custom_bootstrap."+id_element).hide();
-        }
-      }
+      // if(eval("custom_bootstrap."+id_element)){
+      //   if(eval("custom_bootstrap."+id_element+"._isShown")==true){
+      //     if(document.querySelector(".active.active-offcanvas")){
+      //       document.querySelector(".active.active-offcanvas").classList.remove("active");
+      //     }
+      //     if(d_none==true){
+      //       eval("custom_bootstrap."+id_element+"._element.classList.add('d-none');");
+      //     }
+      //     eval("custom_bootstrap."+id_element).hide();
+      //   }
+      // }
     }
 
-    document.querySelector('.fixed-top').addEventListener('mouseleave', function (event) {
-      checkAllMenuOffcanvasClose(false);
-      menuContainerColor.classList.remove("menu-open-offcanvas");
+    document.querySelector('#wrapper-navbar').addEventListener('mouseleave', function (event) {
+      ocultarTodosMenus();
+      closeOffCanvas();
     });
 
-    const navs_link_not_offcanvas = document.querySelectorAll('.fixed-top .nav-link:not([role="button"])');
+    const navs_link_not_offcanvas = document.querySelectorAll('.fixed-top .nav-link:not([role="button"]):not(.active)');
     navs_link_not_offcanvas.forEach(function(nav_link_not_offcanvas) {
       nav_link_not_offcanvas.addEventListener('mouseover', function (event) {
-        checkAllMenuOffcanvasClose(false);
+        // checkAllMenuOffcanvasClose(false);
+        if(document.querySelector(".active.active-offcanvas")){
+          document.querySelector(".active.active-offcanvas").classList.remove("active");
+        }
+        ocultarTodosMenus();
+        closeOffCanvas();
       });
     });
 
     //TEMP
-    var swap_images_submenu_canvas = document.querySelectorAll('#offcanvas-ecolosofia a[data-image]');
+    var swap_images_submenu_canvas = document.querySelectorAll('.offcanvas-ecolosofia a[data-image]');
     swap_images_submenu_canvas.forEach(function(swap_image_submenu_canvas) {
       swap_image_submenu_canvas.addEventListener('mouseover', function (event) {
-        document.querySelector('#offcanvas-ecolosofia .image img').src = this.getAttribute('data-image');
-        document.querySelector('#offcanvas-ecolosofia .image img').srcset = this.getAttribute('data-image');
+        console.log(this.getAttribute('data-image'));
+        document.querySelector('.offcanvas-ecolosofia .image img').src = this.getAttribute('data-image');
+        document.querySelector('.offcanvas-ecolosofia .image img').srcset = this.getAttribute('data-image');
       });
     });
-    var swap_images_submenu_canvas = document.querySelectorAll('#offcanvas-nosotros a[data-image]');
+    var swap_images_submenu_canvas = document.querySelectorAll('.offcanvas-nosotros a[data-image]');
     swap_images_submenu_canvas.forEach(function(swap_image_submenu_canvas) {
       swap_image_submenu_canvas.addEventListener('mouseover', function (event) {
-        document.querySelector('#offcanvas-nosotros .image img').src = this.getAttribute('data-image');
-        document.querySelector('#offcanvas-nosotros .image img').srcset = this.getAttribute('data-image');
+        document.querySelector('.offcanvas-nosotros .image img').src = this.getAttribute('data-image');
+        document.querySelector('.offcanvas-nosotros .image img').srcset = this.getAttribute('data-image');
       });
     });
-    var swap_images_submenu_canvas = document.querySelectorAll('#offcanvas-contacto a[data-image]');
+    var swap_images_submenu_canvas = document.querySelectorAll('.offcanvas-contacto a[data-image]');
     swap_images_submenu_canvas.forEach(function(swap_image_submenu_canvas) {
       swap_image_submenu_canvas.addEventListener('mouseover', function (event) {
-        document.querySelector('#offcanvas-contacto .image img').src = this.getAttribute('data-image');
-        document.querySelector('#offcanvas-contacto .image img').src = this.getAttribute('data-image');
+        document.querySelector('.offcanvas-contacto .image img').src = this.getAttribute('data-image');
+        document.querySelector('.offcanvas-contacto .image img').srcset = this.getAttribute('data-image');
       });
     });
     //TEMP
