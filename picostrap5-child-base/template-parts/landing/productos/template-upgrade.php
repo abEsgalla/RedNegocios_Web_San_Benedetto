@@ -119,7 +119,7 @@ if($acf_fields['secciones']):
             break;
             case 'cols_imagenes_texto':
                 ?>
-                <section class=" zi-99 position-relative bg-dark pb-160 seccion_imagenes_texto">
+                <section class=" zi-99 position-relative bg-dark pb-160 seccion_imagenes_texto background-upgrade-imagen">
                     <div class="container position-relative">
                         <div class="row">
                         <div class="col-12 offset-xl-1 col-xl-10">
