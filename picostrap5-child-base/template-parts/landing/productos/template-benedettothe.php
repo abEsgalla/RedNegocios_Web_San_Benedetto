@@ -23,7 +23,8 @@
             //var_dump($seccion['acf_fc_layout']);
             switch ($seccion['acf_fc_layout']):
                 case 'slider_imagenes_productos':
-                    get_template_part( 'template-parts/landing/seccion', 'slider_imagenes_productos', $seccion);
+                    echo '<div class="background-start-te">';
+                    get_template_part( 'template-parts/landing/seccion', 'slider_imagenes_productos_te', $seccion);
                 break;
                 case 'elementos_quimicos':
                     get_template_part( 'template-parts/landing/seccion', 'elementos_quimicos', $seccion);
@@ -33,6 +34,7 @@
                 break;
                 case 'texto_centrado':
                     get_template_part( 'template-parts/landing/seccion', 'texto_centrado', $seccion);
+                    echo '</div>';
                 break;
                 case 'cols_imagenes_texto':
                     get_template_part( 'template-parts/landing/seccion', 'cols_imagenes_texto', $seccion);
