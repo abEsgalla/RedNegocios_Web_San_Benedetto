@@ -76,7 +76,7 @@ $fields = wp_parse_args( $args );
     ?>
   </div>
   <!-- If we need pagination -->
-  <div class="row">
+  <div class="row gx-sm-2 gx-4">
     <div class="col-12 col-md-12 offset-md-0 d-flex justify-content-start justify-content-md-center align-items-center swiper-pagination swiper-pagination-home position-absolute bt-40"></div>
   </div>
 

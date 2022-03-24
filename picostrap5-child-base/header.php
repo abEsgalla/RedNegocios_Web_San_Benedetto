@@ -195,7 +195,7 @@ defined( 'ABSPATH' ) || exit;
 
         <div class="fixed-top" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
           <nav class="force-transition zi-1050 navbar <?=$shadow?> <?php echo get_theme_mod('picostrap_header_navbar_expand','navbar-expand-lg'); ?> <?php echo get_theme_mod('picostrap_header_navbar_position')." ". get_theme_mod('picostrap_header_navbar_color_scheme','').' '. get_theme_mod('picostrap_header_navbar_color_choice', $colorMenu); ?>" aria-label="Main Navigation" >
-            <div class="container">
+            <div class="container gx-sm-2 gx-4">
               <div id="logo-tagline-wrap">
                   <!-- Your site title as branding in the menu -->
                   <?php if ( ! has_custom_logo() ) { ?>
@@ -234,7 +234,7 @@ defined( 'ABSPATH' ) || exit;
               
                   </div> <!-- /logo-tagline-wrap -->
 
-              <button class="btn d-lg-none btn-outline-white border-0" type="button" 
+              <button class="btn d-lg-none btn-outline-white border-0 px-0" type="button" 
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuMobile" aria-controls="offcanvasMenuMobile">
                 <span class="fw-500 fs-13 text-white text-uppercase">Menu<span>
                 <?=wp_get_attachment_image(1217, "full")?>

@@ -12,7 +12,7 @@ foreach ($fields['slides'] as $slide):
     $slider_html.="
     <div class='swiper-slide text-secondary h-auto' data-bgcolor=".$slide['color_fondo']. ">
         <div class='container-fluid'>
-            <div class='container'>
+            <div class='container gx-4'>
                 <div class='row align-items-center'>
                     <div class='col-12 col-lg-8'>
                         <div class='row text-center text-lg-start mt-138 mt-md-200 mt-lg-0'>
@@ -46,8 +46,8 @@ endforeach;
     <div class="swiper swiper-home-promocional">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper position-relative">
-            <div class='container-fluid position-absolute top-0 start-0 zi-99 px-12 px-sm-0'>
-                <div class='container'>
+            <div class='container-fluid position-absolute top-0 start-0 zi-99'>
+                <div class='container gx-4'>
                     <div class='row'>
                         <div class="col-12">
                             <div class='row'>
@@ -82,7 +82,7 @@ endforeach;
 </div>
 
 <div class="col-12">
-    <div class="container">
+    <div class="container gx-4">
         <div class="row g-0">
             <div class="zi-99 col-12 d-flex justify-content-lg-start justify-content-end align-items-center position-relative bt-40">
                 <div class="d-lg-flex">

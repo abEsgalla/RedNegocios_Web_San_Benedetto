@@ -16,7 +16,7 @@
 		
 		
 		<div class="wrapper bg-secondary" id="wrapper-footer-colophon">
-			<div class="container">
+			<div class="container gx-sm-2 gx-4">
 				<div class="row">
 					<div class="col-12">
 						<footer class="site-footer py-48 text-white" id="colophon">
