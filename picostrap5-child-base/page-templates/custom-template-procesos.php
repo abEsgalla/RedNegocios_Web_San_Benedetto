@@ -13,10 +13,10 @@ get_header();
   <div class="container-fluid position-relative zi-9 bg-black py-261">
     <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(623, "full")?>')"></div>
-      <?=wp_get_attachment_image(773, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99' , 'alt' => '' , 'title' => '') ); ?>
+      <?=wp_get_attachment_image(773, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99 mw-50vw d-none d-md-block' , 'alt' => '' , 'title' => '') ); ?>
       <div class="container position-relative">
         <div class="row">
-          <div class="offset-4 col-4 text-center">
+          <div class="col-12 offset-xl-4 col-xl-4 text-center">
             <div class="row text-white">
               <div class="col-12 text-uppercase">
                 ecolosofía
@@ -42,7 +42,7 @@ get_header();
     <div class="row">
       <div class="g-0 col-12 mb-105">
         <div class="row">
-          <div class="offset-2 col-8 text-center h2">
+          <div class="col-12 offset-xl-2 col-xl-8 text-center h2 fs-45 fs-xl-64">
           Medición de indicadores estratégicos
           </div>
         </div>
@@ -53,7 +53,7 @@ get_header();
         <div class="row position-relative">
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
-              <div class="offset-2 col-8" data-aos="fade-right">
+              <div class="col-12 offset-xl-2 col-xl-8" data-aos="fade-right">
                 <div class="row">
                   <div class="col-12 h3">
                     Huella de Carbono 
@@ -100,7 +100,7 @@ get_header();
           </div>
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
-              <div class="offset-2 col-8" data-aos="fade-left">
+              <div class="col-12 offset-xl-2 col-xl-8" data-aos="fade-left">
                 <div class="row">
                   <div class="col-12 h3 mt-89">
                     Smart Water 4.0 
@@ -130,12 +130,12 @@ get_header();
 <section class="my-96 mt-xl-245 mb-xl-185">
   <div class="container">
     <div class="row text-secondary">
-      <div class="col-12 h2 text-center">
+      <div class="col-12 h2 fs-45 fs-xl-64 text-center">
         Circularidad de los recursos 
       </div>
       <div class="col-12 mt-90">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <div class="row">
               <div class="col-12 ratio-1x1">
                 <?=wp_get_attachment_image(778, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -153,7 +153,7 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <div class="row">
               <div class="col-12 ratio-1x1">
                 <?=wp_get_attachment_image(777, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -167,7 +167,7 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <div class="row">
               <div class="col-12 ratio-1x1">
                 <?=wp_get_attachment_image(776, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
