@@ -742,6 +742,18 @@ span{
     background-repeat: no-repeat !important;
 }
 
+.bg-custom-image-brand-menu{
+    background-position: center center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+.bg-custom-image-product-menu{
+    background-position: center center !important;
+    background-size: auto 100% !important;
+    background-repeat: no-repeat !important;
+}
+
 .more-brands{
     overflow: hidden;
     svg{
