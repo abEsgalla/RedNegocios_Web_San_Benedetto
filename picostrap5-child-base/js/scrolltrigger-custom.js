@@ -169,18 +169,32 @@ if( document.body.classList.contains('single-landing') ) {
 
 if( document.body.classList.contains('page-template-custom-template-historia') ) {
   //Barrita vertical que se rellena con scroll en página Historia
-  let line_height = document.querySelector('.border-dashed-custom').clientHeight;
+  let line_height = document.querySelector('.border-dashed-custom').clientHeight + 256;
   gsap.to(".border-dashed-custom .border-fill", {
     scrollTrigger: {
       trigger: '.border-dashed-custom',
-      toggleActions: 'play none none none',
-      start: 'top center',
+      start: '-265px center',
       end: 'bottom center',
       scrub: true,
       markers: false,
       onUpdate: self => {
         let height = self.progress * line_height;
         document.querySelector(".border-dashed-custom .border-fill").style.height = height + 'px';
+      }
+    }
+  });
+
+  let maxWhiteLineHeight = 150;
+  gsap.to(".white-line-timeline", {
+    scrollTrigger: {
+      trigger: '.white-line-timeline-trigger',
+      start: 'top center',
+      end: 'bottom center',
+      scrub: true,
+      markers: false,
+      onUpdate: self => {
+        let height = self.progress * maxWhiteLineHeight;
+        document.querySelector(".white-line-timeline").style.height = height + 'px';
       }
     }
   });
@@ -202,8 +216,7 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
     gsap.to(selectorAnoLeft, {
       scrollTrigger: {
         trigger: '.ano-timeline-' + ano,
-        toggleActions: 'play none none none',
-        start: '20px 50%',
+        start: '-130px 50%',
         end: 'bottom',
         scrub: true,
         markers: false,
@@ -229,8 +242,7 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
     gsap.to(selectorAnoRight, {
       scrollTrigger: {
         trigger: '.ano-timeline-' + ano,
-        toggleActions: 'play none none none',
-        start: '20px bottom',
+        start: '-130px bottom',
         end: 'bottom',
         scrub: true,
         markers: false,
@@ -251,6 +263,7 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
         },
       }
     });
+
   });
 }
 

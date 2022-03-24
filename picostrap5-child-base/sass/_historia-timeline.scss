@@ -3,7 +3,8 @@
   background-color: $secondary;
   position: absolute;
   left: -1px;
-  top: 0;
+  top: -96px;
+  z-index: 101;
 }
 
 .ano-timeline {
