@@ -42,6 +42,8 @@
                     ?>
                     <section class=" zi-99 position-relative mt-56 pb-178 seccion_cols_imagenes background-col-imagenes-zero">
                         <div class="container position-relative">
+                            <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/zero_manzana_imagenes.png'; ?>" class="zi-99 position-absolute zero-manzana-imagenes">
+                            <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/zero_limon_imagenes.png'; ?>" class="position-absolute zero-limon-imagenes">
                             <div class="row">
                             <div class="col-12 offset-xl-1 col-xl-10">
                                 <div class="row ">
