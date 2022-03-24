@@ -3,77 +3,77 @@ if( document.body.classList.contains('single-landing') ) {
     scrollTrigger: {
       trigger: '.producto-central',
       toggleActions: 'play pause pause reverse',
-      start: 'center center',
+      start: 'top center',
       end: 'bottom center',
       scrub: true,
       markers: false,
     },
-    y: 60,
+    y: 120,
     // rotation: 10,
   });
 
+  //Enjoy
   if( document.body.classList.contains('postid-203') ) {
 
     gsap.to('.limon-1', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
-        toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        trigger: '.bg-custom-image',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
-      y: 220,
+      y: 420,
       rotation: 0,
     });
 
     //Limon borroso
     gsap.to('.limon-3', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
+        trigger: '.bg-custom-image',
         toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
-      y: -200,
+      y: -400,
       rotation: 0,
     });
 
     gsap.to('.limon-4', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
+        trigger: '.bg-custom-image',
         toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
-      y: 220,
+      y: 420,
       rotation: 0,
     });
 
     gsap.to('.fresa-1', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
+        trigger: '.bg-custom-image',
         toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
-      y: 100,
+      y: 200,
       rotation: 0,
     });
 
     //Fresa borrosa
     gsap.to('.fresa-2', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
+        trigger: '.bg-custom-image',
         toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
@@ -81,6 +81,34 @@ if( document.body.classList.contains('single-landing') ) {
       rotation: 0,
     });
 
+  }
+
+  //Primavera
+  if( document.body.classList.contains('postid-211') ) {
+    gsap.to('.gota', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        toggleActions: 'restart pause reverse pause',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: -180,
+      rotation: 0,
+    });
+    gsap.to('.flor', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        toggleActions: 'restart pause reverse pause',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: 120,
+      rotation: 0,
+    });
   }
 }
 
@@ -140,6 +168,44 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
           document.querySelector(".ano-" + ano).classList.add('opacity-25');
         },
       }
+    });
+  });
+}
+
+
+
+//BG Parallax
+let bgParallax = document.querySelectorAll('.bg-parallax');
+if(bgParallax) {
+  bgParallax.forEach((bg) => {
+    gsap.to(bg, {
+      backgroundPosition: `50% ${innerHeight / 2}px`,
+      ease: "none",
+      scrollTrigger: {
+        trigger: bg,
+        start: "top top", 
+        end: "bottom top",
+        scrub: true
+      }
+    });
+  });
+}
+
+//img Parallax
+let imgParallax = document.querySelectorAll('.img-parallax');
+if(imgParallax) {
+  imgParallax.forEach((img) => {
+    gsap.to(img, {
+      scrollTrigger: {
+        trigger: img,
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: -200,
+      ease: "sine.out",
+      rotation: 0,
     });
   });
 }

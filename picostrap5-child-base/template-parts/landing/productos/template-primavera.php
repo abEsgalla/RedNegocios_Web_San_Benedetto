@@ -59,7 +59,7 @@
                                         <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?>">
                                             <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 ' , 'alt' => '' , 'title' => '') ); ?>
                                         <? if($col['posicion_texto'] && $col['texto']): ?>
-                                                <div class="text-start text-secondary texto px-lg-48 mt-lg-80 mb-70">
+                                                <div class="text-start text-secondary texto px-lg-48 mt-lg-80 mb-70" data-aos="fade-right">
                                                 <? if($col['posicion_texto']): ?>
                                                     <?=$col['texto']?>
                                                 <? endif; ?>
