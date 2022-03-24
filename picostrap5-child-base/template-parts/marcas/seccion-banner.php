@@ -37,7 +37,7 @@ $fields = wp_parse_args( $args );
             ?>
             <a href="<?=$fields["link_cta"]?>" class="col-12 text-center">
                 <div class="btn btn-outline-white border-2 fw-500 fs-14 text-uppercase mt-40 rounded-0">
-                  <?=$fields["texto_cta"]?>
+                  <span><?=$fields["texto_cta"]?><span>
                 </div>
             </a>
             <?

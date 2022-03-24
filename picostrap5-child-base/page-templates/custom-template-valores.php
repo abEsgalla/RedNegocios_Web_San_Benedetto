@@ -297,7 +297,7 @@ get_header();
                     <div class="col-12 mt-36">
                       <a href="<?=get_permalink(583)?>" 
                       class="btn btn-outline-white text-uppercase rounded-0 border-2 fs-14 fw-500">
-                        ir a ecolosofía
+                        <span>ir a ecolosofía</span>
                       </a>
                     </div>
                   </div>

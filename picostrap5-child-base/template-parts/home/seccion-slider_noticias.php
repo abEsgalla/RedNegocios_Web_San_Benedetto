@@ -61,6 +61,6 @@ wp_reset_postdata();
 </div>
 <div class="col-12 text-center">
   <a href="<?=esc_url(get_post_type_archive_link('post'));?>" class="fw-500 btn btn-outline-secondary text-uppercase mt-64 rounded-0">
-    ver todas
+    <span>ver todas</span>
   </a>
 </div>
