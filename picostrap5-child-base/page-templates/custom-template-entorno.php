@@ -10,23 +10,23 @@ get_header();
 ?>
 
 <section>
-  <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(779, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99' , 'alt' => '' , 'title' => '') ); ?>
-    <?=wp_get_attachment_image(780, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-    <div class="container">
-      <div class="row">
-        <div class="offset-4 col-4 text-center">
-          <div class="row text-white">
-            <div class="col-12 text-uppercase">
-              ecolosofía
-            </div>
-            <h1 class="col-12 mt-16 h1 text-green">
-              Entorno
-            </h1>
-            <div class="col-12 mt-40">
-              <?=wp_get_attachment_image(636, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-228">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(780, "full")?>')"></div>
+      <?=wp_get_attachment_image(779, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99' , 'alt' => '' , 'title' => '') ); ?>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="offset-4 col-4 text-center">
+            <div class="row text-white">
+              <div class="col-12 text-uppercase">
+                ecolosofía
+              </div>
+              <h1 class="col-12 mt-16 h1 text-green">
+                Entorno
+              </h1>
+              <div class="col-12 mt-40">
+                <?=wp_get_attachment_image(636, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+              </div>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 mt-xl-185">
+<section class="mt-185">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12">
@@ -43,7 +43,7 @@ get_header();
           <div class="offset-1 col-10 text-center h2">
             Reducción y compensación de emisiones
           </div>
-          <div class="offset-2 col-8 text-center mt-80">
+          <div class="offset-2 col-8 text-center mt-80 fs-17">
             Creemos que <strong>una cantidad de CO2 emitida en un lugar de la Tierra 
             puede ser neutralizada con la reducción o eliminación de la misma cantidad de CO2 en otro punto del planeta.</strong>
             Gracias a que medimos nuestra huella de carbono, 
@@ -51,7 +51,7 @@ get_header();
             ¿Cómo? Invirtiendo en <strong>proyectos forestales sostenibles.</strong> <br></br>
             Descubre más sobre ellos aquí:  
           </div>
-          <div class="col-12 mt-56">
+          <div class="col-12 mt-60">
             <div class="row text-center">
               <div class="col-4">
                 <div class="row">
@@ -97,7 +97,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 mt-xl-245">
+<section class="mt-245">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12">
@@ -109,7 +109,7 @@ get_header();
                   <div class="col-12 h3">
                     Logística 
                   </div>
-                  <div class="col-12 mt-30 fs-17">
+                  <div class="col-12 mt-30 mb-56 fs-17">
                     En la medida de lo posible, tratamos de utilizar formas de transporte sostenible, 
                     como el uso de vehículos propulsados por GNL y camiones dúo-tráiler, 
                     contribuyendo así a reducir nuestras emisiones de CO2. 
@@ -136,7 +136,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 mb-xl-245">
+<section class="mb-242">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12">
@@ -148,7 +148,7 @@ get_header();
             <div class="row">
               <div class="offset-2 col-8">
                 <div class="row">
-                  <div class="col-12 h3">
+                  <div class="col-12 h3 mt-102">
                     Limpieza y reforestación del entorno  
                   </div>
                   <div class="col-12 mt-30 fs-17">
@@ -169,7 +169,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-56">
   <div class="container">
     <div class="row">
       <div class="col-12 position-relative">

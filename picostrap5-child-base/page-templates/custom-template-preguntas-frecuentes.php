@@ -9,23 +9,23 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section class="position-relative">
-  <div class="position-relative bg-secondary-darker">
-    <?=wp_get_attachment_image(787, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="row text-white">
-            <div class="col-12 fs-18 text-uppercase">
-              GRUPO SAN BENEDETTO
-            </div>
-            <h1 class="col-12 h2">
-                Preguntas frecuentes
-            </h1>
-            <div class="col-12 fs-24 mt-24">
-                ¿Tienes alguna duda?
+<section>
+  <div class="container-fluid position-relative zi-9 bg-secondary-darker pt-221 pb-149">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(787, "full")?>')"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-6">
+            <div class="row text-white">
+              <div class="col-12 fs-18 text-uppercase">
+                GRUPO SAN BENEDETTO
+              </div>
+              <h1 class="col-12 h2">
+                  Preguntas frecuentes
+              </h1>
+              <div class="col-12 fs-24 mt-24">
+                  ¿Tienes alguna duda?
+              </div>
             </div>
           </div>
         </div>

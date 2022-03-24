@@ -1,0 +1,7 @@
+.slider-cover {
+  transition: transform 0.8s ease;
+  transform: translateX(0vh);
+  &.to-the-left {
+    transform: translateX(-100vw);
+  }
+}

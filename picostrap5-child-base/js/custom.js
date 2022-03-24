@@ -11,10 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
   if( swiper_home ) {
     let active_slide = document.querySelector(".swiper-home .swiper-slide-active");
     let navbar = document.querySelector("nav.navbar");
+    let slider_principal = document.querySelector("#sliderPrincipal")
     if( active_slide.classList.contains("slide-light") ) {
       navbar.classList.add('menu-dark');
+      slider_principal.classList.add('slide-dark');
     } else {
       navbar.classList.add('menu-light');
+      slider_principal.classList.add('slide-light');
     }
   }
 

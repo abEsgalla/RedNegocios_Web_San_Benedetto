@@ -21,9 +21,18 @@
   foreach ($categories_id_slider_html as $id_term => $id_posts):
     $term_name = get_term( $id_term )->name;
     $term_name_sanitice = str_replace(' ', '-', strtolower($term_name));
-    $active=($counter==0)?'active':'';
-    $show=($counter==0)?'show':'';
-    $selected=($counter==0)?'true':'false';
+    $active="";
+    if(isset($_GET['refrescos']) && $term_name_sanitice=='refrescos'){
+      $active="active";
+    }
+    if(isset($_GET['agua-mineral']) && $term_name_sanitice=='agua-mineral'){
+      $active="active";
+    }
+    if($counter==0 && !isset($_GET['agua-mineral']) && !isset($_GET['refrescos'])){
+      $active="active";
+    }
+    $selected=($active=="active")?'true':'false';
+    $show=($active=="active")?'show':'';
     $cabecera_tabs_html.="
       <li class='nav-item mx-32' role='presentation'>
           <button class='fw-bolder nav-link ".$active."' id='".$term_name_sanitice."-tab' 
@@ -36,7 +45,7 @@
     <div class='col-12 tab-pane fade ".$show." ".$active."' id='".$term_name_sanitice."' 
     role='tabpanel' aria-labelledby='".$term_name_sanitice."-tab'>
       <div class='row text-center'>
-          <div class='col-12 offset-lg-2 col-lg-8 mt-80 text-secondary fs-17'>
+          <div class='col-12 offset-lg-2 col-lg-8 mt-85 text-secondary fs-17'>
               ".get_term_field( 'description', $id_term )."
           </div>
           <div class='col-12'>
@@ -44,7 +53,7 @@
     foreach ($id_posts as $id_producto):
     
     $cuerpo_tabs_html.="
-                <div class='col-4 mt-64'>
+                <div class='col-4 mt-80'>
                 <a class='text-decoration-none d-inline-block w-100 h-100 contenedor-cursor-custom' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>";
     if(get_field('caracteristicas_producto',$id_producto) && get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"]):
       $cuerpo_tabs_html.= 

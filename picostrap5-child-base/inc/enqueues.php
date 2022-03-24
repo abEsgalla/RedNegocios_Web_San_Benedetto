@@ -5,6 +5,11 @@ defined( 'ABSPATH' ) || exit;
 
 //ENQUEUE
 function esgalla_scripts() {
+
+	// FontAwesome
+	wp_register_script('fontawesome', 'https://kit.fontawesome.com/3dbe079225.js', array(), '', true);
+	wp_enqueue_script('fontawesome');
+	wp_script_add_data( 'fontawesome', array( 'crossorigin' ) , array( 'anonymous' ) );
 	
 	// Swiper slider
 	wp_enqueue_style( 'swiper-slider-css', get_stylesheet_directory_uri() . '/css-output/swiper-bundle.min.css', array('picostrap-styles'), time());

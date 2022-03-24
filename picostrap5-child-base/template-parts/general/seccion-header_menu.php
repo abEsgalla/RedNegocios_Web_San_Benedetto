@@ -29,9 +29,13 @@ wp_reset_postdata();
 $header_menu="";
 foreach ($categories_array_by_id as $id_term => $id_posts):
     $term_name = get_term( $id_term )->name;
+    $border="";
+    if($id_term==4){
+        $border="border-start";
+    }
     $header_menu.="
     <div class='col'>
-        <div class='row'>
+        <div class='row px-xl-32 ".$border."'>
             <div class='col-12 text-uppercase fs-14 fw-bold text-secondary'>".$term_name."</div>
             <div class='col-12 mt-24'>
                 <div class='row'>";
@@ -43,6 +47,7 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
     if($limit==4){
         continue;
     }
+    $image_hover=get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"];
     if(get_field('caracteristicas_producto',$id_producto)["imagen_grid_page_marcas"]):
         $custom_image_bg_id = get_field('caracteristicas_producto',$id_producto)["imagen_grid_page_marcas"];
     else:
@@ -51,9 +56,10 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
     $header_menu.="    
                     <div class='col-2'>
                         <div class='row'>
-                            <a class='text-decoration-none text-reset position-relative' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
+                            <a class='single-menu-brand text-decoration-none text-reset position-relative' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
                                 <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."' class='col-12 ratio ratio-2x3'>
-                                    ".wp_get_attachment_image($custom_image_bg_id, 'full', '', array( 'class' => 'px-2 fix-translate-absolute w-100 h-auto top-50 start-50' , 'alt' => '' , 'title' => '') )."
+                                    <div class='px-2 bg-custom-image-brand-menu img-menu-brand' style='background:url(".wp_get_attachment_image_url($custom_image_bg_id, 'full').")'></div>
+                                    <div class='px-2 bg-custom-image-product-menu img-menu-product' style='background:url(".wp_get_attachment_image_url($image_hover, 'full').")'></div>
                                 </div>
                                 <div class='col-12 mt-10 text-secondary fw-500 fs-13'>
                                 ".get_the_title($id_producto)."
@@ -63,11 +69,12 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
                     </div>";
     $limit++;
     endforeach;
+    $term_name_sanitice = str_replace(' ', '-', strtolower($term_name));
     $header_menu.="    
                     <div class='col-2'>
                         <div class='row'>
-                            <a class='text-decoration-none text-reset position-relative' href='".get_permalink( 49 )."'>
-                                <div class='col-12 ratio ratio-2x3 border border-1 shadow more-brands'>
+                            <a class='text-decoration-none text-reset position-relative' href='".get_permalink( 49 )."?".$term_name_sanitice."'>
+                                <div class='col-12 ratio ratio-2x3 border border-1 more-brands'>
                                 ".
                                 '
                                 <div class="d-flex align-items-end pb-12 ps-12">
@@ -122,9 +129,29 @@ if(get_post_type()=="landing"):
     style="background-color:<?=get_field('caracteristicas_producto',$id_producto)['color_corporativo']?>">
         <div class="container">
         <div class="row">
-            <div class="col-12 text-uppercase py-16 m-0 text-white h6 fs-24">
-            <?=get_the_title()?>
-            </div>
+            <? if($id_producto!=61 && $id_producto!=490): ?>
+                <div class="col-12 text-uppercase py-16 m-0 h6 fs-24 
+                <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
+                ">
+                <?=get_the_title()?>
+                </div>
+            <? else: ?>
+                <div class="col-12 text-uppercase py-16 m-0 h6 fs-24 d-flex justify-content-between
+                <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
+                ">
+                    <div>
+                        ENJOY
+                    </div>
+                    <div>
+                        <a href="<?=get_permalink(get_field('caracteristicas_producto',61)['relacion_page_landing'])?>" 
+                        class="py-2 text-reset text-decoration-none single-animation-undertext 
+                        <?=($id_producto==61)?'active':'opacity-50';?>">SIN GAS</a>
+                        <a href="<?=get_permalink(get_field('caracteristicas_producto',490)['relacion_page_landing'])?>" 
+                        class="py-2 text-reset text-decoration-none ms-32 single-animation-undertext 
+                        <?=($id_producto==490)?'active':'opacity-50';?>">CON GAS</a>
+                    </div>
+                </div>
+            <? endif; ?>
         </div>
         </div>
     </section>

@@ -30,7 +30,7 @@ if ( $the_query->have_posts() ) {
               <div class='pe-20'>
                 ".mb_strimwidth(wp_strip_all_tags(get_the_title()), 0, 60, '...')."
               </div>
-              <span class='position-absolute end-0 top-0'>"
+              <span class='position-absolute end-0 top-0 d-none'>"
                 .wp_get_attachment_image(892, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ).
               "</span>
             </div>

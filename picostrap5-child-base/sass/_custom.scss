@@ -87,8 +87,72 @@ HOW TO REFERENCE ASSETS AND IMAGES
     cursor: pointer;
 }
 
+.bg-prelogos-206{
+    position: relative;
+    &:before{
+        content:'';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 613px;
+        background: #EBE4E450;
+        transform: translateY(-100%);
+    }
+}
+
+
+.single-animation-undertext{
+    position : relative;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0px;
+        left: 0px;
+        bottom: 0%;
+        height: 2px;
+        transition: all linear 0.25s;
+    }
+    &.active:after{
+    width: 75%;
+    background-color: $white;
+    }
+    &:not(.active):hover:after{
+        width: 75%;
+        background-color: $white;
+    }
+}
+
+.bg-prelogos-324{
+    position: relative;
+    &:before{
+        content:'';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 531px;
+        background: #F6F0B2;
+        transform: translateY(-100%);
+    }
+}
+
 .fix-translate-absolute{
     transform: translate(-50%,-50%);
+}
+
+.translate-dots-col-after{
+    transform: translate(15%, -20%) !important;
+}
+
+.translate-dots-col-top-before{
+    transform: translate(-15%, -20%) !important;
+}
+
+.translate-dots-col-bottom-after{
+    transform: translate(15%, 20%) !important;
+}
+
+.translate-dots-col-before{
+    transform: translate(-15%, 20%) !important;
 }
 
 .transform-translate-y{
@@ -99,14 +163,27 @@ HOW TO REFERENCE ASSETS AND IMAGES
     transform: translateY(-100%);
 }
 
+.mt-custom-28{
+    margin-top: 28%;
+}
+
 .mt-custom-25{
     margin-top: 25%;
 }
 
+.mt-custom-28{
+    margin-top: 28%;
+}
+
+.mtn-custom-25{
+    margin-top: -25%;
+}
+.top-5 {
+    top: 5%;
+}
 .top-25{
     top: 25%;
 }
-
 .top-75{
     top: 75%;
 }
@@ -407,7 +484,7 @@ span{
             transform: translateX(-50%);
             left: 50%;
             height: 2px;
-            background-color: $secondary;
+            background-color: $secondary-light;
             transition: width linear 0.15s;
         }
         &.active:after{
@@ -523,7 +600,7 @@ span{
     }
 }
 
-.swiper-home-dedicado{
+.swiper-home-dedicado,.swiper-landing-productos{
     .swiper-slide{
         &:hover{
             .name-slider-product{
@@ -659,6 +736,23 @@ span{
     background-repeat: no-repeat !important;
 }
 
+.bg-custom-image{
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.bg-custom-image-brand-menu{
+    background-position: center center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+.bg-custom-image-product-menu{
+    background-position: center center !important;
+    background-size: auto 100% !important;
+    background-repeat: no-repeat !important;
+}
 
 .more-brands{
     overflow: hidden;
@@ -672,13 +766,15 @@ span{
         transition: all linear 0.25s;
         content:'';
         position: absolute;
-        width: 0px;
-        height: 0px;
+        width: 0%;
+        height: auto;
         border-radius: 100%;
         background-color: $primary;
         transform: translate(-50%,50%);
         bottom: 0;
         left: 0;
+        --bs-aspect-ratio: 1;
+        aspect-ratio: 1;
     }
     &:hover{
         svg{
@@ -691,8 +787,186 @@ span{
         }
         &:after{
             transition: all linear 0.25s;
-            width: 160px;
-            height: 160px;
+            width: 200%;
+            height: auto;
         }
     }
+}
+
+.opacity-60 {
+    opacity: 0.60 !important;
+}
+
+.opacity-20 {
+    opacity: 0.20 !important;
+}
+
+.opacity-80 {
+    opacity: 0.80 !important;
+}
+
+.after-effect-banner-blue{
+    &>.container{
+        position: relative;
+        z-index: 99;
+    }
+    position: relative;
+    z-index: 9;
+    &:after{
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: $primary-brighter;
+    }
+}
+
+.w-descripcion{
+    p{
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+#sliderPrincipal{
+    .swiper-pagination-bullet{
+        transition: background-color .25s ease;
+    }
+    .c-pointer{
+        transition: all .25s ease;
+    }
+    &.slide-dark{
+        .swiper-pagination-bullet{
+            background-color: $secondary !important;
+        }
+        .c-pointer{
+            svg path{
+                fill: $secondary;
+            }
+        }
+    }
+}
+// ----------------------------------- Estilos de revision de Jose
+
+.banner-redes {
+    background-color: #BEE0F8;
+    a:first-child {
+        border-right: 1px solid $secondary;
+    }
+}
+.img-seccion-banner {
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-vision{
+    position: relative;
+    &:after{
+        content:'VISIÓN';
+        font-size: 200px;
+        font-weight: 800;
+        color: white;
+        position: absolute;
+        display: block;
+        bottom: -15px;
+        opacity: 0.2;
+        line-height: 1;
+        max-width: 1320px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.text-mision{
+    position: relative;
+    &:before{
+        content:'MISIÓN';
+        font-size: 200px;
+        font-weight: 800;
+        color: $primary-brighter;
+        position: absolute;
+        display: block;
+        top: 15px;
+        transform: translateY(-100%);
+        opacity: 0.3;
+        line-height: 1;
+    }
+}
+
+.bg-dark {
+    background-color: #060719;
+}
+
+.icono-lupa{
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 17px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='18' viewBox='0 0 17 18' fill='none'%3E%3Cpath d='M11.9361 11H11.1817L10.9143 10.73C11.8501 9.59 12.4135 8.11 12.4135 6.5C12.4135 2.91 9.63479 0 6.20675 0C2.77872 0 0 2.91 0 6.5C0 10.09 2.77872 13 6.20675 13C7.74412 13 9.15735 12.41 10.2459 11.43L10.5037 11.71V12.5L15.2782 17.49L16.7009 16L11.9361 11ZM6.20675 11C3.82909 11 1.90977 8.99 1.90977 6.5C1.90977 4.01 3.82909 2 6.20675 2C8.58442 2 10.5037 4.01 10.5037 6.5C10.5037 8.99 8.58442 11 6.20675 11Z' fill='%23AEB7C1'/%3E%3C/svg%3E");
+    }
+}
+
+.single-menu-brand{
+    &:hover{
+        .img-menu-brand{
+            opacity: 0 !important;
+            transition: opacity linear 0.25s;
+        }
+        .img-menu-product{
+            opacity: 1 !important;
+            transition: opacity linear 0.25s;
+        }
+    }
+    .img-menu-brand{
+        opacity: 1 !important;
+        transition: opacity linear 0.25s;
+    }
+    .img-menu-product{
+        opacity: 0 !important;
+        transition: opacity linear 0.25s;
+    }
+}
+.postid-196 {
+    .seccion_imagenes_texto {
+        .img-4{
+            @include media-breakpoint-up(lg) {
+                margin-top: -103px;
+            }
+            @include media-breakpoint-up(xxl) {
+                margin-top: -120px;
+            }
+        }
+        
+    }
+}
+
+.sello-rotacion{
+    -webkit-animation: efectorotate 15s linear infinite;
+	-moz-animation: efectorotate 15s linear infinite;
+	-o-animation: efectorotate 15s linear infinite;
+}
+
+@-webkit-keyframes efectorotate {
+	0% {transform: translate(-50%, -50%) rotate(0deg);}
+	100% {transform: translate(-50%, -50%) rotate(360deg);}
+}
+@-moz-keyframes efectorotate {
+	0% {transform: translate(-50%, -50%) rotate(0deg);}
+	100% {transform: translate(-50%, -50%) rotate(360deg);}
+}
+@-o-keyframes efectorotate {
+	0% {transform: translate(-50%, -50%) rotate(0deg);}
+	100% {transform: translate(-50%, -50%) rotate(360deg);}
 }

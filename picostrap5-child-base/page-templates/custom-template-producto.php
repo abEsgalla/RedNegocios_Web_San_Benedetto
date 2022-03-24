@@ -10,23 +10,23 @@ get_header();
 ?>
 
 <section>
-  <div class="position-relative bg-black">
-    <?=wp_get_attachment_image(764, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99' , 'alt' => '' , 'title' => '') ); ?>
-    <?=wp_get_attachment_image(620, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-    <div class="container">
-      <div class="row">
-        <div class="offset-4 col-4 text-center">
-          <div class="row text-white">
-            <div class="col-12 text-uppercase">
-              ecolosofía
-            </div>
-            <h1 class="col-12 mt-16 h1 text-green">
-              Producto
-            </h1>
-            <div class="col-12 mt-40">
-              <?=wp_get_attachment_image(634, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-228">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(620, "full")?>')"></div>
+      <?=wp_get_attachment_image(764, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99' , 'alt' => '' , 'title' => '') ); ?>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="offset-4 col-4 text-center">
+            <div class="row text-white">
+              <div class="col-12 text-uppercase">
+                ecolosofía
+              </div>
+              <h1 class="col-12 mt-16 h1 text-green">
+                Producto
+              </h1>
+              <div class="col-12 mt-40">
+                <?=wp_get_attachment_image(634, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+              </div>
             </div>
           </div>
         </div>
@@ -35,18 +35,20 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 mt-xl-176">
+<section class="my-96 mt-170">
   <div class="container text-secondary">
     <div class="row">
       <div class="g-0 col-6">
         <div class="row">
-          <div class="offset-2 col-8 h2">
+          <div class="offset-2 col-8 h2 mb-64">
             Ecodiseño
           </div>
         </div>
       </div>
-      <div class="col-12 mt-64">
-        <div class="row">
+      <div class="col-12 position-relative">
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
+        class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after">
+        <div class="row position-relative zi-99">
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
               <div class="col-12 offset-xl-2 col-xl-8 fs-17">
@@ -67,8 +69,8 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="g-0 col-12 col-sm-6 d-block">
-            <?=wp_get_attachment_image(765, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
+          <div class="g-0 col-12 col-sm-6 d-block bg-white">
+            <?=wp_get_attachment_image(1166, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div style="" class="g-0 col-12 col-sm-6 d-block bg-secondary text-white">
             <div class="row position-relative h-100">
@@ -110,8 +112,12 @@ get_header();
 <section class="my-96 mt-xl-133 mb-xl-176">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <?=wp_get_attachment_image(766, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+      <div class="col-12 position-relative">
+        <?=wp_get_attachment_image(766, "full", "", array( 'class' => 'zi-99 position-relative' , 'alt' => '' , 'title' => '') ); ?>
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
+        class="d-none d-xxxl-block position-absolute bottom-0 start-0 w-auto translate-dots-col-before">
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
+        class="d-none d-xxxl-block position-absolute bottom-0 end-0 w-auto translate-dots-col-bottom-after">
       </div>
     </div>
   </div>
@@ -149,7 +155,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-56">
   <div class="container">
     <div class="row">
       <div class="col-12 position-relative">

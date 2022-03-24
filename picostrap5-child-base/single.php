@@ -29,7 +29,7 @@ if ( have_posts() ) :
                 San Benedetto
               </span>
             </div>
-            <div class="col-5">
+            <div class="col-5 d-none">
               <span class="me-18">Compartir</span>
               <?=wp_get_attachment_image(892, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
             </div>
