@@ -203,4 +203,8 @@ defined( 'ABSPATH' ) || exit;
     } // END ELSE CASE 
     ?>
 
+<?php if ( is_singular() && get_post_type()=='landing'): ?>
+  <div class="espaciado-cabecera-landing"></div>
+<?php endif; ?>
+
 <main id='theme-main'>
