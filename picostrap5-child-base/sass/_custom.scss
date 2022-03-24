@@ -742,6 +742,12 @@ span{
     background-repeat: no-repeat !important;
 }
 
+.bg-custom-image-menu{
+    background-position: center center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
 .more-brands{
     overflow: hidden;
     svg{
@@ -903,5 +909,26 @@ span{
         background-size: cover;
         background-position: center center;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='18' viewBox='0 0 17 18' fill='none'%3E%3Cpath d='M11.9361 11H11.1817L10.9143 10.73C11.8501 9.59 12.4135 8.11 12.4135 6.5C12.4135 2.91 9.63479 0 6.20675 0C2.77872 0 0 2.91 0 6.5C0 10.09 2.77872 13 6.20675 13C7.74412 13 9.15735 12.41 10.2459 11.43L10.5037 11.71V12.5L15.2782 17.49L16.7009 16L11.9361 11ZM6.20675 11C3.82909 11 1.90977 8.99 1.90977 6.5C1.90977 4.01 3.82909 2 6.20675 2C8.58442 2 10.5037 4.01 10.5037 6.5C10.5037 8.99 8.58442 11 6.20675 11Z' fill='%23AEB7C1'/%3E%3C/svg%3E");
+    }
+}
+
+.single-menu-brand{
+    &:hover{
+        .img-menu-brand{
+            opacity: 0 !important;
+            transition: opacity linear 0.25s;
+        }
+        .img-menu-product{
+            opacity: 1 !important;
+            transition: opacity linear 0.25s;
+        }
+    }
+    .img-menu-brand{
+        opacity: 1 !important;
+        transition: opacity linear 0.25s;
+    }
+    .img-menu-product{
+        opacity: 0 !important;
+        transition: opacity linear 0.25s;
     }
 }
