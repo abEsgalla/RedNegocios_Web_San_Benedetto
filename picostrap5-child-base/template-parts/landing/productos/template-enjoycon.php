@@ -40,7 +40,7 @@
                     get_template_part( 'template-parts/landing/seccion', 'banner', $seccion);
                 break;
                 case 'imagen_ilustraciones':
-                    get_template_part( 'template-parts/landing/seccion', 'imagen_ilustraciones', $seccion);
+                    get_template_part( 'template-parts/landing/seccion', 'imagen_ilustraciones_enjoycon', $seccion);
                 break;
             endswitch;
         endforeach;

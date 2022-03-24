@@ -113,4 +113,56 @@
   margin-top: 123px;
 }
 
+#fondoLineas{
+  background-image: url('../src/img/background-upgrade/BG-lineas.png');
+  background-position-y: calc(50% - 80px);
+  background-position-x: center;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.background-font-natura{
+  background-image: url('../src/img/background-font-natura/acuarela-background.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.fresa-bloque-texto{
+  transform: translateY(-50%);
+  left: 75px !important;
+}
+
+.lima-bloque-texto{
+  transform: translateY(-50%);
+  left: -118px;
+}
+
+.lima-bloque-texto-sin{
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+.naranja-bloque-texto-sin{
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(50%);
+}
+.fresa-bloque-texto-sin{
+  right: 0;
+  top: 0;
+}
+
+.background-start-te{
+  background-image: url('../src/img/background-te/background_start_te.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.container-fluid-custom .swiper.slider-te:before{
+  background: #FFFBEC;
+  opacity: 75%;
+}
+
 

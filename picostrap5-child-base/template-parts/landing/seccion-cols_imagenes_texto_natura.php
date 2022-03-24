@@ -3,9 +3,8 @@
   $seccion = $fields;
 ?>
 
-<section class=" zi-99 position-relative mt-56 mb-178">
+<section class=" zi-99 position-relative pt-56 pb-178 background-font-natura">
   <div class="container position-relative">
-    <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_bloque_texto.png'; ?>" class="position-absolute end-0 top-50 limon-bloque-con">
     <div class="row">
       <div class="col-12 offset-xl-1 col-xl-10">
         <div class="row position-relative">
