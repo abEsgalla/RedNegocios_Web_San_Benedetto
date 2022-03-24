@@ -169,7 +169,7 @@ if( document.body.classList.contains('single-landing') ) {
 
 if( document.body.classList.contains('page-template-custom-template-historia') ) {
   //Barrita vertical que se rellena con scroll en página Historia
-  let line_height = document.querySelector('.border-dashed-custom').clientHeight + 256;
+  let line_height = document.querySelector('.border-dashed-custom').clientHeight + 236;
   gsap.to(".border-dashed-custom .border-fill", {
     scrollTrigger: {
       trigger: '.border-dashed-custom',
