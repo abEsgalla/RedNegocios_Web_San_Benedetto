@@ -8,3 +8,9 @@
         max-height: 900px;
     }
 }
+
+.col{
+    @include media-breakpoint-down(sm) {
+        max-width: max-content !important;
+    }
+}
