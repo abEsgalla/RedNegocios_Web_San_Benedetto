@@ -65,7 +65,7 @@ if($fields["elemento_grid"]):
                       ?>
                         <div class="col-12">
                           <a href="<?=$single_grid['link_cta']?>" class="btn border-2 fw-500 btn-outline-primary-brighter text-uppercase mt-40 fs-14 rounded-0">
-                            <?=$single_grid['texto_cta']?>
+                            <span><?=$single_grid['texto_cta']?></span>
                           </a>
                         </div>
                       <?
