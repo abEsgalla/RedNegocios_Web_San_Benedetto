@@ -20,12 +20,12 @@
 if($fields["elemento_grid"]):
   ?>
   <div class="col-12 mt-64 position-relative">
-    <div class="row mx-sm-0">
+    <div class="row gx-2 mx-sm-0">
       <?
       foreach ($fields["elemento_grid"] as $key => $single_grid):
         ?>
         <div 
-        class="order-lg-0 col-12 h-75-vw gx-4 gx-sm-0 <?=(($key+1)%2==0)?'order-0':'order-1'?>
+        class="order-lg-0 col-12 h-75-vw gx-0 <?=(($key+1)==2)?'order-0':'order-1'?>
         <?=($single_grid['tamano'])? $single_grid['tamano'] : '' ;?> 
         <?=($single_grid['fondo'])? '' : 'd-flex align-items-center' ;?>
         ">
@@ -46,7 +46,7 @@ if($fields["elemento_grid"]):
                       <?
                       if($single_grid['texto_superior']):
                       ?>
-                        <div class="col-12 text-uppercase fs-18"><?=$single_grid['texto_superior']?></div>
+                        <div class="col-12 text-uppercase fs-18 pt-48 pt-sm-0"><?=$single_grid['texto_superior']?></div>
                       <?
                       endif;
                       if($single_grid['texto_principal']):
@@ -63,7 +63,7 @@ if($fields["elemento_grid"]):
                       endif;
                       if($single_grid['texto_cta']):
                       ?>
-                        <div class="col-12">
+                        <div class="col-12 pb-60 pb-sm-0">
                           <a href="<?=$single_grid['link_cta']?>" class="btn border-2 fw-500 btn-outline-primary-brighter text-uppercase mt-40 fs-14 rounded-0">
                             <span><?=$single_grid['texto_cta']?></span>
                           </a>

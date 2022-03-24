@@ -12,7 +12,7 @@ get_header();
 
 <section id="sliderPrincipal">
   <div class="container-fluid g-0 position-relative">
-      <div class="row g-0">
+      <div class="row g-0 gx-2 gx-sm-0">
           <div class="col-12">
             <?php
               get_template_part( 'template-parts/home/seccion', 'slider_cabecera', $acf_fields);
@@ -23,7 +23,7 @@ get_header();
 </section>
 
 <section>
-  <div class="container position-relative py-56 pt-md-120 pb-md-80 pt-xxl-96 pb-xxl-120">
+  <div class="container position-relative py-56 pt-md-120 pb-md-80 pt-xxl-96 pb-xxl-120 gx-4 gx-sm-2">
       <div class="row">
         <?php
           get_template_part( 'template-parts/home/seccion', 'slider_productos', $acf_fields['slider_productos']);
@@ -43,7 +43,7 @@ get_header();
 </section>
 
 <section>
-  <div class="container position-relative py-56 py-sm-96 pt-md-90 pb-md-82 pt-xl-133 pb-xl-285">
+  <div class="container position-relative py-56 py-sm-96 pt-md-90 pb-md-82 pt-xl-133 pb-xl-285 gx-4 gx-sm-2">
       <div class="row">
         <?php
           get_template_part( 'template-parts/home/seccion', 'grid_compromiso', $acf_fields['grid_compromiso']);
@@ -53,7 +53,7 @@ get_header();
 </section>
 
 <section class="bg-section-noticias">
-  <div class="container position-relative py-80 py-sm-96 pb-md-94 pt-md-120 pt-xl-95 pb-xl-120">
+  <div class="container position-relative py-80 py-sm-96 pb-md-94 pt-md-120 pt-xl-95 pb-xl-120 gx-sm-2 gx-4">
     <div class="row">
       <?php
         get_template_part( 'template-parts/home/seccion', 'slider_noticias', $acf_fields);
@@ -63,7 +63,7 @@ get_header();
 </section>
 
 <section class="py-56">
-  <div class="container">
+  <div class="container gx-sm-2 gx-4">
     <div class="row">
       <div class="col-12 position-relative">
         <?php
