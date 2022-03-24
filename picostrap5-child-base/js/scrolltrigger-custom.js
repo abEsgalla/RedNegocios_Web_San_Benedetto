@@ -143,3 +143,41 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
     });
   });
 }
+
+
+
+//BG Parallax
+let bgParallax = document.querySelectorAll('.bg-parallax');
+if(bgParallax) {
+  bgParallax.forEach((bg) => {
+    gsap.to(bg, {
+      backgroundPosition: `50% ${innerHeight / 2}px`,
+      ease: "none",
+      scrollTrigger: {
+        trigger: bg,
+        start: "top top", 
+        end: "bottom top",
+        scrub: true
+      }
+    });
+  });
+}
+
+//img Parallax
+let imgParallax = document.querySelectorAll('.img-parallax');
+if(imgParallax) {
+  imgParallax.forEach((img) => {
+    gsap.to(img, {
+      scrollTrigger: {
+        trigger: img,
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: true,
+      },
+      y: -200,
+      ease: "sine.out",
+      rotation: 0,
+    });
+  });
+}
