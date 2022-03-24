@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function closeOffCanvas() {
       let topBar = document.querySelector('#wrapper-navbar');
       topBar.classList.remove('bg-white');
+      topBar.querySelectorAll('a').forEach(a => {a.classList.remove('text-secondary')})
       let menu = document.querySelector('#offcanvas-menu');
       menu.classList.remove('show');
       menu.classList.remove('menu-open-offcanvas');
@@ -115,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function showOffCanvas() {
       let topBar = document.querySelector('#wrapper-navbar');
       topBar.classList.add('bg-white');
+      topBar.querySelectorAll('a').forEach(a => {a.classList.add('text-secondary')})
       let menu = document.querySelector('#offcanvas-menu');
       menu.classList.add('show');
       menu.classList.add('menu-open-offcanvas');
