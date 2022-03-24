@@ -35,7 +35,7 @@
                     get_template_part( 'template-parts/landing/seccion', 'texto_centrado', $seccion);
                 break;
                 case 'cols_imagenes_texto':
-                    get_template_part( 'template-parts/landing/seccion', 'cols_imagenes_texto', $seccion);
+                    get_template_part( 'template-parts/landing/seccion', 'cols_imagenes_texto_natura', $seccion);
                 break;
                 case 'banner':
                     get_template_part( 'template-parts/landing/seccion', 'banner', $seccion);

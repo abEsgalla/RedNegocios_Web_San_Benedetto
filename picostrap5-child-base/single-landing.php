@@ -28,7 +28,7 @@ wp_reset_query();
 if( get_the_ID() == 196 ) { 	
 	get_template_part('/template-parts/landing/productos/template', 'upgrade');
 }
-elseif( get_the_ID() == 429 ) {
+elseif( get_the_ID() == 324 ) {
 	get_template_part('/template-parts/landing/productos/template', 'essenzia');
 }
 elseif( get_the_ID() == 444 ) {
