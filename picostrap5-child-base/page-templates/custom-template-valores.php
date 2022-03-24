@@ -11,7 +11,7 @@ get_header();
 
 <section class="text-vision">
   <div class="container-fluid position-relative zi-9 bg-black pt-138 pt-md-270 pb-317">
-    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+    <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(606, "full")?>')"></div>
       <div class="container position-relative">
       <div class="row">
@@ -39,14 +39,14 @@ get_header();
       <div class="col-12 col-lg-6 d-none d-md-block g-0 text-mision order-2 order-lg-1">
       </div>
       <div class="col-12 col-lg-6 g-lg-0 order-1 order-lg-2 mt-n80 mt-lg-0 px-32 px-lg-0">
-        <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative d-none d-lg-block' , 'alt' => '' , 'title' => '') ); ?>
+        <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative d-none d-lg-block img-parallax' , 'alt' => '' , 'title' => '') ); ?>
         <?=wp_get_attachment_image(1253, "full", "", array( 'class' => 'w-100 position-relative d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
       </div>
       <div class="col-12 col-lg-6 g-lg-0 d-block bg-primary-brighter order-3 py-166 px-112 text-center text-lg-start mt-70 mt-md-270 mt-lg-0">
         <div class="text-secondary fs-16 fs-md-18">ÉSTA ES NUESTRA</div>
         <div class="fs-32 fs-md-64 fw-bold text-secondary">Misión</div>
       </div>
-      <div class="col-12 col-lg-6 g-lg-0 d-block order-4 py-65 py-lg-40 py-xl-112 py-xxl-145 px-56">
+      <div class="col-12 col-lg-6 g-lg-0 d-block order-4 py-65 py-lg-40 py-xl-112 py-xxl-145 px-56" data-aos="fade-left">
         <div class="text-secondary text-uppercase fw-bold fs-18 fs-md-24">
           «Integrar calidad, seguridad y capacidad de innovación con un profundo respeto por el medio ambiente, 
           el territorio y el desarrollo de las personas.»  
