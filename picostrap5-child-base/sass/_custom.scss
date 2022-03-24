@@ -940,7 +940,6 @@ span{
 }
 .postid-196 {
     .seccion_imagenes_texto {
-        
         .img-4{
             @include media-breakpoint-up(lg) {
                 margin-top: -103px;
@@ -951,4 +950,23 @@ span{
         }
         
     }
+}
+
+.sello-rotacion{
+    -webkit-animation: efectorotate 15s linear infinite;
+	-moz-animation: efectorotate 15s linear infinite;
+	-o-animation: efectorotate 15s linear infinite;
+}
+
+@-webkit-keyframes efectorotate {
+	0% {transform: translate(-50%, -50%) rotate(0deg);}
+	100% {transform: translate(-50%, -50%) rotate(360deg);}
+}
+@-moz-keyframes efectorotate {
+	0% {transform: translate(-50%, -50%) rotate(0deg);}
+	100% {transform: translate(-50%, -50%) rotate(360deg);}
+}
+@-o-keyframes efectorotate {
+	0% {transform: translate(-50%, -50%) rotate(0deg);}
+	100% {transform: translate(-50%, -50%) rotate(360deg);}
 }

@@ -34,7 +34,7 @@ get_header();
 
 <section class="mb-96 position-relative mt-custom-28">
   <?=wp_get_attachment_image(1177, "full", "", array( 'class' => 'opacity-75 translate-middle top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
-  <?=wp_get_attachment_image(1178, "full", "", array( 'class' => 'sello-rotacion opacity-75 translate-middle top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
+  <?=wp_get_attachment_image(1178, "full", "", array( 'class' => 'sello-rotacion opacity-75 top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
   <div class="container bg-white">
     <div class="row text-center">
       <div class="offset-2 col-8 mt-176 fs-32 fw-bolder text-secondary text-uppercase">
