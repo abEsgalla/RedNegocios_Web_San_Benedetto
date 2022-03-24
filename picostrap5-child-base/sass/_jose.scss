@@ -1,0 +1,11 @@
+// Essenzia y Quizza Happy
+.postid-429, .postid-444, .postid-200 {
+    .seccion_cols_imagenes {
+        .columna-2 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: end;
+        }
+    }
+}
