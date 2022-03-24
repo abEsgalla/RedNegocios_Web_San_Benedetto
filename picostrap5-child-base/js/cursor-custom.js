@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if(!contenedor.querySelector('.cursor-custom')){
                 var cursor_custom = document.createElement('div');
                 cursor_custom.className = 'cursor-custom';
-                cursor_custom.innerHTML = '<div>VER</div>';
+                if(contenedor.getAttribute("text-cursor-custom")){
+                    cursor_custom.innerHTML = '<div>'+contenedor.getAttribute("text-cursor-custom")+'</div>';
+                }else{
+                    cursor_custom.innerHTML = '<div>VER</div>';
+                }
                 contenedor.appendChild(cursor_custom);
             }
             var cursorVideo = contenedor.querySelector('.cursor-custom');
