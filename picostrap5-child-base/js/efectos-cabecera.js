@@ -196,8 +196,10 @@ document.addEventListener('DOMContentLoaded', function () {
             old_submenu.querySelector('.submenu').classList.add('d-none');
           }
           var submenu = this.parentElement.parentElement;
-          submenu.classList.add('active');
-          submenu.querySelector('.submenu').classList.remove('d-none');
+          if(submenu){
+            submenu.classList.add('active');
+            submenu.querySelector('.submenu').classList.remove('d-none');
+          }
         });
       });
     };
