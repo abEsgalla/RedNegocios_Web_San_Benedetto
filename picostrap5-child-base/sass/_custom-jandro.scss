@@ -13,8 +13,10 @@
   }
   &:hover{
     background-color: transparent !important;
+    
     &:after{
       height: 100%;
     }
   }
 }
+
