@@ -20,7 +20,7 @@
           ?>
           <? foreach ($seccion['col'] as $col): ?>
             <div class="mb-4 col-12 position-relative zi-9 <?=$col['tamano']?>">
-              <div class="row d-flex flex-column h-100 justify-content-between text-center">
+              <div class="row d-flex flex-column h-100 justify-content-between text-center flex-nowrap">
                 <div class="col-12 order-2 h-100">
                   <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 h-100' , 'alt' => '' , 'title' => '') ); ?>
                 </div>

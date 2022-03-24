@@ -5,7 +5,6 @@
 
 <section class=" zi-99 position-relative mt-56 mb-178">
   <div class="container position-relative">
-    <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_bloque_texto.png'; ?>" class="position-absolute end-0 top-50 limon-bloque-con">
     <div class="row">
       <div class="col-12 offset-xl-1 col-xl-10">
         <div class="row position-relative">
@@ -21,7 +20,7 @@
           ?>
           <? foreach ($seccion['col'] as $col): ?>
             <div class="mb-4 col-12 position-relative zi-9 <?=$col['tamano']?>">
-              <div class="row d-flex flex-column h-100 justify-content-between text-center">
+              <div class="row d-flex flex-column h-100 justify-content-between text-center flex-nowrap">
                 <div class="col-12 order-2 h-100">
                   <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 h-100' , 'alt' => '' , 'title' => '') ); ?>
                 </div>
