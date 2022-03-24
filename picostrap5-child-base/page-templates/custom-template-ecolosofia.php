@@ -11,7 +11,7 @@ get_header();
 
 
 <section class="position-absolute top-0 w-100">
-  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-533">
+  <div class="container-fluid position-relative zi-9 bg-black pt-138 pb-333 pt-sm-261 pb-sm-533">
     <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(613, "full")?>')"></div>
       <div class="container position-relative zi-99">
@@ -35,7 +35,7 @@ get_header();
 <section class="mb-96 position-relative mt-custom-28">
   <?=wp_get_attachment_image(1177, "full", "", array( 'class' => 'opacity-75 translate-middle top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
   <?=wp_get_attachment_image(1178, "full", "", array( 'class' => 'sello-rotacion opacity-75 top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
-  <div class="container bg-white">
+  <div class="container bg-white gx-sm-2 gx-4">
     <div class="row text-center">
       <div class="col-12 offset-xl-2 col-xl-8 mt-176 fs-32 fw-bolder text-secondary text-uppercase">
         Del gr. οἰκο- oiko-.: Significa 'ecológico'<br>
@@ -51,7 +51,7 @@ get_header();
       </div>
       <div class="col-12 mt-64 mt-lg-123">
         <div class="row text-white">
-          <div class="col-4">
+          <div class="col-12 col-sm-4 mb-2 mb-sm-0">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(585)?>">
               <div text-cursor-custom="Ir a producto" 
               class="ratio ratio-1x1 contenedor-cursor-custom bg-contenedor-custom-ecolosofia">
@@ -73,7 +73,7 @@ get_header();
               </div>
             </a>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-4 mb-2 mb-sm-0">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(587)?>">
               <div text-cursor-custom="Ir a procesos" 
               class="ratio ratio-1x1 contenedor-cursor-custom bg-contenedor-custom-ecolosofia cursor-white">
@@ -100,7 +100,7 @@ get_header();
               </div>
             </a>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-4 mb-2 mb-sm-0">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(589)?>">
               <div text-cursor-custom="Ir a entorno" 
               class="ratio ratio-1x1 contenedor-cursor-custom bg-contenedor-custom-ecolosofia">
@@ -122,8 +122,8 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 mt-xl-256 mb-xl-160">
-  <div class="container position-relative">
+<section class="my-96 mt-md-160 mt-xl-256 mb-xl-160">
+  <div class="container position-relative gx-sm-2 gx-4">
       <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
       class="d-none d-xxxl-block position-absolute top-0 start-0 w-auto translate-dots-col-top-before">
       <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
@@ -137,8 +137,8 @@ get_header();
                   <div class="row">
                     <div class="offset-1 col-10">
                       <div class="row text-secondary text-uppercase my-0 mt-lg-80 mb-lg-70">
-                        <div class="col-12 col-sm-6 col-lg-12">
-                          <div class="row">
+                        <div class="order-1 order-sm-0 col-12 col-sm-6 col-lg-12">
+                          <div class="row text-center text-sm-start mt-sm-0 mt-28">
                             <div class="col-12 fs-18">
                               san benedetto
                             </div>  
@@ -147,7 +147,7 @@ get_header();
                             </div>
                           </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-12 text-end">
+                        <div class="order-0 order-sm-1 col-12 col-sm-6 col-lg-12 text-center text-sm-end">
                           <?=wp_get_attachment_image(617, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                         </div>
                       </div>
@@ -156,7 +156,7 @@ get_header();
                 </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 d-block bg-custom-image order-1 order-xl-0 py-200 py-lg-0" 
+          <div class="col-12 col-sm-6 d-block bg-custom-image order-1 order-xl-0 py-200 py-lg-0 d-none d-sm-inline-flex" 
             style="background:url('<?=wp_get_attachment_image_url(615, "full")?>')">
           </div>
           <div class="col-12 col-sm-6 d-block bg-custom-image order-1 order-xl-0 py-200 py-lg-0" 
@@ -167,8 +167,8 @@ get_header();
                 <div class="container">
                   <div class="row">
                     <div class="col-12">
-                      <div class="row text-secondary fs-17 py-64 py-lg-150">
-                        <div class="offset-1 col-10">
+                      <div class="row text-center text-sm-start text-secondary fs-17 py-64 py-lg-150">
+                        <div class="offset-sm-1 col-sm-10 col-12">
                           Tenemos un acuerdo con 
                           <strong>
                             <a class="text-reset" target="_blank" href="https://www.aldeasinfantiles.es/">Aldeas Infantiles SOS</a>
