@@ -119,7 +119,7 @@ if($acf_fields['secciones']):
             break;
             case 'cols_imagenes_texto':
                 ?>
-                <section class=" zi-99 position-relative bg-dark pt-56 pb-178">
+                <section class=" zi-99 position-relative bg-dark pt-56 pb-178 seccion_imagenes_texto">
                     <div class="container position-relative">
                         <div class="row">
                         <div class="col-12 offset-xl-1 col-xl-10">
@@ -134,11 +134,12 @@ if($acf_fields['secciones']):
                             <?php
                             endif;
                             ?>
-                            <? foreach ($seccion['col'] as $col): ?>
+                            <?  $i = 1;
+                                foreach ($seccion['col'] as $col): ?>
                                 <div class="mb-4 col-12 position-relative zi-9 <?=$col['tamano']?>">
                                 <div class="row d-flex flex-column h-100 justify-content-between text-center">
                                     <div class="col-12 order-2 h-100">
-                                    <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 h-100' , 'alt' => '' , 'title' => '') ); ?>
+                                    <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 img-'. $i , 'alt' => '' , 'title' => '') ); ?>
                                     </div>
                                     <? if($col['posicion_texto'] && $col['texto']): ?>
                                     <div class="text-start text-white m-auto offset-1 col-10 <?=$col['posicion_texto']?>">
@@ -149,7 +150,8 @@ if($acf_fields['secciones']):
                                     <? endif; ?>
                                 </div>
                                 </div>
-                            <? endforeach; ?>
+                            <? $i++;
+                                endforeach; ?>
                             </div>
                         </div>
                         </div>
