@@ -11,7 +11,7 @@ get_header();
 
 
 <section class="position-absolute top-0 w-100">
-  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-228">
+  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-533">
     <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(613, "full")?>')"></div>
       <div class="container position-relative zi-99">
@@ -24,9 +24,6 @@ get_header();
               <h1 class="col-12 mt-16 fs-72 fw-bold text-green">
                 Ecolosofía
               </h1>
-              <div class="col-12 mt-40">
-                <?=wp_get_attachment_image(614, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-              </div>
             </div>
           </div>
         </div>
@@ -36,6 +33,8 @@ get_header();
 </section>
 
 <section class="mb-96 position-relative mt-custom-28">
+  <?=wp_get_attachment_image(1177, "full", "", array( 'class' => 'opacity-75 translate-middle top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
+  <?=wp_get_attachment_image(1178, "full", "", array( 'class' => 'sello-rotacion opacity-75 translate-middle top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
   <div class="container bg-white">
     <div class="row text-center">
       <div class="offset-2 col-8 mt-176 fs-32 fw-bolder text-secondary text-uppercase">
