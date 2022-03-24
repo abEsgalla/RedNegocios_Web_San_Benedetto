@@ -59,3 +59,12 @@
         }
     }
 }
+
+.mt-custom-28{
+    @include media-breakpoint-down(xxxl) {
+        margin-top: 37%;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-top: 70%;
+    }
+}
