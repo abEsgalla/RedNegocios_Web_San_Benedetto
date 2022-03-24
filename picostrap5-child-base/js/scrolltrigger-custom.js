@@ -3,8 +3,8 @@ if( document.body.classList.contains('single-landing') ) {
     scrollTrigger: {
       trigger: '.producto-central',
       toggleActions: 'play pause pause reverse',
-      start: 'top center',
-      end: 'bottom center',
+      start: 'top top',
+      end: 'bottom top',
       scrub: true,
       markers: false,
     },
@@ -15,17 +15,17 @@ if( document.body.classList.contains('single-landing') ) {
   //Enjoy
   if( document.body.classList.contains('postid-203') ) {
 
-    gsap.to('.limon-1', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
-      },
-      y: 420,
-      rotation: 0,
-    });
+    // gsap.to('.limon-1', {
+    //   scrollTrigger: {
+    //     trigger: '.bg-custom-image',
+    //     start: 'top top',
+    //     end: 'bottom top',
+    //     scrub: true,
+    //     markers: false,
+    //   },
+    //   y: 420,
+    //   rotation: 0,
+    // });
 
     //Limon borroso
     gsap.to('.limon-3', {
@@ -50,7 +50,7 @@ if( document.body.classList.contains('single-landing') ) {
         scrub: true,
         markers: false,
       },
-      y: 420,
+      y: 320,
       rotation: 0,
     });
 
@@ -63,7 +63,7 @@ if( document.body.classList.contains('single-landing') ) {
         scrub: true,
         markers: false,
       },
-      y: 200,
+      y: -200,
       rotation: 0,
     });
 
@@ -110,6 +110,60 @@ if( document.body.classList.contains('single-landing') ) {
       rotation: 0,
     });
   }
+
+  //Font Natura
+  if( document.body.classList.contains('postid-209') ) {
+    gsap.to('.acuarela', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: -280,
+      rotation: 0,
+    });
+  }
+
+    //SAN BENEDETTO ZERO
+    if( document.body.classList.contains('postid-200') ) {
+      gsap.to('.fruta-1', {
+        scrollTrigger: {
+          trigger: '.bg-custom-image',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+          markers: false,
+        },
+        y: 580,
+        rotation: 0,
+      });
+
+      gsap.to('.fruta-2', {
+        scrollTrigger: {
+          trigger: '.bg-custom-image',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+          markers: false,
+        },
+        y: 280,
+        rotation: 0,
+      });
+
+      gsap.to('.fruta-3', {
+        scrollTrigger: {
+          trigger: '.bg-custom-image',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+          markers: false,
+        },
+        y: -280,
+        rotation: 0,
+      });
+    }
 }
 
 
