@@ -939,6 +939,10 @@ span{
     }
 }
 .postid-196 {
+    .container-fluid-custom .swiper:before, .container-fluid-custom .swiper:after {
+        background: #060719;
+        opacity: .5;
+    }
     .seccion_imagenes_texto {
         .img-4{
             @include media-breakpoint-up(lg) {
