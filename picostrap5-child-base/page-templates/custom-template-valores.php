@@ -67,78 +67,6 @@ get_header();
   </div>
 </section>
 
-<!-- <section class="mt-253 mb-165">
-  <div class="container position-relative">
-    <div class="row">
-    
-      <div style="" class="text-mision g-0 col-12 col-lg-6 d-block h-75-vw bg-primary-brighter">
-        <div class="row position-relative h-100">
-          <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-            <div class="container">
-              <div class="row">
-                <div class="offset-2 col-8">
-                  <div class="row text-secondary">
-                    <div class="col-12 text-uppercase fs-18">
-                      ésta es Nuestra
-                    </div>
-                    <div class="col-12 h2">
-                      Misión
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div style="" class="g-0 col-12 col-lg-6 d-block h-75-vw">
-        <div class="row position-relative">
-          <div class="position-relative transform-translate-ny">
-            <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
-            class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after opacity-20">
-            <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative' , 'alt' => '' , 'title' => '') ); ?>
-          </div>
-          <div class="container-fluid zi-99 top-50 position-absolute transform-translate-y">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 offset-xl-1 col-xl-10" data-aos="fade-left">
-                  <div class="row text-secondary">
-                    <div class="col-12 text-uppercase fw-bold fs-24">
-                      «Integrar calidad, seguridad y capacidad de innovación con un profundo respeto por el medio ambiente, 
-                      el territorio y el desarrollo de las personas.»  
-                    </div>
-                    <div class="col-12 mt-12 fs-18">
-                      ― Enrico Zoppas, Presidente de Gruppo Acqua Minerale San Benedetto S.p.A. 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="" class="g-0 col-12 col-sm-6 h-75-vw">
-        <div class="position-relative d-flex w-100 h-100">
-          <?=wp_get_attachment_image(610, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
-          <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
-            class="d-none d-xxxl-block position-absolute bottom-0 start-0 w-auto translate-dots-col-before opacity-60">
-        </div>
-      </div>
-
-      <div style="" class="g-0 col-12 col-sm-6">
-        <div class="position-relative d-flex w-100 h-100">
-          <?=wp_get_attachment_image(609, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
-          <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
-            class="d-none d-xxxl-block position-absolute bottom-0 end-0 w-auto translate-dots-col-bottom-after opacity-60">
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section> -->
-
 <section class="my-96">
   <div class="container">
     <div class="row text-secondary">
@@ -304,11 +232,11 @@ get_header();
           <div class="position-absolute top-50 translate-middle-y zi-99 text-white w-100">
             <div class="container">
               <div class="row">
-                <div class="offset-5 col-6">
+                <div class="offset-1 col-9 offset-lg-5 col-lg-6">
                   <div class="row">
-                    <div class="col-12 fs-96 fw-bold">
+                    <div class="col-12 fs-80 fs-md-96 fw-bold">
                       05
-                      <span>
+                      <span class="ico-sostenible">
                         <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
                         <path d="M17.423 61.7466C17.1542 60.9402 17.2886 59.9898 17.6918 59.1834C18.095 58.377 18.911 57.8298 19.727 57.6954C24.0758 56.889 31.967 56.3418 38.8982 60.2586C45.8294 64.1754 49.2374 71.337 50.7254 75.5226C50.9942 76.329 50.8599 77.2794 50.4567 78.0858C50.0439 78.8922 49.2374 79.4394 48.4214 79.5738C44.0726 80.3802 36.1814 80.9274 29.2502 77.0106C22.319 73.0938 18.9206 65.9418 17.423 61.7466Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M51.8398 78.4423C52.2334 79.1143 52.7614 79.5175 53.5486 79.6519C57.091 80.3239 63.379 80.8615 69.0142 77.492C74.6494 74.1224 77.4046 68.1895 78.5854 64.8199C78.8446 64.1479 78.7198 63.3415 78.3262 62.6599C77.9326 61.9879 77.4046 61.5848 76.6174 61.4504C73.075 60.7784 66.787 60.2408 61.1518 63.6104C59.8366 64.4168 58.6654 65.2232 57.7438 66.308" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -324,8 +252,8 @@ get_header();
                         </svg>
                       </span>
                     </div>
-                    <div class="col-12 fs-24 fw-bold">
-                      Producción sostenible.
+                    <div class="col-12 fs-20 fs-md-24 fw-bold">
+                      PRODUCCIÓN SOSTENIBLE.
                     </div>
                     <div class="col-12 mt-36">
                       <a href="<?=get_permalink(583)?>" 
@@ -341,10 +269,10 @@ get_header();
           <?=wp_get_attachment_image(611, "full", "", array( 'class' => 'w-100 opacity-60' , 'alt' => '' , 'title' => '') ); ?>
         </div>
       </div>
-      <div class="col-12 col-lg-6 text-secondary bg-primary-brighter d-flex align-items-center">
+      <div class="col-12 col-lg-6 text-secondary bg-primary-brighter d-flex align-items-center py-40 pt-sm-80 pb-sm-70 pt-lg-0 pb-lg-0">
         <div class="row">
 
-              <div class="offset-1 col-7 fw-500 fs-17 text-secondary-lighter ps-0" data-aos="fade-left">
+              <div class="offset-2 col-8 offset-lg-1 col-lg-9 fw-500 fs-17 text-secondary-lighter ps-0" data-aos="fade-left">
                 Desde el principio nos hemos preocupado por ser capaces de desarrollar nuestra actividad con el mínimo impacto 
                 en nuestro entorno. Lo conseguimos a través de proyectos y sinergias estratégicas con agentes locales. 
                 Así, no sólo fabricamos los envases más ligeros del mercado de agua mineral: 
