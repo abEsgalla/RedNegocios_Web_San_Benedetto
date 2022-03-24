@@ -224,6 +224,26 @@ HOW TO REFERENCE ASSETS AND IMAGES
     *{
         pointer-events: none;
     }
+    &.bg-contenedor-custom-ecolosofia{
+        &.cursor-white{
+            .cursor-custom{
+                >div{
+                    color: $white;
+                    border-color: $white;
+                }
+            }
+        }
+        .cursor-custom {
+            width: 130px;
+            height: 130px;
+            >div{
+                font-weight: 500;
+                font-size: 18px;
+                background: inherit;
+                border: 1px solid;
+            }
+        }
+    }
     .cursor-custom {
         position: absolute;
         width: 100px;
