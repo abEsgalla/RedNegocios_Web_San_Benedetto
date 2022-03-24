@@ -166,44 +166,44 @@
                       <div class="">® Agua mineral San Benedetto, S.A.U.</div>
                     </div>
                     <div class="col-12 col-sm-9 my-20">
-                      <div class="d-flex flex-wrap justify-content-between">
-                        <div>
+                      <div class="d-flex flex-wrap justify-content-start justify-content-sm-between">
+                        <div class="mx-md-0 mx-2">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(923)?>">
                           Info empresa
                           </a>
                         </div>
-                        <div>|</div>
-                        <div>
+                        <div class="d-none d-md-inline-block">|</div>
+                        <div class="mx-md-0 mx-2">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(943)?>">
                           Política de seguridad de la información
                           </a>
                         </div>
-                        <div>|</div>
-                        <div>
+                        <div class="d-none d-md-inline-block">|</div>
+                        <div class="mx-md-0 mx-2">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(943)?>">
                           Política de privacidad web
                           </a>
                         </div>
-                        <div>|</div>
-                        <div>
+                        <div class="d-none d-md-inline-block">|</div>
+                        <div class="mx-md-0 mx-2">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(945)?>">
                           Condiciones generales
                           </a>
                         </div>
-                        <div>|</div>
-                        <div>
+                        <div class="d-none d-md-inline-block">|</div>
+                        <div class="mx-md-0 mx-2">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(947)?>">
                           Cookies
                           </a>
                         </div>
-                        <div>|</div>
-                        <div>
+                        <div class="d-none d-md-inline-block">|</div>
+                        <div class="mx-md-0 mx-2">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(939)?>">
                           Créditos
                           </a>
                         </div>
-                        <div>|</div>
-                        <div>
+                        <div class="d-none d-md-inline-block">|</div>
+                        <div class="mx-md-0 mx-2">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(941)?>">
                           Mapa web
                           </a>
