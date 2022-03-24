@@ -19,7 +19,7 @@
 <?php
 if($fields["elemento_grid"]):
   ?>
-  <div class="col-12 mt-64 mt-md-70 mt-xl-64 position-relative">
+  <div class="col-12 mt-64 position-relative">
     <div class="row mx-sm-0">
       <?
       foreach ($fields["elemento_grid"] as $key => $single_grid):
@@ -41,7 +41,7 @@ if($fields["elemento_grid"]):
             <div class="text-white d-flex h-100 w-100" <?=($single_grid['fondo_color'])?'style="background-color:'.$single_grid['fondo_color'].'"':'';?>>
               <div class="col-12 d-flex align-items-center">
                 <div class="row">
-                  <div class="offset-2 col-8">
+                  <div class="col-10 offset-1 offset-md-2 col-md-8">
                     <div class="row">
                       <?
                       if($single_grid['texto_superior']):
@@ -51,7 +51,7 @@ if($fields["elemento_grid"]):
                       endif;
                       if($single_grid['texto_principal']):
                       ?>
-                        <div class="col-12 h4 mt-8"><?=$single_grid['texto_principal']?></div>
+                        <div class="col-12 h4 fw-bold fs-24 fs-sm-32 mt-8"><?=$single_grid['texto_principal']?></div>
                       <?
                       endif;
                       if($single_grid['descripcion']):
@@ -64,7 +64,7 @@ if($fields["elemento_grid"]):
                       if($single_grid['texto_cta']):
                       ?>
                         <div class="col-12">
-                          <a href="<?=$single_grid['link_cta']?>" class="btn border-2 fw-500 btn-outline-primary-brighter text-uppercase mt-40 fs-14 rounded-0">
+                          <a href="<?=$single_grid['link_cta']?>" class="btn border-2 fw-500 btn-outline-primary-brighter text-uppercase mt-20 mt-sm-40 fs-14 rounded-0">
                             <span><?=$single_grid['texto_cta']?></span>
                           </a>
                         </div>

@@ -17,6 +17,14 @@
     }
 }
 
+.swiper-home-promocional{
+    .col{
+        @include media-breakpoint-down(sm) {
+            max-width: max-content !important;
+        }
+    }
+}
+
 .swiper-home{
     @include media-breakpoint-down(sm) {
         .bg-custom-image{
