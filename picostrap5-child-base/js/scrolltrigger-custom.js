@@ -3,12 +3,12 @@ if( document.body.classList.contains('single-landing') ) {
     scrollTrigger: {
       trigger: '.producto-central',
       toggleActions: 'play pause pause reverse',
-      start: 'center center',
+      start: 'top center',
       end: 'bottom center',
       scrub: true,
       markers: false,
     },
-    y: 60,
+    y: 120,
     // rotation: 10,
   });
 
@@ -17,64 +17,63 @@ if( document.body.classList.contains('single-landing') ) {
 
     gsap.to('.limon-1', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
-        toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        trigger: '.bg-custom-image',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
-      y: 220,
+      y: 420,
       rotation: 0,
     });
 
     //Limon borroso
     gsap.to('.limon-3', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
+        trigger: '.bg-custom-image',
         toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
-      y: -200,
+      y: -400,
       rotation: 0,
     });
 
     gsap.to('.limon-4', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
+        trigger: '.bg-custom-image',
         toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
-      y: 220,
+      y: 420,
       rotation: 0,
     });
 
     gsap.to('.fresa-1', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
+        trigger: '.bg-custom-image',
         toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
-      y: 100,
+      y: 200,
       rotation: 0,
     });
 
     //Fresa borrosa
     gsap.to('.fresa-2', {
       scrollTrigger: {
-        trigger: '.w-cabecera-animada',
+        trigger: '.bg-custom-image',
         toggleActions: 'restart pause reverse pause',
-        start: 'center center',
-        end: 'bottom center',
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         markers: false,
       },
@@ -90,7 +89,7 @@ if( document.body.classList.contains('single-landing') ) {
       scrollTrigger: {
         trigger: '.bg-custom-image',
         toggleActions: 'restart pause reverse pause',
-        start: 'top center',
+        start: 'top top',
         end: 'bottom center',
         scrub: true,
         markers: false,
