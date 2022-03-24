@@ -72,7 +72,7 @@ $slider_html.="<div data-swiper='swiper_home_dedicado'
       endif;
       ?>
     </div>
-    <div class="col-12 mt-48 mt-sm-90 mt-lg-0 offset-lg-7 col-lg-5 offset-xxl-8 col-xxl-4 position-absolute end-0 bottom-0">
+    <div class="col-12 mt-48 mt-sm-90 mt-lg-0 offset-lg-7 col-lg-5 offset-xxl-8 col-xxl-4 position-lg-absolute end-0 bottom-0">
       <div class="filtros_buscador row text-secondary text-start text-lg-end text-uppercase fs-13 fw-500">
         <div class="col col-sm-2 col-custom-lg filtro_buscador active c-pointer letter-spacing-1x3" data-filter="*">
           Todos

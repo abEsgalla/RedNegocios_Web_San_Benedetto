@@ -11,7 +11,7 @@ get_header();
 
 <section class="position-absolute top-0 w-100">
   <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-492">
-    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+    <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(657, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
@@ -59,7 +59,7 @@ get_header();
       <div class="col-12"> 
         <div class="row">
           <div class="col-6 g-0 position-relative">
-            <?=wp_get_attachment_image(754, "full", "", array( 'class' => 'w-100 position-absolute' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(754, "full", "", array( 'class' => 'w-100 position-absolute img-parallax' , 'alt' => '' , 'title' => '') ); ?>
           </div>
           <div class="col-6 pt-103 pb-118">
             <div class="row">
@@ -100,7 +100,7 @@ get_header();
             </div>
           </div>
           <div class="col-6 g-0 position-relative">
-            <?=wp_get_attachment_image(755, "full", "", array( 'class' => 'w-100 position-absolute bottom-0' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(755, "full", "", array( 'class' => 'w-100 position-absolute bottom-0 img-parallax' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div> 
       </div>

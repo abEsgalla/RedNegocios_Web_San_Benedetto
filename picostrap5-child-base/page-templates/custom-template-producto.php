@@ -39,19 +39,15 @@ get_header();
 <section class="my-96 mt-170">
   <div class="container text-secondary">
     <div class="row">
-      <div class="g-0 col-6">
-        <div class="row">
-          <div class="offset-2 col-8 h2 mb-64">
-            Ecodiseño
-          </div>
-        </div>
-      </div>
       <div class="col-12 position-relative">
         <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
         class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after">
         <div class="row position-relative zi-99">
-          <div class="g-0 col-12 col-sm-6 d-block">
+          <div class="g-0 col-12 col-sm-6 d-block" data-aos="fade-right">
             <div class="row">
+              <div class="offset-2 col-8 h2 mb-64">
+                Ecodiseño
+              </div>
               <div class="col-12 offset-xl-2 col-xl-8 fs-17">
                 En Agua Mineral San Benedetto somos <strong>especialistas en ecodiseño.</strong>
                 Ecodiseñar es considerar la variable ambiental en el proceso de diseño y desarrollo de un producto.<br></br>
@@ -88,7 +84,7 @@ get_header();
           </div>
           <div class="g-0 col-12 col-sm-6 d-block">
             <div class="row">
-              <div class="py-80 col-12 offset-xl-2 col-xl-8 fs-17">
+              <div class="py-80 col-12 offset-xl-2 col-xl-8 fs-17" data-aos="fade-left">
                 En Agua Mineral San Benedetto sostenemos que <strong>el rPET no es el objetivo, 
                 sino una de las muchas variables que hacen posible la reducción de la huella de carbono.</strong> 
                 Introducir más plástico reciclado para luego aumentar el gramaje de las botellas o 
@@ -126,7 +122,7 @@ get_header();
 
 <section class="my-96 mb-xl-160">
   <div class="container">
-    <div class="row text-center text-secondary">
+    <div class="row text-center text-secondary" data-aos="fade-up">
       <div class="col-12 h2">
         Concienciación 
       </div>
