@@ -3,15 +3,15 @@
   $seccion = $fields;
 ?>
 
-<section class=" <? if(is_single(196)) { echo 'bg-dark pt-65 pb-64'; } else { echo 'mt-65 mb-64';} ?>">
+<section class="mt-65 mb-64">
   <div class="container-fluid container-fluid-custom position-relative">
     <div class="row">
       <div class="col-12">
-        <div class="row text-center <? if(is_single(196)) {echo 'text-white';} else { echo 'text-secondary'; } ?>">
+        <div class="row text-center text-secondary">
           <div class="col-12 fs-18 text-uppercase <? if( is_single(489) ) { echo 'fw-bold'; } ?>">
             <?=$seccion['slider']['texto_superior']?>
           </div>
-          <div class="col-12 h3 <? if(is_single(196)) {echo 'text-white';} else { echo 'text-secondary-light'; } ?>">
+          <div class="col-12 h3 text-secondary-light">
             <?=$seccion['slider']['texto_principal']?>
           </div>
         </div>
