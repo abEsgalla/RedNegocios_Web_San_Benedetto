@@ -10,7 +10,7 @@ get_header();
 ?>
 
 <section class="text-vision">
-  <div class="container-fluid position-relative zi-9 bg-black pt-138 pt-md-270 pb-317">
+  <div class="container-fluid position-relative zi-9 bg-black pt-138 pt-md-270 pb-md-317 pb-150">
     <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(606, "full")?>')"></div>
       <div class="container position-relative">
@@ -42,7 +42,7 @@ get_header();
         <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative d-none d-lg-block img-parallax' , 'alt' => '' , 'title' => '') ); ?>
         <?=wp_get_attachment_image(1253, "full", "", array( 'class' => 'w-100 position-relative d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
       </div>
-      <div class="col-12 col-lg-6 g-lg-0 d-block bg-primary-brighter order-3 py-166 px-112 text-center text-lg-start mt-70 mt-md-270 mt-lg-0">
+      <div class="col-12 col-lg-6 g-lg-0 d-block bg-primary-brighter order-3 py-md-166 py-105 px-112 text-center text-lg-start mt-70 mt-md-270 mt-lg-0">
         <div class="text-secondary fs-16 fs-md-18">ÉSTA ES NUESTRA</div>
         <div class="fs-32 fs-md-64 fw-bold text-secondary">Misión</div>
       </div>
@@ -57,10 +57,10 @@ get_header();
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-sm-6 g-0 px-24 pe-sm-0 ps-sm-24 ps-lg-0">
+      <div class="col-6 px-0 col-sm-6 g-0 pe-sm-0 ps-sm-24 ps-lg-0">
         <?=wp_get_attachment_image(610, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
       </div>
-      <div class="col-12 col-sm-6 g-0 px-24 ps-sm-0 pe-sm-24 pe-lg-0">
+      <div class="col-6 px-0 col-sm-6 g-0 ps-sm-0 pe-sm-24 pe-lg-0">
         <?=wp_get_attachment_image(609, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>
