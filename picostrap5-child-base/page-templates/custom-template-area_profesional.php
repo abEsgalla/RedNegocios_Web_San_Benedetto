@@ -15,7 +15,7 @@ get_header();
       style="background:url('<?=wp_get_attachment_image_url(790, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-xl-6">
             <div class="row text-white">
               <h1 class="col-12 h2">
                 Área <br> profesional
@@ -33,13 +33,13 @@ get_header();
     <div class="row">
       <div class="col-12 text-secondary">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="row">
-              <div class="col-8 offset-2">
+              <div class="col-12 col-xl-8 offset-xl-2">
                 <div class="row">
                   <div class="col-12" data-aos="fade-right">
                     <div class="h2">Catálogo</div>
-                    <div class="mt-32 fs-17">
+                    <div class="mt-32 mb-94 fs-17">
                       Agua Mineral San Benedetto dispone de un amplísimo catálogo de productos y 
                       formatos que se adaptan a las necesidades de cada canal de distribución. <br></br>
                       Tanto en agua mineral como en refrescos, ofrecemos diversidad de formatos idóneos para el <strong>Gran Consumo</strong>, 
@@ -52,18 +52,16 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-6 position-relative g-0">
-            <?=wp_get_attachment_image(927, "full", "", array( 'class' => 'position-absolute w-100 top-0 transform-translate-ny pb-32' , 'alt' => '' , 'title' => '') ); ?>
-            <?=wp_get_attachment_image(788, "full", "", array( 'class' => 'w-100 im g-parallax' , 'alt' => '' , 'title' => '') ); ?>
+          <div class="col-12 col-lg-6 position-relative bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url(788, "full")?>')">
+            <?=wp_get_attachment_image(927, "full", "", array( 'class' => 'd-none d-xl-inline-block position-relative position-xl-absolute w-100 start-0 top-0 transform-translate-ny pb-32' , 'alt' => '' , 'title' => '') ); ?>
           </div>
-          <div class="col-6 g-0">
-            <?=wp_get_attachment_image(789, "full", "", array( 'class' => 'w-100 im g-parallax' , 'alt' => '' , 'title' => '') ); ?>
+          <div class="col-12 py-lg-0 py-200 col-lg-6 bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url(789, "full")?>')">
           </div>
-          <div class="col-6 d-flex align-items-center">
+          <div class="col-12 col-lg-6 d-flex align-items-center">
             <div class="row">
-              <div class="col-8 offset-2">
+              <div class="col-lg-8 offset-lg-2">
                 <div class="row">
-                  <div class="col-12 fs-17" data-aos="fade-left">
+                  <div class="col-12 fs-17 my-lg-94 my-64" data-aos="fade-left">
                     <div>
                     Disponemos también de toda una línea de productos que se adecúan perfectamente a las necesidades de la <strong>hostelería,
                      tiendas tradicionales y vending</strong>, acompañando a los consumidores en esas ocasiones especiales que demandan 
@@ -85,13 +83,13 @@ get_header();
   </div>
 </section>
 
-<section class="mt-160">
+<section class="mt-xl-160">
   <div class="container-fluid position-relative zi-9 bg-secondary-darker py-105">
     <div class="bg-custom-image opacity-50 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(51, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
-          <div class="offset-2 col-8 text-center text-white">
+          <div class="col-12 offset-lg-2 col-lg-8 text-center text-white">
             <div class="row">
               <div class="col-12 text-uppercase fs-18">
                 san benedetto
