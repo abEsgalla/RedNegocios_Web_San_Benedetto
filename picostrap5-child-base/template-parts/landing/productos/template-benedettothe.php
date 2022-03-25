@@ -37,7 +37,7 @@
                     echo '</div>';
                 break;
                 case 'cols_imagenes_texto':
-                    get_template_part( 'template-parts/landing/seccion', 'cols_imagenes_texto', $seccion);
+                    get_template_part( 'template-parts/landing/seccion', 'cols_imagenes_texto_te', $seccion);
                 break;
                 case 'banner':
                     get_template_part( 'template-parts/landing/seccion', 'banner', $seccion);

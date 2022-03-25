@@ -165,4 +165,60 @@
   opacity: 75%;
 }
 
+.container-fluid-custom .swiper.slider-zero:before,
+.container-fluid-custom .swiper.slider-zero:after{
+  opacity: 0;
+}
+
+.background-te-imagenes{
+  background-image: url('../src/img/background-te/background_te_imagenes.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.background-zero-frutas{
+  background-image: url('../src/img/background-zero/background_zero_frutas.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.background-col-imagenes-zero{
+  background-image: url('../src/img/background-zero/background_col_imagenes_frutas.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.te-imagenes-bottom{
+  bottom: 50px;
+  right: 0;
+}
+
+.te-imagenes-bottom-left{
+  bottom: 200px;
+  left: 0;
+}
+
+.te-imagenes-top{
+  top: 200px;
+  left: 0;
+}
+
+.te-liquido{
+  top: 0;
+  transform: translateY(-20%);
+  right: 0;
+}
+
+.zero-manzana-imagenes{
+  top: 0;
+  transform: translateY(-25%);
+  left: 25px;
+}
+
+.zero-limon-imagenes{
+  bottom: 0;
+  right: 0;
+  transform: translateX(25%);
+}
+
 
