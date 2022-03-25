@@ -10,7 +10,7 @@ get_header();
 ?>
 
 <section class="position-absolute top-0 w-100">
-  <div class="container-fluid position-relative zi-9 bg-black pt-261 pb-492">
+  <div class="container-fluid position-relative zi-9 bg-black pt-138 pb-333 pt-sm-261 pb-sm-492">
     <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(657, "full")?>')"></div>
       <div class="container position-relative">
@@ -20,7 +20,7 @@ get_header();
               <div class="col-12 text-uppercase fs-18">
               GRUPO SAN BENEDETTO
               </div>
-              <h1 class="col-12 mt-8 h2 text-white">
+              <h1 class="col-12 mt-8 h2 fs-32 fs-lg-64 text-white">
                 Agua Mineral San Benedetto en España
               </h1>
             </div>
@@ -34,13 +34,13 @@ get_header();
 <section class="mb-96 position-relative mt-custom-25">
   <div class="container bg-white">
     <div class="row">
-      <div class="offset-2 col-8 mt-133">
-        <div class="row">
+      <div class="col-12 offset-lg-2 col-lg-8 mt-48 mt-sm-133">
+        <div class="row"> 
           <div class="col-12 text-center text-secondary">
-            <div class="h2">
+            <div class="h2 fs-32 fs-lg-64">
               Nuestras plantas
             </div>
-            <div class="mt-56 pb-56 fs-17">
+            <div class="mt-48 mt-sm-56 pb-56 fs-17">
               Agua Mineral San Benedetto es la primera envasadora de agua mineral en España por volumen, 
               y uno de los principales fabricantes de refrescos del país.<br></br>
               La compañía posee 2 plantas de envasado en España: <strong>Agua Mineral San Benedetto S.A.U.</strong> 
@@ -58,12 +58,13 @@ get_header();
     <div class="row">
       <div class="col-12"> 
         <div class="row">
-          <div class="col-6 g-0 position-relative">
-            <?=wp_get_attachment_image(754, "full", "", array( 'class' => 'w-100 position-absolute img-parallax' , 'alt' => '' , 'title' => '') ); ?>
+          <div class="col-12 col-lg-6 g-0 position-relative mt-n60 mt-lg-n0">
+            <?=wp_get_attachment_image(754, "full", "", array( 'class' => 'w-100 position-absolute img-parallax d-none d-lg-block' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(754, "full", "", array( 'class' => 'w-100 d-lg-none d-block' , 'alt' => '' , 'title' => '') ); ?>
           </div>
-          <div class="col-6 pt-103 pb-118">
+          <div class="col-12 col-lg-6 pt-103 pb-118">
             <div class="row">
-              <div class="offset-1 col-10 fs-17">
+              <div class="col-12 offset-lg-1 col-lg-10 fs-17">
                 En San Antonio de Requena se envasan nuestras aguas minerales <strong>Fuente Primavera</strong> y <strong>Fuencisla</strong>, 
                 además de producirse toda nuestra línea de refrescos. Aquí se encuentran también nuestra Oficinas Centrales. 
               </div>
@@ -89,9 +90,9 @@ get_header();
     <div class="row">
       <div class="col-12"> 
         <div class="row">
-          <div class="col-6 pt-116 pb-160">
+          <div class="col-12 col-lg-6 col-12 py-64 pt-lg-116 pb-lg-160 order-1 order-lg-0">
             <div class="row">
-              <div class="offset-1 col-10 fs-17">
+              <div class="col-12 offset-lg-1 col-lg-10 fs-17">
                 En Loja, se envasa nuestra agua mineral <strong>Font Natura</strong>.<br></br>
                 En total, disponemos de 11 líneas de llenado y 2 de aséptico. 
                 Envasamos <strong>más de 1.000 millones de litros anuales</strong> y empleamos a 
@@ -99,8 +100,9 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-6 g-0 position-relative">
-            <?=wp_get_attachment_image(755, "full", "", array( 'class' => 'w-100 position-absolute bottom-0 img-parallax' , 'alt' => '' , 'title' => '') ); ?>
+          <div class="col-12 col-lg-6 g-0 position-relative order-0 order-lg-1 mt-n242 mt-lg-n0">
+            <?=wp_get_attachment_image(755, "full", "", array( 'class' => 'w-100 position-absolute bottom-0 img-parallax d-none d-lg-block' , 'alt' => '' , 'title' => '') ); ?>
+            <?=wp_get_attachment_image(755, "full", "", array( 'class' => 'w-100 d-lg-none d-block' , 'alt' => '' , 'title' => '') ); ?>
           </div>
         </div> 
       </div>
@@ -108,20 +110,20 @@ get_header();
   </div>
 </section>
 
-<section class="mt-222 mb-96">
+<section class="my-64 mt-lg-222 mb-lg-96 manantiales">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12 text-center">
         <div class="fs-18 text-uppercase">descubre nuestros</div>
-        <div class="h2">Manatiales</div>
+        <div class="h2 fs-32 fs-lg-64">Manatiales</div>
       </div>
       <div class="col-12 mt-88">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <div class="row">
-              <div class="col-12 offset-xl-1 col-xl-10">
+              <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-10 border-end">
                 <div class="row">
-                  <div class="col-12 d-flex justify-content-start">
+                  <div class="col-12 d-flex justify-content-center justify-content-lg-start">
                     <span class="rounded-circle border border-1">
                       <?=wp_get_attachment_image(756, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
@@ -129,7 +131,7 @@ get_header();
                   <div class="col-12 mt-48 fs-24 fw-bold text-uppercase">
                     Manantial<br> Fuente Primavera
                   </div>
-                  <div class="col-12 col-xl-9 mt-36 text-secondary">
+                  <div class="col-12 col-lg-9 mt-36 text-secondary">
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(760, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
                         <div>Caudal de <strong>75L por segundo</strong></div>
@@ -147,11 +149,11 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-4 border-start">
+          <div class="col-12 col-lg-4 border-start">
             <div class="row">
-              <div class="col-12 offset-xl-1 col-xl-10 border-end">
+              <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-10 border-end">
                 <div class="row">
-                  <div class="col-12 d-flex justify-content-start">
+                  <div class="col-12 d-flex justify-content-center justify-content-lg-start ">
                     <span class="rounded-circle border border-1">
                       <?=wp_get_attachment_image(757, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
@@ -159,7 +161,7 @@ get_header();
                   <div class="col-12 mt-80 fs-24 fw-bold text-uppercase">
                     Manantial Fuencisla
                   </div>
-                  <div class="col-12 col-xl-9 mt-36 text-secondary">
+                  <div class="col-12 col-lg-9 mt-36 text-secondary">
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(760, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
                         <div>Caudal de <strong>8L por segundo</strong></div>
@@ -177,11 +179,11 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <div class="row">
-              <div class="col-12 offset-xl-1 col-xl-11">
+              <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-10 border-end">
                 <div class="row">
-                  <div class="col-12 d-flex justify-content-start">
+                  <div class="col-12 d-flex justify-content-center justify-content-lg-start">
                     <span class="rounded-circle border border-1">
                       <?=wp_get_attachment_image(758, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
@@ -189,7 +191,7 @@ get_header();
                   <div class="col-12 mt-80 fs-24 fw-bold text-uppercase">
                     Manantial Font Natura
                   </div>
-                  <div class="col-12 col-xl-9 mt-36 text-secondary">
+                  <div class="col-12 col-lg-9 mt-36 text-secondary">
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(760, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
                         <div>Caudal de <strong>150L por segundo</strong></div>
@@ -213,7 +215,7 @@ get_header();
   </div>
 </section>
 
-<section class="mt-274 mb-160">
+<section class="my-64 mt-lg-274 mb-lg-160">
   <div class="container text-center">
     <div class="row">
       <div class="col-12">
@@ -223,18 +225,18 @@ get_header();
   </div>
 </section>
 
-<section class="mt-160 mb-200">
+<section class="my-64 mt-lg-160 mb-lg-200">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12 text-center">
         <div class="row">
-          <div class="offset-2 col-8">
+          <div class="col-12 offset-lg-2 col-lg-8">
             <div class="row">
               <div class="col-12">
                 <div class="text-uppercase">
                   descubre nuestro
                 </div>
-                <div class="h2 mt-8">
+                <div class="h2 fs-32 fs-lg-64 mt-8">
                   Entorno
                 </div>
                 <div class="mt-40 fs-17">
@@ -250,7 +252,7 @@ get_header();
       </div>
       <div class="col-12 mt-80">
         <div class="row">
-          <div class="offset-1 col-10">
+          <div class="col-12 offset-lg-1 col-lg-10">
             <div class="row">
               <div class="col-6">
                 <?=wp_get_attachment_image(661, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>

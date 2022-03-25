@@ -81,7 +81,7 @@
     }
 }
 
-.mt-custom-28{
+.mt-custom-28,.mt-custom-25{
     @include media-breakpoint-down(xxxl) {
         margin-top: 37%;
     }
@@ -160,6 +160,19 @@
     @include media-breakpoint-down(sm) {
         a:first-child {
             border: none;
+        }
+    }
+}
+
+.manantiales{
+    .border-start{
+        @include media-breakpoint-down(lg) {
+            border: 0px !important;
+        }
+    }
+    .border-end{
+        @include media-breakpoint-down(lg) {
+            border: 0px !important;
         }
     }
 }
