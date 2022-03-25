@@ -9,18 +9,18 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section class="my-96 mt-218">
-  <div class="container">
+<section class="my-96 mt-120 mt-sm-166 mt-xl-218">
+  <div class="container gx-sm-2 gx-4">
     <div class="row">
       <div class="col-12">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <div class="row">
               <div class="col-12">
                 <div class="text-uppercase text-secondary">GRUPO SAN BENEDETTO</div>
-                <h1 class="h2 text-secondary mt-8">Localización y contacto</h1>
+                <h1 class="h2 fs-45 fs-xl-64 text-secondary mt-8">Localización y contacto</h1>
               </div>
-              <div class="col-12 mt-80">
+              <div class="col-12 mt-48 mt-xl-80">
                 <div class="text-uppercase h5 text-secondary">oficinas centrales</div>
               </div>
               <div class="col-12 text-primary my-48">
@@ -118,11 +118,11 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="offset-2 col-6">
+          <div class="col-12 offset-lg-2 col-lg-6">
             <div class="row">
               <div class="col-12">
-                <?=wp_get_attachment_image(665, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-                <?=wp_get_attachment_image(666, "full", "", array( 'class' => 'mt-112' , 'alt' => '' , 'title' => '') ); ?>
+                <?=wp_get_attachment_image(665, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
+                <?=wp_get_attachment_image(666, "full", "", array( 'class' => 'w-100 mt-112 d-none d-lg-inline-block' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>
@@ -132,20 +132,20 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-96 mb-0 mb-xl-96">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-6 bg-primary"> 
+      <div class="col-12 col-lg-6 bg-primary"> 
         <div class="row">
-          <div class="col-7 offset-4">
-            <div class="row">
+          <div class="col-12 offset-sm-2 col-sm-8 col-lg-7 offset-lg-4">
+            <div class="row px-sm-0 px-12">
               <div class="col-12 text-white mt-120">
                 <div class="fw-bold h3">
                   Formulario <br>de <span class="text-decoration-underline">contacto</span>
                 </div>
               </div>
-              <div class="offset-2 col-10 text-white">
-                <div class="mt-64 pb-48 fs-17">
+              <div class="col-12 offset-lg-2 col-lg-10 text-white">
+                <div class="mt-64 pb-96 pb-xl-48 fs-17">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit hac facilisis, 
                   metus aptent rhoncus tristique curabitur semper fusce nunc integer, 
                   auctor leo dis eros vehicula suscipit dignissim sodales.
@@ -155,9 +155,9 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="col-6 bg-secondary"> 
-        <div class="row">
-          <div class="offset-1 col-6">
+      <div class="col-12 col-lg-6 bg-secondary"> 
+        <div class="row px-sm-0 px-12">
+          <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-6">
             <form class="my-80 text-white rm-bootstrap-form-style needs-validation" novalidate>
               <div class="mt-3">
                 <label for="inputNombre" class="form-label fs-12 mb-1">Nombre y apellidos *</label>
@@ -215,8 +215,8 @@ get_header();
   </div>
 </section>
 
-<section class="my-96">
-  <div class="container bg-white">
+<section class="my-56">
+  <div class="container gx-sm-2 gx-4 bg-white">
     <div class="row">
       <div class="col-12 position-relative">
         <?php
