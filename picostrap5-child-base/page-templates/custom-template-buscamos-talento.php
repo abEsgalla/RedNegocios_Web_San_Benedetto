@@ -10,12 +10,12 @@ get_header();
 ?>
 
 <section>
-  <div class="container-fluid position-relative zi-9 bg-black pt-270 pb-242">
+  <div class="container-fluid position-relative zi-9 bg-black pt-120 pt-sm-270 pb-242">
     <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(674, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 text-center text-xl-start col-xl-6">
             <div class="row text-white">
               <div class="col-12 fs-18">
                 GRUPO SAN BENEDETTO
@@ -32,12 +32,12 @@ get_header();
 </section>
 
 <section class="mb-56 bg-secondary text-white">
-  <div class="container">
+  <div class="container gx-sm-2 gx-4">
     <div class="row py-96">
-      <div class="col-6">
+      <div class="col-12 col-xl-6 order-1 order-xl-0">
         
         <div class="row">
-          <div class="col-8">
+          <div class="col-12 col-xl-8">
             <form class="text-white rm-bootstrap-form-style needs-validation" novalidate>
               <div class="mt-3">
                 <label for="inputNombre" class="form-label fs-12 mb-1">Nombre y apellidos *</label>
@@ -94,7 +94,7 @@ get_header();
         </div>
 
       </div>
-      <div class="col-6">
+      <div class="col-12 col-xl-6 order-0 order-xl-1 text-center position-relative mb-64 mb-xl-0 mt-n270 mt-xl-0">
         <?=wp_get_attachment_image(791, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>
@@ -102,7 +102,7 @@ get_header();
 </section>
 
 <section class="my-56">
-  <div class="container">
+  <div class="container gx-sm-2 gx-4">
     <div class="row">
       <div class="col-12 position-relative">
         <?php
