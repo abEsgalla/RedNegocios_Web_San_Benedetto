@@ -124,6 +124,10 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
       let contenedor_swiper_home_promocional = document.querySelector("#sliderPromocional");
       contenedor_swiper_home_promocional.style["background-color"] = bg_color_slide;
       first_slide.querySelector('.slider-cover').classList.add('to-the-left');
+      let arrows_next = document.querySelector("#sliderPromocional .arrow-next path");
+      let arrows_prev = document.querySelector("#sliderPromocional .arrow-prev path");
+      arrows_next.style.fill = first_slide.dataset.textcolor;
+      arrows_prev.style.fill = first_slide.dataset.textcolor;
     },
   },
 });
@@ -160,10 +164,15 @@ swiper_home_promocional.on('activeIndexChange', function (swiper) {
   // let active_slide = document.querySelector(".swiper-home-promocional .swiper-slide-active");
   let bg_color_slide = active_slide.dataset.bgcolor;
   let contenedor_swiper_home_promocional = document.querySelector("#sliderPromocional");
+  let arrows_next = document.querySelector("#sliderPromocional .arrow-next path");
+  let arrows_prev = document.querySelector("#sliderPromocional .arrow-prev path");
   contenedor_swiper_home_promocional.style["background-color"] = bg_color_slide;
-
   //Muevo el cover del slide activo
   active_slide.querySelector('.slider-cover').classList.add('to-the-left');
+  console.log('--->' + active_slide.dataset.textcolor);
+  let colorTexto = active_slide.dataset.textcolor == 'white' ? '#FFFFFF' : '#002D72';
+  arrows_next.setAttribute('style', 'fill: '+colorTexto);
+  arrows_prev.setAttribute('style', 'fill: '+colorTexto);
 });
 
 
