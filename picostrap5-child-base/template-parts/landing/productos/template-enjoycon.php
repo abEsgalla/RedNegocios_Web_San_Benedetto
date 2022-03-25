@@ -8,7 +8,7 @@
 		<div class="container position-relative">
 			<div class="row">
 				<div class="col-12 text-center">
-						<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25' , 'alt' => '' , 'title' => '') ); ?>
+						<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25 producto-central' , 'alt' => '' , 'title' => '') ); ?>
 				</div>
 			</div>
 		</div>
