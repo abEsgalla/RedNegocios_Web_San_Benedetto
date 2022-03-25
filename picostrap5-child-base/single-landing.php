@@ -34,6 +34,9 @@ elseif( get_the_ID() == 324 ) {
 elseif( get_the_ID() == 444 ) {
 	get_template_part('/template-parts/landing/productos/template', 'quizzahappy');
 }
+elseif( get_the_ID() == 429 ) {
+	get_template_part('/template-parts/landing/productos/template', 'essenziarefresco');
+}
 elseif( get_the_ID() == 211 ) {
 	get_template_part('/template-parts/landing/productos/template', 'primavera');
 }
@@ -67,7 +70,7 @@ else { ?>
 		<div class="container position-relative">
 			<div class="row">
 				<div class="col-12 text-center">
-						<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25' , 'alt' => '' , 'title' => '') ); ?>
+						<?=wp_get_attachment_image($acf_fields['cabecera']['producto_central'], "full", "", array( 'class' => 'mtn-custom-25 producto-central' , 'alt' => '' , 'title' => '') ); ?>
 				</div>
 			</div>
 		</div>

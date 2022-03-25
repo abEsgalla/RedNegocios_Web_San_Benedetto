@@ -55,17 +55,15 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
     endif;
     $header_menu.="    
                     <div class='col-2'>
-                        <div class='row'>
-                            <a class='single-menu-brand text-decoration-none text-reset position-relative' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
-                                <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."' class='col-12 ratio ratio-2x3'>
-                                    <div class='px-2 bg-custom-image-brand-menu img-menu-brand' style='background:url(".wp_get_attachment_image_url($custom_image_bg_id, 'full').")'></div>
-                                    <div class='px-2 bg-custom-image-product-menu img-menu-product' style='background:url(".wp_get_attachment_image_url($image_hover, 'full').")'></div>
-                                </div>
-                                <div class='col-12 mt-10 text-secondary fw-500 fs-13'>
-                                ".get_the_title($id_producto)."
-                                </div>
-                            </a>
-                        </div>
+                        <a class='single-menu-brand text-decoration-none text-reset position-relative' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
+                            <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."' class='ratio ratio-2x3'>
+                                <div class='px-2 bg-custom-image-brand-menu img-menu-brand' style='background:url(".wp_get_attachment_image_url($custom_image_bg_id, 'full').")'></div>
+                                <div class='px-2 bg-custom-image-product-menu img-menu-product' style='background:url(".wp_get_attachment_image_url($image_hover, 'full').")'></div>
+                            </div>
+                            <div class='col-12 mt-10 text-secondary fw-500 fs-13'>
+                            ".get_the_title($id_producto)."
+                            </div>
+                        </a>
                     </div>";
     $limit++;
     endforeach;

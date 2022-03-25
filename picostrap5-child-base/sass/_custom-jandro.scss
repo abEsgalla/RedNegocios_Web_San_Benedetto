@@ -221,4 +221,37 @@
   transform: translateX(25%);
 }
 
+.limon-essenzia-top{
+  top: 0;
+  transform: translateY(calc(-100% + 50px));
+}
+
+.menta-essenzia-bottom{
+  top: -50px;
+  right: 0;
+  transform: translateX(50%);
+  z-index: 1;
+}
+
+.menta-essenzia-top{
+  top: 0;
+  transform: translateY(calc(-100% - 75px));
+  left: 50px;
+}
+
+.naranja-essenzia-bottom{
+  bottom: -20px;
+  right: 0;
+}
+
+.limon-agua{
+  top: 0;
+  right: 0;
+}
+
+.manzana-agua{
+  left: 0;
+  bottom: 0;
+}
+
 

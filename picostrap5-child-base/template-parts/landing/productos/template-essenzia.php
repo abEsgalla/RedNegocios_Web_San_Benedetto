@@ -13,6 +13,8 @@
                 </div>
             </div>
         </div>
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/limon-agua.png'; ?>" class="position-absolute limon-agua">
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/manzana-agua.png'; ?>" class="position-absolute manzana-agua">
     </div>
 </section>
 
