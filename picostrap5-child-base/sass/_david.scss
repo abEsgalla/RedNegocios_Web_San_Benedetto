@@ -176,3 +176,23 @@
         }
     }
 }
+
+.sello-rotacion{
+    @include media-breakpoint-down(sm) {
+        max-width: 65vw !important;
+    }
+}
+
+.sello{
+    @include media-breakpoint-down(sm) {
+        max-width: 50vw !important;
+    }
+}
+
+.mw-custom-container{
+    @include media-breakpoint-down(sm) {
+        max-width: calc(100vw - 24px * 2);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
