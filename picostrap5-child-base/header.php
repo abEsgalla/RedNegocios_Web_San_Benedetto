@@ -129,44 +129,70 @@ defined( 'ABSPATH' ) || exit;
               </div>
               <div class="border-bottom border-secondary-lighter py-16">
                 <div class="d-flex justify-content-between">
-                  <a href="#" class="text-reset text-decoration-none">nosotros</a> <i class="fa-solid fa-plus-large"></i>
+                  <a href="#" class="text-reset text-decoration-none">nosotros</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
                 </div>
-                <div class="submenu d-none fw-400 fs-13 ps-16">
+                <div class="submenu fw-400 fs-13 ps-16">
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Historia</a>
+                    <a href="<?=get_permalink(579)?>" class="text-reset text-decoration-none">Historia</a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Misión, Visión y Valores</a>
+                    <a href="<?=get_permalink(581)?>" class="text-reset text-decoration-none">Misión, Visión y Valores</a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">San Benedetto en España</a>
+                    <a href="<?=get_permalink(655)?>" class="text-reset text-decoration-none">San Benedetto en España</a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">San Benedetto en el mundo</a>
+                    <a href="<?=get_permalink(667)?>" class="text-reset text-decoration-none">San Benedetto en el mundo</a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Noticias</a>
+                    <a href="<?=get_permalink( get_option( 'page_for_posts' ) ); ?>" class="text-reset text-decoration-none">Noticias</a>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom border-secondary-lighter py-16">
+                <div class="d-flex justify-content-between">
+                  <a href="<?=get_permalink(49)?>" class="text-reset text-decoration-none">marcas</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="submenu fw-400 fs-13 ps-16">
+                  <div class="pt-16">
+                    <a href="/landings/fuente-primavera/" class="text-reset text-decoration-none">Fuente Primavera</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="/landings/font-natura/" class="text-reset text-decoration-none">Font Natura</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="/landings/san-benedetto/" class="text-reset text-decoration-none">San Benedetto</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="/landings/enjoy/" class="text-reset text-decoration-none">Enjoy</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="/landings/san-benedetto-zero/" class="text-reset text-decoration-none">San Benedetto Zero</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="/landings/san-benedetto-the/" class="text-reset text-decoration-none">San Benedetto Thé</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="/landings/upgrade/" class="text-reset text-decoration-none">Upgrade</a>
+                  </div>
+                  <div class="pt-16">
+                    <a href="<?=get_permalink(49)?>" class="text-reset text-decoration-none">Ver Más</a>
                   </div>
                 </div>
               </div>
               <div class="border-bottom border-secondary-lighter py-16">
                 <div class="d-flex justify-content-between">
-                  <a href="<?=get_permalink(49)?>" class="text-reset text-decoration-none">marcas</a>
+                  <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">ecolosofía</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
                 </div>
-              </div>
-              <div class="border-bottom border-secondary-lighter py-16">
-                <div class="d-flex justify-content-between">
-                  <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">ecolosofía</a> <i class="fa-solid fa-plus-large"></i>
-                </div>
-                <div class="submenu d-none fw-400 fs-13 ps-16">
+                <div class="submenu fw-400 fs-13 ps-16">
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Producto</a>
+                    <a href="<?=get_permalink(585)?>" class="text-reset text-decoration-none">Producto</a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Procesos</a>
+                    <a href="<?=get_permalink(587)?>" class="text-reset text-decoration-none">Procesos</a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Entorno</a>
+                    <a href="<?=get_permalink(589)?>" class="text-reset text-decoration-none">Entorno</a>
                   </div>
                 </div>
               </div>
@@ -175,17 +201,17 @@ defined( 'ABSPATH' ) || exit;
               </div>  
               <div class="border-bottom border-secondary-lighter py-16">
                 <div class="d-flex justify-content-between">
-                  <a href="<?=get_permalink(650)?>" class="text-reset text-decoration-none">Contacto</a> <i class="fa-solid fa-plus-large"></i>
+                  <a href="<?=get_permalink(650)?>" class="text-reset text-decoration-none">Contacto</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
                 </div>
-                <div class="submenu d-none fw-400 fs-13 ps-16">
+                <div class="submenu fw-400 fs-13 ps-16">
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Buscamos talento</a>
+                    <a href="<?=get_permalink(672)?>" class="text-reset text-decoration-none">Buscamos talento</a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Localizacion y contacto</a>
+                    <a href="<?=get_permalink(650)?>" class="text-reset text-decoration-none">Localizacion y contacto</a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">Preguntas frecuentes</a>
+                    <a href="<?=get_permalink(785)?>" class="text-reset text-decoration-none">Preguntas frecuentes</a>
                   </div>
                 </div>
               </div>
@@ -234,10 +260,11 @@ defined( 'ABSPATH' ) || exit;
               
                   </div> <!-- /logo-tagline-wrap -->
 
-              <button class="btn d-lg-none btn-outline-white border-0 px-0" type="button" 
+              <button class="btn d-lg-none btn-outline-white border-0 px-0 custom-mobile-menu-button" type="button" 
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuMobile" aria-controls="offcanvasMenuMobile">
-                <span class="fw-500 fs-13 text-white text-uppercase">Menu<span>
-                <?=wp_get_attachment_image(1217, "full")?>
+                <span class="fw-500 fs-13 text-uppercase me-2">Menu</span>
+                <span class="icon-light"><?=wp_get_attachment_image(1217, "full")?></span>
+                <span class="icon-dark"><?=wp_get_attachment_image(1283, "full")?></span>
               </button>
               
               <button class="d-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">

@@ -51,7 +51,28 @@
 }
 
 #offcanvasMenuMobile{
+    svg.fa-minus{
+        display: none;
+    }
+    svg.fa-plus-large{
+        display: block;
+    }
+    .submenu{
+        max-height: 0;
+        transition: max-height 0.40s ease-out;
+        overflow: hidden;
+    }
     .active{
+        .submenu{
+            max-height: 500px;
+            transition: max-height 0.40s ease-in;
+        }
+        svg.fa-minus{
+            display: block;
+        }
+        svg.fa-plus-large{
+            display: none;
+        }
         &>div:not(.submenu){
             a{
                 font-weight: 800;
@@ -74,4 +95,29 @@
 
 .mw-50vw{
     max-width: calc(50vw);
+}
+
+.custom-mobile-menu-button{
+    &:hover{
+        background: inherit !important;
+    }
+    &:focus{
+        box-shadow: none !important;
+    }
+    color: $white;
+    .icon-light{
+        display: inline-block;
+    }
+    .icon-dark{
+        display: none;
+    }
+   &.menu-scrolled{
+       color: $secondary;
+       .icon-light{
+        display: none;
+        }
+        .icon-dark{
+            display: inline-block;
+        }
+   }
 }
