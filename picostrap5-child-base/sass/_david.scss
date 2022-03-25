@@ -121,3 +121,45 @@
         }
    }
 }
+
+.espaciado-cabecera-landing{
+    @include media-breakpoint-down(lg) {
+        margin-top: 110px;
+    }
+}
+
+.container-fluid-custom .swiper:before, .container-fluid-custom .swiper:after {
+    @include media-breakpoint-down(lg) {
+        display: none !important;
+    }
+}
+
+.flor,.gota{
+    @include media-breakpoint-down(md) {
+        max-width: 100px;
+    }
+    @include media-breakpoint-down(sm) {
+        max-width: 50px;
+    }
+}
+
+.seccion_cols_imagenes{
+    .columna-1{
+        @include media-breakpoint-down(sm) {
+            order: 2;
+        }
+    }
+    .columna-2{
+        @include media-breakpoint-down(sm) {
+            order: 1;
+        }
+    }
+}
+
+.banner-redes {
+    @include media-breakpoint-down(sm) {
+        a:first-child {
+            border: none;
+        }
+    }
+}

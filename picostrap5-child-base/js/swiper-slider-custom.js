@@ -223,11 +223,17 @@ const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
   loop: boolean_loop,
   slidesPerView: 'auto',
   //spaceBetween: 12,
-  /*breakpoints: {
-    992: {
-      slidesPerView: 7,
+  breakpoints: {
+    350: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    900: {
+      slidesPerView: 'auto',
     }
-  }*/
+  }
 });
 
 /*swiper_landing_productos.on('slideChange', function () {

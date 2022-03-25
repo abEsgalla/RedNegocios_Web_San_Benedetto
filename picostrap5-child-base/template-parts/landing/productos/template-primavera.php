@@ -38,7 +38,7 @@
 					break;
 					case 'cols_imagenes_texto':
                         ?>
-                        <section class=" zi-99 position-relative mt-56 mb-178 seccion_cols_imagenes">
+                        <section class=" zi-99 position-relative mt-56 mt-md-172 mt-xxl-165 mt-xxxl-165 mb-64 mb-md-178 mb-lg-178 seccion_cols_imagenes">
                             <div class="container position-relative">
                                 <div class="row">
                                 <div class="col-12 offset-xl-1 col-xl-10">
@@ -59,7 +59,7 @@
                                         <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?>">
                                             <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 ' , 'alt' => '' , 'title' => '') ); ?>
                                         <? if($col['posicion_texto'] && $col['texto']): ?>
-                                                <div class="text-start text-secondary texto px-lg-48 mt-lg-80 mb-70" data-aos="fade-right">
+                                                <div class="text-start text-secondary texto pt-md-65 my-40 mb-sm-70 mb-md-0 mb-lg-70 px-lg-48 mt-lg-80 fs-17" data-aos="fade-right">
                                                 <? if($col['posicion_texto']): ?>
                                                     <?=$col['texto']?>
                                                 <? endif; ?>
