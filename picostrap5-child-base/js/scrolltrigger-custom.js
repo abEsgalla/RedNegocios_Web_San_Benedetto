@@ -212,58 +212,62 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
   ];
 
   anos.forEach(ano => {
-    let selectorAnoLeft = `.ano-timeline-${ano}.ano-timeline-left`
-    gsap.to(selectorAnoLeft, {
-      scrollTrigger: {
-        trigger: '.ano-timeline-' + ano,
-        start: '-130px 50%',
-        end: 'bottom',
-        scrub: true,
-        markers: false,
-        onEnter: self => {
-          document.querySelector(selectorAnoLeft).classList.add('ano-activo');
-          document.querySelector(".ano-" + ano).classList.remove('opacity-25');
-        },
-        onEnterBack: self => {
-          //document.querySelector(selectorAnoLeft).classList.remove('ano-activo');
-        },
-        onLeave: self => {
-          document.querySelector(selectorAnoLeft).classList.add('ano-activo');
-          document.querySelector(".ano-" + ano).classList.remove('opacity-25');
-        },
-        onLeaveBack: self => {
-          document.querySelector(selectorAnoLeft).classList.remove('ano-activo');
-          document.querySelector(".ano-" + ano).classList.add('opacity-25');
-        },
-      }
-    });
+    let selectorAnoLeft = `.ano-timeline-${ano}.ano-timeline-left`;
+    if(document.querySelector(selectorAnoLeft)) {
+      gsap.to(selectorAnoLeft, {
+        scrollTrigger: {
+          trigger: '.ano-timeline-' + ano,
+          start: '-130px 50%',
+          end: 'bottom',
+          scrub: true,
+          markers: false,
+          onEnter: self => {
+            document.querySelector(selectorAnoLeft).classList.add('ano-activo');
+            document.querySelector(".ano-" + ano).classList.remove('opacity-25');
+          },
+          onEnterBack: self => {
+            //document.querySelector(selectorAnoLeft).classList.remove('ano-activo');
+          },
+          onLeave: self => {
+            document.querySelector(selectorAnoLeft).classList.add('ano-activo');
+            document.querySelector(".ano-" + ano).classList.remove('opacity-25');
+          },
+          onLeaveBack: self => {
+            document.querySelector(selectorAnoLeft).classList.remove('ano-activo');
+            document.querySelector(".ano-" + ano).classList.add('opacity-25');
+          },
+        }
+      });
+    }
 
-    let selectorAnoRight = `.ano-timeline-${ano}.ano-timeline-right`
-    gsap.to(selectorAnoRight, {
-      scrollTrigger: {
-        trigger: '.ano-timeline-' + ano,
-        start: '-130px bottom',
-        end: 'bottom',
-        scrub: true,
-        markers: false,
-        onEnter: self => {
-          document.querySelector(selectorAnoRight).classList.add('ano-activo');
-          document.querySelector(".ano-" + ano).classList.remove('opacity-25');
-        },
-        onEnterBack: self => {
-          //document.querySelector(selectorAnoRight).classList.remove('ano-activo');
-        },
-        onLeave: self => {
-          document.querySelector(selectorAnoRight).classList.add('ano-activo');
-          document.querySelector(".ano-" + ano).classList.remove('opacity-25');
-        },
-        onLeaveBack: self => {
-          document.querySelector(selectorAnoRight).classList.remove('ano-activo');
-          document.querySelector(".ano-" + ano).classList.add('opacity-25');
-        },
-      }
-    });
 
+    let selectorAnoRight = `.ano-timeline-${ano}.ano-timeline-right`;
+    if(document.querySelector(selectorAnoRight)) {
+      gsap.to(selectorAnoRight, {
+        scrollTrigger: {
+          trigger: '.ano-timeline-' + ano,
+          start: '-130px bottom',
+          end: 'bottom',
+          scrub: true,
+          markers: false,
+          onEnter: self => {
+            document.querySelector(selectorAnoRight).classList.add('ano-activo');
+            document.querySelector(".ano-" + ano).classList.remove('opacity-25');
+          },
+          onEnterBack: self => {
+            //document.querySelector(selectorAnoRight).classList.remove('ano-activo');
+          },
+          onLeave: self => {
+            document.querySelector(selectorAnoRight).classList.add('ano-activo');
+            document.querySelector(".ano-" + ano).classList.remove('opacity-25');
+          },
+          onLeaveBack: self => {
+            document.querySelector(selectorAnoRight).classList.remove('ano-activo');
+            document.querySelector(".ano-" + ano).classList.add('opacity-25');
+          },
+        }
+      });
+    }
   });
 }
 
