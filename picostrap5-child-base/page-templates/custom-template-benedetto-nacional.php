@@ -9,18 +9,18 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section class="position-absolute top-0 w-100">
-  <div class="container-fluid position-relative zi-9 bg-black pt-138 pb-333 pt-sm-261 pb-sm-492">
-    <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+<section>
+  <div class="container-fluid position-relative zi-9 bg-black pt-138 pb-374 pt-md-214 pb-md-409 pt-lg-242 pb-lg-492">
+    <div class="bg-parallax opacity-50 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(657, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
-          <div class="offset-1 col-10 text-center">
+          <div class="col-12 offset-lg-1 col-lg-10 text-center">
             <div class="row text-white">
               <div class="col-12 text-uppercase fs-18">
               GRUPO SAN BENEDETTO
               </div>
-              <h1 class="col-12 mt-8 h2 fs-32 fs-lg-64 text-white">
+              <h1 class="col-12 mt-8 h2 fs-32 fs-md-64 text-white">
                 Agua Mineral San Benedetto en España
               </h1>
             </div>
@@ -31,16 +31,17 @@ get_header();
   </div>
 </section>
 
-<section class="mb-96 position-relative mt-custom-25">
-  <div class="container bg-white">
+<section class="position-relative gx-4 gx-sm-12">
+  <div class="container mw-custom-container bg-white position-absolute start-50 translate-middle-espana 
+  mb-md-n1 mb-lg-n0 pb-md-70 pt-48 pt-sm-128 pb-lg-123">
     <div class="row">
-      <div class="col-12 offset-lg-2 col-lg-8 mt-48 mt-sm-133">
+      <div class="col-12 col-lg-8 offset-lg-2">
         <div class="row"> 
-          <div class="col-12 text-center text-secondary">
-            <div class="h2 fs-32 fs-lg-64">
+          <div class="col-12 offset-md-1 col-md-10 offset-lg-0 col-lg-12 text-center text-secondary">
+            <div class="h2 fs-32 fs-md-64 mb-56">
               Nuestras plantas
             </div>
-            <div class="mt-48 mt-sm-56 pb-56 fs-17">
+            <div class="mt-40 mt-sm-56 fs-17">
               Agua Mineral San Benedetto es la primera envasadora de agua mineral en España por volumen, 
               y uno de los principales fabricantes de refrescos del país.<br></br>
               La compañía posee 2 plantas de envasado en España: <strong>Agua Mineral San Benedetto S.A.U.</strong> 
@@ -53,18 +54,17 @@ get_header();
   </div>
 </section>
 
-<section class="mt-123">
-  <div class="container text-secondary">
+<section class="mt-192 mt-sm-123 position-relative zi-99 gx-4 gx-sm-12">
+  <div class="container text-secondary position-relative">
     <div class="row">
       <div class="col-12"> 
         <div class="row">
-          <div class="col-12 col-lg-6 g-0 position-relative mt-n60 mt-lg-n0">
-            <?=wp_get_attachment_image(754, "full", "", array( 'class' => 'w-100 position-absolute img-parallax d-none d-lg-block' , 'alt' => '' , 'title' => '') ); ?>
-            <?=wp_get_attachment_image(754, "full", "", array( 'class' => 'w-100 d-lg-none d-block' , 'alt' => '' , 'title' => '') ); ?>
+          <div class="order-0 order-lg-0 col-12 col-lg-6 py-111 py-sm-253 mb-lg-24
+          bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url(754, "full")?>')">
           </div>
-          <div class="col-12 col-lg-6 pt-103 pb-118">
+          <div class="order-1 order-lg-1 col-12 col-lg-6">
             <div class="row">
-              <div class="col-12 offset-lg-1 col-lg-10 fs-17">
+              <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10 fs-17 py-40 pb-sm-60 pt-sm-82 pt-lg-103">
                 En San Antonio de Requena se envasan nuestras aguas minerales <strong>Fuente Primavera</strong> y <strong>Fuencisla</strong>, 
                 además de producirse toda nuestra línea de refrescos. Aquí se encuentran también nuestra Oficinas Centrales. 
               </div>
@@ -76,23 +76,18 @@ get_header();
   </div>
 </section>
 
-<section class="py-170 bg-primary-brighter">
-  <div class="container text-secondary">
-    <div class="row">
-      <div class="col-12">
-      </div>
-    </div>
-  </div>
+<section class="position-relative">
+  <div class="py-96 py-sm-170 bg-primary-brighter position-absolute top-0 translate-middle-lg-y w-100"></div>
 </section>
 
-<section class="">
-  <div class="container text-secondary">
+<section class="position-relative zi-99 gx-4 gx-sm-12">
+  <div class="container text-secondary position-relative">
     <div class="row">
       <div class="col-12"> 
         <div class="row">
-          <div class="col-12 col-lg-6 col-12 py-64 pt-lg-116 pb-lg-160 order-1 order-lg-0">
+          <div class="order-1 order-lg-0 col-12 col-lg-6">
             <div class="row">
-              <div class="col-12 offset-lg-1 col-lg-10 fs-17">
+              <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10 fs-17 py-40 py-sm-80 pt-lg-228">
                 En Loja, se envasa nuestra agua mineral <strong>Font Natura</strong>.<br></br>
                 En total, disponemos de 11 líneas de llenado y 2 de aséptico. 
                 Envasamos <strong>más de 1.000 millones de litros anuales</strong> y empleamos a 
@@ -100,9 +95,8 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6 g-0 position-relative order-0 order-lg-1 mt-n242 mt-lg-n0">
-            <?=wp_get_attachment_image(755, "full", "", array( 'class' => 'w-100 position-absolute bottom-0 img-parallax d-none d-lg-block' , 'alt' => '' , 'title' => '') ); ?>
-            <?=wp_get_attachment_image(755, "full", "", array( 'class' => 'w-100 d-lg-none d-block' , 'alt' => '' , 'title' => '') ); ?>
+          <div class="order-0 order-lg-1 col-12 col-lg-6 py-120 py-sm-274 py-lg-253 mt-70 mt-lg-24
+          bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url(755, "full")?>')">
           </div>
         </div> 
       </div>
@@ -110,28 +104,29 @@ get_header();
   </div>
 </section>
 
-<section class="my-64 mt-lg-222 mb-lg-96 manantiales">
+
+<section class="mt-102 mt-sm-60 mt-lg-222 mb-lg-96 manantiales gx-4 gx-sm-12">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12 text-center">
         <div class="fs-18 text-uppercase">descubre nuestros</div>
-        <div class="h2 fs-32 fs-lg-64">Manatiales</div>
+        <div class="h2 fs-32 fs-md-64">Manantiales</div>
       </div>
-      <div class="col-12 mt-88">
+      <div class="col-12 mt-64 mt-sm-88">
         <div class="row">
           <div class="col-12 col-lg-4">
             <div class="row">
-              <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-10 border-end">
+              <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-10 pb-48 pb-lg-0">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center justify-content-lg-start">
                     <span class="rounded-circle border border-1">
                       <?=wp_get_attachment_image(756, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
                   </div>
-                  <div class="col-12 mt-48 fs-24 fw-bold text-uppercase">
-                    Manantial<br> Fuente Primavera
+                  <div class="col-12 mt-65 mt-sm-48 mt-lg-80 fs-18 fs-sm-23 fw-bold text-uppercase text-start text-sm-center text-lg-start">
+                    Manantial Fuente Primavera
                   </div>
-                  <div class="col-12 col-lg-9 mt-36 text-secondary">
+                  <div class="col-12 col-lg-9 text-secondary">
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(760, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
                         <div>Caudal de <strong>75L por segundo</strong></div>
@@ -149,19 +144,19 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 border-start">
+          <div class="col-12 col-lg-4 border-1 border-x border-secondary-light-disable">
             <div class="row">
-              <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-10 border-end">
+              <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-10 py-48 py-lg-0">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center justify-content-lg-start ">
                     <span class="rounded-circle border border-1">
                       <?=wp_get_attachment_image(757, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
                   </div>
-                  <div class="col-12 mt-80 fs-24 fw-bold text-uppercase">
+                  <div class="col-12 mt-65 mt-sm-48 mt-lg-80 fs-18 fs-sm-23 fw-bold text-uppercase text-start text-sm-center text-lg-start">
                     Manantial Fuencisla
                   </div>
-                  <div class="col-12 col-lg-9 mt-36 text-secondary">
+                  <div class="col-12 col-lg-9 text-secondary">
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(760, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
                         <div>Caudal de <strong>8L por segundo</strong></div>
@@ -181,17 +176,17 @@ get_header();
           </div>
           <div class="col-12 col-lg-4">
             <div class="row">
-              <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-10 border-end">
+              <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-10 pt-48 pt-lg-0">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center justify-content-lg-start">
                     <span class="rounded-circle border border-1">
                       <?=wp_get_attachment_image(758, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
                   </div>
-                  <div class="col-12 mt-80 fs-24 fw-bold text-uppercase">
+                  <div class="col-12 mt-65 mt-sm-48 mt-lg-80 fs-18 fs-sm-23 fw-bold text-uppercase text-start text-sm-center text-lg-start">
                     Manantial Font Natura
                   </div>
-                  <div class="col-12 col-lg-9 mt-36 text-secondary">
+                  <div class="col-12 col-lg-9 text-secondary">
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(760, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
                         <div>Caudal de <strong>150L por segundo</strong></div>
@@ -215,7 +210,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-64 mt-lg-274 mb-lg-160">
+<section class="my-120 my-sm-165 mt-lg-274 mb-lg-160 gx-4 gx-sm-12">
   <div class="container text-center">
     <div class="row">
       <div class="col-12">
@@ -225,7 +220,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-64 mt-lg-160 mb-lg-200">
+<section class="mb-102 mb-sm-120 mb-lg-200 gx-4 gx-sm-12">
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12 text-center">
@@ -236,10 +231,10 @@ get_header();
                 <div class="text-uppercase">
                   descubre nuestro
                 </div>
-                <div class="h2 fs-32 fs-lg-64 mt-8">
+                <div class="h2 fs-32 fs-md-64 mt-8">
                   Entorno
                 </div>
-                <div class="mt-40 fs-17">
+                <div class="mt-36 mt-sm-40 fs-17">
                   Nuestros manantiales Fuente Primavera y Fuencisla se encuentran entre dos parques naturales del interior 
                   de la provincia de Valencia: el <strong>Parque Natural de Las Hoces del Cabriel</strong> y el 
                   <strong>Parque Natural Geológico de Chera-Sot de Chera.</strong> 
@@ -250,22 +245,22 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="col-12 mt-80">
+      <div class="col-12 mt-40 mt-sm-80">
         <div class="row">
-          <div class="col-12 offset-lg-1 col-lg-10">
+          <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10">
             <div class="row">
-              <div class="col-6">
-                <?=wp_get_attachment_image(661, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
+              <div class="col-12 col-lg-6 py-317 py-lg-0 bg-custom-image" 
+              style="background:url('<?=wp_get_attachment_image_url(661, "full")?>')">
               </div>
-              <div class="col-6">
-                <div class="row h-100 flex-column  justify-content-between">
-                  <div class="offset-1 col-10 py-48 fs-17">
+              <div class="col-12 col-lg-6">
+                <div class="row">
+                  <div class="col-12 offset-lg-1 col-lg-10 my-40 my-sm-70 mt-lg-48 mb-lg-70 fs-17">
                     Nuestro manantial Font Natura está situado en la <strong>Sierra de Loja</strong>, 
                     un enclave natural caracterizado por su paisaje agreste y escarpado, 
                     lleno de magia y belleza salvajes. 
                   </div>
-                  <div class="col-12">
-                    <?=wp_get_attachment_image(763, "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
+                  <div class="col-12 mx-lg-32 bg-custom-image py-218 py-lg-245" 
+                  style="background:url('<?=wp_get_attachment_image_url(763, "full")?>')">
                   </div>
                 </div>
               </div>
@@ -277,7 +272,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-56">
+<section class="my-56 gx-4 gx-sm-12">
   <div class="container">
     <div class="row">
       <div class="col-12 position-relative">

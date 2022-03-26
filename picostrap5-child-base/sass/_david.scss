@@ -196,3 +196,29 @@
         margin-right: auto;
     }
 }
+
+.mtn-custom-100{
+    margin-top: -100%;
+}
+
+.border-x{
+    @include media-breakpoint-up(lg) {
+        border-left: solid;
+        border-right: solid;
+    }
+    @include media-breakpoint-down(lg) {
+        border-top: solid;
+        border-bottom: solid;
+    }
+}
+
+.translate-middle-espana{
+    transform: translate(-50%, -75%) !important;
+}
+
+.translate-middle-lg-y{
+    transform: translateY(-50%);
+    @include media-breakpoint-down(lg) {
+        transform: translateY(0%);
+    }
+}
