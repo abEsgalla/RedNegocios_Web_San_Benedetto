@@ -134,7 +134,7 @@ get_header();
       <div class="col-12 h2 fs-32 fs-md-64 text-center">
         Circularidad de los recursos 
       </div>
-      <div class="col-12 offset-sm-2 col-sm-8 col-lg-12">
+      <div class="col-12 offset-sm-2 col-sm-8 offset-lg-0 col-lg-12">
         <div class="row">
           <div class="col-12 col-lg-4 text-center text-lg-start mt-64 mt-lg-90">
             <div class="row">
