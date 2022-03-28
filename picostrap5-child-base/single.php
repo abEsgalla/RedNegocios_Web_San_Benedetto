@@ -6,8 +6,9 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 
-
-
+?>
+<section class="gx-4 gx-sm-12">
+<?
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post();
     
@@ -35,7 +36,7 @@ if ( have_posts() ) :
             </div>
           </div>
         </div>
-        <div class="col-7">
+        <div class="col-12 col-lg-7">
           <div class="row">
             <div class="col-12">
               <div class="row text-secondary">
@@ -49,9 +50,9 @@ if ( have_posts() ) :
             </div>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-12 col-lg-5 mt-lg-0 mt-105">
           <div class="row">
-            <div class="offset-3 col-9">
+            <div class="col-12 offset-lg-3 col-lg-9">
               <div class="row">
                 <div class="col-12 text-secondary fs-18 text-uppercase fw-500">
                   <div class="border-black border-top border-1 py-24">Categorías</div>
@@ -77,19 +78,18 @@ if ( have_posts() ) :
         </div>
       </div>
     </div>
-
-
 <?php
     endwhile;
  else :
      _e( 'Sorry, no posts matched your criteria.', 'picostrap' );
  endif;
  ?>
+</section>
 
-<section class="d-flex position-relative mt-185 mb-150">
+<section class="gx-4 gx-sm-12 d-flex position-relative mt-82 mt-md-185 mb-102 mb-lg-150">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center text-secondary mb-70">
+      <div class="col-12 text-center text-secondary mb-0 mb-md-70">
         <div class="text-uppercase fs-18">SAN BENEDETTO</div>
         <div class="h4">Noticias relacionadas</div>
       </div>
@@ -105,27 +105,27 @@ if ( have_posts() ) :
   </div>
 </section>
 
-<section class="d-flex position-relative">
-  <div class="bg-secondary">
-    <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'opacity-50' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 position-absolute top-50 translate-middle-y">
-    <div class="container">
-      <div class="row">
-        <div class="offset-3 col-6 text-center text-white">
-          <div class="row">
-            <div class="col-12 text-uppercase fs-18 pt-20">
-              san benedetto
-            </div>
-            <div class="col-12 h4 mt-10">
-              Conoce nuestras marcas
-            </div>
-            <div class="col-12 mt-32 fs-17">
-              <a href="#" class="col-12 text-center">
-                <div class="btn btn-outline-white text-uppercase rounded-0">
-                  <span>saber más</span>
-                </div>
-              </a>
+<section class="gx-4 gx-sm-12">
+  <div class="container-fluid position-relative zi-9 bg-secondary-darker py-105">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(51, "full")?>')"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 offset-lg-3 col-lg-6 text-center text-white">
+            <div class="row">
+              <div class="col-12 text-uppercase fs-18 pt-20">
+                san benedetto
+              </div>
+              <div class="col-12 h4 mt-10">
+                Conoce nuestras marcas
+              </div>
+              <div class="col-12 mt-32 fs-17">
+                <a href="#" class="col-12 text-center">
+                  <div class="btn btn-outline-white text-uppercase rounded-0">
+                    <span>saber más</span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -134,7 +134,8 @@ if ( have_posts() ) :
   </div>
 </section>
 
-<section>
+
+<section class="gx-4 gx-sm-12">
   <div class="container py-56">
     <div class="row">
       <div class="col-12 position-relative">

@@ -66,7 +66,8 @@ $spacers: (
   32:  ($spacer * 2), // 32px
   35:  ($spacer * 2.1875), // 35px
   36:  ($spacer * 2.25), // 36px
-  40:  ($spacer * 2.5), // 36px
+  40:  ($spacer * 2.5), // 40px
+  42:  ($spacer * 2.625), // 42px
   48:  ($spacer * 3), // 48px
   53:  ($spacer * 3.3125), // 53px
   55:  ($spacer * 3.438), // 55px
@@ -139,6 +140,7 @@ $spacers: (
   463: ($spacer * 28.938), // 463px
   492: ($spacer * 30.75), // 492px
   533: ($spacer * 33.3125), // 533px
+  565: ($spacer * 35.313), // 565px
   580: ($spacer * 36.25) // 580px
 ) !default;
 

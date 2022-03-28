@@ -10,8 +10,8 @@ get_header();
 ?>
 
 <section class="gx-sm-12 gx-4">
-  <div class="container-fluid position-relative zi-9 bg-secondary-darker pt-221 pb-149">
-    <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+  <div class="container-fluid position-relative zi-9 bg-secondary-darker pb-108 pb-sm-149 pt-165 pt-sm-214 pt-xxl-200 pb-xxl-165 pt-xxxl-221 pb-xxxl-149">
+    <div class="bg-parallax opacity-50 w-100 h-100 position-absolute top-0 start-0 bg-postion-x-right" 
       style="background:url('<?=wp_get_attachment_image_url(787, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
@@ -20,10 +20,10 @@ get_header();
               <div class="col-12 fs-18 text-uppercase">
                 GRUPO SAN BENEDETTO
               </div>
-              <h1 class="col-12 h2">
+              <h1 class="col-12 h2 fs-32 mt-2 mt-sm-8 fs-md-64 lh-1 mb-0">
                   Preguntas frecuentes
               </h1>
-              <div class="col-12 fs-24 mt-24">
+              <div class="col-12 fs-18 fs-md-24 mt-8 mt-md-24">
                   ¿Tienes alguna duda?
               </div>
             </div>
@@ -45,7 +45,7 @@ if($acf_fields['faqs']):
 endif;
 ?>
 
-<section id="preguntas-frecuentes" class="position-relative my-96 my-lg-120 gx-sm-12 gx-4">
+<section id="preguntas-frecuentes" class="position-relative mt-40 mb-70 my-md-96 my-lg-120 gx-sm-12 gx-4">
   <div class="container">
     <div class="row">
       <div class="col-12 offset-xxl-1 col-xxl-10">
@@ -56,7 +56,7 @@ endif;
         ?>
         <div class="accordion-item border-secondary-lighter">
           <h2 class="accordion-header" id="flush-heading-<?=$request_key?>">
-            <button class="accordion-button collapsed fs-18 fw-500 text-secondary text-uppercase py-24 ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?=$request_key?>" 
+            <button class="accordion-button collapsed fs-16 fs-sm-18 fw-500 text-secondary text-uppercase py-24 ps-0 lh-base" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?=$request_key?>" 
             aria-expanded="false" aria-controls="flush-collapse-<?=$request_key?>">
               <?=$request_key+1?>. <?=$single_request?>
             </button>
@@ -79,8 +79,8 @@ endif;
 </section>
 
 <section class="">
-  <div class="container-fluid position-relative zi-9 bg-secondary-darker py-105">
-    <div class="bg-custom-image opacity-50 w-100 h-100 position-absolute top-0 start-0" 
+  <div class="container-fluid position-relative zi-9 bg-secondary-darker py-149 py-sm-105">
+    <div class="bg-custom-image bg-postion-x-center opacity-50 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(51, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
@@ -89,13 +89,13 @@ endif;
               <div class="col-12 text-uppercase fs-18 pt-20">
                 san benedetto
               </div>
-              <div class="col-12 h4 mt-10">
+              <div class="col-12 h4 mt-10 mb-0">
                 Conoce nuestras marcas
               </div>
-              <div class="col-12 mt-32 fs-17">
-                <a href="#" class="col-12 text-center">
-                  <div class="btn btn-outline-white text-uppercase rounded-0">
-                    <span>saber más</span>
+              <div class="col-12 mt-32">
+                <a href="<?=get_permalink(49)?>" class="col-12 text-center">
+                  <div class="btn btn-outline-white text-uppercase rounded-0 fs-14 px-40 fw-500 border-2">
+                    <span>ver todas</span>
                   </div>
                 </a>
               </div>

@@ -16,60 +16,60 @@ endif;
   
  
 
-<section>
-  <div class="container mt-218">
+<section class="gx-4 gx-sm-12">
+  <div class="container mt-138 mt-166 mt-lg-218">
     <div class="row">
       <div class="col-12">
         <div class="row text-secondary">
-          <div class="col-12 fs-18">
+          <div class="col-12 fs-18 text-center text-lg-start">
             SAN BENEDETTO
           </div>
-          <div class="col-12 h2 mt-8">
+          <div class="col-12 h2 fs-32 fs-sm-64 mt-8 text-center text-lg-start">
             Noticias
           </div>
           <?php
           if ($remove_elements):        
           ?>
-            <div class="col-12 mt-48">
+            <div class="col-12 mt-64 mt-sm-94 mt-lg-48">
               <div class="row">
-                <div class="col-9">
-                  <div class="overflow-hidden">  
-                    <?php 
-                    if(has_post_thumbnail()):
-                      the_post_thumbnail('full', ['class' => 'w-100']);    
-                    else:
-                      echo wp_get_attachment_image(891, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') );
-                    endif;
-                    ?>                
-                  </div>
-                </div>
-                <div class="col-4 position-absolute top-50 start-50 py-24">
-                  <div class="">
-                    <div class="card rounded-0 border-0 mb-4 shadow-sm h-100">
-                      <div class="card-body text-secondary fs-13 p-80 d-flex flex-column justify-content-center">
-                          <div class="position-relative">
-                            <span>
-                              <?=wp_get_attachment_image(890, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
-                            </span>
-                            <span class="fs-13 ms-12">
-                              San Benedetto
-                            </span>
-                            <span class="position-absolute end-0 zi-99">
-                              <?=wp_get_attachment_image(892, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
-                            </span>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="order-1 order-lg-0 col-12 px-md-48 px-lg-12 position-relative">
+                      <div class="position-lg-absolute zi-1 mt-n88 mt-lg-88 end-0 col-12 col-lg-6">
+                        <div class="card rounded-0 border-0 shadow-sm h-100">
+                          <div class="card-body text-secondary fs-13 p-24 px-sm-80 py-sm-48 py-lg-80 px-lg-80 d-flex flex-column justify-content-center">
+                              <div class="position-relative">
+                                <span>
+                                  <?=wp_get_attachment_image(890, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+                                </span>
+                                <span class="fs-13 ms-12">
+                                  San Benedetto
+                                </span>
+                                <span class="position-absolute end-0 zi-99">
+                                  <?=wp_get_attachment_image(892, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+                                </span>
+                              </div>
+                              <div class="text-uppercase fw-bold fs-24 mt-30">
+                                <?=mb_strimwidth(wp_strip_all_tags(get_the_title()), 0, 80, '...');?>
+                              </div>
+                              <div class="card-text mt-16 fs-17 d-none d-sm-block">
+                                <?=mb_strimwidth(wp_strip_all_tags(get_the_content()), 0, 150, '...');?>
+                              </div>
+                              <div class="mt-16 fw-500 fs-16 text-uppercase">
+                                <a class="text-reset" href="<?php the_permalink() ?>">
+                                  Leer
+                                </a>
+                              </div>
                           </div>
-                          <div class="text-uppercase fw-bold fs-24 mt-30">
-                            <?=mb_strimwidth(wp_strip_all_tags(get_the_title()), 0, 80, '...');?>
-                          </div>
-                          <div class="card-text mt-16 fs-17">
-                            <?=mb_strimwidth(wp_strip_all_tags(get_the_content()), 0, 150, '...');?>
-                          </div>
-                          <div class="mt-16 fw-500 fs-16 text-uppercase">
-                            <a class="text-reset" href="<?php the_permalink() ?>">
-                              Leer
-                            </a>
-                          </div>
+                        </div>
                       </div>
+                    </div>
+                    <div class="gx-0 gx-md-24 order-0 order-lg-1 col-12 col-lg-9">
+                      <a class="w-100 h-100 contenedor-cursor-custom" href="<?php the_permalink() ?>">
+                        <div style="background:url('<?=the_post_thumbnail_url('full')?>')" 
+                          class="py-123 py-sm-253 py-lg-333 overflow-hidden bg-custom-image container-scale">            
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -85,21 +85,21 @@ endif;
 </section>
 
 
-<section class="album py-5 bg-light mt-48">
+<section class="album pb-48 bg-light mt-96 gx-4 gx-sm-12">
   <div class="container">
     <div class="row">
     <?php
     if ($remove_elements):       
     ?>
-      <div class="col-12 mb-64">
+      <div class="col-12 mb-sm-64">
         <div class="row">
-          <div class="col-3">
+          <div class="col-12 col-sm-4 col-lg-3">
             <form role="search" method="get" class="search-form input-group w-auto fs-16 icono-lupa" action="<?=site_url()?>">
                 <input type="text" class="form-control px-0 py-10 border-0 border-radius border-bottom" placeholder="Buscar..." data-swplive="false" data-swpengine="default" value="" name="s">
                 <input type="hidden" id="swpengine" name="swpengine" value="default">
             </form>
           </div>
-          <div class="offset-1 col-8 text-end">
+          <div class="mt-70 mt-sm-0 col-12 col-sm-8 offset-lg-1 col-lg-8 text-sm-end">
             <?
             foreach (get_categories() as $key => $value):
             ?>
@@ -136,27 +136,27 @@ endif;
 </section>
 
 
-<section class="d-flex position-relative">
-  <div class="bg-secondary">
-    <?=wp_get_attachment_image(51, "full", "", array( 'class' => 'opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-  </div>
-  <div class="container-fluid zi-99 position-absolute top-50 translate-middle-y">
-    <div class="container">
-      <div class="row">
-        <div class="offset-3 col-6 text-center text-white">
-          <div class="row">
-            <div class="col-12 text-uppercase fs-18 pt-20">
-              san benedetto
-            </div>
-            <div class="col-12 h4 mt-10">
-              Conoce nuestras marcas
-            </div>
-            <div class="col-12 mt-32 fs-17">
-              <a href="#" class="col-12 text-center">
-                <div class="btn btn-outline-white text-uppercase rounded-0">
-                  <span>saber más</span>
-                </div>
-              </a>
+<section class="gx-4 gx-sm-12">
+  <div class="container-fluid position-relative zi-9 bg-secondary-darker py-105">
+    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+      style="background:url('<?=wp_get_attachment_image_url(51, "full")?>')"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 offset-lg-3 col-lg-6 text-center text-white">
+            <div class="row">
+              <div class="col-12 text-uppercase fs-18 pt-20">
+                san benedetto
+              </div>
+              <div class="col-12 h4 mt-10">
+                Conoce nuestras marcas
+              </div>
+              <div class="col-12 mt-32 fs-17">
+                <a href="#" class="col-12 text-center">
+                  <div class="btn btn-outline-white text-uppercase rounded-0">
+                    <span>saber más</span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -165,7 +165,8 @@ endif;
   </div>
 </section>
 
-<section>
+
+<section class="gx-4 gx-sm-12">
   <div class="container py-56">
     <div class="row">
       <div class="col-12 position-relative">

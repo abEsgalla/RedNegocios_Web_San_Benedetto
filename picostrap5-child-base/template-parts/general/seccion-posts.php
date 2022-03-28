@@ -7,7 +7,7 @@
           $custom_url_thumbnail=wp_get_attachment_image_url(922, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') );
         endif;
         ?>
-        <div class="col-md-3 col-sm-6">
+        <div class="mt-56 mt-sm-0 col-sm-6 col-md-4 col-lg-3">
           <div class="card mb-4 <?/*shadow-sm*/?> rounded-0 border-0">
             <a class="text-reset text-decoration-none" href="<?php the_permalink() ?>">
               <div class="contenedor-cursor-custom">

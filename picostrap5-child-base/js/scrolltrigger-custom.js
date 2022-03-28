@@ -240,7 +240,7 @@ if( document.body.classList.contains('single-landing') ) {
         scrub: true,
         markers: false,
       },
-      y: 680,
+      y: 450,
       rotation: 0,
     });
 
@@ -440,18 +440,22 @@ if(bgParallax) {
 //img Parallax
 let imgParallax = document.querySelectorAll('.img-parallax');
 if(imgParallax) {
-  imgParallax.forEach((img) => {
-    gsap.to(img, {
-      scrollTrigger: {
-        trigger: img,
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: -200,
-      ease: "sine.out",
-      rotation: 0,
-    });
-  });
+  ScrollTrigger.matchMedia({
+    "(min-width: 1200px)": function() {
+      imgParallax.forEach((img) => {
+        gsap.to(img, {
+          scrollTrigger: {
+            trigger: img,
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -200,
+          ease: "sine.out",
+          rotation: 0,
+        });
+      });
+    }
+  })
 }

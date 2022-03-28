@@ -94,7 +94,7 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6 gx-0">
+      <div class="col-12 col-lg-6 gx-0 img-version-mobile">
         <div class="w-100 bg-custom-image py-200 py-sm-422" 
         style="background:url('<?=wp_get_attachment_image_url(665, "full")?>')">
       </div>
@@ -140,7 +140,7 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6 d-none d-lg-block">
+      <div class="col-12 col-lg-6 d-none d-lg-block img-version-mobile">
         <div class="w-100 h-100 bg-custom-image py-228" 
         style="background:url('<?=wp_get_attachment_image_url(666, "full")?>')">
       </div>
@@ -200,10 +200,10 @@ get_header();
                 class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
                 id="inputNombre" required>
               </div>
-              <div class="my-28 form-check">
-                <input type="checkbox" class="form-check-input rounded-0 bg-transparent" 
+              <div class="my-28 form-check align-items-center d-flex">
+                <input type="checkbox" class="my-0 p-12 form-check-input rounded-0 bg-transparent" 
                 id="exampleCheck1" required>
-                <label class="form-check-label" for="exampleCheck1">
+                <label class="form-check-label ms-16" for="exampleCheck1">
                   Acepto los <a class="text-decoration-none text-primary" href="#">Términos y Condiciones</a>.
                 </label>
               </div>
