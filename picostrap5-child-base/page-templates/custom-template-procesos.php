@@ -21,7 +21,7 @@ get_header();
               <div class="col-12 text-uppercase">
                 ecolosofía
               </div>
-              <h1 class="col-12 mt-16 h1 text-green mb-70">
+              <h1 class="col-12 mt-16 h1 text-green mb-70 lh-1">
                 Procesos
               </h1>
               <div class="col-12 position-relative">
@@ -52,13 +52,13 @@ get_header();
         class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after">
         <div class="row position-relative">
           <div class="col-12 col-lg-6 order-1 order-lg-0">
-            <div class="row">
+            <div class="row overflow-hidden">
               <div class="col-12 offset-xl-2 col-xl-8 overflow-hidden" data-aos="fade-right">
                 <div class="row">
                   <div class="col-12 h3 fs-26 fs-md-48 mt-70 mt-lg-0">
                     Huella de Carbono 
                   </div>
-                  <div class="col-12 my-32 fs-17">
+                  <div class="col-12 my-32 fs-14 fs-sm-17">
                     En Agua Mineral San Benedetto creemos que, para poder reducir nuestra huella ambiental, 
                     primero hemos de ser capaces de <strong>cuantificarla</strong>. 
                     Y es que <strong>todo lo que se puede medir, se puede mejorar.</strong> ¿Cómo lo hacemos? <br></br>
@@ -73,7 +73,7 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6 order-0 order-lg-1 py-200 py-lg-409 position-relative bg-custom-image" 
+          <div class="col-12 col-lg-6 order-0 order-lg-1 py-200 py-lg-409 position-relative bg-custom-image img-version-mobile" 
           style="background:url('<?=wp_get_attachment_image_url(774, "full")?>')">
           </div>
         </div>
@@ -92,7 +92,7 @@ get_header();
     <div class="row">
       <div class="col-12">
         <div class="row">
-          <div class="col-12 col-lg-6 py-200 py-lg-463 position-relative bg-custom-image" 
+          <div class="col-12 col-lg-6 py-200 py-lg-463 position-relative bg-custom-image img-version-mobile" 
           style="background:url('<?=wp_get_attachment_image_url(775, "full")?>')">
           </div>
           <div class="col-12 col-lg-6 d-inline-flex align-items-end">
@@ -102,7 +102,7 @@ get_header();
                   <div class="col-12 h3 fs-26 fs-md-48 mt-70 mt-lg-0">
                     Smart Water 4.0 
                   </div>
-                  <div class="col-12 mt-30 fs-17">
+                  <div class="col-12 mt-30 fs-14 fs-sm-17">
                     En 2019 incorporamos a nuestro proceso productivo un <strong>sistema de gestión 
                     inteligente de los recursos hídricos</strong> que nos permite obtener y disponer datos en tiempo real. 
                     Este proyecto innovador fue seleccionado por 
@@ -141,10 +141,10 @@ get_header();
               <div class="col-12 ratio-1x1">
                 <?=wp_get_attachment_image(778, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
-              <div class="col-12 mt-48 h4">
+              <div class="col-12 mt-48 h4 fs-24 fs-sm-32">
                 Vertido Cero 
               </div>
-              <div class="col-12 mt-24 fs-17">
+              <div class="col-12 mt-24 fs-14 fs-sm-17">
                 Tenemos un <strong>acuerdo con la comunidad de regantes local, 
                 avalado y tutelado por la 
                 <a href="https://www.chj.es/es-es/Paginas/Home.aspx" class="text-reset">
@@ -163,10 +163,10 @@ get_header();
               <div class="col-12 ratio-1x1">
                 <?=wp_get_attachment_image(777, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
-              <div class="col-12 mt-48 h4">
+              <div class="col-12 mt-48 h4 fs-24 fs-sm-32">
                 Producción con energías 100% renovables 
               </div>
-              <div class="col-12 mt-24 fs-17">
+              <div class="col-12 mt-24 fs-14 fs-sm-17">
                 El 100% de la energía eléctrica que consumimos en nuestras fábricas en España 
                 proviene directamente de fuentes 100% renovables. 
               </div>
@@ -177,10 +177,10 @@ get_header();
               <div class="col-12 ratio-1x1">
                 <?=wp_get_attachment_image(776, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
               </div>
-              <div class="col-12 mt-48 h4">
+              <div class="col-12 mt-48 h4 fs-24 fs-sm-32">
                 Residuos industriales 
               </div>
-              <div class="col-12 mt-24 fs-17">
+              <div class="col-12 mt-24 fs-14 fs-sm-17">
                 Tenemos un acuerdo con 
                 <a href="http://www.reciclajesguerola.com/" class="text-reset">
                   <strong>Reciclatges Guerola S.L</strong> 
