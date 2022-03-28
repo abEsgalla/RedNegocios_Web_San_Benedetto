@@ -4,9 +4,9 @@
 ?>
 
 <section class="my-64 mt-xl-150 mb-xl-56">
-    <div class="container position-relative">
-        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_bloque_texto.png'; ?>" class="position-absolute top-50 end-0">
-        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_bloque_texto.png'; ?>" class="position-absolute top-0 fresa-bloque-texto">
+    <div class="container position-relative frutas-bloque-texto-trigger">
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_bloque_texto.png'; ?>" class="position-absolute top-50 end-0 limon-bloque-texto-con">
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_bloque_texto.png'; ?>" class="position-absolute top-0 fresa-bloque-texto-con">
         <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/lima_bloque_texto.png'; ?>" class="position-absolute top-50 lima-bloque-texto">
         <div class="row">
             <div class="col-12 offset-xl-1 col-xl-10">

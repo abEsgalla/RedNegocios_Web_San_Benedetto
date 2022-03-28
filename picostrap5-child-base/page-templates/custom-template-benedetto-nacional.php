@@ -108,7 +108,7 @@ get_header();
 <section class="mt-102 mt-sm-60 mt-lg-222 mb-lg-96 manantiales gx-4 gx-sm-12">
   <div class="container text-secondary">
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center" data-aos="fade-up">
         <div class="fs-18 text-uppercase">descubre nuestros</div>
         <div class="h2 fs-32 fs-md-64">Manantiales</div>
       </div>
@@ -227,7 +227,7 @@ get_header();
         <div class="row">
           <div class="col-12 offset-lg-2 col-lg-8">
             <div class="row">
-              <div class="col-12">
+              <div class="col-12" data-aos="fade-up">
                 <div class="text-uppercase">
                   descubre nuestro
                 </div>
@@ -254,7 +254,7 @@ get_header();
               </div>
               <div class="col-12 col-lg-6">
                 <div class="row">
-                  <div class="col-12 offset-lg-1 col-lg-10 my-40 my-sm-70 mt-lg-48 mb-lg-70 fs-17">
+                  <div class="col-12 offset-lg-1 col-lg-10 my-40 my-sm-70 mt-lg-48 mb-lg-70 fs-17" data-aos="fade-left">
                     Nuestro manantial Font Natura está situado en la <strong>Sierra de Loja</strong>, 
                     un enclave natural caracterizado por su paisaje agreste y escarpado, 
                     lleno de magia y belleza salvajes. 

@@ -120,7 +120,7 @@ if($acf_fields['secciones']):
             break;
             case 'cols_imagenes_texto':
             ?>
-            <section class=" zi-99 position-relative mt-56 mb-178 seccion_cols_imagenes">
+            <section class=" zi-99 position-relative mt-56 mb-178 seccion_cols_imagenes menta-essenzia-bottom-trigger">
                 <div class="container position-relative">
                     <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/limon_essenzia_top.png'; ?>" class="position-absolute limon-essenzia-top">
                     
