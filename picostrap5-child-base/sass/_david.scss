@@ -242,3 +242,13 @@
         }
     }
 }
+
+.translate-custom-contacto-lg-y{
+    transform: translateY(-70%);
+    @include media-breakpoint-down(lg) {
+        transform: translateY(-230%);
+    }
+    @include media-breakpoint-down(md) {
+        transform: translateY(-135%);
+    }
+}
