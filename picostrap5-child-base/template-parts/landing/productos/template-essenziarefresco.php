@@ -4,7 +4,7 @@
 
 <section>
     <div class="container-fluid position-relative zi-99">
-        <div class="bg-custom-image w-100 h-100 position-absolute top-0 start-0" 
+        <div class="bg-custom-image bg-c-center w-100 h-100 position-absolute top-0 start-0" 
         style="background:url('<?=wp_get_attachment_image_url($acf_fields['cabecera']['fondo'], "full")?>')"></div>
         <div class="container position-relative">
             <div class="row">
@@ -120,10 +120,9 @@ if($acf_fields['secciones']):
             break;
             case 'cols_imagenes_texto':
             ?>
-            <section class=" zi-99 position-relative mt-56 mb-178 seccion_cols_imagenes menta-essenzia-bottom-trigger">
+            <section class=" zi-99 position-relative mt-56 mb-178 seccion_cols_imagenes menta-essenzia-bottom-trigger overflow-hidden">
                 <div class="container position-relative">
-                    <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/limon_essenzia_top.png'; ?>" class="position-absolute limon-essenzia-top">
-                    
+                    <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/limon_essenzia_top.png'; ?>" class="position-absolute limon-essenzia-top">                    
                     <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/menta_essenzia_top.png'; ?>" class="position-absolute menta-essenzia-top">
                     <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/naranja_essenzia_bottom.png'; ?>" class="position-absolute naranja-essenzia-bottom">
                     <div class="row">

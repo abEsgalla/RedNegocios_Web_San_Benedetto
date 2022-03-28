@@ -66,7 +66,7 @@
     </div>
   </div>
   <div class="container-fluid px-0">
-    <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-zero/background_zero_frutas.png'; ?>" class="w-100 d-xl-none mt-n64">
+    <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-zero/background_zero_frutas.png'; ?>" class="w-100 d-xl-none mt-md-n214">
   </div>
   <div class="p-24 offcanvas offcanvas-end" tabindex="-1" id="offcanvasInfoSliderProductos" 
   aria-labelledby="offcanvasInfoSliderProductosLabel" data-bs-backdrop="false" data-bs-scroll="true">

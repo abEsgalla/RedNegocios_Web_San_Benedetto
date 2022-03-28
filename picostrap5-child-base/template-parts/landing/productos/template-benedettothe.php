@@ -4,7 +4,7 @@
 
 <section>
     <div class="container-fluid position-relative zi-99">
-        <div class="bg-custom-image w-100 h-100 position-absolute top-0 start-0" 
+        <div class="bg-custom-image bg-c-center w-100 h-100 position-absolute top-0 start-0" 
         style="background:url('<?=wp_get_attachment_image_url($acf_fields['cabecera']['fondo'], "full")?>')"></div>
         <div class="container position-relative">
             <div class="row">

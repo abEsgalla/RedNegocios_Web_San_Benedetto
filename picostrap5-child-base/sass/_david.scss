@@ -163,6 +163,12 @@
             }
             order: 1;
         }
+        @include media-breakpoint-down(sm) {
+            &.columna-zero{
+                order: 1;    
+            }
+            order: 2;
+        }
     }
 }
 

@@ -3,7 +3,7 @@
   $seccion = $fields;
 ?>
 
-<section class=" zi-99 position-relative pt-64 mb-178 background-te-imagenes te-imagenes-trigger">
+<section class=" zi-99 position-relative pt-64 mb-64 mb-md-178 background-te-imagenes te-imagenes-trigger">
   <div class="container position-relative">
     <img src="<?=get_stylesheet_directory_uri().'/src/img/background-te/te_imagenes_bottom.png'; ?>" class="position-absolute te-imagenes-bottom">
     <img src="<?=get_stylesheet_directory_uri().'/src/img/background-te/te_imagenes_bottom_left.png'; ?>" class="position-absolute te-imagenes-bottom-left">

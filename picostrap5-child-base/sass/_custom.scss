@@ -763,6 +763,11 @@ span{
     @include media-breakpoint-down(md) {
         background-position: center left !important;
     }
+    &.bg-c-center{
+        @include media-breakpoint-down(md) {
+            background-position: center center !important;
+        }
+    }
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
