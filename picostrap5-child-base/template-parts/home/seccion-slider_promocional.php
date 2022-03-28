@@ -5,8 +5,8 @@ $productosRefrescos = $fields['productos_refrescos'];
 ?>
 <div class="swiper swiper-home-promocional">
     <div class="swiper-wrapper position-relative">
+        <div class="cortinilla-swiper position-absolute overflow-hidden"></div>
         <?php foreach ($fields['slides'] as $slide): ?>
-
             <div class="swiper-slide">
                 <div style="background-color: <?=$slide['color_fondo']?>" class="wrapper-slide py-xl-133 py-32">
                     <div class="container">
