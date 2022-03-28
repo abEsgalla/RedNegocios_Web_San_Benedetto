@@ -360,3 +360,19 @@
         position: absolute !important;
     }
 }
+
+.ano-timeline-left{
+    @include media-breakpoint-down(lg) {
+        &.ano-activo::before{
+            width: 75px !important;
+        }
+    }
+}
+
+.ano-timeline-right{
+    @include media-breakpoint-down(lg) {
+        &.ano-activo::before{
+            width: 75px !important;
+        }
+    }
+}
