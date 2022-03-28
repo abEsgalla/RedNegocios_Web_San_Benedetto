@@ -4,7 +4,7 @@
 ?>
 
 <section class="my-64 mt-xl-150 mb-xl-56">
-    <div class="container position-relative">
+    <div class="container position-relative frutas-bloque-texto-trigger">
         <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_bloque_texto_sin.png'; ?>" class="position-absolute lima-bloque-texto-sin">
         <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_bloque_texto.png'; ?>" class="position-absolute fresa-bloque-texto-sin">
         <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/naranja_bloque_texto_sin.png'; ?>" class="position-absolute naranja-bloque-texto-sin">
