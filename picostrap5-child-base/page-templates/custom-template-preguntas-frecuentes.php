@@ -9,13 +9,13 @@ $acf_fields = get_fields();
 get_header();
 ?>
 
-<section>
+<section class="gx-sm-12 gx-4">
   <div class="container-fluid position-relative zi-9 bg-secondary-darker pt-221 pb-149">
     <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(787, "full")?>')"></div>
-      <div class="container gx-sm-2 gx-4 position-relative">
+      <div class="container position-relative">
         <div class="row">
-          <div class="col-12 text-center text-lg-start offset-xxl-1 col-xxl-6 col-xxxl-6">
+          <div class="col-12 text-center text-lg-start offset-xxl-1 col-xxl-6 offset-xxxl-0 col-xxxl-6">
             <div class="row text-white">
               <div class="col-12 fs-18 text-uppercase">
                 GRUPO SAN BENEDETTO
@@ -45,8 +45,8 @@ if($acf_fields['faqs']):
 endif;
 ?>
 
-<section id="preguntas-frecuentes" class="position-relative my-96 my-lg-120">
-  <div class="container gx-sm-2 gx-4">
+<section id="preguntas-frecuentes" class="position-relative my-96 my-lg-120 gx-sm-12 gx-4">
+  <div class="container">
     <div class="row">
       <div class="col-12 offset-xxl-1 col-xxl-10">
       <!--ACORDION-->
@@ -107,8 +107,8 @@ endif;
   </div>
 </section>
 
-<section class="my-56">
-  <div class="container gx-sm-2 gx-4">
+<section class="my-56 gx-sm-12 gx-4">
+  <div class="container">
     <div class="row">
       <div class="col-12 position-relative">
         <?php
