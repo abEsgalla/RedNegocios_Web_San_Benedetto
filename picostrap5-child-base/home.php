@@ -30,12 +30,12 @@ endif;
           <?php
           if ($remove_elements):        
           ?>
-            <div class="col-12 mt-64 mt-sm-94 mt-lg-48 contenedor-cursor-custom">
+            <div class="col-12 mt-64 mt-sm-94 mt-lg-48">
               <div class="row">
                 <div class="col-12">
                   <div class="row">
                     <div class="order-1 order-lg-0 col-12 px-md-48 px-lg-12 position-relative">
-                      <div class="position-relative position-lg-absolute zi-1 mt-n88 mt-lg-88 end-0 col-12 col-lg-6">
+                      <div class="position-lg-absolute zi-1 mt-n88 mt-lg-88 end-0 col-12 col-lg-6">
                         <div class="card rounded-0 border-0 shadow-sm h-100">
                           <div class="card-body text-secondary fs-13 p-24 px-sm-80 py-sm-48 py-lg-80 px-lg-80 d-flex flex-column justify-content-center">
                               <div class="position-relative">
@@ -65,9 +65,11 @@ endif;
                       </div>
                     </div>
                     <div class="gx-0 gx-md-24 order-0 order-lg-1 col-12 col-lg-9">
-                      <div style="background:url('<?=the_post_thumbnail_url('full')?>')" 
-                        class="py-123 py-sm-253 py-lg-333 overflow-hidden bg-custom-image container-scale">            
-                      </div>
+                      <a class="w-100 h-100 contenedor-cursor-custom" href="<?php the_permalink() ?>">
+                        <div style="background:url('<?=the_post_thumbnail_url('full')?>')" 
+                          class="py-123 py-sm-253 py-lg-333 overflow-hidden bg-custom-image container-scale">            
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
