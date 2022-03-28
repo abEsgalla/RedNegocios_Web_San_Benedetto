@@ -281,3 +281,21 @@ const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
     arrow_next.classList.remove('opacity-50');
   }
 });*/
+
+
+const swiper_landing_banner = new Swiper('.swiper-landing-banner', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 5,
+  breakpoints: {
+    350: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 5,
+    }
+  }
+});
