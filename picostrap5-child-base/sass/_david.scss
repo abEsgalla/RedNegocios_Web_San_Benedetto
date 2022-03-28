@@ -381,3 +381,14 @@
 .container-fluid-custom-banner{
     max-width: 1689px !important;
 }
+
+.bg-postion-x-right{
+    background-position-x: right !important;
+    @include media-breakpoint-down(lg) {
+        background-position-x: center !important;
+    }
+}
+
+.bg-postion-x-center{
+    background-position-x: center !important;
+}
