@@ -48,7 +48,7 @@ get_header();
         <div class="row position-relative zi-99 overflow-hidden">
           <div class="order-1 order-md-0 col-12 col-xl-6" data-aos="fade-right">
             <div class="row">
-              <div class="col-12 offset-xl-2 col-xl-8 fs-17 mb-sm-80 my-64 mt-sm-0">
+              <div class="col-12 offset-xl-2 col-xl-8 fs-14 fs-sm-17 mb-sm-80 my-64 mt-sm-0">
                 En Agua Mineral San Benedetto somos <strong>especialistas en ecodiseño.</strong>
                 Ecodiseñar es considerar la variable ambiental en el proceso de diseño y desarrollo de un producto.<br></br>
 
@@ -67,9 +67,9 @@ get_header();
             </div>
           </div>
           <div style="background: url(<?=wp_get_attachment_image_url(1166, "full")?>)" 
-          class="order-0 order-md-1 py-xl-0 py-200 col-12 col-sm-6 bg-custom-image">
+          class="order-0 order-md-1 py-xl-0 py-200 col-12 col-sm-6 bg-custom-image img-version-mobile">
           </div>
-          <div style="" class="order-2 col-12 col-sm-6 py-xl-0 py-138 py-sm-200 bg-secondary text-white">
+          <div style="" class="img-version-mobile order-2 col-12 col-sm-6 py-xl-0 py-138 py-sm-200 bg-secondary text-white">
             <div class="row position-relative h-100">
               <div class="container">
                 <div class="row d-flex h-100 align-items-center">
@@ -82,7 +82,7 @@ get_header();
           </div>
           <div class="order-3 col-12 col-xl-6">
             <div class="row overflow-hidden">
-              <div class="pt-64 py-sm-80 pb-sm-0 pb-xl-80 col-12 offset-xl-2 col-xl-8 fs-17" data-aos="fade-left">
+              <div class="pt-64 py-sm-80 pb-sm-0 pb-xl-80 col-12 offset-xl-2 col-xl-8 fs-14 fs-sm-17" data-aos="fade-left">
                 En Agua Mineral San Benedetto sostenemos que <strong>el rPET no es el objetivo, 
                 sino una de las muchas variables que hacen posible la reducción de la huella de carbono.</strong> 
                 Introducir más plástico reciclado para luego aumentar el gramaje de las botellas o 
@@ -107,7 +107,7 @@ get_header();
 <section class="my-96 mt-xl-133 mb-xl-176 gx-sm-12 gx-4">
   <div class="container">
     <div class="row position-relative">
-      <div class="col-12 bg-custom-image py-200 py-sm-290 zi-99"
+      <div class="col-12 bg-custom-image py-200 py-sm-290 zi-99 img-version-mobile"
         style="background:url('<?=wp_get_attachment_image_url(766, "full")?>')">
       </div>
         <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
@@ -124,7 +124,7 @@ get_header();
       <div class="col-12 h2 fs-32 fs-md-64">
         Concienciación 
       </div>
-      <div class="col-12 offset-xl-2 col-xl-8 mt-40 fs-17">
+      <div class="col-12 offset-xl-2 col-xl-8 mt-40 fs-14 fs-sm-17">
         Queremos concienciar a las personas de la <strong>importancia de reciclar los envases en su contenedor correspondiente.</strong>
         Con la ayuda de <strong>Ecoembes</strong>, podemos orientar a los consumidores a través de nuestro <strong>etiquetado</strong> y 
         evitar así que nuestros envases vayan a parar a donde no deben.<br></br>
