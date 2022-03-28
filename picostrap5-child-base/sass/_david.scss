@@ -85,8 +85,11 @@
     @include media-breakpoint-down(xxxl) {
         margin-top: 37%;
     }
+    @include media-breakpoint-down(xl) {
+        margin-top: 55%;
+    }
     @include media-breakpoint-down(lg) {
-        margin-top: 70%;
+        margin-top: 63%;
     }
     @include media-breakpoint-down(sm) {
         margin-top: 100%;
@@ -391,4 +394,20 @@
 
 .bg-postion-x-center{
     background-position-x: center !important;
+}
+
+.grid-3-ecolosofia{
+    img{
+        @include media-breakpoint-down(lg) {
+            max-width: 100px;
+        }
+    }
+}
+
+
+.img-version-mobile{
+    @include media-breakpoint-down(sm) {
+        width: calc(100% - 24px);
+        margin-left: 12px;
+    }
 }
