@@ -74,7 +74,7 @@ get_header();
       <?=wp_get_attachment_image(689, "full", "", array( 'class' => 'p-0 m-0 img-mapa' , 'alt' => '' , 'title' => '') ); ?>
       <div class="position-absolute w-auto c-pointer icon-map-1">
         <div class="opacity-0 position-absolute start-0 bottom-100 pb-12 tx-n50 start-50">
-          <div class="card border shadow px-24 py-30 w-card-mapa text-secondary">
+          <div class="card border shadow p-12 px-sm-24 py-sm-30 w-card-mapa text-secondary">
             <b>España:</b>
             <div class="ps-2">Agua Mineral San Benedetto S.A.U. (San    Antonio de Requena)· </div>  
             <div class="ps-2">Parque La Presa S.A. (Loja)</div> 
@@ -84,7 +84,7 @@ get_header();
       </div>
       <div class="position-absolute w-auto c-pointer icon-map-2">
         <div class="opacity-0 position-absolute start-0 bottom-100 pb-12 tx-n50 start-50">
-          <div class="card border shadow px-24 py-30 w-card-mapa text-secondary">
+          <div class="card border shadow p-12 px-sm-24 py-sm-30 w-card-mapa text-secondary">
             <b>España:</b>
             <div class="ps-2">Agua Mineral San Benedetto S.A.U. (San    Antonio de Requena)· </div>  
             <div class="ps-2">Parque La Presa S.A. (Loja)</div> 
@@ -94,7 +94,7 @@ get_header();
       </div>
       <div class="position-absolute w-auto c-pointer icon-map-3">
         <div class="opacity-0 position-absolute start-0 bottom-100 pb-12 tx-n50 start-50">
-          <div class="card border shadow px-24 py-30 w-card-mapa text-secondary">
+          <div class="card border shadow p-12 px-sm-24 py-sm-30 w-card-mapa text-secondary">
             <b>España:</b>
             <div class="ps-2">Agua Mineral San Benedetto S.A.U. (San    Antonio de Requena)· </div>  
             <div class="ps-2">Parque La Presa S.A. (Loja)</div> 
@@ -104,7 +104,7 @@ get_header();
       </div>
       <div class="position-absolute w-auto c-pointer icon-map-4">
         <div class="opacity-0 position-absolute start-0 bottom-100 pb-12 tx-n50 start-50">
-          <div class="card border shadow px-24 py-30 w-card-mapa text-secondary">
+          <div class="card border shadow p-12 px-sm-24 py-sm-30 w-card-mapa text-secondary">
             <b>España:</b>
             <div class="ps-2">Agua Mineral San Benedetto S.A.U. (San    Antonio de Requena)· </div>  
             <div class="ps-2">Parque La Presa S.A. (Loja)</div> 
