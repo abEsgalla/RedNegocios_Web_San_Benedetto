@@ -47,7 +47,7 @@ get_header();
   </div>
 </section>
 
-<section class="">
+<section class="gx-sm-12 gx-4">
   <div class="container position-relative zi-99">
     <div class="row">
       <div class="mt-253 mt-sm-356 mt-lg-160 col-12 col-sm-8 col-lg-4 text-secondary text-sm-start text-center">
