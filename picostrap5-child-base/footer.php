@@ -21,6 +21,7 @@
           <div class="modal-body h4 text-secondary text-center py-60">
             Próximamente
           </div>
+        </div>
       </div>
     </div>
 
