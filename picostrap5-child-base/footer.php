@@ -14,6 +14,16 @@
 		</div>
 		<?php endif ?>
 		
+    <!-- Modal -->
+    <div class="modal fade" id="modalLanguage" tabindex="-1" aria-labelledby="modalLanguageLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body h4 text-secondary text-center py-60">
+            Próximamente
+          </div>
+      </div>
+    </div>
+
 		
 		<div class="wrapper bg-secondary" id="wrapper-footer-colophon">
 			<div class="container gx-sm-2 gx-4">
