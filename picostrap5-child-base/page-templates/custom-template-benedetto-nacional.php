@@ -249,7 +249,7 @@ get_header();
         <div class="row">
           <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10">
             <div class="row">
-              <div class="col-12 col-lg-6 py-200 py-sm-317 py-lg-0 bg-custom-image" 
+              <div class="col-12 col-lg-6 py-200 py-sm-317 py-lg-0 bg-custom-image img-version-mobile" 
               style="background:url('<?=wp_get_attachment_image_url(661, "full")?>')">
               </div>
               <div class="col-12 col-lg-6">
@@ -259,7 +259,7 @@ get_header();
                     un enclave natural caracterizado por su paisaje agreste y escarpado, 
                     lleno de magia y belleza salvajes. 
                   </div>
-                  <div class="col-12 mx-lg-32 bg-custom-image py-218 py-lg-245" 
+                  <div class="col-12 mx-lg-32 bg-custom-image py-218 py-lg-245 img-version-mobile" 
                   style="background:url('<?=wp_get_attachment_image_url(763, "full")?>')">
                   </div>
                 </div>
