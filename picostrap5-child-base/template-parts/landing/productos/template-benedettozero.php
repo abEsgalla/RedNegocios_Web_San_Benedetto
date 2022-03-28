@@ -60,9 +60,9 @@
                                 <? 
                                 $i = 1;
                                 foreach ($seccion['col'] as $col): ?>
-                                    <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?>">
+                                    <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?> columna-zero">
                                     <? if($col['posicion_texto'] && $col['texto']): ?>
-                                            <div class="text-start text-secondary texto px-lg-48 mb-70" data-aos="fade-left">
+                                            <div class="text-start text-secondary texto px-lg-48 my-64" data-aos="fade-left">
                                             <? if($col['posicion_texto']): ?>
                                                 <?=$col['texto']?>
                                             <? endif; ?>

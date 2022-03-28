@@ -17,8 +17,8 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="swiper swiper-landing-productos mt-94 slider-zero">
-          <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?>">
+        <div class="swiper swiper-landing-productos slider-zero">
+          <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?> <?=(count($seccion['slider']['slide'])<=4)?'justify-content-md-center':'';?>">
             <?php
             if ($seccion['slider']):
               foreach ($seccion['slider']['slide'] as $slide ):
@@ -65,7 +65,9 @@
       </div>
     </div>
   </div>
-  
+  <div class="container-fluid px-0">
+    <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-zero/background_zero_frutas.png'; ?>" class="w-100 d-xl-none mt-n64">
+  </div>
   <div class="p-24 offcanvas offcanvas-end" tabindex="-1" id="offcanvasInfoSliderProductos" 
   aria-labelledby="offcanvasInfoSliderProductosLabel" data-bs-backdrop="false" data-bs-scroll="true">
     <div class="offcanvas-header">

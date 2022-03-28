@@ -41,7 +41,7 @@
                         </div>
                         <div class="col-12">
                             <div class="swiper swiper-landing-productos mt-94">
-                            <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?>">
+                            <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?> <?=(count($seccion['slider']['slide'])<=4)?'justify-content-md-center':'';?>">
                                 <?php
                                 if ($seccion['slider']):
                                 foreach ($seccion['slider']['slide'] as $slide ):
@@ -140,7 +140,7 @@
                             <? 
                             $i = 1;
                             foreach ($seccion['col'] as $col): ?>
-                                <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?>">
+                                <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?> columna-agua-essenzia">
                                 <? if($col['posicion_texto'] && $col['texto']): ?>
                                         <div class="text-start text-secondary texto px-lg-48 mb-70">
                                         <? if($col['posicion_texto']): ?>

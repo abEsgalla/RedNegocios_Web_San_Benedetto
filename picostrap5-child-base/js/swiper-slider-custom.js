@@ -225,11 +225,11 @@ const swiper_landing_productos = new Swiper('.swiper-landing-productos', {
   breakpoints: {
     350: {
       slidesPerView: 2,
-    },
+    },    
     768: {
       slidesPerView: 4,
     },
-    900: {
+    1200: {
       slidesPerView: 'auto',
     }
   }

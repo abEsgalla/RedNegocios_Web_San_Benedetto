@@ -3,7 +3,7 @@
   $seccion = $fields;
 ?>
 
-<section class=" zi-99 position-relative mt-56 mb-178">
+<section class=" zi-99 position-relative mt-48 mb-48 mt-xl-56 mb-xl-178">
   <div class="container position-relative">
     <div class="row">
       <div class="col-12 offset-xl-1 col-xl-10">

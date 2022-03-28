@@ -1,20 +1,90 @@
 .limon-3{
   bottom: 0;
   left: 0;
+  @include media-breakpoint-down(xl){
+    width: 200px;
+  }
+  @include media-breakpoint-down(md){
+    width: 100px;
+  }
 }
 .limon-4{
   top: 35%;
   right: 25%;
+  @include media-breakpoint-down(xxxl){
+    width: 250px;
+  }
+  @include media-breakpoint-down(xl){
+    width: 200px;
+    right: 20%;
+  }
+  @include media-breakpoint-down(md){
+    width: 100px;
+  }
 }
 .limon-1{
   top: 30%;
   left: 25%;
+  @include media-breakpoint-down(xxxl){
+    width: 250px;
+  }
+  @include media-breakpoint-down(xl){
+    width: 200px;
+    left: 20%;
+  }
+  @include media-breakpoint-down(md){
+    width: 100px;
+  }
 }
 .fresa-1{
   bottom: 0;
   left: 25%;
+  @include media-breakpoint-down(xxxl){
+    width: 200px;
+  }
+  @include media-breakpoint-down(xl){
+    width: 150px;
+    left: 20%;
+  }
+  @include media-breakpoint-down(md){
+    width: 100px;
+  }
+}
+.fresa-1con{
+  top: 0;
+  left: 25%;
+  @include media-breakpoint-down(xxxl){
+    width: 200px;
+  }
+  @include media-breakpoint-down(xl){
+    width: 150px;
+    left: 5%;
+  }
+  @include media-breakpoint-down(md){
+    width: 100px;
+  }
 }
 .fresa-2{
   top: 60%;
   right: 10%;
+  @include media-breakpoint-down(xl){
+    width: 200px;
+  }
+  @include media-breakpoint-down(md){
+    width: 100px;
+  }
+}
+.limon-bloque-texto-con{
+  z-index: 100;
+  @include media-breakpoint-down(xl){
+    top: inherit !important;
+    bottom: 150px !important;
+    right: -75px !important;
+  }
+  @include media-breakpoint-down(xl){
+    width: 100px;
+    top: inherit !important;
+    bottom: 50% !important;
+    right: -50px !important;
+  }
 }

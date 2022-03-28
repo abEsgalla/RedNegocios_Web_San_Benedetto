@@ -5,45 +5,51 @@
 
 <section class="my-64 mt-xl-150 mb-xl-56">
     <div class="container position-relative frutas-bloque-texto-trigger">
-        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_bloque_texto_sin.png'; ?>" class="position-absolute lima-bloque-texto-sin">
-        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_bloque_texto.png'; ?>" class="position-absolute fresa-bloque-texto-sin">
-        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/naranja_bloque_texto_sin.png'; ?>" class="position-absolute naranja-bloque-texto-sin">
-        <div class="row">
-            <div class="col-12 offset-xl-1 col-xl-10">
-                <div class="row">
-                    <div class="col-7 pe-0">
-                        <?=wp_get_attachment_image($seccion['imagen'], "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') )?>
-                    </div>
-                    <div class="col-5"
-                    style="background-color:<?=$seccion['color_fondo']?>">
-                        <div class="row h-100 d-flex flex-column justify-content-evenly text-uppercase text-secondary">
-                            <div class="col-12 offset-xl-2 col-xl-8 icon-plus-custom">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-6 text-end">
-                                        <?=wp_get_attachment_image($seccion['1_ilustracion'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+        <div class="position-relative zi-99">
+            <div class="row">
+                <div class="col-12 offset-xl-1 col-xl-10">
+                    <div class="row flex-column flex-xl-row">
+                        <div class="col-12 col-xl-7 pe-xl-0">
+                            <?=wp_get_attachment_image($seccion['imagen'], "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') )?>
+                        </div>
+                        <div class="col-12 col-xl-5 ps-xl-0">
+                            <div style="background-color:<?=$seccion['color_fondo']?>" class="h-100 p-32 p-xl-0">
+                                <div class="row h-100 d-flex flex-xl-column justify-content-evenly text-uppercase text-secondary">
+                                    <div class="col-12 col-md offset-xl-2 col-xl-8 d-flex align-items-center"> <!-- icon-plus-custom -->
+                                        <div class="row d-flex align-items-center flex-row flex-md-column flex-xl-row">
+                                            <div class="col-6 col-md-12 col-xl-6 text-end">
+                                                <?=wp_get_attachment_image($seccion['1_ilustracion'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+                                            </div>
+                                            <div class="col-6 col-md-12 col-xl-6 text-start text-md-center text-xl-start fw-bold fs-20">
+                                                <?=$seccion['1_ilustracion_texto']?>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-6 text-start fw-bold fs-20">
-                                        <?=$seccion['1_ilustracion_texto']?>
+                                    <div class="col-12 col-md offset-xl-2 col-xl-8 d-flex align-items-center justify-content-center my-16"> <!-- icon-plus-custom -->
+                                        <img src="<?php echo get_stylesheet_directory_uri().'/src/img/plus.png'; ?>" class="">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-12 offset-xl-2 col-xl-8 icon-equal-custom">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-6 text-end">
-                                        <?=wp_get_attachment_image($seccion['2_ilustracion'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+                                    <div class="col-12 col-md offset-xl-2 col-xl-8 d-flex align-items-center"> <!-- icon-equal-custom -->
+                                        <div class="row d-flex align-items-center flex-row flex-md-column flex-xl-row">
+                                            <div class="col-6 col-md-12 col-xl-6 text-end">
+                                                <?=wp_get_attachment_image($seccion['2_ilustracion'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+                                            </div>
+                                            <div class="col-6 col-md-12 col-xl-6 text-start text-md-center text-xl-start fw-bold fs-20">
+                                                <?=$seccion['2_ilustracion_texto']?>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-6 text-start fw-bold fs-20">
-                                        <?=$seccion['2_ilustracion_texto']?>
+                                    <div class="col-12 col-md offset-xl-2 col-xl-8 text-center d-flex align-items-center justify-content-center my-16"> <!-- icon-plus-custom -->
+                                        <img src="<?php echo get_stylesheet_directory_uri().'/src/img/equal.png'; ?>" class="">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-12 offset-xl-2 col-xl-8">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-6 text-end">
-                                        <?=wp_get_attachment_image($seccion['3_ilustracion'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
-                                    </div>
-                                    <div class="col-6 text-start fw-bold fs-20">
-                                        <?=$seccion['3_ilustracion_texto']?>
+                                    <div class="col-12 col-md offset-xl-2 col-xl-8 d-flex align-items-center">
+                                        <div class="row d-flex align-items-center flex-row flex-md-column flex-xl-row">
+                                            <div class="col-6 col-md-12 col-xl-6 text-end">
+                                                <?=wp_get_attachment_image($seccion['3_ilustracion'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
+                                            </div>
+                                            <div class="col-6 col-md-12 col-xl-6 text-start text-md-center text-xl-start fw-bold fs-20">
+                                                <?=$seccion['3_ilustracion_texto']?>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -52,5 +58,8 @@
                 </div>
             </div>
         </div>
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/limon_bloque_texto_sin.png'; ?>" class="position-absolute lima-bloque-texto-sin">
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/fresa_bloque_texto.png'; ?>" class="position-absolute fresa-bloque-texto-sin">
+        <img src="<?=get_stylesheet_directory_uri().'/src/img/background-esjoy/naranja_bloque_texto_sin.png'; ?>" class="position-absolute naranja-bloque-texto-sin">
     </div>
 </section>
