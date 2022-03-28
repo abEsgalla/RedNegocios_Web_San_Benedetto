@@ -20,7 +20,7 @@ get_header();
               <div class="col-12 text-uppercase fs-18">
               GRUPO SAN BENEDETTO
               </div>
-              <h1 class="col-12 mt-8 h2 fs-32 fs-md-64 text-white">
+              <h1 class="col-12 mt-8 h2 fs-32 fs-md-64 text-white lh-1">
                 Agua Mineral San Benedetto en España
               </h1>
             </div>
@@ -41,7 +41,7 @@ get_header();
             <div class="h2 fs-32 fs-md-64 mb-56">
               Nuestras plantas
             </div>
-            <div class="mt-40 mt-sm-56 fs-17">
+            <div class="mt-40 mt-sm-56 fs-14 fs-sm-17">
               Agua Mineral San Benedetto es la primera envasadora de agua mineral en España por volumen, 
               y uno de los principales fabricantes de refrescos del país.<br></br>
               La compañía posee 2 plantas de envasado en España: <strong>Agua Mineral San Benedetto S.A.U.</strong> 
@@ -59,12 +59,12 @@ get_header();
     <div class="row">
       <div class="col-12"> 
         <div class="row">
-          <div class="order-0 order-lg-0 col-12 col-lg-6 py-111 py-sm-253 mb-lg-24
+          <div class="order-0 order-lg-0 col-12 col-lg-6 py-111 py-sm-253 mb-lg-24 img-version-mobile
           bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url(754, "full")?>')">
           </div>
           <div class="order-1 order-lg-1 col-12 col-lg-6">
             <div class="row">
-              <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10 fs-17 py-40 pb-sm-60 pt-sm-82 pt-lg-103">
+              <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10 fs-14 fs-sm-17 py-40 pb-sm-60 pt-sm-82 pt-lg-103">
                 En San Antonio de Requena se envasan nuestras aguas minerales <strong>Fuente Primavera</strong> y <strong>Fuencisla</strong>, 
                 además de producirse toda nuestra línea de refrescos. Aquí se encuentran también nuestra Oficinas Centrales. 
               </div>
@@ -87,7 +87,7 @@ get_header();
         <div class="row">
           <div class="order-1 order-lg-0 col-12 col-lg-6">
             <div class="row">
-              <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10 fs-17 py-40 py-sm-80 pt-lg-228">
+              <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10 fs-14 fs-sm-17 py-40 py-sm-80 pt-lg-228">
                 En Loja, se envasa nuestra agua mineral <strong>Font Natura</strong>.<br></br>
                 En total, disponemos de 11 líneas de llenado y 2 de aséptico. 
                 Envasamos <strong>más de 1.000 millones de litros anuales</strong> y empleamos a 
@@ -95,7 +95,7 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="order-0 order-lg-1 col-12 col-lg-6 py-120 py-sm-274 py-lg-253 mt-70 mt-lg-24
+          <div class="order-0 order-lg-1 col-12 col-lg-6 py-120 py-sm-274 py-lg-253 mt-70 mt-lg-24 img-version-mobile
           bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url(755, "full")?>')">
           </div>
         </div> 
@@ -107,7 +107,7 @@ get_header();
 
 <section class="mt-102 mt-sm-60 mt-lg-222 mb-lg-96 manantiales gx-4 gx-sm-12">
   <div class="container text-secondary">
-    <div class="row">
+    <div class="row overflow-hidden">
       <div class="col-12 text-center" data-aos="fade-up">
         <div class="fs-18 text-uppercase">descubre nuestros</div>
         <div class="h2 fs-32 fs-md-64">Manantiales</div>
@@ -226,7 +226,7 @@ get_header();
       <div class="col-12 text-center">
         <div class="row">
           <div class="col-12 offset-lg-2 col-lg-8">
-            <div class="row">
+            <div class="row overflow-hidden">
               <div class="col-12" data-aos="fade-up">
                 <div class="text-uppercase">
                   descubre nuestro
@@ -234,7 +234,7 @@ get_header();
                 <div class="h2 fs-32 fs-md-64 mt-8">
                   Entorno
                 </div>
-                <div class="mt-36 mt-sm-40 fs-17">
+                <div class="mt-36 mt-sm-40 fs-14 fs-sm-17">
                   Nuestros manantiales Fuente Primavera y Fuencisla se encuentran entre dos parques naturales del interior 
                   de la provincia de Valencia: el <strong>Parque Natural de Las Hoces del Cabriel</strong> y el 
                   <strong>Parque Natural Geológico de Chera-Sot de Chera.</strong> 
@@ -249,12 +249,12 @@ get_header();
         <div class="row">
           <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10">
             <div class="row">
-              <div class="col-12 col-lg-6 py-317 py-lg-0 bg-custom-image" 
+              <div class="col-12 col-lg-6 py-200 py-sm-317 py-lg-0 bg-custom-image" 
               style="background:url('<?=wp_get_attachment_image_url(661, "full")?>')">
               </div>
               <div class="col-12 col-lg-6">
-                <div class="row">
-                  <div class="col-12 offset-lg-1 col-lg-10 my-40 my-sm-70 mt-lg-48 mb-lg-70 fs-17" data-aos="fade-left">
+                <div class="row overflow-hidden">
+                  <div class="col-12 offset-lg-1 col-lg-10 my-40 my-sm-70 mt-lg-48 mb-lg-70 fs-14 fs-sm-17" data-aos="fade-left">
                     Nuestro manantial Font Natura está situado en la <strong>Sierra de Loja</strong>, 
                     un enclave natural caracterizado por su paisaje agreste y escarpado, 
                     lleno de magia y belleza salvajes. 

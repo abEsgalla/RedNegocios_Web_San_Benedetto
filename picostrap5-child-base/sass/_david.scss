@@ -217,6 +217,9 @@
 
 .translate-middle-espana{
     transform: translate(-50%, -75%) !important;
+    @include media-breakpoint-down(sm) {
+        transform: translate(-50%, -70%) !important;
+    }
 }
 
 .translate-middle-lg-y{
