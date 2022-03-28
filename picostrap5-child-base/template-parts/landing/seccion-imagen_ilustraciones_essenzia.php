@@ -3,8 +3,8 @@
   $seccion = $fields;
 ?>
 
-<section class="my-64 mt-xl-150 mb-xl-56 position-relative">
-    <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/BG-agua.png'; ?>" class="position-absolute top-50 start-50 translate-middle">
+<section class="my-64 mt-xl-150 mb-xl-56 position-relative bg-splash-agua-trigger">
+    <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/BG-agua.png'; ?>" class="position-absolute top-50 start-50  bg-splash-agua">
     <div class="container position-relative">
         <div class="row">
             <div class="col-12 offset-xl-1 col-xl-10">
