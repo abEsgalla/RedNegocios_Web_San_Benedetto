@@ -32,13 +32,11 @@ get_header();
   </div>
 </section>
 
-<section id="sliderPromocional" class="py-xl-133 py-32">
+<section id="sliderPromocional">
   <div class="container-fluid g-0 position-relative">
-    <div class="row g-0">
-      <?php
-        get_template_part( 'template-parts/home/seccion', 'slider_promocional', $acf_fields['slider_promocional']);
-      ?>
-    </div>
+    <?php
+      get_template_part( 'template-parts/home/seccion', 'slider_promocional', $acf_fields['slider_promocional']);
+    ?>
   </div>
 </section>
 
