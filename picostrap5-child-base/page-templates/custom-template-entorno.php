@@ -44,7 +44,7 @@ get_header();
           <div class="col-12 text-center h2 fs-32 fs-md-64">
             Reducción y compensación de emisiones
           </div>
-          <div class="col-12 text-center mt-64 mt-sm-80 fs-17" data-aos="fade-up">
+          <div class="col-12 text-center mt-64 mt-sm-80 fs-14 fs-sm-17" data-aos="fade-up">
             Creemos que <strong>una cantidad de CO2 emitida en un lugar de la Tierra 
             puede ser neutralizada con la reducción o eliminación de la misma cantidad de CO2 en otro punto del planeta.</strong>
             Gracias a que medimos nuestra huella de carbono, 
@@ -53,7 +53,7 @@ get_header();
             Descubre más sobre ellos aquí:  
           </div>
           <div class="col-12">
-            <div class="row text-center">
+            <div class="row text-center overflow-hiden">
               <div class="col-12 col-sm-4 mt-60" data-aos="fade-right">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
@@ -62,7 +62,8 @@ get_header();
                     </span>
                   </div>
                   <div class="col-12 mt-24 fs-20 fw-bold">
-                    Nyagatare (Ruanda) 
+                    <a class="text-reset" target="_blank" 
+                    href="https://www.sanbenedetto.es/docs/Nyagatare-Borehole-Rwanda-Exclusive.pdf">Nyagatare (Ruanda) </a>
                   </div>
                 </div>
               </div>
@@ -110,7 +111,7 @@ get_header();
                   <div class="col-12 h3 fs-26 fs-md-45 mt-70 mt-lg-0">
                     Logística
                   </div>
-                  <div class="col-12 my-32 fs-17">
+                  <div class="col-12 my-32 fs-14 fs-sm-17">
                     En la medida de lo posible, tratamos de utilizar formas de transporte sostenible, 
                     como el uso de vehículos propulsados por GNL y camiones dúo-tráiler, 
                     contribuyendo así a reducir nuestras emisiones de CO2. 
@@ -119,7 +120,7 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6 order-0 order-lg-1 py-200 py-lg-245 position-relative bg-custom-image" 
+          <div class="col-12 col-lg-6 order-0 order-lg-1 py-200 py-lg-245 position-relative bg-custom-image img-version-mobile" 
           style="background:url('<?=wp_get_attachment_image_url(784, "full")?>')">
           </div>
         </div>
@@ -140,7 +141,7 @@ get_header();
       class="d-none d-xxxl-block position-absolute bottom-0 start-0 w-auto translate-dots-col-before">
       <div class="col-12">
         <div class="row">
-          <div class="col-12 col-lg-6 py-200 py-lg-374 position-relative bg-custom-image" 
+          <div class="col-12 col-lg-6 py-200 py-lg-374 position-relative bg-custom-image img-version-mobile" 
           style="background:url('<?=wp_get_attachment_image_url(632, "full")?>')">
           </div>
           <div class="col-12 col-lg-6 d-inline-flex align-items-end">
@@ -150,7 +151,7 @@ get_header();
                   <div class="col-12 h3 fs-26 fs-md-45 mt-70 mt-lg-0">
                     Limpieza y reforestación del entorno 
                   </div>
-                  <div class="col-12 mt-30 fs-17">
+                  <div class="col-12 mt-30 fs-14 fs-sm-17">
                     Llevamos varios años organizando plantaciones de árboles 
                     en los alrededores de nuestras instalaciones, eligiendo árboles y 
                     vegetación autóctona del Parque Natural de las Hoces del Cabriel. 
