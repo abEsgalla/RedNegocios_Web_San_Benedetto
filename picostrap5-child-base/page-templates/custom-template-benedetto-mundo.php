@@ -117,7 +117,7 @@ get_header();
 </section>
 
 
-<section class="my-56">
+<section class="gx-sm-12 gx-4 my-56">
   <div class="container">
     <div class="row">
       <div class="col-12 position-relative">
