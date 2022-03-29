@@ -74,7 +74,7 @@
     </div>
     <div class="offcanvas-body text-secondary">
       <div class="py-24 d-flex align-items-center justify-content-center image" 
-      style="background-color:<?=get_field('caracteristicas_producto',$seccion['id_producto'])['color_corporativo']?>">
+      style="background-color:<?=get_field('caracteristicas_producto',$GLOBALS['id_producto'])['color_corporativo']?>">
 
       </div>
       <div class="name mt-40 fs-24 fw-bolder">
