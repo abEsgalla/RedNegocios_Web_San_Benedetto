@@ -13,7 +13,7 @@ get_header();
 <section class="position-absolute top-0 w-100">
   <div class="container-fluid position-relative zi-9 bg-black pt-138 pb-422 pb-sm-333 pt-md-228 pb-md-565 pt-lg-261 pb-lg-533">
     <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
-      style="background:url('<?=wp_get_attachment_image_url(613, "full")?>')"></div>
+      style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')"></div>
       <div class="container position-relative zi-99">
         <div class="row">
           <div class="col-12 offset-xl-3 col-xl-6 text-center">
@@ -43,12 +43,7 @@ get_header();
         Manera de pensar o de ver las cosas. </span></p>
       </div>
       <div class="gx-0 gx-sm-12 col-12 offset-lg-2 col-lg-8 mt-80 mt-sm-94 mt-lg-102 text-center text-secondary fs-14 fs-sm-17">
-        Nuestro principal activo, el core y razón de ser de nuestra compañía, 
-        es el agua mineral que brota del interior de la tierra. 
-        Debemos a la Naturaleza la existencia de nuestra actividad y, por eso, 
-        entendemos la sostenibilidad como una <strong>filosofía inherente a nuestra misión como empresa.</strong> 
-        De ahí nace nuestra Ecolosofía: es la forma en la que Agua Mineral San Benedetto utiliza el <strong>conocimiento 
-        y la tecnología en beneficio del medioambiente y las personas. ¿Cómo? </strong>
+        <?=$acf_fields['descripcion_superior']?>
       </div>
       <div class="col-12 grid-3-ecolosofia mt-55 mt-sm-123 gx-0 gx-lg-4">
         <div class="row text-white">
@@ -131,32 +126,17 @@ get_header();
             </div>
           </div>
           <div class="d-none d-sm-block col-6 py-200 py-lg-0 bg-custom-image order-2 order-lg-1" 
-            style="background:url('<?=wp_get_attachment_image_url(615, "full")?>')">
+            style="background:url('<?=wp_get_attachment_image_url($acf_fields['imagen_grid_sup_der'], "full")?>')">
           </div>
           <div class="img-version-mobile col-12 col-sm-6 py-200 py-lg-0 bg-custom-image order-3 order-lg-2" 
-            style="background:url('<?=wp_get_attachment_image_url(616, "full")?>')">
+            style="background:url('<?=wp_get_attachment_image_url($acf_fields['imagen_grid_inf_izq'], "full")?>')">
           </div>
           <div class="col-12 offset-md-1 col-md-10 offset-lg-0 col-lg-6 order-1 order-lg-3">
             <div class="row position-relative pb-32 pb-sm-90 pt-0 py-lg-150">
               <div class="col-12">
                 <div class="row text-center text-sm-start text-secondary fs-14 fs-sm-17">
                   <div class="col-12 offset-sm-1 col-sm-10">
-                    Tenemos un acuerdo con 
-                    <strong>
-                      <a class="text-reset" target="_blank" href="https://www.aldeasinfantiles.es/">Aldeas Infantiles SOS</a>
-                    </strong> según el cual suministramos botellas de agua diarias 
-                    a los 45 niños y niñas de su Centro de Día en Valencia. 
-                    También realizamos donaciones asiduas a organizaciones como 
-                    <strong>
-                        <a class="text-reset" target="_blank" href="https://www2.cruzroja.es/">Cruz Roja</a>
-                      , 
-                        <a class="text-reset" target="_blank" href="https://ayudaunafamilia.es/">Fundación Ayuda Una Familia</a>
-                      </strong> y 
-                      <strong>
-                        <a class="text-reset" target="_blank" href="https://hambrecero.es/">Hambre Cero</a>
-
-                        </strong>, 
-                    además de apoyar activamente todas las iniciativas culturales y de ocio de nuestro entorno local.  
+                    <?=$acf_fields['texto_grid_inf_der']?>
                   </div>
                 </div>
               </div>

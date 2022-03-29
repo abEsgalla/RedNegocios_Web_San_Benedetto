@@ -29,14 +29,43 @@ $productosRefrescos = $fields['productos_refrescos'];
                                                         <?php
                                                         if(get_the_terms( $slide['producto'], 'categorias_producto' )[0]->term_id == 3):
                                                             foreach($productosAguas as $key => $productoAgua):?>
-                                                                <div onclick=swiper_home_promocional.slideTo(<?=$key?>) 
-                                                                class="fw-500 col-custom-lg letter-spacing-1x3 col c-pointer fs-13 text-<?=$colorTexto?> opacity-50 <?=($key==0)?'opacity-100':'';?>">
+                                                                <?
+                                                                switch ($productoAgua) {
+                                                                    case 55:
+                                                                        $jump=0;
+                                                                    break;
+                                                                    case 57:
+                                                                        $jump=1;
+                                                                    break;
+                                                                    case 59:
+                                                                        $jump=2;
+                                                                    break;
+                                                                }
+                                                                ?>
+                                                                <div onclick=swiper_home_promocional.slideTo(<?=$jump?>) position-slider=<?=$jump?>
+                                                                class="<?=$productoAgua?> fw-500 col-custom-lg letter-spacing-1x3 col c-pointer fs-13 text-<?=$colorTexto?> opacity-50 <?=($key==0)?'opacity-100':'';?>">
                                                                     <?=get_the_title($productoAgua)?>
                                                                 </div>
                                                             <? endforeach;
                                                         else:
                                                             foreach($productosRefrescos as $key => $productoRefresco):?>
-                                                                <div onclick=swiper_home_promocional.slideTo(<?=$key?>) 
+                                                                <?
+                                                                switch ($productoRefresco) {
+                                                                    case 61:
+                                                                        $jump=3;
+                                                                    break;
+                                                                    case 65:
+                                                                        $jump=4;
+                                                                    break;
+                                                                    case 63:
+                                                                        $jump=5;
+                                                                    break;
+                                                                    case 67:
+                                                                        $jump=6;
+                                                                    break;
+                                                                }
+                                                                ?>
+                                                                <div onclick=swiper_home_promocional.slideTo(<?=$jump?>)  position-slider=<?=$jump?>
                                                                 class="fw-500 col-custom-lg letter-spacing-1x3 col c-pointer text-<?=$colorTexto?> fs-13 opacity-50 <?=($key==0)?'opacity-100':'';?>">
                                                                     <?=get_the_title($productoRefresco)?>
                                                                 </div>

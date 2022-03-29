@@ -12,7 +12,7 @@ get_header();
 <section>
   <div class="container-fluid position-relative zi-9 bg-black pt-120 pb-187 py-md-214 pt-lg-270 pb-lg-242">
     <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
-      style="background:url('<?=wp_get_attachment_image_url(674, "full")?>')"></div>
+      style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
           <div class="col-12 text-center text-xl-start col-xl-6">
@@ -96,7 +96,7 @@ get_header();
         </div>
       </div>
       <div class="img-version-mobile col-12 col-md-8 offset-md-2 offset-xl-0 col-xl-6 bg-custom-image py-155 mt-n155 mt-sm-n80 py-sm-228 py-xl-356 mt-sm-n133 mt-xl-n70" 
-        style="background:url('<?=wp_get_attachment_image_url(791, "full")?>')">
+        style="background:url('<?=wp_get_attachment_image_url($acf_fields['imagen_derecha_contacto'], "full")?>')">
       </div>
     </div>
   </div>

@@ -129,6 +129,16 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
       arrows_prev.style.fill = first_slide.dataset.textcolor;
     },
     slideChange: function(swiper) {
+      let allSelected = document.querySelectorAll(".opacity-50.opacity-100");
+      allSelected.forEach(singleSelected => {
+        singleSelected.classList.remove('opacity-100');
+      })
+      let newAllSelect = document.querySelectorAll(`[position-slider='${swiper.activeIndex}']`);
+      newAllSelect.forEach(newSingleSelect => {
+        newSingleSelect.classList.add('opacity-100');
+      })
+      //document.querySelector(`[position-slider='${swiper.activeIndex}']`).classList.add('opacity-100');
+      
       let cortinilla = document.querySelector('.swiper-home-promocional .cortinilla-swiper');
 
       //Restauro la cortinilla a estado inicial

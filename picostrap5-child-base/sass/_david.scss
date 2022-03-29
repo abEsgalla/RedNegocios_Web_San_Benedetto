@@ -443,11 +443,63 @@
     }
 }
 
+.road-localizacion-desktop {
+    .localizacion-final {
+        top: 95px;
+        left: 175px;
+        @include media-breakpoint-up(xl) {
+            left: 210px;
+        }
+        @include media-breakpoint-up(xxl) {
+            left: 260px;
+        }
+        width: 50px;
+        opacity:0;
+        transition: all 0.5s ease;
+        &.activo {
+            opacity:1;
+        }
+    }
+}
+
+.road-localizacion-tablet {
+    .localizacion-final {
+        top: 95px;
+        left: 280px;
+        width: 50px;
+        opacity:0;
+        transition: all 0.5s ease;
+        &.activo {
+            opacity:1;
+        }
+    }
+}
+
+.road-localizacion-mobile {
+    .localizacion-final {
+        left: 115px;
+        top: 50px;
+        width: 40px;
+        /*top: 20px;
+        left: 50%;
+        width: 50px;*/
+        opacity:0;
+        transition: all 0.5s ease;
+        &.activo {
+            opacity:1;
+        }
+    }
+}
+
 .svg-road-localizacion-r{
+    &.active {
+        path {
+            animation: dashr 7s linear reverse 1;
+        }
+    }
     path {
         stroke-dasharray: 1510;
         stroke-dashoffset: 310;
-        animation: dashr 7s linear alternate infinite;
     } 
     height: 100%;
     top: 45px;
@@ -474,17 +526,15 @@
     }
     //768PX
     @include media-breakpoint-down(md) {
-        display: none;
         width: 237px;
         top: 27px;
         right: -4px;
     }
     //576px
     @include media-breakpoint-down(sm) {
-        display: none;
-        width: 237px;
-        top: 27px;
-        right: -4px;
+        right: -8px;
+        top: 26px;
+        width: 231px;
     }
 }
 
@@ -498,10 +548,14 @@
 }
 
 .svg-road-localizacion-l{
+    &.active {
+        path {
+            animation: dashl 7s linear reverse 1;
+        }
+    }
     path {
         stroke-dasharray: 1510;
         stroke-dashoffset: 0;
-        animation: dashl 7s linear alternate infinite;
     } 
     height: 100%;
     top: 12px;
@@ -529,15 +583,13 @@
     }
     //768PX
     @include media-breakpoint-down(md) {
-        display: none;
         width: 270px;
         top: 8px;
         left: 0px;
     }
     //576px
     @include media-breakpoint-down(sm) {
-        display: none;
-        width: 270px;
+        width: 260px;
         top: 8px;
         left: 0px;
     }
@@ -699,4 +751,11 @@
 .spacer-custom{
     display: block;
     margin-bottom: 40px;
+}
+
+.custom-mapa-road-mobile{
+    @include media-breakpoint-down(sm) {
+        max-width: 312px;
+        margin: auto;
+    }
 }

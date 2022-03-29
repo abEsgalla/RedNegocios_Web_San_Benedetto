@@ -12,7 +12,7 @@ get_header();
 <section>
   <div class="container-fluid position-relative zi-9 bg-black py-160 py-lg-261">
     <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
-      style="background:url('<?=wp_get_attachment_image_url(780, "full")?>')"></div>
+      style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')"></div>
       <?=wp_get_attachment_image(779, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99 mw-50vw d-none d-md-block' , 'alt' => '' , 'title' => '') ); ?>
       <div class="container position-relative">
         <div class="row">
@@ -42,15 +42,10 @@ get_header();
       <div class="col-12 offset-sm-1 col-sm-10">
         <div class="row overflow-hidden">
           <div class="col-12 text-center h2 fs-32 fs-md-64">
-            Reducción y compensación de emisiones
+            <?=$acf_fields['texto_superior']?>
           </div>
           <div class="col-12 text-center mt-64 mt-sm-80 fs-14 fs-sm-17" data-aos="fade-up">
-            Creemos que <strong>una cantidad de CO2 emitida en un lugar de la Tierra 
-            puede ser neutralizada con la reducción o eliminación de la misma cantidad de CO2 en otro punto del planeta.</strong>
-            Gracias a que medimos nuestra huella de carbono, 
-            ¡podemos afirmar que compensamos el 100% de las emisiones de algunos de nuestros productos! 
-            ¿Cómo? Invirtiendo en <strong>proyectos forestales sostenibles.</strong> <br></br>
-            Descubre más sobre ellos aquí:  
+            <?=$acf_fields['descripcion']?>
           </div>
           <div class="col-12">
             <div class="row text-center overflow-hiden">
@@ -58,12 +53,13 @@ get_header();
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
-                      <?=wp_get_attachment_image(781, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                      <?=wp_get_attachment_image($acf_fields['proyecto_1_foto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
                   </div>
                   <div class="col-12 mt-24 fs-20 fw-bold">
-                    <a class="text-reset" target="_blank" 
-                    href="https://www.sanbenedetto.es/docs/Nyagatare-Borehole-Rwanda-Exclusive.pdf">Nyagatare (Ruanda) </a>
+                    <a class="text-reset" target="_blank" href="<?=$acf_fields['proyecto_1_link']?>">
+                      <?=$acf_fields['proyecto_1_texto']?> 
+                    </a>
                   </div>
                 </div>
               </div>
@@ -71,11 +67,13 @@ get_header();
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
-                      <?=wp_get_attachment_image(782, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                      <?=wp_get_attachment_image($acf_fields['proyecto_2_foto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
                   </div>
                   <div class="col-12 mt-24 fs-20 fw-bold">
-                    Castañeros REDD+ (Perú) 
+                    <a class="text-reset" target="_blank" href="<?=$acf_fields['proyecto_2_link']?>">
+                      <?=$acf_fields['proyecto_2_texto']?>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -83,11 +81,13 @@ get_header();
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
-                      <?=wp_get_attachment_image(783, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                      <?=wp_get_attachment_image($acf_fields['proyecto_3_foto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
                   </div>
                   <div class="col-12 mt-24 fs-20 fw-bold">
-                    Ecomapuá REDD+ (Brasil)  
+                    <a class="text-reset" target="_blank" href="<?=$acf_fields['proyecto_3_link']?>">
+                      <?=$acf_fields['proyecto_3_texto']?>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -109,19 +109,17 @@ get_header();
               <div class="col-12 offset-xl-2 col-xl-8 overflow-hidden" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 h3 fs-26 fs-md-45 mt-70 mt-lg-0">
-                    Logística
+                    <?=$acf_fields['titulo_grid_sup_izq']?>
                   </div>
                   <div class="col-12 my-32 fs-14 fs-sm-17">
-                    En la medida de lo posible, tratamos de utilizar formas de transporte sostenible, 
-                    como el uso de vehículos propulsados por GNL y camiones dúo-tráiler, 
-                    contribuyendo así a reducir nuestras emisiones de CO2. 
+                    <?=$acf_fields['texto_grid_sup_izq']?> 
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-6 order-0 order-lg-1 py-200 py-lg-245 position-relative bg-custom-image img-version-mobile" 
-          style="background:url('<?=wp_get_attachment_image_url(784, "full")?>')">
+          style="background:url('<?=wp_get_attachment_image_url($acf_fields['img_grid_sup_der'], "full")?>')">
           </div>
         </div>
       </div>
@@ -142,25 +140,17 @@ get_header();
       <div class="col-12">
         <div class="row">
           <div class="col-12 col-lg-6 py-200 py-lg-374 position-relative bg-custom-image img-version-mobile" 
-          style="background:url('<?=wp_get_attachment_image_url(632, "full")?>')">
+          style="background:url('<?=wp_get_attachment_image_url($acf_fields['img_grid_inf_izq'], "full")?>')">
           </div>
           <div class="col-12 col-lg-6 d-inline-flex align-items-end">
             <div class="row overflow-hidden">
               <div class="col-12 offset-xl-2 col-xl-8 gx-xl-0" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 h3 fs-26 fs-md-45 mt-70 mt-lg-0">
-                    Limpieza y reforestación del entorno 
+                    <?=$acf_fields['titulo_grid_inf_der']?>
                   </div>
                   <div class="col-12 mt-30 fs-14 fs-sm-17">
-                    Llevamos varios años organizando plantaciones de árboles 
-                    en los alrededores de nuestras instalaciones, eligiendo árboles y 
-                    vegetación autóctona del Parque Natural de las Hoces del Cabriel. 
-                    En total, calculamos que hemos repoblado <b>más de 1.000 plantas en 
-                    los últimos cinco años.</b>
-                    <br></br>
-                    También realizamos tareas de limpieza en nuestro entorno para 
-                    fomentar la lucha contra el littering ―abandono de residuos― y 
-                    la limpieza de espacios protegidos. 
+                    <?=$acf_fields['texto_grid_inf_der']?>
                   </div>
                 </div>
               </div>

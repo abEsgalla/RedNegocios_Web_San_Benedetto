@@ -79,7 +79,7 @@ if( document.body.classList.contains('single-landing') ) {
             scrub: true,
             markers: false,
           },
-          y: -100,
+          y: -150,
           rotation: 0,
         });
 
@@ -92,7 +92,7 @@ if( document.body.classList.contains('single-landing') ) {
             scrub: true,
             markers: false,
           },
-          y: -100,
+          y: -60,
           rotation: 0,
         });
 
@@ -105,7 +105,7 @@ if( document.body.classList.contains('single-landing') ) {
             scrub: true,
             markers: false,
           },
-          y: 200,
+          y: -100,
           rotation: 0,
         });
 
@@ -217,68 +217,136 @@ if( document.body.classList.contains('single-landing') ) {
 
   //Enjoy CON gas
   if( document.body.classList.contains('postid-489') ) {
-    gsap.to('.limon-1', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+    
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        gsap.to('.limon-1', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -120,
+          rotation: 0,
+        });
+    
+        gsap.to('.limon-4', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 120,
+          rotation: 0,
+        });
+    
+        gsap.to('.fresa-1con', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 140,
+          rotation: 0,
+        });
+    
+        //Fresa bloque texto
+        // gsap.to('.fresa-bloque-texto-con', {
+        //   scrollTrigger: {
+        //     trigger: '.frutas-bloque-texto-trigger',
+        //     start: 'top center',
+        //     end: 'bottom center',
+        //     scrub: true,
+        //     markers: false,
+        //   },
+        //   y: 330,
+        //   rotation: 0,
+        // });
+    
+        //Limon bloque texto
+        gsap.to('.limon-bloque-texto-con', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          x: 20,
+          y: -150,
+          rotation: 0,
+        });
       },
-      y: -220,
-      rotation: 0,
-    });
-
-    gsap.to('.limon-4', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+      "(min-width: 992px)": function() {
+        gsap.to('.limon-1', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -220,
+          rotation: 0,
+        });
+    
+        gsap.to('.limon-4', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 320,
+          rotation: 0,
+        });
+    
+        gsap.to('.fresa-1con', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: 300,
+          rotation: 0,
+        });
+    
+        //Fresa bloque texto
+        gsap.to('.fresa-bloque-texto-con', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: 330,
+          rotation: 0,
+        });
+    
+        //Limon bloque texto
+        gsap.to('.limon-bloque-texto-con', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -200,
+          rotation: 0,
+        });
       },
-      y: 320,
-      rotation: 0,
     });
-
-    gsap.to('.fresa-1con', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: 300,
-      rotation: 0,
-    });
-
-    //Fresa bloque texto
-    gsap.to('.fresa-bloque-texto-con', {
-      scrollTrigger: {
-        trigger: '.frutas-bloque-texto-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: 330,
-      rotation: 0,
-    });
-
-    //Limon bloque texto
-    gsap.to('.limon-bloque-texto-con', {
-      scrollTrigger: {
-        trigger: '.frutas-bloque-texto-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: -200,
-      rotation: 0,
-    });
-
   }
 
   //Primavera
@@ -655,7 +723,7 @@ if( document.body.classList.contains('single-landing') ) {
   }
 }
 
-
+//Page Historia
 if( document.body.classList.contains('page-template-custom-template-historia') ) {
   //Barrita vertical que se rellena con scroll en página Historia
   let line_height = document.querySelector('.border-dashed-custom').clientHeight + 236;
@@ -669,6 +737,21 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
       onUpdate: self => {
         let height = self.progress * line_height;
         document.querySelector(".border-dashed-custom .border-fill").style.height = height + 'px';
+      }
+    }
+  });
+
+  let line_height_mobile = document.querySelector('.border-dashed-custom-mobile').clientHeight + 236;
+  gsap.to(".border-dashed-custom-mobile .border-fill", {
+    scrollTrigger: {
+      trigger: '.border-dashed-custom-mobile',
+      start: '-265px center',
+      end: 'bottom center',
+      scrub: true,
+      markers: false,
+      onUpdate: self => {
+        let height = self.progress * line_height_mobile;
+        document.querySelector(".border-dashed-custom-mobile .border-fill").style.height = height + 'px';
       }
     }
   });
@@ -701,6 +784,39 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
   ];
 
   anos.forEach(ano => {
+
+    let selectorAnoMobile = `.ano-timeline-${ano}-mobile.ano-timeline-right-mobile`;
+    //console.log(selectorAnoMobile);
+    if(document.querySelector(selectorAnoMobile)) {
+      //console.log(selectorAnoMobile);
+      gsap.to(selectorAnoMobile, {
+        scrollTrigger: {
+          trigger: '.ano-timeline-' + ano + '-mobile',
+          start: '-130px 50%',
+          end: 'bottom',
+          scrub: true,
+          markers: false,
+          onEnter: self => {
+            //console.log(selectorAnoMobile);
+            document.querySelector(selectorAnoMobile).classList.add('ano-activo');
+            document.querySelector(".ano-" + ano + "-mobile").classList.remove('opacity-25');
+          },
+          onEnterBack: self => {
+            //document.querySelector(selectorAnoMobile).classList.remove('ano-activo');
+          },
+          onLeave: self => {
+            document.querySelector(selectorAnoMobile).classList.add('ano-activo');
+            document.querySelector(".ano-" + ano + "-mobile").classList.remove('opacity-25');
+          },
+          onLeaveBack: self => {
+            document.querySelector(selectorAnoMobile).classList.remove('ano-activo');
+            document.querySelector(".ano-" + ano + "-mobile").classList.add('opacity-25');
+          },
+        }
+      });
+    }
+
+
     let selectorAnoLeft = `.ano-timeline-${ano}.ano-timeline-left`;
     if(document.querySelector(selectorAnoLeft)) {
       gsap.to(selectorAnoLeft, {
@@ -760,6 +876,85 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
   });
 }
 
+//Page Contacto
+if( document.body.classList.contains('page-template-custom-template-contacto') ) {
+  ScrollTrigger.create({
+    trigger: ".road-localizacion-desktop-trigger",
+    once: true,
+    start: "center center",
+    markers: false,
+    onEnter: () => {
+      //Activo animación mapita cómo llegar
+      let mapita_l = document.querySelectorAll('.road-localizacion-desktop .svg-road-localizacion-l');
+      mapita_l.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+      
+
+      let mapita_r = document.querySelectorAll('.road-localizacion-desktop .svg-road-localizacion-r');
+      mapita_r.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+      
+      setTimeout(() => {
+        document.querySelector('.road-localizacion-desktop .localizacion-final').classList.add('activo');
+      }, 6500);
+    },
+  });
+
+  ScrollTrigger.create({
+    trigger: ".road-localizacion-tablet-trigger",
+    once: true,
+    start: "center center",
+    markers: false,
+    onEnter: () => {
+      //Activo animación mapita cómo llegar
+      let mapita_l = document.querySelectorAll('.road-localizacion-tablet .svg-road-localizacion-l');
+      mapita_l.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+
+      let mapita_r = document.querySelectorAll('.road-localizacion-tablet .svg-road-localizacion-r');
+      mapita_r.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+
+      setTimeout(() => {
+        document.querySelector('.road-localizacion-tablet .localizacion-final').classList.add('activo');
+      }, 6500);
+    },
+  });
+
+  ScrollTrigger.create({
+    trigger: ".road-localizacion-mobile-trigger",
+    once: true,
+    start: "center center",
+    markers: false,
+    onEnter: () => {
+      //Activo animación mapita cómo llegar
+      let mapita_l = document.querySelectorAll('.road-localizacion-mobile .svg-road-localizacion-l');
+      mapita_l.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+
+      let mapita_r = document.querySelectorAll('.road-localizacion-mobile .svg-road-localizacion-r');
+      mapita_r.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+
+      setTimeout(() => {
+        document.querySelector('.road-localizacion-mobile .localizacion-final').classList.add('activo');
+      }, 6500);
+    },
+  });
+}
+
 
 
 //BG Parallax
@@ -801,14 +996,3 @@ if(imgParallax) {
     }
   })
 }
-
-
-
-ScrollTrigger.matchMedia({
-  "(max-width: 991px)": function() {
-
-  },
-  "(min-width: 992px)": function() {
-
-  },
-});

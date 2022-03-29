@@ -12,7 +12,7 @@ get_header();
 <section>
   <div class="container-fluid position-relative zi-9 bg-black pt-138 pb-374 pt-md-214 pb-md-409 pt-lg-242 pb-lg-492">
     <div class="bg-parallax opacity-50 w-100 h-100 position-absolute top-0 start-0" 
-      style="background:url('<?=wp_get_attachment_image_url(657, "full")?>')"></div>
+      style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
           <div class="col-12 offset-lg-1 col-lg-10 text-center">
@@ -39,13 +39,10 @@ get_header();
         <div class="row"> 
           <div class="col-12 offset-md-1 col-md-10 offset-lg-0 col-lg-12 text-center text-secondary">
             <div class="h2 fs-32 fs-md-64 mb-56">
-              Nuestras plantas
+              <?=$acf_fields['texto_superior']?>
             </div>
             <div class="mt-40 mt-sm-56 fs-14 fs-sm-17">
-              Agua Mineral San Benedetto es la primera envasadora de agua mineral en España por volumen, 
-              y uno de los principales fabricantes de refrescos del país.<br></br>
-              La compañía posee 2 plantas de envasado en España: <strong>Agua Mineral San Benedetto S.A.U.</strong> 
-              en San Antonio de Requena (Valencia) y <strong>Parque La Presa S.A.</strong> en Loja (Granada). 
+              <?=$acf_fields['descripcion']?>
             </div>
           </div>
         </div>
@@ -60,13 +57,12 @@ get_header();
       <div class="col-12"> 
         <div class="row">
           <div class="order-0 order-lg-0 col-12 col-lg-6 py-111 py-sm-253 mb-lg-24 img-version-mobile
-          bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url(754, "full")?>')">
+          bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url($acf_fields['imagen_grid_sup_izq'], "full")?>')">
           </div>
           <div class="order-1 order-lg-1 col-12 col-lg-6">
             <div class="row">
               <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10 fs-14 fs-sm-17 py-40 pb-sm-60 pt-sm-82 pt-lg-103">
-                En San Antonio de Requena se envasan nuestras aguas minerales <strong>Fuente Primavera</strong> y <strong>Fuencisla</strong>, 
-                además de producirse toda nuestra línea de refrescos. Aquí se encuentran también nuestra Oficinas Centrales. 
+                <?=$acf_fields['texto_grid_sup_der']?>
               </div>
             </div>
           </div>
@@ -88,15 +84,12 @@ get_header();
           <div class="order-1 order-lg-0 col-12 col-lg-6">
             <div class="row">
               <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10 fs-14 fs-sm-17 py-40 py-sm-80 pt-lg-228">
-                En Loja, se envasa nuestra agua mineral <strong>Font Natura</strong>.<br></br>
-                En total, disponemos de 11 líneas de llenado y 2 de aséptico. 
-                Envasamos <strong>más de 1.000 millones de litros anuales</strong> y empleamos a 
-                <strong>más de 300 personas</strong> entre las dos plantas. 
+                <?=$acf_fields['texto_grid_inf_izq']?>
               </div>
             </div>
           </div>
           <div class="order-0 order-lg-1 col-12 col-lg-6 py-120 py-sm-274 py-lg-253 mt-70 mt-lg-24 img-version-mobile
-          bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url(755, "full")?>')">
+          bg-custom-image img-parallax" style="background:url('<?=wp_get_attachment_image_url($acf_fields['imagen_grid_inf_der'], "full")?>')">
           </div>
         </div> 
       </div>
@@ -120,24 +113,30 @@ get_header();
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center justify-content-lg-start">
                     <span class="rounded-circle border border-1">
-                      <?=wp_get_attachment_image(756, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                      <?=wp_get_attachment_image($acf_fields['image_manantial_1'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
                   </div>
                   <div class="col-12 mt-65 mt-sm-48 mt-lg-80 fs-18 fs-sm-23 fw-bold text-uppercase text-start text-sm-center text-lg-start">
-                    Manantial Fuente Primavera
+                    <?=$acf_fields['titulo_manantial_1']?>
                   </div>
                   <div class="col-12 col-lg-9 text-secondary">
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(760, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
-                        <div>Caudal de <strong>75L por segundo</strong></div>
+                        <div>
+                          <?=$acf_fields['texto_caudal_manantial_1']?>
+                        </div>
                       </div>
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(761, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
-                        <div>Alumbramiento perforado a <strong>180m de profundidad</strong></div>
+                        <div>
+                          <?=$acf_fields['texto_alumbramiento_manantial_1']?>
+                        </div>
                       </div>
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(759, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
-                        <div>Agua de <strong>mineralización débil</strong></div>
+                        <div>
+                          <?=$acf_fields['texto_mineralizacion_manantial_1']?>
+                        </div>
                       </div>
                   </div>
                 </div>
@@ -150,24 +149,30 @@ get_header();
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center justify-content-lg-start ">
                     <span class="rounded-circle border border-1">
-                      <?=wp_get_attachment_image(757, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                      <?=wp_get_attachment_image($acf_fields['image_manantial_2'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
                   </div>
                   <div class="col-12 mt-65 mt-sm-48 mt-lg-80 fs-18 fs-sm-23 fw-bold text-uppercase text-start text-sm-center text-lg-start">
-                    Manantial Fuencisla
+                    <?=$acf_fields['titulo_manantial_2']?>
                   </div>
                   <div class="col-12 col-lg-9 text-secondary">
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(760, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
-                        <div>Caudal de <strong>8L por segundo</strong></div>
+                        <div>
+                          <?=$acf_fields['texto_caudal_manantial_2']?>
+                        </div>
                       </div>
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(761, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
-                        <div>Alumbramiento perforado a <strong>170m de profundidad</strong></div>
+                        <div>
+                          <?=$acf_fields['texto_alumbramiento_manantial_2']?>
+                        </div>
                       </div>
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(759, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
-                        <div>Agua de <strong>mineralización débil</strong></div>
+                        <div>
+                          <?=$acf_fields['texto_mineralizacion_manantial_2']?>
+                        </div>
                       </div>
                   </div>
                 </div>
@@ -180,24 +185,30 @@ get_header();
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center justify-content-lg-start">
                     <span class="rounded-circle border border-1">
-                      <?=wp_get_attachment_image(758, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                      <?=wp_get_attachment_image($acf_fields['image_manantial_3'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                     </span>
                   </div>
                   <div class="col-12 mt-65 mt-sm-48 mt-lg-80 fs-18 fs-sm-23 fw-bold text-uppercase text-start text-sm-center text-lg-start">
-                    Manantial Font Natura
+                    <?=$acf_fields['titulo_manantial_3']?>
                   </div>
                   <div class="col-12 col-lg-9 text-secondary">
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(760, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
-                        <div>Caudal de <strong>150L por segundo</strong></div>
+                        <div>
+                          <?=$acf_fields['texto_caudal_manantial_3']?>
+                        </div>
                       </div>
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(761, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
-                        <div>Alumbramiento por <strong>surgente natural</strong></div>
+                        <div>
+                          <?=$acf_fields['texto_alumbramiento_manantial_3']?>
+                        </div>
                       </div>
                       <div class="mt-30 d-flex align-items-center">
                         <?=wp_get_attachment_image(759, "full", "", array( 'class' => 'pe-24' , 'alt' => '' , 'title' => '') ); ?>
-                        <div>Agua de <strong>mineralización débil y bajo contenido en sodio</strong></div>
+                        <div>
+                          <?=$acf_fields['texto_mineralizacion_manantial_3']?>
+                        </div>
                       </div>
                   </div>
                 </div>
@@ -214,7 +225,7 @@ get_header();
   <div class="container text-center">
     <div class="row">
       <div class="col-12">
-        <?=wp_get_attachment_image(762, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+        <?=wp_get_attachment_image($acf_fields['imagen_central'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>
   </div>
@@ -235,10 +246,7 @@ get_header();
                   Entorno
                 </div>
                 <div class="mt-36 mt-sm-40 fs-14 fs-sm-17">
-                  Nuestros manantiales Fuente Primavera y Fuencisla se encuentran entre dos parques naturales del interior 
-                  de la provincia de Valencia: el <strong>Parque Natural de Las Hoces del Cabriel</strong> y el 
-                  <strong>Parque Natural Geológico de Chera-Sot de Chera.</strong> 
-                  Es por ello que disponemos de la certificación de <strong>Producto Parque Natural</strong>. 
+                  <?=$acf_fields['descripcion_entorno']?>
                 </div>
               </div>
             </div>
@@ -250,17 +258,15 @@ get_header();
           <div class="col-12 offset-md-2 col-md-8 offset-lg-1 col-lg-10">
             <div class="row">
               <div class="col-12 col-lg-6 py-200 py-sm-317 py-lg-0 bg-custom-image img-version-mobile" 
-              style="background:url('<?=wp_get_attachment_image_url(661, "full")?>')">
+              style="background:url('<?=wp_get_attachment_image_url($acf_fields['imagen_entorno_izq'], "full")?>')">
               </div>
               <div class="col-12 col-lg-6">
                 <div class="row overflow-hidden">
                   <div class="col-12 offset-lg-1 col-lg-10 my-40 my-sm-70 mt-lg-48 mb-lg-70 fs-14 fs-sm-17" data-aos="fade-up">
-                    Nuestro manantial Font Natura está situado en la <strong>Sierra de Loja</strong>, 
-                    un enclave natural caracterizado por su paisaje agreste y escarpado, 
-                    lleno de magia y belleza salvajes. 
+                    <?=$acf_fields['texto_entorno_der']?>
                   </div>
                   <div class="col-12 mx-lg-32 bg-custom-image py-218 py-lg-245 img-version-mobile" 
-                  style="background:url('<?=wp_get_attachment_image_url(763, "full")?>')">
+                  style="background:url('<?=wp_get_attachment_image_url($acf_fields['imagen_entorno_der'], "full")?>')">
                   </div>
                 </div>
               </div>
