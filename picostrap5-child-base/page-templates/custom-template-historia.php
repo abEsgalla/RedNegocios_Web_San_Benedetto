@@ -70,7 +70,7 @@ get_header();
                     <?=$acf_fields['descripcion_2002']?>
                   </div>
                   <div class="col-12 mt-65">
-                    <?=wp_get_attachment_image(592, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image(1557, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12 mt-8">
                     <?=wp_get_attachment_image(593, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -253,7 +253,7 @@ get_header();
                     <?=$acf_fields['descripcion_2002']?>
                   </div>
                   <div class="col-12 mt-24">
-                    <?=wp_get_attachment_image(592, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image(1557, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12 mt-8">
                     <?=wp_get_attachment_image(593, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
