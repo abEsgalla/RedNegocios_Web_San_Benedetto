@@ -137,11 +137,14 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
 
       //let current_active_slide = document.querySelector('.swiper-home-promocional .swiper-slide-active');
       let current_active_slide = swiper.slides[swiper.previousIndex];
+      let current_active_slide_width = current_active_slide.offsetWidth;
+      console.log(current_active_slide_width);
       let current_active_slide_clon = current_active_slide.cloneNode(true);
 
       current_active_slide_clon.classList.remove('swiper-slide');
       current_active_slide_clon.classList.remove('swiper-slide-active');
       current_active_slide_clon.removeAttribute("style");
+      current_active_slide_clon.style.width = current_active_slide_width + 'px';
 
       cortinilla.append(current_active_slide_clon);
       //let current_active_slide_clon_html = current_active_slide_clon.innerHTML;

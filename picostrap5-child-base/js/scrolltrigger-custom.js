@@ -107,6 +107,41 @@ if( document.body.classList.contains('single-landing') ) {
 
   //Enjoy CON gas
   if( document.body.classList.contains('postid-489') ) {
+    gsap.to('.limon-1', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: -220,
+      rotation: 0,
+    });
+
+    gsap.to('.limon-4', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: 320,
+      rotation: 0,
+    });
+
+    gsap.to('.fresa-1con', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        start: 'top top',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: 300,
+      rotation: 0,
+    });
 
     //Fresa bloque texto
     gsap.to('.fresa-bloque-texto-con', {
