@@ -559,12 +559,15 @@
         }
     }
     input[type="checkbox"] {
+        display: flex;
+        align-self: baseline;
         appearance: none;
         background-color: #fff0;
         margin: 0;
         font: inherit;
         color: currentColor;
         width: 24px;
+        min-width: 24px;
         height: 24px;
         border: 1px solid #99A4A2;
         border-radius: 0.15em;
@@ -613,6 +616,41 @@
         border: none;
         margin-left: auto;
         display: inherit;
+    }
+    input[type='file']{
+        display: none;
+    }
+    .file-76{
+        margin-top: 8px;
+        position: relative;
+        height: 40px;
+        display: block;
+        &:before{
+            font-size: 18px;
+            font-weight: 400;
+            content: 'Ningún archivo seleccionado';
+            border-bottom: 1px solid;
+            padding: 8px;
+            position: absolute;
+            height: 100%;
+            width: 70%;
+            right: 0;
+            opacity: 0.5;
+            background: transparent;
+        }
+        &:after{
+            font-size: 14px;
+            font-weight: 500;
+            content: 'Seleccionar';
+            text-transform: uppercase;
+            padding: 8px;
+            border: 2px solid white;
+            position: absolute;
+            height: 100%;
+            width: 30%;
+            left: 0;
+            background: transparent;
+        }
     }
 }
 
