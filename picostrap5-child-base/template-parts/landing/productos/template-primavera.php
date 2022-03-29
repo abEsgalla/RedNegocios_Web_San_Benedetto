@@ -56,7 +56,7 @@
                                     <? 
                                     $i = 1;
                                     foreach ($seccion['col'] as $col): ?>
-                                        <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?>">
+                                        <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?> columna-fuente-primavera">
                                             <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 ' , 'alt' => '' , 'title' => '') ); ?>
                                         <? if($col['posicion_texto'] && $col['texto']): ?>
                                                 <div class="text-start text-secondary texto pt-md-65 my-40 mb-sm-70 mb-md-0 mb-lg-70 px-lg-48 mt-lg-80 fs-17" data-aos="fade-right">

@@ -55,7 +55,7 @@ if($acf_fields['secciones']):
                                         <div class="bg-custom-post" style="background:url('<?=wp_get_attachment_image_url($slide['imagen_producto'], "full", "")?>')">
                                         </div>
                                     </div>
-                                    <div class="name-slider-product w-100 text-start text-uppercase mt-12 text-secondary fw-500 fs-13">
+                                    <div class="name-slider-product w-100 text-start text-uppercase mt-12 text-white fw-500 fs-13">
                                         <?=$slide['nombre_producto']?>
                                     </div>
                                     </a>
@@ -119,7 +119,7 @@ if($acf_fields['secciones']):
             break;
             case 'cols_imagenes_texto':
                 ?>
-                <section id="<?=$seccion['id']?>" class=" zi-99 position-relative bg-dark pb-160 seccion_imagenes_texto">
+                <section id="<?=$seccion['id']?>" class=" zi-99 position-relative bg-dark pb-24 pb-xl-160 seccion_imagenes_texto">
                     <div class="container position-relative">
                         <div class="row">
                         <div class="col-12 offset-xl-1 col-xl-10">
@@ -136,13 +136,30 @@ if($acf_fields['secciones']):
                             ?>
                             <?  $i = 1;
                                 foreach ($seccion['col'] as $col): ?>
+                                <?php
+                                    if($i == 1){
+                                        $col['tamano'] = 'col-xl-6 col-12';
+                                    } elseif($i == 2){
+                                        $col['tamano'] = 'col-12 col-xl-6';
+                                    } elseif($i == 3){
+                                        $col['tamano'] = 'col-sm-6';
+                                    }
+                                    elseif($i == 3){
+                                        $col['tamano'] = 'col-sm-6';
+                                    }
+                                ?>
                                 <div class="mb-4 col-12 position-relative zi-9 <?=$col['tamano']?>">
                                 <div class="row d-flex h-100 text-center">
                                     <div class="col-12 order-2 h-100">
-                                    <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 img-'. $i , 'alt' => '' , 'title' => '') ); ?>
+                                    <?php if($i != 2): ?>
+                                        <div class="d-block d-xl-none ratio ratio-1x1 ratio-image">
+                                            <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 img-'. $i , 'alt' => '' , 'title' => '') ); ?>
+                                        </div>
+                                    <?php endif; ?>
+                                    <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 d-none d-xl-block img-'. $i , 'alt' => '' , 'title' => '') ); ?>
                                     </div>
                                     <? if($col['posicion_texto'] && $col['texto']): ?>
-                                    <div class="text-start text-white ms-35 mt-55 col-10 <?=$col['posicion_texto']?>">
+                                    <div class="text-start text-white ms-35 mt-55 mb-55 col-10 <?=$col['posicion_texto']?>">
                                     <? if($col['posicion_texto']): ?>
                                         <?=$col['texto']?>
                                     <? endif; ?>

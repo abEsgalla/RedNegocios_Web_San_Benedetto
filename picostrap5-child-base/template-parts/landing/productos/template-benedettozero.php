@@ -40,7 +40,7 @@
                 break;
                 case 'cols_imagenes_texto':
                     ?>
-                    <section class=" zi-99 position-relative mt-56 pb-178 seccion_cols_imagenes background-col-imagenes-zero">
+                    <section class="zi-99 position-relative mt-64 pb-64 pb-xl-178 seccion_cols_imagenes background-col-imagenes-zero overflow-hidden">
                         <div class="container position-relative">
                             <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/zero_manzana_imagenes.png'; ?>" class="zi-99 position-absolute zero-manzana-imagenes">
                             <img src="<?=get_stylesheet_directory_uri().'/src/img/background-zero/zero_limon_imagenes.png'; ?>" class="position-absolute zero-limon-imagenes">
@@ -60,9 +60,9 @@
                                 <? 
                                 $i = 1;
                                 foreach ($seccion['col'] as $col): ?>
-                                    <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?>">
+                                    <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?> columna-zero">
                                     <? if($col['posicion_texto'] && $col['texto']): ?>
-                                            <div class="text-start text-secondary texto px-lg-48 mb-70" data-aos="fade-left">
+                                            <div class="text-start text-secondary texto px-lg-48 mt-0 mt-md-64 mb-64" data-aos="fade-left">
                                             <? if($col['posicion_texto']): ?>
                                                 <?=$col['texto']?>
                                             <? endif; ?>

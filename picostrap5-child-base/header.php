@@ -275,7 +275,7 @@ defined( 'ABSPATH' ) || exit;
                 <?php 
                   $lang_item = 
                   '<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-language">
-                    <a href="#" class="nav-link  fw-500 text-uppercase fs-13 letter-spacing-1x3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalLanguage" class="nav-link  fw-500 text-uppercase fs-13 letter-spacing-1x3">
                       Es 
                       <i class="fa-solid fa-chevron-down"></i>
                     </a>

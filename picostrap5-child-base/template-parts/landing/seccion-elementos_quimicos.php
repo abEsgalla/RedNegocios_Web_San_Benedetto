@@ -7,7 +7,7 @@
   <div class="container position-relative">
     <div class="row">
       <div class="col-12 col-sm-10 offset-sm-1 offset-lg-2 col-lg-8">
-        <div class="row text-secondary">
+        <div class="row text-secondary row-valores">
           <?php
           foreach ($seccion['elementos'] as $elemento => $dato):
             $opacity = "opacity-25";
@@ -16,7 +16,7 @@
               case 'calcio':
                 $w = "200";
                 $opacity = "";
-                $cols = "col-6 col-sm-5";
+                $cols = "col-6 col-sm-5 position-relative";
                 $padding = "my-20 my-sm-0 p-16 p-sm-64";
                 $align = "justify-content-end justify-content-sm-end";
               break;
@@ -29,31 +29,31 @@
               case 'magnesio':
                 $w = "150";
                 $opacity = "";
-                $cols = "col-6 col-sm-5";
+                $cols = "col-6 col-sm-5 position-relative";
                 $padding = "my-20 my-sm-0 p-16 p-sm-40";
                 $align = "justify-content-end justify-content-sm-start";
               break;
               case 'sulfatos':
                 $w = "170";
-                $cols = "col-6 col-sm-4";
+                $cols = "col-6 col-sm-4 position-relative";
                 $padding = "my-20 my-sm-0 p-16 p-sm-40";
                 $align = "justify-content-start justify-content-sm-end";
               break;
               case 'cloruros':
                 $w = "80";
-                $cols = "col-6 col-sm-2";
+                $cols = "col-6 col-sm-2 position-relative translate-50px";
                 $padding = "my-20 my-sm-0 p-16 p-sm-16";
                 $align = "justify-content-end justify-content-sm-center";
               break;
               case 'sodio':
                 $w = "100";
-                $cols = "col-6 col-sm-2";
+                $cols = "col-6 col-sm-2 translate-25px";
                 $padding = "my-20 my-sm-0 p-16 p-sm-16";
                 $align = "justify-content-start justify-content-sm-center";
               break;
               case 'bicarbonatos':
                 $w = "230";
-                $cols = "col-12 col-sm-4";
+                $cols = "col-12 col-sm-4 position-relative";
                 $padding = "my-20 my-sm-0 p-16 p-sm-64";
                 $align = "justify-content-center justify-content-sm-start";
               break;

@@ -12,7 +12,7 @@ if( document.body.classList.contains('single-landing') ) {
     // rotation: 10,
   });
 
-  //Enjoy
+  //Enjoy SIN gas
   if( document.body.classList.contains('postid-203') ) {
 
     // gsap.to('.limon-1', {
@@ -31,7 +31,6 @@ if( document.body.classList.contains('single-landing') ) {
     gsap.to('.limon-3', {
       scrollTrigger: {
         trigger: '.bg-custom-image',
-        toggleActions: 'restart pause reverse pause',
         start: 'top top',
         end: 'bottom top',
         scrub: true,
@@ -44,7 +43,6 @@ if( document.body.classList.contains('single-landing') ) {
     gsap.to('.limon-4', {
       scrollTrigger: {
         trigger: '.bg-custom-image',
-        toggleActions: 'restart pause reverse pause',
         start: 'top top',
         end: 'bottom top',
         scrub: true,
@@ -57,7 +55,6 @@ if( document.body.classList.contains('single-landing') ) {
     gsap.to('.fresa-1', {
       scrollTrigger: {
         trigger: '.bg-custom-image',
-        toggleActions: 'restart pause reverse pause',
         start: 'top top',
         end: 'bottom top',
         scrub: true,
@@ -71,13 +68,69 @@ if( document.body.classList.contains('single-landing') ) {
     gsap.to('.fresa-2', {
       scrollTrigger: {
         trigger: '.bg-custom-image',
-        toggleActions: 'restart pause reverse pause',
         start: 'top top',
         end: 'bottom top',
         scrub: true,
         markers: false,
       },
       y: -100,
+      rotation: 0,
+    });
+
+    //Fresa bloque texto
+    gsap.to('.fresa-bloque-texto-sin', {
+      scrollTrigger: {
+        trigger: '.frutas-bloque-texto-trigger',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: 200,
+      rotation: 0,
+    });
+
+    //Limon bloque texto
+    gsap.to('.lima-bloque-texto-sin', {
+      scrollTrigger: {
+        trigger: '.frutas-bloque-texto-trigger',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: -200,
+      rotation: 0,
+    });
+
+  }
+
+  //Enjoy CON gas
+  if( document.body.classList.contains('postid-489') ) {
+
+    //Fresa bloque texto
+    gsap.to('.fresa-bloque-texto-con', {
+      scrollTrigger: {
+        trigger: '.frutas-bloque-texto-trigger',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: 330,
+      rotation: 0,
+    });
+
+    //Limon bloque texto
+    gsap.to('.limon-bloque-texto-con', {
+      scrollTrigger: {
+        trigger: '.frutas-bloque-texto-trigger',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: -200,
       rotation: 0,
     });
 
@@ -126,44 +179,138 @@ if( document.body.classList.contains('single-landing') ) {
     });
   }
 
-    //SAN BENEDETTO ZERO
-    if( document.body.classList.contains('postid-200') ) {
-      gsap.to('.fruta-1', {
-        scrollTrigger: {
-          trigger: '.bg-custom-image',
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-          markers: false,
-        },
-        y: 580,
-        rotation: 0,
-      });
+  //SAN BENEDETTO ZERO
+  if( document.body.classList.contains('postid-200') ) {
+    gsap.to('.fruta-1', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: 580,
+      rotation: 0,
+    });
 
-      gsap.to('.fruta-2', {
-        scrollTrigger: {
-          trigger: '.bg-custom-image',
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-          markers: false,
-        },
-        y: 280,
-        rotation: 0,
-      });
+    gsap.to('.fruta-2', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: 280,
+      rotation: 0,
+    });
 
-      gsap.to('.fruta-3', {
-        scrollTrigger: {
-          trigger: '.bg-custom-image',
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-          markers: false,
-        },
-        y: -280,
-        rotation: 0,
-      });
-    }
+    gsap.to('.fruta-3', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: -280,
+      rotation: 0,
+    });
+  }
+
+  //SAN BENEDETTO Essenzia agua
+  if( document.body.classList.contains('postid-324') ) {
+    gsap.to('.manzana-agua', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        start: '-123 top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: -580,
+      rotation: 0,
+    });
+
+    gsap.to('.limon-agua', {
+      scrollTrigger: {
+        trigger: '.bg-custom-image',
+        start: '-123 top',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: 450,
+      rotation: 0,
+    });
+
+    gsap.set('.bg-splash-agua', { x: "-50%", y: "-50%" })
+    gsap.to('.bg-splash-agua', {
+      scrollTrigger: {
+        trigger: '.bg-splash-agua-trigger',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: '-30%',
+      rotation: 0,
+    });
+  }
+
+  //SAN THÉ
+  if( document.body.classList.contains('postid-198') ) {
+    gsap.to('.te-imagenes-top', {
+      scrollTrigger: {
+        trigger: '.te-imagenes-trigger',
+        start: 'top center',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
+      },
+      y: 400,
+      rotation: 0,
+    });
+
+    gsap.to('.te-imagenes-bottom', {
+      scrollTrigger: {
+        trigger: '.te-imagenes-trigger',
+        start: 'center center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: -300,
+      rotation: 0,
+    });
+  }
+
+  //SAN BENEDETTO Essenzia refresco
+  if( document.body.classList.contains('postid-429') ) {
+    gsap.to('.menta-essenzia-top', {
+      scrollTrigger: {
+        trigger: '.menta-essenzia-bottom-trigger',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: 400,
+      rotation: 50,
+    });
+
+    gsap.to('.menta-essenzia-bottom', {
+      scrollTrigger: {
+        trigger: '.menta-essenzia-bottom-trigger',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: false,
+      },
+      y: 300,
+      rotation: -30,
+    });
+  }
 }
 
 
@@ -293,18 +440,22 @@ if(bgParallax) {
 //img Parallax
 let imgParallax = document.querySelectorAll('.img-parallax');
 if(imgParallax) {
-  imgParallax.forEach((img) => {
-    gsap.to(img, {
-      scrollTrigger: {
-        trigger: img,
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: -200,
-      ease: "sine.out",
-      rotation: 0,
-    });
-  });
+  ScrollTrigger.matchMedia({
+    "(min-width: 1200px)": function() {
+      imgParallax.forEach((img) => {
+        gsap.to(img, {
+          scrollTrigger: {
+            trigger: img,
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -200,
+          ease: "sine.out",
+          rotation: 0,
+        });
+      });
+    }
+  })
 }

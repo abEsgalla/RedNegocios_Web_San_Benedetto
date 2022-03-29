@@ -5,7 +5,7 @@
 
 <section class="mt-65 mb-64">
   <div class="container-fluid container-fluid-custom position-relative">
-    <img src="<?=get_stylesheet_directory_uri().'/src/img/background-te/background_te_slider.png'; ?>" class="position-absolute top-0 start-0 zi-99">
+    <img src="<?=get_stylesheet_directory_uri().'/src/img/background-te/background_te_slider.png'; ?>" class="position-absolute top-0 start-0 zi-99 d-none d-md-block">
     <div class="row">
       <div class="col-12" data-aos="fade-down">
         <div class="row text-center text-secondary">

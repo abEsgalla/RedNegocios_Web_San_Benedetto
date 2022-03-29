@@ -73,8 +73,11 @@
     @include media-breakpoint-down(xxxl) {
         margin-top: 37%;
     }
+    @include media-breakpoint-down(xl) {
+        margin-top: 55%;
+    }
     @include media-breakpoint-down(lg) {
-        margin-top: 70%;
+        margin-top: 63%;
     }
     @include media-breakpoint-down(sm) {
         margin-top: 100%;
@@ -134,12 +137,25 @@
 .seccion_cols_imagenes{
     .columna-1{
         @include media-breakpoint-down(sm) {
+            &.columna-agua-essenzia{
+                order: 1;    
+                margin-bottom: 24px;
+            }
             order: 2;
         }
     }
     .columna-2{
         @include media-breakpoint-down(sm) {
+            &.columna-agua-essenzia{
+                order: 2;    
+            }
             order: 1;
+        }
+        @include media-breakpoint-down(sm) {
+            &.columna-zero{
+                order: 1;    
+            }
+            order: 2;
         }
     }
 }
@@ -182,5 +198,247 @@
         max-width: calc(100vw - 24px * 2);
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+.mtn-custom-100{
+    margin-top: -100%;
+}
+
+.border-x{
+    @include media-breakpoint-up(lg) {
+        border-left: solid;
+        border-right: solid;
+    }
+    @include media-breakpoint-down(lg) {
+        border-top: solid;
+        border-bottom: solid;
+    }
+}
+
+.translate-middle-espana{
+    transform: translate(-50%, -75%) !important;
+    @include media-breakpoint-down(sm) {
+        transform: translate(-50%, -70%) !important;
+    }
+}
+
+.translate-middle-lg-y{
+    transform: translateY(-50%);
+    @include media-breakpoint-down(lg) {
+        transform: translateY(0%);
+    }
+}
+
+#preguntas-frecuentes{
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C3E1F5'%3E%3Cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+        transform: scale(.7) !important;
+        @include media-breakpoint-down(sm) {
+            position: absolute;
+            right: 0;
+            top: 24px;
+        }
+    }
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C3E1F5'%3E%3Cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+        @include media-breakpoint-down(sm) {
+            position: absolute;
+            right: 0;
+            top: 24px;
+        }
+    }
+}
+
+.translate-custom-contacto-lg-y{
+    transform: translateY(-70%);
+    @include media-breakpoint-down(lg) {
+        transform: translateY(-230%);
+    }
+    @include media-breakpoint-down(md) {
+        transform: translateY(-135%);
+    }
+}
+
+.tx-n50{
+    transform: translateX(-50%);
+}
+
+.w-card-mapa{
+    max-width: 100vw;
+    width: 400px;
+    @include media-breakpoint-down(sm) {
+        width: 300px;
+    }
+}
+
+.icon-map-1,.icon-map-2,.icon-map-3,.icon-map-4{
+    img{
+        @include media-breakpoint-down(sm) {
+            max-width: 48px;
+        }
+    }
+    transition: opacity 0.40s ease-out;
+    z-index: 9;
+    &:hover{
+        z-index: 99;
+        .opacity-0{
+            opacity: 1 !important;
+            transition: opacity 0.40s ease-in;
+        }
+    }
+}
+
+.icon-map-1{
+    @include media-breakpoint-down(lg) {
+        .tx-n50 {
+            transform: translateX(-25%) !important;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        left: 65px;
+        bottom: 70px;
+        .tx-n50 {
+            transform: translateX(-22%) !important;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        left: 40px;
+        bottom: 50px;
+    }
+}
+
+.icon-map-2{
+    @include media-breakpoint-down(lg) {
+        .tx-n50 {
+            transform: translateX(-75%) !important;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        left: 260px;
+        bottom: 120px;
+        .tx-n50 {
+            transform: translateX(-71%) !important;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        left: 215px;
+        bottom: 85px;
+    }
+}
+
+.icon-map-3{
+    @include media-breakpoint-down(lg) {
+        .tx-n50 {
+            transform: translateX(-100%) !important;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        left: 335px;
+        bottom: 165px;
+        .tx-n50 {
+            transform: translateX(-90%) !important;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        left: 265px;
+        bottom: 125px;
+        .tx-n50 {
+            transform: translateX(-85%) !important;
+        }
+    }
+}
+
+.icon-map-4{
+    @include media-breakpoint-down(lg) {
+        .tx-n50 {
+            transform: translateX(-100%) !important;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        left: 310px;
+        bottom: 290px;
+        .tx-n50 {
+            transform: translateX(-83%) !important;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        left: 235px;
+        bottom: 215px;
+        .tx-n50 {
+            transform: translateX(-75%) !important;
+        }
+    }
+}
+
+.img-mapa{
+    height: 100% !important;
+    width: auto !important;
+    max-width: inherit;
+    min-height: 1296px;
+    @include media-breakpoint-down(md) {
+        min-height: 721px;
+    }
+    @include media-breakpoint-down(sm) {
+        min-height: 570px;
+    }
+}
+
+.zi-1{
+    z-index: 1;
+}
+
+.position-lg-absolute{
+    position:relative;
+    @include media-breakpoint-up(lg) {
+        position: absolute !important;
+    }
+}
+
+.ano-timeline-left{
+    @include media-breakpoint-down(lg) {
+        &.ano-activo::before{
+            width: 75px !important;
+        }
+    }
+}
+
+.ano-timeline-right{
+    @include media-breakpoint-down(lg) {
+        &.ano-activo::before{
+            width: 75px !important;
+        }
+    }
+}
+
+
+.container-fluid-custom-banner{
+    max-width: 1689px !important;
+}
+
+.bg-postion-x-right{
+    background-position-x: right !important;
+    @include media-breakpoint-down(lg) {
+        background-position-x: center !important;
+    }
+}
+
+.bg-postion-x-center{
+    background-position-x: center !important;
+}
+
+.grid-3-ecolosofia{
+    img{
+        @include media-breakpoint-down(lg) {
+            max-width: 100px;
+        }
+    }
+}
+
+
+.img-version-mobile{
+    @include media-breakpoint-down(sm) {
+        width: calc(100% - 24px);
+        margin-left: 12px;
     }
 }

@@ -94,7 +94,10 @@ HOW TO REFERENCE ASSETS AND IMAGES
         position: absolute;
         top: 0;
         width: 100%;
-        height: 613px;
+        height: 600px;
+        @include media-breakpoint-down(md){
+            height: 280px;
+        }
         background: #EBE4E450;
         transform: translateY(-100%);
     }
@@ -527,9 +530,9 @@ span{
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='43' height='42' viewBox='0 0 43 42' fill='none'%3E%3Cpath d='M18.2056 24.0933H0.265625V17.8533H18.2056V0H24.7056V17.8533H42.6456V24.0933H24.7056V41.9467H18.2056V24.0933Z' fill='%23002867' fill-opacity='0.1'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: center center;
-        bottom: -75%;
+        bottom: -50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, 50%);
     }
 }
 
@@ -543,9 +546,9 @@ span{
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='39' height='26' viewBox='0 0 39 26' fill='none'%3E%3Cpath d='M0 0H39V6.24676H0V0ZM0 19.7533H39V26H0V19.7533Z' fill='%23002867' fill-opacity='0.1'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: center center;
-        bottom: -75%;
+        bottom: -50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, 50%);
     }
 }
 
@@ -759,6 +762,11 @@ span{
 .bg-custom-image{
     @include media-breakpoint-down(md) {
         background-position: center left !important;
+    }
+    &.bg-c-center{
+        @include media-breakpoint-down(md) {
+            background-position: center center !important;
+        }
     }
     background-position: center center !important;
     background-size: cover !important;

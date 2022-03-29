@@ -3,7 +3,7 @@
   $seccion = $fields;
 ?>
 
-<section class=" zi-99 position-relative pt-56 pb-178 background-font-natura">
+<section class=" zi-99 position-relative pb-0 pt-md-64 pb-0 pb-md-178 background-font-natura">
   <div class="container position-relative">
     <div class="row">
       <div class="col-12 offset-xl-1 col-xl-10">

@@ -10,23 +10,35 @@ get_header();
 ?>
 
 <section class="">
-  <div class="container-fluid position-relative zi-99 bg-black pt-270 pb-254">
+  <div class="container-fluid position-relative zi-99 bg-black pt-138 pb-228 pt-sm-214 pb-sm-317 pt-lg-270 pb-lg-254">
       <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(669, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
-          <div class="col-6">
-            <div class="row text-white">
-              <div class="col-12 fs-18">
-                GRUPO SAN BENEDETTO
-              </div>
-              <h1 class="col-12 h2">
-                <?=get_field('titulo');?>
-              </h1>
-              <div class="col-12 fs-24 mt-48 text-uppercase fw-bold">
-                <div class="w-descripcion">
-                  <?=get_field('subtitulo');?>
+          <div class="col-12">
+            <div class="row text-white text-center text-sm-start">
+              <div class="col-12 col-lg-6">
+                <div class="row">
+                  <div class="col-12 fs-18">
+                    GRUPO SAN BENEDETTO
+                  </div>
+                  <h1 class="col-12 h2 fs-32 fs-sm-64 mb-48">
+                    <?=get_field('titulo');?>
+                  </h1>
                 </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-12 col-lg-6 fs-18 fs-sm-24 text-uppercase fw-bolder">
+                    <div class="w-descripcion">
+                        <?=get_field('subtitulo');?>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 position-relative zi-99">
+                    <div class="mt-65 mt-sm-103 mt-lg-0 start-0 w-100 position-absolute py-155 py-sm-253 bg-custom-image img-parallax" 
+                    style="background:url('<?=wp_get_attachment_image_url(926, "full")?>')">
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -35,15 +47,12 @@ get_header();
   </div>
 </section>
 
-<section class="my-96 mt-xl-160 mb-xl-0">
-  <div class="container position-relative">
-    <?/*
-    <?=wp_get_attachment_image(671, "full", "", array( 'class' => 'w-100 position-absolute top-0 start-0' , 'alt' => '' , 'title' => '') ); ?>
-    */?>
+<section class="gx-sm-12 gx-4">
+  <div class="container position-relative zi-99">
     <div class="row">
-      <div class="col-4 text-secondary">
+      <div class="mt-253 mt-sm-356 mt-lg-160 col-12 col-sm-8 col-lg-4 text-secondary text-sm-start text-center">
         <div class="text-uppercase">
-          <?=get_field('antetitulo_mapa');?>
+            <?=get_field('antetitulo_mapa');?>
         </div>
         <div class="h2">
           Países
@@ -54,28 +63,53 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="offset-2 col-6 position-relative zi-99">
-        <?=wp_get_attachment_image(926, "full", "", array( 'class' => 'w-100 img-parallax' , 'alt' => '' , 'title' => '') ); ?>
-      </div>
     </div>
   </div>
 </section>
 
 
-<section>
+<section class="mt-n116 mt-sm-n333 mt-lg-n120">
   <div class="container-fluid">
-    <div class="row offset-2 position-relative">
-      <?=wp_get_attachment_image(689, "full", "", array( 'class' => 'p-0 m-0 w-100' , 'alt' => '' , 'title' => '') ); ?>
-      <div class="position-absolute w-auto icon-map-1">
+    <div class="row offset-lg-2 position-relative overflow-hidden">
+      <?=wp_get_attachment_image(689, "full", "", array( 'class' => 'p-0 m-0 img-mapa' , 'alt' => '' , 'title' => '') ); ?>
+      <div class="position-absolute w-auto c-pointer icon-map-1">
+        <div class="opacity-0 position-absolute start-0 bottom-100 pb-12 tx-n50 start-50">
+          <div class="card border shadow p-12 px-sm-24 py-sm-30 w-card-mapa text-secondary">
+            <b>España:</b>
+            <div class="ps-2">Agua Mineral San Benedetto S.A.U. (San    Antonio de Requena)· </div>  
+            <div class="ps-2">Parque La Presa S.A. (Loja)</div> 
+          </div>
+        </div>
         <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
-      <div class="position-absolute w-auto icon-map-2">
+      <div class="position-absolute w-auto c-pointer icon-map-2">
+        <div class="opacity-0 position-absolute start-0 bottom-100 pb-12 tx-n50 start-50">
+          <div class="card border shadow p-12 px-sm-24 py-sm-30 w-card-mapa text-secondary">
+            <b>España:</b>
+            <div class="ps-2">Agua Mineral San Benedetto S.A.U. (San    Antonio de Requena)· </div>  
+            <div class="ps-2">Parque La Presa S.A. (Loja)</div> 
+          </div>
+        </div>
         <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
-      <div class="position-absolute w-auto icon-map-3">
+      <div class="position-absolute w-auto c-pointer icon-map-3">
+        <div class="opacity-0 position-absolute start-0 bottom-100 pb-12 tx-n50 start-50">
+          <div class="card border shadow p-12 px-sm-24 py-sm-30 w-card-mapa text-secondary">
+            <b>España:</b>
+            <div class="ps-2">Agua Mineral San Benedetto S.A.U. (San    Antonio de Requena)· </div>  
+            <div class="ps-2">Parque La Presa S.A. (Loja)</div> 
+          </div>
+        </div>
         <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
-      <div class="position-absolute w-auto icon-map-4">
+      <div class="position-absolute w-auto c-pointer icon-map-4">
+        <div class="opacity-0 position-absolute start-0 bottom-100 pb-12 tx-n50 start-50">
+          <div class="card border shadow p-12 px-sm-24 py-sm-30 w-card-mapa text-secondary">
+            <b>España:</b>
+            <div class="ps-2">Agua Mineral San Benedetto S.A.U. (San    Antonio de Requena)· </div>  
+            <div class="ps-2">Parque La Presa S.A. (Loja)</div> 
+          </div>
+        </div>
         <?=wp_get_attachment_image(688, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>
@@ -83,7 +117,7 @@ get_header();
 </section>
 
 
-<section class="my-96">
+<section class="gx-sm-12 gx-4 my-56">
   <div class="container">
     <div class="row">
       <div class="col-12 position-relative">

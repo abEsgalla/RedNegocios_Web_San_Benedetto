@@ -66,7 +66,8 @@ $spacers: (
   32:  ($spacer * 2), // 32px
   35:  ($spacer * 2.1875), // 35px
   36:  ($spacer * 2.25), // 36px
-  40:  ($spacer * 2.5), // 36px
+  40:  ($spacer * 2.5), // 40px
+  42:  ($spacer * 2.625), // 42px
   48:  ($spacer * 3), // 48px
   53:  ($spacer * 3.3125), // 53px
   55:  ($spacer * 3.438), // 55px
@@ -114,6 +115,7 @@ $spacers: (
   187: ($spacer * 11.6875), // 187px
   192: ($spacer * 12), // 192px
   200: ($spacer * 12.5), // 200px
+  214: ($spacer * 13.375), // 214px
   218: ($spacer * 13.625), // 218px
   221: ($spacer * 13.8125), // 221px
   222: ($spacer * 13.875), // 222px
@@ -131,9 +133,15 @@ $spacers: (
   290: ($spacer * 18.125), // 290px
   317: ($spacer * 19.8125), // 317px
   333: ($spacer * 20.8125), // 333px
+  356: ($spacer * 22.25), // 356px
+  374: ($spacer * 23.375), // 374px
+  409: ($spacer * 25.563), // 409px
   422: ($spacer * 26.375), // 422px
+  463: ($spacer * 28.938), // 463px
   492: ($spacer * 30.75), // 492px
-  533: ($spacer * 33.3125) // 533px
+  533: ($spacer * 33.3125), // 533px
+  565: ($spacer * 35.313), // 565px
+  580: ($spacer * 36.25) // 580px
 ) !default;
 
 // Font size base
@@ -168,6 +176,7 @@ $font-sizes: (
  32: $font-size-base * 2,
  36: $font-size-base * 2.25,
  45: $font-size-base * 2.813,
+ 48: $font-size-base * 2.813,
  64: $font-size-base * 4,
  80: $font-size-base * 5,
  96: $font-size-base * 6,
