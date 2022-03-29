@@ -95,7 +95,7 @@ swiper_home_dedicado.on('slideChange', function () {
 
 
 const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
-  direction: 'vertical',
+  direction: 'horizontal',
   autoHeight : true,
   loop: false,
   effect: 'fade',
@@ -111,7 +111,7 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
   },
   breakpoints: {
     768: {
-      direction: 'vertical',
+      direction: 'horizontal',
     },
     992: {
       direction: 'horizontal',

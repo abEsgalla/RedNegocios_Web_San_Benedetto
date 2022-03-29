@@ -36,7 +36,12 @@
                     endif;
                     if($slide['texto_principal']):
                       ?>
-                        <div class="col-12 h2 fw-bold"><?=$slide['texto_principal']?></div>
+                        <div class="col-12 h2 fw-bold d-none d-md-block"><?=$slide['texto_principal']?></div>
+                      <?
+                    endif;
+                    if($slide['texto_principal_responsive']):
+                      ?>
+                        <div class="col-12 h2 fw-bold d-block d-md-none"><?=$slide['texto_principal_responsive']?></div>
                       <?
                     endif;
                     if($slide['texto_cta']):
