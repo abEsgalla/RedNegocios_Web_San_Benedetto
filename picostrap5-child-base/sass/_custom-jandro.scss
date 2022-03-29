@@ -434,6 +434,200 @@
   }
 }
 
+.contenedor-cursor-custom{
+  &:hover{
+    .ratio.ratio-5x7{
+      &:after{
+        opacity: 1;
+      }
+    }
+  }
+  .ratio.ratio-5x7{
+    position: relative;
+    .bg-custom-post{
+      z-index: 2;
+    }
+    &:after{
+      content: '';
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../src/img/splash.png');
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      transition: opacity .5s ease;
+      z-index: 1;
+    }
+  }
+}
+
+.dots-1,
+.dots-3,
+.dots-4{
+  width: 57px;
+  @include media-breakpoint-down(xxl){
+    width: 38px;
+  }
+  @include media-breakpoint-down(lg){
+    width: 57px;
+  }
+}
+
+.dots-2,
+.dots-5{
+  width: 112px;
+  @include media-breakpoint-down(xxl){
+    width: 75px;
+  }
+  @include media-breakpoint-down(lg){
+    width: 112px;
+  }
+}
+
+.dots-2{
+  margin-right: 12px;
+  @include media-breakpoint-up(lg){
+    margin-right: 24px;
+    margin-top: 24px;
+  }
+}
+.dots-1{
+  margin-top: 0px;
+  margin-right: 12px;
+  @include media-breakpoint-up(lg){
+    margin-top: 78px;
+  }
+}
+
+.dots-3{
+  margin-left: 24px;
+  @include media-breakpoint-up(lg){
+    margin-left: 0;
+  }
+}
+
+.dots-5{
+  margin-top: -24px;
+  @include media-breakpoint-down(md){
+    margin-left: 48px;
+  }
+}
+
+.burbuja-1{
+  margin-top: -78px;
+  margin-right: 32px;
+  @include media-breakpoint-up(lg){
+    margin-top: -48px;
+    margin-left: 48px;
+    margin-right: 124px;
+  }  
+  @include media-breakpoint-down(xxl){
+    width: 112px;
+  }
+  @include media-breakpoint-down(lg){
+    width: auto;
+  }
+}
+
+.burbuja-2{
+  @include media-breakpoint-down(xxl){
+    width: 135px;
+  }
+  @include media-breakpoint-down(lg){
+    width: auto;
+  }  
+}
+
+.burbuja-7{
+  margin-left: 48px;
+  margin-top: -80px;
+  @include media-breakpoint-up(lg){
+    margin-left: 80px;
+    margin-top: -72px;
+    margin-right: 12px;
+  }
+  @include media-breakpoint-down(xxl){
+    width: 151px;
+  }
+  @include media-breakpoint-down(lg){
+    width: auto;
+  }  
+}
+
+.burbuja-3{
+  margin-top: 24px;
+  @include media-breakpoint-up(lg){
+    margin-top: -48px;
+    margin-left: 12px;
+  }
+  @include media-breakpoint-down(xxl){
+    width: 53px;
+  }
+  @include media-breakpoint-down(lg){
+    width: auto;
+  }  
+}
+
+.burbuja-5{
+  @include media-breakpoint-up(lg){
+    margin-top: -32px;
+    margin-left: 24px;
+  }
+  @include media-breakpoint-down(xxl){
+    width: 66px;
+  }
+  @include media-breakpoint-down(lg){
+    width: auto;
+  }  
+  @include media-breakpoint-down(md){
+    margin-left: 12px;
+  }  
+}
+
+.burbuja-4{
+  margin-left: 175px;
+  margin-right: 12px;
+  @include media-breakpoint-up(lg){
+    margin-left: 64px;
+    margin-bottom: -48px;
+  } 
+  @include media-breakpoint-down(xxl){
+    width: 53px;
+  }
+  @include media-breakpoint-down(lg){
+    margin-left: 175px;
+    margin-right: 12px;
+    width: auto;
+  } 
+  @include media-breakpoint-down(md){
+    margin-left: 0;
+    margin-right: 12px;
+  }
+}
+
+.dots-4{
+  margin-left: 8px;
+}
+
+.burbuja-6{
+  margin-left: 72px;
+  @include media-breakpoint-up(lg){
+    margin-left: 12px;
+    margin-top: 24px;
+  }
+  @include media-breakpoint-down(xxl){
+    width: 98px;
+  }
+  @include media-breakpoint-down(lg){
+    width: auto;
+  }  
+}
+
+
 // .row-valores{
 //   > div:first-child:after{
 //     content: url('../src/img/elipsis-top-left-big.svg');

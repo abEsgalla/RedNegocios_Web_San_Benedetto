@@ -18,6 +18,9 @@ defined( 'ABSPATH' ) || exit;
     <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/src/favicon/favicon-32x32.png" sizes="32x32">
   	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/src/favicon/favicon-96x96.png" sizes="96x96">
   	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/src/favicon/favicon-256x256.png" sizes="256x256">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    
   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
