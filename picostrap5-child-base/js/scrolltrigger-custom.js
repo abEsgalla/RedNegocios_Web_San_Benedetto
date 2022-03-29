@@ -723,7 +723,7 @@ if( document.body.classList.contains('single-landing') ) {
   }
 }
 
-
+//Page Historia
 if( document.body.classList.contains('page-template-custom-template-historia') ) {
   //Barrita vertical que se rellena con scroll en página Historia
   let line_height = document.querySelector('.border-dashed-custom').clientHeight + 236;
@@ -825,6 +825,85 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
         }
       });
     }
+  });
+}
+
+//Page Contacto
+if( document.body.classList.contains('page-template-custom-template-contacto') ) {
+  ScrollTrigger.create({
+    trigger: ".road-localizacion-desktop-trigger",
+    once: true,
+    start: "center center",
+    markers: false,
+    onEnter: () => {
+      //Activo animación mapita cómo llegar
+      let mapita_l = document.querySelectorAll('.road-localizacion-desktop .svg-road-localizacion-l');
+      mapita_l.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+      
+
+      let mapita_r = document.querySelectorAll('.road-localizacion-desktop .svg-road-localizacion-r');
+      mapita_r.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+      
+      setTimeout(() => {
+        document.querySelector('.road-localizacion-desktop .localizacion-final').classList.add('activo');
+      }, 6500);
+    },
+  });
+
+  ScrollTrigger.create({
+    trigger: ".road-localizacion-tablet-trigger",
+    once: true,
+    start: "center center",
+    markers: false,
+    onEnter: () => {
+      //Activo animación mapita cómo llegar
+      let mapita_l = document.querySelectorAll('.road-localizacion-tablet .svg-road-localizacion-l');
+      mapita_l.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+
+      let mapita_r = document.querySelectorAll('.road-localizacion-tablet .svg-road-localizacion-r');
+      mapita_r.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+
+      setTimeout(() => {
+        document.querySelector('.road-localizacion-tablet .localizacion-final').classList.add('activo');
+      }, 6500);
+    },
+  });
+
+  ScrollTrigger.create({
+    trigger: ".road-localizacion-mobile-trigger",
+    once: true,
+    start: "center center",
+    markers: false,
+    onEnter: () => {
+      //Activo animación mapita cómo llegar
+      let mapita_l = document.querySelectorAll('.road-localizacion-mobile .svg-road-localizacion-l');
+      mapita_l.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+
+      let mapita_r = document.querySelectorAll('.road-localizacion-mobile .svg-road-localizacion-r');
+      mapita_r.forEach(mapita => {
+        mapita.classList.remove('d-none');
+        mapita.classList.add('active');
+      })
+
+      setTimeout(() => {
+        document.querySelector('.road-localizacion-mobile .localizacion-final').classList.add('activo');
+      }, 6500);
+    },
   });
 }
 
