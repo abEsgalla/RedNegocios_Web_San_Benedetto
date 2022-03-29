@@ -54,7 +54,7 @@ get_header();
           </div>
           <div class="col-12">
             <div class="row text-center overflow-hiden">
-              <div class="col-12 col-sm-4 mt-60" data-aos="fade-right">
+              <div class="col-12 col-sm-4 mt-60" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
@@ -79,7 +79,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-sm-4 mt-60" data-aos="fade-left">
+              <div class="col-12 col-sm-4 mt-60" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
@@ -106,7 +106,7 @@ get_header();
         <div class="row position-relative">
           <div class="col-12 col-lg-6 order-1 order-lg-0">
             <div class="row">
-              <div class="col-12 offset-xl-2 col-xl-8 overflow-hidden" data-aos="fade-right">
+              <div class="col-12 offset-xl-2 col-xl-8 overflow-hidden" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 h3 fs-26 fs-md-45 mt-70 mt-lg-0">
                     Logística
@@ -146,7 +146,7 @@ get_header();
           </div>
           <div class="col-12 col-lg-6 d-inline-flex align-items-end">
             <div class="row overflow-hidden">
-              <div class="col-12 offset-xl-2 col-xl-8 gx-xl-0" data-aos="fade-left">
+              <div class="col-12 offset-xl-2 col-xl-8 gx-xl-0" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 h3 fs-26 fs-md-45 mt-70 mt-lg-0">
                     Limpieza y reforestación del entorno 
