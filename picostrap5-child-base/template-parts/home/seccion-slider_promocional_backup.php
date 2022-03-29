@@ -50,7 +50,7 @@ endforeach;
                     <div class='row'>
                         <div class="col-12">
                             <div class='row'>
-                                <div class="col-12 col-xxl-8 mb-64">
+                                <div class="col-12 col-xxl-8 mb-64 d-none d-md-block">
                                     <div class='row text-start text-uppercase text-secondary'>
                                         <div class="col-12 mb-24 mt-40">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="52" height="36" viewBox="0 0 52 36" fill="none">
