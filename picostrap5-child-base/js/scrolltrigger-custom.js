@@ -741,6 +741,21 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
     }
   });
 
+  let line_height_mobile = document.querySelector('.border-dashed-custom-mobile').clientHeight + 236;
+  gsap.to(".border-dashed-custom-mobile .border-fill", {
+    scrollTrigger: {
+      trigger: '.border-dashed-custom-mobile',
+      start: '-265px center',
+      end: 'bottom center',
+      scrub: true,
+      markers: false,
+      onUpdate: self => {
+        let height = self.progress * line_height_mobile;
+        document.querySelector(".border-dashed-custom-mobile .border-fill").style.height = height + 'px';
+      }
+    }
+  });
+
   let maxWhiteLineHeight = 150;
   gsap.to(".white-line-timeline", {
     scrollTrigger: {
@@ -769,6 +784,39 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
   ];
 
   anos.forEach(ano => {
+
+    let selectorAnoMobile = `.ano-timeline-${ano}-mobile.ano-timeline-right-mobile`;
+    console.log(selectorAnoMobile);
+    if(document.querySelector(selectorAnoMobile)) {
+      console.log(selectorAnoMobile);
+      gsap.to(selectorAnoMobile, {
+        scrollTrigger: {
+          trigger: '.ano-timeline-' + ano + '-mobile',
+          start: '-130px 50%',
+          end: 'bottom',
+          scrub: true,
+          markers: false,
+          onEnter: self => {
+            console.log(selectorAnoMobile);
+            document.querySelector(selectorAnoMobile).classList.add('ano-activo');
+            document.querySelector(".ano-" + ano + "-mobile").classList.remove('opacity-25');
+          },
+          onEnterBack: self => {
+            //document.querySelector(selectorAnoMobile).classList.remove('ano-activo');
+          },
+          onLeave: self => {
+            document.querySelector(selectorAnoMobile).classList.add('ano-activo');
+            document.querySelector(".ano-" + ano + "-mobile").classList.remove('opacity-25');
+          },
+          onLeaveBack: self => {
+            document.querySelector(selectorAnoMobile).classList.remove('ano-activo');
+            document.querySelector(".ano-" + ano + "-mobile").classList.add('opacity-25');
+          },
+        }
+      });
+    }
+
+
     let selectorAnoLeft = `.ano-timeline-${ano}.ano-timeline-left`;
     if(document.querySelector(selectorAnoLeft)) {
       gsap.to(selectorAnoLeft, {

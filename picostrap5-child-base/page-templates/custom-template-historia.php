@@ -272,10 +272,10 @@ get_header();
         <div class="row">
           <div class="offset-2 col-10 offset-sm-2 col-sm-10">
             <div class="row text-start text-secondary">
-              <div class="col-12 ano-2002">
+              <div class="col-12 opacity-25 ano-2002-mobile">
                 <div class="row">
                   <div class="col-12  h2 fs-42 fs-lg-64 ">
-                    <span class="ano-timeline-right ano-timeline-2002">2002</span>
+                    <span class="ano-timeline-right-mobile ano-timeline-2002-mobile ano-timeline-right">2002</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
                     Lanzamiento Enjoy,<br> Thè y UpGrade
@@ -302,10 +302,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-56 ano-2006">
+              <div class="col-12 mt-56 opacity-25 ano-2006-mobile">
                 <div class="row">
                   <div class="col-12  h2 fs-42 fs-lg-64  mt-53">
-                    <span class="ano-timeline-right ano-timeline-2006">2006</span>
+                    <span class="ano-timeline-right-mobile ano-timeline-2006-mobile ano-timeline-right">2006</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
                     Apertura planta nueva planta de envasado
@@ -322,10 +322,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-56 ano-2008">
+              <div class="col-12 mt-56 opacity-25 ano-2008-mobile">
                 <div class="row">
                   <div class="col-12  h2 fs-42 fs-lg-64 ">
-                    <span class="ano-timeline-ano-timeline-right ano-timeline-2008">2008</span>
+                    <span class="ano-timeline-right-mobile ano-timeline-2008-mobile ano-timeline-right">2008</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
                     Triple certificación de AENOR
@@ -344,10 +344,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-56 ano-2009">
+              <div class="col-12 mt-56 opacity-25 ano-2009-mobile">
                 <div class="row">
                   <div class="col-12  h2 fs-42 fs-lg-64  mt-53">
-                    <span class="ano-timeline-right ano-timeline-2009">2009</span>
+                    <span class="ano-timeline-right-mobile ano-timeline-2009-mobile ano-timeline-right">2009</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
                     Producción de refrescos con gas Enjoy
@@ -361,10 +361,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-56 ano-2013">
+              <div class="col-12 mt-56 opacity-25 ano-2013-mobile">
                 <div class="row">
                   <div class="col-12  h2 fs-42 fs-lg-64 ">
-                    <span class="ano-timeline-ano-timeline-right ano-timeline-2013">2013</span>
+                    <span class="ano-timeline-right-mobile ano-timeline-2013-mobile ano-timeline-right">2013</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
                     Primer envasador de agua mineral de España por volumen
@@ -380,10 +380,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-56 ano-2016">
+              <div class="col-12 mt-56 opacity-25 ano-2016-mobile">
                 <div class="row">
                   <div class="col-12  h2 fs-42 fs-lg-64  mt-53">
-                    <span class="ano-timeline-right ano-timeline-2016">2016</span>
+                    <span class="ano-timeline-right-mobile ano-timeline-2016-mobile ano-timeline-right">2016</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
                     Lanzamiento de botella <i>Easy Ecogreen</i> 1L
@@ -398,10 +398,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-56 ano-2019">
+              <div class="col-12 mt-56 opacity-25 ano-2019-mobile">
                 <div class="row">
                   <div class="col-12  h2 fs-42 fs-lg-64 ">
-                    <span class="ano-timeline-right ano-timeline-2019">2019</span>
+                    <span class="ano-timeline-right-mobile ano-timeline-2019-mobile ano-timeline-right">2019</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
                     Nueva gama San Benedetto Zero
@@ -419,10 +419,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-56 ano-2020">
+              <div class="col-12 mt-56 opacity-25 ano-2020-mobile">
                 <div class="row">
                   <div class="col-12  h2 fs-42 fs-lg-64  mt-53">
-                    <span class="ano-timeline-right ano-timeline-2020">2020</span>
+                    <span class="ano-timeline-right-mobile ano-timeline-2020-mobile ano-timeline-right">2020</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
                     Primera Botella de Carbono Neutral en España
@@ -438,10 +438,10 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-56 ano-2022">
+              <div class="col-12 mt-56 opacity-25 ano-2022-mobile">
                 <div class="row">
                   <div class="col-12  h2 fs-42 fs-lg-64 ">
-                    <span class="ano-timeline-right ano-timeline-2022">2022</span>
+                    <span class="ano-timeline-right-mobile ano-timeline-2022-mobile ano-timeline-right">2022</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
                     Relanzamiento de nueva identidad Fuente Primavera
