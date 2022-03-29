@@ -14,9 +14,8 @@ $fields = wp_parse_args( $args );
           ?>
           <div class="swiper-slide <?=($slide['color'] == 'text-white') ? 'slide-dark' : 'slide-light'; ?>">
             <div class="position-relative bg-black">
-                <div class="bg-custom-image w-100vw h-100vh" 
-                  style="background:url('<?=wp_get_attachment_image_url($slide['fondo'], "full")?>')">
-                </div>
+                <div class="bg-custom-image w-100vw h-100vh d-none d-xl-block" style="background:url('<?=wp_get_attachment_image_url($slide['fondo'], "full")?>')"></div>
+                <div class="bg-custom-image w-100vw h-100vh d-block d-xl-none" style="background:url('<?=$slide['fondo_mobile']?>')"></div>
             </div>
             <?
             endif;
@@ -25,7 +24,7 @@ $fields = wp_parse_args( $args );
             ?>
             <div class="d-flex align-items-center justify-content-center container container-slider zi-99 top-50 position-absolute transform-translate-y">
               <div class="row w-100">
-                <div class="col-12">
+                <div class="col-xxl-8 offset-xxl-2 offset-xxxl-0 col-xxxl-12">
                   <div class="row text-start text-sm-center <?=$slide['color']?>">
                     <?
                     if($slide['logo']):
@@ -35,14 +34,21 @@ $fields = wp_parse_args( $args );
                         </div>
                       <?
                     endif;
+                    if($slide['imagen_mobile']):
+                      ?>
+                        <div class="col-12 d-block d-xl-none text-center">
+                          <?=wp_get_attachment_image($slide['imagen_mobile'], "full", "", array( 'class' => 'w-100' , 'alt' => '' , 'title' => '') ); ?>
+                        </div>
+                      <?
+                    endif;
                     if($slide['texto_superior']):
                       ?>
-                        <div class="col-12 col-sm-12 fs-18 lh-24 text-uppercase mb-sm-16 mb-14"><?=$slide['texto_superior']?></div>
+                        <div class="col-12 col-sm-12 fs-18 lh-24 text-uppercase mb-sm-16 mb-14 fw-500"><?=$slide['texto_superior']?></div>
                       <?
                     endif;
                     if($slide['texto_principal']):
                       ?>
-                        <div class="col-12 fs-64 text-primary-banner lh-64 fw-bold text-break"><?=$slide['texto_principal']?></div>
+                        <div class="col-12 fs-40 fs-xxl-56 fs-xxxl-72 text-primary-banner lh-64 fw-bold text-break"><?=$slide['texto_principal']?></div>
                       <?
                     endif;
                     if($slide['descripcion']):
