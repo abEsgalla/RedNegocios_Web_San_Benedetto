@@ -477,9 +477,12 @@
 
 .road-localizacion-mobile {
     .localizacion-final {
-        top: 95px;
-        left: 285px;
-        width: 50px;
+        left: 115px;
+        top: 50px;
+        width: 40px;
+        /*top: 20px;
+        left: 50%;
+        width: 50px;*/
         opacity:0;
         transition: all 0.5s ease;
         &.activo {
@@ -523,17 +526,15 @@
     }
     //768PX
     @include media-breakpoint-down(md) {
-        display: none;
         width: 237px;
         top: 27px;
         right: -4px;
     }
     //576px
     @include media-breakpoint-down(sm) {
-        display: none;
-        width: 237px;
-        top: 27px;
-        right: -4px;
+        right: -8px;
+        top: 26px;
+        width: 231px;
     }
 }
 
@@ -582,15 +583,13 @@
     }
     //768PX
     @include media-breakpoint-down(md) {
-        display: none;
         width: 270px;
         top: 8px;
         left: 0px;
     }
     //576px
     @include media-breakpoint-down(sm) {
-        display: none;
-        width: 270px;
+        width: 260px;
         top: 8px;
         left: 0px;
     }
@@ -752,4 +751,11 @@
 .spacer-custom{
     display: block;
     margin-bottom: 40px;
+}
+
+.custom-mapa-road-mobile{
+    @include media-breakpoint-down(sm) {
+        max-width: 312px;
+        margin: auto;
+    }
 }
