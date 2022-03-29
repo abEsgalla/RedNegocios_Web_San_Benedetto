@@ -442,3 +442,102 @@
         margin-left: 12px;
     }
 }
+
+.svg-road-localizacion-r{
+    path {
+        stroke-dasharray: 1510;
+        stroke-dashoffset: 310;
+        animation: dashr 7s linear alternate infinite;
+    } 
+    height: 100%;
+    top: 45px;
+    right: -21px;
+    //1400PX
+    @include media-breakpoint-down(xxl) {
+        top: 38px;
+        right: -71px;
+        width: 90%;
+        max-width: inherit !important;
+    }
+    //1200PX
+    @include media-breakpoint-down(xl) {
+        top: 47px;
+        right: -108px;
+        width: 102%;
+        max-width: inherit !important;
+    }
+    @include media-breakpoint-down(lg) {
+        width: 521px;
+        max-width: 100% !important;
+        right: -9px;
+    }
+    @include media-breakpoint-down(md) {
+        width: 237px;
+        top: 27px;
+        right: -4px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 237px;
+        top: 27px;
+        right: -4px;
+    }
+}
+
+@keyframes dashr {
+    from {
+        stroke-dashoffset: 310;
+    }
+    to {
+        stroke-dashoffset: 1510;
+    }
+}
+
+.svg-road-localizacion-l{
+    path {
+        stroke-dasharray: 1510;
+        stroke-dashoffset: 0;
+        animation: dashl 7s linear alternate infinite;
+    } 
+    height: 100%;
+    top: 12px;
+    left: -21px;
+    //1400PX
+    @include media-breakpoint-down(xxl) {
+        top: 4px;
+        left: -74px;
+        width: 103%;
+        max-width: inherit !important;
+    }
+    //1200PX
+    @include media-breakpoint-down(xl) {
+        top: 15px;
+        left: -103px;
+        width: 118%;
+        max-width: inherit !important;
+    }
+    @include media-breakpoint-down(lg) {
+        width: 590px;
+        max-width: 100% !important;
+        top: 8px;
+        left: -9px;
+    }
+    @include media-breakpoint-down(md) {
+        width: 270px;
+        top: 8px;
+        left: 0px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 270px;
+        top: 8px;
+        left: 0px;
+    }
+}
+
+@keyframes dashl {
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: 1510;
+    }
+}
