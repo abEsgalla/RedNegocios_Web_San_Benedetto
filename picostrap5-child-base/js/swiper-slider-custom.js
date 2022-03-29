@@ -96,10 +96,10 @@ swiper_home_dedicado.on('slideChange', function () {
 
 const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
   direction: 'horizontal',
-  autoHeight : true,
+  autoHeight : false,
+  height: 780,
   loop: false,
   effect: 'fade',
-  preventInteractionOnTransition: true,
   fadeEffect: {
     crossFade: true
   },
@@ -110,12 +110,11 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
     bulletActiveClass: 'bg-white opacity-100',
   },
   breakpoints: {
-    768: {
-      direction: 'horizontal',
-    },
     992: {
+      height: null,
       direction: 'horizontal',
       slidesPerView: 1,
+      autoHeight : true,
     }
   },
   on: {
@@ -137,6 +136,12 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
       cortinilla.style.zIndex = 0;
       cortinilla.classList.remove('recogida');
 
+      //Hago que los slides no se puedan clicar mientras transiciono la cortinilla
+      swiper.slides.forEach(slide => {
+        slide.classList.add('pe-none');
+      });
+      document.querySelector('.pagination-home-promocional').classList.add('pe-none');
+
       //Pillo el actual slider activo y lo clono
       let current_active_slide = swiper.slides[swiper.previousIndex];
       let current_active_slide_width = current_active_slide.offsetWidth;
@@ -157,11 +162,19 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
       //Al empezar la transicion, pongo la cortinilla encima para que no se vea el cambio de slider real
       cortinilla.style.zIndex = 9;
     },
-    slideChangeTransitionEnd: function() {
+    slideChangeTransitionEnd: function(swiper) {
       let cortinilla = document.querySelector('.swiper-home-promocional .cortinilla-swiper');
 
       //Al terminar la transicion de cambio de slide, "recojo" la cortinilla
       cortinilla.classList.add('recogida');
+
+      //Cuando acabe la transicion de la cortinilla vuelvo a hacer los slides clicables
+      setTimeout(() => {
+        swiper.slides.forEach(slide => {
+          slide.classList.remove('pe-none');
+        });
+        document.querySelector('.pagination-home-promocional').classList.remove('pe-none');
+      }, 1100);
 
     }
   },

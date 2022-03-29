@@ -72,7 +72,7 @@ $productosRefrescos = $fields['productos_refrescos'];
     </div>
 </div>
 
-<div class="position-absolute bottom-80 start-0 end-0">
+<div class="pagination-home-promocional position-absolute bottom-80 start-0 end-0">
     <div class="container">
         <div class="zi-99 d-flex justify-content-lg-start justify-content-end align-items-center position-relative">
             <div class="d-lg-flex">

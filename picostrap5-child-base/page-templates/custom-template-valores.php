@@ -46,7 +46,7 @@ get_header();
         <div class="text-secondary fs-16 fs-md-18">ÉSTA ES NUESTRA</div>
         <div class="fs-32 fs-md-64 fw-bold text-secondary">Misión</div>
       </div>
-      <div class="col-12 col-lg-6 g-lg-0 d-block order-4 py-65 py-lg-40 py-xl-112 py-xxl-145 px-56" data-aos="fade-left">
+      <div class="col-12 col-lg-6 g-lg-0 d-block order-4 py-65 py-lg-40 py-xl-112 py-xxl-145 px-56" data-aos="fade-up">
         <div class="text-secondary text-uppercase fw-bold fs-18 fs-md-24">
           «Integrar calidad, seguridad y capacidad de innovación con un profundo respeto por el medio ambiente, 
           el territorio y el desarrollo de las personas.»  
@@ -272,7 +272,7 @@ get_header();
       <div class="col-12 col-lg-6 text-secondary bg-primary-brighter d-flex align-items-center py-40 pt-sm-80 pb-sm-70 pt-lg-0 pb-lg-0">
         <div class="row">
 
-              <div class="offset-2 col-8 offset-lg-1 col-lg-9 fw-500 fs-17 text-secondary-lighter ps-0" data-aos="fade-left">
+              <div class="offset-2 col-8 offset-lg-1 col-lg-9 fw-500 fs-17 text-secondary-lighter ps-0" data-aos="fade-up">
                 Desde el principio nos hemos preocupado por ser capaces de desarrollar nuestra actividad con el mínimo impacto 
                 en nuestro entorno. Lo conseguimos a través de proyectos y sinergias estratégicas con agentes locales. 
                 Así, no sólo fabricamos los envases más ligeros del mercado de agua mineral: 

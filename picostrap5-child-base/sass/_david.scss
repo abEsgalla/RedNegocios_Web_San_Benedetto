@@ -442,3 +442,261 @@
         margin-left: 12px;
     }
 }
+
+.svg-road-localizacion-r{
+    path {
+        stroke-dasharray: 1510;
+        stroke-dashoffset: 310;
+        animation: dashr 7s linear alternate infinite;
+    } 
+    height: 100%;
+    top: 45px;
+    right: -21px;
+    //1400PX
+    @include media-breakpoint-down(xxl) {
+        top: 38px;
+        right: -71px;
+        width: 90%;
+        max-width: inherit !important;
+    }
+    //1200PX
+    @include media-breakpoint-down(xl) {
+        top: 47px;
+        right: -108px;
+        width: 102%;
+        max-width: inherit !important;
+    }
+    //992PX
+    @include media-breakpoint-down(lg) {
+        width: 521px;
+        max-width: 100% !important;
+        right: -9px;
+    }
+    //768PX
+    @include media-breakpoint-down(md) {
+        display: none;
+        width: 237px;
+        top: 27px;
+        right: -4px;
+    }
+    //576px
+    @include media-breakpoint-down(sm) {
+        display: none;
+        width: 237px;
+        top: 27px;
+        right: -4px;
+    }
+}
+
+@keyframes dashr {
+    from {
+        stroke-dashoffset: 310;
+    }
+    to {
+        stroke-dashoffset: 1510;
+    }
+}
+
+.svg-road-localizacion-l{
+    path {
+        stroke-dasharray: 1510;
+        stroke-dashoffset: 0;
+        animation: dashl 7s linear alternate infinite;
+    } 
+    height: 100%;
+    top: 12px;
+    left: -21px;
+    //1400PX
+    @include media-breakpoint-down(xxl) {
+        top: 4px;
+        left: -74px;
+        width: 103%;
+        max-width: inherit !important;
+    }
+    //1200PX
+    @include media-breakpoint-down(xl) {
+        top: 15px;
+        left: -103px;
+        width: 118%;
+        max-width: inherit !important;
+    }
+    //992PX
+    @include media-breakpoint-down(lg) {
+        width: 590px;
+        max-width: 100% !important;
+        top: 8px;
+        left: -9px;
+    }
+    //768PX
+    @include media-breakpoint-down(md) {
+        display: none;
+        width: 270px;
+        top: 8px;
+        left: 0px;
+    }
+    //576px
+    @include media-breakpoint-down(sm) {
+        display: none;
+        width: 270px;
+        top: 8px;
+        left: 0px;
+    }
+}
+
+@keyframes dashl {
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: 1510;
+    }
+}
+
+
+.contact-form-contacto{
+    .wpcf7-response-output{
+        color: white !important;
+    }
+    .wpcf7-list-item{
+        margin: 0px;
+        label{
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 16px;
+                margin-left: 16px;
+            }
+        }
+    }
+    input[type="checkbox"] {
+        display: flex;
+        align-self: baseline;
+        appearance: none;
+        background-color: #fff0;
+        margin: 0;
+        font: inherit;
+        color: currentColor;
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+        border: 1px solid #99A4A2;
+        border-radius: 0.15em;
+        position: relative;
+    }    
+    input[type="checkbox"]:checked{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='13' viewBox='0 0 18 13' fill='none'%3E%3Cpath d='M15.6125 0C12.7552 2.99765 9.43613 6.46202 6.49917 9.5402L1.50682 5.10267L0 6.95561L5.80932 12.1248L6.62628 12.8564L7.38875 12.0583C10.4852 8.80986 14.1644 4.97228 17.2646 1.71989L15.6125 0Z' fill='white'/%3E%3C/svg%3E");
+    }
+    option{
+        border-radius: 0px !important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: $secondary !important;
+    }
+    input[type='text'],input[type='email'],select{
+        margin-top: 2px;
+        &:focus-visible{
+            outline: none !important;
+        }
+        width: 100%;
+        --bs-bg-opacity: 1;
+        background-color: transparent !important;
+        border-radius: 0px;
+        color: $white;
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+        border: 0 !important;
+        border-bottom: 1px solid #dee2e6 !important;
+        font-size: 19px;
+    }
+    label{
+        width: 100%;
+        font-size: 14px !important;
+        margin-bottom: 0.25rem !important;
+        color: $white;
+    }
+    input[type='submit']{
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: white;
+        background-color: $primary;
+        padding: 8px 42px;
+        border: none;
+        margin-left: auto;
+        display: inherit;
+    }
+    input[type='file']{
+        display: none;
+    }
+    .file-76{
+        margin-top: 8px;
+        position: relative;
+        height: 40px;
+        display: block;
+        &:before{
+            font-size: 18px;
+            font-weight: 400;
+            content: 'Ningún archivo seleccionado';
+            border-bottom: 1px solid;
+            padding: 8px;
+            position: absolute;
+            height: 100%;
+            width: 70%;
+            right: 0;
+            opacity: 0.5;
+            background: transparent;
+        }
+        &:after{
+            font-size: 14px;
+            font-weight: 500;
+            content: 'Seleccionar';
+            text-transform: uppercase;
+            padding: 8px;
+            border: 2px solid white;
+            position: absolute;
+            height: 100%;
+            width: 30%;
+            left: 0;
+            background: transparent;
+        }
+    }
+}
+
+.effect-text-contacto{
+    position: relative;
+    &:after{
+        content: '';
+        background: linear-gradient(180deg, rgba(0, 45, 114, 0) 8.3%, #002D72 75.19%);
+        height: 20px;
+        width: 95%;
+        position: absolute;
+        bottom: 0;
+        //opacity: 0.5;
+        left: 0px;
+    }
+    &>div{
+        &::-webkit-scrollbar-track {
+            background: #5472A1 !important;
+            border-radius: 20px; 
+            opacity: 0.5;        
+        }
+        &::-webkit-scrollbar {
+            border-radius: 20px; 
+            width: 4px !important;               
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: blue;    
+            border-radius: 20px;      
+            border: 3px solid $primary;  
+          }
+        max-height: 55px;
+        overflow-y: scroll;
+    }
+}
+
+.spacer-custom{
+    display: block;
+    margin-bottom: 40px;
+}
