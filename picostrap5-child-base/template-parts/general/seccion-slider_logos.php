@@ -2,7 +2,7 @@
   $fields = wp_parse_args( $args );
 ?>
 
-<div class="swiper swiper-prefooter-logos mx-24">
+<div class="position-relative zi-999 swiper swiper-prefooter-logos mx-24">
   <div class="swiper-wrapper text-center">
     <?php
     foreach ($fields as $id_producto) {
