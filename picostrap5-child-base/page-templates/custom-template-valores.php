@@ -12,7 +12,7 @@ get_header();
 <section class="text-vision">
   <div class="container-fluid position-relative zi-9 bg-black pt-138 pt-md-270 pb-md-317 pb-150">
     <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
-      style="background:url('<?=wp_get_attachment_image_url(606, "full")?>')"></div>
+      style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')"></div>
       <div class="container position-relative">
       <div class="row">
         <div class="col-12 col-lg-6">
@@ -24,8 +24,7 @@ get_header();
               Visión
             </h1>
             <div class="col-12 fs-24 mt-48 fw-bolder">
-              Ser la <span class="text-primary fst-italic">Total Beverage Company</span> que eligen las personas para hidratarse y refrescarse, 
-              donde quieran y cuando quieran, a través de bebidas que saben bien y hacen sentir bien.
+              <?=$acf_fields['texto_cabecera']?>
             </div>
           </div>
         </div>
@@ -39,29 +38,23 @@ get_header();
       <div class="col-12 col-lg-6 d-none d-md-block g-0 text-mision order-2 order-lg-1">
       </div>
       <div class="col-12 col-lg-6 g-lg-0 order-1 order-lg-2 mt-n80 mt-lg-0 px-32 px-lg-0">
-        <?=wp_get_attachment_image(607, "full", "", array( 'class' => 'w-100 position-relative d-none d-lg-block img-parallax' , 'alt' => '' , 'title' => '') ); ?>
-        <?=wp_get_attachment_image(1253, "full", "", array( 'class' => 'w-100 position-relative d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
+        <?=wp_get_attachment_image($acf_fields['imagen_over_cabecera'], "full", "", array( 'class' => 'w-100 position-relative d-none d-lg-block img-parallax' , 'alt' => '' , 'title' => '') ); ?>
+        <?=wp_get_attachment_image($acf_fields['texto_grid_sup_der'], "full", "", array( 'class' => 'w-100 position-relative d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
       </div>
       <div class="col-12 col-lg-6 g-lg-0 d-block bg-primary-brighter order-3 py-md-166 py-105 px-112 text-center text-lg-start mt-70 mt-md-270 mt-lg-0">
         <div class="text-secondary fs-16 fs-md-18">ÉSTA ES NUESTRA</div>
         <div class="fs-32 fs-md-64 fw-bold text-secondary">Misión</div>
       </div>
       <div class="col-12 col-lg-6 g-lg-0 d-block order-4 py-65 py-lg-40 py-xl-112 py-xxl-145 px-56" data-aos="fade-up">
-        <div class="text-secondary text-uppercase fw-bold fs-18 fs-md-24">
-          «Integrar calidad, seguridad y capacidad de innovación con un profundo respeto por el medio ambiente, 
-          el territorio y el desarrollo de las personas.»  
-        </div>
-        <div class="text-secondary mt-12 fs-16 fs-md-18">
-          ― Enrico Zoppas, Presidente de Gruppo Acqua Minerale San Benedetto S.p.A.
-        </div>
+        <?=$acf_fields['texto_grid_sup_der']?>
       </div>
     </div>
     <div class="row">
       <div class="col-6 px-0 col-sm-6 g-0 pe-sm-0 ps-sm-24 ps-lg-0">
-        <?=wp_get_attachment_image(610, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+        <?=wp_get_attachment_image($acf_fields['imagen_grid_inf_izq'], "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
       </div>
       <div class="col-6 px-0 col-sm-6 g-0 ps-sm-0 pe-sm-24 pe-lg-0">
-        <?=wp_get_attachment_image(609, "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+        <?=wp_get_attachment_image($acf_fields['imagen_grid_inf_der'], "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
       </div>
     </div>
   </div>
@@ -96,14 +89,10 @@ get_header();
                         </span>
                       </div>
                       <div class="col-12 fs-24 fw-bold text-uppercase text-secondary-light">
-                        Liderazgo en calidad.
+                        <?=$acf_fields['titulo_valor_1']?>
                       </div>
                       <div class="col-12 mt-24 fs-17 fw-500 text-secondary-lighter">
-                        Nuestra máxima prioridad es poder garantizar una oferta de productos asequibles, 
-                        capaz de satisfacer las distintas necesidades de consumo y con los mejores estándares de calidad. 
-                        Somos la primera envasadora de agua mineral en España y uno de los principales fabricantes de refrescos del país: 
-                        nuestra gama de productos cubre la mayor parte del segmento de bebidas analcohólicas, 
-                        y lo hace bajo los máximos niveles de seguridad alimentaria.
+                        <?=$acf_fields['texto_valor_1']?>
                       </div>
                     </div>
                   </div>
@@ -131,16 +120,10 @@ get_header();
                         </span>
                       </div>
                       <div class="col-12 fs-24 fw-bold text-uppercase text-secondary-light">
-                        Innovación e investigación.
+                        <?=$acf_fields['titulo_valor_2']?>
                       </div>
                       <div class="col-12 mt-24 fs-17 fw-500 text-secondary-lighter">
-                        Si algo nos ha caracterizado desde nuestros orígenes es un profundo espíritu visionario, 
-                        anticipándonos siempre a las grandes tendencias del futuro que revolucionarían el mercado. 
-                        Primero fue la introducción de la botella de PET en 1980, 
-                        después la patente de tapones <i>push&pull</i> completamente asépticos; más tarde, 
-                        la medición y neutralización de emisiones de CO2. 
-                        Un espíritu que nos sigue guiando hoy en día en nuestro 
-                        camino hacia una <i>Total Beverage Company</i>. 
+                        <?=$acf_fields['texto_valor_2']?>
                       </div>
                     </div>
                   </div>
@@ -166,14 +149,10 @@ get_header();
                         </span>
                       </div>
                       <div class="col-12 fs-24 fw-bold text-uppercase text-secondary">
-                        Responsabilidad con la comunidad.
+                        <?=$acf_fields['titulo_valor_3']?>
                       </div>
                       <div class="col-12 mt-24 fs-17 fw-500 text-secondary-lighter">
-                        Formamos parte de las empresas que ofrecen soluciones a la España vaciada. 
-                        Las envasadoras de agua mineral generamos empleo de calidad en zonas rurales, 
-                        contribuyendo además al crecimiento económico local. Además, 
-                        en Agua Mineral San Benedetto colaboramos de forma activa 
-                        con las iniciativas socio-culturales de nuestro entorno más cercano.
+                        <?=$acf_fields['texto_valor_3']?>
                       </div>
                     </div>
                   </div>
@@ -201,16 +180,10 @@ get_header();
                         </span>
                       </div>
                       <div class="col-12 fs-24 fw-bold text-uppercase text-secondary">
-                        Bienestar laboral.
+                        <?=$acf_fields['titulo_valor_4']?>
                       </div>
                       <div class="col-12 mt-24 fs-17 fw-500 text-secondary-lighter">
-                        En Agua Mineral San Benedetto queremos atraer talento, 
-                        pero más nos preocupa ser capaces de fidelizarlo. 
-                        Por eso nos enorgullece poder presumir de la media de antigüedad entre nuestros empleados, 
-                        que ronda los 16 años. Y es que, al incorporarse a nuestra plantilla, 
-                        los trabajadores no sólo acceden a múltiples oportunidades de formación y promoción: 
-                        también se suman a un proyecto de familia, con una cultura preventiva del cuidado de la persona, 
-                        respetuosa, abierta a la comunicación bidireccional, diversa e igualitaria. 
+                        <?=$acf_fields['texto_valor_4']?>
                       </div>
                     </div>
                   </div>
@@ -253,7 +226,7 @@ get_header();
                       </span>
                     </div>
                     <div class="col-12 fs-20 fs-md-24 fw-bold">
-                      PRODUCCIÓN SOSTENIBLE.
+                      <?=$acf_fields['titulo_valor_5']?>
                     </div>
                     <div class="col-12 mt-36">
                       <a href="<?=get_permalink(583)?>" 
@@ -273,13 +246,7 @@ get_header();
         <div class="row">
 
               <div class="offset-2 col-8 offset-lg-1 col-lg-9 fw-500 fs-17 text-secondary-lighter ps-0" data-aos="fade-up">
-                Desde el principio nos hemos preocupado por ser capaces de desarrollar nuestra actividad con el mínimo impacto 
-                en nuestro entorno. Lo conseguimos a través de proyectos y sinergias estratégicas con agentes locales. 
-                Así, no sólo fabricamos los envases más ligeros del mercado de agua mineral: 
-                también aprovechamos al máximo nuestros recursos hídricos, evitando su desperdicio; 
-                <a class="text-reset" href="<?=get_permalink(585)?>">fomentamos la circularidad de nuestros envases y residuos</a>, 
-                realizamos tareas de limpieza y reforestación en nuestros alrededores, etc. ¡Descubre más en nuestra 
-                <a class="text-reset" href="<?=get_permalink(583)?>"><i>Ecolosofía</i></a>! 
+                <?=$acf_fields['texto_valor_5']?>
               </div>
 
         </div>
