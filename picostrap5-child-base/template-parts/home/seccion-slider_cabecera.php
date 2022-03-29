@@ -43,17 +43,22 @@ $fields = wp_parse_args( $args );
                     endif;
                     if($slide['texto_superior']):
                       ?>
-                        <div class="col-12 col-sm-12 fs-18 lh-24 text-uppercase mb-sm-16 mb-14 fw-500"><?=$slide['texto_superior']?></div>
+                        <div class="col-12 col-sm-12 fs-18 lh-24 text-uppercase mb-sm-16 mb-16 fw-500"><?=$slide['texto_superior']?></div>
                       <?
                     endif;
                     if($slide['texto_principal']):
                       ?>
-                        <div class="col-12 fs-40 fs-xxl-56 fs-xxxl-72 text-primary-banner lh-64 fw-bold text-break"><?=$slide['texto_principal']?></div>
+                        <div class="col-12 fs-40 fs-xxl-56 fs-xxxl-72 text-primary-banner lh-64 fw-bold text-break d-none d-md-block"><?=$slide['texto_principal']?></div>
+                      <?
+                    endif;
+                    if($slide['texto_principal_responsive']):
+                      ?>
+                        <div class="mb-24 col-12 lh-48 fs-40 fs-xxl-56 fs-xxxl-72 text-primary-banner fw-bold text-break d-block d-md-none"><?=$slide['texto_principal_responsive']?></div>
                       <?
                     endif;
                     if($slide['descripcion']):
                       ?>
-                        <div class="d-none d-sm-block offset-1 col-10 mt-20 mt-xxl-32">
+                        <div class="d-none d-xl-block offset-1 col-10 mt-20 mt-xxl-32">
                           <div class="w-descripcion">
                             <?=$slide['descripcion']?>
                           </div>

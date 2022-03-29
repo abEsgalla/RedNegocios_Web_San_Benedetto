@@ -1,350 +1,725 @@
 if( document.body.classList.contains('single-landing') ) {
-  gsap.to('.producto-central', {
-    scrollTrigger: {
-      trigger: '.producto-central',
-      toggleActions: 'play pause pause reverse',
-      start: 'top top',
-      end: 'bottom top',
-      scrub: true,
-      markers: false,
+  ScrollTrigger.matchMedia({
+    "(max-width: 991px)": function() {
+      gsap.to('.producto-central', {
+        scrollTrigger: {
+          trigger: '.producto-central',
+          toggleActions: 'play pause pause reverse',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+          markers: false,
+        },
+        y: 80,
+      });
     },
-    y: 120,
-    // rotation: 10,
+    "(min-width: 992px)": function() {
+      gsap.to('.producto-central', {
+        scrollTrigger: {
+          trigger: '.producto-central',
+          toggleActions: 'play pause pause reverse',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+          markers: false,
+        },
+        y: 120,
+      });
+    },
   });
+
 
   //Enjoy SIN gas
   if( document.body.classList.contains('postid-203') ) {
 
-    // gsap.to('.limon-1', {
-    //   scrollTrigger: {
-    //     trigger: '.bg-custom-image',
-    //     start: 'top top',
-    //     end: 'bottom top',
-    //     scrub: true,
-    //     markers: false,
-    //   },
-    //   y: 420,
-    //   rotation: 0,
-    // });
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        // gsap.to('.limon-1', {
+        //   scrollTrigger: {
+        //     trigger: '.bg-custom-image',
+        //     start: 'top top',
+        //     end: 'bottom top',
+        //     scrub: true,
+        //     markers: false,
+        //   },
+        //   y: 420,
+        //   rotation: 0,
+        // });
 
-    //Limon borroso
-    gsap.to('.limon-3', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
-      },
-      y: -400,
-      rotation: 0,
-    });
+        //Limon borroso
+        gsap.to('.limon-3', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -100,
+          rotation: 0,
+        });
 
-    gsap.to('.limon-4', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
-      },
-      y: 320,
-      rotation: 0,
-    });
+        gsap.to('.limon-4', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 120,
+          rotation: 0,
+        });
 
-    gsap.to('.fresa-1', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
-      },
-      y: -200,
-      rotation: 0,
-    });
+        gsap.to('.fresa-1', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -150,
+          rotation: 0,
+        });
 
-    //Fresa borrosa
-    gsap.to('.fresa-2', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
-      },
-      y: -100,
-      rotation: 0,
-    });
+        //Fresa borrosa
+        gsap.to('.fresa-2', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -60,
+          rotation: 0,
+        });
 
-    //Fresa bloque texto
-    gsap.to('.fresa-bloque-texto-sin', {
-      scrollTrigger: {
-        trigger: '.frutas-bloque-texto-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: 200,
-      rotation: 0,
-    });
+        //Fresa bloque texto
+        gsap.to('.fresa-bloque-texto-sin', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -100,
+          rotation: 0,
+        });
 
-    //Limon bloque texto
-    gsap.to('.lima-bloque-texto-sin', {
-      scrollTrigger: {
-        trigger: '.frutas-bloque-texto-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
+        //Limon bloque texto
+        gsap.to('.lima-bloque-texto-sin', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -200,
+          rotation: 0,
+        });
       },
-      y: -200,
-      rotation: 0,
+      "(min-width: 992px)": function() {
+        // gsap.to('.limon-1', {
+        //   scrollTrigger: {
+        //     trigger: '.bg-custom-image',
+        //     start: 'top top',
+        //     end: 'bottom top',
+        //     scrub: true,
+        //     markers: false,
+        //   },
+        //   y: 420,
+        //   rotation: 0,
+        // });
+
+        //Limon borroso
+        gsap.to('.limon-3', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -400,
+          rotation: 0,
+        });
+
+        gsap.to('.limon-4', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 320,
+          rotation: 0,
+        });
+
+        gsap.to('.fresa-1', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -200,
+          rotation: 0,
+        });
+
+        //Fresa borrosa
+        gsap.to('.fresa-2', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -100,
+          rotation: 0,
+        });
+
+        //Fresa bloque texto
+        gsap.to('.fresa-bloque-texto-sin', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: 200,
+          rotation: 0,
+        });
+
+        //Limon bloque texto
+        gsap.to('.lima-bloque-texto-sin', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -200,
+          rotation: 0,
+        });
+      },
     });
 
   }
 
   //Enjoy CON gas
   if( document.body.classList.contains('postid-489') ) {
-    gsap.to('.limon-1', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+    
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        gsap.to('.limon-1', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -120,
+          rotation: 0,
+        });
+    
+        gsap.to('.limon-4', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 120,
+          rotation: 0,
+        });
+    
+        gsap.to('.fresa-1con', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 140,
+          rotation: 0,
+        });
+    
+        //Fresa bloque texto
+        // gsap.to('.fresa-bloque-texto-con', {
+        //   scrollTrigger: {
+        //     trigger: '.frutas-bloque-texto-trigger',
+        //     start: 'top center',
+        //     end: 'bottom center',
+        //     scrub: true,
+        //     markers: false,
+        //   },
+        //   y: 330,
+        //   rotation: 0,
+        // });
+    
+        //Limon bloque texto
+        gsap.to('.limon-bloque-texto-con', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          x: 20,
+          y: -150,
+          rotation: 0,
+        });
       },
-      y: -220,
-      rotation: 0,
-    });
-
-    gsap.to('.limon-4', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+      "(min-width: 992px)": function() {
+        gsap.to('.limon-1', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -220,
+          rotation: 0,
+        });
+    
+        gsap.to('.limon-4', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 320,
+          rotation: 0,
+        });
+    
+        gsap.to('.fresa-1con', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: 300,
+          rotation: 0,
+        });
+    
+        //Fresa bloque texto
+        gsap.to('.fresa-bloque-texto-con', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: 330,
+          rotation: 0,
+        });
+    
+        //Limon bloque texto
+        gsap.to('.limon-bloque-texto-con', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -200,
+          rotation: 0,
+        });
       },
-      y: 320,
-      rotation: 0,
     });
-
-    gsap.to('.fresa-1con', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: 300,
-      rotation: 0,
-    });
-
-    //Fresa bloque texto
-    gsap.to('.fresa-bloque-texto-con', {
-      scrollTrigger: {
-        trigger: '.frutas-bloque-texto-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: 330,
-      rotation: 0,
-    });
-
-    //Limon bloque texto
-    gsap.to('.limon-bloque-texto-con', {
-      scrollTrigger: {
-        trigger: '.frutas-bloque-texto-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: -200,
-      rotation: 0,
-    });
-
   }
 
   //Primavera
   if( document.body.classList.contains('postid-211') ) {
-    gsap.to('.gota', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        toggleActions: 'restart pause reverse pause',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        gsap.to('.gota', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            toggleActions: 'restart pause reverse pause',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -90,
+          rotation: 0,
+        });
+        gsap.to('.flor', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            toggleActions: 'restart pause reverse pause',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 150,
+          rotation: 0,
+        });
       },
-      y: -180,
-      rotation: 0,
-    });
-    gsap.to('.flor', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        toggleActions: 'restart pause reverse pause',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+      "(min-width: 992px)": function() {
+        gsap.to('.gota', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            toggleActions: 'restart pause reverse pause',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -180,
+          rotation: 0,
+        });
+        gsap.to('.flor', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            toggleActions: 'restart pause reverse pause',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 120,
+          rotation: 0,
+        });
       },
-      y: 120,
-      rotation: 0,
     });
+
+
   }
 
   //Font Natura
   if( document.body.classList.contains('postid-209') ) {
-    gsap.to('.acuarela', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        gsap.to('.acuarela', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -200,
+          rotation: 0,
+        });
       },
-      y: -280,
-      rotation: 0,
+      "(min-width: 992px)": function() {
+        gsap.to('.acuarela', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -280,
+          rotation: 0,
+        });
+      },
     });
+
   }
 
   //SAN BENEDETTO ZERO
   if( document.body.classList.contains('postid-200') ) {
-    gsap.to('.fruta-1', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        gsap.to('.fruta-1', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 220,
+          rotation: 0,
+        });
+    
+        gsap.to('.fruta-2', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 180,
+          rotation: 0,
+        });
+    
+        gsap.to('.fruta-3', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -180,
+          rotation: 0,
+        });
       },
-      y: 580,
-      rotation: 0,
+      "(min-width: 992px)": function() {
+        gsap.to('.fruta-1', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 580,
+          rotation: 0,
+        });
+    
+        gsap.to('.fruta-2', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 280,
+          rotation: 0,
+        });
+    
+        gsap.to('.fruta-3', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -280,
+          rotation: 0,
+        });
+      },
     });
 
-    gsap.to('.fruta-2', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
-      },
-      y: 280,
-      rotation: 0,
-    });
-
-    gsap.to('.fruta-3', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
-      },
-      y: -280,
-      rotation: 0,
-    });
   }
 
   //SAN BENEDETTO Essenzia agua
   if( document.body.classList.contains('postid-324') ) {
-    gsap.to('.manzana-agua', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: '-123 top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        gsap.to('.manzana-agua', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -180,
+          rotation: 0,
+        });
+    
+        gsap.to('.limon-agua', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 250,
+          rotation: 0,
+        });
+    
+        gsap.set('.bg-splash-agua', { x: "-50%", y: "-260%" });
+        /* EN MOBILE NI LO MUEVO, QUE NO SE VE*/
+        // gsap.to('.bg-splash-agua', {
+        //   scrollTrigger: {
+        //     trigger: '.bg-splash-agua-trigger',
+        //     start: 'top center',
+        //     end: 'bottom center',
+        //     scrub: true,
+        //     markers: false,
+        //   },
+        //   y: '-30%',
+        //   rotation: 0,
+        // });
       },
-      y: -580,
-      rotation: 0,
+      "(min-width: 992px)": function() {
+        gsap.to('.manzana-agua', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: '-123 top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -580,
+          rotation: 0,
+        });
+    
+        gsap.to('.limon-agua', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: '-123 top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 450,
+          rotation: 0,
+        });
+    
+        gsap.set('.bg-splash-agua', { x: "-50%", y: "-50%" })
+        gsap.to('.bg-splash-agua', {
+          scrollTrigger: {
+            trigger: '.bg-splash-agua-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: '-30%',
+          rotation: 0,
+        });
+      },
     });
 
-    gsap.to('.limon-agua', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: '-123 top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
-      },
-      y: 450,
-      rotation: 0,
-    });
-
-    gsap.set('.bg-splash-agua', { x: "-50%", y: "-50%" })
-    gsap.to('.bg-splash-agua', {
-      scrollTrigger: {
-        trigger: '.bg-splash-agua-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: '-30%',
-      rotation: 0,
-    });
   }
 
   //SAN THÉ
   if( document.body.classList.contains('postid-198') ) {
-    gsap.to('.te-imagenes-top', {
-      scrollTrigger: {
-        trigger: '.te-imagenes-trigger',
-        start: 'top center',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        gsap.to('.te-imagenes-top', {
+          scrollTrigger: {
+            trigger: '.te-imagenes-trigger',
+            start: 'top center',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 400,
+          rotation: 0,
+        });
+    
+        gsap.to('.te-imagenes-bottom', {
+          scrollTrigger: {
+            trigger: '.te-imagenes-trigger',
+            start: 'center center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -300,
+          rotation: 0,
+        });
       },
-      y: 400,
-      rotation: 0,
+      "(min-width: 992px)": function() {
+        gsap.to('.te-imagenes-top', {
+          scrollTrigger: {
+            trigger: '.te-imagenes-trigger',
+            start: 'top center',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 400,
+          rotation: 0,
+        });
+    
+        gsap.to('.te-imagenes-bottom', {
+          scrollTrigger: {
+            trigger: '.te-imagenes-trigger',
+            start: 'center center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -300,
+          rotation: 0,
+        });
+      },
     });
 
-    gsap.to('.te-imagenes-bottom', {
-      scrollTrigger: {
-        trigger: '.te-imagenes-trigger',
-        start: 'center center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: -300,
-      rotation: 0,
-    });
   }
 
   //SAN BENEDETTO Essenzia refresco
   if( document.body.classList.contains('postid-429') ) {
-    gsap.to('.menta-essenzia-top', {
-      scrollTrigger: {
-        trigger: '.menta-essenzia-bottom-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        // gsap.to('.menta-essenzia-top', {
+        //   scrollTrigger: {
+        //     trigger: '.menta-essenzia-bottom-trigger',
+        //     start: 'top center',
+        //     end: 'bottom center',
+        //     scrub: true,
+        //     markers: false,
+        //   },
+        //   x: -20,
+        //   y: 100,
+        // });
+    
+        // gsap.to('.menta-essenzia-bottom', {
+        //   scrollTrigger: {
+        //     trigger: '.menta-essenzia-bottom-trigger',
+        //     start: 'top center',
+        //     end: 'bottom center',
+        //     scrub: true,
+        //     markers: false,
+        //   },
+        //   x: -20,
+        //   y: 50,
+        // });
       },
-      y: 400,
-      rotation: 50,
+      "(min-width: 992px)": function() {
+        gsap.to('.menta-essenzia-top', {
+          scrollTrigger: {
+            trigger: '.menta-essenzia-bottom-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: 400,
+          rotation: 50,
+        });
+    
+        gsap.to('.menta-essenzia-bottom', {
+          scrollTrigger: {
+            trigger: '.menta-essenzia-bottom-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: 300,
+          rotation: -30,
+        });
+      },
     });
 
-    gsap.to('.menta-essenzia-bottom', {
-      scrollTrigger: {
-        trigger: '.menta-essenzia-bottom-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: 300,
-      rotation: -30,
-    });
   }
 }
 

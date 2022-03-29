@@ -62,7 +62,7 @@
                                 foreach ($seccion['col'] as $col): ?>
                                     <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?> columna-zero">
                                     <? if($col['posicion_texto'] && $col['texto']): ?>
-                                            <div class="text-start text-secondary texto px-lg-48 mt-0 mt-md-64 mb-64" data-aos="fade-left">
+                                            <div class="text-start text-secondary texto px-lg-48 mt-0 mt-md-64 mb-64" data-aos="fade-up">
                                             <? if($col['posicion_texto']): ?>
                                                 <?=$col['texto']?>
                                             <? endif; ?>

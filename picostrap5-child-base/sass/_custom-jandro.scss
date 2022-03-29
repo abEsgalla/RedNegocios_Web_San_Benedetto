@@ -375,6 +375,65 @@
   }
 }
 
+.card-producto-menu{
+  > a{
+    >div:first-child{
+      width: 80px;
+      height: 120px;
+    }
+    >div:last-child{
+      max-width: 80px;
+    }
+  }
+}
+
+.card-producto-menu-otras{
+  > a{
+    >div:first-child{
+      width: 80px;
+      height: 120px;
+    }
+    >div:last-child{
+      max-width: 80px;
+    }
+  }
+}
+
+.container-scale-slider-home{
+  
+}
+
+.contenedor-cursor-custom{
+  &:hover{
+    .card-producto-slider-home{
+      &:after{
+        opacity: 1;
+      }
+    }
+  }
+  .card-producto-slider-home{
+    position: relative;
+    .bg-custom-post{
+      z-index: 2;
+    }
+    &:after{
+      content: '';
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../src/img/splash_marcas.png');
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      transition: opacity .5s ease;
+      z-index: 1;
+    }
+  }
+}
+
 // .row-valores{
 //   > div:first-child:after{
 //     content: url('../src/img/elipsis-top-left-big.svg');

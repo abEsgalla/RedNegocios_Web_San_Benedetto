@@ -46,7 +46,7 @@ get_header();
         <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
         class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after">
         <div class="row position-relative zi-99 overflow-hidden">
-          <div class="order-1 order-md-0 col-12 col-xl-6" data-aos="fade-right">
+          <div class="order-1 order-md-0 col-12 col-xl-6" data-aos="fade-up">
             <div class="row">
               <div class="col-12 offset-xl-2 col-xl-8 fs-14 fs-sm-17 mb-sm-80 my-64 mt-sm-0">
                 En Agua Mineral San Benedetto somos <strong>especialistas en ecodiseño.</strong>
@@ -82,7 +82,7 @@ get_header();
           </div>
           <div class="order-3 col-12 col-xl-6">
             <div class="row overflow-hidden">
-              <div class="pt-64 py-sm-80 pb-sm-0 pb-xl-80 col-12 offset-xl-2 col-xl-8 fs-14 fs-sm-17" data-aos="fade-left">
+              <div class="pt-64 py-sm-80 pb-sm-0 pb-xl-80 col-12 offset-xl-2 col-xl-8 fs-14 fs-sm-17" data-aos="fade-up">
                 En Agua Mineral San Benedetto sostenemos que <strong>el rPET no es el objetivo, 
                 sino una de las muchas variables que hacen posible la reducción de la huella de carbono.</strong> 
                 Introducir más plástico reciclado para luego aumentar el gramaje de las botellas o 

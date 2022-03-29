@@ -15,7 +15,7 @@ foreach ($fields['productos'] as $id_producto):
     $slider_html.=
     "<a class='d-inline-block w-100 h-100 text-decoration-none contenedor-cursor-custom' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
     <div class='container-scale'>
-      <div class='ratio ratio-30x43' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>
+      <div class='ratio ratio-30x43 card-producto-slider-home' style='background-color:".get_field('caracteristicas_producto',$id_producto)['color_corporativo']."'>
         <div class='bg-custom-post' style='background:url(".
         wp_get_attachment_image_url(get_field('caracteristicas_producto',$id_producto)["imagen_producto_destacado"], "full")
         .")'>

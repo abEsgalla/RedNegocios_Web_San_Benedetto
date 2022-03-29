@@ -37,8 +37,7 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
     <div class='col'>
         <div class='row px-xl-32 ".$border."'>
             <div class='col-12 text-uppercase fs-14 fw-bold text-secondary'>".$term_name."</div>
-            <div class='col-12 mt-24'>
-                <div class='row'>";
+            <div class='col-12 mt-24 d-flex'>";
     $limit=0;
     foreach ($id_posts as $id_producto):
     if($id_term==3 && $limit==3){
@@ -54,13 +53,15 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
         $custom_image_bg_id = get_field('caracteristicas_producto',$id_producto)["imagen_logo_marca"];
     endif;
     $header_menu.="    
-                    <div class='col-2'>
+                    <div class='card-producto-menu me-32'>
                         <a class='single-menu-brand text-decoration-none text-reset position-relative' href='".get_permalink(get_field('caracteristicas_producto',$id_producto)['relacion_page_landing'])."'>
-                            <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."' class='ratio ratio-2x3'>
-                                <div class='px-2 bg-custom-image-brand-menu img-menu-brand' style='background:url(".wp_get_attachment_image_url($custom_image_bg_id, 'full').")'></div>
-                                <div class='px-2 bg-custom-image-product-menu img-menu-product' style='background:url(".wp_get_attachment_image_url($image_hover, 'full').")'></div>
+                            <div style='background:".get_field('caracteristicas_producto',$id_producto)["color_corporativo"]."' class='p-8 position-relative'>
+                                <div class='bg-custom-image-brand-menu img-menu-brand position-absolute top-50 start-50 w-100 translate-middle p-8'>".wp_get_attachment_image($custom_image_bg_id, 'full', '', array('class' => 'w-100'))."</div>
+                                <div class='bg-custom-image-product-menu img-menu-product h-100 position-absolute top-0 start-0 w-100'>
+                                    <div class='bg-producto-menu' style='background-image:url(".wp_get_attachment_image_url($image_hover, 'full').")'></div>
+                                </div>
                             </div>
-                            <div class='col-12 mt-10 text-secondary fw-500 fs-13'>
+                            <div class='mt-10 text-secondary fw-500 fs-13'>
                             ".get_the_title($id_producto)."
                             </div>
                         </a>
@@ -69,34 +70,31 @@ foreach ($categories_array_by_id as $id_term => $id_posts):
     endforeach;
     $term_name_sanitice = str_replace(' ', '-', strtolower($term_name));
     $header_menu.="    
-                    <div class='col-2'>
-                        <div class='row'>
-                            <a class='text-decoration-none text-reset position-relative' href='".get_permalink( 49 )."?".$term_name_sanitice."'>
-                                <div class='col-12 ratio ratio-2x3 border border-1 more-brands'>
-                                ".
-                                '
-                                <div class="d-flex align-items-end pb-12 ps-12">
-                                    <svg class="light" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#FFFFFF"/>
-                                    </svg>
-                                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#69B3E7"/>
-                                    </svg>
-                                </div>
-                                '
-                                .
-                                /*wp_get_attachment_image(708, 'full', '', array( 'class' => 'w-100 h-100' , 'alt' => '' , 'title' => '') ).*/"
-                                </div>
-                                <div class='col-12 mt-10 text-secondary fw-500 fs-13'>
-                                    Otras Marcas
-                                </div>
-                            </a>
-                        </div>
+                    <div class='card-producto-menu-otras'>
+                        <a class='text-decoration-none text-reset position-relative' href='".get_permalink( 49 )."?".$term_name_sanitice."'>
+                            <div class='border border-1 more-brands'>
+                            ".
+                            '
+                            <div class="d-flex align-items-end p-8 h-100 w-100">
+                                <svg class="light" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#FFFFFF"/>
+                                </svg>
+                                <svg class="dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6.91892 0V6.91892H0V9.08108H6.91892V16H9.08108V9.08108H16V6.91892H9.08108V0H6.91892Z" fill="#69B3E7"/>
+                                </svg>
+                            </div>
+                            '
+                            .
+                            /*wp_get_attachment_image(708, 'full', '', array( 'class' => 'w-100 h-100' , 'alt' => '' , 'title' => '') ).*/"
+                            </div>
+                            <div class='mt-10 text-secondary fw-500 fs-13'>
+                                Otras Marcas
+                            </div>
+                        </a>
                     </div>";
     $header_menu.=" 
                 </div>
             </div>
-        </div>
     </div>
     ";
 endforeach;

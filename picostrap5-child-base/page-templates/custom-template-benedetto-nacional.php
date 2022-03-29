@@ -254,7 +254,7 @@ get_header();
               </div>
               <div class="col-12 col-lg-6">
                 <div class="row overflow-hidden">
-                  <div class="col-12 offset-lg-1 col-lg-10 my-40 my-sm-70 mt-lg-48 mb-lg-70 fs-14 fs-sm-17" data-aos="fade-left">
+                  <div class="col-12 offset-lg-1 col-lg-10 my-40 my-sm-70 mt-lg-48 mb-lg-70 fs-14 fs-sm-17" data-aos="fade-up">
                     Nuestro manantial Font Natura está situado en la <strong>Sierra de Loja</strong>, 
                     un enclave natural caracterizado por su paisaje agreste y escarpado, 
                     lleno de magia y belleza salvajes. 

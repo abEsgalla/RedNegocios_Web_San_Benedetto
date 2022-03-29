@@ -39,7 +39,7 @@ if($fields["elemento_grid"]):
           else:
           ?> 
             <div class="text-white d-flex h-100 w-100" <?=($single_grid['fondo_color'])?'style="background-color:'.$single_grid['fondo_color'].'"':'';?>>
-              <div class="col-12 d-flex align-items-center" data-aos="fade-right">
+              <div class="col-12 d-flex align-items-center" data-aos="fade-up">
                 <div class="row">
                   <div class="offset-2 col-8">
                     <div class="row">

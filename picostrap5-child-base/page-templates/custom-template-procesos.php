@@ -53,7 +53,7 @@ get_header();
         <div class="row position-relative">
           <div class="col-12 col-lg-6 order-1 order-lg-0">
             <div class="row overflow-hidden">
-              <div class="col-12 offset-xl-2 col-xl-8 overflow-hidden" data-aos="fade-right">
+              <div class="col-12 offset-xl-2 col-xl-8 overflow-hidden" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 h3 fs-26 fs-md-48 mt-70 mt-lg-0">
                     Huella de Carbono 
@@ -97,7 +97,7 @@ get_header();
           </div>
           <div class="col-12 col-lg-6 d-inline-flex align-items-end">
             <div class="row overflow-hidden">
-              <div class="col-12 offset-xl-2 col-xl-8 gx-xl-0" data-aos="fade-left">
+              <div class="col-12 offset-xl-2 col-xl-8 gx-xl-0" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 h3 fs-26 fs-md-48 mt-70 mt-lg-0">
                     Smart Water 4.0 
