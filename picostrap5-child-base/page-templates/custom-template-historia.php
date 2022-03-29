@@ -267,7 +267,8 @@ get_header();
 
 
       
-      <div class="d-inline-block d-sm-none col-12 col-sm-6 position-relative">
+      <div class="d-inline-block d-sm-none col-12 col-sm-6 border-dashed-custom-mobile position-relative">
+        <div class="border-fill"></div>
         <div class="row">
           <div class="offset-2 col-10 offset-sm-2 col-sm-10">
             <div class="row text-start text-secondary">
