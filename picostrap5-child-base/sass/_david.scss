@@ -466,17 +466,22 @@
         width: 102%;
         max-width: inherit !important;
     }
+    //992PX
     @include media-breakpoint-down(lg) {
         width: 521px;
         max-width: 100% !important;
         right: -9px;
     }
+    //768PX
     @include media-breakpoint-down(md) {
+        display: none;
         width: 237px;
         top: 27px;
         right: -4px;
     }
+    //576px
     @include media-breakpoint-down(sm) {
+        display: none;
         width: 237px;
         top: 27px;
         right: -4px;
@@ -515,18 +520,23 @@
         width: 118%;
         max-width: inherit !important;
     }
+    //992PX
     @include media-breakpoint-down(lg) {
         width: 590px;
         max-width: 100% !important;
         top: 8px;
         left: -9px;
     }
+    //768PX
     @include media-breakpoint-down(md) {
+        display: none;
         width: 270px;
         top: 8px;
         left: 0px;
     }
+    //576px
     @include media-breakpoint-down(sm) {
+        display: none;
         width: 270px;
         top: 8px;
         left: 0px;
