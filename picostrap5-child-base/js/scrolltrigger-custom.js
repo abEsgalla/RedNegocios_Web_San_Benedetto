@@ -786,9 +786,9 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
   anos.forEach(ano => {
 
     let selectorAnoMobile = `.ano-timeline-${ano}-mobile.ano-timeline-right-mobile`;
-    console.log(selectorAnoMobile);
+    //console.log(selectorAnoMobile);
     if(document.querySelector(selectorAnoMobile)) {
-      console.log(selectorAnoMobile);
+      //console.log(selectorAnoMobile);
       gsap.to(selectorAnoMobile, {
         scrollTrigger: {
           trigger: '.ano-timeline-' + ano + '-mobile',
@@ -797,7 +797,7 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
           scrub: true,
           markers: false,
           onEnter: self => {
-            console.log(selectorAnoMobile);
+            //console.log(selectorAnoMobile);
             document.querySelector(selectorAnoMobile).classList.add('ano-activo');
             document.querySelector(".ano-" + ano + "-mobile").classList.remove('opacity-25');
           },
