@@ -79,7 +79,7 @@ if( document.body.classList.contains('single-landing') ) {
             scrub: true,
             markers: false,
           },
-          y: -100,
+          y: -150,
           rotation: 0,
         });
 
@@ -92,7 +92,7 @@ if( document.body.classList.contains('single-landing') ) {
             scrub: true,
             markers: false,
           },
-          y: -100,
+          y: -60,
           rotation: 0,
         });
 
@@ -105,7 +105,7 @@ if( document.body.classList.contains('single-landing') ) {
             scrub: true,
             markers: false,
           },
-          y: 200,
+          y: -100,
           rotation: 0,
         });
 
@@ -217,68 +217,136 @@ if( document.body.classList.contains('single-landing') ) {
 
   //Enjoy CON gas
   if( document.body.classList.contains('postid-489') ) {
-    gsap.to('.limon-1', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+    
+    ScrollTrigger.matchMedia({
+      "(max-width: 991px)": function() {
+        gsap.to('.limon-1', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -120,
+          rotation: 0,
+        });
+    
+        gsap.to('.limon-4', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 120,
+          rotation: 0,
+        });
+    
+        gsap.to('.fresa-1con', {
+          scrollTrigger: {
+            trigger: '.producto-central',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 140,
+          rotation: 0,
+        });
+    
+        //Fresa bloque texto
+        // gsap.to('.fresa-bloque-texto-con', {
+        //   scrollTrigger: {
+        //     trigger: '.frutas-bloque-texto-trigger',
+        //     start: 'top center',
+        //     end: 'bottom center',
+        //     scrub: true,
+        //     markers: false,
+        //   },
+        //   y: 330,
+        //   rotation: 0,
+        // });
+    
+        //Limon bloque texto
+        gsap.to('.limon-bloque-texto-con', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          x: 20,
+          y: -150,
+          rotation: 0,
+        });
       },
-      y: -220,
-      rotation: 0,
-    });
-
-    gsap.to('.limon-4', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-        markers: false,
+      "(min-width: 992px)": function() {
+        gsap.to('.limon-1', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: -220,
+          rotation: 0,
+        });
+    
+        gsap.to('.limon-4', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true,
+            markers: false,
+          },
+          y: 320,
+          rotation: 0,
+        });
+    
+        gsap.to('.fresa-1con', {
+          scrollTrigger: {
+            trigger: '.bg-custom-image',
+            start: 'top top',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: 300,
+          rotation: 0,
+        });
+    
+        //Fresa bloque texto
+        gsap.to('.fresa-bloque-texto-con', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: 330,
+          rotation: 0,
+        });
+    
+        //Limon bloque texto
+        gsap.to('.limon-bloque-texto-con', {
+          scrollTrigger: {
+            trigger: '.frutas-bloque-texto-trigger',
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true,
+            markers: false,
+          },
+          y: -200,
+          rotation: 0,
+        });
       },
-      y: 320,
-      rotation: 0,
     });
-
-    gsap.to('.fresa-1con', {
-      scrollTrigger: {
-        trigger: '.bg-custom-image',
-        start: 'top top',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: 300,
-      rotation: 0,
-    });
-
-    //Fresa bloque texto
-    gsap.to('.fresa-bloque-texto-con', {
-      scrollTrigger: {
-        trigger: '.frutas-bloque-texto-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: 330,
-      rotation: 0,
-    });
-
-    //Limon bloque texto
-    gsap.to('.limon-bloque-texto-con', {
-      scrollTrigger: {
-        trigger: '.frutas-bloque-texto-trigger',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        markers: false,
-      },
-      y: -200,
-      rotation: 0,
-    });
-
   }
 
   //Primavera
@@ -801,14 +869,3 @@ if(imgParallax) {
     }
   })
 }
-
-
-
-ScrollTrigger.matchMedia({
-  "(max-width: 991px)": function() {
-
-  },
-  "(min-width: 992px)": function() {
-
-  },
-});
