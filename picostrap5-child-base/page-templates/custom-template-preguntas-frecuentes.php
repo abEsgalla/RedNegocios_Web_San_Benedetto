@@ -12,7 +12,7 @@ get_header();
 <section class="gx-sm-12 gx-4">
   <div class="container-fluid position-relative zi-9 bg-secondary-darker pb-108 pb-sm-149 pt-165 pt-sm-214 pt-xxl-200 pb-xxl-165 pt-xxxl-221 pb-xxxl-149">
     <div class="bg-parallax opacity-50 w-100 h-100 position-absolute top-0 start-0 bg-postion-x-right" 
-      style="background:url('<?=wp_get_attachment_image_url(787, "full")?>')"></div>
+      style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
           <div class="col-12 text-center text-lg-start offset-xxl-1 col-xxl-6 offset-xxxl-0 col-xxxl-6">
