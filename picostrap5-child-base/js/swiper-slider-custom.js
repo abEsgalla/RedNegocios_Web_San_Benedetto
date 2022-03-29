@@ -99,6 +99,7 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
   autoHeight : true,
   loop: false,
   effect: 'fade',
+  preventInteractionOnTransition: true,
   fadeEffect: {
     crossFade: true
   },
@@ -123,7 +124,6 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
       let bg_color_slide = first_slide.dataset.bgcolor;
       let contenedor_swiper_home_promocional = document.querySelector("#sliderPromocional");
       contenedor_swiper_home_promocional.style["background-color"] = bg_color_slide;
-      // first_slide.querySelector('.wrapper-slide').classList.add('to-the-left');
       let arrows_next = document.querySelector("#sliderPromocional .arrow-next path");
       let arrows_prev = document.querySelector("#sliderPromocional .arrow-prev path");
       arrows_next.style.fill = first_slide.dataset.textcolor;
@@ -131,34 +131,36 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
     },
     slideChange: function(swiper) {
       let cortinilla = document.querySelector('.swiper-home-promocional .cortinilla-swiper');
+
+      //Restauro la cortinilla a estado inicial
       cortinilla.innerHTML = '';
       cortinilla.style.zIndex = 0;
       cortinilla.classList.remove('recogida');
 
-      //let current_active_slide = document.querySelector('.swiper-home-promocional .swiper-slide-active');
+      //Pillo el actual slider activo y lo clono
       let current_active_slide = swiper.slides[swiper.previousIndex];
       let current_active_slide_width = current_active_slide.offsetWidth;
-      console.log(current_active_slide_width);
       let current_active_slide_clon = current_active_slide.cloneNode(true);
 
+      //Limpio el slider clonado de clases/estilos que no quiero
       current_active_slide_clon.classList.remove('swiper-slide');
       current_active_slide_clon.classList.remove('swiper-slide-active');
       current_active_slide_clon.removeAttribute("style");
       current_active_slide_clon.style.width = current_active_slide_width + 'px';
 
+      //Meto el clon en el slider ficticio/cortinilla
       cortinilla.append(current_active_slide_clon);
-      //let current_active_slide_clon_html = current_active_slide_clon.innerHTML;
-
-      //Meto el contenido del actual slide en un slide ficticio
-      //cortinilla.innerHTML = current_active_slide_html;
     },
     slideChangeTransitionStart: function() {
       let cortinilla = document.querySelector('.swiper-home-promocional .cortinilla-swiper');
+
+      //Al empezar la transicion, pongo la cortinilla encima para que no se vea el cambio de slider real
       cortinilla.style.zIndex = 9;
     },
     slideChangeTransitionEnd: function() {
       let cortinilla = document.querySelector('.swiper-home-promocional .cortinilla-swiper');
 
+      //Al terminar la transicion de cambio de slide, "recojo" la cortinilla
       cortinilla.classList.add('recogida');
 
     }
