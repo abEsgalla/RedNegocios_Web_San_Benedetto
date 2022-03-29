@@ -37,11 +37,7 @@ get_header();
                         dirección
                       </div>
                       <div class="col-12 mt-8 mt-sm-24 text-secondary-light">
-                        Camino del Pinarejo, s/n <br>
-                        46390 San Antonio de Requena <br>
-                        Valencia – España <br>
-                        Lat.: 39° 32’ 51.2376” <br>
-                        Alt.: -1° 7‘ 59.7504” <br>
+                        <?=$acf_fields['direccion_oficinas_centrales']?>
                       </div>
                     </div>
                   </div>
@@ -62,8 +58,7 @@ get_header();
                         Teléfono / FAX
                       </div>
                       <div class="col-12 mt-8 mt-sm-24 text-secondary-light">
-                        Tel. +34 96 232 20 00 <br>
-                        Fax +34 96 232 06 16
+                        <?=$acf_fields['telefono_oficinas_centrales']?>
                       </div>
                     </div>
                   </div>
@@ -82,9 +77,7 @@ get_header();
                         Cómo Llegar
                       </div>
                       <div class="col-12 mt-8 mt-sm-24 text-secondary-light">
-                        Salida 285 de la A-3, dirección estación del AVE. 
-                        Pasar la vía del AVE hacia camino rural y girar a la izquierda. 
-                        A 3 km girar a la derecha.
+                        <?=$acf_fields['como_llegar_oficinas_centrales']?>
                       </div>
                     </div>
                   </div>
@@ -156,10 +149,7 @@ get_header();
                     sede granada
                   </div>
                   <div class="col-12 mt-8 mt-sm-24 text-secondary-light">
-                    Parque La Presa, S.A. <br>
-                    Finca La Presa, s/n <br>
-                    18300 Loja (Granada) <br>
-                    Tfno.: (+34) 958 325 535 <br>
+                    <?=$acf_fields['direccion_sede_granada']?>
                   </div>
                 </div>
               </div>
@@ -190,9 +180,7 @@ get_header();
               </div>
               <div class="col-12 offset-lg-2 col-lg-10 text-white">
                 <div class="mt-24 mt-sm-40 mt-lg-64 mb-40 mb-sm-96 mb-xl-48 fs-17">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit hac facilisis, 
-                  metus aptent rhoncus tristique curabitur semper fusce nunc integer, 
-                  auctor leo dis eros vehicula suscipit dignissim sodales.
+                  <?=$acf_fields['texto_formulario']?>
                 </div>
               </div>
             </div>
