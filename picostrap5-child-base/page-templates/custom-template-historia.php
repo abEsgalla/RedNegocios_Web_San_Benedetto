@@ -33,16 +33,13 @@ get_header();
                 <div class="col-12 offset-sm-1 col-sm-10">
                   <div class="row">
                     <div class="col-12  h2 fs-42 fs-lg-64 ">
-                      1997
+                      <?=$acf_fields['banner_superior_ano']?>
                     </div>
                     <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 fs-32 fs-lg-40 mt-24 mt-28">
-                      Agua Mineral San Benedetto S.A.U
+                      <?=$acf_fields['banner_superior_title']?>
                     </div>
                     <div class="col-12  fs-14 fs-lg-17  mt-24 mt-24 fw-500 white-line-timeline-trigger">
-                      Agua Mineral San Benedetto S.A.U. comienza su andadura en España, 
-                      en un enclave privilegiado por su entorno y buenas comunicaciones, 
-                      con fama de ser la aldea más grande de Europa: San Antonio de Requena (Valencia). 
-                      En julio de ese mismo año, el manantial <b>Fuente Primavera</b> es declarado Agua Mineral Natural.
+                      <?=$acf_fields['banner_superior_texto']?>
                     </div>
                   </div>
                 </div>
@@ -67,15 +64,10 @@ get_header();
                     <span class="ano-timeline-left ano-timeline-2002">2002</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Lanzamiento Enjoy,<br> Thè y UpGrade
+                    <?=$acf_fields['titulo_2002']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-23">
-                    Tras varios años conquistando terreno en el mercado del agua mineral, 
-                    la compañía realiza su primera producción de aséptico en España con 
-                    el lanzamiento de las marcas <b>Enjoy, 
-                    Thè San Benedetto y UpGrade. </b>
-                    Un hito que supuso el primer peldaño hacia nuestra visión de 
-                    convertirnos en una <i>Total Beverage Company</i>.
+                    <?=$acf_fields['descripcion_2002']?>
                   </div>
                   <div class="col-12 mt-65">
                     <?=wp_get_attachment_image(592, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -97,11 +89,10 @@ get_header();
                     <span class="ano-timeline-left ano-timeline-2008">2008</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Triple certificación de AENOR
+                    <?=$acf_fields['titulo_2008']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Nos convertimos en la primera envasadora de agua mineral y bebidas 
-                    en España que obtiene la <b>triple certificación de AENOR</b>. 
+                    <?=$acf_fields['descripcion_2008']?>
                   </div>
                   <div class="col-12 mt-82">
                     <?=wp_get_attachment_image(596, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -119,13 +110,10 @@ get_header();
                     <span class="ano-timeline-left ano-timeline-2013">2013</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Primer envasador de agua mineral de España por volumen
+                    <?=$acf_fields['titulo_2013']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    ¡Agua Mineral San Benedetto rebasa los 600 millones de litros de agua mineral vendidos! 
-                    Un punto a partir del cual la compañía comienza un ascenso imparable 
-                    hasta situarse en los más de 1.000 millones de litros que vende actualmente, 
-                    convirtiéndose así en el primer envasador de agua mineral en España por volumen.
+                    <?=$acf_fields['descripcion_2013']?>
                   </div>
                   <div class="col-12 mt-64">
                     <?=wp_get_attachment_image(597, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -138,15 +126,10 @@ get_header();
                     <span class="ano-timeline-left ano-timeline-2019">2019</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Nueva gama San Benedetto Zero
+                    <?=$acf_fields['titulo_2019']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Agua Mineral San Benedetto introduce en España la gama 
-                    <b>San Benedetto Zero</b>, 
-                    todo un hito de innovación en refrescos al estar elaborada con más de un 20% de zumo de frutas, 
-                    agua mineral y sin azúcares añadidos. 
-                    Una gama que en su primer año de vida alcanzó casi el millón de unidades vendidas 
-                    y rozó los dos millones en el siguiente ejercicio. ¡Y seguimos creciendo!
+                    <?=$acf_fields['descripcion_2019']?>
                   </div>
                   <div class="col-12 mt-56">
                     <?=wp_get_attachment_image(598, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -159,14 +142,10 @@ get_header();
                     <span class="ano-timeline-left ano-timeline-2022">2022</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Relanzamiento de nueva identidad Fuente Primavera
+                    <?=$acf_fields['titulo_2022']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Con motivo del 25º aniversario de la compañía y de la marca, 
-                    Agua Mineral San Benedetto relanza Fuente Primavera bajo una nueva identidad visual 
-                    y una nueva gama que sigue la estela del proyecto Zero CO2 al compensar el 100% 
-                    de su huella de carbono. También somos el Agua Oficial de Valencia Capital Mundial 
-                    del Diseño 2022.   
+                    <?=$acf_fields['descripcion_2022']?>
                   </div>
                 </div>
               </div>
@@ -188,14 +167,10 @@ get_header();
                     <span class="ano-timeline-right ano-timeline-2006">2006</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Apertura planta nueva planta de envasado
+                    <?=$acf_fields['titulo_2006']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Agua Mineral San Benedetto amplía su capacidad para dar servicio con la apertura de una segunda planta de envasado: 
-                    <b>Parque La Presa S.A.</b> en Loja (Granada). 
-                    La planta envasa agua mineral procedente del manantial <b>Font Natura</b>, 
-                    con origen en la Sierra de Loja. 
-                    Nos situamos así junto a nuestros consumidores andaluces, reduciendo el impacto medioambiental de nuestros productos.
+                    <?=$acf_fields['descripcion_2006']?>
                   </div>
                 </div>
               </div>
@@ -208,11 +183,10 @@ get_header();
                     <span class="ano-timeline-right ano-timeline-2009">2009</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Producción de refrescos con gas Enjoy
+                    <?=$acf_fields['titulo_2009']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Agua Mineral San Benedetto comienza la producción de refrescos con gas en su planta de San Antonio de Requena, 
-                    ampliando <b>Enjoy</b> su portfolio de referencias y sabores. 
+                    <?=$acf_fields['descripcion_2009']?>
                   </div>
                 </div>
               </div>
@@ -225,12 +199,10 @@ get_header();
                     <span class="ano-timeline-right ano-timeline-2016">2016</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Lanzamiento de botella <i>Easy Ecogreen</i> 1L
+                    <?=$acf_fields['titulo_2016']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    La compañía lanza en España la botella <b><i>Easy Ecogreen</i> 1L</b>, 
-                    un envase con 50% de rPET, producido con energías 100% renovables y que reduce en un 20% sus emisiones de CO2. 
-                    Ese mismo año, <i>Easy Ecogreen</i> 1L es galardonada con el premio Elegido Producto del Año 2016.
+                    <?=$acf_fields['descripcion_2016']?>
                   </div>
                 </div>
               </div>
@@ -243,13 +215,10 @@ get_header();
                     <span class="ano-timeline-right ano-timeline-2020">2020</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Primera Botella de Carbono Neutral en España
+                    <?=$acf_fields['titulo_2020']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    La compañía presenta su primera botella de Carbono Neutral en España bajo el <b>proyecto Zero CO2</b>. 
-                    Gracias a que en Agua Mineral San Benedetto medimos nuestra huella de carbono, 
-                    podemos afirmar que compensamos el 100% de las emisiones de CO2 de la botella Font Natura 1L. 
-                    ¿Cómo? ¡Descúbrelo aquí!   
+                    <?=$acf_fields['descripcion_2020']?> 
                   </div>
                 </div>
               </div>
@@ -278,15 +247,10 @@ get_header();
                     <span class="ano-timeline-right-mobile ano-timeline-2002-mobile ano-timeline-right">2002</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Lanzamiento Enjoy,<br> Thè y UpGrade
+                    <?=$acf_fields['titulo_2002']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-23">
-                    Tras varios años conquistando terreno en el mercado del agua mineral, 
-                    la compañía realiza su primera producción de aséptico en España con 
-                    el lanzamiento de las marcas <b>Enjoy, 
-                    Thè San Benedetto y UpGrade. </b>
-                    Un hito que supuso el primer peldaño hacia nuestra visión de 
-                    convertirnos en una <i>Total Beverage Company</i>.
+                    <?=$acf_fields['descripcion_2002']?>
                   </div>
                   <div class="col-12 mt-24">
                     <?=wp_get_attachment_image(592, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -308,14 +272,10 @@ get_header();
                     <span class="ano-timeline-right-mobile ano-timeline-2006-mobile ano-timeline-right">2006</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Apertura planta nueva planta de envasado
+                    <?=$acf_fields['titulo_2006']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Agua Mineral San Benedetto amplía su capacidad para dar servicio con la apertura de una segunda planta de envasado: 
-                    <b>Parque La Presa S.A.</b> en Loja (Granada). 
-                    La planta envasa agua mineral procedente del manantial <b>Font Natura</b>, 
-                    con origen en la Sierra de Loja. 
-                    Nos situamos así junto a nuestros consumidores andaluces, reduciendo el impacto medioambiental de nuestros productos.
+                    <?=$acf_fields['descripcion_2006']?>
                   </div>
                   <div class="col-12 mt-24">
                     <?=wp_get_attachment_image(599, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -328,11 +288,10 @@ get_header();
                     <span class="ano-timeline-right-mobile ano-timeline-2008-mobile ano-timeline-right">2008</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Triple certificación de AENOR
+                    <?=$acf_fields['titulo_2008']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Nos convertimos en la primera envasadora de agua mineral y bebidas 
-                    en España que obtiene la <b>triple certificación de AENOR</b>. 
+                    <?=$acf_fields['descripcion_2008']?>
                   </div>
                   <div class="col-12 mt-24">
                     <?=wp_get_attachment_image(596, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -350,11 +309,10 @@ get_header();
                     <span class="ano-timeline-right-mobile ano-timeline-2009-mobile ano-timeline-right">2009</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Producción de refrescos con gas Enjoy
+                    <?=$acf_fields['titulo_2009']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Agua Mineral San Benedetto comienza la producción de refrescos con gas en su planta de San Antonio de Requena, 
-                    ampliando <b>Enjoy</b> su portfolio de referencias y sabores. 
+                    <?=$acf_fields['descripcion_2009']?>
                   </div>
                   <div class="col-12 mt-24">
                     <?=wp_get_attachment_image(600, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -367,13 +325,10 @@ get_header();
                     <span class="ano-timeline-right-mobile ano-timeline-2013-mobile ano-timeline-right">2013</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Primer envasador de agua mineral de España por volumen
+                    <?=$acf_fields['titulo_2013']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    ¡Agua Mineral San Benedetto rebasa los 600 millones de litros de agua mineral vendidos! 
-                    Un punto a partir del cual la compañía comienza un ascenso imparable 
-                    hasta situarse en los más de 1.000 millones de litros que vende actualmente, 
-                    convirtiéndose así en el primer envasador de agua mineral en España por volumen.
+                    <?=$acf_fields['descripcion_2013']?>
                   </div>
                   <div class="col-12 mt-24">
                     <?=wp_get_attachment_image(597, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -386,12 +341,10 @@ get_header();
                     <span class="ano-timeline-right-mobile ano-timeline-2016-mobile ano-timeline-right">2016</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Lanzamiento de botella <i>Easy Ecogreen</i> 1L
+                    <?=$acf_fields['titulo_2016']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    La compañía lanza en España la botella <b><i>Easy Ecogreen</i> 1L</b>, 
-                    un envase con 50% de rPET, producido con energías 100% renovables y que reduce en un 20% sus emisiones de CO2. 
-                    Ese mismo año, <i>Easy Ecogreen</i> 1L es galardonada con el premio Elegido Producto del Año 2016.
+                    <?=$acf_fields['descripcion_2016']?>
                   </div>
                   <div class="col-12 mt-24">
                     <?=wp_get_attachment_image(1128, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -404,15 +357,10 @@ get_header();
                     <span class="ano-timeline-right-mobile ano-timeline-2019-mobile ano-timeline-right">2019</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Nueva gama San Benedetto Zero
+                    <?=$acf_fields['titulo_2019']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Agua Mineral San Benedetto introduce en España la gama 
-                    <b>San Benedetto Zero</b>, 
-                    todo un hito de innovación en refrescos al estar elaborada con más de un 20% de zumo de frutas, 
-                    agua mineral y sin azúcares añadidos. 
-                    Una gama que en su primer año de vida alcanzó casi el millón de unidades vendidas 
-                    y rozó los dos millones en el siguiente ejercicio. ¡Y seguimos creciendo!
+                    <?=$acf_fields['descripcion_2019']?>
                   </div>
                   <div class="col-12 mt-24">
                     <?=wp_get_attachment_image(598, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -425,13 +373,10 @@ get_header();
                     <span class="ano-timeline-right-mobile ano-timeline-2020-mobile ano-timeline-right">2020</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Primera Botella de Carbono Neutral en España
+                    <?=$acf_fields['titulo_2020']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    La compañía presenta su primera botella de Carbono Neutral en España bajo el <b>proyecto Zero CO2</b>. 
-                    Gracias a que en Agua Mineral San Benedetto medimos nuestra huella de carbono, 
-                    podemos afirmar que compensamos el 100% de las emisiones de CO2 de la botella Font Natura 1L. 
-                    ¿Cómo? ¡Descúbrelo aquí!   
+                    <?=$acf_fields['descripcion_2020']?>
                   </div>
                   <div class="col-12 mt-24">
                     <?=wp_get_attachment_image(602, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
@@ -444,14 +389,10 @@ get_header();
                     <span class="ano-timeline-right-mobile ano-timeline-2022-mobile ano-timeline-right">2022</span>
                   </div>
                   <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-8 mt-sm-24">
-                    Relanzamiento de nueva identidad Fuente Primavera
+                    <?=$acf_fields['titulo_2022']?>
                   </div>
                   <div class="col-12  fs-14 fs-lg-17  mt-24">
-                    Con motivo del 25º aniversario de la compañía y de la marca, 
-                    Agua Mineral San Benedetto relanza Fuente Primavera bajo una nueva identidad visual 
-                    y una nueva gama que sigue la estela del proyecto Zero CO2 al compensar el 100% 
-                    de su huella de carbono. También somos el Agua Oficial de Valencia Capital Mundial 
-                    del Diseño 2022.   
+                    <?=$acf_fields['descripcion_2022']?> 
                   </div>
                 </div>
               </div>
