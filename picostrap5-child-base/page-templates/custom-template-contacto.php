@@ -199,7 +199,10 @@ get_header();
       <div class="col-12 col-lg-6 bg-secondary"> 
         <div class="row px-sm-0 px-12">
           <div class="col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-6">
-            <form class="my-48 my-sm-64 my-lg-80 text-white rm-bootstrap-form-style needs-validation" novalidate>
+            <div class="contact-form-contacto my-48 my-sm-64 my-lg-80">
+              <?=do_shortcode('[contact-form-7 id="1372" title="Formulario de contacto 1"]')?>
+            </div>
+            <form class="d-none my-48 my-sm-64 my-lg-80 text-white rm-bootstrap-form-style needs-validation" novalidate>
               <div class="mt-3">
                 <label for="inputNombre" class="form-label fs-12 mb-1">Nombre y apellidos *</label>
                 <input type="text" placeholder="Ej. Jesús Carrillo Laso" 
