@@ -146,7 +146,7 @@ get_header();
               <div class="col-10 col-sm-11 col-lg-10">
                 <div class="row">
                   <div class="col-12 text-uppercase fw-bolder mt-8">
-                    sede granada
+                    Planta Granada
                   </div>
                   <div class="col-12 mt-8 mt-sm-24 text-secondary-light">
                     <?=$acf_fields['direccion_sede_granada']?>

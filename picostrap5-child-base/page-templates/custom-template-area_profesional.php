@@ -79,7 +79,7 @@ get_header();
                     <div>
                       <?=$acf_fields['texto_grid_inf_der']?>
                     </div>
-                    <a href="<?=$acf_fields['link_catalogo']?>" class="text-reset text-decoration-none">
+                    <a href="<?=$acf_fields['link_catalogo']?>" target="_blank" class="text-reset text-decoration-none">
                       <div class="btn btn-primary text-uppercase text-white rounded-0 fs-14 mt-56 fw-500">
                         Descarga nuestro catálogo
                       </div>

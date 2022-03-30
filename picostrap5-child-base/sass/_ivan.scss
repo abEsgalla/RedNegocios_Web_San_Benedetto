@@ -14,6 +14,11 @@
   transform: translateX(-50%);
   top: -150px;
   z-index: 100;
+  @include media-breakpoint-down(sm) {
+    left: 11px;
+    width: 1px;
+    transform: none;
+  }
 }
 
 
