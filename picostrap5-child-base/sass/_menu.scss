@@ -21,6 +21,16 @@ body:not(.home){
   }
 }
 
+.fixed-top.bg-white{
+  .navbar{
+    &.menu-light:not(.menu-scrolled):not(.menu-open-offcanvas){
+      .custom-logo{
+        filter: none !important;
+      }
+    }
+  }
+}
+
 .navbar{
   // Logo
   .custom-logo{
