@@ -34,7 +34,7 @@ get_header();
 
 <section class="mb-96 position-relative mt-custom-28 mw-custom-container">
   <?=wp_get_attachment_image(1177, "full", "", array( 'class' => 'sello opacity-75 translate-middle top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
-  <?=wp_get_attachment_image(1178, "full", "", array( 'class' => 'sello-rotacion opacity-75 top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
+  <?=wp_get_attachment_image(1606, "full", "", array( 'class' => 'sello-rotacion opacity-75 top-0 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?> 
   <div class="container bg-white">
     <div class="row text-center">
       <div class="col-12 offset-lg-2 col-lg-8 mt-138 mt-sm-200 mt-lg-176 mt-xxxl-178 fs-18 fs-sm-24 fs-lg-32 fw-bolder text-secondary text-uppercase">
