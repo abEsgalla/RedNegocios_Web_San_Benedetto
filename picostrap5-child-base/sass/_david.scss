@@ -678,6 +678,9 @@
         border: 0 !important;
         border-bottom: 1px solid #dee2e6 !important;
         font-size: 19px;
+        @include media-breakpoint-down(sm) {
+            font-size: 16px;
+        }
     }
     label{
         width: 100%;
@@ -704,11 +707,22 @@
         position: relative;
         height: 40px;
         display: block;
+        &.file-selected{
+            &:before{
+                content: 'Archivo seleccionado';
+                opacity: 1;
+                color: #69fa1a;
+            }
+        }
+        &:not(.file-selected){
+            &:before{
+                content: 'Ningún archivo seleccionado';
+            }
+        }
         &:before{
             font-size: 18px;
             font-weight: 400;
-            content: 'Ningún archivo seleccionado';
-            border-bottom: 1px solid;
+            border-bottom: 1px solid white;
             padding: 8px;
             position: absolute;
             height: 100%;
@@ -716,6 +730,11 @@
             right: 0;
             opacity: 0.5;
             background: transparent;
+            @include media-breakpoint-down(sm) {
+                width: 65%;
+                font-size: 13px;
+                padding: 6px;
+            }
         }
         &:after{
             font-size: 14px;
@@ -729,6 +748,14 @@
             width: 30%;
             left: 0;
             background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-breakpoint-down(sm) {
+                width: 35%;
+                font-size: 12px;
+                padding: 6px;
+            }
         }
     }
 }
@@ -779,4 +806,10 @@
 
 .zi-999{
     z-index: 999;
+}
+
+.page-template-custom-template-politicas{
+    a{
+        word-break: break-word;
+    }
 }
