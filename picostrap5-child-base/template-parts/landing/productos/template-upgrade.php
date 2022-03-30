@@ -37,7 +37,7 @@ if($acf_fields['secciones']):
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="swiper swiper-landing-productos mt-94">
+                            <div class="swiper swiper-landing-productos slider-productos-upgrade mt-94">
                             <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?>">
                                 <?php
                                 if ($seccion['slider']):

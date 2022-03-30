@@ -609,6 +609,17 @@ span{
 }
 
 .swiper-landing-productos{
+    &.slider-productos-upgrade{
+        .swiper-slide{
+            &:hover{
+                .name-slider-product{
+                    &:after{
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
     .swiper-slide:not([role="group"]){
         position: relative;
         &:after{

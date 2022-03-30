@@ -30,7 +30,7 @@
                 data-image="<?=wp_get_attachment_image_src($slide['imagen_producto'], 'full')[0]?>" 
                 data-name="<?=ucfirst($slide['nombre_producto'])?>" 
                 data-description="<?=$slide['descripcion_producto']?>">
-                  <div style="background-color:<?=get_field('caracteristicas_producto',$seccion['id_producto'])['color_corporativo']?>"
+                  <div style="background-color:<?=get_field('caracteristicas_producto',$GLOBALS['id_producto'])['color_corporativo']?>"
                   class='w-100 ratio ratio-5x7 d-flex justify-content-center align-items-center container-scale'>
                       <div class="bg-custom-post" style="background:url('<?=wp_get_attachment_image_url($slide['imagen_producto'], "full", "")?>')">
                       </div>

@@ -9,14 +9,14 @@
       <div class="col-12 col-xl-10 offset-xl-1">
         <div class="d-flex align-items-start ms-xxl-12 justify-content-lg-center justify-content-xl-start">
           <div class="dots-1 align-self-center">
-            <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/dots_small.svg'; ?>" class="">
+            <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/dots_small.svg'; ?>" class="">
           </div>
           <div class="dots-2 align-self-start">
-            <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/dots.svg'; ?>">
+            <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/dots.svg'; ?>">
           </div>
           <div class="burbuja-2">
             <div class="position-relative">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/calcio.svg'; ?>">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/calcio.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Calcio'); ?></p>
                   <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -25,7 +25,7 @@
           </div>
           <div class="burbuja-4 align-self-center">
             <div class="position-relative">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/silice.svg'; ?>">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/silice.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Sílice'); ?></p>
                   <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -34,7 +34,7 @@
           </div>
           <div class="burbuja-6">
             <div class="position-relative">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/magnesio.svg'; ?>">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/magnesio.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Magnesio'); ?></p>
                   <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -42,13 +42,13 @@
             </div>
           </div>
           <div class="dots-4 align-self-center">
-            <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/dots_small.svg'; ?>">
+            <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/dots_small.svg'; ?>">
           </div>
         </div>
         <div class="d-flex justify-content-lg-center justify-content-xl-start">
           <div class="burbuja-1">
             <div class="position-relative">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/sulfatos.svg'; ?>">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/sulfatos.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Sulfatos'); ?></p>
                   <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -56,11 +56,11 @@
             </div>
           </div>
           <div class="dots-3 align-self-start">
-            <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/dots_small.svg'; ?>">
+            <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/dots_small.svg'; ?>">
           </div>
           <div class="burbuja-3 align-self-start">
             <div class="position-relative">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/cloruros.svg'; ?>">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/cloruros.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Cloruros'); ?></p>
                   <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -69,7 +69,7 @@
           </div>
           <div class="burbuja-5 align-self-start">
             <div class="position-relative">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/sodio.svg'; ?>">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/sodio.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Sodio'); ?></p>
                   <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -78,7 +78,7 @@
           </div>
           <div class="burbuja-7">
             <div class="position-relative">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/bicarbonato.svg'; ?>" >
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/bicarbonato.svg'; ?>" >
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Bicarbonatos'); ?></p>
                   <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -86,7 +86,7 @@
             </div>              
           </div>
           <div class="dots-5 align-self-end">
-            <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/dots.svg'; ?>">
+            <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/dots.svg'; ?>">
           </div>
         </div>
       </div>
@@ -97,14 +97,14 @@
         <div class="col-12">
           <div class="d-flex justify-content-center">
             <div class="dots-1 align-self-center">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/dots_small.svg'; ?>" class="">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/dots_small.svg'; ?>" class="">
             </div>
             <div class="dots-2 align-self-start">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/dots.svg'; ?>">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/dots.svg'; ?>">
             </div>
             <div class="burbuja-2">
               <div class="position-relative">
-                <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/calcio.svg'; ?>">
+                <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/calcio.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Calcio'); ?></p>
                     <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -115,7 +115,7 @@
           <div class="d-flex justify-content-center">
             <div class="burbuja-1">
               <div class="position-relative">
-                <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/sulfatos.svg'; ?>">
+                <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/sulfatos.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Sulfatos'); ?></p>
                     <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -124,7 +124,7 @@
             </div>
             <div class="burbuja-3">
               <div class="position-relative">
-                <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/cloruros.svg'; ?>">
+                <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/cloruros.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Cloruros'); ?></p>
                     <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -132,13 +132,13 @@
               </div>
             </div>
             <div class="dots-3">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/dots_small.svg'; ?>">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/dots_small.svg'; ?>">
             </div>
           </div>
           <div class="d-flex justify-content-start">
             <div class="burbuja-4">
               <div class="position-relative">
-                <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/silice.svg'; ?>">
+                <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/silice.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Sílice'); ?></p>
                     <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -147,7 +147,7 @@
             </div>
             <div class="burbuja-5">
               <div class="position-relative">
-                <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/sodio.svg'; ?>">
+                <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/sodio.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Sodio'); ?></p>
                     <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -158,7 +158,7 @@
           <div class="d-flex justify-content-center">
             <div class="burbuja-6">
               <div class="position-relative">
-                <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/magnesio.svg'; ?>">
+                <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/magnesio.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Magnesio'); ?></p>
                     <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -167,7 +167,7 @@
             </div>
             <div class="burbuja-7">
               <div class="position-relative">
-                <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/bicarbonato.svg'; ?>" >
+                <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/bicarbonato.svg'; ?>" >
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Bicarbonatos'); ?></p>
                     <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
@@ -177,7 +177,7 @@
           </div>
           <div class="d-flex justify-content-center">
             <div class="dots-5">
-              <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/dots.svg'; ?>">
+              <img src="<?php echo get_stylesheet_directory_uri().'/src/img//background-sanbenedetto/dots.svg'; ?>">
             </div>
           </div>
         </div>
