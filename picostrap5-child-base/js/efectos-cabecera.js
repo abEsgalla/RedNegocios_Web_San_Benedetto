@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // SCROLL
   window.addEventListener("scroll", event => {
-    if(scrollY>200){
+    if(scrollY>150){
       
       if(!document.querySelector('body').classList.contains('single-landing')){
         document.querySelector('.fixed-top > nav').classList.add('menu-scrolled');
