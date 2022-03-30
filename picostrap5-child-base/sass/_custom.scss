@@ -804,8 +804,9 @@ span{
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
-        background-image: url('../src/img/splash.png');
+        background-image: url('../src/img/splash_marcas.png');
         z-index: 2;
+        opacity: 0.5;
     }
 }
 

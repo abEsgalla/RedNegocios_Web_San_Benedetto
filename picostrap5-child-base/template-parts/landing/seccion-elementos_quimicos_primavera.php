@@ -7,7 +7,7 @@
   <div class="container position-relative d-none d-xl-block text-center">
     <div class="row">
       <div class="col-12 col-xl-10 offset-xl-1">
-        <div class="d-flex align-items-start ms-xxl-12 justify-content-lg-center justify-content-xxl-start">
+        <div class="d-flex align-items-start ms-xxl-12 justify-content-lg-center justify-content-xl-start">
           <div class="dots-1 align-self-center">
             <img src="<?php echo get_stylesheet_directory_uri().'/src/img/dots_small.svg'; ?>" class="">
           </div>
@@ -18,8 +18,8 @@
             <div class="position-relative">
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/calcio.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
-                  <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Calcio</p>
-                  <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                  <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Calcio'); ?></p>
+                  <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
               </div>
             </div>
           </div>
@@ -27,8 +27,8 @@
             <div class="position-relative">
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/silice.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
-                  <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Sílice</p>
-                  <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                  <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Sílice'); ?></p>
+                  <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
               </div>
             </div>
           </div>
@@ -36,8 +36,8 @@
             <div class="position-relative">
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/magnesio.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
-                  <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Magnesio</p>
-                  <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                  <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Magnesio'); ?></p>
+                  <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
             <img src="<?php echo get_stylesheet_directory_uri().'/src/img/dots_small.svg'; ?>">
           </div>
         </div>
-        <div class="d-flex justify-content-lg-center justify-content-xxl-start">
+        <div class="d-flex justify-content-lg-center justify-content-xl-start">
           <div class="burbuja-1">
             <div class="position-relative">
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/sulfatos.svg'; ?>">
@@ -106,8 +106,8 @@
               <div class="position-relative">
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/calcio.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
-                    <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Calcio</p>
-                    <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                    <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Calcio'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -117,8 +117,8 @@
               <div class="position-relative">
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/sulfatos.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
-                    <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Sulfatos</p>
-                    <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                    <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Sulfatos'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -126,8 +126,8 @@
               <div class="position-relative">
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/cloruros.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
-                    <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Cloruros</p>
-                    <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                    <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Cloruros'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -140,8 +140,8 @@
               <div class="position-relative">
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/silice.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
-                    <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Sílice</p>
-                    <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                    <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Sílice'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -149,8 +149,8 @@
               <div class="position-relative">
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/sodio.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
-                    <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Sodio</p>
-                    <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                    <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Sodio'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -160,8 +160,8 @@
               <div class="position-relative">
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/magnesio.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
-                    <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Magnesio</p>
-                    <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                    <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Magnesio'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -169,8 +169,8 @@
               <div class="position-relative">
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/bicarbonato.svg'; ?>" >
                 <div class="position-absolute top-50 start-50 translate-middle">
-                    <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase">Bicarbonatos</p>
-                    <p class="mb-0 fs-12 text-secondary">88 mg/l</p>
+                    <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Bicarbonatos'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
                 </div>
               </div>              
             </div>

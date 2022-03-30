@@ -28,7 +28,7 @@
 						get_template_part( 'template-parts/landing/seccion', 'slider_imagenes_productos', $seccion);
 					break;
 					case 'elementos_quimicos':
-						get_template_part( 'template-parts/landing/seccion', 'elementos_quimicos_new', $seccion);
+						get_template_part( 'template-parts/landing/seccion', 'elementos_quimicos_primavera', $seccion);
 					break;
 					case 'banner_redes':
 						get_template_part( 'template-parts/landing/seccion', 'banner_redes', $seccion );
