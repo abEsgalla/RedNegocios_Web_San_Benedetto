@@ -925,7 +925,7 @@ if( document.body.classList.contains('page-template-custom-template-contacto') )
 
       setTimeout(() => {
         document.querySelector('.road-localizacion-tablet .localizacion-final').classList.add('activo');
-      }, 6500);
+      }, 7000);
     },
   });
 
@@ -950,7 +950,7 @@ if( document.body.classList.contains('page-template-custom-template-contacto') )
 
       setTimeout(() => {
         document.querySelector('.road-localizacion-mobile .localizacion-final').classList.add('activo');
-      }, 6500);
+      }, 3000);
     },
   });
 }
