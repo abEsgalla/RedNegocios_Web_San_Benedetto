@@ -132,7 +132,7 @@ defined( 'ABSPATH' ) || exit;
               </div>
               <div class="border-bottom border-secondary-lighter py-16">
                 <div class="d-flex justify-content-between">
-                  <a href="#" class="text-reset text-decoration-none">nosotros</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
+                  <a href="<?=get_permalink(579)?>" class="text-reset text-decoration-none">nosotros</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
                 </div>
                 <div class="submenu fw-400 fs-13 ps-16">
                   <div class="pt-16">
