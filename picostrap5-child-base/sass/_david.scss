@@ -252,11 +252,23 @@
 
 .translate-custom-contacto-lg-y{
     transform: translateY(-70%);
+    @include media-breakpoint-down(xxxl) {
+        transform: translateY(-76%);
+    }
+    @include media-breakpoint-down(xxl) {
+        transform: translateY(-76%);
+    }
+    @include media-breakpoint-down(xl) {
+        transform: translateY(-84%);
+    }
     @include media-breakpoint-down(lg) {
-        transform: translateY(-230%);
+        transform: translateY(-233%);
     }
     @include media-breakpoint-down(md) {
         transform: translateY(-135%);
+    }
+    @include media-breakpoint-down(sm) {
+        transform: translateY(-147%);
     }
 }
 
@@ -618,6 +630,11 @@
                 font-size: 16px;
                 margin-left: 16px;
             }
+        }
+    }
+    .wpcf7-checkbox{
+        .wpcf7-list-item-label{
+            font-size: 12px !important;
         }
     }
     input[type="checkbox"] {
