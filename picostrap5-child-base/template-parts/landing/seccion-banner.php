@@ -10,14 +10,17 @@
   if($seccion['fondo']==383):
     $padding="pt-64 pb-64 pt-md-111 pt-xxl-145 bg-imagen-primavera-botellas ";
   endif;
+  if($seccion['fondo']==1586):
+    $padding="py-64 bg-banner-botellas ";
+  endif;
   if($seccion['fondo']==1115):
     $padding="py-145 py-md-200 pt-xxl-200 pb-xxl-245";
   endif;
   ?>
   
-  <section class="position-relative bg-custom-image <?=$padding?>" style="background:url('<?=wp_get_attachment_image_url($seccion['fondo'], "full")?>')">
+  <section class="position-relative bg-custom-image <?=$padding?>" style="background-image:url('<?=wp_get_attachment_image_url($seccion['fondo'], "full")?>')">
       <?php
-        if($seccion['fondo']==383):
+        if($seccion['fondo']==1586):
         ?>
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/background-primavera/imagen-superior-primavera-slider-botellas.png" class="w-100 d-sm-none">
         <?php
@@ -57,6 +60,13 @@
               </div>
               <?
               endif;
+              ?>
+              <?php
+                if($seccion['fondo']==1586):
+              ?>
+                <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/imagen-superior-primavera-slider-botellas.png'; ?>" class="imagen-slider-botellas-responsive p-0 w-100 mt-64 mb-0 d-block d-md-none">
+              <?php
+                endif;
               ?>
             </div>
           </div>
