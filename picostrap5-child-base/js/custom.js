@@ -20,46 +20,47 @@ document.addEventListener('DOMContentLoaded', function () {
       slider_principal.classList.add('slide-light');
     }
   }
-
-  document.querySelector('.wpcf7-form-control-wrap.menu-377 select').addEventListener('change', function (event) {
-    var email = "info@sanbenedetto.es";
-    var dpt_comercial_1 = "sandra.garcia@sanbenedetto.es";
-    var dpt_comercial_2 = "cristina.diaz@sanbenedetto.es";
-    var dpt_calidad = "ee2ef3c2.sanbenedetto.es@emea.teams.ms";
-    var dpt_logistica = "javier.navarro@sanbenedetto.es";
-    var dpt_compras = "pedro.gomez@sanbenedetto.es";
-    var dpt_tic = "e343abe9.sanbenedetto.onmicrosoft.com@emea.teams.ms";
-    switch (event.target.value) {
-      case 'Quiero distribuir vuestros productos':
-        email = dpt_comercial_1;
-      break;
-      case 'No encuentro vuestros productos':
-        email = dpt_comercial_1;
-      break;
-      case 'Tengo una consulta, sugerencia o reclamación sobre vuestros productos':
-        email = dpt_calidad;
-      break;
-      case 'Quiero ofrecer mis servicios como proveedor de logística':
-        email = dpt_logistica;
-      break;
-      case 'Quiero ofrecer mis servicios como proveedor informático':
-        email = dpt_tic;
-      break;
-      case 'Quiero ofrecer soluciones de gestión comercial y/o marketing':
-        email = dpt_comercial_2;
-      break;
-      case 'Quiero enviar mi CV':
-        email = email;
-      break;
-      case 'Busco colaboradores/patrocinadores para un evento':
-        email = dpt_comercial_2;
-      break;
-      case 'Otros':
-        email = email;
-      break;
-    }
-    document.querySelector('input[name="email_test"]').value=email;
-  });
+  if(document.querySelector('.wpcf7-form-control-wrap.menu-377 select')){
+    document.querySelector('.wpcf7-form-control-wrap.menu-377 select').addEventListener('change', function (event) {
+      var email = "info@sanbenedetto.es";
+      var dpt_comercial_1 = "sandra.garcia@sanbenedetto.es";
+      var dpt_comercial_2 = "cristina.diaz@sanbenedetto.es";
+      var dpt_calidad = "ee2ef3c2.sanbenedetto.es@emea.teams.ms";
+      var dpt_logistica = "javier.navarro@sanbenedetto.es";
+      var dpt_compras = "pedro.gomez@sanbenedetto.es";
+      var dpt_tic = "e343abe9.sanbenedetto.onmicrosoft.com@emea.teams.ms";
+      switch (event.target.value) {
+        case 'Quiero distribuir vuestros productos':
+          email = dpt_comercial_1;
+        break;
+        case 'No encuentro vuestros productos':
+          email = dpt_comercial_1;
+        break;
+        case 'Tengo una consulta, sugerencia o reclamación sobre vuestros productos':
+          email = dpt_calidad;
+        break;
+        case 'Quiero ofrecer mis servicios como proveedor de logística':
+          email = dpt_logistica;
+        break;
+        case 'Quiero ofrecer mis servicios como proveedor informático':
+          email = dpt_tic;
+        break;
+        case 'Quiero ofrecer soluciones de gestión comercial y/o marketing':
+          email = dpt_comercial_2;
+        break;
+        case 'Quiero enviar mi CV':
+          email = email;
+        break;
+        case 'Busco colaboradores/patrocinadores para un evento':
+          email = dpt_comercial_2;
+        break;
+        case 'Otros':
+          email = email;
+        break;
+      }
+      document.querySelector('input[name="email_test"]').value=email;
+    });
+  }
 
   // Example starter JavaScript for disabling form submissions if there are invalid fields
   (function () {
