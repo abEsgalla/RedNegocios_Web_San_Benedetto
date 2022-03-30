@@ -177,34 +177,34 @@
                       <div class="">® Agua mineral San Benedetto, S.A.U.</div>
                     </div>
                     <div class="col-12 order-0 order-sm-1 col-sm-9 my-20">
-                      <div class="links-footer text-start d-block d-xl-flex flex-wrap justify-content-start justify-content-lg-between">
+                      <div class="links-footer text-start d-block d-xl-flex flex-wrap justify-content-start <?/*justify-content-lg-between*/?>">
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(923)?>">
                           Info empresa
                           </a>
-                          <span class="mx-1">|</span>
+                          <span class="mx-1 mx-lg-2">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(943)?>">
                           Política de seguridad de la información
                           </a>
-                          <span class="mx-1">|</span>
+                          <span class="mx-1 mx-lg-2">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(943)?>">
                           Política de privacidad web
                           </a>
-                          <span class="mx-1">|</span>
+                          <span class="mx-1 mx-lg-2">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(945)?>">
                           Condiciones generales
                           </a>
-                          <span class="mx-1">|</span>
+                          <span class="mx-1 mx-lg-2">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(947)?>">
                           Cookies
                           </a>
-                          <span class="mx-1">|</span>
+                          <?/*<span class="mx-1">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(939)?>">
                           Créditos
                           </a>
                           <span class="mx-1">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(941)?>">
                           Mapa web
-                          </a>
+                          </a>*/?>
                         </div>
                       </div>
                     </div>
