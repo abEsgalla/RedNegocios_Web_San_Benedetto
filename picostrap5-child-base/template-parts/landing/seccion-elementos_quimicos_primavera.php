@@ -28,7 +28,7 @@
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/silice.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Sílice'); ?></p>
-                  <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                  <p class="mb-0 fs-12 text-secondary"><?php _e('8 mg/l'); ?></p>
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/magnesio.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Magnesio'); ?></p>
-                  <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                  <p class="mb-0 fs-12 text-secondary"><?php _e('23 mg/l'); ?></p>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/sulfatos.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Sulfatos'); ?></p>
-                  <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                  <p class="mb-0 fs-12 text-secondary"><?php _e('53 mg/l'); ?></p>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/cloruros.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Cloruros'); ?></p>
-                  <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                  <p class="mb-0 fs-12 text-secondary"><?php _e('44 mg/l'); ?></p>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/sodio.svg'; ?>">
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Sodio'); ?></p>
-                  <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                  <p class="mb-0 fs-12 text-secondary"><?php _e('21 mg/l'); ?></p>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@
               <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/bicarbonato.svg'; ?>" >
               <div class="position-absolute top-50 start-50 translate-middle">
                   <p class="mb-8 lh-n text-secondary fw-500 fs-20 text-uppercase"><?php _e('Bicarbonatos'); ?></p>
-                  <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                  <p class="mb-0 fs-12 text-secondary"><?php _e('298 mg/l'); ?></p>
               </div>
             </div>              
           </div>
@@ -118,7 +118,7 @@
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/sulfatos.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Sulfatos'); ?></p>
-                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('53 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/cloruros.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Cloruros'); ?></p>
-                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('44 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/silice.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Sílice'); ?></p>
-                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('8 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/sodio.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Sodio'); ?></p>
-                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('21 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/magnesio.svg'; ?>">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Magnesio'); ?></p>
-                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('23 mg/l'); ?></p>
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@
                 <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/bicarbonato.svg'; ?>" >
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <p class="mb-8 lh-n text-secondary fw-500 fs-16 text-uppercase"><?php _e('Bicarbonatos'); ?></p>
-                    <p class="mb-0 fs-12 text-secondary"><?php _e('88 mg/l'); ?></p>
+                    <p class="mb-0 fs-12 text-secondary"><?php _e('298 mg/l'); ?></p>
                 </div>
               </div>              
             </div>
