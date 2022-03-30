@@ -8,6 +8,15 @@ body:not(.home){
   .navbar{
     &.menu-dark{
       background: $white;
+      .custom-mobile-menu-button{
+        color: $secondary !important;
+        .icon-dark{
+          display: inline-block !important;
+        }
+        .icon-light{
+          display: none !important;
+        }
+      }
     }
   }
 }
