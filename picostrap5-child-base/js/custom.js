@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
       slider_principal.classList.add('slide-light');
     }
   }
+  if(document.querySelector('.wpcf7-form-control.wpcf7-file')){
+    document.querySelector('.wpcf7-form-control.wpcf7-file').onchange = function() {
+      if(!this.parentElement.classList.contains('file-selected')){
+        this.parentElement.classList.add('file-selected');
+      }
+    };
+  }
   if(document.querySelector('.wpcf7-form-control-wrap.menu-377 select')){
     document.querySelector('.wpcf7-form-control-wrap.menu-377 select').addEventListener('change', function (event) {
       var email = "info@sanbenedetto.es";
