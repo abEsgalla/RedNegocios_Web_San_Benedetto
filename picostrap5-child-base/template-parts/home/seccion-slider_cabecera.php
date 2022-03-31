@@ -24,7 +24,7 @@ $fields = wp_parse_args( $args );
             ?>
             <div class="d-flex align-items-center justify-content-center container container-slider zi-99 top-50 position-absolute transform-translate-y">
               <div class="row w-100">
-                <div class="col-xxl-8 offset-xxl-2 offset-xxxl-0 col-xxxl-12">
+                <div class="col-xxl-8 offset-xxl-2 offset-xxxl-0 col-xxxl-10 offset-xxxl-1">
                   <div class="row text-start text-sm-center <?=$slide['color']?>">
                     <?
                     if($slide['logo']):

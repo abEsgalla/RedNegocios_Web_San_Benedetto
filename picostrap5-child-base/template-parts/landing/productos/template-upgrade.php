@@ -26,7 +26,7 @@ if($acf_fields['secciones']):
                 <section class="bg-dark pt-65 pb-64">
                     <div class="container-fluid container-fluid-custom position-relative">
                         <div class="row">
-                        <div class="col-12">
+                        <div class="col-12" data-aos="fade-down">
                             <div class="row text-center text-white">
                             <div class="col-12 fs-18 text-uppercase">
                                 <?=$seccion['slider']['texto_superior']?>
@@ -159,7 +159,7 @@ if($acf_fields['secciones']):
                                     <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 d-none d-xl-block img-'. $i , 'alt' => '' , 'title' => '') ); ?>
                                     </div>
                                     <? if($col['posicion_texto'] && $col['texto']): ?>
-                                    <div class="text-start text-white ms-35 mt-55 mb-55 col-10 <?=$col['posicion_texto']?>">
+                                    <div class="text-start text-white ms-35 mt-55 mb-55 col-10 <?=$col['posicion_texto']?>" data-aos="fade-up">
                                     <? if($col['posicion_texto']): ?>
                                         <?=$col['texto']?>
                                     <? endif; ?>

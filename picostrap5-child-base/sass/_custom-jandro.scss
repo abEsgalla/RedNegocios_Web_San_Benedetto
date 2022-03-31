@@ -417,22 +417,22 @@
     .bg-custom-post{
       z-index: 2;
     }
-    &:after{
-      content: '';
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('../src/img/splash_marcas.png');
-      background-size: contain;
-      background-position: center center;
-      background-repeat: no-repeat;
-      transition: opacity .5s ease;
-      z-index: 1;
-      mix-blend-mode: multiply;
-    }
+    // &:after{
+    //   content: '';
+    //   opacity: 0;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: url('../src/img/splash_marcas.png');
+    //   background-size: contain;
+    //   background-position: center center;
+    //   background-repeat: no-repeat;
+    //   transition: opacity .5s ease;
+    //   z-index: 1;
+    //   mix-blend-mode: multiply;
+    // }
   }
 }
 
@@ -449,22 +449,22 @@
     .bg-custom-post{
       z-index: 2;
     }
-    &:after{
-      content: '';
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('../src/img/splash_marcas.png');
-      background-size: contain;
-      background-position: center center;
-      background-repeat: no-repeat;
-      transition: opacity .5s ease;
-      z-index: 1;
-      mix-blend-mode: multiply;
-    }
+    // &:after{
+    //   content: '';
+    //   opacity: 0;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: url('../src/img/splash_marcas.png');
+    //   background-size: contain;
+    //   background-position: center center;
+    //   background-repeat: no-repeat;
+    //   transition: opacity .5s ease;
+    //   z-index: 1;
+    //   mix-blend-mode: multiply;
+    // }
   }
 }
 

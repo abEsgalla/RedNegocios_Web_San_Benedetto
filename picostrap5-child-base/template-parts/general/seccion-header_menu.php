@@ -142,10 +142,10 @@ if(get_post_type()=="landing"):
                     <div>
                         <a href="<?=get_permalink(get_field('caracteristicas_producto',61)['relacion_page_landing'])?>" 
                         class="py-2 text-reset text-decoration-none single-animation-undertext 
-                        <?=($id_producto==61)?'active':'opacity-50';?>">SIN GAS</a>
+                        <?=($id_producto==61)?'active':'opacity-50';?>"><?php _e('SIN GAS'); ?></a>
                         <a href="<?=get_permalink(get_field('caracteristicas_producto',490)['relacion_page_landing'])?>" 
-                        class="py-2 text-reset text-decoration-none ms-32 single-animation-undertext 
-                        <?=($id_producto==490)?'active':'opacity-50';?>">CON GAS</a>
+                        class="py-2 text-reset text-decoration-none ms-32 single-animation-undertext fw-500 
+                        <?=($id_producto==490)?'active':'opacity-50';?>"><?php _e('CON GAS'); ?></a>
                     </div>
                 </div>
             <? endif; ?>
