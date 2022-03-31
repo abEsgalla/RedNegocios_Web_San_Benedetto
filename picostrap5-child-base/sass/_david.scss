@@ -857,3 +857,12 @@
         top: 45%;
     }
 }
+
+.bg-mobile-banner-marcas{
+    @include media-breakpoint-down(lg) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('/wp-content/uploads/2022/03/bg-banner-marcas-mobile.png') !important;
+    }
+}
