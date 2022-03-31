@@ -57,6 +57,10 @@ document.addEventListener('DOMContentLoaded', function () {
         break;
         case 'Quiero enviar mi CV':
           email = email;
+          var myModal = new bootstrap.Modal(document.getElementById('modalContact'));
+          if(myModal){
+            myModal.show();
+          }
         break;
         case 'Busco colaboradores/patrocinadores para un evento':
           email = dpt_comercial_2;

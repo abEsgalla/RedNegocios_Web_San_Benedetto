@@ -72,13 +72,13 @@ get_header();
                   <div class="col-12 mt-65">
                     <?=wp_get_attachment_image(1557, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12 mt-8">
+                  <div class="d-none col-12 mt-8">
                     <?=wp_get_attachment_image(593, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12 mt-21">
+                  <div class="d-none col-12 mt-21">
                     <?=wp_get_attachment_image(595, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
-                  <div class="col-12 mt-35">
+                  <div class="d-none col-12 mt-35">
                     <?=wp_get_attachment_image(594, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>

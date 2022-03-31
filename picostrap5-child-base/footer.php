@@ -25,6 +25,16 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modalContact" tabindex="-1" aria-labelledby="modalContactLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body h6 text-secondary text-center py-60">
+            Si deseas enviar tu CV puedes hacerlo desde el formulario que encontraras en <br><a href="/buscamos-talento">Buscamos Talento</a>
+          </div>
+        </div>
+      </div>
+    </div>
 		
 		<div class="wrapper bg-secondary" id="wrapper-footer-colophon">
 			<div class="container gx-sm-2 gx-4">
