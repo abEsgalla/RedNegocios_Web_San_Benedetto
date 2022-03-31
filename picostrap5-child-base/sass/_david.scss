@@ -650,7 +650,9 @@
 
 .contact-form-contacto{
     table{
-        vertical-align: top;
+        tbody{
+            vertical-align: top;
+        }
     }
     ::placeholder {
         color: $white;
