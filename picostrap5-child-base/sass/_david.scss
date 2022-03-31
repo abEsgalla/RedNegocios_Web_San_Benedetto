@@ -164,9 +164,9 @@
         }
         @include media-breakpoint-down(sm) {
             &.columna-fuente-primavera{
-                order: 1;    
+                order: 2;    
             }
-            order: 2;
+            order: 1;
         }
     }
     .columna-2{
@@ -184,9 +184,9 @@
         }
         @include media-breakpoint-down(sm) {
             &.columna-fuente-primavera{
-                order: 2;    
+                order: 1;    
             }
-            order: 1;
+            order: 2;
         }
     }
 }

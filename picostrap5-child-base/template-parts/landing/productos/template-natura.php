@@ -39,7 +39,7 @@
                     get_template_part( 'template-parts/landing/seccion', 'cols_imagenes_texto_natura', $seccion);
                 break;
                 case 'banner':
-                    get_template_part( 'template-parts/landing/seccion', 'banner', $seccion);
+                    get_template_part( 'template-parts/landing/seccion', 'banner-natura', $seccion);
                 break;
                 case 'imagen_ilustraciones':
                     get_template_part( 'template-parts/landing/seccion', 'imagen_ilustraciones', $seccion);

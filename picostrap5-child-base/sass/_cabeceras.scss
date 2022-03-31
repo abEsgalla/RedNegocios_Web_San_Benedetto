@@ -76,6 +76,7 @@
 }
 .limon-bloque-texto-con{
   z-index: 100;
+  width: 170px;
   @include media-breakpoint-down(xl){
     top: inherit !important;
     bottom: 150px !important;

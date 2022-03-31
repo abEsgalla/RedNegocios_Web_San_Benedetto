@@ -170,7 +170,8 @@
 
 .lima-bloque-texto{
   transform: translateY(-50%);
-  left: -118px;
+  left: -58px;
+  width: 180px;
 }
 
 .lima-bloque-texto-sin{
@@ -208,16 +209,16 @@
 }
 
 .background-start-te{
-  background-image: url('../src/img/background-te/background_start_te.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left center;
+  // background-image: url('../src/img/background-te/background_start_te.png');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: left center;
 }
 
-.container-fluid-custom .swiper.slider-te:before{
-  background: #FFFBEC;
-  opacity: 75%;
-}
+// .container-fluid-custom .swiper.slider-te:before{
+//   background: #FFFBEC;
+//   opacity: 75%;
+// }
 
 .container-fluid-custom .swiper.slider-zero:before,
 .container-fluid-custom .swiper.slider-zero:after{
