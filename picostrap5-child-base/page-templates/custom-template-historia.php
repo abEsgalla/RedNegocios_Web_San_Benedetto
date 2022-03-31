@@ -416,7 +416,7 @@ get_header();
 
 <section>
   <div class="container-fluid position-relative zi-9 bg-secondary-darker py-150 py-sm-105">
-    <div class="bg-custom-image bg-postion-x-center opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+    <div class="bg-mobile-banner-marcas bg-custom-image bg-postion-x-center opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url(51, "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
