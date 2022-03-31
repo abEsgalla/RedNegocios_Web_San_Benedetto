@@ -96,7 +96,13 @@
 }
 
 .mw-50vw{
-    max-width: calc(50vw);
+    max-width: calc(50vw - 12px);
+}
+
+.background-position-left-mobile{
+    @include media-breakpoint-down(xl) {
+        background-position: left !important;
+    }
 }
 
 .custom-mobile-menu-button{
@@ -164,9 +170,9 @@
         }
         @include media-breakpoint-down(sm) {
             &.columna-fuente-primavera{
-                order: 2;    
+                order: 1;    
             }
-            order: 1;
+            order: 2;
         }
     }
     .columna-2{
@@ -184,9 +190,9 @@
         }
         @include media-breakpoint-down(sm) {
             &.columna-fuente-primavera{
-                order: 1;    
+                order: 2;    
             }
-            order: 2;
+            order: 1;
         }
     }
 }
