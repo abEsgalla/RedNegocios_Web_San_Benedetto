@@ -131,6 +131,14 @@
 }
 
 .container-fluid-custom .swiper:before, .container-fluid-custom .swiper:after {
+    max-height: 268px;
+    @include media-breakpoint-down(xxxxl) {
+        max-height: 210px;
+    }
+    @include media-breakpoint-down(xl) {
+        width: calc(1/4*100%) !important;
+        max-height: 359px !important;
+    }
     @include media-breakpoint-down(lg) {
         display: none !important;
     }
@@ -859,5 +867,14 @@
     top: 40%;
     @include media-breakpoint-down(lg) {
         top: 45%;
+    }
+}
+
+.bg-mobile-banner-marcas{
+    @include media-breakpoint-down(lg) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('/wp-content/uploads/2022/03/bg-banner-marcas-mobile.png') !important;
     }
 }
