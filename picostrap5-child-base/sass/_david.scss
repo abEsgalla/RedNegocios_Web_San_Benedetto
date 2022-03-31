@@ -649,6 +649,11 @@
 
 
 .contact-form-contacto{
+    table{
+        tbody{
+            vertical-align: top;
+        }
+    }
     ::placeholder {
         color: $white;
         opacity: 0.5;
