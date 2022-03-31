@@ -137,7 +137,7 @@ if(get_post_type()=="landing"):
                 <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
                 ">
                     <div>
-                        ENJOY
+                        <?php _e('ENJOY'); ?>
                     </div>
                     <div>
                         <a href="<?=get_permalink(get_field('caracteristicas_producto',61)['relacion_page_landing'])?>" 

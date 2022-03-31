@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-12" data-aos="fade-down">
         <div class="row text-center text-secondary">
-          <div class="col-12 fs-16 fs-sm-18 text-uppercase <? if( is_single(489) ) { echo 'fw-bold'; } ?>">
+          <div class="col-12 fs-16 fs-sm-18 text-uppercase">
             <?=$seccion['slider']['texto_superior']?>
           </div>
           <div class="col-12 h3 fs-32 fs-sm-48 text-secondary-light">

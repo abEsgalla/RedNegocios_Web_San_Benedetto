@@ -17,12 +17,14 @@
             class="d-none d-xxxl-block position-absolute top-0 end-0 w-auto translate-dots-col-after">
           <?php
           endif;
+          $vueltas = 0;
           ?>
           <? foreach ($seccion['col'] as $col): ?>
+            <?php $controlImagen = $vueltas == 0 ? 'w-100 h-100' : 'w-100'; ?>
             <div class="mb-4 col-12 position-relative zi-9 <?=$col['tamano']?>">
               <div class="row d-flex flex-column h-100 justify-content-between text-center flex-nowrap">
                 <div class="col-12 order-2 h-100">
-                  <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 h-100' , 'alt' => '' , 'title' => '') ); ?>
+                  <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => $controlImagen0 , 'alt' => '' , 'title' => '') ); ?>
                 </div>
                 <? if($col['posicion_texto'] && $col['texto']): ?>
                 <div class="text-start text-secondary m-auto offset-1 col-10 <?=$col['posicion_texto']?>">
