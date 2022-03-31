@@ -525,6 +525,11 @@
 .burbuja-1{
   margin-top: -78px;
   margin-right: 32px; 
+
+  animation-duration: 5s;
+  animation-name: burbuja-down;
+  animation-iteration-count: infinite;
+
   @include media-breakpoint-up(lg){
     margin-top: -48px;
     margin-left: 48px;
@@ -541,6 +546,7 @@
   @include media-breakpoint-down(xl){
     width: 112px;
   }
+
 }
 
 .burbuja-2{
@@ -550,6 +556,9 @@
   @include media-breakpoint-down(lg){
     width: auto;
   }  
+  animation-duration: 9s;
+  animation-name: burbuja-up;
+  animation-iteration-count: infinite;
 }
 
 .burbuja-7{
@@ -569,6 +578,9 @@
   @include media-breakpoint-down(lg){
     width: auto;
   }  
+  animation-duration: 11s;
+  animation-name: burbuja-down;
+  animation-iteration-count: infinite;
 }
 
 .burbuja-3{
@@ -591,6 +603,9 @@
   @include media-breakpoint-down(lg){
     width: auto;
   }  
+  animation-duration: 7s;
+  animation-name: burbuja-down;
+  animation-iteration-count: infinite;
 }
 
 .burbuja-5{
@@ -607,6 +622,9 @@
   @include media-breakpoint-down(md){
     margin-left: 12px;
   }  
+  animation-duration: 9s;
+  animation-name: burbuja-down;
+  animation-iteration-count: infinite;
 }
 
 .burbuja-4{
@@ -628,6 +646,9 @@
     margin-left: 0;
     margin-right: 12px;
   }
+  animation-duration: 7s;
+  animation-name: burbuja-up;
+  animation-iteration-count: infinite;
 }
 
 .dots-4{
@@ -646,6 +667,33 @@
   @include media-breakpoint-down(lg){
     width: auto;
   }  
+  animation-duration: 5s;
+  animation-name: burbuja-up;
+  animation-iteration-count: infinite;
+}
+
+@keyframes burbuja-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes burbuja-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 .bg-banner-botellas{
