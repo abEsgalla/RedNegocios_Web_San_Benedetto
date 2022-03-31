@@ -626,7 +626,6 @@ span{
     .swiper-slide{
         &:hover{
             .name-slider-product{
-                padding-right: 2rem;
                 &:after{
                     width: 2rem;
                     background-color: $secondary;
@@ -635,6 +634,7 @@ span{
         }
     }
     .name-slider-product{
+        padding-right: 2rem;
         position: relative;
         &:after{
             content: '';
@@ -959,6 +959,12 @@ span{
 
 .bg-dark {
     background-color: #060719;
+}
+
+.postid-196{
+    .bg-dark {
+        background-color: #000000;
+    }
 }
 
 .icono-lupa{
