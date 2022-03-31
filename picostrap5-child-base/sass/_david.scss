@@ -838,3 +838,10 @@
 .banner-producto{
     background-position: center;
 }
+
+.top-custom-entorno{
+    top: 40%;
+    @include media-breakpoint-down(lg) {
+        top: 45%;
+    }
+}
