@@ -69,6 +69,14 @@
     }
 }
 
+.mt-custom-28{
+    margin-top: 28%;
+}
+
+.mt-custom-25{
+    margin-top: 25%;
+}
+
 .mt-custom-28,.mt-custom-25{
     @include media-breakpoint-down(xxxl) {
         margin-top: 37%;
