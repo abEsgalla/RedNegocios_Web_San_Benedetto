@@ -174,11 +174,12 @@
                 <div class="col-12 mt-40 mt-xl-80">
                   <div class="row fs-13">
                     <div class="col-12 order-1 order-sm-0 col-sm-3 my-20">
-                      <div class="">® Agua mineral San Benedetto, S.A.U.</div>
+                      <div class="">® Agua Mineral San Benedetto, S.A.U.</div>
                     </div>
                     <div class="col-12 order-0 order-sm-1 col-sm-9 my-20">
                       <div class="links-footer text-start d-block d-xl-flex flex-wrap justify-content-start <?/*justify-content-lg-between*/?>">
-                          <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(923)?>">
+                          <a class="mx-lg-0 text-reset text-decoration-none" 
+                          href="/wp-content/uploads/2022/03/2022_CATALOGO_SB_ESP.pdf" target="_blank">
                           Info empresa
                           </a>
                           <span class="mx-1 mx-lg-2">|</span>
