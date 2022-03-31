@@ -131,6 +131,14 @@
 }
 
 .container-fluid-custom .swiper:before, .container-fluid-custom .swiper:after {
+    max-height: 268px;
+    @include media-breakpoint-down(xxxxl) {
+        max-height: 210px;
+    }
+    @include media-breakpoint-down(xl) {
+        width: calc(1/4*100%) !important;
+        max-height: 359px !important;
+    }
     @include media-breakpoint-down(lg) {
         display: none !important;
     }
