@@ -144,7 +144,7 @@ if(get_post_type()=="landing"):
                         class="py-2 text-reset text-decoration-none single-animation-undertext 
                         <?=($id_producto==61)?'active':'opacity-50';?>"><?php _e('SIN GAS'); ?></a>
                         <a href="<?=get_permalink(get_field('caracteristicas_producto',490)['relacion_page_landing'])?>" 
-                        class="py-2 text-reset text-decoration-none ms-32 single-animation-undertext fw-500 
+                        class="py-2 text-reset text-decoration-none ms-32 single-animation-undertext 
                         <?=($id_producto==490)?'active':'opacity-50';?>"><?php _e('CON GAS'); ?></a>
                     </div>
                 </div>
