@@ -199,10 +199,10 @@ get_header();
 </section>
 
 <section class="mt-111">
-  <div class="container container-sm-fluid">
+  <div class="container-fluid">
     <div class="row position-relative">
       <div class="col-12 col-lg-6 bg-black position-relative bg-custom-image py-64 py-md-80 py-lg-116"
-      style="background:url('<?=wp_get_attachment_image_url(611, "full")?>')">
+      style="background:url('<?=wp_get_attachment_image_url(1656, "full")?>')">
         <div class="position-relative">
           <div class="container">
             <div class="row">
