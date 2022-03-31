@@ -11,9 +11,9 @@ get_header();
 
 <section>
   <div class="container-fluid position-relative zi-9 bg-black py-160 py-lg-261">
-    <div class="bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
+    <div class="background-position-left-mobile bg-custom-image opacity-60 w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')"></div>
-      <?=wp_get_attachment_image(773, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99 mw-50vw d-none d-md-block' , 'alt' => '' , 'title' => '') ); ?>
+      <?=wp_get_attachment_image(773, "full", "", array( 'class' => 'position-absolute top-50 start-50 translate-middle-y zi-99 mw-50vw d-none d-lg-block' , 'alt' => '' , 'title' => '') ); ?>
       <div class="container position-relative">
         <div class="row">
           <div class="col-12 offset-xl-4 col-xl-4 text-center">
@@ -21,7 +21,7 @@ get_header();
               <div class="col-12 text-uppercase">
                 ecolosofía
               </div>
-              <h1 class="col-12 mt-16 h1 text-green mb-70 lh-1">
+              <h1 class="col-12 mt-16 h1 text-green mb-70">
                 Procesos
               </h1>
               <div class="col-12 position-relative">
