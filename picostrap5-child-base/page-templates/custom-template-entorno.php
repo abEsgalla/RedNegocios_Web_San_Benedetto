@@ -49,7 +49,7 @@ get_header();
           </div>
           <div class="col-12">
             <div class="row text-center overflow-hiden">
-              <div class="col-12 col-m-4 mt-60" data-aos="fade-up">
+              <div class="col-12 col-md-4 mt-60" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
@@ -63,7 +63,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-m-4 mt-60" data-aos="fade-down">
+              <div class="col-12 col-md-4 mt-60" data-aos="fade-down">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">
@@ -77,7 +77,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-m-4 mt-60" data-aos="fade-up">
+              <div class="col-12 col-md-4 mt-60" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 d-flex justify-content-center">
                     <span class="rounded-circle border border-1">

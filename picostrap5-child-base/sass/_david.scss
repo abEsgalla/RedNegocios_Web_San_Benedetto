@@ -100,7 +100,7 @@
 }
 
 .background-position-left-mobile{
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(lg) {
         background-position: left !important;
     }
 }
