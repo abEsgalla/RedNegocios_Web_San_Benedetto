@@ -727,6 +727,11 @@ if( document.body.classList.contains('single-landing') ) {
 if( document.body.classList.contains('page-template-custom-template-historia') ) {
   //Barrita vertical que se rellena con scroll en página Historia
   let line_height = document.querySelector('.border-dashed-custom').clientHeight + 236;
+
+  let h_section_desk = document.querySelector('.white-line-timeline').parentElement.offsetHeight;
+  let h_section_2022_desk = document.querySelector('.ano-2022').offsetHeight;
+  let line_max_height_desk = h_section_desk - (h_section_2022_desk) + 220;
+
   gsap.to(".border-dashed-custom .border-fill", {
     scrollTrigger: {
       trigger: '.border-dashed-custom',
@@ -736,12 +741,21 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
       markers: false,
       onUpdate: self => {
         let height = self.progress * line_height;
+        if(height > line_max_height_desk){
+          height = line_max_height_desk;
+        }
         document.querySelector(".border-dashed-custom .border-fill").style.height = height + 'px';
       }
     }
   });
 
   let line_height_mobile = document.querySelector('.border-dashed-custom-mobile').clientHeight + 236;
+
+  let h_section = (document.querySelector('.white-line-timeline').parentElement.offsetHeight + 128 + 139);
+  let h_section_image_2022 = document.querySelector('.last-image-mobile').offsetHeight + 34;
+  let h_section_2022 = document.querySelector('.ano-2022-mobile').offsetHeight + h_section_image_2022;
+  let line_max_height_mobile = h_section - (h_section_2022);
+
   gsap.to(".border-dashed-custom-mobile .border-fill", {
     scrollTrigger: {
       trigger: '.border-dashed-custom-mobile',
@@ -751,6 +765,9 @@ if( document.body.classList.contains('page-template-custom-template-historia') )
       markers: false,
       onUpdate: self => {
         let height = self.progress * line_height_mobile;
+        if(height > line_max_height_mobile){
+          height = line_max_height_mobile;
+        }
         document.querySelector(".border-dashed-custom-mobile .border-fill").style.height = height + 'px';
       }
     }

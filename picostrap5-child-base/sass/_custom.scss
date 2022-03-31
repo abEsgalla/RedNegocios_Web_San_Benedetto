@@ -166,18 +166,6 @@ HOW TO REFERENCE ASSETS AND IMAGES
     transform: translateY(-100%);
 }
 
-.mt-custom-28{
-    margin-top: 28%;
-}
-
-.mt-custom-25{
-    margin-top: 25%;
-}
-
-.mt-custom-28{
-    margin-top: 28%;
-}
-
 .mtn-custom-25{
     margin-top: -25%;
 }
@@ -638,6 +626,7 @@ span{
     .swiper-slide{
         &:hover{
             .name-slider-product{
+                padding-right: 2rem;
                 &:after{
                     width: 2rem;
                     background-color: $secondary;
@@ -654,6 +643,7 @@ span{
             height: 2px;
             position: absolute;
             top: 50%;
+            right: 0;
             transform: translateY(-50%);
             margin-left: 0.5rem;
             transition: all .25s ease;

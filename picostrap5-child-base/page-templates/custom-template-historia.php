@@ -396,7 +396,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="col-12 mt-24">
+              <div class="col-12 mt-24 last-image-mobile">
                 <div class="row">
                   <div class="col-12">
                     <?=wp_get_attachment_image(1129, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>

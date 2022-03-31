@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // SCROLL
   window.addEventListener("scroll", event => {
-    if(scrollY>200){
+    if(scrollY>150){
       
       if(!document.querySelector('body').classList.contains('single-landing')){
         document.querySelector('.fixed-top > nav').classList.add('menu-scrolled');
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var refreshIntervalId = setInterval(function() {
     if (document.querySelectorAll('#offcanvasMenuMobile svg.fa-minus').length) {
         clearInterval(refreshIntervalId);
-        menu_mobile();
+        menu_mobile(this);
     }
     }, 100);
     //ICON PLUS MOBILE
@@ -190,16 +190,24 @@ document.addEventListener('DOMContentLoaded', function () {
       const menu_mobile_icons_more =  document.querySelectorAll('#offcanvasMenuMobile svg');
       menu_mobile_icons_more.forEach(function(menu_mobile_icon_more) {
         menu_mobile_icon_more.addEventListener('click', function (event) {
-          var old_submenu = document.querySelector('#offcanvasMenuMobile .active');
-          if(old_submenu){
-            old_submenu.classList.remove('active');
-          }
-          var submenu = this.parentElement.parentElement;
-          if(submenu){
-            submenu.classList.add('active');
+          if(this.classList.contains('fa-minus')){
+            this.parentElement.parentElement.classList.remove('active');
+          }else{
+            active_menu(this);
           }
         });
       });
+    };
+
+    function active_menu(element){
+      var old_submenu = document.querySelector('#offcanvasMenuMobile .active');
+      if(old_submenu){
+        old_submenu.classList.remove('active');
+      }
+      var submenu = element.parentElement.parentElement;
+      if(submenu){
+        submenu.classList.add('active');
+      }
     };
 
 });

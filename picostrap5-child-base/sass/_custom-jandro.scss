@@ -430,6 +430,7 @@
       background-repeat: no-repeat;
       transition: opacity .5s ease;
       z-index: 1;
+      mix-blend-mode: multiply;
     }
   }
 }
@@ -461,6 +462,7 @@
       background-repeat: no-repeat;
       transition: opacity .5s ease;
       z-index: 1;
+      mix-blend-mode: multiply;
     }
   }
 }
@@ -691,6 +693,32 @@
   }
   100%{
     transform: translateY(0);
+  }
+}
+
+.bg-banner-botellas{
+  @include media-breakpoint-down(xl){
+    background-image: url('../src/img/background-primavera/backgroun_tablet_botellas_zoo.jpg') !important;
+    background-position-y: bottom !important;
+    .col-12.offset-md-1.col-md-10.offset-lg-3.col-lg-6{
+      margin-bottom: 300px;
+    }
+  }
+  @include media-breakpoint-down(md){
+    &:after{
+      content: '';
+      position: absolute;
+      height: 200px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: #BEE0F8;
+    }
+    background-image: none !important;
+    background-color: $secondary;
+    .col-12.offset-md-1.col-md-10.offset-lg-3.col-lg-6{
+      margin-bottom: 0px;
+    }
   }
 }
 

@@ -127,13 +127,13 @@ if(get_post_type()=="landing"):
         <div class="container">
         <div class="row">
             <? if($id_producto!=61 && $id_producto!=490): ?>
-                <div class="col-12 text-uppercase py-16 m-0 h6 fs-24 
+                <div class="col-12 text-uppercase py-16 m-0 h6 fs-16 fs-sm-24 
                 <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
                 ">
                 <?=get_the_title()?>
                 </div>
             <? else: ?>
-                <div class="col-12 text-uppercase py-16 m-0 h6 fs-24 d-flex justify-content-between
+                <div class="col-12 text-uppercase py-16 m-0 h6 fs-16 fs-sm-24 d-flex justify-content-between
                 <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
                 ">
                     <div>

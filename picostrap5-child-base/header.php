@@ -116,7 +116,9 @@ defined( 'ABSPATH' ) || exit;
         <div class="offcanvas offcanvas-top h-100vh" tabindex="-1" id="offcanvasMenuMobile" aria-labelledby="offcanvasTopLabel">
           <div class="offcanvas-header d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-              <?=wp_get_attachment_image(1245, "full")?>
+              <svg class="" xmlns="http://www.w3.org/2000/svg" width="42" height="30" viewBox="0 0 42 30" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7158 1.92095C11.1444 1.81248 11.4659 2.24635 11.841 2.13788C13.3412 1.64978 14.1448 2.46329 15.5379 3.38527C16.0737 3.76491 16.8774 3.2768 17.306 3.05987C21.1101 1.2159 24.8071 0.293919 28.9862 0.0227478C33.3797 -0.139955 37.7732 0.56509 41.7916 2.30059C42.1666 2.35482 41.9523 2.51752 41.7916 2.51752C37.8267 2.68023 34.237 3.05987 30.4864 4.09032C27.5932 4.8496 24.8606 5.66311 22.1817 7.18167C21.378 7.61555 21.0565 8.646 21.378 9.51375C21.6459 10.3815 21.9138 11.3035 22.396 12.1712C23.039 13.3644 23.6819 14.4491 24.432 15.588C25.1821 16.6727 26.093 17.5947 27.0574 18.5166C30.3257 21.3911 31.6116 21.608 32.4153 22.313C32.7367 22.53 32.3617 22.53 32.1474 22.4757C31.6116 22.3673 30.9686 22.1503 30.4328 21.9334C28.0754 21.1199 26.1465 19.6556 24.1105 18.3539C25.1821 21.2826 26.3073 23.9943 26.3073 27.1941C26.3073 27.5738 26.093 27.5738 26.0394 27.3568C25.5036 25.4586 25.075 23.7231 24.1105 21.8792C23.3068 20.3606 22.5032 19.0047 21.4316 17.7574C19.6635 15.588 18.324 13.744 15.4307 12.4424C14.7878 12.1712 14.0377 12.1712 13.4483 12.6051C10.2872 14.9372 7.76895 17.8116 5.25074 21.0656C3.054 23.9401 1.2859 27.2484 0.107158 29.8516C0.107158 30.1228 0.053579 29.9601 0 29.8516C0.214316 24.8078 1.60737 19.5471 4.17916 15.2626C6.00084 12.2797 8.19758 9.78492 10.7158 7.50708C11.6802 6.5851 11.6266 5.175 11.198 4.03608C11.0373 3.60221 11.1444 3.16834 11.1444 2.73446C11.1444 2.40906 10.7158 2.30059 10.7158 1.92095Z" fill="#002867"/>
+              </svg>
             </div>
             <div class="fs-13 fw-500 text-uppercase text-secondary d-flex align-items-center">
               <span class="me-12">MENU</span>
@@ -132,7 +134,7 @@ defined( 'ABSPATH' ) || exit;
               </div>
               <div class="border-bottom border-secondary-lighter py-16">
                 <div class="d-flex justify-content-between">
-                  <a href="#" class="text-reset text-decoration-none">nosotros</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
+                  <a href="<?=get_permalink(579)?>" class="text-reset text-decoration-none">nosotros</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
                 </div>
                 <div class="submenu fw-400 fs-13 ps-16">
                   <div class="pt-16">

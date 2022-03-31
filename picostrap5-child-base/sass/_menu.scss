@@ -21,6 +21,23 @@ body:not(.home){
   }
 }
 
+.fixed-top.bg-white{
+  .nav-link{
+    &.animation-undertext{
+      &.active:after{
+        background-color: $secondary !important;
+      }
+    }
+  }
+  .navbar{
+    &.menu-light:not(.menu-scrolled):not(.menu-open-offcanvas){
+      .custom-logo{
+        filter: none !important;
+      }
+    }
+  }
+}
+
 .navbar{
   // Logo
   .custom-logo{

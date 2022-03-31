@@ -69,7 +69,18 @@
     }
 }
 
+.mt-custom-28{
+    margin-top: 28%;
+}
+
+.mt-custom-25{
+    margin-top: 25%;
+}
+
 .mt-custom-28,.mt-custom-25{
+    @include media-breakpoint-down(xxxxl) {
+        margin-top: 34%;
+    }
     @include media-breakpoint-down(xxxl) {
         margin-top: 37%;
     }
@@ -232,7 +243,7 @@
 
 #preguntas-frecuentes{
     .accordion-button::after {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C3E1F5'%3E%3Cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2369B3E7'%3E%3Cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important; 
         transform: scale(.7) !important;
         @include media-breakpoint-down(sm) {
             position: absolute;
@@ -241,7 +252,7 @@
         }
     }
     .accordion-button:not(.collapsed)::after {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C3E1F5'%3E%3Cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2369B3E7'%3E%3Cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
         @include media-breakpoint-down(sm) {
             position: absolute;
             right: 0;
@@ -252,11 +263,23 @@
 
 .translate-custom-contacto-lg-y{
     transform: translateY(-70%);
+    @include media-breakpoint-down(xxxl) {
+        transform: translateY(-76%);
+    }
+    @include media-breakpoint-down(xxl) {
+        transform: translateY(-76%);
+    }
+    @include media-breakpoint-down(xl) {
+        transform: translateY(-84%);
+    }
     @include media-breakpoint-down(lg) {
-        transform: translateY(-230%);
+        transform: translateY(-233%);
     }
     @include media-breakpoint-down(md) {
         transform: translateY(-135%);
+    }
+    @include media-breakpoint-down(sm) {
+        transform: translateY(-147%);
     }
 }
 
@@ -606,6 +629,10 @@
 
 
 .contact-form-contacto{
+    ::placeholder {
+        color: $white;
+        opacity: 0.5;
+    }
     .wpcf7-response-output{
         color: white !important;
     }
@@ -618,6 +645,11 @@
                 font-size: 16px;
                 margin-left: 16px;
             }
+        }
+    }
+    .wpcf7-checkbox{
+        .wpcf7-list-item-label{
+            font-size: 12px !important;
         }
     }
     input[type="checkbox"] {
@@ -661,6 +693,9 @@
         border: 0 !important;
         border-bottom: 1px solid #dee2e6 !important;
         font-size: 19px;
+        @include media-breakpoint-down(sm) {
+            font-size: 16px;
+        }
     }
     label{
         width: 100%;
@@ -687,11 +722,22 @@
         position: relative;
         height: 40px;
         display: block;
+        &.file-selected{
+            &:before{
+                content: 'Archivo seleccionado';
+                opacity: 1;
+                color: #69fa1a;
+            }
+        }
+        &:not(.file-selected){
+            &:before{
+                content: 'Ningún archivo seleccionado';
+            }
+        }
         &:before{
             font-size: 18px;
             font-weight: 400;
-            content: 'Ningún archivo seleccionado';
-            border-bottom: 1px solid;
+            border-bottom: 1px solid white;
             padding: 8px;
             position: absolute;
             height: 100%;
@@ -699,6 +745,11 @@
             right: 0;
             opacity: 0.5;
             background: transparent;
+            @include media-breakpoint-down(sm) {
+                width: 65%;
+                font-size: 13px;
+                padding: 6px;
+            }
         }
         &:after{
             font-size: 14px;
@@ -712,6 +763,14 @@
             width: 30%;
             left: 0;
             background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-breakpoint-down(sm) {
+                width: 35%;
+                font-size: 12px;
+                padding: 6px;
+            }
         }
     }
 }
@@ -762,4 +821,31 @@
 
 .zi-999{
     z-index: 999;
+}
+
+.page-template-custom-template-politicas{
+    a{
+        word-break: break-word;
+    }
+}
+
+//FONT NATURA
+.postid-209{
+    .background-font-natura,.bg-custom-image{
+        @include media-breakpoint-up(xxxxl) {
+            background-repeat: no-repeat !important;
+            background-size: 100% 100% !important;
+        }
+    }
+}
+
+.banner-producto{
+    background-position: center;
+}
+
+.top-custom-entorno{
+    top: 40%;
+    @include media-breakpoint-down(lg) {
+        top: 45%;
+    }
 }

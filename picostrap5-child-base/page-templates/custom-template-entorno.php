@@ -26,7 +26,7 @@ get_header();
               </h1>
               <div class="col-12 position-relative">
                 <?=wp_get_attachment_image(1185, "full", "", array( 'class' => 'sello opacity-75' , 'alt' => '' , 'title' => '') ); ?>
-                <?=wp_get_attachment_image(1186, "full", "", array( 'class' => 'sello-rotacion opacity-75 top-50 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?>
+                <?=wp_get_attachment_image(1606, "full", "", array( 'class' => 'sello-rotacion opacity-75 top-50 start-50 position-absolute ' , 'alt' => '' , 'title' => '') ); ?>
               </div>
             </div>
           </div>
@@ -99,14 +99,18 @@ get_header();
   </div>
 </section>
 
-<section class="mt-64 mt-sm-120 mt-lg-245 pb-36 position-relative zi-99 gx-4 gx-sm-12">
+<section class="mt-64 mt-sm-120 mt-lg-245 mb-64 mb-sm-103 mb-lg-242 position-relative zi-99 gx-4 gx-sm-12">
+  <div class="py-218 py-sm-218 bg-primary-brighter position-absolute top-custom-entorno translate-middle-y w-100">
+  </div>
   <div class="container text-secondary">
     <div class="row">
       <div class="col-12 position-relative">
         <div class="row position-relative">
-          <div class="col-12 col-lg-6 order-1 order-lg-0">
+          <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
+          class="d-none d-xxxl-block position-absolute bottom-0 start-0 w-auto translate-dots-col-before">
+          <div class="col-12 col-lg-6">
             <div class="row">
-              <div class="col-12 offset-xl-2 col-xl-8 overflow-hidden" data-aos="fade-up">
+              <div class="text-center text-lg-start col-12 offset-xl-2 col-xl-8 overflow-hidden" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 h3 fs-26 fs-md-45 mt-70 mt-lg-0">
                     <?=$acf_fields['titulo_grid_sup_izq']?>
@@ -118,33 +122,15 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6 order-0 order-lg-1 py-200 py-lg-245 position-relative bg-custom-image img-version-mobile" 
+          <div class="col-12 col-lg-6 py-133 py-md-270 py-lg-245 position-relative bg-custom-image img-version-mobile mb-lg-36" 
           style="background:url('<?=wp_get_attachment_image_url($acf_fields['img_grid_sup_der'], "full")?>')">
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="position-relative">
-  <div class="py-96 py-sm-218 bg-primary-brighter position-absolute top-0 translate-middle-lg-y w-100">
-  </div>
-</section>
-
-<section class="position-relative zi-99 pt-36 gx-4 gx-sm-12 mb-80 mb-md-242">
-  <div class="container text-secondary">
-    <div class="row position-relative">
-      <img src="<?=get_stylesheet_directory_uri().'/src/img/background_nuestro_compromiso.png'?>" 
-      class="d-none d-xxxl-block position-absolute bottom-0 start-0 w-auto translate-dots-col-before">
-      <div class="col-12">
-        <div class="row">
-          <div class="col-12 col-lg-6 py-200 py-lg-374 position-relative bg-custom-image img-version-mobile" 
+          <div class="col-12 col-lg-6 py-170 py-md-374 position-relative bg-custom-image img-version-mobile mt-24 mt-lg-36" 
           style="background:url('<?=wp_get_attachment_image_url($acf_fields['img_grid_inf_izq'], "full")?>')">
           </div>
           <div class="col-12 col-lg-6 d-inline-flex align-items-end">
             <div class="row overflow-hidden">
-              <div class="col-12 offset-xl-2 col-xl-8 gx-xl-0" data-aos="fade-up">
+              <div class="text-center text-lg-start col-12 offset-xl-2 col-xl-8 gx-xl-0" data-aos="fade-up">
                 <div class="row">
                   <div class="col-12 h3 fs-26 fs-md-45 mt-70 mt-lg-0">
                     <?=$acf_fields['titulo_grid_inf_der']?>
