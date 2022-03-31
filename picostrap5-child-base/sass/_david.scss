@@ -629,6 +629,10 @@
 
 
 .contact-form-contacto{
+    ::placeholder {
+        color: $white;
+        opacity: 0.5;
+    }
     .wpcf7-response-output{
         color: white !important;
     }

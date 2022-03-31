@@ -626,6 +626,7 @@ span{
     .swiper-slide{
         &:hover{
             .name-slider-product{
+                padding-right: 2rem;
                 &:after{
                     width: 2rem;
                     background-color: $secondary;
@@ -642,6 +643,7 @@ span{
             height: 2px;
             position: absolute;
             top: 50%;
+            right: 0;
             transform: translateY(-50%);
             margin-left: 0.5rem;
             transition: all .25s ease;
