@@ -32,16 +32,17 @@ get_header();
     </div>
   </div>
 </section>
-<section>
+
+<section class="gx-4 gx-sm-12">
   <div class="container-fluid container-lg mt-lg-n120">
     <div class="row">
       <div class="col-12 col-lg-6 d-none d-md-block g-0 text-mision order-2 order-lg-1">
       </div>
       <div class="col-12 col-lg-6 g-lg-0 order-1 order-lg-2 mt-n80 mt-lg-0 px-32 px-lg-0">
         <?=wp_get_attachment_image($acf_fields['imagen_over_cabecera'], "full", "", array( 'class' => 'w-100 position-relative d-none d-lg-block img-parallax' , 'alt' => '' , 'title' => '') ); ?>
-        <?=wp_get_attachment_image($acf_fields['texto_grid_sup_der'], "full", "", array( 'class' => 'w-100 position-relative d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
+        <?=wp_get_attachment_image($acf_fields['imagen_over_cabecera'], "full", "", array( 'class' => 'w-100 position-relative d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
       </div>
-      <div class="col-12 col-lg-6 g-lg-0 d-block bg-primary-brighter order-3 py-md-166 py-105 px-112 text-center text-lg-start mt-70 mt-md-270 mt-lg-0">
+      <div class="img-version-mobile col-12 col-lg-6 g-lg-0 d-block bg-primary-brighter order-3 py-md-166 py-105 px-112 text-center text-lg-start mt-70 mt-md-270 mt-lg-0">
         <div class="text-secondary fs-16 fs-md-18">ÉSTA ES NUESTRA</div>
         <div class="fs-32 fs-md-64 fw-bold text-secondary">Misión</div>
       </div>
@@ -50,17 +51,17 @@ get_header();
       </div>
     </div>
     <div class="row">
-      <div class="col-6 px-0 col-sm-6 g-0 pe-sm-0 ps-sm-24 ps-lg-0">
-        <?=wp_get_attachment_image($acf_fields['imagen_grid_inf_izq'], "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+      <div class="col-6 px-0 col-sm-6 g-0 pe-sm-0 ps-sm-24 ps-lg-0 py-214 py-md-200 py-lg-253 bg-custom-image img-version-mobile"
+       style="background:url('<?=wp_get_attachment_image_url($acf_fields['imagen_grid_inf_izq'], "full")?>')">
       </div>
-      <div class="col-6 px-0 col-sm-6 g-0 ps-sm-0 pe-sm-24 pe-lg-0">
-        <?=wp_get_attachment_image($acf_fields['imagen_grid_inf_der'], "full", "", array( 'class' => 'position-relative zi-99 center-image w-100' , 'alt' => '' , 'title' => '') ); ?>
+      <div class="col-6 px-0 col-sm-6 g-0 ps-sm-0 pe-sm-24 pe-lg-0 py-214 py-md-200 py-lg-253 bg-custom-image img-version-mobile" 
+        style="background:url('<?=wp_get_attachment_image_url($acf_fields['imagen_grid_inf_der'], "full")?>')">
       </div>
     </div>
   </div>
 </section>
 
-<section class="my-96">
+<section class="my-96 gx-4 gx-sm-12">
   <div class="container">
     <div class="row text-secondary">
       <div class="col-12 text-uppercase text-center fs-18">
@@ -75,7 +76,7 @@ get_header();
             <div class="row">
               <div class="col-12 col-lg-6 mt-85">
                 <div class="row">
-                  <div class="offset-1 col-10">
+                  <div class="col-12 offset-sm-1 col-sm-10">
                     <div class="row">
                       <div class="col-12 fs-96 fw-bold text-primary">
                         01
@@ -100,7 +101,7 @@ get_header();
               </div>
               <div class="col-12 col-lg-6 mt-80">
                 <div class="row">
-                  <div class="offset-1 col-10">
+                  <div class="col-12 offset-sm-1 col-sm-10">
                     <div class="row">
                       <div class="col-12 fs-96 fw-bold text-primary">
                         02
@@ -131,7 +132,7 @@ get_header();
               </div>
               <div class="col-12 col-lg-6 mt-80 mt-xl-120">
                 <div class="row">
-                  <div class="offset-1 col-10">
+                  <div class="col-12 offset-sm-1 col-sm-10">
                     <div class="row">
                       <div class="col-12 fs-96 fw-bold text-primary">
                         03
@@ -160,7 +161,7 @@ get_header();
               </div>
               <div class="col-12 col-lg-6 mt-80 mt-xl-120">
                 <div class="row">
-                  <div class="offset-1 col-10">
+                  <div class="col-12 offset-sm-1 col-sm-10">
                     <div class="row">
                       <div class="col-12 fs-96 fw-bold text-primary">
                         04
@@ -198,54 +199,52 @@ get_header();
 </section>
 
 <section class="mt-111">
-  <div class="container-fluid">
+  <div class="container container-sm-fluid">
     <div class="row position-relative">
-      <div class="col-12 col-lg-6 g-0 bg-black position-relative">
+      <div class="col-12 col-lg-6 bg-black position-relative bg-custom-image py-64 py-md-80 py-lg-116"
+      style="background:url('<?=wp_get_attachment_image_url(611, "full")?>')">
         <div class="position-relative">
-          <div class="position-absolute top-50 translate-middle-y zi-99 text-white w-100">
-            <div class="container">
-              <div class="row">
-                <div class="offset-1 col-9 offset-lg-5 col-lg-6">
-                  <div class="row">
-                    <div class="col-12 fs-80 fs-md-96 fw-bold">
-                      05
-                      <span class="ico-sostenible">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
-                        <path d="M17.423 61.7466C17.1542 60.9402 17.2886 59.9898 17.6918 59.1834C18.095 58.377 18.911 57.8298 19.727 57.6954C24.0758 56.889 31.967 56.3418 38.8982 60.2586C45.8294 64.1754 49.2374 71.337 50.7254 75.5226C50.9942 76.329 50.8599 77.2794 50.4567 78.0858C50.0439 78.8922 49.2374 79.4394 48.4214 79.5738C44.0726 80.3802 36.1814 80.9274 29.2502 77.0106C22.319 73.0938 18.9206 65.9418 17.423 61.7466Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M51.8398 78.4423C52.2334 79.1143 52.7614 79.5175 53.5486 79.6519C57.091 80.3239 63.379 80.8615 69.0142 77.492C74.6494 74.1224 77.4046 68.1895 78.5854 64.8199C78.8446 64.1479 78.7198 63.3415 78.3262 62.6599C77.9326 61.9879 77.4046 61.5848 76.6174 61.4504C73.075 60.7784 66.787 60.2408 61.1518 63.6104C59.8366 64.4168 58.6654 65.2232 57.7438 66.308" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M50.8787 78.2397C45.3683 72.9597 39.4643 69.0045 32.6387 67.6797" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M51.8398 78.2407C51.8398 78.2407 57.091 69.5623 68.1598 66.7207" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M62.3995 56.1598V19.0654C62.3995 18.259 62.1211 17.4526 61.4299 16.7806C60.8827 16.243 60.0475 15.8398 59.0875 15.8398C54.4027 15.8398 45.5707 15.8398 40.7515 15.8398C39.9259 15.8398 39.1003 16.1086 38.4091 16.7806C37.8619 17.3182 37.4395 18.1246 37.4395 19.0654C37.4395 28.0702 37.4395 52.7998 37.4395 52.7998" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M32.6391 28.3203H26.3319C25.5063 28.3203 24.6903 28.5795 23.9991 29.2323C23.4519 29.7507 23.0391 30.5283 23.0391 31.4403V52.3203" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M47.0391 24.7867C47.0391 24.0859 46.4727 23.5195 45.7719 23.5195C44.7927 23.5195 43.5255 23.5195 42.5367 23.5195C41.8359 23.5195 41.2695 24.0859 41.2695 24.7867C41.2695 25.7659 41.2695 27.0331 41.2695 28.0219C41.2695 28.7227 41.8359 29.2891 42.5367 29.2891C43.5159 29.2891 44.7831 29.2891 45.7719 29.2891C46.4727 29.2891 47.0391 28.7227 47.0391 28.0219V24.7867Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M58.5587 24.7867C58.5587 24.0859 57.9923 23.5195 57.2915 23.5195C56.3123 23.5195 55.0451 23.5195 54.0563 23.5195C53.3555 23.5195 52.7891 24.0859 52.7891 24.7867C52.7891 25.7659 52.7891 27.0331 52.7891 28.0219C52.7891 28.7227 53.3555 29.2891 54.0563 29.2891C55.0355 29.2891 56.3027 29.2891 57.2915 29.2891C57.9923 29.2891 58.5587 28.7227 58.5587 28.0219V24.7867Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M47.0391 35.3473C47.0391 34.6465 46.4727 34.0801 45.7719 34.0801C44.7927 34.0801 43.5255 34.0801 42.5367 34.0801C41.8359 34.0801 41.2695 34.6465 41.2695 35.3473C41.2695 36.3265 41.2695 37.5937 41.2695 38.5825C41.2695 39.2833 41.8359 39.8497 42.5367 39.8497C43.5159 39.8497 44.7831 39.8497 45.7719 39.8497C46.4727 39.8497 47.0391 39.2833 47.0391 38.5825V35.3473Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M58.5684 35.3473C58.5684 34.6465 58.002 34.0801 57.3012 34.0801C56.322 34.0801 55.0548 34.0801 54.066 34.0801C53.3652 34.0801 52.7988 34.6465 52.7988 35.3473C52.7988 36.3265 52.7988 37.5937 52.7988 38.5825C52.7988 39.2833 53.3652 39.8497 54.066 39.8497C55.0452 39.8497 56.3124 39.8497 57.3012 39.8497C58.002 39.8497 58.5684 39.2833 58.5684 38.5825V35.3473Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M77.7584 56.1601V31.4977C77.7584 30.7009 77.48 29.9041 76.7984 29.2417C76.2512 28.7137 75.4256 28.3105 74.4656 28.3105C71.4512 28.3105 66.6512 28.3105 62.3984 28.3105" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                      </span>
-                    </div>
-                    <div class="col-12 fs-20 fs-md-24 fw-bold">
-                      <?=$acf_fields['titulo_valor_5']?>
-                    </div>
-                    <div class="col-12 mt-36">
-                      <a href="<?=get_permalink(583)?>" 
-                      class="btn btn-outline-white text-uppercase rounded-0 border-2 fs-14 fw-500">
-                        <span>ir a ecolosofía</span>
-                      </a>
-                    </div>
+          <div class="container">
+            <div class="row">
+              <div class="offset-1 col-9 offset-lg-5 col-lg-6 text-white">
+                <div class="row">
+                  <div class="col-12 fs-80 fs-md-96 fw-bold">
+                    05
+                    <span class="ico-sostenible">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                      <path d="M17.423 61.7466C17.1542 60.9402 17.2886 59.9898 17.6918 59.1834C18.095 58.377 18.911 57.8298 19.727 57.6954C24.0758 56.889 31.967 56.3418 38.8982 60.2586C45.8294 64.1754 49.2374 71.337 50.7254 75.5226C50.9942 76.329 50.8599 77.2794 50.4567 78.0858C50.0439 78.8922 49.2374 79.4394 48.4214 79.5738C44.0726 80.3802 36.1814 80.9274 29.2502 77.0106C22.319 73.0938 18.9206 65.9418 17.423 61.7466Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M51.8398 78.4423C52.2334 79.1143 52.7614 79.5175 53.5486 79.6519C57.091 80.3239 63.379 80.8615 69.0142 77.492C74.6494 74.1224 77.4046 68.1895 78.5854 64.8199C78.8446 64.1479 78.7198 63.3415 78.3262 62.6599C77.9326 61.9879 77.4046 61.5848 76.6174 61.4504C73.075 60.7784 66.787 60.2408 61.1518 63.6104C59.8366 64.4168 58.6654 65.2232 57.7438 66.308" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M50.8787 78.2397C45.3683 72.9597 39.4643 69.0045 32.6387 67.6797" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M51.8398 78.2407C51.8398 78.2407 57.091 69.5623 68.1598 66.7207" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M62.3995 56.1598V19.0654C62.3995 18.259 62.1211 17.4526 61.4299 16.7806C60.8827 16.243 60.0475 15.8398 59.0875 15.8398C54.4027 15.8398 45.5707 15.8398 40.7515 15.8398C39.9259 15.8398 39.1003 16.1086 38.4091 16.7806C37.8619 17.3182 37.4395 18.1246 37.4395 19.0654C37.4395 28.0702 37.4395 52.7998 37.4395 52.7998" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M32.6391 28.3203H26.3319C25.5063 28.3203 24.6903 28.5795 23.9991 29.2323C23.4519 29.7507 23.0391 30.5283 23.0391 31.4403V52.3203" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M47.0391 24.7867C47.0391 24.0859 46.4727 23.5195 45.7719 23.5195C44.7927 23.5195 43.5255 23.5195 42.5367 23.5195C41.8359 23.5195 41.2695 24.0859 41.2695 24.7867C41.2695 25.7659 41.2695 27.0331 41.2695 28.0219C41.2695 28.7227 41.8359 29.2891 42.5367 29.2891C43.5159 29.2891 44.7831 29.2891 45.7719 29.2891C46.4727 29.2891 47.0391 28.7227 47.0391 28.0219V24.7867Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M58.5587 24.7867C58.5587 24.0859 57.9923 23.5195 57.2915 23.5195C56.3123 23.5195 55.0451 23.5195 54.0563 23.5195C53.3555 23.5195 52.7891 24.0859 52.7891 24.7867C52.7891 25.7659 52.7891 27.0331 52.7891 28.0219C52.7891 28.7227 53.3555 29.2891 54.0563 29.2891C55.0355 29.2891 56.3027 29.2891 57.2915 29.2891C57.9923 29.2891 58.5587 28.7227 58.5587 28.0219V24.7867Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M47.0391 35.3473C47.0391 34.6465 46.4727 34.0801 45.7719 34.0801C44.7927 34.0801 43.5255 34.0801 42.5367 34.0801C41.8359 34.0801 41.2695 34.6465 41.2695 35.3473C41.2695 36.3265 41.2695 37.5937 41.2695 38.5825C41.2695 39.2833 41.8359 39.8497 42.5367 39.8497C43.5159 39.8497 44.7831 39.8497 45.7719 39.8497C46.4727 39.8497 47.0391 39.2833 47.0391 38.5825V35.3473Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M58.5684 35.3473C58.5684 34.6465 58.002 34.0801 57.3012 34.0801C56.322 34.0801 55.0548 34.0801 54.066 34.0801C53.3652 34.0801 52.7988 34.6465 52.7988 35.3473C52.7988 36.3265 52.7988 37.5937 52.7988 38.5825C52.7988 39.2833 53.3652 39.8497 54.066 39.8497C55.0452 39.8497 56.3124 39.8497 57.3012 39.8497C58.002 39.8497 58.5684 39.2833 58.5684 38.5825V35.3473Z" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M77.7584 56.1601V31.4977C77.7584 30.7009 77.48 29.9041 76.7984 29.2417C76.2512 28.7137 75.4256 28.3105 74.4656 28.3105C71.4512 28.3105 66.6512 28.3105 62.3984 28.3105" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="col-12 fs-20 fs-md-24 fw-bold">
+                    <?=$acf_fields['titulo_valor_5']?>
+                  </div>
+                  <div class="col-12 mt-36">
+                    <a href="<?=get_permalink(583)?>" 
+                    class="btn btn-outline-white text-uppercase rounded-0 border-2 fs-14 fw-500">
+                      <span>ir a ecolosofía</span>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <?=wp_get_attachment_image(611, "full", "", array( 'class' => 'w-100 opacity-60' , 'alt' => '' , 'title' => '') ); ?>
         </div>
       </div>
-      <div class="col-12 col-lg-6 text-secondary bg-primary-brighter d-flex align-items-center py-40 pt-sm-80 pb-sm-70 pt-lg-0 pb-lg-0">
+      <div class="col-12 col-lg-6 text-secondary bg-primary-brighter d-sm-flex align-items-center py-40 pt-sm-80 pb-sm-70 pt-lg-0 pb-lg-0">
         <div class="row">
 
-              <div class="offset-2 col-8 offset-lg-1 col-lg-9 fw-500 fs-17 text-secondary-lighter ps-0" data-aos="fade-up">
+              <div class="gx-5 gx-sm-12 col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-9 fw-500 fs-17 text-secondary-lighter ps-sm-0" data-aos="fade-up">
                 <?=$acf_fields['texto_valor_5']?>
               </div>
 
@@ -255,7 +254,7 @@ get_header();
   </div>
 </section>
 
-<section class="my-56">
+<section class="my-56 gx-4 gx-sm-12">
   <div class="container">
     <div class="row">
       <div class="col-12 position-relative">
