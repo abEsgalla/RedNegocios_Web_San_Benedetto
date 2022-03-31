@@ -78,6 +78,9 @@
 }
 
 .mt-custom-28,.mt-custom-25{
+    @include media-breakpoint-down(xxxxl) {
+        margin-top: 34%;
+    }
     @include media-breakpoint-down(xxxl) {
         margin-top: 37%;
     }
@@ -820,4 +823,18 @@
     a{
         word-break: break-word;
     }
+}
+
+//FONT NATURA
+.postid-209{
+    .background-font-natura,.bg-custom-image{
+        @include media-breakpoint-up(xxxxl) {
+            background-repeat: no-repeat !important;
+            background-size: 100% 100% !important;
+        }
+    }
+}
+
+.banner-producto{
+    background-position: center;
 }
