@@ -39,7 +39,7 @@ if($acf_fields['secciones']):
                     </div>
                     <div class="col-12">
                         <div class="swiper swiper-landing-productos mt-94">
-                        <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?>">
+                        <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?> <?=(count($seccion['slider']['slide'])<=4)?'justify-content-md-center':'';?>">
                             <?php
                             if ($seccion['slider']):
                             foreach ($seccion['slider']['slide'] as $slide ):
@@ -120,7 +120,7 @@ if($acf_fields['secciones']):
             break;
             case 'cols_imagenes_texto':
             ?>
-            <section class=" zi-99 position-relative mt-56 mb-178 seccion_cols_imagenes menta-essenzia-bottom-trigger">
+            <section class=" zi-99 position-relative mt-56 mb-56 mb-md-178 seccion_cols_imagenes menta-essenzia-bottom-trigger">
                 <div class="container position-relative">
                     <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/limon_essenzia_top.png'; ?>" class="position-absolute limon-essenzia-top">                    
                     <img src="<?=get_stylesheet_directory_uri().'/src/img/background-essenzia/menta_essenzia_top.png'; ?>" class="position-absolute menta-essenzia-top">
@@ -141,9 +141,9 @@ if($acf_fields['secciones']):
                         <? 
                         $i = 1;
                         foreach ($seccion['col'] as $col): ?>
-                            <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?>">
+                            <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?> columna-refresco-essenzia">
                             <? if($col['posicion_texto'] && $col['texto']): ?>
-                                    <div class="text-start text-secondary texto px-lg-48 mb-70">
+                                    <div class="text-start text-secondary texto px-lg-48 mb-48 mt-48 mb-md-64 mt-md-64" data-aos="fade-up">
                                     <? if($col['posicion_texto']): ?>
                                         <?=$col['texto']?>
                                     <? endif; ?>
@@ -155,7 +155,7 @@ if($acf_fields['secciones']):
                                         <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 zi-99 position-relative' , 'alt' => '' , 'title' => '') ); ?>  
                                     </div>
                                 <?php else: ?>                                
-                                    <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 zi-99 position-relative' , 'alt' => '' , 'title' => '') ); ?>  
+                                    <?=wp_get_attachment_image($col['imagen'], "full", "", array( 'class' => 'w-100 zi-99 position-relative h-100' , 'alt' => '' , 'title' => '') ); ?>  
                                 <?php endif; ?>
                             </div>
                         <?     

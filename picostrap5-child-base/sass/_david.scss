@@ -167,12 +167,25 @@
                 margin-bottom: 24px;
             }
             order: 2;
+            &.columna-happy{
+                order: 1;
+            }
+        }
+        &.columna-happy{
+            > img{
+                height: 100%;
+            }
         }
         @include media-breakpoint-down(sm) {
             &.columna-fuente-primavera{
                 order: 1;    
             }
             order: 2;
+        }
+        @include media-breakpoint-down(sm) {
+            &.columna-refresco-essenzia{
+                order: 1;
+            }
         }
     }
     .columna-2{
@@ -184,7 +197,8 @@
         }
         @include media-breakpoint-down(sm) {
             &.columna-zero{
-                order: 1;    
+                order: 1;
+                margin-bottom: 24px;    
             }
             order: 2;
         }
@@ -193,6 +207,17 @@
                 order: 2;    
             }
             order: 1;
+            &.columna-refresco-essenzia{
+                order: 2;
+            }
+        }
+        &.columna-happy{
+            order: 2;
+        }
+        @include media-breakpoint-down(sm) {
+            &.columna-refresco-essenzia{
+                order: 2;
+            }
         }
     }
 }

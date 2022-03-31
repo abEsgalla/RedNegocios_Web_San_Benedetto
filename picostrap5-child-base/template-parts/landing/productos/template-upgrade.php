@@ -38,7 +38,7 @@ if($acf_fields['secciones']):
                         </div>
                         <div class="col-12">
                             <div class="swiper swiper-landing-productos slider-productos-upgrade mt-94">
-                            <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?>">
+                            <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?> <?=(count($seccion['slider']['slide'])<=4)?'justify-content-md-center':'';?>">
                                 <?php
                                 if ($seccion['slider']):
                                 foreach ($seccion['slider']['slide'] as $slide ):

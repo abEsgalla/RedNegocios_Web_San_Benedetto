@@ -39,7 +39,7 @@ if($acf_fields['secciones']):
                     </div>
                     <div class="col-12">
                         <div class="swiper swiper-landing-productos mt-94">
-                        <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?>">
+                        <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?> <?=(count($seccion['slider']['slide'])<=4)?'justify-content-md-center':'';?>">
                             <?php
                             if ($seccion['slider']):
                             foreach ($seccion['slider']['slide'] as $slide ):
@@ -120,7 +120,7 @@ if($acf_fields['secciones']):
             break;
             case 'cols_imagenes_texto':
             ?>
-            <section class=" zi-99 position-relative mt-56 mb-178 seccion_cols_imagenes">
+            <section class=" zi-99 position-relative mt-56 mb-56 mb-lg-178 seccion_cols_imagenes">
                 <div class="container position-relative">
                     <div class="row">
                     <div class="col-12 offset-xl-1 col-xl-10">
@@ -138,9 +138,9 @@ if($acf_fields['secciones']):
                         <? 
                         $i = 1;
                         foreach ($seccion['col'] as $col): ?>
-                            <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?>">
+                            <div class="col-12 position-relative zi-9 <?=$col['tamano']?> columna-<?=$i ?> columna-happy">
                             <? if($col['posicion_texto'] && $col['texto']): ?>
-                                    <div class="text-start text-secondary texto px-lg-48 mb-70">
+                                    <div class="text-start text-secondary texto px-lg-48 mb-md-64 mt-48 mb-48 mt-md-64">
                                     <? if($col['posicion_texto']): ?>
                                         <?=$col['texto']?>
                                     <? endif; ?>

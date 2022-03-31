@@ -300,6 +300,15 @@
 .limon-essenzia-top{
   top: 0;
   transform: translateY(calc(-100% + 50px));
+  @include media-breakpoint-down(lg){
+    transform: translateY(0);
+    left: -50px;
+    width: 150px;
+    top: 50px;
+  }
+  @include media-breakpoint-down(md){
+    top: 150px;
+  }
 }
 
 .menta-essenzia-bottom{
@@ -313,11 +322,26 @@
   top: 0;
   transform: translateY(calc(-100% - 75px));
   left: 50px;
+  @include media-breakpoint-down(lg){
+    transform: translateY(0);
+    left: -50px;
+    width: 100px;
+  }
+  @include media-breakpoint-down(md){
+    top: 125px;
+  }
 }
 
 .naranja-essenzia-bottom{
   bottom: -20px;
   right: 0;
+  @include media-breakpoint-down(lg){
+    bottom: -80px;
+  }
+  @include media-breakpoint-down(md){
+    width: 100px;
+    bottom: -50px;
+  }
 }
 
 .limon-agua{
