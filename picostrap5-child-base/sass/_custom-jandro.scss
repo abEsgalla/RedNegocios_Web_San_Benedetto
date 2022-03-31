@@ -526,17 +526,19 @@
   margin-top: -78px;
   margin-right: 32px; 
 
-  animation-duration: 5s;
-  animation-name: burbuja-down;
-  animation-iteration-count: infinite;
-
   @include media-breakpoint-up(lg){
     margin-top: -48px;
     margin-left: 48px;
     margin-right: 124px;
+    animation-duration: 5s;
+    animation-name: burbuja-down;
+    animation-iteration-count: infinite;
   } 
   @include media-breakpoint-down(lg){
     width: auto;
+    animation-duration: 5s;
+    animation-name: burbuja-down;
+    animation-iteration-count: infinite;
   }
   @include media-breakpoint-up(xl){
     margin-top: -64px;
@@ -546,7 +548,7 @@
   @include media-breakpoint-down(xl){
     width: 112px;
   }
-
+  
 }
 
 .burbuja-2{
@@ -588,6 +590,9 @@
   @include media-breakpoint-up(lg){
     margin-top: -48px;
     margin-left: 12px;
+    animation-duration: 7s;
+    animation-name: burbuja-down;
+    animation-iteration-count: infinite;
   }
   @include media-breakpoint-up(xl){
     margin-top: -48px;
@@ -602,16 +607,19 @@
   }
   @include media-breakpoint-down(lg){
     width: auto;
+    animation-duration: 7s;
+    animation-name: burbuja-up;
+    animation-iteration-count: infinite;
   }  
-  animation-duration: 7s;
-  animation-name: burbuja-down;
-  animation-iteration-count: infinite;
 }
 
 .burbuja-5{
   @include media-breakpoint-up(lg){
     margin-top: -32px;
     margin-left: 24px;
+    animation-duration: 9s;
+    animation-name: burbuja-down;
+    animation-iteration-count: infinite;
   }
   @include media-breakpoint-down(xl){
     width: 66px;
@@ -622,9 +630,6 @@
   @include media-breakpoint-down(md){
     margin-left: 12px;
   }  
-  animation-duration: 9s;
-  animation-name: burbuja-down;
-  animation-iteration-count: infinite;
 }
 
 .burbuja-4{
@@ -633,6 +638,9 @@
   @include media-breakpoint-up(lg){
     margin-left: 64px;
     margin-bottom: -48px;
+    animation-duration: 7s;
+    animation-name: burbuja-up;
+    animation-iteration-count: infinite;
   } 
   @include media-breakpoint-down(xl){
     width: 53px;
@@ -641,14 +649,14 @@
     margin-left: 175px;
     margin-right: 12px;
     width: auto;
+    animation-duration: 7s;
+    animation-name: burbuja-down;
+    animation-iteration-count: infinite;
   } 
   @include media-breakpoint-down(md){
     margin-left: 0;
     margin-right: 12px;
   }
-  animation-duration: 7s;
-  animation-name: burbuja-up;
-  animation-iteration-count: infinite;
 }
 
 .dots-4{
@@ -660,16 +668,19 @@
   @include media-breakpoint-up(lg){
     margin-left: 12px;
     margin-top: 24px;
+    animation-duration: 5s;
+    animation-name: burbuja-up;
+    animation-iteration-count: infinite;
   }
   @include media-breakpoint-down(xl){
     width: 98px;
   }
   @include media-breakpoint-down(lg){
-    width: auto;
+    width: 170px;
+    animation-duration: 5s;
+    animation-name: burbuja-down;
+    animation-iteration-count: infinite;
   }  
-  animation-duration: 5s;
-  animation-name: burbuja-up;
-  animation-iteration-count: infinite;
 }
 
 @keyframes burbuja-up {

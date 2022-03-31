@@ -61,13 +61,6 @@
               <?
               endif;
               ?>
-              <?php
-                if($seccion['fondo']==1586):
-              ?>
-                <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-primavera/imagen-superior-primavera-slider-botellas.png'; ?>" class="imagen-slider-botellas-responsive p-0 w-100 mt-64 mb-0 d-block d-md-none">
-              <?php
-                endif;
-              ?>
             </div>
           </div>
         </div>
