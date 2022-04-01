@@ -98,28 +98,21 @@ $productosRefrescos = $fields['productos_refrescos'];
                                                                 echo $array_custom_menu_banner_home_single;
                                                                 $contador++;
                                                             }
-                                                            /*if($key==array_key_last($array_custom_menu_banner_home)){
-                                                                menu($array_base,$contador);
-                                                            }*/
+                                                            if($key==array_key_last($array_custom_menu_banner_home)){
+                                                                foreach($array_custom_menu_banner_home as $key_2 => $custom_single){
+                                                                    if($contador==4){
+                                                                        break;
+                                                                    }
+                                                                    if($key_2==$slide['producto']){
+                                                                        $contador++;
+                                                                    }
+                                                                    if($contador>0){
+                                                                        echo $custom_single;
+                                                                        $contador++;
+                                                                    }
+                                                                }
+                                                            }
                                                         };
-                                                        /*function menu($contador,$array_custom_menu_banner_home,$slide){
-                                                            foreach($array_custom_menu_banner_home as $key => $array_custom_menu_banner_home_single){
-                                                                if($contador==4){
-                                                                    break;
-                                                                }
-                                                                if($key==$slide['producto']){
-                                                                    $contador++;
-                                                                }
-                                                                if($contador>0){
-                                                                    echo $array_custom_menu_banner_home_single;
-                                                                    $contador++;
-                                                                }
-                                                                if($key==array_key_last($array_custom_menu_banner_home)){
-                                                                    menu($contador,$array_custom_menu_banner_home,$slide);
-                                                                }
-                                                            };
-                                                        };
-                                                        menu($contador,$array_custom_menu_banner_home,$slide);*/
                                                         ?>
                                                     </div>
                                                 </div>
