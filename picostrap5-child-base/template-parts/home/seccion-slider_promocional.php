@@ -25,9 +25,12 @@ $productosRefrescos = $fields['productos_refrescos'];
                                                         </svg>
                                                     </div>
                                                     <div class="d-flex">
-                                                        <?php $colorTexto = $slide['color_texto'];?>
+                                                        <?php 
+                                                        $colorTexto = $slide['color_texto'];
+                                                        $array_custom_menu_banner_home = array();
+                                                        ?>
                                                         <?php
-                                                        if(get_the_terms( $slide['producto'], 'categorias_producto' )[0]->term_id == 3):
+                                                        //if(get_the_terms( $slide['producto'], 'categorias_producto' )[0]->term_id == 3):
                                                             foreach($productosAguas as $key => $productoAgua):?>
                                                                 <?
                                                                 switch ($productoAgua) {
@@ -41,13 +44,19 @@ $productosRefrescos = $fields['productos_refrescos'];
                                                                         $jump=2;
                                                                     break;
                                                                 }
-                                                                ?>
-                                                                <div onclick=swiper_home_promocional.slideTo(<?=$jump?>) position-slider=<?=$jump?>
-                                                                class="<?=$productoAgua?> fw-500 col-custom-lg letter-spacing-1x3 col c-pointer fs-13 text-<?=$colorTexto?> opacity-50 <?=($key==0)?'opacity-100':'';?>">
-                                                                    <?=get_the_title($productoAgua)?>
+                                                                $custom_opacity=($productoAgua==$slide['producto'])?'opacity-100':'';
+                                                                $html_menu='
+                                                                <div onclick=swiper_home_promocional.slideTo('.$jump.') position-slider='.$jump.'
+                                                                class="'.$productoAgua.' fw-500 col-custom-lg letter-spacing-1x3 col c-pointer fs-13 
+                                                                text-'.$colorTexto.' opacity-50 '.$custom_opacity.'">
+                                                                    '.get_the_title($productoAgua).'
                                                                 </div>
+                                                                ';
+                                                                $array_custom_menu_banner_home[$productoAgua] = $html_menu;
+                                                                //echo $html_menu;
+                                                                ?>
                                                             <? endforeach;
-                                                        else:
+                                                        //else:
                                                             foreach($productosRefrescos as $key => $productoRefresco):?>
                                                                 <?
                                                                 switch ($productoRefresco) {
@@ -64,13 +73,53 @@ $productosRefrescos = $fields['productos_refrescos'];
                                                                         $jump=6;
                                                                     break;
                                                                 }
-                                                                ?>
-                                                                <div onclick=swiper_home_promocional.slideTo(<?=$jump?>)  position-slider=<?=$jump?>
-                                                                class="fw-500 col-custom-lg letter-spacing-1x3 col c-pointer text-<?=$colorTexto?> fs-13 opacity-50 <?=($key==0)?'opacity-100':'';?>">
-                                                                    <?=get_the_title($productoRefresco)?>
+                                                                $custom_opacity=($productoRefresco==$slide['producto'])?'opacity-100':'';
+                                                                $html_menu='
+                                                                <div onclick=swiper_home_promocional.slideTo('.$jump.') position-slider='.$jump.'
+                                                                class="'.$productoAgua.' fw-500 col-custom-lg letter-spacing-1x3 col c-pointer fs-13 
+                                                                text-'.$colorTexto.' opacity-50 '.$custom_opacity.'">
+                                                                    '.get_the_title($productoRefresco).'
                                                                 </div>
+                                                                ';
+                                                                $array_custom_menu_banner_home[$productoRefresco] = $html_menu;
+                                                                //echo $html_menu;
+                                                                ?>
                                                             <? endforeach;
-                                                        endif;
+                                                        //endif;
+                                                        $contador = 0;
+                                                        foreach($array_custom_menu_banner_home as $key => $array_custom_menu_banner_home_single){
+                                                            if($contador==4){
+                                                                break;
+                                                            }
+                                                            if($key==$slide['producto']){
+                                                                $contador++;
+                                                            }
+                                                            if($contador>0){
+                                                                echo $array_custom_menu_banner_home_single;
+                                                                $contador++;
+                                                            }
+                                                            /*if($key==array_key_last($array_custom_menu_banner_home)){
+                                                                menu($array_base,$contador);
+                                                            }*/
+                                                        };
+                                                        /*function menu($contador,$array_custom_menu_banner_home,$slide){
+                                                            foreach($array_custom_menu_banner_home as $key => $array_custom_menu_banner_home_single){
+                                                                if($contador==4){
+                                                                    break;
+                                                                }
+                                                                if($key==$slide['producto']){
+                                                                    $contador++;
+                                                                }
+                                                                if($contador>0){
+                                                                    echo $array_custom_menu_banner_home_single;
+                                                                    $contador++;
+                                                                }
+                                                                if($key==array_key_last($array_custom_menu_banner_home)){
+                                                                    menu($contador,$array_custom_menu_banner_home,$slide);
+                                                                }
+                                                            };
+                                                        };
+                                                        menu($contador,$array_custom_menu_banner_home,$slide);*/
                                                         ?>
                                                     </div>
                                                 </div>
