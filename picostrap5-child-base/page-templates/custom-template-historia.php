@@ -225,7 +225,7 @@ get_header();
               <div class="col-12 mt-225">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(1129, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image(1686, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -399,7 +399,7 @@ get_header();
               <div class="col-12 mt-24 last-image-mobile">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(1129, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image(1686, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>

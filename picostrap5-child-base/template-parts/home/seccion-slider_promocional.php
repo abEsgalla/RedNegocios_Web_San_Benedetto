@@ -14,7 +14,7 @@ $productosRefrescos = $fields['productos_refrescos'];
                             <div class="text-<?=$slide['color_texto']?> h-auto" data-bgcolor="<?=$slide['color_fondo']?>" data-textcolor="<?=$slide['color_texto']?>">
                                 <div class='row align-items-center'>
 
-                                    <div class='col-12 col-lg-6'>
+                                    <div class='col-12 col-lg-6 col-xxl-5'>
                                         <div class='row text-center text-lg-start'><!-- mt-138 mt-md-200 -->
 
                                             <div class="col-12 mb-64 d-none d-md-block">
@@ -88,7 +88,7 @@ $productosRefrescos = $fields['productos_refrescos'];
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='col-12 col-lg-6 mt-28 mt-sm-0 text-center'>
+                                    <div class='col-12 col-lg-6 mt-28 mt-sm-0 text-center col-xxl-7'>
                                         <?=wp_get_attachment_image( $slide['imagen_producto'], 'full')?>
                                     </div>
                                 </div>
