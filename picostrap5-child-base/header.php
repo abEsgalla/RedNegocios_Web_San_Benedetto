@@ -7,7 +7,6 @@ defined( 'ABSPATH' ) || exit;
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
   <head>
-	  <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0c0915eb-add3-4fd1-8536-67aaeef60fa7" data-blockingmode="auto" type="text/javascript"></script> -->
     <!-- Required meta tags -->
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -131,33 +130,50 @@ defined( 'ABSPATH' ) || exit;
           <div class="offcanvas-body d-flex justify-content-center align-items-center row">
             <div class="text-uppercase text-secondary fw-500 col-12 col-sm-8">
               <div class="border-bottom border-secondary-lighter py-16">
-                <a href="<?=get_permalink(2)?>" class="text-reset text-decoration-none">Home</a>
+                <a href="<?=get_permalink(2)?>" class="text-reset text-decoration-none">
+                <?=_e('Home')?>
+                </a>
               </div>
               <div class="border-bottom border-secondary-lighter py-16">
                 <div class="d-flex justify-content-between">
-                  <a href="<?=get_permalink(579)?>" class="text-reset text-decoration-none">nosotros</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
+                  <a href="<?=get_permalink(579)?>" class="text-reset text-decoration-none">
+                  <?=_e('nosotros')?>
+                  </a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus">
+                  </i>
                 </div>
                 <div class="submenu fw-400 fs-13 ps-16">
                   <div class="pt-16">
-                    <a href="<?=get_permalink(579)?>" class="text-reset text-decoration-none">Historia</a>
+                    <a href="<?=get_permalink(579)?>" class="text-reset text-decoration-none">
+                    <?=_e('Historia')?>
+                    </a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(581)?>" class="text-reset text-decoration-none">Misión, Visión y Valores</a>
+                    <a href="<?=get_permalink(581)?>" class="text-reset text-decoration-none">
+                    <?=_e('Misión, Visión y Valores')?>
+                    </a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(655)?>" class="text-reset text-decoration-none">San Benedetto en España</a>
+                    <a href="<?=get_permalink(655)?>" class="text-reset text-decoration-none">
+                    <?=_e('San Benedetto en España')?>
+                    </a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(667)?>" class="text-reset text-decoration-none">San Benedetto en el mundo</a>
+                    <a href="<?=get_permalink(667)?>" class="text-reset text-decoration-none">
+                    <?=_e('San Benedetto en el mundo')?>
+                    </a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink( get_option( 'page_for_posts' ) ); ?>" class="text-reset text-decoration-none">Noticias</a>
+                    <a href="<?=get_permalink( get_option( 'page_for_posts' ) ); ?>" class="text-reset text-decoration-none">
+                    <?=_e('Noticias')?>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="border-bottom border-secondary-lighter py-16">
                 <div class="d-flex justify-content-between">
-                  <a href="<?=get_permalink(49)?>" class="text-reset text-decoration-none">marcas</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
+                  <a href="<?=get_permalink(49)?>" class="text-reset text-decoration-none">
+                  <?=_e('marcas')?>
+                  </a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
                 </div>
                 <div class="submenu fw-400 fs-13 ps-16">
                   <div class="pt-16">
@@ -182,42 +198,62 @@ defined( 'ABSPATH' ) || exit;
                     <a href="/landings/upgrade/" class="text-reset text-decoration-none">Upgrade</a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(49)?>" class="text-reset text-decoration-none">Ver Más</a>
+                    <a href="<?=get_permalink(49)?>" class="text-reset text-decoration-none">
+                    <?=_e('Ver Más')?>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="border-bottom border-secondary-lighter py-16">
                 <div class="d-flex justify-content-between">
-                  <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">ecolosofía</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
+                  <a href="<?=get_permalink(583)?>" class="text-reset text-decoration-none">
+                  <?=_e('ecolosofía')?>
+                  </a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
                 </div>
                 <div class="submenu fw-400 fs-13 ps-16">
                   <div class="pt-16">
-                    <a href="<?=get_permalink(585)?>" class="text-reset text-decoration-none">Producto</a>
+                    <a href="<?=get_permalink(585)?>" class="text-reset text-decoration-none">
+                    <?=_e('Producto')?>
+                    </a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(587)?>" class="text-reset text-decoration-none">Procesos</a>
+                    <a href="<?=get_permalink(587)?>" class="text-reset text-decoration-none">
+                    <?=_e('Procesos')?>
+                    </a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(589)?>" class="text-reset text-decoration-none">Entorno</a>
+                    <a href="<?=get_permalink(589)?>" class="text-reset text-decoration-none">
+                    <?=_e('Entorno')?>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="border-bottom border-secondary-lighter py-16">
-                <a href="<?=get_permalink(647)?>" class="text-reset text-decoration-none">área profesional</a>
+                <a href="<?=get_permalink(647)?>" class="text-reset text-decoration-none">
+                  <?=_e('área profesional')?>
+                </a>
               </div>  
               <div class="border-bottom border-secondary-lighter py-16">
                 <div class="d-flex justify-content-between">
-                  <a href="<?=get_permalink(650)?>" class="text-reset text-decoration-none">Contacto</a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
+                  <a href="<?=get_permalink(650)?>" class="text-reset text-decoration-none">
+                  <?=_e('Contacto')?>
+                  </a> <i class="fa-solid fa-plus-large"></i><i class="fa-solid fa-minus"></i>
                 </div>
                 <div class="submenu fw-400 fs-13 ps-16">
                   <div class="pt-16">
-                    <a href="<?=get_permalink(672)?>" class="text-reset text-decoration-none">Buscamos talento</a>
+                    <a href="<?=get_permalink(672)?>" class="text-reset text-decoration-none">
+                    <?=_e('Buscamos talento')?>
+                  </a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(650)?>" class="text-reset text-decoration-none">Localizacion y contacto</a>
+                    <a href="<?=get_permalink(650)?>" class="text-reset text-decoration-none">
+                    <?=_e('Localizacion y contacto')?>
+                  </a>
                   </div>
                   <div class="pt-16">
-                    <a href="<?=get_permalink(785)?>" class="text-reset text-decoration-none">Preguntas frecuentes</a>
+                    <a href="<?=get_permalink(785)?>" class="text-reset text-decoration-none">
+                    <?=_e('Preguntas frecuentes')?>
+                  </a>
                   </div>
                 </div>
               </div>
