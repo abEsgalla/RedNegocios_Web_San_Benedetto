@@ -914,3 +914,7 @@
         background-image: url('/wp-content/uploads/2022/03/bg-banner-marcas-mobile.png') !important;
     }
 }
+
+html *:not(.contenedor-cursor-custom){
+    cursor: url('https://sanbenedetto.digitalmentapre.com/wp-content/uploads/2022/03/Isotipo.png'), auto;
+}
