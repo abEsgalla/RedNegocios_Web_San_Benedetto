@@ -918,3 +918,83 @@
 html *:not(.contenedor-cursor-custom){
     cursor: url('https://sanbenedetto.digitalmentapre.com/wp-content/uploads/2022/03/Isotipo.png'), auto;
 }
+
+
+.svg-under-sellos{
+    circle{
+        &.circle-one{
+            opacity: 1;
+            stroke: $green;
+            fill: $green;
+            animation: color-one 3s linear;
+        }
+        &.circle-two{
+            opacity: 1;
+            stroke: $green;
+            fill: $green;
+            animation: color-two 3s linear;
+        }
+    }
+    path{
+        &.line{
+            stroke: $green;
+            stroke-dasharray: 1510;
+            animation: undersellos 3s linear;
+        }
+        &.text-one{
+            opacity: 1;
+            stroke: $green;
+            fill: $green;
+            animation: color-one 3s linear;
+        }
+        &.text-two{
+            opacity: 1;
+            stroke: $green;
+            fill: $green;
+            animation: color-two 3s linear;
+        }
+    }
+}
+
+@keyframes color-one {
+    0% {
+        opacity: 0.5;
+        stroke: $white;
+        fill: $white;
+    }
+    49% {
+        opacity: 0.5;
+        stroke: $white;
+        fill: $white;
+    }
+    50% {
+        opacity: 1;
+        stroke: $green;
+        fill: $green;
+    }
+}
+@keyframes color-two {
+    0% {
+        opacity: 0.5;
+        stroke: $white;
+        fill: $white;
+    }
+    24% {
+        opacity: 0.5;
+        stroke: $white;
+        fill: $white;
+    }
+    25% {
+        opacity: 1;
+        stroke: $green;
+        fill: $green;
+    }
+}
+@keyframes undersellos {
+    0% {
+        stroke-dashoffset: -1110;
+    }
+    100% {
+        stroke-dashoffset: 310;
+    }
+}
