@@ -18,10 +18,10 @@ get_header();
           <div class="col-12 offset-lg-1 col-lg-10 text-center">
             <div class="row text-white">
               <div class="col-12 text-uppercase fs-18">
-              GRUPO SAN BENEDETTO
+                <?=_e('GRUPO SAN BENEDETTO')?>
               </div>
               <h1 class="col-12 mt-8 h2 fs-32 fs-md-64 text-white lh-1">
-                Agua Mineral San Benedetto en España
+                <?=_e('Agua Mineral San Benedetto en España')?>
               </h1>
             </div>
           </div>

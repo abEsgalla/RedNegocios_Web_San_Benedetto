@@ -13,10 +13,10 @@ get_header();
   <div class="container">
     <div class="row text-center text-secondary">
       <div class="col-12 text-uppercase fs-18">
-        GRUPO SAN BENEDETTO
+        <?=_e('GRUPO SAN BENEDETTO')?>
       </div>
       <h1 class="col-12  h2 fs-42 fs-lg-64  mt-8">
-        Historia
+        <?=_e('Historia')?>
       </h1>
     </div>
   </div>
@@ -423,15 +423,17 @@ get_header();
           <div class="col-12 offset-lg-3 col-lg-6 text-center text-white">
             <div class="row">
               <div class="col-12 text-uppercase fs-18 pt-20">
-                san benedetto
+                <?=_e('san benedetto')?>
               </div>
               <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-10">
-                Conoce nuestras marcas
+                <?=_e('Conoce nuestras marcas')?>
               </div>
               <div class="col-12 mt-32  fs-14 fs-lg-17 ">
                 <a href="<?=get_permalink(49)?>" class="col-12 text-center">
                   <div class="btn btn-outline-white text-uppercase rounded-0">
-                    <span>saber más</span>
+                    <span>
+                      <?=_e('saber más')?>
+                    </span>
                   </div>
                 </a>
               </div>

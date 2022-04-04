@@ -22,10 +22,10 @@ endif;
       <div class="col-12">
         <div class="row text-secondary">
           <div class="col-12 fs-18 text-center text-lg-start">
-            SAN BENEDETTO
+            <?=_e('SAN BENEDETTO')?>
           </div>
           <div class="col-12 h2 fs-32 fs-sm-64 mt-8 text-center text-lg-start">
-            Noticias
+            <?=_e('Noticias')?>
           </div>
           <?php
           if ($remove_elements):        
@@ -43,7 +43,7 @@ endif;
                                   <?=wp_get_attachment_image(890, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
                                 </span>
                                 <span class="fs-13 ms-12">
-                                  San Benedetto
+                                  <?=_e('San Benedetto')?>
                                 </span>
                                 <span class="position-absolute end-0 zi-99">
                                   <?=wp_get_attachment_image(892, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
@@ -145,15 +145,17 @@ endif;
           <div class="col-12 offset-lg-3 col-lg-6 text-center text-white">
             <div class="row">
               <div class="col-12 text-uppercase fs-18 pt-20">
-                san benedetto
+                <?=_e('san benedetto')?>
               </div>
               <div class="col-12 h4 mt-10">
-                Conoce nuestras marcas
+                <?=_e('Conoce nuestras marcas')?>
               </div>
               <div class="col-12 mt-32 fs-17">
-                <a href="#" class="col-12 text-center">
+                <a href="<?=get_permalink(49)?>" class="col-12 text-center">
                   <div class="btn btn-outline-white text-uppercase rounded-0">
-                    <span>saber más</span>
+                    <span>
+                    <?=_e('saber más')?>
+                    </span>
                   </div>
                 </a>
               </div>

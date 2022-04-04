@@ -19,10 +19,10 @@ get_header();
           <div class="col-12 offset-xl-4 col-xl-4 text-center">
             <div class="row text-white">
               <div class="col-12 text-uppercase">
-                ecolosofía
+                  <?=_e('ecolosofía')?>
               </div>
               <h1 class="col-12 mt-16 h1 text-green mb-70">
-                Entorno
+                  <?=_e('Entorno')?>
               </h1>
               <div class="col-12 position-relative">
                 <?=wp_get_attachment_image(1185, "full", "", array( 'class' => 'sello opacity-75' , 'alt' => '' , 'title' => '') ); ?>

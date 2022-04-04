@@ -17,11 +17,17 @@ get_header();
           <div class="col-12">
             <div class="row">
               <div class="col-12">
-                <div class="text-uppercase text-secondary">GRUPO SAN BENEDETTO</div>
-                <h1 class="h2 fs-32 fs-md-64 text-secondary mt-8">Localización y contacto</h1>
+                <div class="text-uppercase text-secondary">
+                  <?=_e('GRUPO SAN BENEDETTO')?>
+                </div>
+                <h1 class="h2 fs-32 fs-md-64 text-secondary mt-8">
+                  <?=_e('Localización y contacto')?>
+                </h1>
               </div>
               <div class="col-12 mt-40 mt-sm-48 mt-xl-80">
-                <div class="text-uppercase h5 fs-18 fs-sm-32 text-secondary">oficinas centrales</div>
+                <div class="text-uppercase h5 fs-18 fs-sm-32 text-secondary">
+                  <?=_e('oficinas centrales')?>
+                </div>
               </div>
               <div class="col-12 text-primary my-24 my-sm-48">
                 <div class="row">
@@ -34,7 +40,7 @@ get_header();
                   <div class="col-10 col-sm-11 col-lg-10">
                     <div class="row">
                       <div class="col-12 text-uppercase fw-bolder mt-8">
-                        dirección
+                        <?=_e('dirección')?>
                       </div>
                       <div class="col-12 mt-8 mt-sm-24 text-secondary-light">
                         <?=$acf_fields['direccion_oficinas_centrales']?>
@@ -55,7 +61,7 @@ get_header();
                   <div class="col-10 col-sm-11 col-lg-10">
                     <div class="row">
                       <div class="col-12 text-uppercase fw-bolder mt-8">
-                        Teléfono / FAX
+                        <?=_e('Teléfono / FAX')?>
                       </div>
                       <div class="col-12 mt-8 mt-sm-24 text-secondary-light">
                         <?=$acf_fields['telefono_oficinas_centrales']?>
@@ -74,7 +80,7 @@ get_header();
                   <div class="col-10 col-sm-11 col-lg-10">
                     <div class="row">
                       <div class="col-12 text-uppercase fw-bolder mt-8">
-                        Cómo Llegar
+                        <?=_e('Cómo Llegar')?>
                       </div>
                       <div class="col-12 mt-8 mt-sm-24 text-secondary-light">
                         <?=$acf_fields['como_llegar_oficinas_centrales']?>
@@ -146,7 +152,7 @@ get_header();
               <div class="col-10 col-sm-11 col-lg-10">
                 <div class="row">
                   <div class="col-12 text-uppercase fw-bolder mt-8">
-                    Planta Granada
+                    <?=_e('Planta Granada')?>
                   </div>
                   <div class="col-12 mt-8 mt-sm-24 text-secondary-light">
                     <?=$acf_fields['direccion_sede_granada']?>
@@ -175,7 +181,12 @@ get_header();
             <div class="row px-sm-0 px-12">
               <div class="col-12 text-white mt-40 mt-sm-64 mt-lg-120">
                 <div class="fw-bold h3 fs-32 fs-sm-48">
-                  Formulario <br>de <span class="text-decoration-underline">contacto</span>
+                  <?=_e('Formulario')?>
+                  <br>
+                  <?=_e('de')?>
+                  <span class="text-decoration-underline">
+                  <?=_e('contacto')?>
+                  </span>
                 </div>
               </div>
               <div class="col-12 offset-lg-2 col-lg-10 text-white">
@@ -193,56 +204,6 @@ get_header();
             <div class="contact-form-contacto my-48 my-sm-64 my-lg-80">
               <?=do_shortcode('[contact-form-7 id="1372" title="Formulario de contacto 1"]')?>
             </div>
-            <form class="d-none my-48 my-sm-64 my-lg-80 text-white rm-bootstrap-form-style needs-validation" novalidate>
-              <div class="mt-3">
-                <label for="inputNombre" class="form-label fs-12 mb-1">Nombre y apellidos *</label>
-                <input type="text" placeholder="Ej. Jesús Carrillo Laso" 
-                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
-                id="inputNombre" required>
-              </div>
-              <div class="mt-3">
-                <label for="inputNombre" class="form-label fs-12 mb-1">E-mail *</label>
-                <input type="text" placeholder="Ej. name@name.com" 
-                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
-                id="inputNombre" required>
-              </div>
-              <div class="mt-3">
-                <label for="inputNombre" class="form-label fs-12 mb-1">E-mail *</label>
-                <input type="text" placeholder="Ej. name@name.com" 
-                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
-                id="inputNombre" required>
-              </div>
-              <div class="mt-3">
-                <label for="inputNombre" class="form-label fs-12 mb-1">Comentario *</label>
-                <input type="text" placeholder="Escribe un comentario" 
-                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
-                id="inputNombre" required>
-              </div>
-              <div class="my-28 form-check align-items-center d-flex">
-                <input type="checkbox" class="my-0 p-12 form-check-input rounded-0 bg-transparent" 
-                id="exampleCheck1" required>
-                <label class="form-check-label ms-16" for="exampleCheck1">
-                  Acepto los <a class="text-decoration-none text-primary" href="#">Términos y Condiciones</a>.
-                </label>
-              </div>
-              <div class="my-28 border border-1 border-primary p-12">
-                <div class="row fs-12">
-                  <div class="col-4 fw-500 text-center">
-                    Responsable
-                  </div>
-                  <div class="col-8">
-                    Agua Mineral San Benedetto S.A.U, con domicilio social en San Antonio de Requena (Valencia) 
-                    en el camino del pinarejo s/n, 46390.
-                  </div>
-                </div>
-              </div>
-              <div class="text-end">
-                <button type="submit" 
-                class="btn border-2 fw-500 btn-primary text-white text-uppercase fs-14 rounded-0 px-40">
-                  ENVIAR
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>

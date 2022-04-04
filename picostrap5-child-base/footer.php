@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-		<script id="CookieDeclaration" src="https://consent.cookiebot.com/0c0915eb-add3-4fd1-8536-67aaeef60fa7/cd.js" type="text/javascript" async></script>
+		
 		<div class="wrapper bg-secondary" id="wrapper-footer-colophon">
 			<div class="container gx-sm-2 gx-4">
 				<div class="row">

@@ -13,7 +13,7 @@ get_header();
       <div class="col-12">
         <div class="row text-secondary">
           <div class="col-12">
-            SAN BENEDETTO
+          <?=e_('SAN BENEDETTO')?>
           </div>
           <div class="col-12 h2 mt-8">
             <?=the_archive_title()?>
@@ -53,15 +53,17 @@ get_header();
         <div class="offset-3 col-6 text-center text-white">
           <div class="row">
             <div class="col-12 text-uppercase fs-18 pt-20">
-              san benedetto
+              <?=e_('san benedetto')?>
             </div>
             <div class="col-12 h4 mt-10">
-              Conoce nuestras marcas
+              <?=e_('Conoce nuestras marcas')?>
             </div>
             <div class="col-12 mt-32 fs-17">
-              <a href="#" class="col-12 text-center">
+              <a href="<?=get_permalink(49)?>" class="col-12 text-center">
                 <div class="btn btn-outline-white text-uppercase rounded-0">
-                  <span>saber más</span>
+                  <span>
+                  <?=e_('saber más')?>
+                  </span>
                 </div>
               </a>
             </div>

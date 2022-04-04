@@ -16,7 +16,9 @@ get_header();
         <div class="container position-relative">
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="fs-32 fs-md-64 fw-bold">NUESTRAS <br> MARCAS</div>
+                    <div class="fs-32 fs-md-64 fw-bold">
+                        <?=_e('NUESTRAS <br> MARCAS')?>
+                    </div>
                 </div>
             </div>
         </div>

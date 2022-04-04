@@ -18,10 +18,10 @@ get_header();
         <div class="col-12 col-lg-6">
           <div class="row text-white text-uppercase text-center text-md-start">
             <div class="col-12 fs-18">
-              GRUPO SAN BENEDETTO
+              <?=_e('GRUPO SAN BENEDETTO')?>
             </div>
             <h1 class="col-12 mt-8 h2 text-primary">
-              Visión
+              <?=_e('Visión')?>
             </h1>
             <div class="col-12 fs-24 mt-48 fw-bolder">
               <?=$acf_fields['texto_cabecera']?>
@@ -43,8 +43,12 @@ get_header();
         <?=wp_get_attachment_image($acf_fields['imagen_over_cabecera'], "full", "", array( 'class' => 'w-100 position-relative d-lg-none' , 'alt' => '' , 'title' => '') ); ?>
       </div>
       <div class="img-version-mobile col-12 col-lg-6 g-lg-0 d-block bg-primary-brighter order-3 py-md-166 py-105 px-112 text-center text-lg-start mt-70 mt-md-270 mt-lg-0">
-        <div class="text-secondary fs-16 fs-md-18">ÉSTA ES NUESTRA</div>
-        <div class="fs-32 fs-md-64 fw-bold text-secondary">Misión</div>
+        <div class="text-secondary fs-16 fs-md-18">
+          <?=_e('ÉSTA ES NUESTRA')?>
+        </div>
+        <div class="fs-32 fs-md-64 fw-bold text-secondary">
+          <?=_e('Misión')?>
+        </div>
       </div>
       <div class="col-12 col-lg-6 g-lg-0 d-block order-4 py-65 py-lg-40 py-xl-112 py-xxl-145 px-56" data-aos="fade-up">
         <?=$acf_fields['texto_grid_sup_der']?>
@@ -65,10 +69,10 @@ get_header();
   <div class="container">
     <div class="row text-secondary">
       <div class="col-12 text-uppercase text-center fs-18">
-        descubre nuestros
+        <?=_e('descubre nuestros')?>
       </div>
       <div class="col-12 h2 text-center mt-8">
-        Valores
+        <?=_e('Valores')?>
       </div>
       <div class="col-12">
         <div class="row">
@@ -232,7 +236,9 @@ get_header();
                   <div class="col-12 mt-36">
                     <a href="<?=get_permalink(583)?>" 
                     class="btn btn-outline-white text-uppercase rounded-0 border-2 fs-14 fw-500">
-                      <span>ir a ecolosofía</span>
+                      <span>
+                        <?=_e('ir a ecolosofía')?>
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -243,11 +249,9 @@ get_header();
       </div>
       <div class="col-12 col-lg-6 text-secondary bg-primary-brighter d-sm-flex align-items-center py-40 pt-sm-80 pb-sm-70 pt-lg-0 pb-lg-0">
         <div class="row">
-
               <div class="gx-5 gx-sm-12 col-12 offset-sm-2 col-sm-8 offset-lg-1 col-lg-9 fw-500 fs-17 text-secondary-lighter ps-sm-0" data-aos="fade-up">
                 <?=$acf_fields['texto_valor_5']?>
               </div>
-
         </div>
       </div>
     </div>

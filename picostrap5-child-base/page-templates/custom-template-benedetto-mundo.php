@@ -20,7 +20,7 @@ get_header();
               <div class="col-12 col-lg-6">
                 <div class="row">
                   <div class="col-12 fs-18">
-                    GRUPO SAN BENEDETTO
+                    <?=_e('GRUPO SAN BENEDETTO')?>
                   </div>
                   <h1 class="col-12 h2 fs-32 fs-sm-64 mb-48">
                     <?=get_field('titulo');?>
