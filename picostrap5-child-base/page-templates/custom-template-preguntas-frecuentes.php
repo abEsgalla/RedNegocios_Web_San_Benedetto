@@ -87,16 +87,16 @@ endif;
           <div class="col-12 offset-xl-3 col-xl-6 text-center text-white">
             <div class="row">
               <div class="col-12 text-uppercase fs-18 pt-20">
-                <?=_e('san benedetto')?>
+                <?=_e('SAN BENEDETTO')?>
               </div>
               <div class="col-12 h4 mt-10 mb-0">
-                <?=_e('Conoce nuestras marcas')?>
+                <?=_e('¿Quieres saber más?')?>
               </div>
               <div class="col-12 mt-32">
-                <a href="<?=get_permalink(49)?>" class="col-12 text-center">
+                <a href="<?=get_permalink(650)?>" class="col-12 text-center">
                   <div class="btn btn-outline-white text-uppercase rounded-0 fs-14 px-40 fw-500 border-2">
                     <span>
-                      <?=_e('ver todas')?>
+                      <?=_e('CONTÁCTANOS AQUÍ')?>
                     </span>
                   </div>
                 </a>
