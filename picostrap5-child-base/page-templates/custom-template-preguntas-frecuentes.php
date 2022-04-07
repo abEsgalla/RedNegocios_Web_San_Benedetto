@@ -18,13 +18,13 @@ get_header();
           <div class="col-12 text-center text-lg-start offset-xxl-1 col-xxl-6 offset-xxxl-0 col-xxxl-6">
             <div class="row text-white">
               <div class="col-12 fs-18 text-uppercase">
-                GRUPO SAN BENEDETTO
+                <?=_e('GRUPO SAN BENEDETTO')?>
               </div>
               <h1 class="col-12 h2 fs-32 mt-2 mt-sm-8 fs-md-64 lh-1 mb-0">
-                  Preguntas frecuentes
+                <?=_e('Preguntas frecuentes')?>
               </h1>
               <div class="col-12 fs-18 fs-md-24 mt-8 mt-md-24">
-                  ¿Tienes alguna duda?
+                <?=_e('¿Tienes alguna duda?')?>
               </div>
             </div>
           </div>
@@ -87,15 +87,17 @@ endif;
           <div class="col-12 offset-xl-3 col-xl-6 text-center text-white">
             <div class="row">
               <div class="col-12 text-uppercase fs-18 pt-20">
-                san benedetto
+                <?=_e('san benedetto')?>
               </div>
               <div class="col-12 h4 mt-10 mb-0">
-                Conoce nuestras marcas
+                <?=_e('Conoce nuestras marcas')?>
               </div>
               <div class="col-12 mt-32">
                 <a href="<?=get_permalink(49)?>" class="col-12 text-center">
                   <div class="btn btn-outline-white text-uppercase rounded-0 fs-14 px-40 fw-500 border-2">
-                    <span>ver todas</span>
+                    <span>
+                      <?=_e('ver todas')?>
+                    </span>
                   </div>
                 </a>
               </div>
