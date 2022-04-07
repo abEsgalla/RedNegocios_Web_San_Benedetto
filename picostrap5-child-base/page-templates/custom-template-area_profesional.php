@@ -106,16 +106,16 @@ get_header();
           <div class="col-12 offset-lg-2 col-lg-8 text-center text-white">
             <div class="row">
               <div class="col-12 text-uppercase fs-18">
-                <?=_e('san benedetto')?>
+                <?=_e('ÚNETE A SAN BENEDETTO')?>
               </div>
               <div class="col-12 h4 mt-8">
-                <?=_e('Conoce nuestras marcas')?>
+                <?=_e('¿Quieres ser distribuidor?')?>
               </div>
               <div class="col-12 mt-32">
                 <a href="<?=get_permalink(650)?>" class="text-rest">
                   <div class="btn btn-outline-white text-uppercase rounded-0 fw-500 fs-14">
                     <span>
-                      <?=_e('Contáctanos aquí')?>
+                      <?=_e('CONTÁCTANOS AQUÍ')?>
                     </span>
                   </div>
                 </a>
