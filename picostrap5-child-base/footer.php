@@ -198,8 +198,8 @@
                     <div class="col-12 order-0 order-sm-1 col-sm-9 my-20">
                       <div class="links-footer text-start d-block d-xl-flex flex-wrap justify-content-start <?/*justify-content-lg-between*/?>">
                           <a class="mx-lg-0 text-reset text-decoration-none" 
-                          href="/wp-content/uploads/2022/03/2022_CATALOGO_SB_ESP.pdf" target="_blank">
-                          <?=_e('Info empresa')?>
+                          href="/wp-content/uploads/2022/04/2022_DOSSIER_CORPORATIVO_SB_ESP.pdf" target="_blank">
+                          <?=_e('Dossier corporativo')?>
                           </a>
                           <span class="mx-1 mx-lg-2">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(943)?>">
