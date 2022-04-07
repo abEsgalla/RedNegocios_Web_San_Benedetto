@@ -19,10 +19,10 @@ get_header();
           <div class="col-12 offset-xl-3 col-xl-6 text-center">
             <div class="row text-white">
               <div class="col-12 text-uppercase fs-16 fs-sm-18">
-                <?=_e('¡Una manera ecológica de pensar las cosas!')?>
+              ¡Una manera ecológica de pensar las cosas!
               </div>
               <h1 class="col-12 mt-8 mt-lg-16 fs-32 fs-md-64 fs-lg-1 lh-1 fw-bold text-green">
-                <?=_e('Ecolosofía')?>
+                Ecolosofía
               </h1>
             </div>
           </div>
@@ -38,15 +38,9 @@ get_header();
   <div class="container bg-white">
     <div class="row text-center">
       <div class="col-12 offset-lg-2 col-lg-8 mt-138 mt-sm-200 mt-lg-176 mt-xxxl-178 fs-18 fs-sm-24 fs-lg-32 fw-bolder text-secondary text-uppercase">
-        <p class="my-0">
-          <?=_e("Del gr. οἰκο- oiko-.: Significa 'ecológico'")?>
-        </p>
-        <p class="my-0 mt-16">
-          <?=_e('Del gr. φιλοσοφία philosophía.:')?>
-          <span class="text-green d-block lh-1"> 
-          <?=_e('Manera de pensar o de ver las cosas.')?>
-          </span>
-        </p>
+        <p class="my-0">Del gr. οἰκο- oiko-.: Significa 'ecológico'</p>
+        <p class="my-0 mt-16">Del gr. φιλοσοφία philosophía.:  <span class="text-green d-block lh-1"> 
+        Manera de pensar o de ver las cosas. </span></p>
       </div>
       <div class="gx-0 gx-sm-12 col-12 offset-lg-2 col-lg-8 mt-80 mt-sm-94 mt-lg-102 text-center text-secondary fs-14 fs-sm-17">
         <?=$acf_fields['descripcion_superior']?>
@@ -55,39 +49,39 @@ get_header();
         <div class="row text-white">
           <div class="col-12 col-sm-4 mb-sm-0 mb-2">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(585)?>">
-              <div text-cursor-custom="<?=_e('Ir a producto')?>" 
+              <div text-cursor-custom="Ir a producto" 
               class="ratio ratio-1x1 contenedor-cursor-custom bg-contenedor-custom-ecolosofia">
                 <div class="d-flex bg-primary container-scale flex-column align-items-center justify-content-center">
                   <div>
                     <?=wp_get_attachment_image(1294, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?> 
                   </div>
-                  <div class="mt-16 mt-sm-24 h5 fs-24 fs-lg-32 text-uppercase"><?=_e('PRODUCTO')?></div>
+                  <div class="mt-16 mt-sm-24 h5 fs-24 fs-lg-32 text-uppercase">PRODUCTO</div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-12 col-sm-4 mb-sm-0 mb-2">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(587)?>">
-              <div text-cursor-custom="<?=_e('Ir a procesos')?>" 
+              <div text-cursor-custom="Ir a procesos" 
               class="ratio ratio-1x1 contenedor-cursor-custom bg-contenedor-custom-ecolosofia cursor-white">
                 <div class="d-flex bg-secondary container-scale flex-column align-items-center justify-content-center">
                   <div class="">
                     <?=wp_get_attachment_image(1293, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?> 
                   </div>
-                  <div class="mt-16 mt-sm-24 h5 fs-24 fs-lg-32 text-uppercase"><?=_e('PROCESOS')?></div>
+                  <div class="mt-16 mt-sm-24 h5 fs-24 fs-lg-32 text-uppercase">PROCESOS</div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-12 col-sm-4 mb-sm-0 mb-2">
             <a class="text-reset text-decoration-none" href="<?=get_permalink(589)?>">
-              <div text-cursor-custom="<?=_e('Ir a entorno')?>" 
+              <div text-cursor-custom="Ir a entorno" 
               class="ratio ratio-1x1 contenedor-cursor-custom bg-contenedor-custom-ecolosofia">
                 <div class="d-flex bg-primary container-scale flex-column align-items-center justify-content-center">
                   <div>
                     <?=wp_get_attachment_image(1292, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?> 
                   </div>
-                  <div class="mt-16 mt-sm-24 h5 fs-24 fs-lg-32 text-uppercase"><?=_e('ENTORNO')?></div>
+                  <div class="mt-16 mt-sm-24 h5 fs-24 fs-lg-32 text-uppercase">ENTORNO</div>
                 </div>
               </div>
             </a>
@@ -114,10 +108,10 @@ get_header();
                   <div class="mt-133 mt-sm-150 mt-sm-0 col-12 col-sm-6 col-lg-12 order-sm-0 order-1">
                     <div class="row text-center text-sm-start">
                       <div class="col-12 fs-16 fs-sm-18">
-                        <?=_e('san benedetto')?>
+                        san benedetto
                       </div>  
                       <div class="col-12 h2 fs-32 fs-sm-64">
-                        <?=_e('RSC')?>
+                        RSC 
                       </div>
                     </div>
                   </div>

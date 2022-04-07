@@ -18,12 +18,10 @@ get_header();
           <div class="col-12 text-center text-xl-start col-xl-6">
             <div class="row text-white">
               <div class="col-12 fs-18">
-                <?=_e('GRUPO SAN BENEDETTO')?>
+                GRUPO SAN BENEDETTO
               </div>
               <h1 class="col-12 h2 fs-32 fs-sm-64">
-                <?=_e('Buscamos')?> 
-                <br> 
-                <?=_e('talento')?>
+                Buscamos <br> talento
               </h1>
             </div>
           </div>
@@ -39,9 +37,61 @@ get_header();
       <div class="col-12 col-md-8 offset-md-2 offset-xl-0 col-xl-6 order-1 order-xl-0"> 
         <div class="row">
           <div class="col-12 col-xl-8 pt-53 pt-sm-64 pt-xl-102">
-            <div class="contact-form-contacto my-48 my-sm-64 my-lg-80">
+          <div class="contact-form-contacto my-48 my-sm-64 my-lg-80">
               <?=do_shortcode('[contact-form-7 id="1373" title="Formulario de contacto 2"]')?>
             </div>
+            <form class="d-none text-white rm-bootstrap-form-style needs-validation" novalidate>
+              <div class="mt-3">
+                <label for="inputNombre" class="form-label fs-12 mb-1">Nombre y apellidos *</label>
+                <input type="text" placeholder="Ej. Jesús Carrillo Laso" 
+                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
+                id="inputNombre" required>
+              </div>
+              <div class="mt-3">
+                <label for="inputNombre" class="form-label fs-12 mb-1">E-mail *</label>
+                <input type="text" placeholder="Ej. name@name.com" 
+                class="form-control bg-transparent border-0 border-bottom text-white pt-0 ps-0" 
+                id="inputNombre" required>
+              </div>
+              <div class="mt-3">
+                <label for="formFileSm" class="form-label fs-12 mb-1">Adjunta tu curriculum *</label>
+                <input class="form-control bg-transparent border-0 border-bottom text-white fs-14" 
+                id="formFileSm" type="file" required />
+              </div>
+              <div class="my-28 form-check align-items-top d-flex">
+                <input type="checkbox" class="my-0 p-12 form-check-input rounded-0 bg-transparent" 
+                id="exampleCheck1" required>
+                <label class="form-check-label fs-12 ps-16" for="exampleCheck1">
+                    He leído y acepto la política de privacidad y consiento el tratamiento de mis datos personales 
+                    con la finalidad descrita *
+                </label>
+              </div>
+              <div class="my-28 form-check align-items-top d-flex">
+                <input type="checkbox" class="my-0 p-12 form-check-input rounded-0 bg-transparent" 
+                id="exampleCheck1" required>
+                <label class="form-check-label fs-12 ps-16" for="exampleCheck1">
+                  Doy mi consentimiento a la comunicación de datos a Parque La Presa S.A., 
+                  con la finalidad de evaluar mi solicitud como candidato a lo largo de los procesos de selección actuales o futuros
+                </label>
+              </div>
+              <div class="my-28 border border-1 border-primary p-12">
+                <div class="row fs-12">
+                  <div class="col-4 fw-500 text-center">
+                    Responsable
+                  </div>
+                  <div class="col-8">
+                    Agua Mineral San Benedetto S.A.U, con domicilio social en San Antonio de Requena (Valencia) 
+                    en el camino del pinarejo s/n, 46390.
+                  </div>
+                </div>
+              </div>
+              <div class="text-end">
+                <button type="submit" 
+                class="btn border-2 fw-500 btn-primary text-white text-uppercase fs-14 rounded-0 px-40">
+                  ENVIAR
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

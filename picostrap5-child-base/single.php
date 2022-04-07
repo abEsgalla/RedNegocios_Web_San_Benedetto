@@ -27,13 +27,11 @@ if ( have_posts() ) :
                 <?=wp_get_attachment_image(890, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
               </span>
               <span class="ms-12">
-                <?=e_('San Benedetto')?>
+                San Benedetto
               </span>
             </div>
             <div class="col-5 d-none">
-              <span class="me-18">
-                <?=e_('Compartir')?>
-              </span>
+              <span class="me-18">Compartir</span>
               <?=wp_get_attachment_image(892, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') )?>
             </div>
           </div>
@@ -57,9 +55,7 @@ if ( have_posts() ) :
             <div class="col-12 offset-lg-3 col-lg-9">
               <div class="row">
                 <div class="col-12 text-secondary fs-18 text-uppercase fw-500">
-                  <div class="border-black border-top border-1 py-24">
-                  <?=e_('Categorías')?>
-                  </div>
+                  <div class="border-black border-top border-1 py-24">Categorías</div>
                 </div>
                 <div class="col-12 d-flex flex-wrap">
                   <?
@@ -94,12 +90,8 @@ if ( have_posts() ) :
   <div class="container">
     <div class="row">
       <div class="col-12 text-center text-secondary mb-0 mb-md-70">
-        <div class="text-uppercase fs-18">
-          <?=e_('SAN BENEDETTO')?>
-        </div>
-        <div class="h4">
-          <?=e_('Noticias relacionadas')?>
-        </div>
+        <div class="text-uppercase fs-18">SAN BENEDETTO</div>
+        <div class="h4">Noticias relacionadas</div>
       </div>
       <?php 
         $args = array(
@@ -122,17 +114,15 @@ if ( have_posts() ) :
           <div class="col-12 offset-lg-3 col-lg-6 text-center text-white">
             <div class="row">
               <div class="col-12 text-uppercase fs-18 pt-20">
-                <?=e_('san benedetto')?>
+                san benedetto
               </div>
               <div class="col-12 h4 mt-10">
-                <?=e_('Conoce nuestras marcas')?>
+                Conoce nuestras marcas
               </div>
               <div class="col-12 mt-32 fs-17">
-                <a href="<?=get_permalink(49)?>" class="col-12 text-center">
+                <a href="#" class="col-12 text-center">
                   <div class="btn btn-outline-white text-uppercase rounded-0">
-                    <span>
-                      <?=e_('saber más')?>
-                    </span>
+                    <span>saber más</span>
                   </div>
                 </a>
               </div>

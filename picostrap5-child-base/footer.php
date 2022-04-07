@@ -19,7 +19,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body h4 text-secondary text-center py-60">
-          <?=_e('Próximamente')?>
+            Próximamente
           </div>
         </div>
       </div>
@@ -30,10 +30,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body h6 text-secondary text-center py-60">
-            <?=_e('Si deseas enviar tu CV puedes hacerlo desde el formulario que encontraras en')?>
-            <br><a href="/buscamos-talento">
-            <?=_e('Buscamos Talento')?>
-            </a>
+            Si deseas enviar tu CV puedes hacerlo desde el formulario que encontraras en <br><a href="/buscamos-talento">Buscamos Talento</a>
           </div>
         </div>
       </div>
@@ -54,54 +51,50 @@
                   <div class="row">
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13">
-                        <div class="col-12 h6 mt-40 mt-lg-0">
-                          <?=_e('nosotros')?>
-                        </div>
+                        <div class="col-12 h6 mt-40 mt-lg-0">nosotros</div>
                         <div class="col-12 mt-24">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(579)?>">
-                            <?=_e('historia')?>
+                            historia
                           </a>
                         </div>
                         <div class="col-12 mt-16">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(581)?>">
-                            <?=_e('misión, visión y valores')?>
+                            misión, visión y valores
                           </a>
                         </div>
                         <div class="col-12 mt-16">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(655)?>">
-                            <?=_e('San benedetto en españa')?>
+                            San benedetto en españa
                           </a>
                         </div>
                         <div class="col-12 mt-16">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(667)?>">
-                            <?=_e('San benedetto en el mundo')?>
+                            San benedetto en el mundo
                           </a>
                         </div>
                         <div class="col-12 mt-16">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink( get_option( 'page_for_posts' ) ); ?>">
-                           <?=_e('noticias')?>
+                           noticias
                           </a>
                         </div>
                       </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                       <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
-                        <div class="col-12 h6 mt-40 mt-lg-0">
-                          <?=_e('marcas')?>
-                        </div>
+                        <div class="col-12 h6 mt-40 mt-lg-0">marcas</div>
                         <div class="col-12 mt-24">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(49)?>">
-                            <?=_e('Agua mineral')?>
+                            Agua mineral
                           </a>
                         </div>
                         <div class="col-12 mt-16">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(49)?>">
-                            <?=_e('Refrescos')?>
+                            Refrescos
                           </a>
                         </div>
                         <div class="col-12 mt-16 h6 mt-sm-auto mt-40">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(647)?>">
-                            <?=_e('área profesional')?>
+                            área profesional
                           </a>
                         </div>
                       </div>
@@ -110,28 +103,26 @@
                       <div class="row fs-13 d-flex flex-wrap align-items-end flex-column h-100">
                         <div class="col-12 h6 mt-40 mt-lg-0">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(583)?>">
-                            <?=_e('ecolosofía')?>
+                            ecolosofía
                           </a>
                         </div>
                         <div class="col-12 mt-24">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(585)?>">
-                            <?=_e('Producto')?>
+                            Producto
                           </a>
                         </div>
                         <div class="col-12 mt-16">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(587)?>">
-                            <?=_e('procesos')?>
+                            procesos
                           </a>
                         </div>
                         <div class="col-12 mt-16">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(589)?>">
-                            <?=_e('entorno')?>
+                            entorno
                           </a>
                         </div>
                         <div class="col-12 mt-16 h6 mt-40 mt-lg-auto d-flex flex-wrap align-items-center">
-                          <span>
-                          <?=_e('Síguenos')?>
-                          </span>
+                          <span>Síguenos</span>
                           <span class="d-flex flex-wrap align-items-center mx-12">
                             <a class="mx-2 text-reset text-decoration-none" target="_blank"
                             href="https://www.facebook.com/SanBenedetto.es/">
@@ -168,22 +159,22 @@
                       <div class="row fs-13">
                         <div class="col-12 h6 mt-40 mt-lg-0">
                           <a class="text-reset text-decoration-none" href="<?=get_permalink(650)?>">
-                            <?=_e('Contacto')?>
+                            Contacto
                           </a>
                         </div>
                         <div class="col-12 mt-24">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(672)?>">
-                            <?=_e('buscamos talento')?>
+                            buscamos talento
                           </a>
                         </div>
                         <div class="col-12 mt-16">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(650)?>">
-                            <?=_e('localización y contacto')?>
+                            localización y contacto
                           </a>
                         </div>
                         <div class="col-12 mt-16">
                           <a class="text-reset text-decoration-none letter-spacing-1x3" href="<?=get_permalink(785)?>">
-                            <?=_e('preguntas frecuentes')?>
+                            preguntas frecuentes
                           </a>
                         </div>
                       </div>
@@ -199,19 +190,19 @@
                       <div class="links-footer text-start d-block d-xl-flex flex-wrap justify-content-start <?/*justify-content-lg-between*/?>">
                           <a class="mx-lg-0 text-reset text-decoration-none" 
                           href="/wp-content/uploads/2022/03/2022_CATALOGO_SB_ESP.pdf" target="_blank">
-                          <?=_e('Info empresa')?>
+                          Info empresa
                           </a>
                           <span class="mx-1 mx-lg-2">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(943)?>">
-                          <?=_e('Política de seguridad de la información')?>
+                          Política de seguridad de la información
                           </a>
                           <span class="mx-1 mx-lg-2">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(943)?>">
-                          <?=_e('Política de privacidad web')?>
+                          Política de privacidad web
                           </a>
                           <span class="mx-1 mx-lg-2">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(945)?>">
-                          <?=_e('Condiciones generales')?>
+                          Condiciones generales
                           </a>
                           <span class="mx-1 mx-lg-2">|</span>
                           <a class="mx-lg-0 text-reset text-decoration-none" href="<?=get_permalink(947)?>">

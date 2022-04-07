@@ -18,12 +18,10 @@ get_header();
           <div class="col-12 col-xl-6">
             <div class="row text-white text-center text-sm-start">
               <div class="col-12 text-uppercase">
-                <?=_e('GRUPO SAN BENEDETTO')?>
+                GRUPO SAN BENEDETTO
               </div>
               <h1 class="col-12 mt-16 h2 fs-32 fs-md-64 lh-1">
-                <?=_e('Área')?>
-                <br> 
-                <?=_e('profesional')?>
+                Área <br> profesional
               </h1>
             </div>
           </div>
@@ -83,7 +81,7 @@ get_header();
                     </div>
                     <a href="<?=$acf_fields['link_catalogo']?>" target="_blank" class="text-reset text-decoration-none">
                       <div class="btn btn-primary text-uppercase text-white rounded-0 fs-14 mt-56 fw-500">
-                        <?=_e('Descarga nuestro catálogo')?>
+                        Descarga nuestro catálogo
                       </div>
                     </a>
                   </div>
@@ -106,17 +104,15 @@ get_header();
           <div class="col-12 offset-lg-2 col-lg-8 text-center text-white">
             <div class="row">
               <div class="col-12 text-uppercase fs-18">
-                <?=_e('san benedetto')?>
+                san benedetto
               </div>
               <div class="col-12 h4 mt-8">
-                <?=_e('Conoce nuestras marcas')?>
+                Conoce nuestras marcas
               </div>
               <div class="col-12 mt-32">
                 <a href="<?=get_permalink(650)?>" class="text-rest">
                   <div class="btn btn-outline-white text-uppercase rounded-0 fw-500 fs-14">
-                    <span>
-                      <?=_e('Contáctanos aquí')?>
-                    </span>
+                    <span>Contáctanos aquí</span>
                   </div>
                 </a>
               </div>
