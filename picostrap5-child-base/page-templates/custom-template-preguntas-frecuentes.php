@@ -90,13 +90,13 @@ endif;
                 <?=_e('san benedetto')?>
               </div>
               <div class="col-12 h4 mt-10 mb-0">
-                <?=_e('Conoce nuestras marcas')?>
+                <?=_e('¿Quieres saber más?')?>
               </div>
               <div class="col-12 mt-32">
-                <a href="<?=get_permalink(49)?>" class="col-12 text-center">
+                <a href="<?=get_permalink(650)?>" class="col-12 text-center">
                   <div class="btn btn-outline-white text-uppercase rounded-0 fs-14 px-40 fw-500 border-2">
                     <span>
-                      <?=_e('ver todas')?>
+                      <?=_e('CONTÁCTANOS AQUÍ')?>
                     </span>
                   </div>
                 </a>
