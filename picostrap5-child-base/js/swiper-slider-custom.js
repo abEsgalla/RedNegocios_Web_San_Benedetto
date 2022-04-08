@@ -95,6 +95,7 @@ swiper_home_dedicado.on('slideChange', function () {
 
 
 const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
+  rewind: true,
   direction: 'horizontal',
   autoHeight : false,
   height: 780,
