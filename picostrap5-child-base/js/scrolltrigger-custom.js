@@ -1,5 +1,8 @@
 if( document.body.classList.contains('single-landing') ) {
   ScrollTrigger.matchMedia({
+    "(max-width: 763.98px)": function() {
+      gsap.set('.producto-central', { scale: 1.50 });
+    },
     "(max-width: 991px)": function() {
       gsap.to('.producto-central', {
         scrollTrigger: {
@@ -10,7 +13,7 @@ if( document.body.classList.contains('single-landing') ) {
           scrub: true,
           markers: false,
         },
-        y: 80,
+        y: 40,
       });
     },
     "(min-width: 992px)": function() {
@@ -27,6 +30,7 @@ if( document.body.classList.contains('single-landing') ) {
       });
     },
   });
+  
 
 
   //Enjoy SIN gas
