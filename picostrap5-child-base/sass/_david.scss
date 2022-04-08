@@ -998,3 +998,28 @@ html *:not(.contenedor-cursor-custom){
         stroke-dashoffset: 310;
     }
 }
+
+#sliderPromocional{
+    .title{
+        i{
+            margin-right: 12px;
+            margin-left: 12px;
+        }
+        @include media-breakpoint-up(xxxxl) {
+            height: 96px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: left; 
+        }
+    } 
+    .description{
+        @include media-breakpoint-up(xxxxl) {
+            height: 112px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: left; 
+        }
+    } 
+}

@@ -119,8 +119,8 @@ $productosRefrescos = $fields['productos_refrescos'];
                                             </div>
 
                                             <div class='col-12 text-uppercase fs-18 d-none d-sm-block'><?=get_the_title($slide['producto']);?></div>
-                                            <div class='col-12 h4 mt-8 mb-0'><?=$slide['texto_principal']?></div>
-                                            <div class='col-12 mt-16 d-xxl-block d-none'>
+                                            <div class='col-12 h4 mt-8 mb-0 title'><?=$slide['texto_principal']?></div>
+                                            <div class='col-12 mt-16 d-xxl-block d-none description'>
                                                 <?=$slide['descripcion']?>
                                             </div>
                                             <div class='col-12 mt-20 mb-40 mb-lg-0 mt-lg-48'>
