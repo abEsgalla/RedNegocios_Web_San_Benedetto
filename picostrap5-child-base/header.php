@@ -315,13 +315,14 @@ defined( 'ABSPATH' ) || exit;
 
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <?php 
-                  $lang_item = 
+                  $lang_item = '';
+                  /*$lang_item = 
                   '<li class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-language">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#modalLanguage" class="nav-link  fw-500 text-uppercase fs-13 letter-spacing-1x3">
                       Es 
                       <i class="fa-solid fa-chevron-down"></i>
                     </a>
-                  </li>';
+                  </li>';*/
                   wp_nav_menu(array(
                     'theme_location' => 'primary',
                     'container' => false,
