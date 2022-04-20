@@ -117,21 +117,18 @@ class bootstrap_5_wp_nav_menu_walker_ext extends Walker_Nav_menu
     $item_output = $args->before;
 
     //PAGE MARCAS
-    /*var_dump($item->object_id);
-    string(1) "2"
-    string(3) "684"
-    string(2) "49"
-    string(3) "583"
-    string(3) "647"
-    string(3) "650"*/
+    
+    $menu_ids=array(49,684,583,650,
+                    2372,2376,2345,2342,
+                    2339,2337,2331,2325);
 
-    if($item->object_id==49 || $item->object_id==684 || $item->object_id==583 || $item->object_id==650):
+    if(in_array($item->object_id, $menu_ids)):
       $search  = array('Á', 'É', 'Í', 'Ó', 'Ú', 'á', 'é', 'í', 'ó', 'ú', 'ñ', ' ');
       $replace = array('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u', 'n', '-');
       $custom_sanitize=str_replace($search, $replace, $item->title);
       $custom_sanitize=strtolower($custom_sanitize);
       $event = '';
-      if($item->object_id!=684){
+      if($item->object_id!=684 && $item->object_id!=2376 && $item->object_id!=2339){
         $event = 'href="'.esc_attr($item->url).'" onclick="location.href='."'".esc_attr($item->url)."'".'"';
       }
       $item_output .= '<a '.$event.'
