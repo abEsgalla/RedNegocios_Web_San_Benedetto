@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="swiper swiper-landing-productos slider-zero">
+        <div class="swiper swiper-landing-productos slider-zero mt-40">
           <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?> <?=(count($seccion['slider']['slide'])<=4)?'justify-content-md-center':'';?>">
             <?php
             if ($seccion['slider']):
