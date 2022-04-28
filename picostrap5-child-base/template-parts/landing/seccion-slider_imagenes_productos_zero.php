@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="swiper swiper-landing-productos slider-zero">
+        <div class="swiper swiper-landing-productos slider-zero mt-40">
           <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?> <?=(count($seccion['slider']['slide'])<=4)?'justify-content-md-center':'';?>">
             <?php
             if ($seccion['slider']):
@@ -25,8 +25,9 @@
               ?>
               <div class="px-8 w-custom-1-9 swiper-slide d-inline-flex flex-column justify-content-center align-items-center h-100">
                 <a class="text-reset text-decoration-none d-flex flex-column w-100 h-100 contenedor-cursor-custom"
-                data-bs-toggle="offcanvas" href="#offcanvasInfoSliderProductos" role="button" 
-                aria-controls="offcanvasInfoSliderProductos" 
+                <?/*data-bs-toggle="offcanvas" href="#offcanvasInfoSliderProductos" role="button" 
+                aria-controls="offcanvasInfoSliderProductos"*/?>
+                data-bs-toggle="modal" data-bs-target="#offcanvasInfoSliderProductos"
                 data-image="<?=wp_get_attachment_image_src($slide['imagen_producto'], 'full')[0]?>" 
                 data-name="<?=ucfirst($slide['nombre_producto'])?>" 
                 data-description="<?=$slide['descripcion_producto']?>">
@@ -68,14 +69,15 @@
   <div class="container-fluid px-0">
     <img src="<?php echo get_stylesheet_directory_uri().'/src/img/background-zero/background_zero_frutas.png'; ?>" class="w-100 d-xl-none mt-md-n214">
   </div>
-  <div class="p-24 offcanvas offcanvas-end" tabindex="-1" id="offcanvasInfoSliderProductos" 
+
+  <?/*<div class="p-24 offcanvas offcanvas-end" tabindex="-1" id="offcanvasInfoSliderProductos" 
   aria-labelledby="offcanvasInfoSliderProductosLabel" data-bs-backdrop="false" data-bs-scroll="true">
     <div class="offcanvas-header">
       <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body text-secondary">
       <div class="py-24 d-flex align-items-center justify-content-center image" 
-      style="background-color:<?=get_field('caracteristicas_producto',$GLOBALS['id_producto'])['color_corporativo']?>">
+        style="background-color:<?=get_field('caracteristicas_producto',$GLOBALS['id_producto'])['color_corporativo']?>">
 
       </div>
       <div class="name mt-40 fs-24 fw-bolder">
@@ -83,6 +85,21 @@
       </div>
       <div class="description mt-30">
         
+      </div>
+    </div>
+  </div>*/?>
+  <!-- Modal -->
+  <div class="modal fade" id="offcanvasInfoSliderProductos" tabindex="-1" aria-labelledby="offcanvasInfoSliderProductosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content position-relative">
+        <div class="modal-header border-0 position-absolute w-100 zi-99">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body offcanvas-body text-secondary p-0">
+          <div class="py-24 d-flex align-items-center justify-content-center image" 
+            style="background-color:<?=get_field('caracteristicas_producto',$GLOBALS['id_producto'])['color_corporativo']?>">
+          </div>
+        </div>
       </div>
     </div>
   </div>
