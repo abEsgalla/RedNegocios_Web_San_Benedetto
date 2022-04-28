@@ -171,7 +171,8 @@ document.addEventListener('DOMContentLoaded', function () {
   //LANDING PRODUCTOS DATOS SLIDER
   var sliderProductosOffcanvas = document.getElementById('offcanvasInfoSliderProductos');
   if(sliderProductosOffcanvas){
-    sliderProductosOffcanvas.addEventListener('show.bs.offcanvas', function (custom_event) {
+    //sliderProductosOffcanvas.addEventListener('show.bs.offcanvas', function (custom_event) {
+    sliderProductosOffcanvas.addEventListener('show.bs.modal', function (custom_event) {
       sliderProductosOffcanvas.querySelector(".image").innerHTML = "<img src='"+custom_event.relatedTarget.dataset.image+"'>";
       sliderProductosOffcanvas.querySelector(".name").innerHTML = custom_event.relatedTarget.dataset.name;
       sliderProductosOffcanvas.querySelector(".description").innerHTML = custom_event.relatedTarget.dataset.description;
