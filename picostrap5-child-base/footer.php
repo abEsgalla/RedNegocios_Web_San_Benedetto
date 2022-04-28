@@ -30,7 +30,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body h6 text-secondary text-center py-60">
-            <?=_e('Si deseas enviar tu CV puedes hacerlo desde el formulario que encontraras en')?>
+            <?=_e('Si deseas enviar tu CV puedes hacerlo desde el formulario que encontrarás en')?>
             <br><a href="/buscamos-talento">
             <?=_e('Buscamos Talento')?>
             </a>
