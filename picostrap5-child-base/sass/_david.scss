@@ -1047,3 +1047,18 @@ body.single-landing{
         }
     }
 }
+
+.group-one,.group-two{
+    &:hover{
+        .text-one,.text-two{
+            &:hover{
+                stroke: $primary !important;
+                fill: $primary !important;
+            }
+        }
+        .circle-one,.circle-two{
+            stroke: $primary !important;
+            fill: $primary !important;
+        }
+    }
+}
