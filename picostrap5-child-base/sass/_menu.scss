@@ -37,7 +37,13 @@ body:not(.home){
     }
   }
 }
-
+.bg-white{
+  .animation-undertext{
+    &:not(.active):hover:after{
+      background-color: $secondary !important;
+    }
+  }
+}
 .navbar{
   // Logo
   .custom-logo{
