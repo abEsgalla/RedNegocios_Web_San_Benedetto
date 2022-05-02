@@ -104,3 +104,21 @@ function register_custom_navwalker(){
 }
 add_action( 'after_setup_theme', 'register_custom_navwalker' );
 
+
+
+function template_part_ajax() {
+
+    $return = [];
+
+    $id = $_REQUEST['page_id'];
+    $post = get_page($id);
+    $content = apply_filters('the_content', $post->post_content);
+    $return = $content;
+
+
+    wp_send_json($return);
+}
+
+// creating Ajax call for WordPress
+add_action('wp_ajax_nopriv_template_part_ajax', 'template_part_ajax');
+add_action('wp_ajax_template_part_ajax', 'template_part_ajax');
