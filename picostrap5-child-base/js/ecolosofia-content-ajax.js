@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			page_id : page,            //Este es un parámetro que le mandamos para recoger dentro de la funcion PHP y hacer movidas (indicar que template part queremos, por ejemplo.)
 		},
 		success: function(data){
-			console.log(data);
+			//console.log(data);
 		},
 		error: function(MLHttpRequest, textStatus, errorThrown){
 			console.log(errorThrown);

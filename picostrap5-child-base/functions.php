@@ -111,10 +111,8 @@ function template_part_ajax() {
     $return = [];
 
     $id = $_REQUEST['page_id'];
-    $post = get_page($id);
-    $content = apply_filters('the_content', $post->post_content);
-    $return = $content;
 
+    $return = load_template_part('page-templates/custom', 'template-producto-workbench', null);
 
     wp_send_json($return);
 }
@@ -122,3 +120,13 @@ function template_part_ajax() {
 // creating Ajax call for WordPress
 add_action('wp_ajax_nopriv_template_part_ajax', 'template_part_ajax');
 add_action('wp_ajax_template_part_ajax', 'template_part_ajax');
+
+
+//FUNCTION TO LOAD CACHED CODE
+function load_template_part($template_name, $part_name=null, $params) {
+	ob_start();
+	get_template_part($template_name, $part_name, $params);
+	$var = ob_get_contents();
+	ob_end_clean();
+	return $var;
+}
