@@ -1,7 +1,9 @@
 .w-100vw{
     width: 100vw;
 }
-
+.w-50vw{
+    width: 50vw;
+}
 .zi-100{
     z-index: 100;
 }
@@ -948,6 +950,7 @@ html *:not(.contenedor-cursor-custom){
             transition: all 1.5s linear;
         }
     }
+    /*
     .green-color{
         circle{
             &.circle-one{
@@ -983,6 +986,7 @@ html *:not(.contenedor-cursor-custom){
             }
         }
     }
+    */
 }
 
 @keyframes color-one {
@@ -1093,14 +1097,33 @@ body.single-landing{
 }
 
 
+//ANIMATION
+.custom-body,.sello,.h1.text-green{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
 
-@keyframes custom_rotate{
-    0% {
-        transform: rotate(0deg);
-        transform-origin: 0% 50%;
+.rotate{
+    transition: all 1s linear;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+}
+
+g.text{
+    .group-one,.group-two{
+        &:hover{
+            .text-one,.text-two{
+                &:hover{
+                    stroke: $green !important;
+                    fill: $green !important;
+                }
+            }
+        }
     }
-    100% {
-        transform: rotate(-180deg);
-        transform-origin: 0% 50%;   
+}
+
+.dot{
+    &.active{
+        fill: #6dd400 !important;
     }
 }

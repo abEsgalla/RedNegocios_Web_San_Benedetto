@@ -107,13 +107,10 @@ add_action( 'after_setup_theme', 'register_custom_navwalker' );
 
 
 function template_part_ajax() {
-
     $return = [];
-
-    $id = $_REQUEST['page_id'];
-
-    $return = load_template_part('page-templates/custom', 'template-producto-workbench', null);
-
+    $page_id = $_REQUEST['page_id'];
+    $page_name = $_REQUEST['page_name'];
+    $return = load_template_part('page-templates/custom', 'template-'.$page_name, array('page_id'=>$page_id,'page_name'=>$page_name));
     wp_send_json($return);
 }
 
