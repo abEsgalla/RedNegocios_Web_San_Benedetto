@@ -1106,7 +1106,7 @@ body.single-landing{
 .rotate{
     transition: all 1s linear;
     transform-origin: 50% 50%;
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
 }
 
 g.text{

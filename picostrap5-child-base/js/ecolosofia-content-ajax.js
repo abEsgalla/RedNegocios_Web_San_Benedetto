@@ -69,10 +69,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function calculate_new_rotation(multiply_rotate){
     var tool_rotate=document.querySelector('.tool-rotate');
     if(tool_rotate.style.transform==""){
-      tool_rotate.style.transform = "rotate(-"+(60*multiply_rotate)+"deg)";
+      tool_rotate.style.transform = "translate(-50%, -50%) rotate(-"+(60*multiply_rotate)+"deg)";
     }else{
       var current_value = tool_rotate.style.transform.split("rotate(")[1].split("deg)")[0];
-      tool_rotate.style.transform = "rotate("+(current_value-(60*multiply_rotate))+"deg)";
+      tool_rotate.style.transform = "translate(-50%, -50%) rotate("+(current_value-(60*multiply_rotate))+"deg)";
     }
   }
 
@@ -132,17 +132,17 @@ document.addEventListener('DOMContentLoaded', function () {
       case 'entorno':
         title.innerHTML = "Entorno";
         sello.setAttribute('src', '/wp-content/uploads/2022/03/sello-entorno.png');
-        bg_cabecera.style.background = "url('/wp-content/uploads/2022/05/test1-bg.png')";
+        bg_cabecera.style.background = "url('/wp-content/uploads/2022/05/bg-entornos-definitiva.png')";
       break;
       case 'producto':
         title.innerHTML = "Producto";
         sello.setAttribute('src', '/wp-content/uploads/2022/03/sello-producto.png');
-        bg_cabecera.style.background = "url('/wp-content/uploads/2022/05/test1-bg.png')";
+        bg_cabecera.style.background = "url('/wp-content/uploads/2022/05/bg-producto-definitiva.png')";
       break;
       case 'procesos':
         title.innerHTML = "Procesos";
         sello.setAttribute('src', '/wp-content/uploads/2022/03/sello-procesos.png');
-        bg_cabecera.style.background = "url('/wp-content/uploads/2022/05/test1-bg.png')";
+        bg_cabecera.style.background = "url('/wp-content/uploads/2022/05/bg-procesos-definitiva.png')";
       break;
     }
   }
