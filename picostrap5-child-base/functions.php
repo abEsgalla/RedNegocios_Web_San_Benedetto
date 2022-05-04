@@ -104,3 +104,26 @@ function register_custom_navwalker(){
 }
 add_action( 'after_setup_theme', 'register_custom_navwalker' );
 
+
+
+function template_part_ajax() {
+    $return = [];
+    $page_id = $_REQUEST['page_id'];
+    $page_name = $_REQUEST['page_name'];
+    $return = load_template_part('page-templates/custom', 'template-'.$page_name, array('page_id'=>$page_id,'page_name'=>$page_name));
+    wp_send_json($return);
+}
+
+// creating Ajax call for WordPress
+add_action('wp_ajax_nopriv_template_part_ajax', 'template_part_ajax');
+add_action('wp_ajax_template_part_ajax', 'template_part_ajax');
+
+
+//FUNCTION TO LOAD CACHED CODE
+function load_template_part($template_name, $part_name=null, $params) {
+	ob_start();
+	get_template_part($template_name, $part_name, $params);
+	$var = ob_get_contents();
+	ob_end_clean();
+	return $var;
+}

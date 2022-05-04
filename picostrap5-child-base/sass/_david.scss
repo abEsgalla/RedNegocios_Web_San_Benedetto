@@ -1,6 +1,18 @@
 .w-100vw{
     width: 100vw;
 }
+.w-50vw{
+    width: 50vw;
+}
+.zi-100{
+    z-index: 100;
+}
+.zi-50{
+    z-index: 50;
+}
+.zi-75{
+    z-index: 75;
+}
 
 .h-100vh{
     height: 100vh;
@@ -921,39 +933,60 @@ html *:not(.contenedor-cursor-custom){
 
 
 .svg-under-sellos{
-    circle{
-        &.circle-one{
-            opacity: 1;
-            stroke: $green;
-            fill: $green;
-            animation: color-one 3s linear;
+    .g-reverse{
+        transform: scale(-1, 1);
+    }
+    .reverse{
+        transform: rotate(180deg) scale(-1,1);
+        transform-origin: 0% 50%;
+    }
+    g{
+        &.rotate{
+            animation: custom_rotate 1.5s linear;
+            animation-fill-mode: forwards;
         }
-        &.circle-two{
-            opacity: 1;
-            stroke: $green;
-            fill: $green;
-            animation: color-two 3s linear;
+        &.tool-rotate{
+            transform-origin: 0% 50%;
+            transition: all 1.5s linear;
         }
     }
-    path{
-        &.line{
-            stroke: $green;
-            stroke-dasharray: 1510;
-            animation: undersellos 3s linear;
+    /*
+    .green-color{
+        circle{
+            &.circle-one{
+                opacity: 1;
+                stroke: $green;
+                fill: $green;
+                animation: color-one 3s linear;
+            }
+            &.circle-two{
+                opacity: 1;
+                stroke: $green;
+                fill: $green;
+                animation: color-two 3s linear;
+            }
         }
-        &.text-one{
-            opacity: 1;
-            stroke: $green;
-            fill: $green;
-            animation: color-one 3s linear;
-        }
-        &.text-two{
-            opacity: 1;
-            stroke: $green;
-            fill: $green;
-            animation: color-two 3s linear;
+        path{
+            &.line{
+                stroke: $green;
+                stroke-dasharray: 1510;
+                animation: undersellos 3s linear;
+            }
+            &.text-one{
+                opacity: 1;
+                stroke: $green;
+                fill: $green;
+                animation: color-one 3s linear;
+            }
+            &.text-two{
+                opacity: 1;
+                stroke: $green;
+                fill: $green;
+                animation: color-two 3s linear;
+            }
         }
     }
+    */
 }
 
 @keyframes color-one {
@@ -1006,7 +1039,7 @@ html *:not(.contenedor-cursor-custom){
             margin-left: 12px;
         }
         @include media-breakpoint-up(xxxxl) {
-            height: 96px;
+            height: 50px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -1028,7 +1061,7 @@ body.single-landing{
     overflow-x: hidden;
 }
 
-/*.wpml-ls-item{
+.wpml-ls-item{
     .nav-link.animation-undertext{
         &:after{
             display: none !important;
@@ -1046,7 +1079,7 @@ body.single-landing{
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z' fill='%23002D72'/%3E%3C/svg%3E");
         }
     }
-}*/
+}
 
 .group-one,.group-two{
     &:hover{
@@ -1070,3 +1103,67 @@ body.single-landing{
         }
     }
 }
+
+//ANIMATION
+.custom-body,.sello,.h1.text-green,.dot-static.active,.dot{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+
+.rotate,.static-rotate{
+    transition: all 1s linear;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+g.text{
+    .group-one,.group-two{
+        &:hover{
+            .text-one,.text-two{
+                &:hover{
+                    stroke: $green !important;
+                    fill: $green !important;
+                }
+            }
+        }
+    }
+}
+
+.dot,.dot-static{
+    &.active{
+        fill: #6dd400 !important;
+    }
+}
+
+#sliderPromocional{
+    svg{
+        &.white{
+            filter: brightness(0) invert(1);
+        }
+    }
+    .pagination-home-promocional{
+        &.white{
+            svg{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .bg-custom-image{
+        @include media-breakpoint-up(lg) {
+            background-size: 120% !important;
+        }
+    }
+}
+
+/*.new-cursor-custom{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    //transform: translateX(-50%);
+    display: none;
+    pointer-events: none;
+    z-index: 1;
+    font-weight: 800;
+    z-index: 9999999;
+    background: $primary;
+}*/
