@@ -22,8 +22,15 @@ endif;
       <div class="zi-75 background-position-left-mobile bg-custom-image <?/*opacity-60*/?> w-100 h-100 position-absolute top-0 start-0" 
         style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')">
       </div>
-      <div class="zi-50 position-absolute position-absolute w-50vw h-100 top-0 end-0 bg-secondary">
+      <div class="zi-50 position-absolute position-absolute w-100vw h-100 top-0 end-0 bg-secondary">
       </div>
+
+      <svg class="zi-100 overflow-visible position-absolute top-50 start-50 zi-99 mw-50vw d-none d-lg-block static-rotate" 
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
+        x="0px" y="0px" width="707px" height="721.5px" viewBox="0 0 707 721.5" style="enable-background:new 0 0 707 721.5;" xml:space="preserve">
+        <circle class="dot-static active opacity-100" class="active" style="fill:#FFFFFF;" cx="353.5" cy="7.5" r="10"/>
+      </svg>
+
       <svg class="zi-50 overflow-visible svg-under-sellos position-absolute top-50 start-50 zi-99 mw-50vw d-none d-lg-block rotate tool-rotate" 
         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
         id="Capa_1" x="0px" y="0px" width="707px" height="721.5px" 
@@ -32,7 +39,7 @@ endif;
         <circle dot-position="1" class="dot dot-1 active" class="active" style="fill:#FFFFFF;" cx="353.5" cy="7.5" r="7.5"/>
         <circle dot-position="2" class="dot dot-2" style="fill:#FFFFFF;" cx="655.9595" cy="183.841" r="7.5"/>
         <circle dot-position="3" class="dot dot-3" style="fill:#FFFFFF;" cx="655.9595" cy="537.2389" r="7.5"/>
-        <circle dot-position="4" class="dot dot-4" style="fill:#FFFFFF;" cx="353.5" cy="712.5" r="7.5"/>
+        <circle dot-position="4" class="dot dot-4 d-none" style="fill:#FFFFFF;" cx="353.5" cy="712.5" r="7.5"/>
         <circle dot-position="5" class="dot dot-5" style="fill:#FFFFFF;" cx="51.0405" cy="537.2389" r="7.5"/>
         <circle dot-position="6" class="dot dot-6" style="fill:#FFFFFF;" cx="51.0406" cy="182.7143" r="7.5"/>
       </svg>

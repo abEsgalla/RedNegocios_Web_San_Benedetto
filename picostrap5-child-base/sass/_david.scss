@@ -1098,12 +1098,12 @@ body.single-landing{
 
 
 //ANIMATION
-.custom-body,.sello,.h1.text-green{
+.custom-body,.sello,.h1.text-green,.dot-static.active{
     opacity: 1;
     transition: all 0.5s linear;
 }
 
-.rotate{
+.rotate,.static-rotate{
     transition: all 1s linear;
     transform-origin: 50% 50%;
     transform: translate(-50%, -50%) rotate(0deg);
@@ -1122,7 +1122,7 @@ g.text{
     }
 }
 
-.dot{
+.dot,.dot-static{
     &.active{
         fill: #6dd400 !important;
     }

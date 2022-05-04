@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
           page_name : page_name,
         },
         success: function(data){
-          console.log('done');
+          //console.log('done');
           custom_body.innerHTML=data;
           custom_body.classList.remove("opacity-0");
         },
@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
           changeTextdata(page_name);
           changeHead(page_name);
           setTimeout(() => {
+            document.querySelector('.dot-static.no-active').classList.replace("no-active","active");
             document.querySelector('.h1.text-green').classList.remove("opacity-0");
             document.querySelector('.sello').classList.replace("opacity-0","opacity-75");
             this.querySelector('text').setAttribute('fill','white');
@@ -64,6 +65,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     old_active_dot.classList.remove('active');
     document.querySelector('.dot.dot-'+new_dot_position).classList.add('active');
+    setTimeout(() => {
+      document.querySelector('.dot-static.active').classList.replace("active","no-active");
+      document.querySelector('.dot.d-none').classList.remove('d-none');
+      var new_dot_none_position = parseInt(new_dot_position) + parseInt(3);
+      //console.log(new_dot_none_position);
+      if( new_dot_none_position>6 ){
+        var new_dot_none_position = parseInt(new_dot_none_position) - 6;
+      }
+      document.querySelector('.dot.dot-'+new_dot_none_position).classList.add('d-none');
+    }, 0300);
   }
 
   function calculate_new_rotation(multiply_rotate){
@@ -126,23 +137,21 @@ document.addEventListener('DOMContentLoaded', function () {
   function changeHead(page_name){
     var title = document.querySelector('.h1.text-green');
     var sello = document.querySelector('.sello');
-    var bg_cabecera = document.querySelector('.bg-custom-image');
+    document.querySelector('.bg-custom-image.opacity-100').classList.replace("opacity-100","opacity-0");
+    document.querySelector('.background-'+page_name).classList.replace("opacity-0","opacity-100");
     
     switch (page_name) {
       case 'entorno':
         title.innerHTML = "Entorno";
         sello.setAttribute('src', '/wp-content/uploads/2022/03/sello-entorno.png');
-        bg_cabecera.style.background = "url('/wp-content/uploads/2022/05/bg-entornos-definitiva.png')";
       break;
       case 'producto':
         title.innerHTML = "Producto";
         sello.setAttribute('src', '/wp-content/uploads/2022/03/sello-producto.png');
-        bg_cabecera.style.background = "url('/wp-content/uploads/2022/05/bg-producto-definitiva.png')";
       break;
       case 'procesos':
         title.innerHTML = "Procesos";
         sello.setAttribute('src', '/wp-content/uploads/2022/03/sello-procesos.png');
-        bg_cabecera.style.background = "url('/wp-content/uploads/2022/05/bg-procesos-definitiva.png')";
       break;
     }
   }
