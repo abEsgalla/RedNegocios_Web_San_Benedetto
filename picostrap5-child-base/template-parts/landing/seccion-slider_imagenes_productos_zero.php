@@ -3,7 +3,7 @@
   $seccion = $fields;
 ?>
 
-<section class="mt-65 mb-64">
+<section class="mt-65 mb-64 mt-xxxl-84">
   <div class="container-fluid container-fluid-custom position-relative">
     <div class="row">
       <div class="col-12" data-aos="fade-down">
