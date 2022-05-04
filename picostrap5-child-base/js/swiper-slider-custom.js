@@ -124,10 +124,10 @@ const swiper_home_promocional = new Swiper('.swiper-home-promocional', {
       let bg_color_slide = first_slide.dataset.bgcolor;
       let contenedor_swiper_home_promocional = document.querySelector("#sliderPromocional");
       contenedor_swiper_home_promocional.style["background-color"] = bg_color_slide;
-      let arrows_next = document.querySelector("#sliderPromocional .arrow-next path");
+      /*let arrows_next = document.querySelector("#sliderPromocional .arrow-next path");
       let arrows_prev = document.querySelector("#sliderPromocional .arrow-prev path");
       arrows_next.style.fill = first_slide.dataset.textcolor;
-      arrows_prev.style.fill = first_slide.dataset.textcolor;
+      arrows_prev.style.fill = first_slide.dataset.textcolor;*/
     },
     slideChange: function(swiper) {
       let allSelected = document.querySelectorAll(".opacity-50.opacity-100");
@@ -230,9 +230,14 @@ swiper_home_promocional.on('activeIndexChange', function (swiper) {
   contenedor_swiper_home_promocional.style["background-color"] = bg_color_slide;
   //Muevo el cover del slide activo
   // active_slide.querySelector('.wrapper-slide').classList.add('to-the-left');
-  let colorTexto = active_slide.dataset.textcolor == 'white' ? '#FFFFFF' : '#002D72';
-  arrows_next.setAttribute('style', 'fill: '+colorTexto);
-  arrows_prev.setAttribute('style', 'fill: '+colorTexto);
+  //let colorTexto = active_slide.dataset.textcolor == 'white' ? '#FFFFFF' : '#002D72';
+  if(active_slide.dataset.textcolor=='white'){
+    document.querySelector("#sliderPromocional .pagination-home-promocional").classList.replace('black','white');
+  }else{
+    document.querySelector("#sliderPromocional .pagination-home-promocional").classList.replace('white','black');
+  }
+  /*arrows_next.setAttribute('style', 'fill: '+colorTexto);
+  arrows_prev.setAttribute('style', 'fill: '+colorTexto);*/
 });
 
 

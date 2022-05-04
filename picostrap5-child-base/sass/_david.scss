@@ -1039,7 +1039,7 @@ html *:not(.contenedor-cursor-custom){
             margin-left: 12px;
         }
         @include media-breakpoint-up(xxxxl) {
-            height: 96px;
+            height: 50px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -1132,5 +1132,25 @@ g.text{
 .dot,.dot-static{
     &.active{
         fill: #6dd400 !important;
+    }
+}
+
+#sliderPromocional{
+    svg{
+        &.white{
+            filter: brightness(0) invert(1);
+        }
+    }
+    .pagination-home-promocional{
+        &.white{
+            svg{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .bg-custom-image{
+        @include media-breakpoint-up(lg) {
+            background-size: 120% !important;
+        }
     }
 }
