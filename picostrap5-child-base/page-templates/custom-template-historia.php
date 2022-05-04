@@ -70,16 +70,7 @@ get_header();
                     <?=$acf_fields['descripcion_2002']?>
                   </div>
                   <div class="col-12 mt-65">
-                    <?=wp_get_attachment_image(1557, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-                  </div>
-                  <div class="d-none col-12 mt-8">
-                    <?=wp_get_attachment_image(593, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-                  </div>
-                  <div class="d-none col-12 mt-21">
-                    <?=wp_get_attachment_image(595, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-                  </div>
-                  <div class="d-none col-12 mt-35">
-                    <?=wp_get_attachment_image(594, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2002'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -95,7 +86,7 @@ get_header();
                     <?=$acf_fields['descripcion_2008']?>
                   </div>
                   <div class="col-12 mt-82">
-                    <?=wp_get_attachment_image(596, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2008'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12 mt-24">
                     I.F.S (International Food Standard)<br>
@@ -116,7 +107,7 @@ get_header();
                     <?=$acf_fields['descripcion_2013']?>
                   </div>
                   <div class="col-12 mt-64">
-                    <?=wp_get_attachment_image(597, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2013'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -132,7 +123,7 @@ get_header();
                     <?=$acf_fields['descripcion_2019']?>
                   </div>
                   <div class="col-12 mt-56">
-                    <?=wp_get_attachment_image(598, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2019'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -161,7 +152,7 @@ get_header();
               <div class="col-12 opacity-25 ano-2006">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(599, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2006'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12  h2 fs-42 fs-lg-64  mt-53">
                     <span class="ano-timeline-right ano-timeline-2006">2006</span>
@@ -177,7 +168,7 @@ get_header();
               <div class="col-12 mt-87 opacity-25 ano-2009">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(600, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2009'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12  h2 fs-42 fs-lg-64  mt-53">
                     <span class="ano-timeline-right ano-timeline-2009">2009</span>
@@ -193,7 +184,7 @@ get_header();
               <div class="col-12 mt-187 opacity-25 ano-2016">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(1128, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2016'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12  h2 fs-42 fs-lg-64  mt-53">
                     <span class="ano-timeline-right ano-timeline-2016">2016</span>
@@ -209,7 +200,7 @@ get_header();
               <div class="col-12 mt-155 opacity-25 ano-2020">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(602, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2020'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12  h2 fs-42 fs-lg-64  mt-53">
                     <span class="ano-timeline-right ano-timeline-2020">2020</span>
@@ -225,7 +216,7 @@ get_header();
               <div class="col-12 mt-225">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(1686, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2022'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -253,16 +244,7 @@ get_header();
                     <?=$acf_fields['descripcion_2002']?>
                   </div>
                   <div class="col-12 mt-24">
-                    <?=wp_get_attachment_image(1557, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-                  </div>
-                  <div class="col-12 mt-8">
-                    <?=wp_get_attachment_image(593, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-                  </div>
-                  <div class="col-12 mt-8">
-                    <?=wp_get_attachment_image(595, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-                  </div>
-                  <div class="col-12 mt-8">
-                    <?=wp_get_attachment_image(594, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2002'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -278,7 +260,7 @@ get_header();
                     <?=$acf_fields['descripcion_2006']?>
                   </div>
                   <div class="col-12 mt-24">
-                    <?=wp_get_attachment_image(599, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2006'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -294,7 +276,7 @@ get_header();
                     <?=$acf_fields['descripcion_2008']?>
                   </div>
                   <div class="col-12 mt-24">
-                    <?=wp_get_attachment_image(596, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2008'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                   <div class="col-12 mt-12 mt-sm-24">
                     I.F.S (International Food Standard)<br>
@@ -315,7 +297,7 @@ get_header();
                     <?=$acf_fields['descripcion_2009']?>
                   </div>
                   <div class="col-12 mt-24">
-                    <?=wp_get_attachment_image(600, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2009'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -331,7 +313,7 @@ get_header();
                     <?=$acf_fields['descripcion_2013']?>
                   </div>
                   <div class="col-12 mt-24">
-                    <?=wp_get_attachment_image(597, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2013'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -347,7 +329,7 @@ get_header();
                     <?=$acf_fields['descripcion_2016']?>
                   </div>
                   <div class="col-12 mt-24">
-                    <?=wp_get_attachment_image(1128, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2016'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -363,7 +345,7 @@ get_header();
                     <?=$acf_fields['descripcion_2019']?>
                   </div>
                   <div class="col-12 mt-24">
-                    <?=wp_get_attachment_image(598, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2019'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -379,7 +361,7 @@ get_header();
                     <?=$acf_fields['descripcion_2020']?>
                   </div>
                   <div class="col-12 mt-24">
-                    <?=wp_get_attachment_image(602, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2020'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
@@ -399,7 +381,7 @@ get_header();
               <div class="col-12 mt-24 last-image-mobile">
                 <div class="row">
                   <div class="col-12">
-                    <?=wp_get_attachment_image(1686, "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                    <?=wp_get_attachment_image($acf_fields['imagen_2022'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
                   </div>
                 </div>
               </div>
