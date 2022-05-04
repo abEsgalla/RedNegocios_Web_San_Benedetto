@@ -11,13 +11,13 @@
           <div class="col-12 fs-18 text-uppercase <? if( is_single(489) ) { echo 'fw-bold'; } ?>">
             <?=$seccion['slider']['texto_superior']?>
           </div>
-          <div class="col-12 h3 text-secondary-light">
+          <div class="col-12 h3 fs-32 fs-sm-48 text-secondary-light">
             <?=$seccion['slider']['texto_principal']?>
           </div>
         </div>
       </div>
       <div class="col-12">
-        <div class="swiper swiper-landing-productos slider-zero mt-40">
+        <div class="swiper swiper-landing-productos slider-zero mt-40 mt-sm-94 mt-xxxl-88">
           <div class="swiper-wrapper <?=(count($seccion['slider']['slide'])<=7)?'justify-content-xl-center':'';?> <?=(count($seccion['slider']['slide'])<=4)?'justify-content-md-center':'';?>">
             <?php
             if ($seccion['slider']):
