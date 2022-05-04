@@ -23,7 +23,7 @@ if($acf_fields['secciones']):
         switch ($seccion['acf_fc_layout']):
             case 'slider_imagenes_productos':
                 ?>
-                <section class="bg-dark pt-65 pb-64 pt-xxxl-84">
+                <section class="bg-dark pt-65 pb-64 pt-xl-84">
                     <div class="container-fluid container-fluid-custom position-relative">
                         <div class="row">
                         <div class="col-12" data-aos="fade-down">
