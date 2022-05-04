@@ -3,7 +3,7 @@
   $seccion = $fields;
 ?>
 
-<section class="mt-65 mb-64 mt-xxxl-84">
+<section class="mt-65 mb-64 mt-xl-84">
   <div class="container-fluid container-fluid-custom position-relative">
     <img src="<?=get_stylesheet_directory_uri().'/src/img/background-te/background_te_slider.png'; ?>" class="position-absolute top-0 start-0 zi-99 d-none d-md-block">
     <div class="row">
