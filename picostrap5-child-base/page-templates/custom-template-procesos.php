@@ -19,9 +19,18 @@ endif;
   <section>
     <div class="container-fluid position-relative zi-9 <?/*bg-black*/?>">
 
-      <div class="zi-75 background-position-left-mobile bg-custom-image <?/*opacity-60*/?> w-100 h-100 position-absolute top-0 start-0" 
-          style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')">
+      <div class="opacity-0 background-entorno zi-75 background-position-left-mobile bg-custom-image w-100 h-100 position-absolute top-0 start-0" 
+        style="background:url('<?=wp_get_attachment_image_url(get_field('fondo_cabecera',589), "full")?>')">
       </div>
+
+      <div class="opacity-0 background-producto zi-75 background-position-left-mobile bg-custom-image w-100 h-100 position-absolute top-0 start-0"
+        style="background:url('<?=wp_get_attachment_image_url(get_field('fondo_cabecera',585), "full")?>')">
+      </div>
+
+      <div class="opacity-100 background-procesos zi-75 background-position-left-mobile bg-custom-image w-100 h-100 position-absolute top-0 start-0"
+        style="background:url('<?=wp_get_attachment_image_url(get_field('fondo_cabecera',587), "full")?>')">
+      </div>
+
       <div class="zi-50 position-absolute position-absolute w-100vw h-100 top-0 end-0 bg-secondary">
       </div>
 
