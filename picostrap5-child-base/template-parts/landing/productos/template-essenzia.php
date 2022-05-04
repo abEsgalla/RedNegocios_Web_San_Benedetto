@@ -26,7 +26,7 @@
             switch ($seccion['acf_fc_layout']):
                 case 'slider_imagenes_productos':
                 ?>
-                <section class="mt-65 mb-64">
+                <section class="mt-65 mb-64 mt-xxxl-84">
                     <div class="container-fluid container-fluid-custom position-relative">
                         <div class="row">
                         <div class="col-12">
