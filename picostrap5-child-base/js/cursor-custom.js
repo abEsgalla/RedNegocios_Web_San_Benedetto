@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+
     const contenedor_cursor_custom = document.querySelectorAll('.contenedor-cursor-custom');
     contenedor_cursor_custom.forEach(contenedor => {
         contenedor.addEventListener('mousemove', e=>{
@@ -31,4 +32,23 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    /*const contenedor_all_html = document.querySelector('html');
+    contenedor_all_html.addEventListener('mousemove', e=>{
+        var rect = e.target.getBoundingClientRect();
+
+        if(!contenedor_all_html.querySelector('.new-cursor-custom')){
+            //CREAMOS DIV
+            var div_new_cursor_custom = document.createElement('div');
+            div_new_cursor_custom.className = 'new-cursor-custom';
+            //div_new_cursor_custom.innerHTML = '<div>NEW CURSOR</div>';
+            contenedor_all_html.appendChild(div_new_cursor_custom);
+        }
+        
+        var newCursorDiv = contenedor_all_html.querySelector('.new-cursor-custom');
+        newCursorDiv.style.top = e.clientY - rect.top + "px";
+        newCursorDiv.style.left = e.clientX - rect.left + "px";
+        newCursorDiv.style.display = "block";
+    });*/
+
 });
