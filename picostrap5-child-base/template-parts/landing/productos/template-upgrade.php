@@ -31,7 +31,7 @@ if($acf_fields['secciones']):
                             <div class="col-12 fs-18 text-uppercase">
                                 <?=$seccion['slider']['texto_superior']?>
                             </div>
-                            <div class="col-12 h3 text-white">
+                            <div class="col-12 h3 fs-32 fs-sm-48 text-white">
                                 <?=$seccion['slider']['texto_principal']?>
                             </div>
                             </div>

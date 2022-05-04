@@ -34,7 +34,7 @@
                             <div class="col-12 fs-18 text-uppercase">
                                 <?=$seccion['slider']['texto_superior']?>
                             </div>
-                            <div class="col-12 h3 text-secondary-light">
+                            <div class="col-12 h3 fs-32 fs-sm-48 text-secondary-light">
                                 <?=$seccion['slider']['texto_principal']?>
                             </div>
                             </div>
