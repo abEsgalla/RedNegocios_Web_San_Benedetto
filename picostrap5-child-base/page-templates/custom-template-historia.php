@@ -399,22 +399,22 @@ get_header();
 <section>
   <div class="container-fluid position-relative zi-9 bg-secondary-darker py-150 py-sm-105">
     <div class="bg-mobile-banner-marcas bg-custom-image bg-postion-x-center opacity-60 w-100 h-100 position-absolute top-0 start-0" 
-      style="background:url('<?=wp_get_attachment_image_url(51, "full")?>')"></div>
+      style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_banner'], "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
           <div class="col-12 offset-lg-3 col-lg-6 text-center text-white">
             <div class="row">
               <div class="col-12 text-uppercase fs-18 pt-20">
-                <?=_e('san benedetto')?>
+                <?=$acf_fields['pretitulo_banner']?>
               </div>
               <div class="col-12  h4 fs-24 fs-sm-32 fs-lg-40 mt-10">
-                <?=_e('Conoce nuestras marcas')?>
+                <?=$acf_fields['titulo_banner']?>
               </div>
               <div class="col-12 mt-32  fs-14 fs-lg-17 ">
-                <a href="<?=get_permalink(49)?>" class="col-12 text-center">
+                <a href="<?=$acf_fields['link_cta']?>" class="col-12 text-center">
                   <div class="btn btn-outline-white text-uppercase rounded-0">
                     <span>
-                      <?=_e('saber más')?>
+                      <?=$acf_fields['texto_cta']?>
                     </span>
                   </div>
                 </a>
