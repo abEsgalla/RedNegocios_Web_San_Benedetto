@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         
         var newCursorDiv = contenedor_all_html.querySelector('.new-cursor-custom');
-        newCursorDiv.style.top = e.clientY - rect.top + "px";
-        newCursorDiv.style.left = e.clientX - rect.left + "px";
+        newCursorDiv.style.top = e.clientY + document.documentElement.scrollTop  +  "px";
+        newCursorDiv.style.left = e.clientX  + "px";
         newCursorDiv.style.display = "block";
     });*/
 
