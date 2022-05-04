@@ -23,9 +23,9 @@ get_header();
 </section>
 
 <section class="text-white">
-    <div class="container-fluid position-relative zi-99 bg-secondary pt-112 pb-149 py-lg-84">
-        <div class="bg-parallax opacity-60 w-100 h-100 position-absolute top-0 start-0" 
-        style="background:url('<?=wp_get_attachment_image_url(1123, "full")?>')"></div>
+    <div class="container-fluid position-relative zi-99 <?/*bg-secondary*/?> pt-112 pb-149 py-lg-84">
+        <div class="bg-parallax <?/*opacity-60*/?> w-100 h-100 position-absolute top-0 start-0" 
+        style="background:url('/wp-content/uploads/2022/05/img-cabecera.png')"></div>
         <div class="container position-relative">
           <div class="row">
             <div class="col-12 offset-lg-3 col-lg-6 text-center text-white">

@@ -10,8 +10,8 @@ get_header();
 ?>
 
 <section>
-  <div class="container-fluid position-relative zi-9 bg-black pt-138 pb-374 pt-md-214 pb-md-409 pt-lg-242 pb-lg-492">
-    <div class="bg-parallax opacity-50 w-100 h-100 position-absolute top-0 start-0" 
+  <div class="container-fluid position-relative zi-9 <?/*bg-black*/?> pt-138 pb-374 pt-md-214 pb-md-409 pt-lg-242 pb-lg-492">
+    <div class="bg-parallax <?/*opacity-50*/?> w-100 h-100 position-absolute top-0 start-0" 
       style="background:url('<?=wp_get_attachment_image_url($acf_fields['fondo_cabecera'], "full")?>')"></div>
       <div class="container position-relative">
         <div class="row">
