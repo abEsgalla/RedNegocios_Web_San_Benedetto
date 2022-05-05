@@ -101,62 +101,7 @@ endforeach;
 
 ?>
 
-<?php
-if(get_post_type()=="landing"):
-    $args = array(
-        'numberposts'	=> -1,
-        'post_type'		=> 'producto',
-        'meta_query'	=> array(
-        array(
-            'key'		=> 'caracteristicas_producto_relacion_page_landing',
-            'compare'	=> '=',
-            'value'		=> get_the_ID(),
-        )
-        )
-    );
-    $the_query = new WP_Query( $args );
-    if( $the_query->have_posts() &&  $the_query->post_count == 1): 
-        $the_query->the_post(); 
-        $id_producto=get_the_ID();
-        $GLOBALS['id_producto']=get_the_ID();
-        wp_reset_query();
-    endif;
-    ?>
-    <section class="zi-1050 position-relative" 
-    style="background-color:<?=get_field('caracteristicas_producto',$id_producto)['color_corporativo']?>">
-        <div class="container">
-        <div class="row">
-            <? if($id_producto!=61 && $id_producto!=490): ?>
-                <div class="col-12 text-uppercase py-16 m-0 h6 fs-16 fs-sm-24 
-                <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
-                ">
-                <?=get_the_title()?>
-                </div>
-            <? else: ?>
-                <div class="col-12 text-uppercase py-16 m-0 h6 fs-16 fs-sm-24 d-flex justify-content-between
-                <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
-                ">
-                    <div>
-                        <?php _e('ENJOY'); ?>
-                    </div>
-                    <div>
-                        <a href="<?=get_permalink(get_field('caracteristicas_producto',61)['relacion_page_landing'])?>" 
-                        class="py-2 text-reset text-decoration-none single-animation-undertext 
-                        <?=($id_producto==61)?'active':'opacity-50';?>"><?php _e('SIN GAS'); ?></a>
-                        <a href="<?=get_permalink(get_field('caracteristicas_producto',490)['relacion_page_landing'])?>" 
-                        class="py-2 text-reset text-decoration-none ms-32 single-animation-undertext 
-                        <?=($id_producto==490)?'active':'opacity-50';?>"><?php _e('CON GAS'); ?></a>
-                    </div>
-                </div>
-            <? endif; ?>
-        </div>
-        </div>
-    </section>
-    <?php
-endif;
-?>
-
-<div class="position-relative h-0">
+<div class="zi-1045 position-relative h-0">
 
     <div class="h-0 offcanvas offcanvas-top position-sticky border-0 bg-white shadow-sm"
         data-bs-scroll="true" data-bs-backdrop="false"
@@ -335,3 +280,58 @@ endif;
     </div>
 
 </div>
+
+<?php
+if(get_post_type()=="landing"):
+    $args = array(
+        'numberposts'	=> -1,
+        'post_type'		=> 'producto',
+        'meta_query'	=> array(
+        array(
+            'key'		=> 'caracteristicas_producto_relacion_page_landing',
+            'compare'	=> '=',
+            'value'		=> get_the_ID(),
+        )
+        )
+    );
+    $the_query = new WP_Query( $args );
+    if( $the_query->have_posts() &&  $the_query->post_count == 1): 
+        $the_query->the_post(); 
+        $id_producto=get_the_ID();
+        $GLOBALS['id_producto']=get_the_ID();
+        wp_reset_query();
+    endif;
+    ?>
+    <section class="zi-1040 position-relative" 
+        style="background-color:<?=get_field('caracteristicas_producto',$id_producto)['color_corporativo']?>">
+        <div class="container">
+        <div class="row">
+            <? if($id_producto!=61 && $id_producto!=490): ?>
+                <div class="col-12 text-uppercase py-16 m-0 h6 fs-16 fs-sm-24 
+                <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
+                ">
+                <?=get_the_title()?>
+                </div>
+            <? else: ?>
+                <div class="col-12 text-uppercase py-16 m-0 h6 fs-16 fs-sm-24 d-flex justify-content-between
+                <?=(get_field('banner_superior_texto_color'))?get_field('banner_superior_texto_color'):'text-white';?>
+                ">
+                    <div>
+                        <?php _e('ENJOY'); ?>
+                    </div>
+                    <div>
+                        <a href="<?=get_permalink(get_field('caracteristicas_producto',61)['relacion_page_landing'])?>" 
+                        class="py-2 text-reset text-decoration-none single-animation-undertext 
+                        <?=($id_producto==61)?'active':'opacity-50';?>"><?php _e('SIN GAS'); ?></a>
+                        <a href="<?=get_permalink(get_field('caracteristicas_producto',490)['relacion_page_landing'])?>" 
+                        class="py-2 text-reset text-decoration-none ms-32 single-animation-undertext 
+                        <?=($id_producto==490)?'active':'opacity-50';?>"><?php _e('CON GAS'); ?></a>
+                    </div>
+                </div>
+            <? endif; ?>
+        </div>
+        </div>
+    </section>
+    <?php
+endif;
+?>
