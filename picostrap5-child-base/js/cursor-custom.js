@@ -70,4 +70,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    const all_links = document.querySelectorAll('html a');
+    all_links.forEach(link => {
+        link.addEventListener('mouseover', e=>{
+            var newCursorDiv = document.querySelector('html .new-cursor-custom');
+            if(newCursorDiv)
+            {
+                newCursorDiv.style.transform = "translateX(-10px) scale(1.3)";
+            }
+        });
+        link.addEventListener('mouseleave', e=>{
+            var newCursorDiv = document.querySelector('html .new-cursor-custom');
+            if(newCursorDiv)
+            {
+                newCursorDiv.style.transform = "translateX(-10px) scale(1)";
+            }
+        });
+    });
+
 });

@@ -1180,6 +1180,7 @@ html *:not(.contenedor-cursor-custom):hover
     z-index: 9999999;
     mix-blend-mode: difference;
     background: url(/wp-content/uploads/2022/04/cursor.svg);
+    transition: transform 0.1s linear;
 }
 
 .cursor-custom{
