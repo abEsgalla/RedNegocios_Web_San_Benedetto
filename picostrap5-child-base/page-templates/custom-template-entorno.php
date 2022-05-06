@@ -111,7 +111,9 @@ endif;
                   <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                       <span class="rounded-circle border border-1">
-                        <?=wp_get_attachment_image($acf_fields['proyecto_1_foto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                        <a class="text-reset" target="_blank" href="<?=$acf_fields['proyecto_1_link']?>">
+                          <?=wp_get_attachment_image($acf_fields['proyecto_1_foto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                        </a>
                       </span>
                     </div>
                     <div class="col-12 mt-24 fs-20 fw-bold">
@@ -125,7 +127,9 @@ endif;
                   <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                       <span class="rounded-circle border border-1">
-                        <?=wp_get_attachment_image($acf_fields['proyecto_2_foto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                        <a class="text-reset" target="_blank" href="<?=$acf_fields['proyecto_2_link']?>">
+                          <?=wp_get_attachment_image($acf_fields['proyecto_2_foto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                        </a>
                       </span>
                     </div>
                     <div class="col-12 mt-24 fs-20 fw-bold">
@@ -139,8 +143,10 @@ endif;
                   <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                       <span class="rounded-circle border border-1">
-                        <?=wp_get_attachment_image($acf_fields['proyecto_3_foto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
-                      </span>
+                        <a class="text-reset" target="_blank" href="<?=$acf_fields['proyecto_3_link']?>">
+                          <?=wp_get_attachment_image($acf_fields['proyecto_3_foto'], "full", "", array( 'class' => '' , 'alt' => '' , 'title' => '') ); ?>
+                        </a>  
+                       </span>
                     </div>
                     <div class="col-12 mt-24 fs-20 fw-bold">
                       <a class="text-reset" target="_blank" href="<?=$acf_fields['proyecto_3_link']?>">
