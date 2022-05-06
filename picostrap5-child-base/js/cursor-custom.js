@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    const all_links = document.querySelectorAll('html a,.arrow-prev,.arrow-next,.swiper-pagination-bullet,.filtros_buscador .c-pointer,.swiper-home-promocional .c-pointer,#pills-tab button,input,.file-76');
+    const all_links = document.querySelectorAll('html a,.arrow-prev,.arrow-next,.swiper-pagination-bullet,.filtros_buscador .c-pointer,.swiper-home-promocional .c-pointer,#pills-tab button,input,.file-76,select');
     all_links.forEach(link => {
         link.addEventListener('mouseover', e=>{
             var newCursorDiv = document.querySelector('html .new-cursor-custom');
