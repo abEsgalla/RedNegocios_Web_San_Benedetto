@@ -127,3 +127,5 @@ function load_template_part($template_name, $part_name=null, $params) {
 	ob_end_clean();
 	return $var;
 }
+
+define( 'WP_AUTO_UPDATE_CORE', false );
